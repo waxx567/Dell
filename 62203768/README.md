@@ -18,4 +18,6 @@ I have been studying web development and adjacent technologies for about 5 years
 **portfolio** My portfolio with 3D models using React/Vite and TailwindCSS and ThreeJS
 **practice**
 
+See fivefiftyfive repository for unfound folders.
+
 #### Website: <URL https://gaslitcatfish.com> (soon)
