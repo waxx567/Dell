@@ -1455,7 +1455,7 @@ I look at the three near the neighbors and see how that performs.
 And that one in this case seems to have gotten
 100% of all of the predictions correctly described as either authentic banknotes
 or as counterfeit banknotes.
-And we could run these experiments multiple times.
+And `we could run these experiments multiple times`.
 Because I'm randomly reorganizing the data every time,
 we're technically training these on slightly different data sets.
 And so you might want to run multiple experiments
@@ -1471,9 +1471,11 @@ And this splitting up into training groups, and testing groups,
 and testing happens so often that scikit-learn has functions built in
 for trying to do it.
 I did it all by hand just now.
-But if we take a look at banknotes1, we take
+But if we take a look at
+### banknotes1
+we take
 advantage of some other features that exist in scikit-learn,
-learn where we can really simplify a lot of our logic.
+where we can really simplify a lot of our logic.
 That there is a function built into scikit-learn called train_test_split,
 which will automatically split data into a training group and a testing group.
 I just have to say what proportion should
@@ -1498,11 +1500,12 @@ we would like to learn some function that
 maps those inputs to those outputs.
 But turns out there are other forms of learning, as well.
 And another popular type of machine learning, especially nowadays,
-is known as reinforcement learning.
+is known as
+# reinforcement learning
 And the idea of reinforcement learning is
 rather than just being given a whole data set
 at the beginning of input-output pairs, reinforcement learning
-is all about learning from experience.
+is all about `learning from experience`.
 And reinforcement learning are agent, whether it's
 like a physical robot that's trying to make actions
 in the world or just some virtual agent that has a program running somewhere.
@@ -1521,7 +1524,7 @@ And so what this will often look like is it will often start with some agent,
 some AI, which might again, be a physical robot--
 if you're imagining a physical robot moving around--
 but it can also just be a program.
-And our agent is situated in their environment,
+And our `agent` is situated in their `environment`,
 where the environment is where they're going to make their actions.
 And it's what's going to give them rewards or punishments
 for various actions that they're in.
@@ -1531,26 +1534,26 @@ Our agent has some state that in a game might be the state of the game
 that the agent is playing, in a world that the agent is exploring.
 Might be some position inside of a grid representing
 the world that they're exploring.
-But the agent is in some sort of state.
-And in that state, the agent needs to choose to take an action.
+But the agent is in some sort of `state`.
+And in that state, the agent needs to choose to take an `action`.
 The agent likely has multiple actions they can choose from,
 but they pick an action.
 So they take an action in a particular state.
 And as a result of that, the agent will generally get two things in response
 as we model them.
-The agent gets a new state that they find themselves in.
+The agent gets a `new state` that they find themselves in.
 After being in this state taking one action,
 they end up in some other state.
-And they're also given some sort of numerical reward--
+And they're also given some sort of numerical `reward`--
 positive meaning reward, meaning it was a good thing.
 Negative generally meaning they did something bad,
-they received some sort of punishment.
+they received some sort of `punishment`.
 And that is all the information the agent has.
 It's told what state it's in.
 It makes some sort of action.
 And based on that, it ends up in another state,
 and it ends up getting some particular reward.
-And it needs to learn based on that information what
+And it needs to `learn` based on that information what
 actions to begin to take in the future.
 As you can imagine generalizing this to a lot of different situations,
 this is oftentimes how you train.
@@ -1570,7 +1573,9 @@ So in order to begin to formalize this, the first thing we need to do
 is formalize this notion of what we mean about states and actions and rewards--
 like what does this world look like.
 And oftentimes, we'll formulate this world
-as what's known as a Markov decision process.
+as what's known as a
+## Markov decision process
+`model for decision-making, representing states, actions, and their rewards`
 Similar in spirit to Markov chains, which you might recall from before,
 but a Markov decision process is a model that we
 can use for decision making for an agent trying
@@ -1581,7 +1586,7 @@ and also, what the reward is for taking one action as opposed
 to another action.
 So what then does that actually look like?
 Well, if you recall, a Markov chain from before,
-a Markov chain looked a little something like this.
+a `Markov chain` looked a little something like this.
 Where we had a whole bunch of these individual states, and each state
 immediately transitioned to another state
 based on some probability distribution.
@@ -1604,8 +1609,8 @@ that each lead them down different paths.
 And even this is a bit of an oversimplification,
 because in each of these states, you might imagine more branching points
 were there more decisions that can be taken as well.
-So we've extended the Markov chain to say that from a state,
-you now have available action choices.
+So we've `extended the Markov chain to say that from a state`,
+`you now have available action choices`.
 And each of those actions might be associated
 with its own probability distribution of going to various different states.
 Then in addition, we'll add another extension,
@@ -1615,19 +1620,19 @@ can associate a reward with that outcome,
 saying either r is positive, meaning some positive reward,
 or r is negative, meaning there were some sort of punishment.
 And this then is what we'll consider to be a Markov decision process.
-That a Markov decision process has some initial set of states in the world
+That a Markov decision process has some `initial set of states` in the world
 that we can be in.
-We have some set of actions that given a state,
+We have some `set of actions` that given a state,
 I can say what are the actions that are available to me
 in that state, an action that I can choose from.
-Then we have some transition model.
+Then we have some `transition model`.
 The transition model before just said that
 given my current state, what is the probability that I end up
 in that next state or this other state.
 The transition model now has effectively two things we're conditioning on.
-We're saying, given that I'm in this state
-and that I take this action, what's the probability
-that I end up in this next state?
+We're saying, `given that I'm in this state`
+`and that I take this action, what's the probability`
+`that I end up in this next state?`
 Now maybe we live in a very deterministic world in this Markov
 decision process, where given a state and given an action,
 we know for sure what next state we'll end up in.
@@ -1667,7 +1672,7 @@ So the first thing the agent might do is given no additional information,
 if it doesn't know what the punishments are,
 it doesn't know where the rewards are, it just might try and take an action.
 And it takes an action and ends up realizing
-that he's got some sort of punishment.
+that it got some sort of punishment.
 And so what does it learn from that experience?
 Well, it might learn that when you're in this state in the future
 don't take the action, move to the right--
@@ -1690,7 +1695,7 @@ a negative reward, in other words.
 And this process repeats.
 You might imagine just letting our agent explore the world,
 learning over time what states tend to correspond with poor actions,
-learning over time what states correspond with poor actions
+learning over time what states correspond with good actions
 until eventually, if it tries enough things randomly,
 it might find that when you get to this state,
 if you take the up action in this state, it might find you
@@ -1705,16 +1710,19 @@ are good in particular states, but also, which actions are bad,
 such that once you know some sequence of good actions
 that leads you to some sort of reward, our agent can just
 follow those instructions, follow the experience that it has learned.
-We didn't tell the agent what the goal was.
-We didn't tell the agent where the punishments were.
-But the agent can begin to learn from this experience
-and learn to begin to perform these sorts of tasks better in the future.
+`We didn't tell the agent what the goal was.`
+`We didn't tell the agent where the punishments were.`
+`But the agent can begin to learn from this experience`
+`and learn to begin to perform these sorts of tasks better in the future.`
 And so let's now try to formalize this idea-- formalize the idea that we would
 like to be able to learn in this state, taking this action,
 is that a good thing or a bad thing.
 There are lots of different models for reinforcement learning.
 We're just going to look at one of them today.
-And the one that we're going to look at is a method known as Q learning.
+And the one that we're going to look at is a method known as
+### Q learning
+`method for learning a function Q(s, a), estimate of`
+`the value of performing action a in state s`
 And what Q learning is all about is about learning a function,
 a function Q, that takes inputs s and a, where s is a state and a
 is an action that you take in that state.
@@ -1724,8 +1732,8 @@ from taking this action in this state.
 Originally, we don't know what this Q function should be,
 but over time, based on experience, based
 on trying things out and seeing what the result is,
-I would like to try and learn what q of s,
-a is for any particular state and any particular action
+I would like to try and learn what q of s, a
+is for any particular state and any particular action
 that I might take in that state.
 So what is the approach?
 Well, the approach originally is we'll start
@@ -1736,13 +1744,13 @@ the value of taking any action in any given state,
 so I'm going to assume that the value is 0 all across the board.
 But then as I interact with the world, as I experience rewards or punishments,
 or maybe I go to a cell where I don't get either a reward or a punishment,
-I want to somehow update my estimate of Q s, a.
+I want to somehow `update` my estimate of Q s, a.
 I want to continually update my estimate of Q s, a based on the experiences,
 and rewards, and punishments that I've received
 such that in the future, my knowledge of what actions are good
 and what states will be better.
 So when we take an action and receive some sort of reward,
-I want to estimate the new value of Q s, a.
+I want to `estimate` the new value of Q s, a.
 And I estimate that based on a couple of different things.
 I estimate it based on the reward that I'm getting from taking this action
 and getting into the next state.
@@ -1752,8 +1760,8 @@ I also need to take into account the expected future rewards.
 That if you imagine an agent interacting with the environment,
 and sometimes, you'll take an action and get a reward,
 but then you can keep taking more actions and get more rewards.
-That these both are relevant-- both the current reward
-I'm getting from this current step, and also, my future reward.
+That these `both are relevant`-- both the `current reward`
+I'm getting from this current step, and also, my `future reward`.
 And it might be the case that I want to take a step that doesn't immediately
 lead to a reward, because later on down the line,
 I know it will lead to more rewards as well.
