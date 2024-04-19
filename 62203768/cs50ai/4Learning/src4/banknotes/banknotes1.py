@@ -31,6 +31,7 @@ labels = [row["label"] for row in data]
 X_training, X_testing, y_training, y_testing = train_test_split(
     evidence, labels, test_size=0.4
 )
+# train_test_split is a function built into scikit-learn which will automatically split data into a training group and a testing group. Choose the proportion of data that should be in the testing group with test_size.
 
 # Fit model
 model.fit(X_training, y_training)
