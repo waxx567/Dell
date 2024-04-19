@@ -1776,7 +1776,7 @@ to take into account this new estimate.
 Now as we go through this process, we'll already
 have an estimate for what we think the value is.
 Now we have a new estimate and then somehow we
-need to combine these two estimates together.
+`need to combine these two estimates together`.
 And we'll look at more formal ways that we can actually begin to do that.
 So to actually show you what this formula looks like,
 here's the approach we'll take with you Q-learning.
