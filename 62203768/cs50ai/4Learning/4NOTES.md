@@ -1611,8 +1611,8 @@ because in each of these states, you might imagine more branching points
 were there more decisions that can be taken as well.
 So we've `extended the Markov chain to say that from a state`,
 `you now have available action choices`.
-And each of those actions might be associated
-with its own probability distribution of going to various different states.
+`And each of those actions might be associated`
+`with its own probability distribution of going to various different states`.
 Then in addition, we'll add another extension,
 where any time you move from a state taking
 an action going into this other state, we
