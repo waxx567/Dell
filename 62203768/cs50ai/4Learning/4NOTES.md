@@ -1872,6 +1872,7 @@ And so sometimes, you can even add another term
 in here or some other parameter, where you discount future rewards
 and say future rewards are not as valuable as rewards
 immediately-- that getting reward in the current time step
+`1:27:28`
 is better than waiting a year and getting rewards later.
 But that's something up to the programmer
 to decide what that parameter ought to be.
@@ -1882,7 +1883,10 @@ We update our estimate of how good is this action.
 And then in the future, we can make decisions based on that algorithm.
 Once we have some good estimate for every state
 and for every action, what the value is of taking that action,
-then we can do something like implement a greedy decision making policy.
+then we can do something like implement a
+#### greedy decision making
+policy.
+`When in state s, choose action a with highest Q(s, a)`
 That if I am in a state and I want to know what actions should
 I take in that state, then I consider for all of my possible actions,
 what is the value of Q s, a.
@@ -1912,8 +1916,8 @@ because it's never really tried it.
 But it knows that going down eventually leads its way to this reward.
 So what might learn in the future that it should just always take this route,
 and it's never going to explore and go along that route instead.
-So in reinforcement learning, there's this tension
-between exploration and exploitation.
+So `in reinforcement learning, there's this
+##### tension between exploration and exploitation.
 And exploitation generally reverts to using knowledge
 that the AI already has.
 The AI already knows that this is a move that leads to reward,
@@ -1923,7 +1927,7 @@ that we may not have explored as thoroughly before,
 because maybe one of these actions, even if I don't know anything about it,
 might lead to better rewards faster or more rewards in the future.
 And so an agent that only ever exploits information
-and never explorers might be able to get reward,
+and never explores might be able to get reward,
 but it might not maximize its rewards, because it doesn't know what
 other possibilities are out there--
 possibilities that it would only know about
