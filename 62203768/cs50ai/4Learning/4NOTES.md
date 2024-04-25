@@ -1736,8 +1736,8 @@ I would like to try and learn what q of s, a
 is for any particular state and any particular action
 that I might take in that state.
 So what is the approach?
-Well, the approach originally is we'll start
-with Q s, a equal to 0 for all states s and for all actions a.
+Well, the approach originally is we'll
+`start with Q s, a equal to 0 for all states s and for all actions a`.
 That initially, before I've ever started anything,
 before I've had any experiences, I don't know
 the value of taking any action in any given state,
@@ -1765,7 +1765,7 @@ I'm getting from this current step, and also, my `future reward`.
 And it might be the case that I want to take a step that doesn't immediately
 lead to a reward, because later on down the line,
 I know it will lead to more rewards as well.
-So there's a balancing act between current rewards
+So there's a `balancing act` between current rewards
 that the agent experiences and future rewards
 that the agent experiences as well.
 And then we need to update Q s, a.
