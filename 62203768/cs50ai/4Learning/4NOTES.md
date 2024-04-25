@@ -1720,7 +1720,7 @@ is that a good thing or a bad thing.
 There are lots of different models for reinforcement learning.
 We're just going to look at one of them today.
 And the one that we're going to look at is a method known as
-### Q learning
+# Q learning
 `method for learning a function Q(s, a), estimate of`
 `the value of performing action a in state s`
 And what Q learning is all about is about learning a function,
@@ -1884,7 +1884,7 @@ And then in the future, we can make decisions based on that algorithm.
 Once we have some good estimate for every state
 and for every action, what the value is of taking that action,
 then we can do something like implement a
-#### greedy decision making
+## greedy decision making
 policy.
 `When in state s, choose action a with highest Q(s, a)`
 That if I am in a state and I want to know what actions should
@@ -1917,7 +1917,7 @@ But it knows that going down eventually leads its way to this reward.
 So what might learn in the future that it should just always take this route,
 and it's never going to explore and go along that route instead.
 So `in reinforcement learning, there's this
-##### tension between exploration and exploitation.
+### tension between exploration and exploitation.
 And exploitation generally reverts to using knowledge
 that the AI already has.
 The AI already knows that this is a move that leads to reward,
@@ -1933,26 +1933,28 @@ other possibilities are out there--
 possibilities that it would only know about
 by taking advantage of exploration.
 And so how can we try and address this?
-Well, one possible solution is known as the epsilon-greedy algorithm,
+Well, one possible solution is known as the
+#### epsilon-greedy algorithm,
+`Set epsilon equal to how often we want to move randomly`
 where we set epsilon equal to how often we want to just make a random move.
 Where occasionally, we will just make a random move in order to say,
 let's try to explore and see what happens.
-And then the logic of the algorithm will be with probability 1 minus epsilon,
-choose the estimated best move.
-In a greedy case, we'd always choose the best move.
-But in epsilon-greedy, we're most of the time going to choose the best move
-or sometimes going to choose the best move,
-but sometimes with probability epsilon, we're
-going to choose a random move instead.
+And then the logic of the algorithm will be `with probability 1 minus epsilon`,
+`choose the estimated best move`.
+`In a greedy case, we'd always choose the best move.`
+`But in epsilon-greedy, we're most of the time going to choose the best move`
+`or sometimes going to choose the best move,`
+`but sometimes with probability epsilon, we're`
+`going to choose a random move instead.`
 So every time we're faced with the ability to take an action, sometimes,
 we're going to choose the best move.
 Sometimes, we're just going to choose a random move.
 So this type of algorithm then can be quite
 powerful in a reinforcement learning context by not always just choosing
-the best possible move right now, but sometimes, especially early on,
+the best possible move right now, but sometimes, `especially early on`,
 allowing yourself to make random moves that
 allow you to explore various different possible states and actions more.
-And maybe over time, you might decrease your value of epsilon, more and more
+And maybe `over time, you might decrease your value of epsilon`, more and more
 often choosing the best mover after you are
 more confident that you've explored what all of the possibilities actually are.
 So we can put this into practice.
@@ -1974,7 +1976,9 @@ And based on all of that, it begins to figure out
 what decisions it should actually make.
 So one very simple game, which you may have played before
 is a game called Nim.
-And in the game of Nim, you've got a whole bunch of objects
+And
+##### in the game of Nim,
+you've got a whole bunch of objects
 in a whole bunch of different piles, where here I've
 represented each pile as an individual row.
 So you've got one object in the first pile, three in the second pile, five
@@ -2013,6 +2017,7 @@ But if you were not, and the other player had to remove the last object,
 well then you get some sort of reward.
 So we could actually try and show a demonstration of this--
 that I have implemented an AI to play the game of Nim.
+`1:34:16`
 All right, so here, what we're going to do
 is create an AI as a result of training the AI on some number of games
 that the AI is going to play against itself.
@@ -2038,8 +2043,8 @@ And so the game is over and I was able to win.
 But I did so because the AI was really just playing randomly.
 It didn't have any prior experience that it was using in order
 to make these sorts of judgments.
-Now let the AI train itself on, like, 10,000 games.
-I'm going to let the AI play 10,000 games of Nim against itself.
+`Now` let the AI train itself on, like, 10,000 games.
+I'm going to `let the AI play 10,000 games of Nim against itself`.
 Every time it wins or loses, it's going to learn from that experience
 and learn in the future what to do and what not to do.
 So here then, I'll go ahead and run this again.
@@ -2047,6 +2052,7 @@ And now you see the AI running through a whole bunch of training games--
 10,000 training games against itself.
 And now it's going to let me make these sorts of decisions.
 So now I'm going to play against the AI.
+`1:35:58`
 Maybe I'll remove one from pile 3.
 And the AI took everything from pile three, so I'm left with three piles.
 And I'll go ahead and from pile two, maybe remove three items.
@@ -2055,8 +2061,8 @@ I'm left with two piles, each of which has two items in it.
 I'll remove one from pile one, I guess.
 And the AI took two from pile two, leaving me with no choice
 but to take one away from pile one.
-So it seems like after playing 10,000 games of Nim against itself,
-the AI has learned something about what states
+So `it seems` like after playing 10,000 games of Nim against itself,
+`the AI has learned something` about what states
 and what actions tend to be good, and has begun to learn some sort of pattern
 for how to predict what actions are going to be good
 and what actions are going to be bad in any given state.
@@ -2081,7 +2087,9 @@ but we can approximate it.
 So much as we saw with [? min and max, ?] we
 could use a death limiting approach to stop calculating
 at a certain point in time, we can do a similar type
-of approximation known as function approximation
+of approximation known as `function approximation`
+`Approximating Q(s, a), often by a function combining`
+`various features, storing one value for every state-action pair`
 in a reinforcement learning context, where instead of learning a value of Q
 for every state and every action, we just
 have some function that estimates what the value is
@@ -2101,14 +2109,16 @@ And so this type of approach can be quite helpful
 as you begin to deal with reinforcement learning that
 exists in larger and larger state spaces, where it's just not
 feasible to explore all of the possible states that could actually exist.
-So there then are two of the main categories of reinforcement learning.
-Supervised learning, where you have labeled input and output
-pairs, and reinforcement learning, where an agent learns from rewards
+So `there then are two of the main categories of reinforcement learning`.
+`Supervised learning`, where you have labeled input and output
+pairs, and `reinforcement learning`, where an agent learns from rewards
 or punishments that it receives.
 The third major category of machine learning
-that we'll just touch on briefly is known as unsupervised learning.
+that we'll just touch on briefly is known as
+# unsupervised learning.
+`given input data without any additional feedback, learn patterns`
 And unsupervised learning happens when we have data
-without any additional feedback, without labels.
+without any additional feedback, `without labels`.
 That in the supervised learning case, all of our data had labels.
 We labeled a data point with whether that was a rainy day or not rainy day.
 And using those labels, we were able to infer what the pattern was.
@@ -2118,10 +2128,15 @@ to figure out what does a banknote look like versus not.
 In unsupervised learning, we don't have any access to any of those labels,
 but we still would like to learn some of those patterns.
 And one of the tasks that you might want to perform in unsupervised learning
-is something like clustering, where clustering is just the task of given
+is something like clustering, where
+## clustering
+`organizing a set of objects into groups in such a way`
+`that similar objects tend to be in the same group`
+is just the task of given
 some set of objects organized into distinct clusters, groups of objects
 that are similar to one another.
 And there's lots of applications for clustering.
+`1:39:54`
 It comes up in genetic research, where you
 might have a whole bunch of different genes,
 and you want to cluster them into similar genes
