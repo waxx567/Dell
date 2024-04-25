@@ -1778,7 +1778,9 @@ have an estimate for what we think the value is.
 Now we have a new estimate and then somehow we
 `need to combine these two estimates together`.
 And we'll look at more formal ways that we can actually begin to do that.
-So to actually show you what this formula looks like,
+So to actually show you
+`1:22:56`
+`what this formula looks like`,
 here's the approach we'll take with you Q-learning.
 We're going to again start with Q of s, a being equal to 0 for all states.
 And then every time we take an action a in state s and observe a reward r,
@@ -1798,7 +1800,8 @@ We need to decide how much we want to adjust our current expectation of what
 the value is of taking this action in this particular state.
 And what that difference is-- how much we add or subtract
 from our existing notion of how much that we expect the value to be
-is dependent on this parameter alpha, also called the learning rate.
+is dependent on this parameter
+`alpha, also called the learning rate`.
 And alpha represents in effect, how much we value new information compared
 to how much we value old information.
 And alpha value of 1 means we really value new information.
@@ -1815,7 +1818,7 @@ is what our new estimate happens to be.
 But over time, as we go through a lot of experiences,
 we already have some existing information.
 We might have tried taking this action nine times already,
-and now we just try to do a tenth time.
+and now we just tried it a tenth time.
 And we don't only want to consider this 10th experience.
 I also want to consider the fact that my prior 9 experiences, those were
 meaningful, too.
@@ -1836,22 +1839,23 @@ We're going to add alpha times the new value estimate minus the old value
 estimate.
 But the old value estimate, we just look up by calling this Q function.
 And what then is the new value estimate?
-Based on this experience we have just taken,
-what is our new estimate for the value of taking
-this action in this particular state?
-Well, it's going to be composed of two parts.
+`Based on this experience we have just taken,`
+`what is our new estimate for the value of taking`
+`this action in this particular state?`
+Well, ``it's going to be composed of two parts`.
 It's going to be composed of what reward did I just get
 from taking this action in this state.
 And then it's going to be what can I expect my future rewards
 to be from this point forward.
-So it's going to be r, some reward I'm getting right now,
-plus whatever I estimate I'm going to get in the future.
+`So it's going to be r, some reward I'm getting right now`,
+`plus whatever I estimate I'm going to get in the future`.
 And how do I estimate what I'm going to get in the future?
 Well, it's a bit of another call to this Q function.
 It's going to be take the maximum across all possible actions I could
 take next and say, all right, of all of these possible actions I could take,
 which one is going to have the highest reward?
 So this then-- looks a little bit complicated--
+`1:26:39`
 is going to be our notion for how we're going to perform this kind of update.
 I have some estimate, some old estimate, for what
 the value is of taking this action in the state,
