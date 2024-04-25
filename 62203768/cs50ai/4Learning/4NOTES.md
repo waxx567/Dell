@@ -10,7 +10,8 @@ to search for a solution or how to satisfy certain constraints in order
 to find its way from some input point to some output point
 in order to solve some sort of problem.
 Today, we're going to turn to the world of learning
-in particular the idea of machine learning
+in particular the idea of
+# machine learning
 which generally refers to the idea where we are not
 going to give the computer explicit instructions for how to perform a task,
 but rather, we are going to give the computer access to information
@@ -23,10 +24,11 @@ So today, we'll explore some of the foundational algorithms
 and ideas that are behind a lot of the different areas within machine
 learning.
 And one of the most popular is the idea of supervised machine
-learning or just supervised learning.
-And
-## supervised learning
- is a particular type of task.
+learning or just
+## supervised learning.
+`given a data set of input-output pairs,`
+`learn a function to map inputs to outputs`
+And supervised learning is a particular type of task.
 It refers to the task where we give the computer access to a data set,
 where that data set consists of input-output pairs.
 And what we would like the computer to do
@@ -44,7 +46,7 @@ But ultimately, we hope that our computer
 will be able to figure out some function that given those inputs,
 is able to get those outputs.
 There are a couple of different tasks within supervised learning,
-the one we'll focus on and start with is known as classification.
+the one we'll focus on and start with is known as `classification`.
 And classification is the problem where if I give you a whole bunch of inputs,
 you need to figure out some way to map those inputs
 into discrete categories, where you can decide what those categories are.
@@ -77,12 +79,12 @@ Well, we could structure that data in a table like this.
 This might be what our table looks like, where are for any particular day going
 back, we have information about like that day's humidity, that day's air
 pressure.
-And then importantly, we have a label--
+And then importantly, we have a `label`--
 something where the human has said that on this particular day, it was raining
 or it was not raining.
 So you could fill in this table with a whole bunch of data.
-And what makes this what we would call a supervised learning exercise
-is that a human has gone in and labeled each of these data points.
+And `what makes this what we would call a supervised learning exercise`
+`is that a human has gone in and labeled each of these data points`.
 Said that on this day, when these were the values for the humidity
 and pressure, that day was a rainy day and this day was a not rainy day.
 And what we would like the computer to be able to do then
@@ -97,12 +99,14 @@ the inputs being the data points that our computer will have access
 to-- things like humidity and pressure.
 So we could write a function, f, that takes
 as input both humidity and pressure.
+`4:28`
 And then the output is going to be what category
 we would ascribe to these particular input points-- what label
 we would associate with that input.
 So we've seen a couple of example data points
 here, where given this value for humidity and this value for pressure,
 we predict is it going to rain or is it not going to rain.
+
 And that's information that we just gathered from the world.
 We measured on various different days what the humidity and pressure were.
 We observed whether or not we saw rain or no rain on that particular day.
