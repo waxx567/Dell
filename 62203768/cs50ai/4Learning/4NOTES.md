@@ -2149,7 +2149,10 @@ so you know which groups to target with certain types of product
 advertisements, for example.
 And a number of other contexts as well in which clustering
 can be very applicable.
-One technique for clustering is an algorithm known as k-means clustering.
+One technique for clustering is an algorithm known as
+### k-means clustering.
+`algorithm for clustering data based on repeatedly assigning`
+`points to clusters and updating those clusters' centres`
 And what k-means clustering is going to do
 it is going to divide all of our data points into k different clusters,
 and it's going to do so by repeating this process of assigning points
@@ -2165,8 +2168,8 @@ But I don't know how to do that originally.
 And let's say I want to assign three clusters to this group.
 And you have to choose how many clusters you want in k-means clustering,
 but you could try multiple and see how well those values perform.
-But I'll start just by randomly picking some places
-to put the centers of those clusters.
+But I'll `start just by randomly picking some places`
+`to put the centers of those clusters`.
 That maybe I have a blue cluster, a red cluster, and a green cluster.
 And I'm going to start with the centers of those clusters
 just being in these three locations here.
@@ -2189,7 +2192,7 @@ these various different data points.
 But k-means clustering is an iterative process, that after I do this,
 there is a next step, which is that after I've assigned all of the points
 to the cluster center that it is nearest to,
-we are going to recenter the clusters.
+we are going to `recenter the clusters`.
 Meaning take the cluster centers, these diamond
 shapes here, and move them to the middle or the average,
 effectively, of all of the points that are in that cluster.
@@ -2206,7 +2209,7 @@ And likewise for the green center, there are many more points
 on this side of the green center, so the green center
 ends up being pulled a little bit further in this direction.
 So we recenter all of the clusters.
-And then we repeat the process.
+And then we `repeat the process`.
 We go ahead and now reassign all of the points to the cluster center
 that they are now closest to.
 And now that we've moved around the cluster centers,
@@ -2218,10 +2221,10 @@ And these three points that were originally closer to the green cluster
 center are now closer to the red cluster center instead.
 So we can reassign what colors or which clusters each of these data points
 belongs to.
-And then repeat the process again, moving
+And then `repeat the process again`, moving
 each of these cluster means, the middle of the clusters,
 to the mean, the average, of all of the other points that happen to be there.
-And repeat the process again.
+And `repeat the process again`.
 Go ahead and assign each of the points to the cluster
 that they are closest to.
 So once we reach a point where we've assigned all the points to clusters,
