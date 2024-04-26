@@ -158,6 +158,7 @@ what their values were for each of these two inputs,
 and go ahead and plot them on this graph as well.
 And I've here plotted them in red.
 So blue here stands for a rainy day, red here stands for a not rainy day.
+`7:10`
 And this then is the input--
 that my computer has access to all of this input.
 And what I would like the computer to be able to do is to train a model such
@@ -182,6 +183,7 @@ that day is going to be a rainy day based on that input.
 It might not be totally accurate, but it's a pretty good guess.
 And this type of algorithm is actually a very popular and common machine
 learning algorithm known as
+`8:18`
 ### nearest neighbor classification
 `algorithm that, given an input, chooses the nearest data point to that`
 It's an algorithm for solving these classification type problems.
@@ -192,7 +194,7 @@ By class, we just here mean category, like rain or no rain,
 counterfeit or not counterfeit.
 And we choose the category or the class based on the nearest data point.
 So given all that data we just looked at,
-is the nearest data point a blue point or is that a red point.
+is the nearest data point a blue point or is it a red point.
 And depending on the answer to that question,
 we were able to make some sort of judgment.
 We were able to say something like, we think it's going to be blue
@@ -229,6 +231,7 @@ But oftentimes, considering more than just a single neighbor, considering
 multiple neighbors, can sometimes give us a better result.
 And so there's a variant on the nearest neighbor
 a classification algorithm that is known as the
+`10:29`
 #### k-nearest-neighbor classification
 `algorithm that, given an input, chooses the most common class out of`
 `the k nearest data points to that input`
@@ -240,8 +243,8 @@ But with k-nearest-neighbor classification,
 where k might be three or five or seven--
 to say look at the three or five or seven closest
 neighbors, closest data points to that point, works a little bit differently.
-This algorithm, we're given an input.
-Choose the most common class out of the k nearest data points to that input.
+This algorithm will, given an input,
+choose the most common class out of the k nearest data points to that input.
 So if we look at the five nearest points, and three of them
 say it's raining and two of them say it's not raining,
 we'll go with the three instead of the two,
