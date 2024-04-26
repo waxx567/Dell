@@ -479,6 +479,7 @@ The
 taking each of the terms and the vectors and multiplying them together,
 w0 multiplied by 1, w1 multiplied it by x1, w2 multiply it by x2.
 And that's why these vectors need to be the same length.
+`21:21`
 And then we just add all of the results together.
 So the dot product of w and x, our weight vector and our input vector,
 that's just going to be w0 times 1, or just w0 plus w1 times x1,
@@ -500,6 +501,7 @@ that we're calculating to see whether or not
 that answer is greater than or equal to 0 in this case.
 And so for that reason, you'll often see the hypothesis function
 written as something like this--
+`22:25`
 a simpler representation where the hypothesis takes as input
 some input vector x, some humidity and pressure for some day.
 And we want to predict an output like rain or no rain or 1 or 0
@@ -507,7 +509,7 @@ if we choose to represent things numerically.
 And the way we do that is by taking the dot
 product of the weights and our input.
 If it's greater than or equal to 0, we'll
-go ahead and save the output is 1.
+go ahead and say the output is 1.
 Otherwise, the output is going to be 0.
 And this hypothesis we say is `parameterized` by the weights.
 Depending on what weights we choose, we'll
@@ -524,6 +526,7 @@ And so the question then, is how to figure out
 what these weights should be-- how to be able to tune those parameters.
 And there are a number of ways you can do that.
 One of the most common is known as the
+`23:31`
 ##### perceptron learning rule
 And we'll see more of this later.
 But the idea of the perceptron learning rule--
@@ -542,7 +545,7 @@ in order to better match that input point.
 And so that is the value of having access
 to a lot of data in the supervised machine
 learning algorithm-- is that you take each of the data points
-and maybe look at the multiple times and constantly try and figure out what you
+and maybe look at them multiple times and constantly try and figure out what you
 whether you need to shift your weight in order
 to better create some weight vector that is able to correctly or more accurately
 try to estimate what the output should be.
@@ -558,6 +561,7 @@ And hypothesis of x, the input, that's going to be what we thought the input
 was.
 And so I can replace this by saying what the actual value was
 minus what our estimate was.
+`25:04`
 And based on the difference between the actual value and what our estimate was,
 we might want to change our hypothesis, change the way
 that we do that estimation.
@@ -599,12 +603,12 @@ So no need to get too deep into the mathematics of that.
 But the general idea is that every time we encounter some data point,
 we can adjust these weights accordingly to try and make the weights better
 line up with the actual data that we have access to.
-And you can repeat this process with data point after data point
-until eventually, hopefully, your algorithm
-converges to some set of weights that do a pretty good job of trying
+And you can `repeat this process with data point after data point`
+`until eventually, hopefully, your algorithm`
+`converges to some set of weights that do a pretty good job` of trying
 to figure out whether a day is going to be rainy or not rainy.
 And just as a final point about this particular equation,
-this value alpha here is generally what we'll call the learning rate.
+this value alpha here is generally what we'll call the `learning rate`.
 It's just some parameter, some number we choose it
 for how quickly we're actually going to be updating these weight values.
 That if alpha is bigger, than we're going
@@ -618,6 +622,7 @@ look at all the pieces of data, and use each piece of data as an indication
 to us of do the weights stay the same, do we increase the weights,
 do we decrease the weights, and if so, by how much,
 what you end up with is effectively a
+`27:58`
 # threshold function
 And we can look at what the threshold function looks like like this.
 On the x-axis here, we have the output of that function.
