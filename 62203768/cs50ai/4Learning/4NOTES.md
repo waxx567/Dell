@@ -266,7 +266,7 @@ a number of different algorithms that we can apply
 all solving the same type of problem.
 All solving some kind of classification problem, where
 we want to take inputs and organize it into different categories
-And no one algorithm isn't necessarily always going
+And no one algorithm is necessarily always going
 to be better than some other algorithm.
 They each have their trade-offs.
 And maybe depending on the data, one type of algorithm
@@ -295,7 +295,7 @@ with another way of trying to do this classification.
 And one way of trying to do the classification
 was looking at what are the neighboring points.
 But another way might be to try to look at all of the data
-and see if we can come up with some decision boundary--
+and see if we can come up with some `decision boundary`--
 some boundary that will separate the rainy days from the not rainy days.
 In the case of two dimensions, we can do that by drawing a line, for example.
 So what we might want to try to do is just find some line,
@@ -305,6 +305,7 @@ We're now trying a different approach in contrast
 with the nearest neighbor approach, which
 just looked at local data around the input data point that we cared about.
 Now what we're doing is trying to use a technique known as `linear regression`
+`13:42`
 to find some sort of line that will separate the two
 halves from each other.
 Now, sometimes, it will actually be possible to come up
@@ -322,13 +323,14 @@ where linearly separable refers to some data set
 where I can draw a line just to separate the two halves of it perfectly.
 Instead, you might have a situation like this,
 where there are some rainy points that are on this side of the line and some
-not raining points that are on that side of the line.
+`14:24`
+not rainy points that are on that side of the line.
 And there may not be a line that perfectly separates
-what path of the inputs from the other half-- that perfectly separates all
+half of the inputs from the other half-- that perfectly separates all
 the rainy days from the not rainy days.
 But we can still say that this line does a pretty good job.
-And we'll try to formalize a little bit later.
-What we mean when we say something like this line
+And we'll try to formalize a little bit later
+what we mean when we say something like this line
 does a pretty good job of trying to make that prediction.
 But for now, let's just say we're looking
 for a line that does as good of a job as we can
@@ -339,6 +341,7 @@ some way we can define this line.
 And our inputs are things like humidity and pressure in this case.
 So our inputs we might call x1 is going to be our represent humidity and x2
 is going to represent pressure.
+`15:15`
 These are inputs that we are going to provide to our machine learning
 algorithm.
 And given those inputs, we would like for our model
@@ -356,21 +359,22 @@ And now the question is, what does this hypothesis function do?
 Well, it really just needs to measure is this data
 point on one side of the boundary or is it on the other side of the boundary?
 And how do we formalize that boundary?
-Well, the boundary is generally going to be
-a linear combination of these input variables,
+Well, `the boundary is` generally going to be
+`a linear combination of these input variables`,
 at least in this particular case.
 So what we're trying to do when we say linear combination
 is take each of these inputs and multiply them by some number
 that we're going to have to figure out.
 We'll generally call that number a weight for how important
 should these variables be in trying to determine the answer.
-So weight each of these variables with some weight.
-And we might add like a constant to it just to try and make the function
+So `weight each of these variables` with some weight.
+And we might `add` like `a constant` to it just to try and make the function
 a little bit different.
 And the result we just need to compare--
 is it greater than 0 or is it less than 0 to say
 doesn't belong on one side of the line or the other side of the line.
 And so what that mathematical expression might look like is this.
+`16:40`
 We would take each of my variables, x1 and x2, multiply them by some weight.
 I don't yet know what that weight is, but it's
 going to be some number, weight 1 and weight 2.
@@ -387,6 +391,7 @@ We're going to do a bunch of math where we take each of the variables,
 multiply them by a weight, maybe add an extra weight to it,
 see if the result is greater than or equal to 0.
 And using that result of that expression,
+`17:25`
 we're able to determine whether it's raining or not raining.
 This expression here is in this case going to refer to just some line.
 If you were to plot that graphically, it would just be some line.
@@ -412,6 +417,7 @@ it's easier just to deal in the world of numbers.
 So we could just say 1 and 0--
 1 for raining, 0 for not raining.
 So we do all this math.
+`18:41`
 And if the result is greater than or equal to 0,
 we'll go ahead and say our hypothesis function outputs 1, meaning raining.
 And otherwise, it outputs 0, meaning not raining.
@@ -445,6 +451,7 @@ end up getting the exact same number.
 So in addition to the weight vector, w, we'll
 also have an input vector that we'll call x that has three values--
 1, again, because we're just multiplying w0 by 1 eventually, and then x1 and x2.
+`20:18`
 So `here then, we've represented two distinct vectors`-- a vector of weights
 that we need to somehow learn.
 The goal of our machine learning algorithm
