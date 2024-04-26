@@ -1,3 +1,4 @@
+
 # Notes on Lecture 4: Learning
 `https://cs50.harvard.edu/ai/2024/weeks/4/`
 
@@ -105,7 +106,6 @@ we would associate with that input.
 So we've seen a couple of example data points
 here, where given this value for humidity and this value for pressure,
 we predict is it going to rain or is it not going to rain.
-
 And that's information that we just gathered from the world.
 We measured on various different days what the humidity and pressure were.
 We observed whether or not we saw rain or no rain on that particular day.
@@ -113,7 +113,7 @@ And this function, f, is what we would like to approximate.
 Now the computer and we humans don't really
 know exactly how this function f works-- it's probably quite a complex function.
 So what we're going to do instead is attempt to estimate it.
-We would like to come up with a hypothesis function, h,
+We would like to come up with a `hypothesis function`, h,
 which is going to try to approximate what f does.
 We want to come up with some function h that will also take the same inputs
 and we'll also produce an output, rain or no rain.
@@ -124,10 +124,11 @@ is going to be to figure out what does that function h look like.
 How can we begin to estimate, given all of this information, all of this data,
 what category or what label should be assigned to a particular data point.
 So where can you begin doing this?
+`5:46`
 Well, a reasonable thing to do, especially in this situation--
 I have two numerical values--
 is I could try to plot this on a graph that has two axes-- an x-axis
-and the y-axis.
+and a y-axis.
 And in this case, we're just going to be using two numerical values as input,
 but these same types of ideas at scale as you
 add more and more inputs as well.
@@ -138,7 +139,7 @@ really beyond three dimensions, at least visually,
 a computer has no problem with trying to imagine
 things and many, many more dimensions.
 That for a computer, each dimension is just some separate number
-that are just keeping track.
+that it is keeping track of.
 So it wouldn't be unreasonable for a computer
 to think in 10 dimensions or 100 dimensions
 to be able to try to solve a problem.
@@ -146,7 +147,7 @@ But for now, we've got two inputs, so we'll graph things along two axes--
 an x-axis, which will here represent humidity,
 and a y-axis, which here represents pressure.
 And what we might do is say, let's take all of the days that were raining,
-and just try to plop them on this graph, and see where they fall on this graph.
+and just try to plot them on this graph, and see where they fall on this graph.
 And here might be all of the rainy days, where
 each rainy day is one of these blue dots here
 that corresponds to a particular value for humidity
