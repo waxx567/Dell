@@ -14,13 +14,13 @@ Instead, we’ll measure two values: sensitivity (also known as the “true posi
 
 Download the distribution code from https://cdn.cs50.net/ai/2023/x/projects/4/shopping.zip and unzip it.
 
-Run pip3 install scikit-learn to install the scikit-learn package if it isn’t already installed, which you’ll need for this project.
+Run `pip3 install scikit-learn` to install the scikit-learn package if it isn’t already installed, which you’ll need for this project.
 
 ### Understanding
 
-First, open up shopping.csv, the data set provided to you for this project. You can open it in a text editor, but you may find it easier to understand visually in a spreadsheet application like Microsoft Excel, Apple Numbers, or Google Sheets.
+First, open up `shopping.csv`, the data set provided to you for this project. You can open it in a text editor, but you may find it easier to understand visually in a spreadsheet application like Microsoft Excel, Apple Numbers, or Google Sheets.
 
-There are about 12,000 user sessions represented in this spreadsheet: represented as one row for each user session. The first six columns measure the different types of pages users have visited in the session: the Administrative, Informational, and ProductRelated columns measure how many of those types of pages the user visited, and their corresponding _Duration columns measure how much time the user spent on any of those pages. The BounceRates, ExitRates, and PageValues columns measure information from Google Analytics about the page the user visited. SpecialDay is a value that measures how close the date of the user’s session is to a special day (like Valentine’s Day or Mother’s Day). Month is an abbreviation of the month the user visited. OperatingSystems, Browser, Region, and TrafficType are all integers describing information about the user themself. VisitorType will take on the value Returning_Visitor for returning visitors and some other string value for non-returning visitors. Weekend is TRUE or FALSE depending on whether or not the user is visiting on a weekend.
+There are about 12,000 user sessions represented in this spreadsheet: represented as one row for each user session. The first six columns measure the different types of pages users have visited in the session: the `Administrative`, `Informational`, and `ProductRelated` columns measure how many of those types of pages the user visited, and their corresponding `_Duration` columns measure how much time the user spent on any of those pages. The `BounceRates`, `ExitRates`, and `PageValues` columns measure information from Google Analytics about the page the user visited. `SpecialDay` is a value that measures how close the date of the user’s session is to a special day (like Valentine’s Day or Mother’s Day). `Month` is an abbreviation of the month the user visited. `OperatingSystems`, `Browser`, `Region`, and `TrafficType` are all integers describing information about the user themself. `VisitorType` will take on the value `Returning_Visitor` for returning visitors and some other string value for non-returning visitors. `Weekend` is TRUE or FALSE depending on whether or not the user is visiting on a weekend.
 
 Perhaps the most important column, though, is the last one: the Revenue column. This is the column that indicates whether the user ultimately made a purchase or not: TRUE if they did, FALSE if they didn’t. This is the column that we’d like to learn to predict (the “label”), based on the values for all of the other columns (the “evidence”).
 
@@ -32,7 +32,7 @@ The functions load_data, train_model, and evaluate are left blank. That’s wher
 
 Complete the implementation of load_data, train_model, and evaluate in shopping.py.
 
-The load_data function should accept a CSV filename as its argument, open that file, and return a tuple (evidence, labels). evidence should be a list of all of the evidence for each of the data points, and labels should be a list of all of the labels for each data point.
+The `load_data` function should accept a CSV filename as its argument, open that file, and return a tuple (evidence, labels). evidence should be a list of all of the evidence for each of the data points, and labels should be a list of all of the labels for each data point.
 
 Since you’ll have one piece of evidence and one label for each row of the spreadsheet, the length of the evidence list and the length of the labels list should ultimately be equal to the number of rows in the CSV spreadsheet (excluding the header row). The lists should be ordered according to the order the users appear in the spreadsheet. That is to say, evidence[0] should be the evidence for the first user, and labels[0] should be the label for the first user.
 
@@ -50,4 +50,10 @@ Weekend should be 1 if the user visited on a weekend and 0 otherwise.
 Each value of labels should either be the integer 1, if the user did go through with a purchase, or 0 otherwise.
 
 For example, the value of the first evidence list should be [0, 0.0, 0, 0.0, 1, 0.0, 0.2, 0.2, 0.0, 0.0, 1, 1, 1, 1, 1, 1, 0] and the value of the first label should be 0.
+
+The `train_model` function should accept a list of evidence and a list of labels, and return a scikit-learn nearest-neighbor classifier (a k-nearest-neighbor classifier where k = 1) fitted on that training data.
+
+Notice that we’ve already imported for you from sklearn.neighbors import KNeighborsClassifier. You’ll want to use a KNeighborsClassifier in this function.
+
+The `evaluate` function should accept a list of labels (the true labels for the users in the testing set) and a list of predictions (the labels predicted by your classifier), and return two floating-point values (sensitivity, specificity).
 
