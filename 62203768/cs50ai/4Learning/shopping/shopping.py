@@ -65,7 +65,33 @@ def load_data(filename):
         # To load the contents of the csv file in dictionary format, use a DictReader object. Pass the csv resource to the constructor and assign the results to a variable called reader.
         reader = csv.DictReader(csv_file)
         # The DictReader object will read the csv resource and map each row to a dictionary.
+        evidence = []
+        labels = []
+
         for row in reader:
+            admin = row["Administrative"]
+            admin_dur = row["Administrative_Duration"]
+            info = row["Informational"]
+            info_dur = row["Informational_Duration"]
+            prod = row["ProductRelated"]
+            prod_dur = row["ProductRelated_Duration"]
+            bounceR = row["BounceRates"]
+            exitR = row["ExitRates"]
+            pageV = row["PageValues"]
+            specD = row["SpecialDay"]
+            month = row["Month"]
+            operS = row["OperatingSystems"]
+            browser = row["Browser"]
+            region = row["Region"]
+            traffT = row["TrafficType"]
+            visitT = row["VisitorType"]
+            weekend = row["Weekend"]
+
+            if row["Revenue"]:
+                labels.append(1)
+            else:
+                labels.append(0)
+
             print(row["first_name"])
 
 
