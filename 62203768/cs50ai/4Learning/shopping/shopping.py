@@ -69,6 +69,8 @@ def load_data(filename):
         labels = []
 
         for row in reader:
+            data = []
+            
             admin = row["Administrative"]
             admin_dur = row["Administrative_Duration"]
             info = row["Informational"]
@@ -87,15 +89,17 @@ def load_data(filename):
             visitT = row["VisitorType"]
             weekend = row["Weekend"]
 
-            evidence.append([admin, admin_dur, info, info_dur, prod, prod_dur, bounceR, exitR, pageV, specD, month, operS, browser, region, traffT, visitT, weekend])
+            data.append([admin, admin_dur, info, info_dur, prod, prod_dur, bounceR, exitR, pageV, specD, month, operS, browser, region, traffT, visitT, weekend])
+
+            evidence.append(data)
 
             if not row["Revenue"]:
                 labels.append([0])
             else:
                 labels.append([1])
 
-            print(evidence)
-            print(labels)
+        return (evidence, labels)
+
 
 def train_model(evidence, labels):
     """
