@@ -71,7 +71,7 @@ def load_data(filename):
         labels = []
 
         # Sort months into dictionary
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "June",
                   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         month_number = enumerate(months)
         month = {k: v for v, k in month_number}
