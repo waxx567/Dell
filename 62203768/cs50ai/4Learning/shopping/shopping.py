@@ -66,7 +66,7 @@ def load_data(filename):
         reader = csv.DictReader(csv_file)
         # The DictReader object will read the csv resource and map each row to a dictionary.
         for row in reader:
-            print(row)
+            print(row["first_name"])
 
 
 def train_model(evidence, labels):
