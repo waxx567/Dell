@@ -74,8 +74,11 @@ def load_data(filename):
         print(f"Total: {line_count} lines")
     '''
 
-    csv.DictReader
-   
+    with open(filename, newline='') as csv_file:
+        reader = csv.DictReader(csv_file)
+        for row in reader:
+            print(row)
+
 
 def train_model(evidence, labels):
     """
