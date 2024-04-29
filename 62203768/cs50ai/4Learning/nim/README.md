@@ -48,17 +48,17 @@ First, open up `nim.py`. There are two classes defined in this file (`Nim` and `
 
 Take a look at the Nim class, which defines how a Nim game is played. In the `__init__` function, notice that every Nim game needs to keep track of a list of piles, a current player (0 or 1), and the winner of the game (if one exists). The `available_actions` function returns a set of all the available actions in a state. For example, `Nim.available_actions([2, 1, 0, 0])` returns the set `{(0, 1), (1, 1), (0, 2)}`, since the three possible actions are to take either 1 or 2 objects from pile 0, or to take 1 object from pile 1.
 
-The remaining functions are used to define the gameplay: the other_player function determines who the opponent of a given player is, switch_player changes the current player to the opposing player, and move performs an action on the current state and switches the current player to the opposing player.
+The remaining functions are used to define the gameplay: the `other_player` function determines who the opponent of a given player is, `switch_player` changes the current player to the opposing player, and move performs an action on the current state and switches the current player to the opposing player.
 
-Next, take a look at the NimAI class, which defines our AI that will learn to play Nim. Notice that in the __init__ function, we start with an empty self.q dictionary. The self.q dictionary will keep track of all of the current Q-values learned by our AI by mapping (state, action) pairs to a numerical value. As an implementation detail, though we usually represent state as a list, since lists can’t be used as Python dictionary keys, we’ll instead use a tuple version of the state when getting or setting values in self.q.
+Next, take a look at the `NimAI` class, which defines our AI that will learn to play Nim. Notice that in the `__init__` function, we start with an empty `self.q` dictionary. The `self.q` dictionary will keep track of all of the current Q-values learned by our AI by mapping `(state, action)` pairs to a numerical value. As an implementation detail, though we usually represent `state` as a list, since lists can’t be used as Python dictionary keys, we’ll instead use a tuple version of the state when getting or setting values in `self.q`.
 
-For example, if we wanted to set the Q-value of the state [0, 0, 0, 2] and the action (3, 2) to -1, we would write something like
+For example, if we wanted to set the Q-value of the state `[0, 0, 0, 2]` and the action `(3, 2)` to `-1`, we would write something like
 
-self.q[(0, 0, 0, 2), (3, 2)] = -1
+`self.q[(0, 0, 0, 2), (3, 2)] = -1`
 
-Notice, too, that every NimAI object has an alpha and epsilon value that will be used for Q-learning and for action selection, respectively.
+Notice, too, that every `NimAI` object has an `alpha` and `epsilon` value that will be used for Q-learning and for `action` selection, respectively.
 
-The update function is written for you, and takes as input state old_state, an action take in that state action, the resulting state after performing that action new_state, and an immediate reward for taking that action reward. The function then performs Q-learning by first getting the current Q-value for the state and action (by calling get_q_value), determining the best possible future rewards (by calling best_future_reward), and then using both of those values to update the Q-value (by calling update_q_value). Those three functions are left to you to implement.
+The `update` function is written for you, and takes as input state `old_state`, an action take in that state `action`, the resulting state after performing that action `new_state`, and an immediate reward for taking that action `reward`. The function then performs Q-learning by first getting the current Q-value for the state and action (by calling get_q_value), determining the best possible future rewards (by calling best_future_reward), and then using both of those values to update the Q-value (by calling update_q_value). Those three functions are left to you to implement.
 
 Finally, the last function left unimplemented is the choose_action function, which selects an action to take in a given state (either greedily, or using the epsilon-greedy algorithm).
 
