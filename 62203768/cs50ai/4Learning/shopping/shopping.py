@@ -68,28 +68,30 @@ def load_data(filename):
         evidence = []
         labels = []
 
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        month_number = enumerate(months)
+        month = {k: v for v, k in month_number}
+
         for row in reader:
             data = []
-            
-            admin = row["Administrative"]
-            admin_dur = row["Administrative_Duration"]
-            info = row["Informational"]
-            info_dur = row["Informational_Duration"]
-            prod = row["ProductRelated"]
-            prod_dur = row["ProductRelated_Duration"]
-            bounceR = row["BounceRates"]
-            exitR = row["ExitRates"]
-            pageV = row["PageValues"]
-            specD = row["SpecialDay"]
-            month = row["Month"]
-            operS = row["OperatingSystems"]
-            browser = row["Browser"]
-            region = row["Region"]
-            traffT = row["TrafficType"]
-            visitT = row["VisitorType"]
-            weekend = row["Weekend"]
 
-            data.append([admin, admin_dur, info, info_dur, prod, prod_dur, bounceR, exitR, pageV, specD, month, operS, browser, region, traffT, visitT, weekend])
+            data.append(int(row["Administrative"]))
+            data.append(float(row["Administrative_Duration"]))
+            data.append(int(row["Informational"]))
+            data.append(float(row["Informational_Duration"]))
+            data.append(int(row["ProductRelated"]))
+            data.append(float(row["ProductRelated_Duration"]))
+            data.append(float(row["BounceRates"]))
+            data.append(float(row["ExitRates"]))
+            data.append(float(row["PageValues"]))
+            data.append(float(row["SpecialDay"]))
+            data.append(int(month[row["Month"]]))
+            data.append(int(row["OperatingSystems"]))
+            data.append(int(row["Browser"]))
+            data.append(int(row["Region"]))
+            data.append(int(row["TrafficType"]))
+            data.append(int(row["VisitorType"]))        # ????
+            data.append(int(row["Weekend"] == "TRUE"))
 
             evidence.append(data)
 
