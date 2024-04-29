@@ -87,13 +87,18 @@ def load_data(filename):
             visitT = row["VisitorType"]
             weekend = row["Weekend"]
 
-            if row["Revenue"]:
-                labels.append(1)
+            evidence.append([admin, admin_dur, info, info_dur, prod, prod_dur, bounceR, exitR, pageV, specD, month, operS, browser, region, traffT, visitT, weekend])
+
+            if not row["Revenue"]:
+                labels.append([0])
             else:
-                labels.append(0)
+                labels.append([1])
 
-            print(row["first_name"])
-
+            print(evidence[0])
+            print(labels[0])
+            print("XXXXX")
+            print(evidence[1])
+            print(labels[1])
 
 def train_model(evidence, labels):
     """
