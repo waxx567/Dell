@@ -71,7 +71,8 @@ def load_data(filename):
         labels = []
 
         # Sort months into dictionary
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         month_number = enumerate(months)
         month = {k: v for v, k in month_number}
 
@@ -95,7 +96,7 @@ def load_data(filename):
             data.append(int(row["Browser"]))
             data.append(int(row["Region"]))
             data.append(int(row["TrafficType"]))
-            data.append(int(row["VisitorType"]))        # ????
+            data.append(int(row["VisitorType"] == 'Returning_Visitor'))
             data.append(int(row["Weekend"] == "TRUE"))
 
             evidence.append(data)
