@@ -25,7 +25,10 @@ There are about 12,000 user sessions represented in this spreadsheet: represente
 
 Perhaps the most important column, though, is the last one: the `Revenue` column. This is the column that indicates whether the user ultimately made a purchase or not: TRUE if they did, FALSE if they didn’t. This is the column that we’d like to learn to predict (the `“label”`), based on the values for all of the other columns (the `“evidence”`).
 
-Next, take a look at `shopping.py`. The `main` function loads data from a CSV spreadsheet by calling the `load_data` function and splits the data into a training and testing set. The `train_model` function is then called to train a machine learning model on the training data. Then, the model is used to make predictions on the testing data set. Finally, the `evaluate` function determines the sensitivity and specificity of the model, before the results are ultimately printed to the terminal.
+Next, take a look at `shopping.py`. 
+The `main` function loads data from a CSV spreadsheet by calling the `load_data` function and splits the data into a training and testing set. 
+The `train_model` function is then called to train a machine learning model on the training data. Then, the model is used to make predictions on the testing data set. 
+Finally, the `evaluate` function determines the sensitivity and specificity of the model, before the results are ultimately printed to the terminal.
 
 The functions load_data, train_model, and evaluate are left blank. That’s where you come in!
 
