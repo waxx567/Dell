@@ -1,4 +1,4 @@
-https://cs50.harvard.edu/ai/2024/projects/4/shopping/
+`https://cs50.harvard.edu/ai/2024/projects/4/shopping/`
 
 # Background
 
