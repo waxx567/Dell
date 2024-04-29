@@ -11,7 +11,7 @@ I had been studying web development and adjacent technologies for some years. Ha
 
 #### Main folders in the Codespace:
 
-**apps** projects
+**apps** projects 
 **cs50ai** Introduction to Artificial Intelligence with Python
 **cs50p** Introduction to Programming with Python **COMPLETED**
 **cs50x** Introduction to Computer Science **COMPLETED**
