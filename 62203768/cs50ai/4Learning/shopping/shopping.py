@@ -137,15 +137,23 @@ def evaluate(labels, predictions):
     """
     negative = 0
     true_neg = 0
+    positive = 0
+    true_pos = 0
 
     for i in range(len(labels)):
         if labels[i] == 0:
+            negative += 1
             if labels[i] == predictions[i]:
                 true_neg += 1
-            else:
-                negative += 1
         else:
-            
+            positive += 1
+            if labels[i] == predictions[i]:
+                true_pos += 1
+
+    sensitivity = true_pos / positive
+    specificity = true_neg / negative
+
+    return sensitivity, specificity
 
 
 if __name__ == "__main__":
