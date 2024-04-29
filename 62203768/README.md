@@ -1,4 +1,5 @@
-# Computer Science workspace for Wayne McRae - Johannesburg, South Africa
+# Computer Science studies workspace 
+Wayne McRae - Johannesburg, South Africa
 
 ## Description:
 
