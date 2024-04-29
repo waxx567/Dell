@@ -65,14 +65,19 @@ def load_data(filename):
         # To load the contents of the csv file in dictionary format, use a DictReader object. Pass the csv resource to the constructor and assign the results to a variable called reader.
         reader = csv.DictReader(csv_file)
         # The DictReader object will read the csv resource and map each row to a dictionary.
+
+        # Initiate lists to hold data
         evidence = []
         labels = []
 
+        # Sort months into dictionary
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         month_number = enumerate(months)
         month = {k: v for v, k in month_number}
 
+        # Loop over data and add to evidence and labels lists
         for row in reader:
+            # evidence
             data = []
 
             data.append(int(row["Administrative"]))
@@ -95,6 +100,7 @@ def load_data(filename):
 
             evidence.append(data)
 
+            # labels
             if not row["Revenue"]:
                 labels.append([0])
             else:
