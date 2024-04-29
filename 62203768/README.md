@@ -7,7 +7,7 @@ Wayne McRae - Johannesburg, South Africa
 
 ### Overview:
 
-I have been studying web development and adjacent technologies for about 5 years. Having built a portfolio that shows off my skills, I decided to enhance my curriculum vitae by adding some certification.
+I had been studying web development and adjacent technologies for some years. Having built a portfolio to showcase my skills, I decided to enhance my curriculum vitae by adding some certification.
 
 #### Main folders in the Codespace:
 
