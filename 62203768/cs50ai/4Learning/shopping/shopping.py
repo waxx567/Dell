@@ -59,6 +59,8 @@ def load_data(filename):
     labels should be the corresponding list of labels, where each label
     is 1 if Revenue is true, and 0 otherwise.
     """
+
+    '''
     with open(filename) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
@@ -70,8 +72,10 @@ def load_data(filename):
                 line_count += 1
 
         print(f"Total: {line_count} lines")
+    '''
 
-
+    csv.DictReader
+   
 
 def train_model(evidence, labels):
     """
