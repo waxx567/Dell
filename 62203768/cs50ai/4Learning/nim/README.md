@@ -40,11 +40,11 @@ In the above formula, alpha is the learning rate (how much we value new informat
 
 **Getting Started**
 
-Download the distribution code from https://cdn.cs50.net/ai/2023/x/projects/4/nim.zip and unzip it.
+Download the distribution code from [zip](https://cdn.cs50.net/ai/2023/x/projects/4/nim.zip) and unzip it.
 
 **Understanding**
 
-First, open up nim.py. There are two classes defined in this file (Nim and NimAI) along with two functions (train and play). Nim, train, and play have already been implemented for you, while NimAI leaves a few functions left for you to implement.
+First, open up `nim.py`. There are two classes defined in this file (Nim and NimAI) along with two functions (train and play). Nim, train, and play have already been implemented for you, while NimAI leaves a few functions left for you to implement.
 
 Take a look at the Nim class, which defines how a Nim game is played. In the __init__ function, notice that every Nim game needs to keep track of a list of piles, a current player (0 or 1), and the winner of the game (if one exists). The available_actions function returns a set of all the available actions in a state. For example, Nim.available_actions([2, 1, 0, 0]) returns the set {(0, 1), (1, 1), (0, 2)}, since the three possible actions are to take either 1 or 2 objects from pile 0, or to take 1 object from pile 1.
 
