@@ -58,11 +58,11 @@ For example, if we wanted to set the Q-value of the state `[0, 0, 0, 2]` and the
 
 Notice, too, that every `NimAI` object has an `alpha` and `epsilon` value that will be used for Q-learning and for `action` selection, respectively.
 
-The `update` function is written for you, and takes as input state `old_state`, an action take in that state `action`, the resulting state after performing that action `new_state`, and an immediate reward for taking that action `reward`. The function then performs Q-learning by first getting the current Q-value for the state and action (by calling get_q_value), determining the best possible future rewards (by calling best_future_reward), and then using both of those values to update the Q-value (by calling update_q_value). Those three functions are left to you to implement.
+The `update` function is written for you, and takes as input state `old_state`, an action take in that state `action`, the resulting state after performing that action `new_state`, and an immediate reward for taking that action `reward`. The function then performs Q-learning by first getting the current Q-value for the state and action (by calling `get_q_value`), determining the best possible future rewards (by calling `best_future_reward`), and then using both of those values to update the Q-value (by calling `update_q_value`). Those three functions are left to you to implement.
 
-Finally, the last function left unimplemented is the choose_action function, which selects an action to take in a given state (either greedily, or using the epsilon-greedy algorithm).
+Finally, the last function left unimplemented is the `choose_action` function, which selects an action to take in a given state (either greedily, or using the epsilon-greedy algorithm).
 
-The Nim and NimAI classes are ultimately used in the train and play functions. The train function trains an AI by running n simulated games against itself, returning the fully trained AI. The play function accepts a trained AI as input, and lets a human player play a game of Nim against the AI.
+The `Nim` and `NimAI` classes are ultimately used in the `train` and `play` functions. The `train` function trains an AI by running `n` simulated games against itself, returning the fully trained AI. The `play` function accepts a trained AI as input, and lets a human player play a game of Nim against the AI.
 
 **Specification**
 
