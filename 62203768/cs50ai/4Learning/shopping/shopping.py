@@ -60,8 +60,11 @@ def load_data(filename):
     is 1 if Revenue is true, and 0 otherwise.
     """
 
+    # Passes path to file as a string, empty string as newline to handle empty rows, as keyword gives csv resource a name
     with open(filename, newline='') as csv_file:
+        # To load the contents of the csv file in dictionary format, use a DictReader object. Pass the csv resource to the constructor and assign the results to a variable called reader.
         reader = csv.DictReader(csv_file)
+        # The DictReader object will read the csv resource and map each row to a dictionary.
         for row in reader:
             print(row)
 
