@@ -135,13 +135,17 @@ def evaluate(labels, predictions):
     representing the "true negative rate": the proportion of
     actual negative labels that were accurately identified.
     """
-    negative =
+    negative = 0
+    true_neg = 0
+
     for i in range(len(labels)):
         if labels[i] == 0:
             if labels[i] == predictions[i]:
-                # count
+                true_neg += 1
             else:
-                # list
+                negative += 1
+        else:
+            
 
 
 if __name__ == "__main__":
