@@ -94,11 +94,8 @@ def load_data(filename):
             else:
                 labels.append([1])
 
-            print(evidence[0])
-            print(labels[0])
-            print("XXXXX")
-            print(evidence[1])
-            print(labels[1])
+            print(evidence)
+            print(labels)
 
 def train_model(evidence, labels):
     """
