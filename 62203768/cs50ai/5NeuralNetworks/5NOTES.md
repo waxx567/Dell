@@ -92,7 +92,20 @@ But in general, with functions like predicting sales or predicting whether or no
 
 And it turns out that the strategy for doing this, inspired by the domain of calculus, is a technique called 
 ## gradient descent. 
-`algorithm for minimizing loss when training neural network`
+`algorithm for minimizing loss when training neural network` 
+
+**Gradient Descent**
+
+    Gradient descent is an algorithm for minimizing loss when training neural networks. As was mentioned earlier, a neural network is capable of inferring knowledge about the structure of the network itself from the data. Whereas, so   far, we defined the different weights, neural networks allow us to compute these weights based on the training data. To do this, we use the gradient descent algorithm, which works the following way:
+        Start with a random choice of weights. This is our naive starting place, where we don’t know how much we should weight each input.
+        Repeat:
+            Calculate the gradient based on all data points that will lead to decreasing loss. Ultimately, the gradient is a vector (a sequence of numbers).
+            Update weights according to the gradient.
+
+    The problem with this kind of algorithm is that it requires to calculate the gradient based on all data points, which is computationally costly. There are a multiple ways to minimize this cost. For example, in Stochastic Gradient Descent, the gradient is calculated based on one point chosen at random. This kind of gradient can be quite inaccurate, leading to the Mini-Batch Gradient Descent algorithm, which computes the gradient based on on a few points selected at random, thus finding a compromise between computation cost and accuracy. As often is the case, none of these solutions is perfect, and different solutions might be employed in different situations.
+
+    Using gradient descent, it is possible to find answers to many problems. For example, we might want to know more than “will it rain today?” We can use some inputs to generate probabilities for different kinds of weather, and then just choose the weather that is most probable.
+
 And what gradient descent is, it is an algorithm for minimizing loss when you're training a neural network. And recall that loss refers to how bad our hypothesis function happens to be, that we can define certain loss functions, and we saw some examples of loss functions last time that just give us a number for any particular hypothesis, saying how poorly does it model the data? How many examples does it get wrong? How are they worse or less bad as compared to other hypothesis functions that we might define? And this loss function is just a mathematical function, and when you have a mathematical function, in calculus, what you could do is calculate something known as the gradient, which you can think of is like a slope. It's the direction the loss function is moving at any particular point. And what it's going to tell us is in which direction should we be moving these weights in order to minimize the amount of loss? 
 `16:59`
 
