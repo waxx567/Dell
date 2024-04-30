@@ -14,7 +14,8 @@ And so the question then became, could we take this biological idea of how it is
 `Allows for learning the network's parameters based on data.`
 or an ANN, which will be a mathematical model for learning that is inspired by these biological neural networks? 
 
-**Neural Networks** [Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
+**Neural Networks** 
+[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
     AI neural networks are inspired by neuroscience. In the brain, neurons are cells that are connected to each other, forming networks. Each neuron is capable of both receiving and sending electrical signals. Once the electrical input that a neuron receives crosses some threshold, the neuron activates, thus sending its electrical signal forward.
 
@@ -40,24 +41,31 @@ So what's going on here is that x1 and x2-- those are input variables-- the inpu
 So in effect, what we've done here is that in order to define a hypothesis function, we just need to decide and figure out what these weights should be, to determine what values to multiply by our inputs to get some sort of result. Of course, at the end of this, what we need to do is make some sort of classification like raining or not raining, and to do that, we use some sort of function to define some sort of threshold. 
 
 `5:41`
-And so we saw, for instance, the `step function`, which is defined as 1 if the result of multiplying the weights by the inputs is at least 0; otherwise as 0. You can think of this line down the middle-- it's kind of like a dotted line. Effectively, it stays at 0 all the way up to one point, and then the function steps-- or jumps up-- to 1. So it's zero before it reaches some threshold, and then it's 1 after it reaches a particular threshold. And so this was one way we could define what we'll come to call an "activation function," a function that determines when it is that this output becomes active-- changes to a 1 instead of being a 0. 
+And so we saw, for instance, the 
+`step function`, 
+[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
+which is defined as 1 if the result of multiplying the weights by the inputs is at least 0; otherwise as 0. You can think of this line down the middle-- it's kind of like a dotted line. Effectively, it stays at 0 all the way up to one point, and then the function steps-- or jumps up-- to 1. So it's zero before it reaches some threshold, and then it's 1 after it reaches a particular threshold. And so this was one way we could define what we'll come to call an "activation function," a function that determines when it is that this output becomes active-- changes to a 1 instead of being a 0. 
 
 But we also saw that if we didn't just want a purely binary classification, if we didn't want purely 1 or 0, but we wanted to allow for some in-between real number values, we could use a different function. And there are a number of choices, but the one that we looked at was the logistic sigmoid function that has sort of an S-shaped curve, where we could represent this as a `probability`-- that may be somewhere in between the probability of rain of something like 0.5, and maybe a little bit later the probability of rain is 0.8-- and so rather than just have a binary classification of 0 or 1, we can allow for numbers that are in between as well. 
 
-And it turns out there are many other different types of `activation functions` [Notes](https://cs50.harvard.edu/ai/2024/notes/5/), where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the `rectified linear unit`, otherwise known `ReLU`, and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
+And it turns out there are many other different types of 
+`activation functions` 
+[Notes](https://cs50.harvard.edu/ai/2024/notes/5/), where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the 
+`rectified linear unit, otherwise known ReLU`,
+ and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
 `7:20`
 
 But in short, each of these activation functions, you can just think of as a function that gets applied to the result of all of this computation. We take some function g and apply it to the result of all of that calculation `7:33`. And this then is what we saw last time-- the way of defining some hypothesis function that takes on inputs, calculates some linear combination of those inputs, and then passes it through some sort of activation function to get our output. 
 
 And this actually turns out to be the model for the simplest of neural networks, that we're going to instead represent this mathematical idea graphically, by using a structure like this. Here then is a neural network that has two inputs. We can think of this as x1 and this as x2. And then one output, which you can think of classifying whether or not we think it's going to rain or not rain, for example, in this particular instance. 
 
-And so how exactly does this model work? Well, each of these two inputs represents one of our input variables-- x1 and x2. And notice that these inputs are connected to this output via these edges, which are going to be defined by their weights. So these edges each have a weight associated with them-- weight 1 and weight 2-- and then this output unit, what it's going to do is it is going to calculate an output based on those inputs and based on those weights. This output unit is going to multiply all the inputs by their weights, add in this bias term, which you can think of as an extra w0 term that gets added into it, and then we pass it through an activation function. 
+And so `how exactly does this model work?` Well, each of these two inputs represents one of our input variables-- x1 and x2. And notice that these inputs are connected to this output via these edges, which are going to be defined by their weights. So these edges each have a weight associated with them-- weight 1 and weight 2-- and then this output unit, what it's going to do is it is going to calculate an output based on those inputs and based on those weights. This output unit is going to multiply all the inputs by their weights, add in this bias term, which you can think of as an extra w0 term that gets added into it, and then we pass it through an activation function. 
 
 So this then is just a graphical way of representing the same idea we saw last time, just mathematically. And we're going to call this `a very simple neural network` `8:58`. And we'd like for this neural network to be able to learn how to calculate some function, that we want some function for the neural network to learn, and the neural network is going to learn what should the values of w0, w1, and w2 be. What should the activation function be in order to get the result that we would expect? 
 
 So we can actually take a look at an example of this. What then is a very simple function that we might calculate? Well, if we recall back from when we were looking at propositional logic, one of the simplest functions we looked at was something like the `or function`, that takes two inputs-- `9:29` x and y-- and outputs 1, otherwise known as true, if either one of the inputs, or both of them, are 1, and outputs a 0 if both of the inputs are 0, or false. So this then is the or function. And this was the truth table for the or function-- that as long as either of the inputs are 1, the output of the function is 1, and the only case where the output of 0 is where both of the inputs are 0. 
 
-So the question is, how could we take this and train a neural network to be able to learn this particular function? What would those weights look like? Well, we could do something like this. Here's our neural network, and I'll propose that in order to calculate the or function, we're going to use a value of 1 for each of the weights, and we'll use a bias of negative 1, and then we'll just use this step function as our activation function. 
+So the question is, how could we take this and train a neural network to be able to learn this particular function? What would those weights look like? Well, we could do something like this. Here's our neural network, and I'll propose that in order to calculate the or function, we're going to use a value of 1 for each of the weights, and we'll use a bias of negative 1, and then we'll just `use this step function as our activation function`. 
 `10:17`
 
 How then does this work? Well, if I wanted to calculate something like 0 or 0, which we know to be 0, because false or false is false, then what are we going to do? Well, our output unit is going to calculate this input multiplied by the weight. 0 times 1, that's 0. Same thing here. 0 times 1, that's 0. And we'll add to that the bias, minus 1. So that'll give us some result of negative 1. If we plot that on our activation function-- negative 1 is here-- it's before the threshold, which means either 0 or 1. It's only 1 after the threshold. Since negative 1 is before the threshold, the output that this unit provides it is going to be 0. And that's what we would expect it to be, that 0 or 0 should be 0. 
@@ -89,7 +97,6 @@ And it turns out that in some problems, we're not just going to have two inputs,
 And so this allows us to be able to represent problems that have even more inputs, just by growing the size of our neural network. Now, the next question we might ask is a question about how it is that we train these internal networks? In the case of the or function and the and function, they were simple enough functions that I could just tell you like here what the weights should be, and you could probably reason through it yourself what the weights should be in order to calculate the output that you want. 
 
 But in general, with functions like predicting sales or predicting whether or not it's going to rain, these are much trickier functions to be able to figure out. We would like the computer to have some mechanism of calculating what it is that the weights should be-- how it is to set the weights-- so that our neural network is able to accurately model the function that we care about trying to estimate. 
-`16:02`
 
 And it turns out that the strategy for doing this, inspired by the domain of calculus, is a technique called 
 ## gradient descent. 
@@ -107,6 +114,7 @@ And it turns out that the strategy for doing this, inspired by the domain of cal
 
     Using gradient descent, it is possible to find answers to many problems. For example, we might want to know more than “will it rain today?” We can use some inputs to generate probabilities for different kinds of weather, and then just choose the weather that is most probable.
 
+`16:07`
 And what gradient descent is, it is an algorithm for minimizing loss when you're training a neural network. And recall that loss refers to how bad our hypothesis function happens to be, that we can define certain loss functions, and we saw some examples of loss functions last time that just give us a number for any particular hypothesis, saying how poorly does it model the data? How many examples does it get wrong? How are they worse or less bad as compared to other hypothesis functions that we might define? And this loss function is just a mathematical function, and when you have a mathematical function, in calculus, what you could do is calculate something known as the gradient, which you can think of is like a slope. It's the direction the loss function is moving at any particular point. And what it's going to tell us is in which direction should we be moving these weights in order to minimize the amount of loss? 
 `16:59`
 
