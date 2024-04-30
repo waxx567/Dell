@@ -1,6 +1,5 @@
-
 # Notes on Lecture 4: Learning
-`https://cs50.harvard.edu/ai/2024/weeks/4/`
+[Link](https://cs50.harvard.edu/ai/2024/weeks/4/)
 
 BRIAN YU: All right, welcome back, everyone,
 to an introduction to Artificial Intelligence with Python.
