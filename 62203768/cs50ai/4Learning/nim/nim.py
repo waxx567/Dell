@@ -126,6 +126,7 @@ class NimAI():
 
         # Q(s, a) <- old value estimate + alpha * (new value estimate - old value estimate)
         new_q = old_q + self.alpha + ((reward + future_rewards) - old_q)
+
         self.q[key] = new_q
         
 
@@ -139,7 +140,15 @@ class NimAI():
         Q-value in `self.q`. If there are no available actions in
         `state`, return 0.
         """
-        raise NotImplementedError
+        possibles = Nim.available_actions(state)
+
+        if not possibles:
+            return 0
+        
+        max_val = -float("inf")
+
+        for possible in possibles:
+            q_val = self.get_q_value(state, action) 
 
     def choose_action(self, state, epsilon=True):
         """
