@@ -125,7 +125,8 @@ class NimAI():
         key = (tuple(state), action)
 
         # Q(s, a) <- old value estimate + alpha * (new value estimate - old value estimate)
-        
+        new_q = old_q + self.alpha + ((reward + future_rewards) - old_q)
+        self.q[key] = new_q
         
 
     def best_future_reward(self, state):
