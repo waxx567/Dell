@@ -174,8 +174,8 @@ class NimAI():
 
         if not possible_actions:
             return None 
-        
-                
+
+        if epsilon and 
 
 
 def train(n):
