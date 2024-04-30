@@ -82,6 +82,7 @@ class NimAI():
          - `state` is a tuple of remaining piles, e.g. (1, 1, 4, 4)
          - `action` is a tuple `(i, j)` for an action
         """
+        # Explore vs Exploit
         self.q = dict()
         self.alpha = alpha
         self.epsilon = epsilon
@@ -101,10 +102,8 @@ class NimAI():
         Return the Q-value for the state `state` and the action `action`.
         If no Q-value exists yet in `self.q`, return 0.
         """
-        # The `get_q_value` function should accept as input a `state` and `action` and return the corresponding Q-value for that state/action pair.
-        # Recall that Q-values are stored in the dictionary `self.q`. The keys of `self.q` should be in the form of `(state, action)` pairs, where `state` is a tuple of all piles sizes in order, and `action` is a tuple `(i, j)` representing a pile and a number.
-        # If no Q-value for the state/action pair exists in `self.q`, then the function should return `0`.
-        
+        key = tuple(state, action)
+        return self.q.get(key)
 
 
     def update_q_value(self, state, action, old_q, reward, future_rewards):
