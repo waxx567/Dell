@@ -138,6 +138,7 @@ class NimAI():
         Q-value in `self.q`. If there are no available actions in
         `state`, return 0.
         """
+        # Get available actions for state
         actions = Nim.available_actions(state)
 
         if not actions:
@@ -170,13 +171,30 @@ class NimAI():
         If multiple actions have the same Q-value, any of those
         options is an acceptable return value.
         """
+        # Get available actions for state
         actions = Nim.available_actions(state)
 
         if not actions:
             return None 
 
+        # Return the probability of a random move if using epsilon-greedy
         if epsilon and random.uniform() <= self.epsilon:
             return random.choice(list(actions))
+        
+        # Assign variables 
+        highest = None
+        highest_value = None 
+
+        for action in actions:
+            action_value = self.q.get((tuple(state), action))
+
+            action_value = action_value if action_value else 0
+
+            if highest_value == None or action_value > highest_value:
+                highest_value = action_value
+                highest = action
+        
+        return highest
 
 
 def train(n):
