@@ -161,7 +161,7 @@ class NimAI():
         Given a state `state`, return an action `(i, j)` to take.
 
         If `epsilon` is `False`, then return the best action
-        available in the state (the one with the highest Q-value,
+        available in the state (the one with the best_action Q-value,
         using 0 for pairs that have no Q-values).
 
         If `epsilon` is `True`, then with probability
@@ -182,19 +182,21 @@ class NimAI():
             return random.choice(list(actions))
         
         # Assign variables 
-        highest = None
-        highest_value = None 
+        best_action = None
+        best_value = None 
 
         for action in actions:
             action_value = self.q.get((tuple(state), action))
 
+            # If there is an action but no value, set the value to 0
             action_value = action_value if action_value else 0
 
-            if highest_value == None or action_value > highest_value:
-                highest_value = action_value
-                highest = action
+            # Set best value and best action
+            if best_value == None or action_value > best_value:
+                best_value = action_value
+                best_action = action
         
-        return highest
+        return best_action
 
 
 def train(n):
