@@ -145,10 +145,15 @@ class NimAI():
         if not possibles:
             return 0
         
-        max_val = -float("inf")
+        max_value = -float("inf")
 
         for possible in possibles:
-            q_val = self.get_q_value(state, action) 
+            q_value = self.get_q_value(state, possible) 
+
+            if q_value > max_value:
+                max_value = q_value
+
+        return max_value
 
     def choose_action(self, state, epsilon=True):
         """
