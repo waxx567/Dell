@@ -127,7 +127,7 @@ class NimAI():
         new_q = old_q + self.alpha + ((reward + future_rewards) - old_q)
 
         self.q[key] = new_q
-        
+
     def best_future_reward(self, state):
         """
         Given a state `state`, consider all possible `(state, action)`
@@ -143,13 +143,13 @@ class NimAI():
 
         if not actions:
             return 0
-        
+
         # Set maximum value very low
         max_value = -float("inf")
 
         # Assign possible q value to maximumum value
         for action in actions:
-            q_value = self.get_q_value(state, action) 
+            q_value = self.get_q_value(state, action)
 
             if q_value > max_value:
                 max_value = q_value
@@ -175,15 +175,15 @@ class NimAI():
         actions = Nim.available_actions(state)
 
         if not actions:
-            return None 
+            return None
 
         # Return the probability of a random move if using epsilon-greedy
-        if epsilon and random.uniform() <= self.epsilon:
+        if epsilon and random.uniform(0, 1) < self.epsilon:
             return random.choice(list(actions))
-        
-        # Assign variables 
+
+        # Assign variables
         best_action = None
-        best_value = None 
+        best_value = None
 
         for action in actions:
             action_value = self.q.get((tuple(state), action))
@@ -195,7 +195,7 @@ class NimAI():
             if best_value == None or action_value > best_value:
                 best_value = action_value
                 best_action = action
-        
+
         return best_action
 
 
