@@ -106,7 +106,6 @@ class NimAI():
 
         return self.q.get(key, 0)
 
-
     def update_q_value(self, state, action, old_q, reward, future_rewards):
         """
         Update the Q-value for the state `state` and the action `action`
@@ -129,7 +128,6 @@ class NimAI():
 
         self.q[key] = new_q
         
-
     def best_future_reward(self, state):
         """
         Given a state `state`, consider all possible `(state, action)`
@@ -140,15 +138,17 @@ class NimAI():
         Q-value in `self.q`. If there are no available actions in
         `state`, return 0.
         """
-        possibles = Nim.available_actions(state)
+        possible_actions = Nim.available_actions(state)
 
-        if not possibles:
+        if not possible_actions:
             return 0
         
+        # Set maximum value very low
         max_value = -float("inf")
 
-        for possible in possibles:
-            q_value = self.get_q_value(state, possible) 
+        # Assign possible q value to maximumum value
+        for action in possible_actions:
+            q_value = self.get_q_value(state, action) 
 
             if q_value > max_value:
                 max_value = q_value
@@ -170,7 +170,12 @@ class NimAI():
         If multiple actions have the same Q-value, any of those
         options is an acceptable return value.
         """
-        raise NotImplementedError
+        possible_actions = Nim.available_actions(state)
+
+        if not possible_actions:
+            return None 
+        
+                
 
 
 def train(n):
