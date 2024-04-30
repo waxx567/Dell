@@ -6,6 +6,14 @@ SPEAKER 1: All right. Welcome back, everyone, to an introduction to Artificial I
 
 Today, we transition to one of the most popular techniques and tools within machine learning that of neural networks. And neural networks were inspired as early as the 1940s by researchers who were thinking about how it is that humans learn, studying neuroscience and the human brain, and trying to see whether or not we can apply those same ideas to computers as well, and model computer learning off of human learning. 
 
+**Neural Networks**
+
+    AI neural networks are inspired by neuroscience. In the brain, neurons are cells that are connected to each other, forming networks. Each neuron is capable of both receiving and sending electrical signals. Once the electrical input that a neuron receives crosses some threshold, the neuron activates, thus sending its electrical signal forward.
+
+    An Artificial Neural Network is a mathematical model for learning inspired by biological neural networks. Artificial neural networks model mathematical functions that map inputs to outputs based on the structure and parameters of the network. In artificial neural networks, the structure of the network is shaped through training on data.
+
+    When implemented in AI, the parallel of each neuron is a unit that’s connected to other units. For example, like in the last lecture, the AI might map two inputs, x₁ and x₂, to whether it is going to rain today or not. Last lecture, we suggested the following form for this hypothesis function: h(x₁, x₂) = w₀ + w₁x₁ + w₂x₂, where w₁ and w₂ are weights that modify the inputs, and w₀ is a constant, also called bias, modifying the value of the whole expression.
+
 So how is the brain structured? Well, very simply put, the brain consists of a whole bunch of neurons, and those neurons are connected to one another and communicate with one another in some way. In particular, if you think about the structure of a biological neural network-- something like this-- there are a couple of key properties that scientists observed. One was that these neurons are connected to each other and receive electrical signals from one another, that one neuron can propagate electrical signals to another neuron. And another point is that neurons process those input signals, and then can be activated, that a neuron becomes activated at a certain point, and then can propagate further signals onto neurons in the future. 
 
 And so the question then became, could we take this biological idea of how it is that humans learn-- with brains and with neurons-- and apply that to a machine as well, in effect, designing an 
