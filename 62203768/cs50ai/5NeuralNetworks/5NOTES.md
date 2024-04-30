@@ -1,18 +1,9 @@
 # Notes on Lecture 5: Neural Networks
-[Lecture](https://cs50.harvard.edu/ai/2024/weeks/5/)
-[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
+[Lecture](https://cs50.harvard.edu/ai/2024/weeks/5/)[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
 SPEAKER 1: All right. Welcome back, everyone, to an introduction to Artificial Intelligence with Python. Now last time, we took a look at machine learning-- a set of techniques that computers can use in order to take a set of data and learn some patterns inside of that data, learn how to perform a task, even if we, the programmers, didn't give the computer explicit instructions for how to perform that task. 
 
 Today, we transition to one of the most popular techniques and tools within machine learning that of neural networks. And neural networks were inspired as early as the 1940s by researchers who were thinking about how it is that humans learn, studying neuroscience and the human brain, and trying to see whether or not we can apply those same ideas to computers as well, and model computer learning off of human learning. 
-
-**Neural Networks**
-
-    AI neural networks are inspired by neuroscience. In the brain, neurons are cells that are connected to each other, forming networks. Each neuron is capable of both receiving and sending electrical signals. Once the electrical input that a neuron receives crosses some threshold, the neuron activates, thus sending its electrical signal forward.
-
-    An Artificial Neural Network is a mathematical model for learning inspired by biological neural networks. Artificial neural networks model mathematical functions that map inputs to outputs based on the structure and parameters of the network. In artificial neural networks, the structure of the network is shaped through training on data.
-
-    When implemented in AI, the parallel of each neuron is a unit that’s connected to other units. For example, like in the last lecture, the AI might map two inputs, x₁ and x₂, to whether it is going to rain today or not. Last lecture, we suggested the following form for this hypothesis function: h(x₁, x₂) = w₀ + w₁x₁ + w₂x₂, where w₁ and w₂ are weights that modify the inputs, and w₀ is a constant, also called bias, modifying the value of the whole expression.
 
 So how is the brain structured? Well, very simply put, the brain consists of a whole bunch of neurons, and those neurons are connected to one another and communicate with one another in some way. In particular, if you think about the structure of a biological neural network-- something like this-- there are a couple of key properties that scientists observed. One was that these neurons are connected to each other and receive electrical signals from one another, that one neuron can propagate electrical signals to another neuron. And another point is that neurons process those input signals, and then can be activated, that a neuron becomes activated at a certain point, and then can propagate further signals onto neurons in the future. 
 
@@ -22,6 +13,14 @@ And so the question then became, could we take this biological idea of how it is
 `Model mathematical funcion from inputs to outputs based on the structure and parameters of the network.`
 `Allows for learning the network's parameters based on data.`
 or an ANN, which will be a mathematical model for learning that is inspired by these biological neural networks? 
+
+**Neural Networks** [Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
+
+    AI neural networks are inspired by neuroscience. In the brain, neurons are cells that are connected to each other, forming networks. Each neuron is capable of both receiving and sending electrical signals. Once the electrical input that a neuron receives crosses some threshold, the neuron activates, thus sending its electrical signal forward.
+
+    An Artificial Neural Network is a mathematical model for learning inspired by biological neural networks. Artificial neural networks model mathematical functions that map inputs to outputs based on the structure and parameters of the network. In artificial neural networks, the structure of the network is shaped through training on data.
+
+    When implemented in AI, the parallel of each neuron is a unit that’s connected to other units. For example, like in the last lecture, the AI might map two inputs, x₁ and x₂, to whether it is going to rain today or not. Last lecture, we suggested the following form for this hypothesis function: h(x₁, x₂) = w₀ + w₁x₁ + w₂x₂, where w₁ and w₂ are weights that modify the inputs, and w₀ is a constant, also called bias, modifying the value of the whole expression.
 
 And what artificial neural networks will allow us to do is they will first be able to model some sort of mathematical function. Every time you look at a neural network, which we'll see more of later today, each one of them is really just some mathematical function that is mapping certain inputs to particular outputs, based on the structure of the network, that depending on where we place particular units inside of this neural network, that's going to determine how it is that the network is going to function. And in particular, artificial neural networks are going to lend themselves to a way that we can learn what the network's parameters should be. We'll see more on that in just a moment. But in effect we want to model, such that it is easy for us to be able to write some code that allows for the network to be able to figure out how to model the right mathematical function, given a particular set of input data. 
 
@@ -45,7 +44,7 @@ And so we saw, for instance, the `step function`, which is defined as 1 if the r
 
 But we also saw that if we didn't just want a purely binary classification, if we didn't want purely 1 or 0, but we wanted to allow for some in-between real number values, we could use a different function. And there are a number of choices, but the one that we looked at was the logistic sigmoid function that has sort of an S-shaped curve, where we could represent this as a `probability`-- that may be somewhere in between the probability of rain of something like 0.5, and maybe a little bit later the probability of rain is 0.8-- and so rather than just have a binary classification of 0 or 1, we can allow for numbers that are in between as well. 
 
-And it turns out there are many other different types of `activation functions`, where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the `rectified linear unit`, otherwise known `ReLU`, and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
+And it turns out there are many other different types of `activation functions` [Notes](https://cs50.harvard.edu/ai/2024/notes/5/), where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the `rectified linear unit`, otherwise known `ReLU`, and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
 `7:20`
 
 But in short, each of these activation functions, you can just think of as a function that gets applied to the result of all of this computation. We take some function g and apply it to the result of all of that calculation `7:33`. And this then is what we saw last time-- the way of defining some hypothesis function that takes on inputs, calculates some linear combination of those inputs, and then passes it through some sort of activation function to get our output. 
