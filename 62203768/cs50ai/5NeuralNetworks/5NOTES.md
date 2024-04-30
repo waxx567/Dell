@@ -1,5 +1,6 @@
 # Notes on Lecture 5: Neural Networks
-[Link](https://cs50.harvard.edu/ai/2024/weeks/5/)
+[Lecture](https://cs50.harvard.edu/ai/2024/weeks/5/)
+[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
 SPEAKER 1: All right. Welcome back, everyone, to an introduction to Artificial Intelligence with Python. Now last time, we took a look at machine learning-- a set of techniques that computers can use in order to take a set of data and learn some patterns inside of that data, learn how to perform a task, even if we, the programmers, didn't give the computer explicit instructions for how to perform that task. 
 
