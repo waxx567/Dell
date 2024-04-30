@@ -138,16 +138,16 @@ class NimAI():
         Q-value in `self.q`. If there are no available actions in
         `state`, return 0.
         """
-        possible_actions = Nim.available_actions(state)
+        actions = Nim.available_actions(state)
 
-        if not possible_actions:
+        if not actions:
             return 0
         
         # Set maximum value very low
         max_value = -float("inf")
 
         # Assign possible q value to maximumum value
-        for action in possible_actions:
+        for action in actions:
             q_value = self.get_q_value(state, action) 
 
             if q_value > max_value:
@@ -170,12 +170,13 @@ class NimAI():
         If multiple actions have the same Q-value, any of those
         options is an acceptable return value.
         """
-        possible_actions = Nim.available_actions(state)
+        actions = Nim.available_actions(state)
 
-        if not possible_actions:
+        if not actions:
             return None 
 
-        if epsilon and 
+        if epsilon and random.uniform() <= self.epsilon:
+            return random.choice(list(actions))
 
 
 def train(n):
