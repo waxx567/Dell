@@ -1,5 +1,6 @@
 # Notes on Lecture 5: Neural Networks
-[Lecture](https://cs50.harvard.edu/ai/2024/weeks/5/)[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
+[Lecture](https://cs50.harvard.edu/ai/2024/weeks/5/)
+[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
 SPEAKER 1: All right. Welcome back, everyone, to an introduction to Artificial Intelligence with Python. Now last time, we took a look at machine learning-- a set of techniques that computers can use in order to take a set of data and learn some patterns inside of that data, learn how to perform a task, even if we, the programmers, didn't give the computer explicit instructions for how to perform that task. 
 
@@ -15,7 +16,6 @@ And so the question then became, could we take this biological idea of how it is
 or an ANN, which will be a mathematical model for learning that is inspired by these biological neural networks? 
 
 **Neural Networks** 
-[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
     AI neural networks are inspired by neuroscience. In the brain, neurons are cells that are connected to each other, forming networks. Each neuron is capable of both receiving and sending electrical signals. Once the electrical input that a neuron receives crosses some threshold, the neuron activates, thus sending its electrical signal forward.
 
@@ -43,14 +43,11 @@ So in effect, what we've done here is that in order to define a hypothesis funct
 `5:41`
 And so we saw, for instance, the 
 `step function`, 
-[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 which is defined as 1 if the result of multiplying the weights by the inputs is at least 0; otherwise as 0. You can think of this line down the middle-- it's kind of like a dotted line. Effectively, it stays at 0 all the way up to one point, and then the function steps-- or jumps up-- to 1. So it's zero before it reaches some threshold, and then it's 1 after it reaches a particular threshold. And so this was one way we could define what we'll come to call an "activation function," a function that determines when it is that this output becomes active-- changes to a 1 instead of being a 0. 
 
 But we also saw that if we didn't just want a purely binary classification, if we didn't want purely 1 or 0, but we wanted to allow for some in-between real number values, we could use a different function. And there are a number of choices, but the one that we looked at was the logistic sigmoid function that has sort of an S-shaped curve, where we could represent this as a `probability`-- that may be somewhere in between the probability of rain of something like 0.5, and maybe a little bit later the probability of rain is 0.8-- and so rather than just have a binary classification of 0 or 1, we can allow for numbers that are in between as well. 
 
-And it turns out there are many other different types of 
-`activation functions` 
-[Notes](https://cs50.harvard.edu/ai/2024/notes/5/), where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the 
+And it turns out there are many other different types of `activation functions`, where an activation function just takes the output of multiplying the weights together and adding that bias, and then figuring out what the actual output should be. Another popular one is the 
 *rectified linear unit, otherwise known ReLU*,
  and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
 `7:20`
@@ -92,7 +89,6 @@ And it turns out that in some problems, we're not just going to have two inputs,
 
 *How then does the math work for figuring out that output?* Well, it's going to work in a very similar way. In the case of two inputs, we had two weights indicated by these edges, and we multiplied the weights by the numbers, adding this bias term, and we'll do the same thing in the other cases as well. If I have three inputs, you'll imagine multiplying each of these three inputs by each of these weights. If I had five inputs instead, we're going to do the same thing. Here, I'm saying sum up from 1 to 5. xi multiplied by weight i. So take each of the five input variables, multiply them by their corresponding weight, and then add the bias to that. So this would be a case where there are five inputs into this neural network, for example. But there could be more arbitrarily many nodes that we want inside of this neural network, where each time we're just going to sum up all of those input variables multiplied by the weight, and then add the bias term at the very end. 
 `15:16`
-[Notes](https://cs50.harvard.edu/ai/2024/notes/5/)
 
 And so this allows us to be able to represent problems that have even more inputs, just by growing the size of our neural network. Now, the next question we might ask is a question about how it is that we train these internal networks? In the case of the or function and the and function, they were simple enough functions that I could just tell you like here what the weights should be, and you could probably reason through it yourself what the weights should be in order to calculate the output that you want. 
 
