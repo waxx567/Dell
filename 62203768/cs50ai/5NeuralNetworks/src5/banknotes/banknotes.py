@@ -27,9 +27,11 @@ model = tf.keras.models.Sequential()
 
 # Add a hidden layer with 8 units, with ReLU activation
 model.add(tf.keras.layers.Dense(8, input_shape=(4,), activation="relu"))
+# Keras is an API, a set of functions that we can use in order to manipulate neural networks inside of TensorFlow
 
 # Add output layer with 1 unit, with sigmoid activation
 model.add(tf.keras.layers.Dense(1, activation="sigmoid"))
+# a dense layer is just each of the nodes inside of the layer is going to be connected to each from the previous layer
 
 # Train neural network
 model.compile(
