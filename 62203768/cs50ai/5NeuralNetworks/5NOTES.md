@@ -393,8 +393,14 @@ And now we can put all of these ideas together-- pooling, image convolution, neu
 `neural networks that use convolution, ususally for analyzing images`
 or a CNN, which is a neural network that uses this convolution step, usually in the context of analyzing an image, for example. 
 `1:08:36`
-`A convolutional neural network is a neural network that uses convolution, usually for analyzing images. It starts by applying filters that can help distill some features of the image using different kernels. These filters can be improved in the same way as other weights in the neural network, by adjusting their kernels based on the error of the output. Then, the resulting images are pooled, after which the pixels are fed to a traditional neural network as inputs (a process called flattening).`
-`The convolution and pooling steps can be repeated multiple times to extract additional features and reduce the size of the input to the neural network. One of the benefits of these processes is that, by convoluting and pooling, the neural network becomes less sensitive to variation. That is, if the same picture is taken from slightly different angles, the input for convolutional neural network will be similar, whereas, without convolution and pooling, the input from each image would be vastly different.`
+
+**Convolutional Neural Network**
+
+    A convolutional neural network is a neural network that uses convolution, usually for analyzing images. It starts by applying filters that can help distill some features of the image using different kernels. These filters can be improved in the same way as other weights in the neural network, by adjusting their kernels based on the error of the output. Then, the resulting images are pooled, after which the pixels are fed to a traditional neural network as inputs (a process called flattening).
+
+    The convolution and pooling steps can be repeated multiple times to extract additional features and reduce the size of the input to the neural network. One of the benefits of these processes is that, by convoluting and pooling, the neural network becomes less sensitive to variation. That is, if the same picture is taken from slightly different angles, the input for convolutional neural network will be similar, whereas, without convolution and pooling, the input from each image would be vastly different.
+
+    In code, a convolutional neural network doesn’t differ by much from a traditional neural network. TensorFlow offers datasets to test our models on. We will be using MNIST, which contains pictures of black and white handwritten digits. We will train our convolutional neural network to recognize digits.
 
 And so the way that a convolutional neural network works is that we start with some sort of input image-- some grid of pixels-- but rather than immediately put that into the neural network layers that we've seen before, we'll start by applying a convolution step, where the convolution step involves applying a number of different image filters to our original image in order to get what we call a *feature map*, the result of applying some filter to an image. And we could do this once, but in general, we'll do this multiple times getting a whole bunch of different feature maps, each of which might extract some different relevant feature out of the image, some different important characteristic of the image that we might care about using in order to calculate what the result should be. 
 
@@ -426,7 +432,6 @@ But these convolutional neural networks can be quite helpful, in particular, bec
 `1:14:27`
 
 And so you might imagine applying this to a situation like handwriting recognition. So we'll go ahead and see an example of that now. I'll go ahead and open up `handwriting.py`. Again, what we do here is we first import TensorFlow. And then, TensorFlow, it turns out, has a few datasets that are built in-- built into the library that you can just immediately access. 
-`In code, a convolutional neural network doesn’t differ by much from a traditional neural network. TensorFlow offers datasets to test our models on. We will be using MNIST, which contains pictures of black and white handwritten digits. We will train our convolutional neural network to recognize digits.`
 
 And one of the most famous datasets in machine learning is the 
 ## MNIST 
