@@ -376,15 +376,23 @@ But all the while, these images are still pretty big. There's a lot of pixels in
 And so there's a technique we can use known as 
 #### pooling. 
 `reducing the size of an input by sampling from regions in the input`
-And what pooling is, is it means reducing the size of an input by sampling from regions inside of the input. So we're going to take a big image and turn it into a smaller image by using pooling. And in particular, one of the most popular types of pooling is called max-pooling. And what max-pooling does is it pools just by choosing the maximum value in a particular region. 
+And what pooling is, is it means reducing the size of an input by sampling from regions inside of the input. So we're going to take a big image and turn it into a smaller image by using pooling. And in particular, one of the most popular types of pooling is called *max-pooling*. 
+`pooling by choosing the maximum value in each region`
+And what max-pooling does is it pools just by choosing the maximum value in a particular region. 
+`1:06:51`
 
-So, for example, let's imagine I had this four-by-four image, but I wanted to reduce its dimensions. I wanted to make an a smaller image, so that I have fewer inputs to work with. Well, what I could do is I could apply a two-by-two max pool, where the idea would be that I'm going to first look at this two-by-two region and say, what is the maximum value in that region? Well, it's the number 50. So we'll go ahead and just use the number 50. 
+So, for example, let's imagine I had this four-by-four image, but I wanted to reduce its dimensions. I wanted to `make it a smaller image, so that I have fewer inputs to work with`. Well, what I could do is I could apply a two-by-two max pool, where the idea would be that I'm going to first look at this two-by-two region and say, what is the maximum value in that region? Well, it's the number 50. So we'll go ahead and just use the number 50. 
 
 And then we'll look at this two-by-two region. What is the maximum value here? 110. So that's going to be my value. Likewise here, the maximum value looks like 20. Go ahead and put that there. Then for this last region, the maximum value was 40, so we'll go ahead and use that. And what I have now is a smaller representation of this same original image that I obtained just by picking the maximum value from each of these regions. 
+`1:07:40`
 
-So again, the advantages here are now I only have to deal with a two-by-two input instead of a four-by-four, and you can imagine shrinking the size of an image even more. But in addition to that, I'm now able to make my analysis independent of whether a particular value was in this pixel or this pixel. I don't care if the 50 was here or here. As long as it was generally in this region, I'll still get access to that value. So it makes our algorithms a little bit more robust as well. So that then is pooling-- taking the size of the image and reducing it a little bit by just sampling from particular regions inside of the image. 
+So again, the advantages here are now I only have to deal with a two-by-two input instead of a four-by-four, and you can imagine shrinking the size of an image even more. But in addition to that, *I'm now able to make my analysis independent of whether a particular value was in this pixel or this pixel*. I don't care if the 50 was here or here. As long as it was generally in this region, I'll still get access to that value. So it makes our algorithms a little bit more robust as well. So that then is pooling-- taking the size of the image and reducing it a little bit by just sampling from particular regions inside of the image. 
 
-And now we can put all of these ideas together-- pooling, image convolution, neural networks-- all together into another type of neural network called a convolutional neural network, or a CNN, which is a neural network that uses this convolution step, usually in the context of analyzing an image, for example. 
+And now we can put all of these ideas together-- pooling, image convolution, neural networks-- all together into another type of neural network called a 
+# convolutional neural network, 
+`neural networks that use convolution, ususally for analyzing images`
+or a CNN, which is a neural network that uses this convolution step, usually in the context of analyzing an image, for example. 
+`1:08:36`
 
 And so the way that a convolutional neural own network works is that we start with some sort of input image-- some grid of pixels-- but rather than immediately put that into the neural network layers that we've seen before, we'll start by applying a convolution step, where the convolution step involves applying a number of different image filters to our original image in order to get what we call a feature map, the result of applying some filter to an image. And we could do this once, but in general, we'll do this multiple times getting a whole bunch of different feature maps, each of which might extract some different relevant feature out of the image, some different important characteristic of the image that we might care about using in order to calculate what the result should be. 
 
