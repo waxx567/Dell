@@ -52,7 +52,7 @@ And it turns out there are many other different types of `activation functions`,
  and the way that works is that it just takes as input and takes the maximum of that input and 0. So if it's positive, it remains unchanged, but i if it's negative, it goes ahead and levels out at 0. And there are other activation functions that we can choose as well. 
 `7:20`
 
-But in short, each of these activation functions, you can just think of as a function that gets applied to the result of all of this computation. We take some function g and apply it to the result of all of that calculation `7:33`. And this then is what we saw last time-- the way of defining some hypothesis function that takes on inputs, calculates some linear combination of those inputs, and then passes it through some sort of activation function to get our output. 
+But in short, `each of these activation functions, you can just think of as a function that gets applied to the result of all of this computation`. We take some function g and apply it to the result of all of that calculation `7:33`. And this then is what we saw last time-- the way of defining some hypothesis function that takes on inputs, calculates some linear combination of those inputs, and then passes it through some sort of activation function to get our output. 
 
 And this actually turns out to be the model for the simplest of neural networks, that we're going to instead represent this mathematical idea graphically, by using a structure like this. Here then is a neural network that has two inputs. We can think of this as x1 and this as x2. And then one output, which you can think of classifying whether or not we think it's going to rain or not rain, for example, in this particular instance. 
 
