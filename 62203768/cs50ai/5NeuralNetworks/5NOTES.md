@@ -434,8 +434,8 @@ But these convolutional neural networks can be quite helpful, in particular, bec
 And so you might imagine applying this to a situation like handwriting recognition. So we'll go ahead and see an example of that now. I'll go ahead and open up `handwriting.py`. Again, what we do here is we first import TensorFlow. And then, TensorFlow, it turns out, has a few datasets that are built in-- built into the library that you can just immediately access. 
 
 And one of the most famous datasets in machine learning is the 
-## MNIST 
-dataset, which is just a dataset of a whole bunch of samples of people's handwritten digits. I showed you a slide of that a little while ago. And what we can do is just immediately access that dataset, which is built into the library, so that if I want to do something like train on a whole bunch of handwritten digits, I can just use the dataset that is provided to me. 
+## MNIST dataset, 
+which is just a dataset of a whole bunch of samples of people's handwritten digits. I showed you a slide of that a little while ago. And what we can do is just immediately access that dataset, which is built into the library, so that if I want to do something like train on a whole bunch of handwritten digits, I can just use the dataset that is provided to me. 
 `1:15:10`
 
 Of course, if I had my own dataset of handwritten images, I can apply the same idea. I'd first just need to take those images and turn them into an array of pixels, because that's the way that these are going to be formatted. They're going to be formatted as, effectively, an array of individual pixels. 
