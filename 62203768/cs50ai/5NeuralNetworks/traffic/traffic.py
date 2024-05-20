@@ -59,7 +59,13 @@ def load_data(data_dir):
     be a list of integer labels, representing the categories for each of the
     corresponding `images`.
     """
-    raise NotImplementedError
+    images = []
+    labels = []
+
+    # Loop through categories
+    for category in range(NUM_CATEGORIES):
+        # Identify path to folder head
+        category_folder = os.path.join(data_dir, str(0))
 
 
 def get_model():
