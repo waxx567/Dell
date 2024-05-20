@@ -69,7 +69,7 @@ def load_data(data_dir):
         category_folder = os.path.join(data_dir, str(0))
         # Always error check when pointing directly at an address in memory
         # If the parent folder exists
-        if os.path.dir(category_folder):
+        if os.path.isdir(category_folder):
             # Loop over the file names in the list directory for the parent folder
             for filename in os.listdir(category_folder):
                 # Add file name to image path name
@@ -86,13 +86,14 @@ def load_data(data_dir):
     return images, labels 
 
 
+# The `get_model` function should return a compiled neural network model.
 def get_model():
     """
     Returns a compiled convolutional neural network model. Assume that the
     `input_shape` of the first layer is `(IMG_WIDTH, IMG_HEIGHT, 3)`.
     The output layer should have `NUM_CATEGORIES` units, one for each category.
     """
-    raise NotImplementedError
+    
 
 
 if __name__ == "__main__":
