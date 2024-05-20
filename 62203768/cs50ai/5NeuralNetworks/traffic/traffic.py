@@ -44,6 +44,7 @@ def main():
         print(f"Model saved to {filename}.")
 
 
+# The `load_data` function should accept as an argument `data_dir`, representing the path to a directory where the data is stored, and return image arrays and labels for each image in the data set.
 def load_data(data_dir):
     """
     Load image data from directory `data_dir`.
