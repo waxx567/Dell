@@ -29,7 +29,7 @@ Write an AI to identify which traffic sign appears in a photograph.
     500/500 [==============================] - 10s 20ms/step - loss: 0.2497 - accuracy: 0.9256
     333/333 - 5s - loss: 0.1616 - accuracy: 0.9535
 
-## Background
+# Background
 
 As research continues in the development of self-driving cars, one of the key challenges is *computer vision*, allowing these cars to develop an understanding of their environment from digital images. In particular, this involves the ability to recognize and distinguish road signs – stop signs, speed limit signs, yield signs, and more.
 
@@ -40,7 +40,7 @@ In this project, you’ll use *TensorFlow* to build a neural network to classify
 Several such data sets exist, but for this project, we’ll use the *German Traffic Sign Recognition Benchmark* (GTSRB) dataset, which contains thousands of images of 43 different kinds of road signs.
 
 
-### Understanding
+## Understanding
 
 First, take a look at the data set by opening the `gtsrb` directory. You’ll notice 43 subdirectories in this dataset, numbered `0` through `42`. Each numbered subdirectory represents a different category (a different type of road sign). Within each traffic sign’s directory is a collection of images of that type of traffic sign.
 
@@ -48,3 +48,13 @@ Next, take a look at `traffic.py`. In the `main` function, we accept as command-
 
 The `load_data` and `get_model` functions are left to you to implement.
 
+
+### Specification
+
+Complete the implementation of `load_data` and `get_model` in traffic.py.
+
+The `load_data` function should accept as an argument `data_dir`, representing the path to a directory where the data is stored, and return image arrays and labels for each image in the data set.
+
+You may assume that `data_dir` will contain one directory named after each category, numbered `0` through `NUM_CATEGORIES - 1`. Inside each category directory will be some number of image files.
+
+Use the OpenCV-Python module (`cv2`) to read each image as a `numpy.ndarray` (a `numpy` multidimensional array). To pass these images into a neural network, the images will need to be the same size, so be sure to resize each image to have width `IMG_WIDTH` and height `IMG_HEIGHT`.
