@@ -111,8 +111,8 @@ def get_model():
         tf.keras.layers.Dense(128, activation="relu"),
         tf.keras.layers.Dropout(0.5),
 
-        # Add an output layer with output units for all 10 digits
-        tf.keras.layers.Dense(10, activation="softmax")
+        # Add an output layer with output units for however many categories are stored in the NUM_CATEGORIES variable
+        tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
     ])
 
     # Train neural network
