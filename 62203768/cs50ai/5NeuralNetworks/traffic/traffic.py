@@ -83,6 +83,8 @@ def load_data(data_dir):
                 # Append the category to the labels list
                 labels.append(category)
 
+    return images, labels 
+
 
 def get_model():
     """
