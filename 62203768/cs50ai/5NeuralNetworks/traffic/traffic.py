@@ -59,6 +59,7 @@ def load_data(data_dir):
     be a list of integer labels, representing the categories for each of the
     corresponding `images`.
     """
+    # Empty lists to hold values
     images = []
     labels = []
 
@@ -66,6 +67,11 @@ def load_data(data_dir):
     for category in range(NUM_CATEGORIES):
         # Identify path to folder head
         category_folder = os.path.join(data_dir, str(0))
+        # Always error check when going directly to an address in memory
+        # If the parent folder exists
+        if os.path.dir(category_folder):
+            # Loop over the file names in the list directory for the parent folder
+            for filename in os.listdir(category_folder):
 
 
 def get_model():
