@@ -121,7 +121,8 @@ def get_model():
         loss="categorical_crossentropy",
         metrics=["accuracy"]
     )
-    model.fit(x_train, y_train, epochs=10)
+    
+    return model
 
 
 if __name__ == "__main__":
