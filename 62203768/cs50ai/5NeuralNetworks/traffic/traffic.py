@@ -67,11 +67,13 @@ def load_data(data_dir):
     for category in range(NUM_CATEGORIES):
         # Identify path to folder head
         category_folder = os.path.join(data_dir, str(0))
-        # Always error check when going directly to an address in memory
+        # Always error check when pointing directly at an address in memory
         # If the parent folder exists
         if os.path.dir(category_folder):
             # Loop over the file names in the list directory for the parent folder
             for filename in os.listdir(category_folder):
+                # Add file name to image path name
+                pathname = os.path.join(category_folder, filename)
 
 
 def get_model():
