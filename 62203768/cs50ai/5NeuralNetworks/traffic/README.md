@@ -1,4 +1,4 @@
-# Notes on CS50Ai Project 5: Traffic
+# Notes on CS50AI Project 5: Traffic
 
 [Link](https://cs50.harvard.edu/ai/2024/projects/5/traffic/)
 
