@@ -74,6 +74,14 @@ def load_data(data_dir):
             for filename in os.listdir(category_folder):
                 # Add file name to image path name
                 pathname = os.path.join(category_folder, filename)
+                # Read the image found at the path name
+                image = cv2.imread(pathname)
+                # Resize the image
+                image = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
+                # Append the image to the images list
+                images.append(image)
+                # Append the category to the labels list
+                labels.append(category)
 
 
 def get_model():
