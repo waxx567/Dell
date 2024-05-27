@@ -75,7 +75,7 @@ def load_data(data_dir):
             continue
 
         # 
-        for
+        for file in os.listdir(os.path.join(data_dir, folder)):
 
 
 '''
