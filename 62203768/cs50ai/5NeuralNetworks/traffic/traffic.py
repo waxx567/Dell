@@ -60,22 +60,25 @@ def load_data(data_dir):
     be a list of integer labels, representing the categories for each of the
     corresponding `images`.
     """
-    
-    # Empty lists to hold values
+    # Create empty lists to hold values
     images = []
     labels = []
 
-    # Iterate over folders
+    # Iterate over the folders in the directory
     for folder in os.listdir(data_dir):
-        # Check if folder exists
+        # Check if the folder exists
         try:
             int(folder)
         except ValueError:
             print("Error: Folder Not Found")
             continue
 
-        # 
+        # Iterate over the files (images) in the folder
         for file in os.listdir(os.path.join(data_dir, folder)):
+            # Open the image
+            image = cv2.imread(os.path.join(data_dir, folder, file))
+            # Resize the image
+            img = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
 
 
 '''
