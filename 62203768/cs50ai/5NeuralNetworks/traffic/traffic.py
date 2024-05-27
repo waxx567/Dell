@@ -63,7 +63,7 @@ def load_data(data_dir):
     # Empty lists to hold values
     images = []
     labels = []
-
+'''
     # Loop through categories
     for category in range(NUM_CATEGORIES):
         # Identify path to folder head
@@ -85,7 +85,7 @@ def load_data(data_dir):
                 labels.append(category)
 
     return images, labels 
-
+'''
 
 # The `get_model` function should return a compiled neural network model.
 def get_model():
@@ -94,6 +94,8 @@ def get_model():
     `input_shape` of the first layer is `(IMG_WIDTH, IMG_HEIGHT, 3)`.
     The output layer should have `NUM_CATEGORIES` units, one for each category.
     """    
+
+    '''
     # Create a convolutional neural network
     model = tf.keras.models.Sequential([
 
@@ -124,7 +126,8 @@ def get_model():
     )
     
     return model
-
+    '''
+    
 
 if __name__ == "__main__":
     main()
