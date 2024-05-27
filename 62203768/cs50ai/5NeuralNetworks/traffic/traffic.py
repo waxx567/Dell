@@ -65,8 +65,19 @@ def load_data(data_dir):
     images = []
     labels = []
 
+    # Iterate over folders
     for folder in os.listdir(data_dir):
-        
+        # Check if folder exists
+        try:
+            int(folder)
+        except ValueError:
+            print("Error: Folder Not Found")
+            continue
+
+        # 
+        for
+
+
 '''
     # Loop through categories
     for category in range(NUM_CATEGORIES):
