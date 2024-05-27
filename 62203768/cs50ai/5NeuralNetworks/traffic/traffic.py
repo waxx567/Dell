@@ -60,6 +60,7 @@ def load_data(data_dir):
     be a list of integer labels, representing the categories for each of the
     corresponding `images`.
     """
+    print(data_dir)
     # Empty lists to hold values
     images = []
     labels = []
@@ -127,7 +128,7 @@ def get_model():
     
     return model
     '''
-    
+
 
 if __name__ == "__main__":
     main()
