@@ -60,10 +60,13 @@ def load_data(data_dir):
     be a list of integer labels, representing the categories for each of the
     corresponding `images`.
     """
-    print(data_dir)
+    
     # Empty lists to hold values
     images = []
     labels = []
+
+    for folder in os.listdir(data_dir):
+        
 '''
     # Loop through categories
     for category in range(NUM_CATEGORIES):
