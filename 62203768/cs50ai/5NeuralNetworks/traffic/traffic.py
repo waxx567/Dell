@@ -65,7 +65,7 @@ def load_data(data_dir):
 
     # Iterate over the folders in the directory
     for folder in os.listdir(data_dir):
-        # Check if the folder exists
+        # Error check: ensure the folder exists
         try:
             int(folder)
         except ValueError:
@@ -74,11 +74,16 @@ def load_data(data_dir):
 
         # Iterate over the files (images) in the folder
         for file in os.listdir(os.path.join(data_dir, folder)):
-            # Open the image
+            # Open and resize the image
             image = cv2.imread(os.path.join(data_dir, folder, file))
-            # Resize the image
             img = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
+            # Normalize the image
+            img = img / 255
+            # Append the image and folder name to the images and labels lists
+            images.append(img)
+            labels.append(folder)
 
+    # Error check: number of images must match number of labels
 
 '''
     # Loop through categories
