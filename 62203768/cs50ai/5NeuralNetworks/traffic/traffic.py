@@ -69,7 +69,7 @@ def load_data(data_dir):
         try:
             int(folder)
         except ValueError:
-            print("Error: folder not found")
+            print("Error: that folder not found")
             continue
 
         # Iterate over the files (images) in the folder
