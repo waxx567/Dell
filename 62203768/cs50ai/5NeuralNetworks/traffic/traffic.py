@@ -79,7 +79,7 @@ def load_data(data_dir):
             img = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
             # Normalize the image
             img = img / 255
-            # Append the image and folder name to the images and labels lists
+            # Append the image to the images list and the folder name to the labels list
             images.append(img)
             labels.append(folder)
 
