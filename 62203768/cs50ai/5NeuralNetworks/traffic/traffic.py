@@ -69,7 +69,7 @@ def load_data(data_dir):
         try:
             int(folder)
         except ValueError:
-            print("Error: Folder Not Found")
+            print("Error: folder not found")
             continue
 
         # Iterate over the files (images) in the folder
@@ -84,30 +84,11 @@ def load_data(data_dir):
             labels.append(folder)
 
     # Error check: number of images must match number of labels
+    if len(images) != len(labels):
+        sys.exit("Error: number of images did not match number of labels")
 
-'''
-    # Loop through categories
-    for category in range(NUM_CATEGORIES):
-        # Identify path to folder head
-        category_folder = os.path.join(data_dir, str(0))
-        # Always error check when pointing directly at an address in memory
-        # If the parent folder exists
-        if os.path.isdir(category_folder):
-            # Loop over the file names in the list directory for the parent folder
-            for filename in os.listdir(category_folder):
-                # Add file name to image path name
-                pathname = os.path.join(category_folder, filename)
-                # Read the image found at the path name
-                image = cv2.imread(pathname)
-                # Resize the image
-                image = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
-                # Append the image to the images list
-                images.append(image)
-                # Append the category to the labels list
-                labels.append(category)
+    return(images, labels)
 
-    return images, labels 
-'''
 
 # The `get_model` function should return a compiled neural network model.
 def get_model():
