@@ -85,7 +85,8 @@ def load_data(data_dir):
 
     # Error check: number of images must match number of labels
     if len(images) != len(labels):
-        sys.exit(f"Error: number of images ({len(images)}) did not match number of labels ({len(labels)})")
+        sys.exit(f"Error: number of images ({len(images)
+                                             }) did not match number of labels ({len(labels)})")
 
     return (images, labels)
 
