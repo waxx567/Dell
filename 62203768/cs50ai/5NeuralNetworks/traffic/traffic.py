@@ -1,7 +1,7 @@
-import cv2
-import numpy as np
 import os
 import sys
+import cv2
+import numpy as np
 import tensorflow as tf
 
 from sklearn.model_selection import train_test_split
@@ -69,7 +69,7 @@ def load_data(data_dir):
         try:
             int(folder)
         except ValueError:
-            print("Error: that folder not found")
+            print(f"Error: {int(folder)} folder not found")
             continue
 
         # Iterate over the files (images) in the folder
@@ -85,7 +85,7 @@ def load_data(data_dir):
 
     # Error check: number of images must match number of labels
     if len(images) != len(labels):
-        sys.exit("Error: number of images did not match number of labels")
+        sys.exit(f"Error: number of images ({len(images)}) did not match number of labels ({len(labels)})")
 
     return (images, labels)
 
