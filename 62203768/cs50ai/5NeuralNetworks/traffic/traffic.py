@@ -87,7 +87,7 @@ def load_data(data_dir):
     if len(images) != len(labels):
         sys.exit("Error: number of images did not match number of labels")
 
-    return(images, labels)
+    return (images, labels)
 
 
 # The `get_model` function should return a compiled neural network model.
@@ -96,12 +96,12 @@ def get_model():
     Returns a compiled convolutional neural network model. Assume that the
     `input_shape` of the first layer is `(IMG_WIDTH, IMG_HEIGHT, 3)`.
     The output layer should have `NUM_CATEGORIES` units, one for each category.
-    """    
+    """
 
     # Create a convolutional neural network
     model = tf.keras.models.Sequential([
 
-        # Convolutional layer x 2 
+        # Convolutional layer x 2
         # Learn 64 filters using a 3x3 kernel
         tf.keras.layers.Conv2D(
             64, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
@@ -110,7 +110,7 @@ def get_model():
         tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
         # Learn 64 filters using a 3x3 kernel
         tf.keras.layers.Conv2D(
-            64, (3, 3), activation="relu", 
+            64, (3, 3), activation="relu",
         ),
         # Max-pooling layer, using 2x2 pool size
         tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
@@ -132,7 +132,7 @@ def get_model():
         loss="categorical_crossentropy",
         metrics=["accuracy"]
     )
-    
+
     return model
 
 
