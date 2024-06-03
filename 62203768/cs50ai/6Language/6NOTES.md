@@ -1,12 +1,19 @@
+# Notes on Lecture 5: Language
+[Lecture](https://video.cs50.io/QAZc9xsQNjQ?screen=ieuSvyhRv6o)
+[Notes](https://cs50.harvard.edu/ai/2024/notes/6/)
+[Slides](https://cdn.cs50.net/ai/2023/x/lectures/6/lecture6.pdf)
+
 [MUSIC PLAYING] BRIAN YU: Welcome back, everybody, to our final class in an Introduction to Artificial Intelligence with Python. Now, so far in this class, we've been taking problems that we want to solve intelligently and framing them in ways that computers are going to be able to make sense of. We've been taking problems and framing them as search problems or constraint satisfaction problems or optimization problems, for example. In essence, we have been trying to communicate about problems in ways that our computer is going to be able to understand. 
 
 Today, the goal is going to be to get computers to understand the way you and I communicate naturally, via our own natural languages. Languages like English. But natural language contains a lot of nuance and complexity that's going to make it challenging for computers to be able to understand. So we'll need to explore some new tools and some new techniques to allow computers to make sense of natural language. 
 
-So what is it exactly that we're trying to get computers to do? Well, they all fall under this general heading of `natural language processing`, getting computers to work with natural language. And these tasks include tasks like automatic summarization. Given a long text, can we train the computer to be able to come up with a shorter representation of it? 
+So what is it exactly that we're trying to get computers to do? Well, they all fall under this general heading of 
+# natural language processing, 
+getting computers to work with natural language. And these tasks include tasks like `automatic summarization`. Given a long text, can we train the computer to be able to come up with a shorter representation of it? 
 
-Information extraction. Getting the computer to pull out relevant facts or details out of some text. Machine translation, like Google translate, translating some text from one language into another language. Question answering. If you've ever asked a question to your phone or had a conversation with an AI chatbot where you provide some text to the computer, the computer is able to understand that text and then generate some text in response. 
+`Information extraction`. Getting the computer to pull out relevant facts or details out of some text. `Machine translation`, like Google translate, translating some text from one language into another language. `Question answering`. If you've ever asked a question to your phone or had a conversation with an AI chatbot where you provide some text to the computer, the computer is able to understand that text and then generate some text in response. 
 
-Text classification, where we provide some text to the computer and the computer assigns it a label, positive or negative, inbox or spam, for example. And there are several other kinds of tasks that all fall under this heading of natural language processing. 
+`Text classification`, where we provide some text to the computer and the computer assigns it a label, positive or negative, inbox or spam, for example. And there are several other kinds of tasks that all fall under this heading of natural language processing. 
 
 But before we take a look at how the computer might try to solve these kinds of tasks, it might be useful for us to think about language in general. What are the kinds of challenges that we might need to deal with as we start to think about language and getting a computer to be able to understand it? So one part of language that we'll need to consider is the syntax of language. 
 
