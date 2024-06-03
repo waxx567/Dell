@@ -15,9 +15,10 @@ getting computers to work with natural language. And these tasks include tasks l
 
 `Text classification`, where we provide some text to the computer and the computer assigns it a label, positive or negative, inbox or spam, for example. And there are several other kinds of tasks that all fall under this heading of natural language processing. 
 
-But before we take a look at how the computer might try to solve these kinds of tasks, it might be useful for us to think about language in general. What are the kinds of challenges that we might need to deal with as we start to think about language and getting a computer to be able to understand it? So one part of language that we'll need to consider is the syntax of language. 
+But before we take a look at how the computer might try to solve these kinds of tasks, it might be useful for us to *think about language in general*. What are the kinds of challenges that we might need to deal with as we start to think about language and getting a computer to be able to understand it? So one part of language that we'll need to consider is the syntax of language. 
 
-Syntax is all about the structure of language. Language is composed of individual words, and those words are composed together in some kind of structured whole. And if our computer is going to be able to understand language, it's going to need to understand something about that structure. So let's take a couple of examples. 
+## Syntax 
+is all about the structure of language. Language is composed of individual words, and those words are composed together in some kind of structured whole. And if our computer is going to be able to understand language, it's going to need to understand something about that structure. So let's take a couple of examples. 
 
 Here, for instance, is a sentence. "Just before nine o'clock Sherlock Holmes stepped briskly into the room." That sentence is made up of words, and those words together form a structured whole. This is syntactically valid as a sentence. But we could take some of those same words, rearrange them, and come up with a sentence that is not syntactically valid. 
 
@@ -27,7 +28,9 @@ Here's a sentence, for example. "I saw the man on the mountain with a telescope.
 
 Maybe I, the one doing the seeing and the one with the telescope, or maybe the man on the mountain is the one with the telescope. And so natural language is ambiguous. Sometimes the same sentence can be interpreted in multiple ways. And that's something that we'll need to think about, as well. 
 
-And this lends itself to another problem within language that we'll need to think about, which is semantics. While syntax is all about the structure of language, semantics is about the meaning of language. It's not enough for a computer just to know that a sentence is well-structured if it doesn't know what that sentence means. And so semantics is going to concern itself with the meaning of words and the meaning of sentences. 
+And this lends itself to another problem within language that we'll need to think about, which is 
+### semantics. 
+While syntax is all about the structure of language, semantics is about the meaning of language. It's not enough for a computer just to know that a sentence is well-structured if it doesn't know what that sentence means. And so semantics is going to concern itself with the meaning of words and the meaning of sentences. 
 
 So if we go back to that same sentence as before, "Just before nine o'clock Sherlock Holmes stepped briskly into the room." I could come up with another sentence. Say the sentence, "A few minutes before nine, Sherlock Holmes walked quickly into the room." 
 
