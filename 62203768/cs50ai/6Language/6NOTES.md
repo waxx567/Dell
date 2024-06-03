@@ -55,19 +55,24 @@ But how do we know, or *how does the computer know which nonterminal symbols are
 So here, we're saying the nonterminal symbol N, again, which stands for noun, could be replaced by any of these options separated by vertical bars. N could be replaced by she or city or car or Harry. D for determiner, could be replaced by the, a, or an, and so forth. Each of these nonterminal symbols could be replaced by any of these words. 
 `7:40`
 
-We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
+We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. 
+# NP -> N | D N
+So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
 
 So we might have a noun phrase that's just a noun, like she. That's a noun phrase. Or we could have a noun phrase that's multiple words, something like the city. Also acts as a noun phrase, but in this case, it's composed of two words, a determiner, the, and a noun, city. 
 
 We could do the same for verb phrases. A verb phrase, or VP, might be just a verb, or it might be a verb followed by a noun phrase. So we could have a verb phrase that's just a single word, like the word, walked, or we could have a verb phrase that is an entire phrase, something like saw the city, as an entire verb phrase. 
+`8:43`
 
-A sentence, meanwhile, we might then define as a noun phrase followed by a verb phrase. And so this would allow us to generate a sentence like, she saw the city, an entire sentence made up of a noun phrase, which is just the word she, and then a verb phrase, which is saw the city. Saw, which is a verb, and then, the city, which itself, is also a noun phrase. 
+`A sentence, meanwhile, we might then define as a noun phrase followed by a verb phrase.` And so this would allow us to generate a sentence like, she saw the city, an entire sentence made up of a noun phrase, which is just the word she, and then a verb phrase, which is saw the city. Saw, which is a verb, and then, the city, which itself, is also a noun phrase. 
 
 And so if we could give these rules to a computer, explaining to it what nonterminal symbols could be replaced by what other symbols, then a computer could take a sentence and begin to understand the structure of that sentence. 
 
-And so let's take a look at an example of how we might do that. And to do that, we're going to use a python library called NLTK, or the Natural Language Toolkit, which we'll see a couple of times today. It contains a lot of helpful features and functions that we can use for trying to deal with and process natural language. 
+And so let's take a look at an example of how we might do that. And to do that, we're going to use a python library called 
+## NLTK, or the Natural Language Toolkit, 
+which we'll see a couple of times today. It contains a lot of helpful features and functions that we can use for trying to deal with and process natural language. 
 
-So here, we'll take a look at how we can use NLTK in order to parse a context-free grammar. So let's go ahead and open up cfg0.py, cfg standing for context-free grammar. And what you'll see in this file, is that I first import NLTK, the Natural Language Toolkit. 
+So here, we'll take a look at how we can use NLTK in order to parse a context-free grammar. So let's go ahead and open up `cfg0.py`, cfg standing for `context-free grammar`. And what you'll see in this file, is that I first import NLTK, the Natural Language Toolkit. 
 
 And the first thing I do, is define a context-free grammar, saying that a sentence is a noun phrase followed by a verb phrase. I'm defining what a noun phrase is, defining what a verb phrase is. And then giving some examples of what I can do with these nonterminal symbols, D for determiner, N for noun, and V for verb. We're going to use NLTK to parse that grammar. 
 
