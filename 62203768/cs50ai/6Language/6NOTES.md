@@ -46,13 +46,14 @@ And so, let's try to do exactly that. We're going to try to define a formal gram
 
 And there are a number of different types of formal grammars, each one of them has slightly different use cases. But today, we're going to focus specifically on one kind of grammar known as a `context-free grammar`. *So how does the context-free grammar work?* Well, here is a sentence that we might want a computer to generate. 
 
-She saw the city. And we're going to call each of these words a terminal symbol. A terminal symbol, because once our computer has generated the word, there's nothing else for it to generate. Once it's generated the sentence, the computer is done. We're going to associate each of these terminal symbols with a nonterminal symbol that generates it. 
+She saw the city. And we're going to call each of these words a `terminal symbol`. A terminal symbol, because once our computer has generated the word, there's nothing else for it to generate. Once it's generated the sentence, the computer is done. We're going to associate each of these terminal symbols with a `nonterminal symbol` that generates it. 
 
 So here we've got N, which stands for noun, like she or city. We've got V as a nonterminal symbol, which stands for a verb. And then we have D, which stands for determiner. A determiner is a word like the or a or an in English, for example. So each of these nonterminal symbols can generate the terminal symbols that we ultimately care about generating. 
 
-But how do we know, or how does the computer know which nonterminal symbols are associated with which terminal symbols? Well, to do that, we need some kind of rule. Here are some what we call rewriting rules, that have a nonterminal symbol on the left-hand side of an arrow, and on the right side is what that nonterminal symbol can be replaced with. 
+But how do we know, or *how does the computer know which nonterminal symbols are associated with which terminal symbols?* Well, to do that, we need some kind of rule. Here are some what we call rewriting rules, that have a nonterminal symbol on the left-hand side of an arrow, and on the right side is what that nonterminal symbol can be replaced with. 
 
 So here, we're saying the nonterminal symbol N, again, which stands for noun, could be replaced by any of these options separated by vertical bars. N could be replaced by she or city or car or Harry. D for determiner, could be replaced by the, a, or an, and so forth. Each of these nonterminal symbols could be replaced by any of these words. 
+`7:40`
 
 We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
 
