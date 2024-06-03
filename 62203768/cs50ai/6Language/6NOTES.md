@@ -2,7 +2,7 @@
 
 Today, the goal is going to be to get computers to understand the way you and I communicate naturally, via our own natural languages. Languages like English. But natural language contains a lot of nuance and complexity that's going to make it challenging for computers to be able to understand. So we'll need to explore some new tools and some new techniques to allow computers to make sense of natural language. 
 
-So what is it exactly that we're trying to get computers to do? Well, they all fall under this general heading of natural language processing, getting computers to work with natural language. And these tasks include tasks like automatic summarization. Given a long text, can we train the computer to be able to come up with a shorter representation of it? 
+So what is it exactly that we're trying to get computers to do? Well, they all fall under this general heading of `natural language processing`, getting computers to work with natural language. And these tasks include tasks like automatic summarization. Given a long text, can we train the computer to be able to come up with a shorter representation of it? 
 
 Information extraction. Getting the computer to pull out relevant facts or details out of some text. Machine translation, like Google translate, translating some text from one language into another language. Question answering. If you've ever asked a question to your phone or had a conversation with an AI chatbot where you provide some text to the computer, the computer is able to understand that text and then generate some text in response. 
 
