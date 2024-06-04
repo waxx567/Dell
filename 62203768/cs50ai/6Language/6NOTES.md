@@ -101,6 +101,7 @@ So what else might we try? We might try to take a statistical lens towards appro
 So instead, what we might want to do, is break up that longer text into smaller pieces of information instead. In particular, we might try to create *n-grams* out of a longer sequence of text. `An n-gram is just some contiguous sequence of n items from a sample of text.` It might be n characters in a row, or n words in a row, for example. 
 
 So let's take a passage from Sherlock Holmes and let's look for all of the *trigrams*. `A trigram is an n-gram where n is equal to three.` So in this case, we're looking for sequences of three words in a row. So the trigrams here would be phrases like, how often have. That's three words in a row. Often have I, is another trigram. Have I said. I said to. Said to you. To you that. These are all trigrams, sequences of three words that appear in sequence. 
+`14:25`
 
 And if we could give the computer a large corpus of text and have it pull out all of the trigrams in this case, it could get a sense for what sequences of three words tend to appear next to each other in our own natural language. And as a result, get some sense for what the structure of the language actually is. So let's take a look at an example of that. How can we use NLTK to try to get access to information about n-grams. 
 
