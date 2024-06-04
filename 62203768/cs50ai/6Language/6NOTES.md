@@ -89,9 +89,10 @@ And we specified that we could have an adjective phrase before a noun phrase, or
 And we'll try a sentence like, she saw the wide street. Here, pythons NLTK is able to parse that sentence and identify that she saw the wide street has this particular structure, a sentence with a noun phrase and a verb phrase, where that verb phrase has a noun phrase that within it, contains an adjective. And so it's able to get some sense for what the structure of this language actually is. 
 `12:06`
 
-Let's try another example. Let's say, she saw the dog with the binoculars. And we'll try that sentence. And here, we get one possible syntax tree. She saw the dog with the binoculars. But notice that this sentence is actually a little bit ambiguous in our own natural language. Who has the binoculars? Is it she who has the binoculars, or the dog who has the binoculars? 
+Let's try another example. Let's say, she saw the dog with the binoculars. And we'll try that sentence. And here, we get one possible syntax tree. She saw the dog with the binoculars. But notice that this sentence is actually a little bit `ambiguous` in our own natural language. Who has the binoculars? Is it she who has the binoculars, or the dog who has the binoculars? 
 
 And NLTK is able to identify both possible structures for the sentence. In this case, the dog with the binoculars is an entire noun phrase. It's all underneath this NP here, so it's the dog that has the binoculars. But we also got an alternative parse tree, where the dog is just the noun phrase. And with the binoculars, is a prepositional phrase modifying saw. So she saw the dog, and she used the binoculars in order to see the dog, as well. 
+`13:01`
 
 So this allows us to get a sense for the structure of natural language, but it relies on us writing all of these rules. And it would take a lot of effort to write all of the rules for any possible sentence that someone might write or say in the English language. Language is complicated, and as a result, there are going to be some very complex rules. 
 
