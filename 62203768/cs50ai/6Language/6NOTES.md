@@ -122,8 +122,9 @@ is the process of splitting a sequence of characters into pieces. In this case, 
 So once we've done this, once we've done the tokenization, once we've built up our corpus of n-grams, what can we do with that information? Well, the one thing that we might try, is we could build a *Markov chain*, which you might recall from when we talked about probability. Recall that `a Markov chain is some sequence of values where we can predict one value based on the values that came before it`. 
 
 And as a result, if we know all of the common n-grams in the English language, what words tend to be associated with what other words in sequence, we can use that to predict what word might come next in a sequence of words. And so we could build a Markov chain for language in order to try to generate natural language that follows the same statistical patterns as some input data. 
+`17:31`
 
-So let's take a look at that and build a Markov chain for natural language. And as input, I'm going to use the works of William Shakespeare. So here, I have a file, shakespeare.txt, which is just a bunch of the works of William Shakespeare. It's a long text file, so plenty of data to analyze. And here in generator.py, I'm using a third-party python library in order to do this analysis. 
+So let's take a look at that and build a Markov chain for natural language. And as input, I'm going to use the works of William Shakespeare. So here, I have a file, `shakespeare.txt`, which is just a bunch of the works of William Shakespeare. It's a long text file, so plenty of data to analyze. And here in `generator.py`, I'm using a third-party python library in order to do this analysis. 
 
 We're going to read in the sample of text, and then we're going to train a Markov model based on that text. And then we're going to have the Markov chain generate some sentences. We're going to generate a sentence that doesn't appear in the original text, but that follows the same statistical patterns, that's generating it based on the n-grams, trying to predict what word is likely to come next that we would expect based on those statistical patterns. 
 
