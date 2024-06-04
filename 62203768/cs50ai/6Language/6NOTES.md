@@ -147,15 +147,19 @@ And you and I could pretty easily look at this list of product reviews and decid
 
 Well, you might have clued your eye in on particular key words, where those particular words tend to mean something positive or negative. So you might have identified words like loved, and fun, and best, tend to be associated with positive messages. And words like broke, and cheap, and flimsy tend to be associated with negative messages. 
 
-So if only we could train a computer to be able to learn what words tend to be associated with positive versus negative messages, then maybe we could train a computer to do this kind of sentiment analysis, as well. So we're going to try to do just that. We're going to use a model known as the bag-of-words model, which is a model that represents text as just an unordered collection of words. 
+So if only we could train a computer to be able to learn what words tend to be associated with positive versus negative messages, then maybe we could train a computer to do this kind of sentiment analysis, as well. So we're going to try to do just that. We're going to use a model known as the *bag-of-words model*, which is a model that represents text as just an unordered collection of words. 
 
 For the purpose of this model, we're not going to worry about the sequence and the ordering of the words, which word came first, second, or third, we're just going to treat the text as a collection of words in no particular order. And we're losing information there, right? The order of words is important, and we'll come back to that a little bit later. But for now, to simplify our model, it'll help us tremendously just to think about text as some unordered collection of words. 
+`21:31`
 
-And in particular, we're going to use the bag-of-words model to build something known as a Naive Bayes classifier. So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a. 
+And in particular, we're going to use the bag-of-words model to build something known as a 
+##### Naive Bayes classifier. 
+So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, `Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a`. 
 
 So how are we going to use this rule to be able to analyze text? Well, what are we interested in? We're interested in the probability that a message has a positive sentiment and the probability that a message has a negative sentiment, which I'm here for simplicity, going to represent just with these emoji, happy face and frown face, as positive and negative sentiment. 
 
-And so if I had a review, something like, my grandson loved it, then what I'm interested in, is not just the probability that a message has positive sentiment, but the conditional probability that a message has positive sentiment given that this is the message, my grandson loved it. But how do I go about calculating this value, the probability that the message is positive given that the review is this sequence of words? 
+And so if I had a review, something like, my grandson loved it, then what I'm interested in, is not just the probability that a message has positive sentiment, but the conditional probability that a message has positive sentiment given that this is the message, my grandson loved it. *But how do I go about calculating this value, the probability that the message is positive given that the review is this sequence of words?*
+`22:41` 
 
 Well, here's where the bag-of-words model comes in. Rather than treat this review as a string of a sequence of words in order, we're just going to treat it as an unordered collection of words. We're going to try to calculate the probability that the review is positive, given that all of these words, my grandson loved it, are in the review in no particular order. Just this unordered collection of words. 
 
