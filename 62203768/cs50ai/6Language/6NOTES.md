@@ -84,9 +84,10 @@ And when I do that, I see that she walked is a valid sentence, where she is a no
 
 So that was a very simple grammar. Let's take a look at a slightly more complex grammar. Here is `cfg1.py`, where a sentence is still a noun phrase followed by a verb phrase, but I've added some other possible nonterminal symbols, too. I have *AP for adjective phrase*, and *PP for prepositional phrase*. 
 
-And we specified that we could have an adjective phrase before a noun phrase, or a prepositional phrase after a noun, for example. So lots of additional ways that we might try to structure a sentence and interpret and parse one of those resulting sentences. So let's see that one in action. We'll go ahead and run cfg1.py with this new grammar. 
+And we specified that we could have an adjective phrase before a noun phrase, or a prepositional phrase after a noun, for example. So lots of additional ways that we might try to structure a sentence and interpret and parse one of those resulting sentences. So let's see that one in action. We'll go ahead and `run cfg1.py` with this new grammar. 
 
 And we'll try a sentence like, she saw the wide street. Here, pythons NLTK is able to parse that sentence and identify that she saw the wide street has this particular structure, a sentence with a noun phrase and a verb phrase, where that verb phrase has a noun phrase that within it, contains an adjective. And so it's able to get some sense for what the structure of this language actually is. 
+`12:06`
 
 Let's try another example. Let's say, she saw the dog with the binoculars. And we'll try that sentence. And here, we get one possible syntax tree. She saw the dog with the binoculars. But notice that this sentence is actually a little bit ambiguous in our own natural language. Who has the binoculars? Is it she who has the binoculars, or the dog who has the binoculars? 
 
