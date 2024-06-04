@@ -164,12 +164,14 @@ And so if I had a review, something like, my grandson loved it, then what I'm in
 Well, here's where the bag-of-words model comes in. Rather than treat this review as a string of a sequence of words in order, we're just going to treat it as an unordered collection of words. We're going to try to calculate the probability that the review is positive, given that all of these words, my grandson loved it, are in the review in no particular order. Just this unordered collection of words. 
 
 And this is a conditional probability, which we can then apply Bayes rule to try to make sense of. So according to Bayes rule, this conditional probability is equal to what? It's equal to the probability that all of these four words are in the review, given that the review is positive multiplied by the probability that the review is positive divided by the probability that all of these words happen to be in the review. 
+`23:29`
 
 So this is the value now that we're going to try to calculate. Now, one thing you might notice, is that the denominator here, the probability that all of these words appear in the review, doesn't actually depend on whether or not we're looking at the positive sentiment or negative sentiment case. 
 
 So we can actually get rid of this denominator. We don't need to calculate it. We can just say that this probability is proportional to the numerator. And then at the end, we're going to need to normalize the probability distribution to make sure that all of the values sum up to the value one. 
 
-So now, how do we calculate this value? Well, this is the probability of all of these words given positive times probability of positive. And that, by the definition of joint probability, is just one big joint probability. The probability that all of these things are the case. That it's a positive review, and that all four of these words are in the review. 
+So now, how do we calculate this value? Well, this is the probability of all of these words given positive times probability of positive. And that, by the definition of joint probability, is just one big joint probability. The probability that all of these things are the case. That it's a positive review, and that all four of these words are in the review.
+`24:21` 
 
 But still, it's not entirely obvious how we calculate that value. And here is where we need to make one more assumption. And this is where the Naive part of Naive Bayes comes in. We're going to make the assumption that all of the words are independent of each other. And by that, I mean that if the word, grandson, is in the review, that doesn't change the probability that the word, loved, is in the review or that the word it is in the review, for example. 
 
