@@ -173,11 +173,12 @@ So we can actually get rid of this denominator. We don't need to calculate it. W
 So now, how do we calculate this value? Well, this is the probability of all of these words given positive times probability of positive. And that, by the definition of joint probability, is just one big joint probability. The probability that all of these things are the case. That it's a positive review, and that all four of these words are in the review.
 `24:21` 
 
-But still, it's not entirely obvious how we calculate that value. And here is where we need to make one more assumption. And this is where the Naive part of Naive Bayes comes in. We're going to make the assumption that all of the words are independent of each other. And by that, I mean that if the word, grandson, is in the review, that doesn't change the probability that the word, loved, is in the review or that the word it is in the review, for example. 
+But still, it's not entirely obvious how we calculate that value. And here is where we need to make one more assumption. And `this is where the Naive part of Naive Bayes comes in`. We're going to make the assumption that all of the words are independent of each other. And by that, I mean that if the word, grandson, is in the review, that doesn't change the probability that the word, loved, is in the review or that the word it is in the review, for example. 
 
 And in practice, this assumption might not be true. It's almost certainly the case that the probability of words do depend on each other. But it's going to simplify our analysis, and still give us reasonably good results, just to assume that the words are independent of each other and they only depend on whether it's positive or negative. 
 
 You might, for example, expect the word, loved, to appear more often in a positive review than in a negative review. So, what does that mean? Well, if we make this assumption, then we can say that this value, the probability we're interested in, is not directly proportional to, but it's naively proportional to this value. 
+`25:21`
 
 The probability that the review is positive times the probability that my is in the review, given that it's positive, times the probability that grandson is in the review, given that it's positive, and so on for the other two words that happen to be in this review. And now this value, which looks a little more complex, is actually a value that we can calculate pretty easily. 
 
