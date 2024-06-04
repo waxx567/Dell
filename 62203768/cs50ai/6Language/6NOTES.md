@@ -80,8 +80,9 @@ And the first thing I do, is define a context-free grammar, saying that a senten
 Then we'll ask the user for some input in the form of a sentence, and split it into words. And then, we'll use this context-free grammar parser to try to parse that sentence and print out the resulting syntax tree. So let's take a look at an example. We'll go ahead and go into my cfg directory and we'll `run cfg0.py`. And here, I'm asked to type in a sentence. Let's say I type in, she walked. 
 
 And when I do that, I see that she walked is a valid sentence, where she is a noun phrase, and walked is the corresponding verb phrase. I could try to do this with a more complex sentence, too. I could do something like, she saw the city. And here, we see that she is the noun phrase, and then saw the city, is the entire verb phrase that makes up this sentence. 
+`11:02`
 
-So that was a very simple grammar. Let's take a look at a slightly more complex grammar. Here is cfg1.py, where a sentence is still a noun phrase followed by a verb phrase, but I've added some other possible nonterminal symbols, too. I have AP for adjective phrase, and PP for prepositional phrase. 
+So that was a very simple grammar. Let's take a look at a slightly more complex grammar. Here is `cfg1.py`, where a sentence is still a noun phrase followed by a verb phrase, but I've added some other possible nonterminal symbols, too. I have *AP for adjective phrase*, and *PP for prepositional phrase*. 
 
 And we specified that we could have an adjective phrase before a noun phrase, or a prepositional phrase after a noun, for example. So lots of additional ways that we might try to structure a sentence and interpret and parse one of those resulting sentences. So let's see that one in action. We'll go ahead and run cfg1.py with this new grammar. 
 
