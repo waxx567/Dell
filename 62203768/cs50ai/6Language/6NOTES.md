@@ -127,18 +127,23 @@ And as a result, if we know all of the common n-grams in the English language, w
 So let's take a look at that and build a Markov chain for natural language. And as input, I'm going to use the works of William Shakespeare. So here, I have a file, `shakespeare.txt`, which is just a bunch of the works of William Shakespeare. It's a long text file, so plenty of data to analyze. And here in `generator.py`, I'm using a third-party python library in order to do this analysis. 
 
 We're going to read in the sample of text, and then we're going to train a Markov model based on that text. And then we're going to have the Markov chain generate some sentences. We're going to generate a sentence that doesn't appear in the original text, but that follows the same statistical patterns, that's generating it based on the n-grams, trying to predict what word is likely to come next that we would expect based on those statistical patterns. 
+`18:21`
 
-So we'll go ahead and go into our Markov directory, run this generator with the works of William Shakespeare as input. And what we're going to get, are five new sentences, where these sentences are not necessarily sentences from the original input text itself, but just that follow the same statistical patterns. It's predicting what word is likely to come next, based on the input data that we've seen and the types of words that tend to appear in sequence there, too. And so we're able to generate these sentences. 
+So we'll go ahead and go into our Markov directory, `run this generator` with the works of William Shakespeare as input. And what we're going to get, are five new sentences, where these sentences are not necessarily sentences from the original input text itself, but just that follow the same statistical patterns. It's predicting what word is likely to come next, based on the input data that we've seen and the types of words that tend to appear in sequence there, too. And so we're able to generate these sentences. 
 
 Of course, so far, there's no guarantee that any of the sentences that are generated actually mean anything or make any sense. They just happen to follow the statistical patterns that our computer is already aware of. So we'll return to this issue of how to generate text in perhaps a more accurate or more meaningful way a little bit later. 
 
-So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. Text classification is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
+So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. 
+#### Text classification 
+is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
+`19:26`
 
-A common place might be your email inbox, for example. You get an email and you want your computer to be able to identify whether the email belongs in your inbox, or whether it should be filtered out into spam. So we need to classify the text. Is it a good email or is it spam? Another common use case is sentiment analysis. We might want to know whether the sentiment of some text is positive or negative. And so how might we do that? 
+A common place might be your email inbox, for example. You get an email and you want your computer to be able to identify whether the email belongs in your inbox, or whether it should be filtered out into spam. So we need to classify the text. Is it a good email or is it spam? Another common use case is `sentiment analysis`. We might want to know whether the sentiment of some text is positive or negative. And so how might we do that? 
 
 This comes up in situations like product reviews, where we might have a bunch of reviews for a product on some website. "My grandson loved it! So much fun." "Product broke after a few days." "One of the best games I've played in a long time." And "Kind of cheap and flimsy, not worth it." Here's some example sentences that you might see on a product review website. 
 
 And you and I could pretty easily look at this list of product reviews and decide which ones are positive and which ones are negative. We might say the first one and the third one, those seem like positive sentiment messages, but the second one and the fourth one seem like negative sentiment messages. But how did we know that? And how could we train a computer to be able to figure that out, as well? 
+`20:27`
 
 Well, you might have clued your eye in on particular key words, where those particular words tend to mean something positive or negative. So you might have identified words like loved, and fun, and best, tend to be associated with positive messages. And words like broke, and cheap, and flimsy tend to be associated with negative messages. 
 
