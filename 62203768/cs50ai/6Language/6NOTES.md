@@ -149,7 +149,9 @@ is the process of splitting a sequence of characters into pieces. In this case, 
 
 `Tokenization is the task of splitting a sequence of characters into pieces (tokens). Tokens can be words as well as sentences, in which case the task is called word tokenization or sentence tokenization. We need tokenization to be able to look at n-grams, since those rely on sequences of tokens. We start by splitting the text into words based on the space character. While this is a good start, this method is imperfect because we end up with words with punctuation, such as “remains,”. So, for example, we can remove punctuation. However, then we face additional challenges, such as words with apostrophes (e.g. “o’clock”) and hyphens (e.g. “pearl-grey). Additionally, some punctuation is important for sentence structure, like periods. However, we need to be able to tell apart between a period at the end of the word “Mr.” and a period in the end of the sentence. Dealing with these questions is the process of tokenization. In the end, once we have our tokens, we can start looking at n-grams.`
 
-So once we've done this, once we've done the tokenization, once we've built up our corpus of n-grams, what can we do with that information? Well, the one thing that we might try, is we could build a *Markov chain*, which you might recall from when we talked about probability. Recall that `a Markov chain is some sequence of values where we can predict one value based on the values that came before it`. 
+So once we've done this, once we've done the tokenization, once we've built up our corpus of n-grams, what can we do with that information? Well, the one thing that we might try, is we could build a 
+#### Markov chain, 
+which you might recall from when we talked about probability. Recall that a Markov chain is some sequence of values where we can predict one value based on the values that came before it.
 
 And as a result, if we know all of the common n-grams in the English language, what words tend to be associated with what other words in sequence, we can use that to predict what word might come next in a sequence of words. And so we could build a Markov chain for language in order to try to generate natural language that follows the same statistical patterns as some input data. 
 `17:31`
@@ -161,11 +163,11 @@ We're going to read in the sample of text, and then we're going to train a Marko
 
 So we'll go ahead and go into our Markov directory, `run this generator` with the works of William Shakespeare as input. And what we're going to get, are five new sentences, where these sentences are not necessarily sentences from the original input text itself, but just that follow the same statistical patterns. It's predicting what word is likely to come next, based on the input data that we've seen and the types of words that tend to appear in sequence there, too. And so we're able to generate these sentences. 
 
+`As discussed in previous lectures, Markov models consist of nodes, the value of each of which has a probability distribution based on a finite number of previous nodes. Markov models can be used to generate text. To do so, we train the model on a text, and then establish probabilities for every n-th token in an n-gram based on the n words preceding it. For example, using trigrams, after the Markov model has two words, it can choose a third one from a probability distribution based on the first two. Then, it can choose a fourth word from a probability distribution based on the second and third words. To see an implementation of such a model using nltk, refer to generator.py in the source code, where our model learns to generate Shakespeare-sounding sentences. Eventually, using Markov models, we are able to generate text that is often grammatical and sounding superficially similar to human language output. However, these sentences lack actual meaning and purpose.`
+
 Of course, so far, there's no guarantee that any of the sentences that are generated actually mean anything or make any sense. They just happen to follow the statistical patterns that our computer is already aware of. So we'll return to this issue of how to generate text in perhaps a more accurate or more meaningful way a little bit later. 
 
-So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. 
-#### Text classification 
-is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
+So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. Text classification is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
 `19:26`
 
 A common place might be your email inbox, for example. You get an email and you want your computer to be able to identify whether the email belongs in your inbox, or whether it should be filtered out into spam. So we need to classify the text. Is it a good email or is it spam? Another common use case is `sentiment analysis`. We might want to know whether the sentiment of some text is positive or negative. And so how might we do that? 
@@ -177,10 +179,12 @@ And you and I could pretty easily look at this list of product reviews and decid
 
 Well, you might have clued your eye in on particular key words, where those particular words tend to mean something positive or negative. So you might have identified words like loved, and fun, and best, tend to be associated with positive messages. And words like broke, and cheap, and flimsy tend to be associated with negative messages. 
 
-So if only we could train a computer to be able to learn what words tend to be associated with positive versus negative messages, then maybe we could train a computer to do this kind of sentiment analysis, as well. So we're going to try to do just that. We're going to use a model known as the *bag-of-words model*, which is a model that represents text as just an unordered collection of words. 
+So if only we could train a computer to be able to learn what words tend to be associated with positive versus negative messages, then maybe we could train a computer to do this kind of sentiment analysis, as well. So we're going to try to do just that. We're going to use a model known as the bag-of-words model, which is a model that represents text as just an unordered collection of words. 
 
 For the purpose of this model, we're not going to worry about the sequence and the ordering of the words, which word came first, second, or third, we're just going to treat the text as a collection of words in no particular order. And we're losing information there, right? The order of words is important, and we'll come back to that a little bit later. But for now, to simplify our model, it'll help us tremendously just to think about text as some unordered collection of words. 
 `21:31`
+
+`Bag-of-words is a model that represents text as an unordered collection of words. This model ignores syntax and considers only the meanings of the words in the sentence. This approach is helpful in some classification tasks, such as sentiment analysis (another classification task would be distinguishing regular email from spam email). Sentiment analysis can be used, for instance, in product reviews, categorizing reviews as positive or negative.`
 
 And in particular, we're going to use the bag-of-words model to build something known as a 
 ##### Naive Bayes classifier. 
