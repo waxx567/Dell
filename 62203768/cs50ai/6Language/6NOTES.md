@@ -188,7 +188,9 @@ For the purpose of this model, we're not going to worry about the sequence and t
 
 And in particular, we're going to use the bag-of-words model to build something known as a 
 ##### Naive Bayes classifier. 
-So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, `Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a`. 
+So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a. 
+
+`Naive Bayes is a technique that’s can be used in sentiment analysis with the bag-of-words model. In sentiment analysis, we are asking “What is the probability that the sentence is positive/negative given the words in the sentence?”`
 
 So how are we going to use this rule to be able to analyze text? Well, what are we interested in? We're interested in the probability that a message has a positive sentiment and the probability that a message has a negative sentiment, which I'm here for simplicity, going to represent just with these emoji, happy face and frown face, as positive and negative sentiment. 
 
