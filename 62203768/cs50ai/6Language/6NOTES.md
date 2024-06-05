@@ -83,9 +83,7 @@ But how do we know, or *how does the computer know which nonterminal symbols are
 So here, we're saying the nonterminal symbol N, again, which stands for noun, could be replaced by any of these options separated by vertical bars. N could be replaced by she or city or car or Harry. D for determiner, could be replaced by the, a, or an, and so forth. Each of these nonterminal symbols could be replaced by any of these words. 
 `7:40`
 
-We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. 
-# NP -> N | D N
-So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
+We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. *NP -> N | D N* So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
 
 So we might have a noun phrase that's just a noun, like she. That's a noun phrase. Or we could have a noun phrase that's multiple words, something like the city. Also acts as a noun phrase, but in this case, it's composed of two words, a determiner, the, and a noun, city. 
 
@@ -140,12 +138,16 @@ And we're going to need a dataset in order to do this, and I've prepared a datas
 
 So let's give this a try. We'll go into my n-grams directory and we'll `run ngrams.py`. We'll try an n value of two. So we're looking for sequences of two words in a row. And we'll use our corpus of stories from Sherlock Holmes. And when we run this program, we get a list of the most common n-grams where n is equal to two, otherwise known as a *bigram*. 
 
+`An n-gram is a sequence of n items from a sample of text. In a character n-gram, the items are characters, and in a word n-gram the items are words. A unigram, bigram, and trigram are sequences of one, two, and three items.`
+
 So the most common one is, of the. That's a sequence of two words that appears quite frequently in natural language. Then, in the, and, it was. These are all common sequences of two words that appear in a row. Let's instead now try running n-grams with n equal to three. 
 
 Let's get all of the trigrams and see what we get. And now we see the most common trigrams are, it was a, one of the, I think that. These are all sequences of three words that appear quite frequently. And we were able to do this, essentially via a process known as tokenization. 
 ### Tokenization 
 is the process of splitting a sequence of characters into pieces. In this case, we're splitting a long sequence of text into individual words, and then looking at sequences of those words to get a sense for the structure of natural language. 
 `16:48`
+
+`Tokenization is the task of splitting a sequence of characters into pieces (tokens). Tokens can be words as well as sentences, in which case the task is called word tokenization or sentence tokenization. We need tokenization to be able to look at n-grams, since those rely on sequences of tokens. We start by splitting the text into words based on the space character. While this is a good start, this method is imperfect because we end up with words with punctuation, such as “remains,”. So, for example, we can remove punctuation. However, then we face additional challenges, such as words with apostrophes (e.g. “o’clock”) and hyphens (e.g. “pearl-grey). Additionally, some punctuation is important for sentence structure, like periods. However, we need to be able to tell apart between a period at the end of the word “Mr.” and a period in the end of the sentence. Dealing with these questions is the process of tokenization. In the end, once we have our tokens, we can start looking at n-grams.`
 
 So once we've done this, once we've done the tokenization, once we've built up our corpus of n-grams, what can we do with that information? Well, the one thing that we might try, is we could build a *Markov chain*, which you might recall from when we talked about probability. Recall that `a Markov chain is some sequence of values where we can predict one value based on the values that came before it`. 
 
