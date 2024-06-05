@@ -40,8 +40,6 @@ But before we take a look at how the computer might try to solve these kinds of 
 ## Syntax 
 is all about the structure of language. Language is composed of individual words, and those words are composed together in some kind of structured whole. And if our computer is going to be able to understand language, it's going to need to understand something about that structure. So let's take a couple of examples. 
 
-`Syntax is sentence structure. As native speakers of some human language, we don’t struggle with producing grammatical sentences and flagging non-grammatical sentences as wrong. For example, the sentence “Just before nine o’clock Sherlock Holmes stepped briskly into the room” is grammatical, whereas the sentence “Just before Sherlock Holmes nine o’clock stepped briskly the room” is non-grammatical. Syntax can be grammatical and ambiguous at the same time, as in “I saw the man with the telescope.” Did I see (the man with the telescope) or did I see (the man), doing so by looking through the telescope? To be able to parse human speech and produce it, the AI needs to command syntax.`
-
 Here, for instance, is a sentence. "Just before nine o'clock Sherlock Holmes stepped briskly into the room." That sentence is made up of words, and those words together form a structured whole. This is syntactically valid as a sentence. But we could take some of those same words, rearrange them, and come up with a sentence that is not syntactically valid. 
 
 Here, for example, "Just before Sherlock Holmes nine o'clock stepped briskly the room" is still composed of valid words, but they're not in any kind of logical whole. This is not a syntactically well-formed sentence. Another interesting challenge, is that some sentences will have multiple possible valid structures. 
@@ -50,17 +48,19 @@ Here's a sentence, for example. "I saw the man on the mountain with a telescope.
 
 Maybe I, the one doing the seeing and the one with the telescope, or maybe the man on the mountain is the one with the telescope. And so natural language is ambiguous. Sometimes the same sentence can be interpreted in multiple ways. And that's something that we'll need to think about, as well. 
 
+`Syntax is sentence structure. As native speakers of some human language, we don’t struggle with producing grammatical sentences and flagging non-grammatical sentences as wrong. For example, the sentence “Just before nine o’clock Sherlock Holmes stepped briskly into the room” is grammatical, whereas the sentence “Just before Sherlock Holmes nine o’clock stepped briskly the room” is non-grammatical. Syntax can be grammatical and ambiguous at the same time, as in “I saw the man with the telescope.” Did I see (the man with the telescope) or did I see (the man), doing so by looking through the telescope? To be able to parse human speech and produce it, the AI needs to command syntax.`
+
 And this lends itself to another problem within language that we'll need to think about, which is 
 ### semantics. 
 While syntax is all about the structure of language, semantics is about the meaning of language. It's not enough for a computer just to know that a sentence is well-structured if it doesn't know what that sentence means. And so semantics is going to concern itself with the meaning of words and the meaning of sentences. 
-
-`Semantics is the meaning of words or sentences. While the sentence “Just before nine o’clock Sherlock Holmes stepped briskly into the room” is syntactically different from “Sherlock Holmes stepped briskly into the room just before nine o’clock,” their content is effectively identical. Similarly, although the sentence “A few minutes before nine, Sherlock Holmes walked quickly into the room” uses different words from the previous sentences, it still carries a very similar meaning. Moreover, a sentence can be perfectly grammatical while being completely nonsensical, as in Chomsky’s example, “Colorless green ideas sleep furiously.” To be able to parse human speech and produce it, the AI needs to command semantics.`
 
 So if we go back to that same sentence as before, "Just before nine o'clock Sherlock Holmes stepped briskly into the room." I could come up with another sentence. Say the sentence, "A few minutes before nine, Sherlock Holmes walked quickly into the room." 
 
 And those are two different sentences, with some of the words the same and some of the words different, but the two sentences have essentially the same meaning. And so ideally, whatever model we build, we'll be able to understand that these two sentences while different, mean something very similar. 
 
 Some syntactically well-formed sentences don't mean anything at all. A famous example from linguist, Noam Chomsky, is the sentence, "Colorless green ideas sleep furiously." This is a syntactically, structurally well-formed sentence. We've got adjectives modifying a noun, ideas, we've got a verb and an adverb in the correct positions. But when taken as a whole, the sentence doesn't really mean anything. 
+
+`Semantics is the meaning of words or sentences. While the sentence “Just before nine o’clock Sherlock Holmes stepped briskly into the room” is syntactically different from “Sherlock Holmes stepped briskly into the room just before nine o’clock,” their content is effectively identical. Similarly, although the sentence “A few minutes before nine, Sherlock Holmes walked quickly into the room” uses different words from the previous sentences, it still carries a very similar meaning. Moreover, a sentence can be perfectly grammatical while being completely nonsensical, as in Chomsky’s example, “Colorless green ideas sleep furiously.” To be able to parse human speech and produce it, the AI needs to command semantics.`
 
 And so if our computers are going to be able to work with natural language and perform tasks in natural language processing, these are some concerns we'll need to think about. We'll need to be thinking about syntax and we'll need to be thinking about semantics. *So, how could we go about trying to teach a computer how to understand the structure of natural language?* 
 
