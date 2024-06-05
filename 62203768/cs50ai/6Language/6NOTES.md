@@ -3,6 +3,26 @@
 [Notes](https://cs50.harvard.edu/ai/2024/notes/6/)
 [Slides](https://cdn.cs50.net/ai/2023/x/lectures/6/lecture6.pdf)
 
+So far in the course, we needed to shape tasks and data such that an AI will be able to process them. Today, we will look at how an AI can be constructed to process human language.
+
+Natural Language Processing spans all tasks where the AI gets human language as input. The following are a few examples of such tasks:
+
+    automatic summarization, where the AI is given text as input and it produces a summary of the text as output.
+
+    information extraction, where the AI is given a corpus of text and the AI extracts data as output.
+
+    language identification, where the AI is given text and returns the language of the text as output.
+
+    machine translation, where the AI is given a text in the origin language and it outputs the translation in the target language.
+
+    named entity recognition, where the AI is given text and it extracts the names of the entities in the text (for example, names of companies).
+
+    speech recognition, where the AI is given speech and it produces the same words in text.
+
+    text classification, where the AI is given text and it needs to classify it as some type of text.
+
+    word sense disambiguation, where the AI needs to choose the right meaning of a word that has multiple meanings (e.g. bank means both a financial institution and the ground on the sides of a river).
+
 [MUSIC PLAYING] BRIAN YU: Welcome back, everybody, to our final class in an Introduction to Artificial Intelligence with Python. Now, so far in this class, we've been taking problems that we want to solve intelligently and framing them in ways that computers are going to be able to make sense of. We've been taking problems and framing them as search problems or constraint satisfaction problems or optimization problems, for example. In essence, we have been trying to communicate about problems in ways that our computer is going to be able to understand. 
 
 Today, the goal is going to be to get computers to understand the way you and I communicate naturally, via our own natural languages. Languages like English. But natural language contains a lot of nuance and complexity that's going to make it challenging for computers to be able to understand. So we'll need to explore some new tools and some new techniques to allow computers to make sense of natural language. 
