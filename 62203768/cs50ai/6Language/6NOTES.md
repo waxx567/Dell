@@ -167,7 +167,9 @@ So we'll go ahead and go into our Markov directory, `run this generator` with th
 
 Of course, so far, there's no guarantee that any of the sentences that are generated actually mean anything or make any sense. They just happen to follow the statistical patterns that our computer is already aware of. So we'll return to this issue of how to generate text in perhaps a more accurate or more meaningful way a little bit later. 
 
-So, let's now turn our attention to a slightly different problem, and that's the problem of `text classification`. Text classification is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
+So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. 
+##### Text classification 
+is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
 `19:26`
 
 A common place might be your email inbox, for example. You get an email and you want your computer to be able to identify whether the email belongs in your inbox, or whether it should be filtered out into spam. So we need to classify the text. Is it a good email or is it spam? Another common use case is `sentiment analysis`. We might want to know whether the sentiment of some text is positive or negative. And so how might we do that? 
@@ -187,7 +189,7 @@ For the purpose of this model, we're not going to worry about the sequence and t
 `Bag-of-words is a model that represents text as an unordered collection of words. This model ignores syntax and considers only the meanings of the words in the sentence. This approach is helpful in some classification tasks, such as sentiment analysis (another classification task would be distinguishing regular email from spam email). Sentiment analysis can be used, for instance, in product reviews, categorizing reviews as positive or negative.`
 
 And in particular, we're going to use the bag-of-words model to build something known as a 
-##### Naive Bayes classifier. 
+# Naive Bayes classifier. 
 So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a. 
 
 `Naive Bayes is a technique that’s can be used in sentiment analysis with the bag-of-words model. In sentiment analysis, we are asking “What is the probability that the sentence is positive/negative given the words in the sentence?”`
