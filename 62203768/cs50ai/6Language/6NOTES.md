@@ -176,7 +176,7 @@ A common place might be your email inbox, for example. You get an email and you 
 
 This comes up in situations like product reviews, where we might have a bunch of reviews for a product on some website. "My grandson loved it! So much fun." "Product broke after a few days." "One of the best games I've played in a long time." And "Kind of cheap and flimsy, not worth it." Here's some example sentences that you might see on a product review website. 
 
-And you and I could pretty easily look at this list of product reviews and decide which ones are positive and which ones are negative. We might say the first one and the third one, those seem like positive sentiment messages, but the second one and the fourth one seem like negative sentiment messages. But how did we know that? And how could we train a computer to be able to figure that out, as well? 
+And you and I could pretty easily look at this list of product reviews and decide which ones are positive and which ones are negative. We might say the first one and the third one, those seem like positive sentiment messages, but the second one and the fourth one seem like negative sentiment messages. *But how did we know that?* And how could we train a computer to be able to figure that out, as well? 
 `20:27`
 
 Well, you might have clued your eye in on particular key words, where those particular words tend to mean something positive or negative. So you might have identified words like loved, and fun, and best, tend to be associated with positive messages. And words like broke, and cheap, and flimsy tend to be associated with negative messages. 
