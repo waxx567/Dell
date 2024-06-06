@@ -167,7 +167,7 @@ So we'll go ahead and go into our Markov directory, `run this generator` with th
 
 Of course, so far, there's no guarantee that any of the sentences that are generated actually mean anything or make any sense. They just happen to follow the statistical patterns that our computer is already aware of. So we'll return to this issue of how to generate text in perhaps a more accurate or more meaningful way a little bit later. 
 
-So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. Text classification is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
+So, let's now turn our attention to a slightly different problem, and that's the problem of `text classification`. Text classification is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
 `19:26`
 
 A common place might be your email inbox, for example. You get an email and you want your computer to be able to identify whether the email belongs in your inbox, or whether it should be filtered out into spam. So we need to classify the text. Is it a good email or is it spam? Another common use case is `sentiment analysis`. We might want to know whether the sentiment of some text is positive or negative. And so how might we do that? 
