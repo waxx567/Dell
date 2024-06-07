@@ -273,7 +273,8 @@ So `each of these words now has a distinct vector representation`. And this is w
 
 But this one-hot representation actually has a couple of problems, and it's not ideal for a few reasons. One reason is, here, we're just looking at four words. But if you imagine a vocabulary of thousands of words or more, these vectors are going to get quite long in order to have a distinct vector for every possible word in our vocabulary. 
 
-And as a result of that, these longer vectors are going to be more difficult to deal with, more difficult to train and so forth, and so that might be a problem. Another problem is a little bit more subtle. If we want to represent a word as a vector, and in particular, the meaning of a word as a vector, then ideally, it should be the case that words that have similar meanings should also have similar vector representations, so that they're close to each other together inside a vector space. 
+And as a result of that, these longer vectors are going to be more difficult to deal with, more difficult to train and so forth, and so that might be a problem. Another problem is a little bit more subtle. If we want to represent a word as a vector, and in particular, the meaning of a word as a vector, then ideally, it should be the case that *words that have similar meanings should also have similar vector representations, so that they're close to each other together inside a vector space*.
+`33:41` 
 
 But that's not really going to be the case with these one-hot representations, because if we take some similar words, say the word wrote and the word authored, which mean similar things, they have entirely different vector representations. Likewise book and novel. Those two words mean somewhat similar things, but they have entirely different vector representations, because they each have a 1 in some different position. And so that's not ideal either. 
 
