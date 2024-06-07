@@ -242,21 +242,27 @@ And *that's probably not the right analysis*, because in cases of rare words, it
 And a common form of this is 
 ## Laplace smoothing, 
 `adding 1 to each value in our distribution: pretending we've seen each value one more time than we actually have`
-where we add 1 to each value in our distribution. In essence, we pretend we've seen each value one more time than we actually have. If we've never seen the word grandson for a positive review, we pretend we've seen it once. If we've seen it once, we pretend we've seen it twice, just to avoid the possibility that we might multiply by 0, and as a result, get some results we don't want in our analysis. 
+where we add 1 to each value in our distribution. In essence, we pretend we've seen each value one more time than we actually have. If we've never seen the word grandson for a positive review, we pretend we've seen it once. If we've seen it once, we pretend we've seen it twice, just *to avoid the possibility that we might multiply by 0, and as a result, get some results we don't want in our analysis*. 
 
-So let's see what this looks like in practice. Let's try to do some Naive Bayes classification in order to classify text as either positive or negative. We'll take a look at sentiment.py. And what this is going to do, is load some sample data into memory, some examples of positive reviews and negative reviews. And then we're going to train a Naive Bayes classifier on all of this training data. 
+So let's see what this looks like in practice. Let's try to do some Naive Bayes classification in order to classify text as either positive or negative. We'll take a look at `sentiment.py`. And what this is going to do, is load some sample data into memory, some examples of positive reviews and negative reviews. And then we're going to train a Naive Bayes classifier on all of this training data. 
 
 Training data that includes all of the words we see in positive reviews and all of the words we see in negative reviews. And then we're going to try to classify some input. And so we're going to do this based on a corpus of data. I have some example positive reviews. Here are some positive reviews. "It was great! So much fun," for example. And then some negative reviews. "Not worth it." "Kind of cheap." These are some examples of negative reviews. 
 
 So now, let's try to run this classifier and see how it would classify particular text as either positive or negative. We'll go ahead and run our sentiment analysis on this corpus. And we need to provide it with a review. So I'll say something like, "I enjoyed it." And we see that the classifier says there's about a 0.92 probability that we think that this particular review is positive. 
 
 Let's try something negative. We'll try "kind of overpriced." And we see that there is a 0.96 probability now that we think that this particular review is negative. And so our Naive Bayes classifier has learned what kinds of words tend to appear in positive reviews and what kinds of words tend to appear in negative reviews. And as a result of that, we've been able to design a classifier that can predict whether a particular review is positive or negative. 
+`30:53`
 
-And so this definitely is a useful tool that we can use to try and make some predictions. But we had to make some assumptions in order to get there. So what if we want to now try to build some more sophisticated models, use some tools from machine learning to try and take better advantage of language data, to be able to draw more accurate conclusions and solve new kinds of tasks and new kinds of problems? 
+And so this definitely is a useful tool that we can use to try and make some predictions. But we had to make some assumptions in order to get there. *So what if we want to now try to build some more sophisticated models, use some tools from machine learning to try and take better advantage of language data, to be able to draw more accurate conclusions and solve new kinds of tasks and new kinds of problems?* 
 
 Well, we've seen a couple of times now, that when we want to take some data and take some input, put it in a way that the computer is going to be able to make sense of, it can be helpful to take that data and turn it into numbers ultimately. And so what we might want to try to do, is come up with some word representation, some way to take a word and translate its meaning into numbers. 
 
-Because, for example, if we wanted to use a neural network to be able to process language, give our language to a neural network and have it make some predictions or perform some analysis there, a neural network takes as input and produces as output a vector of values, a vector of numbers. And so what we might want to do, is take our data and somehow take words and convert them into some kind of numeric representation. 
+**Word Representation**
+
+    We want to represent word meanings in our AI. As we’ve seen before, it is convenient to provide input to the AI in the form of numbers. One way to go about this is by using One-Hot Representation, where each word is represented with a vector that consists of as many values as we have words. Except for a single value in the vector that is equal to 1, all other values are equal to 0. How we can differentiate words is by which of the values is 1, ending up with a unique vector per word.
+
+Because, for example, if we wanted to use a neural network to be able to process language, give our language to a neural network and have it make some predictions or perform some analysis there, a neural network takes as input and produces as output a vector of values, a vector of numbers. And so what we might want to do, is take our data and somehow take words and convert them into some kind of numeric representation.
+`31:55` 
 
 So, how might we do that? How might we take words and turn them into numbers? Let's take a look at an example. Here's a sentence, "He wrote a book." And let's say I wanted to take each of those words and turn it into a vector of values. 
 
