@@ -278,7 +278,10 @@ And as a result of that, these longer vectors are going to be more difficult to 
 
 But that's not really going to be the case with these one-hot representations, because if we take some similar words, say the word wrote and the word authored, which mean similar things, they have entirely different vector representations. Likewise book and novel. Those two words mean somewhat similar things, but they have entirely different vector representations, because they each have a 1 in some different position. And so that's not ideal either. 
 
-So what we might be interested in instead, is some kind of distributed representation. A distributed representation is the representation of the meaning of a word distributed across multiple values, instead of just being one-hot with a 1 in 1 position. Here is what a distributed representation of words might be. Each word is associated with some vector of values, with the meaning distributed across multiple values, ideally in such a way, that similar words have a similar vector representation. 
+So what we might be interested in instead, is some kind of *distributed representation*.
+`representation of meaning distributed across multiple values.`
+A distributed representation is the representation of the meaning of a word distributed across multiple values, instead of just being one-hot with a 1 in 1 position. Here is what a distributed representation of words might be. Each word is associated with some vector of values, with the meaning distributed across multiple values, ideally in such a way, that similar words have a similar vector representation.
+`34:36` 
 
 But how are we going to come up with those values? Where do those values come from? How can we define the meaning of a word in this distributed sequence of numbers? Well, to do that, we're going to draw inspiration from a quote from British linguist JR Firth, who said, "You shall know a word by the company it keeps." 
 
