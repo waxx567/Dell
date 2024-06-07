@@ -237,9 +237,12 @@ So, *what problems might we run into here?* What could potentially go wrong when
 If that were the case, then when we try to calculate the value, the probability that we think the review is positive, we're going to multiply all these values together and we're just going to get 0 for the positive case. Because we're going to ultimately multiply by that 0 value. And so we're going to say that we think there is no chance that the review is positive, because it contains the word grandson. And in our training data, we've never seen the word grandson appear in a positive sentiment message before. 
 `28:25`
 
-And that's probably not the right analysis, because in cases of rare words, it might be the case that in nowhere in our training data did we ever see the word grandson appear in a message that has positive sentiment. So, what can we do to solve this problem? Well, one thing we'll often do, is some kind of additive smoothing, where we add some value alpha to each value in our distribution just to smooth out the data a little bit. 
+And *that's probably not the right analysis*, because in cases of rare words, it might be the case that in nowhere in our training data did we ever see the word grandson appear in a message that has positive sentiment. So, what can we do to solve this problem? Well, one thing we'll often do, is some kind of additive smoothing, where we add some value alpha to each value in our distribution just to smooth out the data a little bit. 
 
-And a common form of this is Laplace smoothing, where we add 1 to each value in our distribution. In essence, we pretend we've seen each value one more time than we actually have. If we've never seen the word grandson for a positive review, we pretend we've seen it once. If we've seen it once, we pretend we've seen it twice, just to avoid the possibility that we might multiply by 0, and as a result, get some results we don't want in our analysis. 
+And a common form of this is 
+## Laplace smoothing, 
+`adding 1 to each value in our distribution: pretending we've seen each value one more time than we actually have`
+where we add 1 to each value in our distribution. In essence, we pretend we've seen each value one more time than we actually have. If we've never seen the word grandson for a positive review, we pretend we've seen it once. If we've seen it once, we pretend we've seen it twice, just to avoid the possibility that we might multiply by 0, and as a result, get some results we don't want in our analysis. 
 
 So let's see what this looks like in practice. Let's try to do some Naive Bayes classification in order to classify text as either positive or negative. We'll take a look at sentiment.py. And what this is going to do, is load some sample data into memory, some examples of positive reviews and negative reviews. And then we're going to train a Naive Bayes classifier on all of this training data. 
 
