@@ -215,14 +215,15 @@ But still, it's not entirely obvious how we calculate that value. And here is wh
 
 And in practice, this assumption might not be true. It's almost certainly the case that the probability of words do depend on each other. But it's going to simplify our analysis, and still give us reasonably good results, just to assume that the words are independent of each other and they only depend on whether it's positive or negative. 
 
-You might, for example, expect the word, loved, to appear more often in a positive review than in a negative review. So, what does that mean? Well, if we make this assumption, then we can say that this value, the probability we're interested in, is not directly proportional to, but it's naively proportional to this value. 
+You might, for example, expect the word, loved, to appear more often in a positive review than in a negative review. So, what does that mean? Well, if we make this assumption, then we can say that this value, the probability we're interested in, is not directly proportional to, but it's `naively proportional` to this value. 
 `25:21`
 
 The probability that the review is positive times the probability that my is in the review, given that it's positive, times the probability that grandson is in the review, given that it's positive, and so on for the other two words that happen to be in this review. And now this value, which looks a little more complex, is actually a value that we can calculate pretty easily. 
 
-So how are we going to estimate the probability that the review is positive? Well, if we have some training data, some example data of example reviews where each one has already been labeled as positive or negative, then we can estimate the probability that a review is positive just by counting the number of positive samples and dividing by the total number of samples that we have in our training data. 
+So how are we going to estimate the probability that the review is positive? Well, if we have some training data, some example data of example reviews where each one has already been labeled as positive or negative, then `we can estimate the probability that a review is positive just by counting the number of positive samples and dividing by the total number of samples that we have in our training data`. 
 
-And for the conditional probabilities, the probability of loved, given that it's positive, well, that's going to be the number of positive samples with loved in it divided by the total number of positive samples. So let's take a look at an actual example to see how we could try to calculate these values. Here, I've put together some sample data. The way to interpret the sample data, is that based on the training data, 49% of the reviews are positive, 51% are negative. 
+And `for the conditional probabilities, the probability of loved, given that it's positive, well, that's going to be the number of positive samples with loved in it divided by the total number of positive samples`. So let's take a look at an actual example to see how we could try to calculate these values. Here, I've put together some sample data. The way to interpret the sample data, is that based on the training data, 49% of the reviews are positive, 51% are negative. 
+`26:28`
 
 And then over here in this table, we have some conditional probabilities. We have if the review is positive, then there's a 30% chance that my appears in it. And if the review is negative, there's a 20% chance that my appears in it. And based on our training data among the positive reviews, 1% of them contain the word grandson. And among the negative reviews, 2% contain the word grandson. 
 
