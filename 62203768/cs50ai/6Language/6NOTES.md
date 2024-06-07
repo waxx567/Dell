@@ -290,11 +290,15 @@ In other words, we're going to define the meaning of a word based on the words t
 And so what we're going to say, is because does the words breakfast and lunch and dinner appear in a similar context, that they must have a similar meaning. And that's something our computer could understand and try to learn. A computer could look at a big corpus of text, look at what words tend to appear in similar contexts to each other, and use that to identify which words have a similar meaning. And should therefore, appear close to each other inside a vector space. 
 `35:39`
 
-And so one common model for doing this is known as the word2vec model. It's a model for generating word vectors, a vector representation for every word by looking at data and looking at the context in which a word appears. The idea is going to be this. 
+And so one common model for doing this is known as the `word2vec model`. It's a model for generating word vectors, a vector representation for every word by looking at data and looking at the context in which a word appears. The idea is going to be this.
+
+#### word2vec
+`word2vec is an algorithm for generating distributed representations of words. It does so by Skip-Gram Architecture, which is a neural network architecture for predicting context given a target word. In this architecture, the neural network has an input unit for every target word. A smaller, single hidden layer (e.g. 50 or 100 units, though this number is flexible) will generate values that represent the distributed representations of words. Every unit in this hidden layer is connected to every unit in the input layer. The output layer will generate words that are likely to appear in a similar context as the target words. Similar to what we saw in last lecture, this network needs to be trained with a training dataset using the backpropagation algorithm.`
 
 If you start out with all of the words just in some random position in space and train it on some training data, what the word2vec model will do, is start to learn what words appear in similar contexts. And it will move these vectors around in such a way that hopefully, words with similar meanings, breakfast, lunch, and dinner, book, memoir, novel, will hopefully appear to be near to each other as vectors, as well. 
 
-So, let's now take a look at what word2vec might look like in practice when implemented in code. What I have here inside of words.txt is a pre-trained model where each of these words has some vector representation trained by word2vec. Each of these words has some sequence of values representing its meaning, hopefully in such a way, that similar words are represented by similar vectors. 
+So, let's now take a look at what word2vec might look like in practice when implemented in code. What I have here inside of `words.txt` is a pre-trained model where each of these words has some vector representation trained by word2vec. Each of these words has some sequence of values representing its meaning, hopefully in such a way, that similar words are represented by similar vectors. 
+`36:42`
 
 I also have this file, vectors.py, which is going to open up the words and form them into a dictionary. And we also define some useful functions, like distance, to get the distance between two word vectors. And closest words define which words are nearby in terms of having close vectors to each other. And so let's give this a try. 
 
