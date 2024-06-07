@@ -283,11 +283,12 @@ So what we might be interested in instead, is some kind of *distributed represen
 A distributed representation is the representation of the meaning of a word distributed across multiple values, instead of just being one-hot with a 1 in 1 position. Here is what a distributed representation of words might be. Each word is associated with some vector of values, with the meaning distributed across multiple values, ideally in such a way, that similar words have a similar vector representation.
 `34:36` 
 
-But how are we going to come up with those values? Where do those values come from? How can we define the meaning of a word in this distributed sequence of numbers? Well, to do that, we're going to draw inspiration from a quote from British linguist JR Firth, who said, "You shall know a word by the company it keeps." 
+But how are we going to come up with those values? Where do those values come from? How can we define the meaning of a word in this distributed sequence of numbers? Well, to do that, we're going to draw inspiration from a quote from British linguist JR Firth, who said, *"You shall know a word by the company it keeps."* 
 
 In other words, we're going to define the meaning of a word based on the words that appear around it, the context words around it. Take for example, this context. For blank he ate. You might wonder, what words could reasonably fill in that blank. Well, it might be words like breakfast, or lunch, or dinner. All of those could reasonably fill in that blank. 
 
 And so what we're going to say, is because does the words breakfast and lunch and dinner appear in a similar context, that they must have a similar meaning. And that's something our computer could understand and try to learn. A computer could look at a big corpus of text, look at what words tend to appear in similar contexts to each other, and use that to identify which words have a similar meaning. And should therefore, appear close to each other inside a vector space. 
+`35:39`
 
 And so one common model for doing this is known as the word2vec model. It's a model for generating word vectors, a vector representation for every word by looking at data and looking at the context in which a word appears. The idea is going to be this. 
 
