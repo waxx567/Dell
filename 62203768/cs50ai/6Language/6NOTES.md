@@ -228,12 +228,14 @@ And `for the conditional probabilities, the probability of loved, given that it'
 And then over here in this table, we have some conditional probabilities. We have if the review is positive, then there's a 30% chance that my appears in it. And if the review is negative, there's a 20% chance that my appears in it. And based on our training data among the positive reviews, 1% of them contain the word grandson. And among the negative reviews, 2% contain the word grandson. 
 
 So, using this data, let's try to calculate this value, the value we're interested in. And to do that, we'll need to multiply all of these values together. The probability of positive, and then all of these positive conditional probabilities. And when we do that, we get some value. And then we can do the same thing for the negative case. We're going to do the same thing. Take the probability that it's negative, multiply it by all of these conditional probabilities, and we're going to get some other value. 
+`27:19`
 
-And now these values don't sum to one. They're not a probability distribution yet. But I can normalize them and get some values, and that tells me that we're going to predict that my grandson loved it. We think there's a 68% chance. Probability is 0.68 that that is a positive sentiment review. And 0.32 probability that it's a negative review. 
+And now these values don't sum to one. They're not a probability distribution yet. But I can `normalize` them and get some values, and that tells me that we're going to predict that my grandson loved it. We think there's a 68% chance. Probability is 0.68 that that is a positive sentiment review. And 0.32 probability that it's a negative review. 
 
-So, what problems might we run into here? What could potentially go wrong when doing this kind of analysis in order to analyze whether text has a positive or negative sentiment? Well, a couple of problems might arise. One problem might be, what if the word grandson never appears for any of the positive reviews? 
+So, *what problems might we run into here?* What could potentially go wrong when doing this kind of analysis in order to analyze whether text has a positive or negative sentiment? Well, a couple of problems might arise. One problem might be, what if the word grandson never appears for any of the positive reviews? 
 
 If that were the case, then when we try to calculate the value, the probability that we think the review is positive, we're going to multiply all these values together and we're just going to get 0 for the positive case. Because we're going to ultimately multiply by that 0 value. And so we're going to say that we think there is no chance that the review is positive, because it contains the word grandson. And in our training data, we've never seen the word grandson appear in a positive sentiment message before. 
+`28:25`
 
 And that's probably not the right analysis, because in cases of rare words, it might be the case that in nowhere in our training data did we ever see the word grandson appear in a message that has positive sentiment. So, what can we do to solve this problem? Well, one thing we'll often do, is some kind of additive smoothing, where we add some value alpha to each value in our distribution just to smooth out the data a little bit. 
 
