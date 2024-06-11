@@ -410,11 +410,12 @@ And so what we can now do, is if we have all of these vectors and we have values
 
 And once we've done that, that context vector can be fed into our decoder in order to say that the word should be, in this case, Boston. So Attention is this very powerful tool that allows any word when we're trying to decode it, to decide which words from the input should we pay attention to in order to determine what's important for generating the next word of the output. 
 
-And one of the first places this was really used, was in the field of machine translation. Here's an example of a diagram from the paper that introduced this idea, which was focused on trying to translate English sentences into French sentences. So we have an input English sentence up along the top, and then along the left side, the output French equivalent of that same sentence. 
+And one of the first places this was really used, was in the field of machine translation. Here's an example of a diagram from the paper that introduced this idea `51:40`, which was focused on trying to translate English sentences into French sentences. So we have an input English sentence up along the top, and then along the left side, the output French equivalent of that same sentence. 
 
 And what you see in all of these squares are the Attention scores visualized, where a lighter square indicates a higher Attention score. And what you'll notice, is that there's a strong correspondence between the French word and the equivalent English word. That the French word for agreement is really paying attention to the English word for agreement in order to decide what French word should be generated at that point in time. 
 
 And sometimes you might pay attention to multiple words. If you look at the French word for economic, that's primarily paying attention to the English word for economic, but also paying attention to the English word for European, in this case, too. And so Attention scores are very easy to visualize to get a sense for what is our machine learning model really paying attention to. What information is it using in order to determine what's important and what's not in order to determine what the ultimate output token should be. 
+`52:45`
 
 And so when we combine the Attention mechanism with a recurrent neural network, we can get very powerful and useful results, where we're able to generate an output sequence by paying attention to the input sequence, too. But there are other problems with this approach of using a recurrent neural network, as well. In particular, notice that every run of the neural network depends on the output of the previous step. 
 
