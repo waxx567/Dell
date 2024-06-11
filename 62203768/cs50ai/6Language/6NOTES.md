@@ -437,6 +437,7 @@ So let's start with the model we were looking at before, specifically at this en
 Right now, it all needs to happen in this linear progression. But what the Transformer is going to allow us to do, is process each of the words independently in a way that's easy to parallelize. Rather than have each word wait for some other word, each word is going to go through this same neural network and produce some kind of encoded representation of that particular input word. And all of this is going to happen in parallel. 
 
 Now it's happening for all of the words at once, but we're really just going to focus on what's happening for one word to make it clear. But know that whatever you're seeing happen for this one word, is going to happen for all of the other input words, too. So what's going on here? Well, we start with some input word. That input word goes into the neural network, and the output is hopefully, some encoded representation of the input word, the information we need to know about the input word that's going to be relevant to us as we're generating the output. 
+`56:02`
 
 And because we're doing this each word independently, it's easy to parallelize. We don't have to wait for the previous word before we run this word through the neural network. But what did we lose in this process by trying to parallelize this whole thing? Well, we've lost all notion of word ordering. The order of words is important. The sentence, Sherlock Holmes gave the book to Watson, has a different meaning than Watson gave the book to Sherlock Holmes. 
 
