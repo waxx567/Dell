@@ -371,11 +371,12 @@ Now somehow, we need to signal the fact that we're done. There's nothing left in
 And so what happens the next time? Well, `to generate the next word, it might be helpful to know what the first word was`. So we might pass the first word, the, back into the decoder network. It's going to get as input this hidden state, and it's going to generate the next word, capital. And that's also going to generate some hidden state. And we'll repeat that, passing capital into the network to generate the third word, is, and then one more time, in order to get the fourth word, Boston. 
 `45:36`
 
-And at that point, we're done. But how do we know we're done? Usually we'll do this one more time. Pass Boston into the decoder network and get as output some n token to indicate that that is the end of our input. And so this then is how we could use a recurrent neural network to take some input, encode it into some hidden state, and then use that hidden state to decode it into the output we're interested in. 
+And at that point, we're done. But how do we know we're done? Usually we'll do this one more time. Pass Boston into the decoder network and get as output some end token to indicate that that is the end of our input. And so this then is how we could use a recurrent neural network to take some input, encode it into some hidden state, and then use that hidden state to decode it into the output we're interested in. 
 
 To visualize it in a slightly different way, we have some input sequence. This is just some sequence of words. That input sequence goes into the encoder, which in this case, is a recurrent neural network generating these hidden states along the way, until we generate some final hidden state, at which point, we start the decoding process. 
 
 Again, using a recurrent neural network. That's going to generate the output sequence, as well. So we've got the encoder, which is encoding the information about the input sequence into this hidden state. And then the decoder, which takes that hidden state and uses it in order to generate the output sequence. 
+`46:35`
 
 But there are some problems. And for many years, this was the state of the art. The recurrent neural network and variants on this approach were some of the best ways we knew in order to perform tasks in natural language processing. But there are some problems that we might want to try to deal with, and that have been dealt with over the years to try and improve upon this kind of model. 
 
