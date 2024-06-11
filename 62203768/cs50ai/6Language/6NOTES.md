@@ -337,7 +337,8 @@ Well, we could try it. Let's go ahead and go back to our python interpreter and 
 `closest_word(words["king"] - words["man"] + words["woman"])`
 And we see that the closest word is the word queen. We've somehow been able to capture the relationship between king and man, and then we apply it to the word woman, we get as the result, the word queen. 
 
-So word2vec has been able to capture not just the words and how they're similar to each other, but also something about the relationships between words and how those words are connected to each other. So now that we have this vector representation of words, what can we now do with it? Now we can represent words as numbers, and so we might try to pass those words as input to say, a neural network. Neural networks we've seen are very powerful tools for identifying patterns and making predictions. 
+So word2vec has been able to capture not just the words and how they're similar to each other, but also something about the relationships between words and how those words are connected to each other. So now that we have this vector representation of words, what can we now do with it? Now we can represent words as numbers, and so we might try to pass those words as input to say, a neural network. Neural networks we've seen are very powerful tools for identifying patterns and making predictions.
+`40:49`
 
 Recall that a neural network you can think of as all of these units. But really what the neural network is doing, is taking some input, passing it into the network, and then producing some output. And by providing the neural network with training data, we're able to update the weights inside of the network, so that the neural network can do a more accurate job of translating those inputs into those outputs. 
 
