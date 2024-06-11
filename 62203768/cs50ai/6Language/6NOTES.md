@@ -483,6 +483,7 @@ And this is one of the possible architectures we could use for a transformer, wi
 And we can learn how we should perform these attention steps. The model is able to learn what is important to pay attention to, what things do I need to pay attention to in order to be more accurate at predicting what the output word is. And this has proved to be a tremendously effective model for conversational AI agents, for building machine translation systems. 
 
 And there have been many variants proposed on this model, too. Some transformers only use an encoder. Some only use a decoder. Some use some other combination of these different particular features. But the key ideas ultimately remain the same. This real focus on trying to pay attention to what is most important. 
+`1:03:01`
 
 And the world of natural language processing is fast-growing and fast-evolving. Year after year, we keep coming up with new models that allow us to do an even better job of performing these natural language-related tasks, all in the service of solving the tricky problem, which is our own natural language. 
 
