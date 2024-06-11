@@ -273,7 +273,7 @@ So each of these words now has a distinct vector representation. And this is wha
  a representation of the meaning of a word as a vector with a single 1 and all of the rest of the values are 0. And so when doing this, we now have a numeric representation for every word, and we could pass in those vector representations into a neural network or other models that require some kind of numeric data as input.
 `32:54`
 
-But this one-hot representation actually has a couple of problems, and it's not ideal for a few reasons. One reason is, here, we're just looking at four words. But if you imagine a vocabulary of thousands of words or more, these vectors are going to get quite long in order to have a distinct vector for every possible word in our vocabulary. 
+But this `one-hot representation actually has a couple of problems, and it's not ideal for a few reasons`. One reason is, here, we're just looking at four words. But if you imagine a vocabulary of thousands of words or more, these vectors are going to get quite long in order to have a distinct vector for every possible word in our vocabulary. 
 
 And as a result of that, these longer vectors are going to be more difficult to deal with, more difficult to train and so forth, and so that might be a problem. Another problem is a little bit more subtle. If we want to represent a word as a vector, and in particular, the meaning of a word as a vector, then ideally, it should be the case that *words that have similar meanings should also have similar vector representations, so that they're close to each other together inside a vector space*.
 `33:41` 
