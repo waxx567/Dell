@@ -330,7 +330,8 @@ The closest one is book itself. But we also have books plural, and then essay, m
 
 One other interesting side effect of word2vec is that it's also able to capture something about the relationships between words, as well. Let's take a look at an example. Here, for instance, are two words, man and king. And these are each represented by word2vec as vectors. So what might happen if I subtracted one from the other, calculated the value king minus man? 
 
-Well, that will be the vector that will take us from man to king, somehow represent this relationship between the vector representation of the word man, and the vector representation of the word king. And that's what this value, king minus man, represents. So what would happen if I took the vector representation of the word woman and added that same value, king minus man, to it? What would we get as the closest word to that, for example? 
+Well, that will be the vector that will take us from man to king, somehow represent this relationship between the vector representation of the word man, and the vector representation of the word king. And that's what this value, king minus man, represents. So what would happen if I took the vector representation of the word woman and added that same value, king minus man, to it? What would we get as the closest word to that, for example?
+`39:54`
 
 Well, we could try it. Let's go ahead and go back to our python interpreter and give this a try. I could say, what is the closest word to the vector representation of the word king minus the representation of the word man, plus the representation of the word woman? And we see that the closest word is the word queen. We've somehow been able to capture the relationship between king and man, and then we apply it to the word woman, we get as the result, the word queen. 
 
