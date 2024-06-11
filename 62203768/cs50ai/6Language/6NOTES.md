@@ -364,6 +364,7 @@ So what's that going to look like? We'll start with the first word, the word wha
 So we pass in the second word, we also get the information about the hidden state, and that's going to continue for the other words in the input. This is going to produce a new hidden state. And so then when we get to the third word, the, that goes into the encoder, it also gets access to the hidden state. 
 
 And then it produces a new hidden state that gets passed in to the next run when we use the word capital. And the same thing is going to repeat for the other words that appear in the input. So of, Massachusetts, that produces one final piece of hidden state. 
+`44:45`
 
 Now somehow, we need to signal the fact that we're done. There's nothing left in the input. And we typically do this by passing some kind of special token, say an end token, into the neural network. And now the decoding process is going to start. We're going to generate the word, the. But in addition to generating the word, the, this decoder network is also going to generate some kind of hidden state. 
 
