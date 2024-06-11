@@ -261,7 +261,7 @@ Well, we've seen a couple of times now, that when we want to take some data and 
 
     We want to represent word meanings in our AI. As we’ve seen before, it is convenient to provide input to the AI in the form of numbers. One way to go about this is by using One-Hot Representation, where each word is represented with a vector that consists of as many values as we have words. Except for a single value in the vector that is equal to 1, all other values are equal to 0. How we can differentiate words is by which of the values is 1, ending up with a unique vector per word.
 
-Because, for example, if we wanted to use a neural network to be able to process language, give our language to a neural network and have it make some predictions or perform some analysis there, a neural network takes as input and produces as output a vector of values, a vector of numbers. And so what we might want to do, is take our data and somehow take words and convert them into some kind of numeric representation.
+Because, for example, if we wanted to use a neural network to be able to process language, give our language to a neural network and have it make some predictions or perform some analysis there, a neural network takes as input and produces as output a `vector of values`, a vector of numbers. And so what we might want to do, is take our data and somehow take words and convert them into some kind of numeric representation.
 `31:55` 
 
 So, how might we do that? *How might we take words and turn them into numbers?* Let's take a look at an example. Here's a sentence, "He wrote a book." And let's say I wanted to take each of those words and turn it into a vector of values. 
