@@ -337,14 +337,15 @@ Well, we could try it. Let's go ahead and go back to our python interpreter and 
 `closest_word(words["king"] - words["man"] + words["woman"])`
 And we see that the closest word is the word queen. We've somehow been able to capture the relationship between king and man, and then we apply it to the word woman, we get as the result, the word queen. 
 
-So word2vec has been able to capture not just the words and how they're similar to each other, but also something about the relationships between words and how those words are connected to each other. So now that we have this vector representation of words, what can we now do with it? Now we can represent words as numbers, and so we might try to pass those words as input to say, a neural network. Neural networks we've seen are very powerful tools for identifying patterns and making predictions.
+So word2vec has been able to capture not just the words and how they're similar to each other, but also something about the relationships between words and how those words are connected to each other. So now that we have this vector representation of words, what can we now do with it? Now we can represent words as numbers, and so we might try to pass those words as input to say, a neural network. Neural networks, we've seen, are very powerful tools for identifying patterns and making predictions.
 `40:49`
 
 Recall that a neural network you can think of as all of these units. But really what the neural network is doing, is taking some input, passing it into the network, and then producing some output. And by providing the neural network with training data, we're able to update the weights inside of the network, so that the neural network can do a more accurate job of translating those inputs into those outputs. 
 
-And now that we can represent words as numbers that could be the input or output, you could imagine passing a word in as input to a neural network and getting a word as output. And so when might that be useful? One common use for neural networks is in machine translation. When we want to translate text from one language into another. 
+And now that we can represent words as numbers that could be the input or output, you could imagine passing a word in as input to a neural network and getting a word as output. And so when might that be useful? One common use for neural networks is in *machine translation*. When we want to translate text from one language into another. 
 
 Say, translate English into French, by passing English into the neural network and getting some French output. You might imagine, for instance, that we could take the English word for lamp, pass it into the neural network, get the French word for lamp as output. But in practice, when we're translating text from one language to another, we're usually not just interested in translating a single word from one language to another, but a sequence. Say, a sentence or a paragraph of words. 
+`41:55`
 
 Here, for example, is another paragraph, again taken from Sherlock Holmes written in English, and what I might want to do, is take that entire sentence, pass it into the neural network, and get as output, a French translation of the same sentence. But recall that a neural network's input and output needs to be of some fixed size. And a sentence is not a fixed size, it's a variable. You might have shorter sentences and you might have longer sentences. 
 
