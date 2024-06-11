@@ -350,6 +350,7 @@ Say, translate English into French, by passing English into the neural network a
 Here, for example, is another paragraph, again taken from Sherlock Holmes written in English, and what I might want to do, is take that entire sentence, pass it into the neural network, and get as output, a French translation of the same sentence. But recall that a neural network's input and output needs to be of some fixed size. And a sentence is not a fixed size, it's a variable. You might have shorter sentences and you might have longer sentences. 
 
 So somehow, we need to solve the problem of translating a sequence into another sequence by means of a neural network. And that's going to be true not only for machine translation, but also for other problems, problems like question answering. If I want to pass as input a question, something like, what is the capital of Massachusetts, feed that as input into the neural network, I would hope that what I would get as output is a sentence like, the capital is Boston. Again, translating some sequence into some other sequence. 
+`42:48`
 
 And if you've ever had a conversation with an AI chatbot or have ever asked your phone a question, it needs to do something like this. It needs to understand the sequence of words that you, the human, provided as input, and then the computer needs to generate some sequence of words as output. So how can we do this? 
 
