@@ -304,9 +304,15 @@ So, let's now take a look at what word2vec might look like in practice when impl
 
 I also have this file, `vectors.py`, which is going to open up the words and form them into a dictionary. And we also define some useful functions, like distance, to get the distance between two word vectors. And closest words define which words are nearby in terms of having close vectors to each other. And so let's give this a try. 
 
-We'll go ahead and open a python interpreter. And I'm going to import these vectors. And we might say, all right, what is the vector representation of the word book. And we get this big long vector that represents the word book as a sequence of values. And this sequence of values by itself is not all that meaningful. But it is meaningful in the context of comparing it to other vectors for other words. 
+We'll go ahead and open a python interpreter. And I'm going to import these vectors. 
+`from vectors import *` 
+And we might say, all right, what is the vector representation of the word book. 
+`words["book"]` 
+And we get this big long vector that represents the word book as a sequence of values. And this sequence of values by itself is not all that meaningful. But it is meaningful in the context of comparing it to other vectors for other words. 
 
-So we could use this `distance function`, which is going to get us the distance between two word vectors. And we might say, what is the distance between the vector representation for the word book and the vector representation for the word novel. And we see that it's 0.34. You can kind of interpret 0 as being really close together, and 1 being very far apart. 
+So we could use this `distance function`, which is going to get us the distance between two word vectors. And we might say, what is the distance between the vector representation for the word book and the vector representation for the word novel. 
+`distance(words["book"], words["novel"])` 
+And we see that it's 0.34. You can kind of interpret 0 as being really close together, and 1 being very far apart. 
 `37:50`
 
 And so now, what is the distance between book and let's say, breakfast? Well, book and breakfast are more different from each other than book and novel are, so I would hopefully, expect the distance to be larger. And in fact, it is. 0.64 approximately. These two words are further away from each other. And what about now, the distance between let's say, lunch and breakfast? Well, that's about 0.2. Those are even closer together. They have a meaning that is closer to each other. 
