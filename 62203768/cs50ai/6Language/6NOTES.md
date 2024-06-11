@@ -405,7 +405,8 @@ It could be something as simple as a dot product to see how similar two vectors 
 
 So the result of all of this, calculating these Attention scores, is that we can calculate some value, some value for each input word, determining how important is it for us to pay attention to that particular value. And recall that each of these input words is also associated with one of these hidden state context vectors, capturing information about the sentence up to that point, but primarily focused on that word in particular. 
 
-And so what we can now do, is if we have all of these vectors and we have values representing how important is it for us to pay attention to those particular vectors, is we can take a weighted average. We can take all of these vectors, multiply them by their Attention scores, and add them up to get some new vector value, which is going to represent the context from the input, but specifically paying attention to the words that we think are most important. 
+And so what we can now do, is if we have all of these vectors and we have values representing how important is it for us to pay attention to those particular vectors, is we can take a `weighted average`. We can take all of these vectors, multiply them by their Attention scores, and add them up to get some new vector value, which is going to represent the context from the input, but specifically paying attention to the words that we think are most important. 
+`51:08`
 
 And once we've done that, that context vector can be fed into our decoder in order to say that the word should be, in this case, Boston. So Attention is this very powerful tool that allows any word when we're trying to decode it, to decide which words from the input should we pay attention to in order to determine what's important for generating the next word of the output. 
 
