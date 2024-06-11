@@ -333,7 +333,9 @@ One other interesting side effect of word2vec is that it's also able to capture 
 Well, that will be the vector that will take us from man to king, somehow represent this relationship between the vector representation of the word man, and the vector representation of the word king. And that's what this value, king minus man, represents. So what would happen if I took the vector representation of the word woman and added that same value, king minus man, to it? What would we get as the closest word to that, for example?
 `39:54`
 
-Well, we could try it. Let's go ahead and go back to our python interpreter and give this a try. I could say, what is the closest word to the vector representation of the word king minus the representation of the word man, plus the representation of the word woman? And we see that the closest word is the word queen. We've somehow been able to capture the relationship between king and man, and then we apply it to the word woman, we get as the result, the word queen. 
+Well, we could try it. Let's go ahead and go back to our python interpreter and give this a try. I could say, what is the closest word to the vector representation of the word king minus the representation of the word man, plus the representation of the word woman?
+`closest_word(words["king"] - words["man"] + words["woman"])`
+And we see that the closest word is the word queen. We've somehow been able to capture the relationship between king and man, and then we apply it to the word woman, we get as the result, the word queen. 
 
 So word2vec has been able to capture not just the words and how they're similar to each other, but also something about the relationships between words and how those words are connected to each other. So now that we have this vector representation of words, what can we now do with it? Now we can represent words as numbers, and so we might try to pass those words as input to say, a neural network. Neural networks we've seen are very powerful tools for identifying patterns and making predictions. 
 
