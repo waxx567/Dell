@@ -489,9 +489,13 @@ And the world of natural language processing is fast-growing and fast-evolving. 
 
 We've seen how the syntax and semantics of our language is ambiguous and introduces all of these new challenges that we need to think about if we're going to be able to design AI agents that are able to work with language effectively. 
 
-So as we think about where we've been in this class, all of the different types of artificial intelligence we've considered, we've looked at artificial intelligence in a wide variety of different forms now. We started by taking a look at search problems, where we looked at how AI can search for solutions, play games, and find the optimal decision to make. We talked about knowledge, how AI can represent information that it knows and use that information to generate new knowledge, as well. 
+So as we think about where we've been in this class, all of the different types of artificial intelligence we've considered, we've looked at artificial intelligence in a wide variety of different forms now. 
 
-Then we looked at what AI can do when it's less certain, when it doesn't know things for sure, and we have to represent things in terms of probability. We then took a look at optimization problems. We saw how a lot of problems in AI can be boiled down to trying to maximize or minimize some function. And we looked at strategies that AI can use in order to do that kind of maximizing and minimizing. 
+We started by taking a look at search problems, where we looked at how AI can search for solutions, play games, and find the optimal decision to make. We talked about knowledge, how AI can represent information that it knows and use that information to generate new knowledge, as well. 
+
+Then we looked at what AI can do when it's less certain, when it doesn't know things for sure, and we have to represent things in terms of probability. 
+
+We then took a look at optimization problems. We saw how a lot of problems in AI can be boiled down to trying to maximize or minimize some function. And we looked at strategies that AI can use in order to do that kind of maximizing and minimizing. 
 
 We then looked at the world of machine learning, learning from data in order to figure out some patterns and identify how to perform a task by looking at the training data that we have available to it. And one of the most powerful tools there was the neural network, the sequence of units whose weights can be trained in order to allow us to really effectively go from input to output and predict how to get there by learning these underlying patterns. 
 
