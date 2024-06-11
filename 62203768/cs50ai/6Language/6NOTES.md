@@ -255,7 +255,7 @@ Let's try something negative. We'll try "kind of overpriced." And we see that th
 
 And so this definitely is a useful tool that we can use to try and make some predictions. But we had to make some assumptions in order to get there. *So what if we want to now try to build some more sophisticated models, use some tools from machine learning to try and take better advantage of language data, to be able to draw more accurate conclusions and solve new kinds of tasks and new kinds of problems?* 
 
-Well, we've seen a couple of times now, that when we want to take some data and take some input, put it in a way that the computer is going to be able to make sense of, it can be helpful to take that data and turn it into numbers ultimately. And so what we might want to try to do, is come up with some word representation, some way to take a word and translate its meaning into numbers. 
+Well, we've seen a couple of times now, that when we want to take some data and take some input, put it in a way that the computer is going to be able to make sense of, it can be helpful to take that data and turn it into numbers ultimately. And so what we might want to try to do, is come up with some `word representation`, some way to take a word and translate its meaning into numbers. 
 
 ### Word Representation
 
