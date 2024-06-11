@@ -464,9 +464,10 @@ And so this is the process that a transformer might use in order to take an inpu
 
 We're going to take all of the input words, encode them with some kind of positional encoding, feed those into these Self-Attention and feed forward neural networks in order to ultimately get these encoded representations of the words. That's the result of the encoder. We get all of these encoded representations that will be useful to us when it comes time then to try to decode all of this information into the output sequence we're interested in. 
 
-And again, this might take place in the context of machine translation, where the output is going to be the same sentence in a different language. Or it might be an answer to a question, in the case of an AI chatbot, for example. And so now let's take a look at how that decoder is going to work. Ultimately, it's going to have a very similar structure. 
+And again, this might take place in the context of machine translation, where the output is going to be the same sentence in a different language. Or it might be an answer to a question, in the case of an AI chatbot, for example. And so *now let's take a look at how that decoder is going to work*. Ultimately, it's going to have a very similar structure. 
 
 Any time we're trying to generate the next output word, we need to know what the previous output word is, as well as its positional encoding, where in the output sequence are we. And we're going to have these same steps. Self-Attention, because we might want an output word to be able to pay attention to other words in that same output, as well as a neural network. And that might itself repeat multiple times. 
+`1:00:41`
 
 But in this decoder, we're going to add one additional step. We're going to add an additional Attention step, where instead of Self-Attention, where the output word is going to pay attention to other output words, in this step, we're going to allow the output word to pay attention to the encoded representations. 
 
