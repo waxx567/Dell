@@ -474,6 +474,7 @@ But in this decoder, we're going to add one additional step. We're going to add 
 So recall that the encoder is taking all of the input words and transforming them into these encoded representations of all of the input words. But it's going to be important for us to be able to decide which of those encoded representations we want to pay attention to when generating any particular token in the output sequence. And that's what this additional Attention step is going to allow us to do. 
 
 It's saying that every time we're generating a word of the output, we can pay attention to the other words in the output, because we might want to know, what are the words we've generated previously. And we want to pay attention to some of them to decide what word is going to be next in the sequence. But we also care about paying attention to the input words, too. 
+`1:01:40`
 
 And we want the ability to decide which of these encoded representations of the input words are going to be relevant in order for us to generate the next step. And so these two pieces combine together. We have this encoder that takes all of the input words and produces this encoded representation. And we have this decoder that is able to take the previous output word, pay attention to that encoded input, and then generate the next output word. 
 
