@@ -354,9 +354,10 @@ So somehow, we need to solve the problem of translating a sequence into another 
 
 And if you've ever had a conversation with an AI chatbot or have ever asked your phone a question, it needs to do something like this. It needs to understand the sequence of words that you, the human, provided as input, and then the computer needs to generate some sequence of words as output. So how can we do this? 
 
-Well, one tool that we can use, is the recurrent neural network, which we took a look at last time, which is a way for us to provide a sequence of values to a neural network by running the neural network multiple times. And each time we run the neural network, what we're going to do, is we're going to keep track of some hidden state. And that hidden state is going to be passed from one run of the neural network to the next run of the neural network, keeping track of all of the relevant information. 
+Well, one tool that we can use, is the `recurrent neural network`, which we took a look at last time, which is a way for us to provide a sequence of values to a neural network by running the neural network multiple times. And each time we run the neural network, what we're going to do, is we're going to keep track of some hidden state. And that hidden state is going to be passed from one run of the neural network to the next run of the neural network, keeping track of all of the relevant information. 
 
-And so let's take a look at how we could apply that to something like this. And in particular, we're going to look at an architecture known as an encoder decoder architecture, where we're going to encode this question into some kind of hidden state, and then use a decoder to decode that hidden state into the output that we're interested in. 
+And so let's take a look at how we could apply that to something like this. And in particular, we're going to look at an architecture known as an *encoder decoder architecture*, where we're going to encode this question into some kind of hidden state, and then use a decoder to decode that hidden state into the output that we're interested in. 
+`43:50`
 
 So what's that going to look like? We'll start with the first word, the word what. That goes into our neural network. And it's going to produce some hidden state. This is some information about the word what that our neural network is going to need to keep track of. Then when the second word comes along, we're going to feed it into that same encoder neural network, but it's going to get as input that hidden state, as well. 
 
