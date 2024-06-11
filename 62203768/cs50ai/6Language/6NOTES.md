@@ -268,7 +268,9 @@ So, how might we do that? *How might we take words and turn them into numbers?* 
 
 Here's one way I might do that. We'll say he is going to be a vector that has a 1 in the first position, and the rest of the values are 0. Wrote will have a 1 in the second position, and the rest of the values are 0. A has a 1 in the third position with the rest of the values 0. And book has a 1 in the fourth position, with the rest of the values 0. 
 
-So `each of these words now has a distinct vector representation`. And this is what we often call a *one-hot representation*, a representation of the meaning of a word as a vector with a single 1 and all of the rest of the values are 0. And so when doing this, we now have a numeric representation for every word, and we could pass in those vector representations into a neural network or other models that require some kind of numeric data as input.
+So each of these words now has a distinct vector representation. And this is what we often call a *one-hot representation*,
+`representation of meaning as a vector with a single 1, and with other values as 0`
+ a representation of the meaning of a word as a vector with a single 1 and all of the rest of the values are 0. And so when doing this, we now have a numeric representation for every word, and we could pass in those vector representations into a neural network or other models that require some kind of numeric data as input.
 `32:54`
 
 But this one-hot representation actually has a couple of problems, and it's not ideal for a few reasons. One reason is, here, we're just looking at four words. But if you imagine a vocabulary of thousands of words or more, these vectors are going to get quite long in order to have a distinct vector for every possible word in our vocabulary. 
