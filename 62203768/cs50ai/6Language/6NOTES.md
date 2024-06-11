@@ -321,7 +321,9 @@ Well, book and breakfast are more different from each other than book and novel 
 `distance(words["lunch"], words["breakfast"])` 
 Well, that's about 0.2. Those are even closer together. They have a meaning that is closer to each other. 
 
-Another interesting thing we might do is calculate the closest words. We might say, what are the closest words according to word2vec to the word book, and let's say, let's get the 10 closest words. What are the 10 closest vectors to the vector representation for the word book? And when we perform that analysis, we get this list of words. 
+Another interesting thing we might do is calculate the closest words. We might say, what are the closest words according to word2vec to the word book, and let's say, let's get the 10 closest words. 
+`closest_words(words["book"])[:10]`
+What are the 10 closest vectors to the vector representation for the word book? And when we perform that analysis, we get this list of words. 
 `38:40`
 
 The closest one is book itself. But we also have books plural, and then essay, memoir, essays, novella, anthology, and so on. All of these words mean something similar to the word book, according to word2vec, at least, because they have a similar vector representation. So it seems like we've done a pretty good job of trying to capture this kind of vector representation of word meaning. 
