@@ -389,7 +389,10 @@ It might be useful for us when generating output, to not just refer to this one 
 
 But that's not necessarily true either. Some of these pieces of hidden state are going to be more important than others, depending on what word they most closely correspond to. This piece of hidden state very closely corresponds to the first word of the input sequence. This one very closely corresponds to the second word of the input sequence, for example. And some of those are going to be more important than others. 
 
-To make matters more complicated, depending on which word of the output sequence we're generating, different input words might be more or less important. And so what we really want, is some way to decide for ourselves which of the input values are worth paying attention to at what point in time. And this is the key idea behind a mechanism known as Attention. Attention is all about letting us decide which values are important to pay attention to when generating, in this case, the next word in our sequence. 
+To make matters more complicated, depending on which word of the output sequence we're generating, different input words might be more or less important. And so what we really want, is some way to decide for ourselves which of the input values are worth paying attention to at what point in time. And this is the key idea behind a mechanism known as Attention. 
+# Attention 
+is all about letting us decide which values are important to pay attention to when generating, in this case, the next word in our sequence. 
+`48:50`
 
 So let's take a look at an example of that. Here's a sentence. What is the capital of Massachusetts. Same sentence as before. And let's imagine that we were trying to answer that question by generating tokens of output. So what would the output look like? Well, it's going to look like something like the capital is. And let's say we're now trying to generate this last word here. What is that last word? How is the computer going to figure it out? 
 
