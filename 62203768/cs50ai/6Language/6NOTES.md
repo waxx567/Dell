@@ -441,9 +441,10 @@ Now it's happening for all of the words at once, but we're really just going to 
 
 And because we're doing this each word independently, it's easy to parallelize. We don't have to wait for the previous word before we run this word through the neural network. But what did we lose in this process by trying to parallelize this whole thing? Well, we've lost all notion of word ordering. The order of words is important. The sentence, Sherlock Holmes gave the book to Watson, has a different meaning than Watson gave the book to Sherlock Holmes. 
 
-And so we want to keep track of that information about word position. In the recurrent neural network, that happened for us automatically, because we could run each word one at a time through the neural network, get the hidden state, pass it on to the next run of the neural network. But that's not the case here with the Transformer, where each word is being processed independent of all of the other ones. 
+And so *we want to keep track of that information about word position*. In the recurrent neural network, that happened for us automatically, because we could run each word one at a time through the neural network, get the hidden state, pass it on to the next run of the neural network. But that's not the case here with the Transformer, where each word is being processed independent of all of the other ones. 
 
 So what are we going to do to try to solve that problem? One thing we can do, is add some kind of positional encoding to the input word. The positional encoding is some vector that represents the position of the word in the sentence. This is the first word, the second word, the third word, and so forth. We're going to add that to the input word. 
+`57:06`
 
 And the result of that is going to be a vector that captures multiple pieces of information. It captures the input word itself, as well as where in the sentence it appears. The result of that, is we can pass the output of that addition, the addition of the input word and the positional encoding, into the neural network. 
 
