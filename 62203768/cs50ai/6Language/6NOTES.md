@@ -399,6 +399,7 @@ So let's take a look at an example of that. Here's a sentence. What is the capit
 Well, what it's going to need to do, is decide which values it's going to pay attention to. And so the Attention mechanism will allow us to calculate some Attention scores for each word, some value corresponding to each word, determining how relevant is it for us to pay attention to that word right now. 
 
 And in this case, when generating the fourth word of the output sequence, the most important words to pay attention to might be capital and Massachusetts, for example, that those words are going to be particularly relevant. And there are a number of different mechanisms that have been used in order to calculate these attention scores. 
+`49:52`
 
 It could be something as simple as a dot product to see how similar two vectors are, or we could train an entire neural network to calculate these Attention scores. But the key idea, is that during the training process for our neural network, we're going to learn how to calculate these Attention scores. Our model is going to learn what is important to pay attention to in order to decide what the next word should be. 
 
