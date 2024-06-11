@@ -450,9 +450,10 @@ And the result of that is going to be a vector that captures multiple pieces of 
 
 That way the neural network knows the word and where it appears in the sentence, and can use both of those pieces of information to determine how best to represent the meaning of that word in the encoded representation at the end of it. 
 
-In addition to what we have here, in addition to the positional encoding and this feed forward neural network, we're also going to add one additional component, which is going to be a Self-Attention step. This is going to be Attention where we're paying attention to the other input words. Because the meaning or interpretation of an input word might vary depending on the other words in the input, as well. 
+In addition to what we have here, in addition to the positional encoding and this feed forward neural network, we're also going to add one additional component, which is going to be a *Self-Attention step*. This is going to be Attention where we're paying attention to the other input words. Because the meaning or interpretation of an input word might vary depending on the other words in the input, as well. 
 
 And so we're going to allow each word in the input to decide what other words in the input it should pay attention to in order to decide on its encoded representation. And that's going to allow us to get a better encoded representation for each word, because words are defined by their context, by the words around them and how they're used in that particular context. 
+`58:20`
 
 This kind of Self-Attention is so valuable in fact, that oftentimes, the Transformer will use multiple different Self-Attention layers at the same time to allow for this model to be able to pay attention to multiple facets of the input at the same time. We call this Multi-Headed Attention, where each attention head can pay attention to something different. And as a result, this network can learn to pay attention to many different parts of the input for this input word all at the same time. 
 
