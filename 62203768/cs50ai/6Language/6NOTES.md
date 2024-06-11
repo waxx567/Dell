@@ -315,7 +315,11 @@ So we could use this `distance function`, which is going to get us the distance 
 And we see that it's 0.34. You can kind of interpret 0 as being really close together, and 1 being very far apart. 
 `37:50`
 
-And so now, what is the distance between book and let's say, breakfast? Well, book and breakfast are more different from each other than book and novel are, so I would hopefully, expect the distance to be larger. And in fact, it is. 0.64 approximately. These two words are further away from each other. And what about now, the distance between let's say, lunch and breakfast? Well, that's about 0.2. Those are even closer together. They have a meaning that is closer to each other. 
+And so now, what is the distance between book and let's say, breakfast? 
+`distance(words["book"], words["breakfast"])` 
+Well, book and breakfast are more different from each other than book and novel are, so I would hopefully, expect the distance to be larger. And in fact, it is. 0.64 approximately. These two words are further away from each other. And what about now, the distance between let's say, lunch and breakfast?
+`distance(words["lunch"], words["novel"])` 
+Well, that's about 0.2. Those are even closer together. They have a meaning that is closer to each other. 
 
 Another interesting thing we might do is calculate the closest words. We might say, what are the closest words according to word2vec to the word book, and let's say, let's get the 10 closest words. What are the 10 closest vectors to the vector representation for the word book? And when we perform that analysis, we get this list of words. 
 `38:40`
