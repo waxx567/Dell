@@ -426,9 +426,11 @@ That as the input sequence get longer and longer, we might want to use paralleli
 
 The more language data that we have available to us to use to train our machine learning models, the more accurate it can be, the better representation of language it can have, the better understanding it can have, and the better results that we can see. And so we've seen this growth of large language models that are using larger and larger datasets, but as a result, they take longer and longer to train. 
 
-And so this problem, that recurrent neural networks are not easy to parallelize, has become an increasing problem. And as a result of that, that was one of the main motivations for a different architecture for thinking about how to deal with natural language. And that's known as the Transformer architecture. 
+And so this problem, that recurrent neural networks are not easy to parallelize, has become an increasing problem. And as a result of that, that was one of the main motivations for a different architecture for thinking about how to deal with natural language. And that's known as the 
+## Transformer architecture. 
 
 And this has been a significant milestone in the world of natural language processing for really increasing how well we can perform these kinds of natural language processing tasks, as well as how quickly we can train a machine learning model to be able to produce effective results. There are a number of different types of Transformers in terms of how they work, but what we're going to take a look at here, is the basic architecture for how one might work with a Transformer to get a sense for what's involved and what we're doing. 
+`54:51`
 
 So let's start with the model we were looking at before, specifically at this encoder part of our encoder decoder architecture, where we used a recurrent neural network to take this input sequence and capture all of this information about the hidden state and the information we need to know about that input sequence. 
 
