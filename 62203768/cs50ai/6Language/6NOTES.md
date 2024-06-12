@@ -213,7 +213,7 @@ For the purpose of this model, we're not going to worry about the sequence and t
 `Bag-of-words is a model that represents text as an unordered collection of words. This model ignores syntax and considers only the meanings of the words in the sentence. This approach is helpful in some classification tasks, such as sentiment analysis (another classification task would be distinguishing regular email from spam email). Sentiment analysis can be used, for instance, in product reviews, categorizing reviews as positive or negative.`
 
 And in particular, we're going to use the bag-of-words model to build something known as a 
-##### Naive Bayes classifier. 
+# Naive Bayes classifier. 
 So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a. 
 
 `Naive Bayes is a technique that’s can be used in sentiment analysis with the bag-of-words model. In sentiment analysis, we are asking “What is the probability that the sentence is positive/negative given the words in the sentence?”`
