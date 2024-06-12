@@ -67,7 +67,9 @@ And so if our computers are going to be able to work with natural language and p
 
 Well, one approach we might take is by starting by thinking about the rules of natural language. Our natural languages have rules. In English, for example, nouns tend to come before verbs. Nouns can be modified by adjectives, for example. And so if only we could `formalize those rules`, then we could give those rules to a computer, and the computer would be able to make sense of them and understand them. 
 
-And so, let's try to do exactly that. We're going to try to define a formal grammar, where a formal grammar is some system of rules for generating sentences in a language. This is going to be a rule-based approach to natural language processing. We're going to give the computer some rules that we know about language, and have the computer use those rules to make sense of the structure of language. 
+And so, let's try to do exactly that. We're going to try to define a formal grammar, where a 
+#### formal grammar 
+is some `system of rules for generating sentences in a language`. This is going to be a rule-based approach to natural language processing. We're going to give the computer some rules that we know about language, and have the computer use those rules to make sense of the structure of language. 
 
 And there are a number of different types of formal grammars, each one of them has slightly different use cases. 
 `Formal Grammar is a system of rules for generating sentences in a language. In Context-Free Grammar, the text is abstracted from its meaning to represent the structure of the sentence using formal grammar.`
