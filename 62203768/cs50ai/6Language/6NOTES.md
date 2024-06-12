@@ -68,16 +68,19 @@ And so if our computers are going to be able to work with natural language and p
 Well, one approach we might take is by starting by thinking about the rules of natural language. Our natural languages have rules. In English, for example, nouns tend to come before verbs. Nouns can be modified by adjectives, for example. And so if only we could `formalize those rules`, then we could give those rules to a computer, and the computer would be able to make sense of them and understand them. 
 
 And so, let's try to do exactly that. We're going to try to define a formal grammar, where a 
-#### formal grammar 
-is some `system of rules for generating sentences in a language`. This is going to be a rule-based approach to natural language processing. We're going to give the computer some rules that we know about language, and have the computer use those rules to make sense of the structure of language. 
+# formal grammar 
+is some system of rules for generating sentences in a language. This is going to be a rule-based approach to natural language processing. We're going to give the computer some rules that we know about language, and have the computer use those rules to make sense of the structure of language. 
 
 And there are a number of different types of formal grammars, each one of them has slightly different use cases. 
+
 `Formal Grammar is a system of rules for generating sentences in a language. In Context-Free Grammar, the text is abstracted from its meaning to represent the structure of the sentence using formal grammar.`
+
 But today, we're going to focus specifically on one kind of grammar known as a 
-# context-free grammar. 
+## context-free grammar. 
 *So how does the context-free grammar work?* Well, here is a sentence that we might want a computer to generate. 
 
 She saw the city. And we're going to call each of these words a `terminal symbol`. A terminal symbol, because once our computer has generated the word, there's nothing else for it to generate. Once it's generated the sentence, the computer is done. We're going to associate each of these terminal symbols with a `nonterminal symbol` that generates it. 
+`6:38`
 
 So here we've got N, which stands for noun, like she or city. We've got V as a nonterminal symbol, which stands for a verb. And then we have D, which stands for determiner. A determiner is a word like the or a or an in English, for example. So each of these nonterminal symbols can generate the terminal symbols that we ultimately care about generating. 
 
