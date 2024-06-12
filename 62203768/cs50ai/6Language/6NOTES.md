@@ -100,7 +100,9 @@ We could do the same for verb phrases. A verb phrase, or VP, might be just a ver
 So we could have a verb phrase that's just a single word, like the word, walked, or we could have a verb phrase that is an entire phrase, something like saw the city, as an entire verb phrase. 
 `8:43`
 
-`A sentence, meanwhile, we might then define as a noun phrase followed by a verb phrase.` And so this would allow us to generate a sentence like, she saw the city, an entire sentence made up of a noun phrase, which is just the word she, and then a verb phrase, which is saw the city. Saw, which is a verb, and then, the city, which itself, is also a noun phrase. 
+A sentence, meanwhile, we might then define as a noun phrase followed by a verb phrase.
+`S -> NP VP`
+ And so this would allow us to generate a sentence like, she saw the city, an entire sentence made up of a noun phrase, which is just the word she, and then a verb phrase, which is saw the city. Saw, which is a verb, and then, the city, which itself, is also a noun phrase. 
 
 And so if we could give these rules to a computer, explaining to it what nonterminal symbols could be replaced by what other symbols, then a computer could take a sentence and begin to understand the structure of that sentence. 
 
