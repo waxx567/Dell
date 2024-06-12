@@ -49,7 +49,7 @@ In addition to writing context-free grammar rules for parsing these sentences, t
 
 ### Specification
 
-Complete the implementation of preprocess and np_chunk, and complete the context-free grammar rules defined in NONTERMINALS.
+Complete the implementation of `preprocess` and `np_chunk`, and complete the context-free grammar rules defined in `NONTERMINALS`.
 
     The preprocess function should accept a sentence as input and return a lowercased list of its words.
 
