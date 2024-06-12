@@ -167,14 +167,14 @@ So let's give this a try. We'll go into my n-grams directory and we'll `run ngra
 So the most common one is, of the. That's a sequence of two words that appears quite frequently in natural language. Then, in the, and, it was. These are all common sequences of two words that appear in a row. Let's instead now try running n-grams with n equal to three. 
 
 Let's get all of the trigrams and see what we get. And now we see the most common trigrams are, it was a, one of the, I think that. These are all sequences of three words that appear quite frequently. And we were able to do this, essentially via a process known as tokenization. 
-### Tokenization 
+## Tokenization 
 is the process of splitting a sequence of characters into pieces. In this case, we're splitting a long sequence of text into individual words, and then looking at sequences of those words to get a sense for the structure of natural language. 
 `16:48`
 
 `Tokenization is the task of splitting a sequence of characters into pieces (tokens). Tokens can be words as well as sentences, in which case the task is called word tokenization or sentence tokenization. We need tokenization to be able to look at n-grams, since those rely on sequences of tokens. We start by splitting the text into words based on the space character. While this is a good start, this method is imperfect because we end up with words with punctuation, such as “remains,”. So, for example, we can remove punctuation. However, then we face additional challenges, such as words with apostrophes (e.g. “o’clock”) and hyphens (e.g. “pearl-grey). Additionally, some punctuation is important for sentence structure, like periods. However, we need to be able to tell apart between a period at the end of the word “Mr.” and a period in the end of the sentence. Dealing with these questions is the process of tokenization. In the end, once we have our tokens, we can start looking at n-grams.`
 
 So once we've done this, once we've done the tokenization, once we've built up our corpus of n-grams, what can we do with that information? Well, the one thing that we might try, is we could build a 
-#### Markov chain, 
+### Markov chain, 
 which you might recall from when we talked about probability. Recall that a Markov chain is some sequence of values where we can predict one value based on the values that came before it.
 
 And as a result, if we know all of the common n-grams in the English language, what words tend to be associated with what other words in sequence, we can use that to predict what word might come next in a sequence of words. And so we could build a Markov chain for language in order to try to generate natural language that follows the same statistical patterns as some input data. 
@@ -192,7 +192,7 @@ So we'll go ahead and go into our Markov directory, `run this generator` with th
 Of course, so far, there's no guarantee that any of the sentences that are generated actually mean anything or make any sense. They just happen to follow the statistical patterns that our computer is already aware of. So we'll return to this issue of how to generate text in perhaps a more accurate or more meaningful way a little bit later. 
 
 So, let's now turn our attention to a slightly different problem, and that's the problem of text classification. 
-##### Text classification 
+#### Text classification 
 is the problem where we have some text, and we want to put that text into some kind of category. We want to apply some sort of label to that text. And this kind of problem shows up in a wide variety of places. 
 `19:26`
 
@@ -213,7 +213,7 @@ For the purpose of this model, we're not going to worry about the sequence and t
 `Bag-of-words is a model that represents text as an unordered collection of words. This model ignores syntax and considers only the meanings of the words in the sentence. This approach is helpful in some classification tasks, such as sentiment analysis (another classification task would be distinguishing regular email from spam email). Sentiment analysis can be used, for instance, in product reviews, categorizing reviews as positive or negative.`
 
 And in particular, we're going to use the bag-of-words model to build something known as a 
-# Naive Bayes classifier. 
+##### Naive Bayes classifier. 
 So what is a Naive Bayes classifier? Well, it's a tool that's going to allow us to classify text based on Bayes rule. Again, which you might remember from when we talked about probability, Bayes rule says that the probability of b given a, is equal to the probability of a given b multiplied by the probability of b divided by the probability of a. 
 
 `Naive Bayes is a technique that’s can be used in sentiment analysis with the bag-of-words model. In sentiment analysis, we are asking “What is the probability that the sentence is positive/negative given the words in the sentence?”`
