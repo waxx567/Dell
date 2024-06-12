@@ -84,16 +84,20 @@ She saw the city. And we're going to call each of these words a `terminal symbol
 
 So here we've got N, which stands for noun, like she or city. We've got V as a nonterminal symbol, which stands for a verb. And then we have D, which stands for determiner. A determiner is a word like the or a or an in English, for example. So each of these nonterminal symbols can generate the terminal symbols that we ultimately care about generating. 
 
-But how do we know, or *how does the computer know which nonterminal symbols are associated with which terminal symbols?* Well, to do that, we need some kind of rule. Here are some what we call rewriting rules, that have a nonterminal symbol on the left-hand side of an arrow, and on the right side is what that nonterminal symbol can be replaced with. 
+But how do we know, or *how does the computer know which nonterminal symbols are associated with which terminal symbols?* Well, to do that, we need some kind of rule. Here are some what we call `rewriting rules`, that have a nonterminal symbol on the left-hand side of an arrow, and on the right side is what that nonterminal symbol can be replaced with. 
 
 So here, we're saying the nonterminal symbol N, again, which stands for noun, could be replaced by any of these options separated by vertical bars. N could be replaced by she or city or car or Harry. D for determiner, could be replaced by the, a, or an, and so forth. Each of these nonterminal symbols could be replaced by any of these words. 
 `7:40`
 
-We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. *NP -> N | D N* So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
+We can also have nonterminal symbols that are replaced by other nonterminal symbols. Here's an interesting rule. NP arrow N bar D N. 
+`NP -> N | D N`
+ So what does that mean? Well, NP stands for a noun phrase. Sometimes when we have a noun phrase in a sentence, it's not just a single word, it could be multiple words. And so here, we're saying a noun phrase could be just a noun, or it could be a determiner followed by a noun. 
 
 So we might have a noun phrase that's just a noun, like she. That's a noun phrase. Or we could have a noun phrase that's multiple words, something like the city. Also acts as a noun phrase, but in this case, it's composed of two words, a determiner, the, and a noun, city. 
 
-We could do the same for verb phrases. A verb phrase, or VP, might be just a verb, or it might be a verb followed by a noun phrase. So we could have a verb phrase that's just a single word, like the word, walked, or we could have a verb phrase that is an entire phrase, something like saw the city, as an entire verb phrase. 
+We could do the same for verb phrases. A verb phrase, or VP, might be just a verb, or it might be a verb followed by a noun phrase. 
+`VP -> V | V NP`
+So we could have a verb phrase that's just a single word, like the word, walked, or we could have a verb phrase that is an entire phrase, something like saw the city, as an entire verb phrase. 
 `8:43`
 
 `A sentence, meanwhile, we might then define as a noun phrase followed by a verb phrase.` And so this would allow us to generate a sentence like, she saw the city, an entire sentence made up of a noun phrase, which is just the word she, and then a verb phrase, which is saw the city. Saw, which is a verb, and then, the city, which itself, is also a noun phrase. 
