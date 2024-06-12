@@ -107,13 +107,25 @@ A sentence, meanwhile, we might then define as a noun phrase followed by a verb 
 And so if we could give these rules to a computer, explaining to it what nonterminal symbols could be replaced by what other symbols, then a computer could take a sentence and begin to understand the structure of that sentence. 
 
 And so let's take a look at an example of how we might do that. And to do that, we're going to use a python library called 
-## NLTK, or the Natural Language Toolkit, 
+# NLTK, or the Natural Language Toolkit, 
 which we'll see a couple of times today. It contains a lot of helpful features and functions that we can use for trying to deal with and process natural language. 
 
-So here, we'll take a look at how we can use NLTK in order to parse a context-free grammar. So let's go ahead and open up `cfg0.py`, cfg standing for `context-free grammar`. And what you'll see in this file, is that I first import NLTK, the Natural Language Toolkit. 
+So here, we'll take a look at how we can use NLTK in order to parse a context-free grammar. So let's go ahead and open up `cfg0.py`, cfg standing for context-free grammar. And what you'll see in this file, is that I first import NLTK, the Natural Language Toolkit. 
 `9:51`
 
-And the first thing I do, is define a context-free grammar, saying that a sentence is a noun phrase followed by a verb phrase. I'm defining what a noun phrase is, defining what a verb phrase is. And then giving some examples of what I can do with these nonterminal symbols, D for determiner, N for noun, and V for verb. We're going to use NLTK to parse that grammar. 
+And the first thing I do, is define a context-free grammar, saying that a sentence is a noun phrase followed by a verb phrase. 
+`S -> NP VP`
+I'm defining what a noun phrase is, 
+`NP -> D N | N`
+defining what a verb phrase is. 
+`VP -> V | V NP`
+And then giving some examples of what I can do with these nonterminal symbols, D for determiner, 
+`D -> "the" | "a"`
+N for noun, 
+`N -> "she" | "city" | "car"`
+and V for verb. 
+`V -> "saw" | "walked"`
+We're going to use NLTK to parse that grammar. 
 
 Then we'll ask the user for some input in the form of a sentence, and split it into words. And then, we'll use this context-free grammar parser to try to parse that sentence and print out the resulting syntax tree. So let's take a look at an example. We'll go ahead and go into my cfg directory and we'll `run cfg0.py`. And here, I'm asked to type in a sentence. Let's say I type in, she walked. 
 
