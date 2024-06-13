@@ -1,6 +1,9 @@
 import nltk
 import sys
 
+# Context-free grammar rules
+
+# Set of rules for generating terminal symbols
 TERMINALS = """
 Adj -> "country" | "dreadful" | "enigmatical" | "little" | "moist" | "red"
 Adv -> "down" | "here" | "never"
