@@ -1,9 +1,7 @@
 import nltk
 import sys
 
-# Context-free grammar rules
-
-# Set of rules for generating terminal symbols
+# Set of context-free grammar rules for generating terminal symbols
 TERMINALS = """
 Adj -> "country" | "dreadful" | "enigmatical" | "little" | "moist" | "red"
 Adv -> "down" | "here" | "never"
@@ -17,6 +15,7 @@ V -> "arrived" | "came" | "chuckled" | "had" | "lit" | "said" | "sat"
 V -> "smiled" | "tell" | "were"
 """
 
+# Set of context-free grammar rules for generating nonterminal symbols
 NONTERMINALS = """
 S -> N V
 """
