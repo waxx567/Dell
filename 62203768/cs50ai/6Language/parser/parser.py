@@ -73,10 +73,10 @@ def preprocess(sentence):
     check = re.compile("[A-Za-z]")
 
     # Convert sentence into a list of words represented by tokens
-    token_list = nltk.word_tokenize(sentence)
+    tokens = nltk.word_tokenize(sentence)
 
     # Return lowercase tokens
-    for token in token_list:
+    for token in tokens:
         if test.match(token):
             return token.lower()
 
