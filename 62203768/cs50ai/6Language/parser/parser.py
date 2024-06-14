@@ -72,7 +72,7 @@ def preprocess(sentence):
     # Check for at least one alphabetic character
     check = re.compile("[A-Za-z]")
 
-    # Convert sentence into a list of tokens
+    # Convert sentence into a list of words represented by tokens
      
 
 
