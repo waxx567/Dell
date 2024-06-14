@@ -20,7 +20,8 @@ NONTERMINALS = """
 S -> NP V
 
 AP -> Adj | AP Adj
-NP -> N | Det N
+NP -> N | Det N | Det AP
+VP -> V | Adv VP |
 """
 
 grammar = nltk.CFG.fromstring(NONTERMINALS + TERMINALS)
