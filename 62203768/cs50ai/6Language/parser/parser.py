@@ -17,7 +17,7 @@ V -> "smiled" | "tell" | "were"
 
 # Set of context-free grammar rules for generating nonterminal symbols
 NONTERMINALS = """
-S -> NP V |
+S -> NP V | NP VP Conj VP | NP VP Conj NP VP
 
 AP -> Adj | AP Adj
 NP -> N | Det N | Det AP N | NP P NP | P NP
