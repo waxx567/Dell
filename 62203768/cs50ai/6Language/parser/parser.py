@@ -68,7 +68,8 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
-    raise NotImplementedError
+    # Check for at least one alphabetic character
+    # 
 
 
 def np_chunk(tree):
