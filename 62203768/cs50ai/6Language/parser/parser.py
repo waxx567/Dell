@@ -1,5 +1,6 @@
 import nltk
 import sys
+import re
 
 # Set of context-free grammar rules for generating terminal symbols
 TERMINALS = """
