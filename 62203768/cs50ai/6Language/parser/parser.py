@@ -70,7 +70,10 @@ def preprocess(sentence):
     character.
     """
     # Check for at least one alphabetic character
-    # 
+    check = re.compile("[A-Za-z]")
+
+    # Convert sentence into a list of tokens
+     
 
 
 def np_chunk(tree):
