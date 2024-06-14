@@ -88,7 +88,10 @@ def np_chunk(tree):
     whose label is "NP" that does not itself contain any other
     noun phrases as subtrees.
     """
-    raise NotImplementedError
+    # Empty list for chunks
+    chunks = []
+
+    parent_tree = 
 
 
 if __name__ == "__main__":
