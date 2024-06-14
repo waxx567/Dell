@@ -13,12 +13,12 @@ N -> "smile" | "thursday" | "walk" | "we" | "word"
 P -> "at" | "before" | "in" | "of" | "on" | "to"
 V -> "arrived" | "came" | "chuckled" | "had" | "lit" | "said" | "sat"
 V -> "smiled" | "tell" | "were"
-NP -> N | Det N
 """
 
 # Set of context-free grammar rules for generating nonterminal symbols
 NONTERMINALS = """
 S -> NP V
+NP -> N | Det N
 """
 
 grammar = nltk.CFG.fromstring(NONTERMINALS + TERMINALS)
