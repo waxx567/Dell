@@ -1,6 +1,6 @@
 // Create HouseService Class
 public with sharing class HouseService {
-    // Stipulating AuraEnabled allows this class to be accessible from Lightning Web components
+    // Stipulating AuraEnabled allows this class to be accessible from Lightning Web Components
     @AuraEnabled(cacheable=true)
     // Create one static method to return records from the House__c object
     public static List<House__c> getRecords() {
