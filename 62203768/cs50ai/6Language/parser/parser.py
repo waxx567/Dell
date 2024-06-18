@@ -68,6 +68,10 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
+    # Nltk tokenizer requires punkt package
+    # Download if not downloaded or not up-to-date
+    nltk.download("punkt")
+
     # Empty list to store words
     words = []
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -79,7 +83,7 @@ def preprocess(sentence):
             # If there is at least one alphabetic charcter in the word
             if char in chars:
                 # Append the word's token to the words list  
-                words.append(nltk.word_tokenize())
+                words.append(nltk.word_tokenize(word))
 
     return words
 
