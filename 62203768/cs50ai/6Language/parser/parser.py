@@ -81,6 +81,7 @@ def preprocess(sentence):
     for word in sentence:
         # Loop over characters in words
         for char in word:
+            print(word)
             # If there is at least one alphabetic character in the word
             if char in chars:
                 # Append the word's token to the words list  
