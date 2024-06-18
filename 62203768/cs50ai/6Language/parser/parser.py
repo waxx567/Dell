@@ -71,33 +71,8 @@ def preprocess(sentence):
     # Nltk tokenizer requires punkt package
     # Download if not downloaded or not up-to-date
     nltk.download("punkt")
-    # Empty list to store words to be returned
-    return_words = []
-    # String of alphabetic characters
-    chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    sentence = sentence.strip('.')
-    print(f"sentence: {sentence}")
-    words = sentence.split(' ')
-    print(f"words: {words}")
-
-    for word in words:
-        print(f"word: {word}")
-        for char in word:
-            if char in chars:
-                return_words.append(word)
-
-    '''
-    # Loop over words in sentence
-    for word in sentence:
-        # Loop over characters in words
-        for char in word:
-            # If there is at least one alphabetic character in the word
-            if char in chars:
-                # Append the word's token to the words list  
-                words.append(nltk.word_tokenize(word))
-    '''
-    print(f"return_words: {return_words}")
-    return return_words
+    # Empty list to store words
+    words = []
 
 def np_chunk(tree):
     """
