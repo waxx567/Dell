@@ -92,9 +92,12 @@ def np_chunk(tree):
     chunks = []
 
     # Convert the input tree to a parent tree
-    parent_tree = nltk.tree.ParentedTree.convert(tree)
+    parent = nltk.tree.ParentedTree.convert(tree)
 
-    
+    # Loop
+    for subtree in parent.subtrees():
+        if subtree.label() == 'N':
+            chunks.append(subtree.parent())  
 
 
 if __name__ == "__main__":
