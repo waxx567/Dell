@@ -79,6 +79,7 @@ def preprocess(sentence):
 
     # Loop over words in sentence
     for word in sentence:
+        print(word)
         # Loop over characters in words
         for char in word:
             print(word)
