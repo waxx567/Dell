@@ -71,8 +71,8 @@ def preprocess(sentence):
     # List comprehension checks words for any alphabetic character, tokenizes them, and adds them to a list
     words = [
         word.lower() for word 
-        in word_tokenize(sentence)
-        if any(char.isalpha() for char in word)
+        in nltk.word_tokenize(sentence)
+        if char.isalpha() for char in word
     ]
 
     return words
