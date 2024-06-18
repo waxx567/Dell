@@ -77,7 +77,7 @@ def preprocess(sentence):
 
     # Return lowercase tokens
     for token in tokens:
-        if test.match(token):
+        if check.match(token):
             return token.lower()
 
 
