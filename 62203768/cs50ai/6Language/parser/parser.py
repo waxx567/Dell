@@ -84,7 +84,7 @@ def preprocess(sentence):
         print(f"word: {word}")
         for char in word:
             if char in chars:
-                return_words.append(nltk.word_tokenize(word))
+                return_words.append(word)
 
     '''
     # Loop over words in sentence
