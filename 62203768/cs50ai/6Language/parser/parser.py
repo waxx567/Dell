@@ -1,6 +1,5 @@
 import nltk
 import sys
-import re
 
 # Set of context-free grammar rules for generating terminal symbols
 TERMINALS = """
@@ -69,19 +68,14 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
-    '''
-    # Check for at least one alphabetic character
-    check = re.compile("[A-Za-z]")
+    # List comprehension checks words for any alphabetic character, tokenizes them, and adds them to a list
+    words = [
+        word.lower() for word 
+        in word_tokenize(sentence)
+        if any(char.isalpha() for char in word)
+    ]
 
-    # Convert sentence into a list of words represented by tokens
-    tokens = nltk.word_tokenize(sentence)
-
-    # Return lowercase tokens
-    for token in tokens:
-        if check.match(token):
-            return token.lower()
-    '''
-    words = []
+    return words
 
 
 def np_chunk(tree):
