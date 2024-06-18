@@ -69,6 +69,7 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
+    '''
     # Check for at least one alphabetic character
     check = re.compile("[A-Za-z]")
 
@@ -79,6 +80,8 @@ def preprocess(sentence):
     for token in tokens:
         if check.match(token):
             return token.lower()
+    '''
+    words = []
 
 
 def np_chunk(tree):
