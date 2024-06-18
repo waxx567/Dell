@@ -83,7 +83,6 @@ def preprocess(sentence):
                 words.append(word.lower())
                 break
 
-    print(f"words: {words}")
     return words 
 
 def np_chunk(tree):
