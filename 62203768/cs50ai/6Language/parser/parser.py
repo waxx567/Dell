@@ -70,7 +70,7 @@ def preprocess(sentence):
     """
     # Empty list to store words
     words = []
-    chars = ["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"]
+    chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
     # Loop over words in sentence
     for word in sentence:
