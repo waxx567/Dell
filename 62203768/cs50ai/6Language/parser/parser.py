@@ -86,6 +86,7 @@ def preprocess(sentence):
                 # Append the word's token to the words list  
                 words.append(nltk.word_tokenize(word))
 
+    print(words)
     return words
 
 def np_chunk(tree):
