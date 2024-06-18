@@ -92,7 +92,7 @@ def np_chunk(tree):
     whose label is "NP" that does not itself contain any other
     noun phrases as subtrees.
     """
-    '''
+    
     # Empty list for chunks
     chunks = []
 
@@ -105,8 +105,8 @@ def np_chunk(tree):
         if subtree.label() == 'N':
             # Append the parent to the chunks list
             chunks.append(subtree.parent())
-    '''
-    return NotImplementedError
+    
+    return chunks
 
 if __name__ == "__main__":
     main()
