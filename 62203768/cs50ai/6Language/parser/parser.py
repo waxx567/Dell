@@ -76,6 +76,9 @@ def preprocess(sentence):
     tests = sentence.split(' ')
     print(f"tests: {tests}")
 
+    for word in sentence:
+        print(f"word: {word}")
+
     # Empty list to store words
     words = []
     # String of alphabetic characters
