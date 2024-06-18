@@ -71,7 +71,7 @@ def preprocess(sentence):
     # Nltk tokenizer requires punkt package
     # Download if not downloaded or not up-to-date
     nltk.download("punkt")
-
+    print(f"sentence: {sentence}")
     tests = sentence.split(' ')
     print(f"tests: {tests}")
 
