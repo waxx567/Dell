@@ -68,12 +68,17 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
-    # Check characters
-    for word in sentence:
-        for char in word:
-            if char  
     # Empty list to store words
     words = []
+
+    # Loop over words in sentence
+    for word in sentence:
+        # Loop over characters in words
+        for char in word:
+            # If there is at least one alphabetic charcter in the word
+            if (int(char) >= 65 and int(char) <= 90) or (int(char) >= 97 and int(char) <= 122):
+                # Append the word's token to the words list  
+                words.append(nltk.word_tokenize())
 
     return words
 
@@ -84,6 +89,7 @@ def np_chunk(tree):
     whose label is "NP" that does not itself contain any other
     noun phrases as subtrees.
     """
+    '''
     # Empty list for chunks
     chunks = []
 
@@ -96,7 +102,8 @@ def np_chunk(tree):
         if subtree.label() == 'N':
             # Append the parent to the chunks list
             chunks.append(subtree.parent())
-
+    '''
+    return NotImplementedError
 
 if __name__ == "__main__":
     main()
