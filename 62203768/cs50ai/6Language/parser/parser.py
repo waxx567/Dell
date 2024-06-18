@@ -74,13 +74,14 @@ def preprocess(sentence):
 
     # Empty list to store words
     words = []
+    # String of alphabetic characters
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
     # Loop over words in sentence
     for word in sentence:
         # Loop over characters in words
         for char in word:
-            # If there is at least one alphabetic charcter in the word
+            # If there is at least one alphabetic character in the word
             if char in chars:
                 # Append the word's token to the words list  
                 words.append(nltk.word_tokenize(word))
