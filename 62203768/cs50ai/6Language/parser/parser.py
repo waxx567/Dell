@@ -68,15 +68,14 @@ def preprocess(sentence):
     and removing any word that does not contain at least one alphabetic
     character.
     """
-    # List comprehension checks words for any alphabetic character, tokenizes them, and adds them to a list
-    words = [
-        word.lower() for word 
-        in nltk.word_tokenize(sentence)
-        if char.isalpha() for char in word
-    ]
+    # Check characters
+    for word in sentence:
+        for char in word:
+            if char  
+    # Empty list to store words
+    words = []
 
     return words
-
 
 def np_chunk(tree):
     """
