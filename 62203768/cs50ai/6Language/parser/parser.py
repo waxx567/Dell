@@ -73,7 +73,18 @@ def preprocess(sentence):
     nltk.download("punkt")
     # Empty list to store words
     words = []
-    for word in 
+
+    # Loop over tokenized words from sentence
+    for word in nltk.word_tokenize(sentence):
+        # Check for alphabetic character
+        for char in word:
+            if char.isalpha():
+                # Append word to list
+                words.append(word.lower())
+                break
+
+    print(f"words: {words}")
+    return words 
 
 def np_chunk(tree):
     """
