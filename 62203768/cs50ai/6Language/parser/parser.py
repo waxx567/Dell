@@ -73,10 +73,10 @@ def preprocess(sentence):
     nltk.download("punkt")
     sentence = sentence.strip('.')
     print(f"sentence: {sentence}")
-    tests = sentence.split(' ')
-    print(f"tests: {tests}")
+    words = sentence.split(' ')
+    print(f"words: {words}")
 
-    for word in sentence:
+    for word in words:
         print(f"word: {word}")
 
     # Empty list to store words
@@ -94,7 +94,6 @@ def preprocess(sentence):
                 # Append the word's token to the words list  
                 words.append(nltk.word_tokenize(word))
     '''
-    print(f"words: {words}")
     return words
 
 def np_chunk(tree):
