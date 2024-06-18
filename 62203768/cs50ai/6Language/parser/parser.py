@@ -72,7 +72,7 @@ def preprocess(sentence):
     # Download if not downloaded or not up-to-date
     nltk.download("punkt")
 
-    tests = sentence.split(',').strip('.')
+    tests = sentence.split(',')
     print(f"tests: {tests}")
 
     # Empty list to store words
