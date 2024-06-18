@@ -91,7 +91,10 @@ def np_chunk(tree):
     # Empty list for chunks
     chunks = []
 
-    parent_tree = 
+    # Convert the input tree to a parent tree
+    parent_tree = nltk.tree.ParentedTree.convert(tree)
+
+    
 
 
 if __name__ == "__main__":
