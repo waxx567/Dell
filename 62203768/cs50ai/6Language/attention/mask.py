@@ -76,7 +76,8 @@ def visualize_attentions(tokens, attentions):
     include both the layer number (starting count from 1) and head number
     (starting count from 1).
     """
-    # 
+    # Iterate over each layer in `attentions`
+    for i, layer in 
     generate_diagram(
         1,
         1,
