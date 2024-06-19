@@ -84,14 +84,14 @@ def visualize_attentions(tokens, attentions):
         # `len(layer[0])` gives the number of attention heads
         # `j` iterates over each attention head
         for j in range(len(layer[0])):
-
-
-    generate_diagram(
-        1,
-        1,
-        tokens,
-        attentions[0][0][0]
-    )
+            layer_index = i + 1
+            head_index = j + 1
+            generate_diagram(
+                layer_index,
+                head_index,
+                tokens,
+                attentions[i][0][j]
+            )
 
 
 def generate_diagram(layer_number, head_number, tokens, attention_weights):
