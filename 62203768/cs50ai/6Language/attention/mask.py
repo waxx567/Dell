@@ -77,7 +77,13 @@ def visualize_attentions(tokens, attentions):
     (starting count from 1).
     """
     # Iterate over each layer in `attentions`
-    for i, layer in 
+    # `i` is the index of the current layer
+    # `layer` represents te attention scores of the current layer
+    for i, layer in enumerate(attentions):
+        # 
+        for j in 
+
+
     generate_diagram(
         1,
         1,
