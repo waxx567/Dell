@@ -45,7 +45,7 @@ def get_mask_token_index(mask_token_id, inputs):
     Return the index of the token with the specified `mask_token_id`, or
     `None` if not present in the `inputs`.
     """
-    # Search inputs for token id match
+    # Search inputs for `mask_token_id`` match
     for match, token in enumerate(inputs.input_ids[0]):
         if token == mask_token_id:
             return match
