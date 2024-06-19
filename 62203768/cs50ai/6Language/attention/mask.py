@@ -85,12 +85,16 @@ def visualize_attentions(tokens, attentions):
         # `j` iterates over each attention head
         for j in range(len(layer[0])):
             # Generate file names (adding 1 because file number 0 is not desirable)
-            layer_index = i + 1
-            head_index = j + 1
-            # 
+            layer_number = i + 1
+            head_number = j + 1
+            # Call `generate_diagram` function with the following arguments:
+            # `layer_number`
+            # `head_number`
+            # `tokens`
+            # `attentions[i][0][j]`
             generate_diagram(
-                layer_index,
-                head_index,
+                layer_number,
+                head_number,
                 tokens,
                 attentions[i][0][j]
             )
