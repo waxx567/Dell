@@ -46,9 +46,9 @@ def get_mask_token_index(mask_token_id, inputs):
     `None` if not present in the `inputs`.
     """
     # Search inputs for token id match
-    for index, token in enumerate(inputs.input_ids[0]):
+    for match, token in enumerate(inputs.input_ids[0]):
         if token == mask_token_id:
-            return index
+            return match
 
     return None 
 
