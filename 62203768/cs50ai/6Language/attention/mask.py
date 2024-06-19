@@ -58,7 +58,11 @@ def get_color_for_attention_score(attention_score):
     Return a tuple of three integers representing a shade of gray for the
     given `attention_score`. Each value should be in the range [0, 255].
     """
-    
+    # Convert attention_score object into NumPy array
+    attention_score = attention_score.numpy()
+
+    # Create a tuple with three RGB elements
+    return (round(attention_score * 255), round(attention_score * 255), round(attention_score * 255))
 
 
 
