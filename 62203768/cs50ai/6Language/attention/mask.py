@@ -58,7 +58,7 @@ def get_color_for_attention_score(attention_score):
     Return a tuple of three integers representing a shade of gray for the
     given `attention_score`. Each value should be in the range [0, 255].
     """
-    # Convert attention_score object into NumPy array
+    # Convert `attention_score`` object into a NumPy array
     attention_score = attention_score.numpy()
 
     # Create a tuple with three RGB elements
@@ -84,8 +84,10 @@ def visualize_attentions(tokens, attentions):
         # `len(layer[0])` gives the number of attention heads
         # `j` iterates over each attention head
         for j in range(len(layer[0])):
+            # Generate file names (adding 1 because file number 0 is not desirable)
             layer_index = i + 1
             head_index = j + 1
+            # 
             generate_diagram(
                 layer_index,
                 head_index,
