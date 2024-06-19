@@ -80,7 +80,9 @@ def visualize_attentions(tokens, attentions):
     # `i` is the index of the current layer
     # `layer` represents te attention scores of the current layer
     for i, layer in enumerate(attentions):
-        # 
+        # `layer[0]` represents the attention heads within the current `layer`
+        # `len(layer[0])` gives the number of attention heads
+        # `j` iterates over each attention head
         for j in range(len(layer[0])):
 
 
