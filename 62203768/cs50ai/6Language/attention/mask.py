@@ -82,21 +82,21 @@ def visualize_attentions(tokens, attentions):
     for i, layer in enumerate(attentions):
         # `layer[0]` represents the attention heads within the current `layer`
         # `len(layer[0])` gives the number of attention heads
-        # `j` iterates over each attention head
-        for j in range(len(layer[0])):
+        # `k` iterates over each attention head
+        for k in range(len(layer[0])):
             # Generate file names (adding 1 because file number 0 is not desirable)
             layer_number = i + 1
-            head_number = j + 1
+            head_number = k + 1
             # Call `generate_diagram` function with the following arguments:
-            # `layer_number`
-            # `head_number`
-            # `tokens`
-            # `attentions[i][0][j]`
+            # `layer_number`: the number of the current layer
+            # `head_number`: the number of the current attention head within the layer
+            # `tokens`: the words (tokens) in the sentence
+            # `attentions[i][0][k]`: the attention scores for the `k`-th head in the `i`-th layer
             generate_diagram(
                 layer_number,
                 head_number,
                 tokens,
-                attentions[i][0][j]
+                attentions[i][0][k]
             )
 
 
