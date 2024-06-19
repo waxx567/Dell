@@ -81,7 +81,7 @@ def visualize_attentions(tokens, attentions):
     # `layer` represents te attention scores of the current layer
     for i, layer in enumerate(attentions):
         # 
-        for j in 
+        for j in range(len(layer[0])):
 
 
     generate_diagram(
