@@ -65,7 +65,7 @@ So we might reasonably guess that this attention head has learned to pay attenti
 
 ## Specification
 
-First, complete the implementation of get_mask_token_index, get_color_for_attention_score, and visualize_attentions.
+First, complete the implementation of `get_mask_token_index`, `get_color_for_attention_score`, and `visualize_attentions`.
 
     The get_mask_token_index function accepts the ID of the mask token (represented as an int) and the tokenizer-generated inputs, which will be of type transformers.BatchEncoding. It should return the index of the mask token in the input sequence of tokens.
 
@@ -95,7 +95,7 @@ First, complete the implementation of get_mask_token_index, get_color_for_attent
 
         The generate_diagram function expects the first two inputs to be the layer number and the head number. These numbers should be 1-indexed. In other words, for the first attention head and attention layer (each of which has index 0), layer_number should be 1 and head_number should be 1 as well.
 
-Once you’re done implementing the three functions above, you should be able to run mask.py to predict masked words and generate attention diagrams. The second part of this project is to analyze those attention diagrams for sentences of your choosing to make inferences about what role specific attention heads play in the language understanding process. You’ll fill in your analysis in analysis.md.
+Once you’re done implementing the three functions above, you should be able to run `mask.py` to predict masked words and generate attention diagrams. The second part of this project is to analyze those attention diagrams for sentences of your choosing to make inferences about what role specific attention heads play in the language understanding process. You’ll fill in your analysis in `analysis.md`.
 
     Complete the TODOs in the analysis.md.
 
