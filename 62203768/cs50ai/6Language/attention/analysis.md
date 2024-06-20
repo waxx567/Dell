@@ -13,14 +13,14 @@
 TODO
 
 Example Sentences:
-- TODO
-- TODO
+- We turned down a narrow lane and passed through a small [MASK] 
+- Then I picked up a [MASK] from the table.
 
 ## Layer TODO, Head TODO
 
 TODO
 
 Example Sentences:
-- TODO
-- TODO
+- We turned down a narrow lane and passed through a small [MASK]
+- Then I picked up a [MASK] from the table.
 
