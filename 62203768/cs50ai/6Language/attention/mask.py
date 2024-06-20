@@ -10,6 +10,10 @@ MODEL = "bert-base-uncased"
 # Number of predictions to generate
 K = 3
 
+# Constants suggested in CLI
+TF_ENABLE_ONEDNN_OPTS=0
+HF_HUB_DISABLE_SYMLINKS_WARNING
+
 # Constants for generating attention diagrams
 FONT = ImageFont.truetype("assets/fonts/OpenSans-Regular.ttf", 28)
 GRID_SIZE = 40
