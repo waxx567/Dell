@@ -1,9 +1,12 @@
 public class NewAccounts {
     public static void sObjectsInsert(){
+        // Instantiate account
         Account store = new Account();
+        // Populate account
         store.Name = 'The Tea Factory';
         store.AccountNumber = '356281';
         store.Phone = '555-0158';
+        // Add account record to database
         insert store;
     }
 }
