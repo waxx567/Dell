@@ -1,4 +1,5 @@
 public class NewAccounts {
+    
     public static void sObjectsInsert(){
         // Instantiate account
         Account store = new Account();
@@ -8,5 +9,7 @@ public class NewAccounts {
         store.Phone = '555-0158';
         // Add account record to database
         insert store;
+        System.debug(store);
     }
+    
 }
