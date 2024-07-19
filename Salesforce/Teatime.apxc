@@ -20,4 +20,9 @@ Add Tea and Sugar to Teacup
 Serve Tea to a Friend*/
   
 public class Teatime {
+    
+    Account myAcct = new Account();
+    myAcct.Name = 'The Tea Factory';
+    myAcct.Phone= '555-0129';
+    myAcct.AccountNumber = '356281';
 }
