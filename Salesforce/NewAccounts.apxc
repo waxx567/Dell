@@ -9,7 +9,8 @@ public class NewAccounts {
         store.Phone = '555-0158';
         // Add account record to database
         insert store;
-        System.debug(store);
+        // Print in debug console
+        // System.debug(store);
     }
     
 }
