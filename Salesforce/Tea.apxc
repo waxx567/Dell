@@ -1,4 +1,4 @@
-public class Tea{
+public class Tea{ //a set will not add duplicate inputs
     
     public static void orderTea(){
         
@@ -12,3 +12,5 @@ public class Tea{
     }
     
 }
+
+//set elements are unique and unordered
