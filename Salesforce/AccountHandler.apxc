@@ -1,19 +1,21 @@
 public class AccountHandler {
     //method takes the number of new accounts as the input parameter
-    public static insertAccount (Integer newAccounts) {
+    public static insertAccount (Integer numAccounts) {
         
         //create new list of accounts called addAccounts
         List < Account > addAccounts = new List < Account > ();
         
         //initiate counter
-        Integer counter = 0;
+        Integer n = 0;
         
-        while (counter <= newAccounts) {
+        while (n <= numAccounts) {
+            
             //instantiate new account
             Account a = new Account();
+            
             //populate account
-            a.Name = 'Acme Inc ' + counter;
-            a.AccountNumber = 'A000' + counter;
+            a.Name = 'Acme Inc ' + n;
+            a.AccountNumber = 'A000' + n;
             addAccounts
         }
     }
