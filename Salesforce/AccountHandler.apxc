@@ -16,7 +16,9 @@ public class AccountHandler {
             //populate account
             a.Name = 'Acme Inc ' + n;
             a.AccountNumber = 'A000' + n;
-            addAccounts
+            
+            //add account to list
+            addAccounts.add(a)
         }
     }
 }
