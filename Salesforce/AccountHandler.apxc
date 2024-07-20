@@ -1,7 +1,7 @@
 public class AccountHandler {
     public static insertAccount (Integer numNewAccounts) {
         //create new list of accounts called addAccounts
-        List < Account > addAccounts = new List < Account >();
+        List < Account > addAccounts = new List < Account > ();
         
         //initiate counter
         Integer counter = 0;
