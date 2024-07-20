@@ -6,9 +6,9 @@ public class AccountHandler {
         List < Account > addAccounts = new List < Account > ();
         
         //initiate counter
-        Integer n = 0;
+        Integer n = 1;
         
-        while (n < numAccounts) {
+        while (n <= numAccounts) {
             
             //instantiate new account
             Account a = new Account();
