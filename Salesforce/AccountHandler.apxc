@@ -24,7 +24,7 @@ public class AccountHandler {
             n++;
         }
 
-        //insert account into Salesforce
+        //insert accounts into org
         insert addAccounts;
     }
 }
