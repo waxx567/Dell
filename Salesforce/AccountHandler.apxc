@@ -8,7 +8,7 @@ public class AccountHandler {
         //initiate counter
         Integer n = 0;
         
-        while (n <= numAccounts) {
+        while (n < numAccounts) {
             
             //instantiate new account
             Account a = new Account();
@@ -19,6 +19,9 @@ public class AccountHandler {
             
             //add account to list
             addAccounts.add(a);
+
+            //increment counter
+            n++;
         }
 
         //insert account into Salesforce
