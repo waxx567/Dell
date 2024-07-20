@@ -1,6 +1,6 @@
 public class AccountHandler {
     //method takes the number of new accounts as the input parameter
-    public static insertAccount (Integer numAccounts) {
+    public static void insertAccount (Integer numAccounts) {
         
         //create new list of accounts called addAccounts
         List < Account > addAccounts = new List < Account > ();
