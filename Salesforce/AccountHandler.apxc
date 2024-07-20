@@ -1,12 +1,13 @@
 public class AccountHandler {
-    public static insertAccount (Integer numNewAccounts) {
+    public static insertAccount (Integer newAccounts) {
+        
         //create new list of accounts called addAccounts
         List < Account > addAccounts = new List < Account > ();
         
         //initiate counter
         Integer counter = 0;
         
-        while (counter <= numNewAccounts) {
+        while (counter <= newAccounts) {
             //instantiate new account
             Account a = new Account();
             //populate account
