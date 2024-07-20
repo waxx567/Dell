@@ -18,7 +18,10 @@ public class AccountHandler {
             a.AccountNumber = 'A000' + n;
             
             //add account to list
-            addAccounts.add(a)
+            addAccounts.add(a);
         }
+
+        //insert account into Salesforce
+        insert addAccounts;
     }
 }
