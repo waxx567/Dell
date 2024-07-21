@@ -1,3 +1,7 @@
 public class ContactUtility {
-	
+    
+	public static void viewContacts(){
+        
+    }
+    
 }
