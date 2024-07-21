@@ -7,7 +7,10 @@ public class ContactUtility {
         
         //for each Contact that I call inside this loop (that I named `con`) in (ie. using `:`) the list I made and populated above
         for (Contact con : listOfContacts){
-            //loop body
+            
+            String fullName = 'First Name: ' + con.FirstName + ', Last Name: ' + con.LastName;
+            System.debug(fullName);
+            
         }
         
     }
