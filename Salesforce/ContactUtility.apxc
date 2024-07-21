@@ -2,7 +2,13 @@ public class ContactUtility {
     
 	public static void viewContacts(){
         
+        //a list of contacts, each with fields labeled `FirstName` and `LastName`
         List<Contact> listOfContacts = [SELECT FirstName, LastName FROM Contact];
+        
+        //for each Contact that I call inside this loop (that I named `con`) in (using `:`) `listOfContacts`
+        for (Contact con : listOfContacts){
+            //loop body
+        }
         
     }
     
