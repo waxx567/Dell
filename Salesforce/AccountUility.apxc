@@ -1,14 +1,13 @@
-public class AccountUtility {
+public class PropertyUtility {
 
-    public static void viewAnnualRevenue() {
+    public static void newListedProperties() {
         
-        List < Account > accountsList = [SELECT Name, AnnualRevenue FROM Account];
+        List < Property__c > newPropList = [SELECT Name, Broker__r.Email__c, Days_On_Market__c FROM Property__c WHERE Days_On_Market__c <= 30];
         
-        for (Account act: accountsList) {
+        for (Property__c prop: newPropList) {
             
-            String acctRev = act.Name + ': ' + act.AnnualRevenue; 
-            
-            System.debug(acctRev);
+            String propEmail = prop.Name + ' : ' + prop.Broker__r.Email__c;
+            System.debug(propEmail);
             
         }
         
