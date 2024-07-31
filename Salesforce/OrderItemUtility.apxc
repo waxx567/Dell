@@ -24,8 +24,8 @@ public class OrderItemUtility {
                     newBouquets.add(freeBouquet);
                 //TO DO 2.6: Close the "if" and "for loop" sections
                 } //end if
-			} //end for loop
-            //TO DO 3.2: Use DML to add the new list of newBouquets
+            } //end for loop
+            //TO DO 3.2: Use DML to add the new bouquet to the Order
         //TO DO 3.3: Close the if section
     } //end method
 } //end class
