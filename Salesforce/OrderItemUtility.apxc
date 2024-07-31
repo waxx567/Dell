@@ -24,7 +24,7 @@ public class OrderItemUtility {
                     //TO DO 2.4: Create a new bouquet and set values
                     OrderItem freeBouquet = new OrderItem(
                         OrderId = currentOrder.id, //this is the order we're linking the bouquet to
-                        //PricebookEntryId = entry.id,
+                        PricebookEntryId = entry.id,
                         numberOfFlowers__c = 3,
                         description = 'FREE Bouquet',
                         Quantity = 1,
