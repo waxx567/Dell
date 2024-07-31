@@ -21,6 +21,7 @@ public class OrderItemUtility {
                         UnitPrice = 0.00
                     );
                     //TO DO 2.5: Add the freeBouquet sObject to your list
+                    newBouquets.add(freeBouquet);
                 //TO DO 2.6: Close the "if" and "for loop" sections
             //TO DO 3.2: Use DML to add the new list of newBouquets
         //TO DO 3.3: Close the if section
