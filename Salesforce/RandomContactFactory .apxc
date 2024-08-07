@@ -4,10 +4,11 @@ public class RandomContactFactory {
         List<Contact> con = new List<Contact>();
         for (Integer i = 0; i < numContacts; i++)
         {
-            uniqueFirstName = 'Test' + i;
-            Contact a = new Contact(FirstName = uniqueFirstName, LastName = lastName);
+            lastName = 'Test' + i;
+            Contact a = new Contact(FirstName = lastName, LastName = lastName);
             con.add(a);
         } 
         return con;
     }
 }
+
