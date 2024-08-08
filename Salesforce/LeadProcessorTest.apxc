@@ -7,7 +7,7 @@ private class LeadProcessorTest {
         // Load test data
         List<Lead> leads = new List<Lead>();
         for (Integer i=0; i<200; i++) {
-            leads.add(new Lead(LastName='Connock', Company='Salesforce'));
+            leads.add(new Lead(LastName='McRae', Company='Salesforce'));
         }
         insert leads;
         
