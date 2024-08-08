@@ -17,7 +17,7 @@ private class AddPrimaryContactTest {
         }
         insert accounts;
         
-        Contact contact = new Contact(FirstName='Simon', LastName='Connock');
+        Contact contact = new Contact(FirstName='Wayne', LastName='McRae');
         insert contact;
         
         // Perform the test
