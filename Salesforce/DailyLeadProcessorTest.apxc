@@ -10,9 +10,9 @@ private class DailyLeadProcessorTest {
         List<Lead> leads = new List<Lead>();
         for (Integer i=0; i<500; i++) {
             if ( i < 250 ) {
-                leads.add(new Lead(LastName='Connock', Company='Salesforce'));
+                leads.add(new Lead(LastName='McRae', Company='Salesforce'));
             } else {
-                leads.add(new Lead(LastName='Connock', Company='Salesforce', LeadSource='Other'));
+                leads.add(new Lead(LastName='McRae', Company='Salesforce', LeadSource='Other'));
             }
         }
         insert leads;
