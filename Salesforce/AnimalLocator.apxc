@@ -13,6 +13,8 @@ public class AnimalLocator {
             Map<String,Object> animal = (Map<String,Object>)result.get('animal');
             System.debug('name: ' + String.valueOf(animal.get('name')));
             return String.valueOf(animal.get('name'));
+        } else {
+            return null;
         }
 
     }
