@@ -4,7 +4,9 @@ public with sharing class MaintenanceRequestHelper {
         Set<Id> Ids = new Set<Id>();
 
         for(Case c : updateOrders) {
-            
+            if(notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
+                
+            }
         }
         
     }        
