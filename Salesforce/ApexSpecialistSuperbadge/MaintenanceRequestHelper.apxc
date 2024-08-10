@@ -1,6 +1,6 @@
 public with sharing class MaintenanceRequestHelper {
     
-    public static void updateWorkOrders(List<Case> updateOrders, Map<Id, Case> notUpdated) {
+    public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
         Set<Id> Ids = new Set<Id>();
 
         for(Case c :updateOrders) {
@@ -14,6 +14,8 @@ public with sharing class MaintenanceRequestHelper {
         if(!Ids.isEmpty()) {
 
             List<Case> newCaseList = new List<Case>();
+            Map<Id,Case> closed = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c,Equipment__r.Maintenance_Cycle__c,
+                                                    (SELECT )])
 
         }
         
