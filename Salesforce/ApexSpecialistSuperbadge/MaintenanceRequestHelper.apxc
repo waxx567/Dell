@@ -1,10 +1,6 @@
 public with sharing class MaintenanceRequestHelper {
     
-    // Public method 
-    // Can be called without instantiating the class
-    // Does not return any value
-    // updateOrders are candidate records for updates
-    // notUpdated are maps of records that have not been updated, keyed by their IDs
+    // Method to update work orders and create follow-up maintenance cases if certain conditions are met
     public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
 
         // A new empty set to hold valid IDs
