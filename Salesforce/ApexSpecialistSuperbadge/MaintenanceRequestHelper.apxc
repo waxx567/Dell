@@ -1,10 +1,18 @@
 public with sharing class MaintenanceRequestHelper {
     
-    public static void updateWorkOrders(List<Case> updWorkOrders, Map<Id,Case> nonUpdCaseMap) {
+    // Public method 
+    // Can be called without instantiating the class
+    // Does not return any value
+    // updateOrders are candidate records for updates
+    // notUpdated are maps of records that have not been updated, keyed by their Ids
+    public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
+
+        // A new empty set to hold valid Ids
         Set<Id> validIds = new Set<Id>();
 
-        for(Case c :updWorkOrders) {
-            if(nonUpdCaseMap.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
+        // Iterate over each Case in the updateOrders list
+        for(Case c :updateOrders) {
+            if(notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
                 if(c.Type == 'Repair' || c.Type == 'Routine Maintenance') {
                     validIds.add(c.Id);
                 }
