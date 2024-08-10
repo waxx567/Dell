@@ -13,6 +13,10 @@ public with sharing class MaintenanceRequestHelper {
 
         if(!Ids.isEmpty()) {
 
+            Case new_c = new Case(
+                
+            )
+
         }
         
     }        
