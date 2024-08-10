@@ -1,22 +1,28 @@
 public with sharing class MaintenanceRequestHelper {
     
     public static void updateWorkOrders(List<Case> updWorkOrders, Map<Id,Case> nonUpdCaseMap) {
-        Set<Id> Ids = new Set<Id>();
+        Set<Id> validIds = new Set<Id>();
 
         for(Case c :updWorkOrders) {
             if(nonUpdCaseMap.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
                 if(c.Type == 'Repair' || c.Type == 'Routine Maintenance') {
-                    Ids.add(c.Id);
+                    validIds.add(c.Id);
                 }
             }
         }
 
-        if(!Ids.isEmpty()) {
+        if(!validIds.isEmpty()) {
 
             List<Case> newCaseList = new List<Case>();
+
             Map<Id,Case> closedCasesM = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
                                                         (SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
-                                                        FROM Case WHERE Id IN :Ids]);
+                                                        FROM Case WHERE Id IN :validIds]);
+
+            Map<Id,Decimal> maintenanceCycles = new Map<Id,Decimal>();
+
+            AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c
+                                        WHERE Maintenance_Request__c IN :validIds GROUP BY Maintenance_Request__c];
 
         }
         
