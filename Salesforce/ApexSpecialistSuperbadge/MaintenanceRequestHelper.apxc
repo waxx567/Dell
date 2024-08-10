@@ -33,6 +33,8 @@ public with sharing class MaintenanceRequestHelper {
             // Aggregate query to get the minimum maintenance cycle for each valid Case
             AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c
                                         WHERE Maintenance_Request__c IN :validCaseIds GROUP BY Maintenance_Request__c];
+           
+            // Populate the maintenanceCycles map with the results of the aggregate query
 
         }
         
