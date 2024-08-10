@@ -6,7 +6,7 @@ public with sharing class MaintenanceRequestHelper {
         for(Case c : updateOrders) {
             if(notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
                 if(c.Type == 'Repair' || c.Type == 'Routine Maintenance') {
-                    Ids.add(c.Id)
+                    Ids.add(c.Id);
                 }
             }
         }
