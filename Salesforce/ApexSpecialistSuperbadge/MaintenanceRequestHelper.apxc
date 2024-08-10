@@ -1,9 +1,9 @@
 public with sharing class MaintenanceRequestHelper {
     
-    public static void updateWorkOrders(List<Case>updateOrders,Map<Id,Case>notUpdated) {
+    public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
         Set<Id> Ids = new Set<Id>();
 
-        for(Case c : updateOrders) {
+        for(Case c :updateOrders) {
             if(notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
                 if(c.Type == 'Repair' || c.Type == 'Routine Maintenance') {
                     Ids.add(c.Id);
