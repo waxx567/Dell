@@ -19,13 +19,16 @@ public with sharing class MaintenanceRequestHelper {
         // Proceed only if there are valid Case IDs that need to be processed
         if(!validCaseIds.isEmpty()) {
 
+            // List to store the new Cases that will be created
             List<Case> newCaseList = new List<Case>();
 
-            Map<Id,Case> closedCasesM = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
+            // Query to retrieve Cases with their related data for the valid IDs
+            Map<Id,Case> closedCases = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
                                                         (SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
                                                         FROM Case WHERE Id IN :validCaseIds]);
 
-            Map<Id,Decimal> maintenanceCycles = new Map<Id,Decimal>();
+            // Map to store the minimum maintenance cycle for each Case
+            Map<Id,Decimal> minMaintenanceCycles = new Map<Id,Decimal>();
 
             AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c
                                         WHERE Maintenance_Request__c IN :validCaseIds GROUP BY Maintenance_Request__c];
