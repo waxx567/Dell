@@ -37,6 +37,9 @@ public with sharing class MaintenanceRequestHelper {
                                         GROUP BY Maintenance_Request__c];
            
             // Populate the minMaintenanceCycles map with the results of the aggregate query
+            for (AggregateResult ar : results) {
+                minMaintenanceCycles.put((Id) ar.get('Maintenance_Request__c'), (Decimal) ar.get('cycle'));
+            }
 
         }
         
