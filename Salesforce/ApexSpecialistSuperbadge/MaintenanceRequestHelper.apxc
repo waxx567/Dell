@@ -1,6 +1,6 @@
 public with sharing class MaintenanceRequestHelper {
     
-    public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
+    public static void updateWorkOrders(List<Case> updateOrders, Map<Id, Case> notUpdated) {
         Set<Id> Ids = new Set<Id>();
 
         for(Case c :updateOrders) {
