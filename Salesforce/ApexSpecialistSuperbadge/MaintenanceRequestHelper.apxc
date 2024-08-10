@@ -6,17 +6,17 @@ public with sharing class MaintenanceRequestHelper {
         // Set to hold IDs of valid Cases that meet the criteria for further processing
         Set<Id> validCaseIds = new Set<Id>();
 
-        // Iterate over each Case in the updateOrders list
+        // Iterate through the list of work orders that might be updated
         for(Case c :updateOrders) {
-            // Condition 1 checks if the corresponding case in notUpdated is not closed, but the current case is closed
-            // Condition 2 checks if the corresponding case Type is either Repair or Routine Maintenance
+            // Condition 1 checks if the corresponding Case in notUpdated is not closed and the current Case is closed
+            // Condition 2 checks if the Case type is either 'Repair' or 'Routine Maintenance'
             if((notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') && (c.Type == 'Repair' || c.Type == 'Routine Maintenance')) {
-                // If the conditions are met, the ID of the case is added to the validCaseIds set
+                // Add the Case ID to the set of valid IDs
                 validCaseIds.add(c.Id);
             }
         }
 
-        // If there are valid IDs in the validCaseIds set
+        // Proceed only if there are valid Case IDs that need to be processed
         if(!validCaseIds.isEmpty()) {
 
             List<Case> newCaseList = new List<Case>();
