@@ -11,8 +11,8 @@ public with sharing class MaintenanceRequestHelper {
             }
         }
 
-        if() {
-            
+        if(!Ids.isEmpty()) {
+
         }
         
     }        
