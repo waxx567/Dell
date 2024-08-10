@@ -3,32 +3,32 @@ public with sharing class MaintenanceRequestHelper {
     // Method to update work orders and create follow-up maintenance cases if certain conditions are met
     public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
 
-        // A new empty set to hold valid IDs
-        Set<Id> validIds = new Set<Id>();
+        // Set to hold IDs of valid Cases that meet the criteria for further processing
+        Set<Id> validCaseIds = new Set<Id>();
 
         // Iterate over each Case in the updateOrders list
         for(Case c :updateOrders) {
             // Condition 1 checks if the corresponding case in notUpdated is not closed, but the current case is closed
             // Condition 2 checks if the corresponding case Type is either Repair or Routine Maintenance
             if((notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') && (c.Type == 'Repair' || c.Type == 'Routine Maintenance')) {
-                // If the conditions are met, the ID of the case is added to the validIds set
-                validIds.add(c.Id);
+                // If the conditions are met, the ID of the case is added to the validCaseIds set
+                validCaseIds.add(c.Id);
             }
         }
 
-        // If there are valid IDs in the validIds set
-        if(!validIds.isEmpty()) {
+        // If there are valid IDs in the validCaseIds set
+        if(!validCaseIds.isEmpty()) {
 
             List<Case> newCaseList = new List<Case>();
 
             Map<Id,Case> closedCasesM = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
                                                         (SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
-                                                        FROM Case WHERE Id IN :validIds]);
+                                                        FROM Case WHERE Id IN :validCaseIds]);
 
             Map<Id,Decimal> maintenanceCycles = new Map<Id,Decimal>();
 
             AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c
-                                        WHERE Maintenance_Request__c IN :validIds GROUP BY Maintenance_Request__c];
+                                        WHERE Maintenance_Request__c IN :validCaseIds GROUP BY Maintenance_Request__c];
 
         }
         
