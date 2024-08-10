@@ -1,10 +1,10 @@
 public with sharing class MaintenanceRequestHelper {
     
-    public static void updateWorkOrders(List<Case> updateOrders, Map<Id,Case> notUpdated) {
+    public static void updateWorkOrders(List<Case> updWorkOrders, Map<Id,Case> nonUpdCaseMap) {
         Set<Id> Ids = new Set<Id>();
 
-        for(Case c :updateOrders) {
-            if(notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
+        for(Case c :updWorkOrders) {
+            if(nonUpdCaseMap.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
                 if(c.Type == 'Repair' || c.Type == 'Routine Maintenance') {
                     Ids.add(c.Id);
                 }
@@ -14,8 +14,9 @@ public with sharing class MaintenanceRequestHelper {
         if(!Ids.isEmpty()) {
 
             List<Case> newCaseList = new List<Case>();
-            Map<Id,Case> closed = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c,Equipment__r.Maintenance_Cycle__c,
-                                                    (SELECT )])
+            Map<Id,Case> closedCasesM = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
+                                                        (SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
+                                                        FROM Case WHERE Id IN :Ids]);
 
         }
         
