@@ -68,6 +68,9 @@ public with sharing class MaintenanceRequestHelper {
             // Insert the new Cases into the database
             insert newCaseList;
            
+            // List to store the cloned Equipment Maintenance Items
+            List<Equipment_Maintenance_Item__c> clonedEMIs = new List<Equipment_Maintenance_Item__c>();           
+           
         }
         
     }        
