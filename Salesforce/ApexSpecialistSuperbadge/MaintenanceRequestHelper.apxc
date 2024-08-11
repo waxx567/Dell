@@ -41,6 +41,11 @@ public with sharing class MaintenanceRequestHelper {
             for (AggregateResult ar : results) {
                 minMaintenanceCycles.put((Id) ar.get('Maintenance_Request__c'), (Decimal) ar.get('cycle'));
             }
+           
+            // Loop through the valid Cases retrieved earlier
+            for (Case vc : validCases.values()) {
+
+            }
 
         }
         
