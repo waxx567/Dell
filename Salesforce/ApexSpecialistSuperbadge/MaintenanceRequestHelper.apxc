@@ -55,7 +55,14 @@ public with sharing class MaintenanceRequestHelper {
                     Origin = 'Web',
                     Date_Reported__c = Date.Today()
                 );
-
+               
+                // If a maintenance cycle exists for the Case, set the due date for the new Case
+                if (minMaintenanceCycles.containsKey(vc.Id)) {
+                    nc.Date_Due__c = Date.today().addDays((Integer) minMaintenanceCycles.get(vc.Id));
+                }
+               
+                // Add the newly created Case to the list of new Cases
+                newCaseList.add(nc);
             }
 
         }
