@@ -24,7 +24,8 @@ public with sharing class MaintenanceRequestHelper {
 
             // Query to retrieve Cases with their related data for the valid IDs
             Map<Id,Case> validCases = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,
-                                                        (SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
+                                                        (SELECT Id, Equipment__c, Quantity__c 
+                                                        FROM Equipment_Maintenance_Items__r)
                                                         FROM Case WHERE Id IN :validCaseIds]);
 
             // Map to store the minimum maintenance cycle for each Case
