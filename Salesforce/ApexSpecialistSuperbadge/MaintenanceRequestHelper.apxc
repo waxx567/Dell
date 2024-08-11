@@ -64,7 +64,10 @@ public with sharing class MaintenanceRequestHelper {
                 // Add the newly created Case to the list of new Cases
                 newCaseList.add(nc);
             }
-
+           
+            // Insert the new Cases into the database
+            insert newCaseList;
+           
         }
         
     }        
