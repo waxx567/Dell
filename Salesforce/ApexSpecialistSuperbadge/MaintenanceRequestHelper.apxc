@@ -44,6 +44,17 @@ public with sharing class MaintenanceRequestHelper {
            
             // Loop through the valid Cases retrieved earlier
             for (Case vc : validCases.values()) {
+                // Create a new Case for routine maintenance, linking it to the closed Case
+                Case nc = new Case(
+                    ParentId = vc.Id,
+                    Status = 'New',
+                    Subject = 'Routine Maintenance',
+                    Type = 'Routine Maintenance',
+                    Vehicle__c = vc.Vehicle__c,
+                    Equipment__c = vc.Equipment__c,
+                    Origin = 'Web',
+                    Date_Reported__c = Date.Today()
+                );
 
             }
 
