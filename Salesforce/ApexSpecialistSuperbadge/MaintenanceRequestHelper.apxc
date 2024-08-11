@@ -69,7 +69,20 @@ public with sharing class MaintenanceRequestHelper {
             insert newCaseList;
            
             // List to store the cloned Equipment Maintenance Items
-            List<Equipment_Maintenance_Item__c> clonedEMIs = new List<Equipment_Maintenance_Item__c>();           
+            List<Equipment_Maintenance_Item__c> clonedEMIs = new List<Equipment_Maintenance_Item__c>();
+           
+            // Loop through the newly created Cases
+            for (Case new_c : newCaseList) {
+                // Clone each Equipment Maintenance Item related to the original closed Case
+                for (Equipment_Maintenance_Item__c emi : closedCases.get(new_c.ParentId).Equipment_Maintenance_Items__r) {
+                    Equipment_Maintenance_Item__c emiClone = emi.clone();
+                    emiClone.Maintenance_Request__c = new_c.Id;  // Link the cloned item to the new Case
+                    clonedEMIs.add(emiClone);  // Add the cloned item to the list
+                }
+            }
+           
+            // Insert the cloned Equipment Maintenance Items into the database
+            insert clonedEMIs;         
            
         }
         
