@@ -74,7 +74,7 @@ public with sharing class MaintenanceRequestHelper {
             // Loop through the newly created Cases
             for (Case new_c : newCaseList) {
                 // Clone each Equipment Maintenance Item related to the original closed Case
-                for (Equipment_Maintenance_Item__c emi : closedCases.get(new_c.ParentId).Equipment_Maintenance_Items__r) {
+                for (Equipment_Maintenance_Item__c emi : validCases.get(new_c.ParentId).Equipment_Maintenance_Items__r) {
                     Equipment_Maintenance_Item__c emiClone = emi.clone();
                     emiClone.Maintenance_Request__c = new_c.Id;  // Link the cloned item to the new Case
                     clonedEMIs.add(emiClone);  // Add the cloned item to the list
