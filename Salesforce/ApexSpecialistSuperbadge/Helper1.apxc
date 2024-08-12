@@ -7,7 +7,7 @@ public with sharing class MaintenanceRequestHelper {
         Set<Id> validCaseIds = new Set<Id>();
 
         // Iterate through the list of work orders that might be updated
-        for (type variable : updateOrders) {
+        for (Case c : updateOrders) {
             // Condition 1 checks if the corresponding Case in notUpdated is not closed and the current Case is closed
             // Condition 2 checks if the Case type is either 'Repair' or 'Routine Maintenance'
                 // If the conditions are met for the current case, add the ID to the set of valid IDs            
