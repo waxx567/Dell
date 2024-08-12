@@ -10,7 +10,7 @@ public with sharing class MaintenanceRequestHelper {
         for (Case c : updateOrders) {
             // Condition 1 checks if the corresponding Case in notUpdated is not closed and the current Case is closed
             // Condition 2 checks if the Case type is either 'Repair' or 'Routine Maintenance'
-            if((notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') && ()) {
+            if((notUpdated.get(c.Id).Status != 'Closed' && c.Status == 'Closed') && (c.Type == 'Repair' || c.Type == 'Routine Maintenance')) {
                 // If the conditions are met for the current case, add the ID to the set of valid IDs
             }            
         }
