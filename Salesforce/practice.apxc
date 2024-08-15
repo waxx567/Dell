@@ -1,0 +1,9 @@
+public class practice (
+    public String changeTimeFormat(String strTime) {
+
+        List<String> newTime = strTime.split(':');
+    
+        System.debug(newTime);
+    
+    }
+)
