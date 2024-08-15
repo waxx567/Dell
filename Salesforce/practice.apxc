@@ -1,4 +1,4 @@
-public class practice (
+public class practice {
     public String changeTimeFormat(String strTime) {
 
         List<String> newTime = strTime.split(':');
@@ -6,4 +6,4 @@ public class practice (
         System.debug(newTime);
     
     }
-)
+}
