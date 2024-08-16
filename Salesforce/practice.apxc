@@ -1,9 +1,7 @@
-public class practice {
-    public String changeTimeFormat(String strTime) {
+public String reverseWordsInASentence(String sentence){
+    
+    String[] words = sentence.split(' ');
 
-        List<String> newTime = strTime.split(':');
-    
-        System.debug(newTime);
-    
-    }
+    return 
+
 }
