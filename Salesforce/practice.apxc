@@ -1,4 +1,4 @@
-
+public void createCourseAndClass(String name, String description) {
     
     // Debug to check the input values
     System.debug('Creating Course with Name: ' + name + ' and Description: ' + description);
@@ -8,7 +8,7 @@
         Name = name, 
         apxio__Course_Details__c = description
     );
-    public void createCourseAndClass(String name, String description) {
+    
     // Insert the new course record into the database
     try {
         insert createCourse;
