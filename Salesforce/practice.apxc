@@ -1,53 +1,55 @@
-public static void createCourseAndClass(String name, String description) {
-    
-    // Debug to check the input values
-    System.debug('Creating Course with Name: ' + name + ' and Description: ' + description);
-    
-    // Create a new course record
-    apxio__Course__c createCourse = new apxio__Course__c(
-        Name = name, 
-        apxio__Course_Details__c = description
-    );
+public class practiceClass {
+    public static void createCourseAndClass(String name, String description) {
 
-    // Debug before insertion
-    System.debug('Inserting Course: ' + createCourse);
-     
-    // Insert the new course record into the database
-    try {
+        // Create a new course record
+        apxio__Course__c createCourse = new apxio__Course__c(
+            Name = name, 
+            apxio__Course_Details__c = description
+        );
+
+        // Debug before insertion
+        System.debug('Inserting Course: ' + createCourse);
+
+        // Insert the new course record into the database
         insert createCourse;
-        System.debug('Course created with Id: ' + createCourse.Id);
-    } catch (DmlException e) {
-        System.debug('Error inserting Course: ' + e.getMessage());
-    }
 
-    // Debug after insertion
-    System.debug('Inserted Course with ID: ' + createCourse.Id);
+        // Debug after insertion
+        System.debug('Inserted Course with Id: ' + createCourse.Id);
 
-    // Retrieve the details from the course using the new ID
-    apxio__Course__c courseRecord = [SELECT Id, Name, apxio__Course_Details__c 
-                                     FROM apxio__Course__c 
-                                     WHERE Id = :createCourse.Id 
-                                     LIMIT 1];
+        // Retrieve the details from the course using the new ID
+        apxio__Course__c courseRecord = [SELECT Id, Name, apxio__Course_Details__c 
+                                         FROM apxio__Course__c 
+                                         WHERE Id = :createCourse.Id 
+                                         LIMIT 1];
 
-    // Truncate the description to fit within the size limit of the Class description field
-    String trunDesc = courseRecord.apxio__Course_Details__c.length() > 255 
-                        ? courseRecord.apxio__Course_Details__c.substring(0, 255) 
-                        : courseRecord.apxio__Course_Details__c;
+        // Check for null to avoid NullPointerException
+        if (courseRecord == null) {
+            System.debug('No course record found with Id: ' + createCourse.Id);
+            return; // Exit if no course record is found
+        }
 
-    // Debug to check the truncated description
-    System.debug('Truncated Description: ' + trunDesc);
+        // Debug to check the retrieved course details
+        System.debug('Retrieved Course: ' + courseRecord);
 
-    // Create a new class record
-    apxio__Class__c createClass = new apxio__Class__c(
-        Name = name, 
-        apxio__Description__c = trunDesc
-    );
-    
-    // Insert the new class record into the database
-    try {
+        // Truncate the description to fit within the size limit of the Class description field
+        String trunDesc = courseRecord.apxio__Course_Details__c.length() > 255 
+                            ? courseRecord.apxio__Course_Details__c.substring(0, 255) 
+                            : courseRecord.apxio__Course_Details__c;
+
+        // Create a new class record
+        apxio__Class__c createClass = new apxio__Class__c(
+            Name = name, 
+            apxio__Description__c = trunDesc,
+            apxio__Course__c = createCourse.Id // Link the class to the course
+        );
+
+        // Debug before class insertion
+        System.debug('Inserting Class: ' + createClass);
+
+        // Insert the new class record into the database
         insert createClass;
-        System.debug('Class created with Id: ' + createClass.Id);
-    } catch (DmlException e) {
-        System.debug('Error inserting Class: ' + e.getMessage());
+
+        // Debug after class insertion
+        System.debug('Inserted Class with Id: ' + createClass.Id);
     }
 }
