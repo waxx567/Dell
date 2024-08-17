@@ -1,4 +1,4 @@
-public void createCourseAndClass(String name, String description) {
+public static void createCourseAndClass(String name, String description) {
     
     // Debug to check the input values
     System.debug('Creating Course with Name: ' + name + ' and Description: ' + description);
