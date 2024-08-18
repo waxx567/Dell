@@ -1,0 +1,51 @@
+public class convert15to18DigitIdClass {
+    public String convert15to18DigitId(String fifteenDigit)
+    {
+        // Validate input
+        if (fifteenDigit == null || fifteenDigit.length() != 15) {
+            return '-1';
+        }
+
+        // Split the ID into three 5-character segments
+        String firstSegment = fifteenDigit.substring(0, 5);
+        String middleSegment = fifteenDigit.substring(5, 10); 
+        String lastSegment = fifteenDigit.substring(10, 15);
+
+        // Calculate checksums for each segment
+        String checksums = '';
+        for (String segment : new List<String>{firstSegment, middleSegment, lastSegment}) {
+            String binaryString = '';
+            for (Integer i = 0; i < segment.length(); i++) {
+                String c = segment.substring(i, i + 1); // Extract individual character as a string
+                binaryString += (c.toUpperCase() == c ? '1' : '0'); // Compare the character to its uppercase version
+            }
+            
+            // Convert the binary string to an integer
+            Integer decimalValue = 0;
+            for (Integer i = 0; i < binaryString.length(); i++) {
+                if (binaryString.substring(i, i + 1) == '1') {
+                    decimalValue += Math.pow(2, binaryString.length() - 1 - i).intValue();
+                }
+            }
+            checksums += getChecksumCharacter(decimalValue);
+        }
+
+        // Combine the original 15 digits with 3 checksum characters
+        return fifteenDigit + checksums; 
+    }
+
+    // Helper method to convert the decimal value to a character
+    private String getChecksumCharacter(Integer decimalValue) 
+    {
+        if (decimalValue <= 25) {
+            // Convert 0-25 to 'A-Z'
+            String decimalStr = String.valueOf(decimalValue);
+            return 'A' + decimalStr;
+        } else {
+            // Convert 26-35 to '0-9'
+            Integer decimal26 = decimalValue - 26;
+            String decimalString = String,valueOf(decimal26);
+            return '0' + decimalString;
+        }
+    }
+}
