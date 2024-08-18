@@ -49,3 +49,33 @@ public class convert15to18DigitIdClass {
         }
     }
 }
+
+public String convert15to18DigitId(String fifteenDigit)
+{
+    String allCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
+
+    String stringKey = '';
+
+    // Validate input
+    if (fifteenDigit.length() != 15) {
+        return '-1';
+    }
+    if (fifteenDigit == null) {
+        return null;
+    }
+
+    // Loop over segments
+    for (Integer segment = 1; segment <= 3; segment++) {
+        Integer ascii = 0;
+        // Loop over characters
+        for (Integer pointer = 1; pointer <=5; pointer++) {
+            Integer position = ((segment - 1) * 5) + (pointer - 1);
+            String character = fifteenDigit.substring(position, position + 1);
+            Integer isUppercase = character.isAllUpperCase() ? 1 : 0;
+            ascii += isUppercase * Integer.valueOf(Math.pow(2, pointer + 1));
+        }
+        stringKey += allCharacters.substring(ascii, ascii + 1);
+    }
+    return (fifteenDigit += stringKey);
+}
+
