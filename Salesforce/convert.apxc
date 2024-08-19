@@ -18,7 +18,6 @@ public class convert {
 
         // Handle firstSegment
         String[] firstChars = firstSegment.split('');
-        firstChars.remove(0);
         System.debug('firstChars: ' + firstChars); 
 
         return fifteenDigit;
