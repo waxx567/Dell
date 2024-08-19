@@ -102,6 +102,7 @@ public class convert {
             Boolean uMatch = u.equals(lastBinaryString);
             // System.debug('u: ' + u);
             // System.debug(binaries.indexOf(u));
+            System.debug(uMatch);
             if (uMatch) {
                 suffix += characters[lastIndex];
             }
