@@ -63,7 +63,7 @@ public class convert {
                 firstBinaryString += '1';
             }
         }
-        System.debug(firstBinaryString);
+        System.debug('firstBinaryString: ' + firstBinaryString);
         String firstSuffix = allCharacters.get(firstBinaryString);
         System.debug('firstSuffix: ' + firstSuffix); 
 
@@ -80,7 +80,7 @@ public class convert {
                 middleBinaryString += '1';
             }
         }
-        System.debug(middleBinaryString);
+        System.debug('middleBinaryString: ' + middleBinaryString);
         String middleSuffix = allCharacters.get(middleBinaryString);
         System.debug('middleSuffix: ' + middleSuffix);
 
@@ -98,7 +98,7 @@ public class convert {
                 lastBinaryString += '1';
             }
         }
-        System.debug(lastBinaryString);
+        System.debug('lastBinaryString: ' + lastBinaryString);
         String lastSuffix = allCharacters.get(lastBinaryString);
         System.debug('lastSuffix: ' + lastSuffix);
 
