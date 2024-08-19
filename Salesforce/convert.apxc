@@ -19,14 +19,17 @@ public class convert {
         // Handle firstSegment
         String[] firstChars = firstSegment.split('');
         System.debug('firstChars: ' + firstChars); 
+        String firstBinaryString = '';
 
         // Handle middleSegment
         String[] middleChars = middleSegment.split('');
         System.debug('middleChars: ' + middleChars); 
+        String middleBinaryString = '';
 
         // Handle lastSegment
         String[] lastChars = lastSegment.split('');
         System.debug('lastChars: ' + lastChars); 
+        String lastBinaryString = '';
 
         return fifteenDigit;
     }
