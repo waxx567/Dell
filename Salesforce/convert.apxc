@@ -1,44 +1,17 @@
 public class convert {
 
-    public static String convert15to18DigitId(String fifteenDigit) 
-    {
+    public static String convert15to18DigitId(String fifteenDigit) {
         // Validate input
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
             return '-1';
         }
-    
-        String suffix = '';
-        String charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
+
+        String firstSegment = fifteenDigit.substring(0, 5);
+        String middleSegment = fifteenDigit.substring(5, 10);
+        String lastSegment = fifteenDigit.substring(10, 15);
         
-        // Split the ID into three 5-character segments
-        for (Integer i = 0; i < 3; i++) {
-            String segment = fifteenDigit.substring(i * 5, (i + 1) * 5);
-            String binaryString = '';
-            
-            // Calculate the binary string based on the case of characters
-            for (Integer j = 0; j < segment.length(); j++) {
-                String c = segment.substring(j, j + 1);
-                binaryString += (c.toUpperCase() == c ? '1' : '0');
-            }
-            
-            // Manually convert binary string to decimal
-            Integer decimalValue = 0;
-            Integer binaryLength = binaryString.length();
-            for (Integer k = 0; k < binaryString.length(); k++) {
-                if (binaryString.substring(k, k + 1) == '1') {
-                    decimalValue += Math.pow(2, binaryLength - 1 - k).intValue();
-                }
-            }
-            
-            // Use the decimal value as an index to select the character from charSet
-            if (decimalValue >= 0 && decimalValue < charSet.length()) {
-                suffix += charSet.substring(decimalValue, decimalValue + 1);
-            } else {
-                return '-1'; // Handle any out-of-range values
-            }
-        }
-        
-        // Return the 18-character ID
-        return fifteenDigit + suffix;
+        System.debug(firstSegment + ' ' + middleSegment + ' ' + lastSegment);
+
+        return fifteenDigit;
     }
 }
