@@ -51,10 +51,10 @@ public class convert {
         System.debug('firstBinaryString: ' + firstBinaryString);
 
         for (String s : binaries) {
-            for (Integer i = 0; i < characters.size(); i++)
-                if (s == firstBinaryString) {
-                    suffix += characters[i];
-                }
+            if (s == firstBinaryString) {
+                Integer firstIndex = binaries.indexOf(s);
+                suffix += characters[firstIndex];
+            }
         }
         System.debug('suffix: ' + suffix);
 
@@ -74,10 +74,9 @@ public class convert {
         System.debug('middleBinaryString: ' + middleBinaryString);
 
         for (String t : binaries) {
-            for (Integer j = 0; j < characters.size(); j++) {
-                if (t == middleBinaryString) {
-                    suffix += characters[j];
-                }
+            if (t == middleBinaryString) {
+                Integer middleIndex = binaries.indexOf(t);
+                suffix += characters[middleIndex];
             }
         }
         
@@ -99,13 +98,12 @@ public class convert {
         System.debug('lastBinaryString: ' + lastBinaryString);
 
         for (String u : binaries) {
-            System.debug('u: ' + u);
-            System.debug(binaries.indexOf(u));
-            // for (Integer k = 0; k < characters.size(); k++) {
-            //     if (u == lastBinaryString) {
-            //         suffix += characters[k];
-            //     }
-            // }
+            // System.debug('u: ' + u);
+            // System.debug(binaries.indexOf(u));
+            if (u == lastBinaryString) {
+                Integer lastIndex = binaries.indexOf(u);
+                suffix += characters[lastIndex];
+            }
         }
         
         System.debug('suffix: ' + suffix);
