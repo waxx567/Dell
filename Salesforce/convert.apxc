@@ -14,7 +14,12 @@ public class convert {
         segments.add(middleSegment);
         segments.add(lastSegment);
         
-        System.debug(segments);
+        System.debug('Segments list: ' + segments);
+
+        // Handle firstSegment
+        String[] firstChars = firstSegment.split('');
+        firstChars.remove(0);
+        System.debug('firstChars: ' + firstChars); 
 
         return fifteenDigit;
     }
