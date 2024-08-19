@@ -95,8 +95,8 @@ public class convert {
         System.debug('lastBinaryString: ' + lastBinaryString);
 
         for (Integer k = 0; k < binaries.size(); k++) {
-            System.debug('for loop check');
             if (binaries[k] == lastBinaryString) {
+                System.debug('if loop check');
                 System.debug('binaries[k]: ' + binaries[k]);
                 suffix += characters[k];
             }
