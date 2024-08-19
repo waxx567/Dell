@@ -47,8 +47,6 @@ public class convert {
             }
         }
         System.debug('firstBinaryString: ' + firstBinaryString);
-        String firstSuffix = allCharacters.get(firstBinaryString);
-        System.debug('firstSuffix: ' + firstSuffix); 
 
         for (Integer i = 0; i < binaries.size(); i++) {
             if (binaries[i] == firstBinaryString) {
@@ -70,8 +68,6 @@ public class convert {
             }
         }
         System.debug('middleBinaryString: ' + middleBinaryString);
-        String middleSuffix = allCharacters.get(middleBinaryString);
-        System.debug('middleSuffix: ' + middleSuffix);
 
         for (Integer j = 0; j < binaries.size(); j++) {
             if (binaries[j] == firstBinaryString) {
@@ -93,8 +89,6 @@ public class convert {
             }
         }
         System.debug('lastBinaryString: ' + lastBinaryString);
-        String lastSuffix = allCharacters.get(lastBinaryString);
-        System.debug('lastSuffix: ' + lastSuffix);
 
         for (Integer k = 0; k < binaries.size(); k++) {
             if (binaries[k] == firstBinaryString) {
