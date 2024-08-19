@@ -6,39 +6,20 @@ public class convert {
             return '-1';
         }
 
-        Map<String,String> allCharacters = new Map<String,String>{};
-        allCharacters.put('000000', 'A');
-        allCharacters.put('000001', 'B');
-        allCharacters.put('000010', 'C');
-        allCharacters.put('000011', 'D');
-        allCharacters.put('000100', 'E');
-        allCharacters.put('000101', 'F');
-        allCharacters.put('000110', 'G');
-        allCharacters.put('000111', 'H');
-        allCharacters.put('001000', 'I');
-        allCharacters.put('001001', 'J');
-        allCharacters.put('001010', 'K');
-        allCharacters.put('001011', 'L');
-        allCharacters.put('001100', 'M');
-        allCharacters.put('001101', 'N');
-        allCharacters.put('001110', 'O');
-        allCharacters.put('001111', 'P');
-        allCharacters.put('010000', 'Q');
-        allCharacters.put('010001', 'R');
-        allCharacters.put('010010', 'S');
-        allCharacters.put('010011', 'T');
-        allCharacters.put('010100', 'U');
-        allCharacters.put('010101', 'V');
-        allCharacters.put('010110', 'W');
-        allCharacters.put('010111', 'X');
-        allCharacters.put('011000', 'Y');
-        allCharacters.put('011001', 'Z');
-        allCharacters.put('011010', '0');
-        allCharacters.put('011011', '1');
-        allCharacters.put('011100', '2');
-        allCharacters.put('011101', '3');
-        allCharacters.put('011110', '4');
-        allCharacters.put('011111', '5');
+        List<String> characters = new List<String>{
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
+            'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 
+            'Y', 'Z', '0', '1', '2', '3', '4', '5'
+        };
+        
+        List<String> binaries = new List<String>{
+            '000000', '000001', '000010', '000011', '000100', '000101',
+            '000110', '000111', '001000', '001001', '001010', '001011',
+            '001100', '001101', '001110', '001111', '010000', '010001',
+            '010010', '010011', '010100', '010101', '010110', '010111',
+            '011000', '011001', '011010', '011011', '011100', '011101',
+            '011110', '011111'
+        };
 
         List<String> segments = new List<String>();
         String firstSegment = fifteenDigit.substring(0, 5);
@@ -101,10 +82,6 @@ public class convert {
         System.debug('lastBinaryString: ' + lastBinaryString);
         String lastSuffix = allCharacters.get(lastBinaryString);
         System.debug('lastSuffix: ' + lastSuffix);
-
-        List<String> values = new List<String>();
-        values = allCharacters.values();
-        System.debug('values: ' + values);
 
         return fifteenDigit;
     }
