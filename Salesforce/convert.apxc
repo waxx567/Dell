@@ -20,6 +20,14 @@ public class convert {
         String[] firstChars = firstSegment.split('');
         System.debug('firstChars: ' + firstChars); 
 
+        // Handle middleSegment
+        String[] middleChars = middleSegment.split('');
+        System.debug('middleChars: ' + middleChars); 
+
+        // Handle lastSegment
+        String[] lastChars = lastSegment.split('');
+        System.debug('lastChars: ' + lastChars); 
+
         return fifteenDigit;
     }
 }
