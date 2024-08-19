@@ -50,10 +50,11 @@ public class convert {
         }
         System.debug('firstBinaryString: ' + firstBinaryString);
 
-        for (Integer i = 0; i < binaries.size(); i++) {
-            if (i == firstBinaryString) {
-                suffix += characters[i];
-            }
+        for (String s : binaries) {
+            for (Integer i = 0; i < characters.size(); i++)
+                if (s == firstBinaryString) {
+                    suffix += characters[i];
+                }
         }
         System.debug('suffix: ' + suffix);
 
@@ -72,11 +73,14 @@ public class convert {
         }
         System.debug('middleBinaryString: ' + middleBinaryString);
 
-        for (Integer j = 0; j < binaries.size(); j++) {
-            if (j == middleBinaryString) {
-                suffix += characters[j];
+        for (String t : binaries) {
+            for (Integer j = 0; j < binaries.size(); j++) {
+                if (t == middleBinaryString) {
+                    suffix += characters[j];
+                }
             }
         }
+        
         System.debug('suffix: ' + suffix);
 
         // Handle lastSegment
@@ -94,12 +98,14 @@ public class convert {
         }
         System.debug('lastBinaryString: ' + lastBinaryString);
 
-        for (Integer k = 0; k < binaries.size(); k++) {
-            if (k == lastBinaryString) {
-                System.debug('binaries[k]: ' + binaries[k]);
-                suffix += characters[k];
+        for (String u : binaries) {
+            for (Integer k = 0; k < binaries.size(); k++) {
+                if (u == lastBinaryString) {
+                    suffix += characters[k];
+                }
             }
         }
+        
         System.debug('suffix: ' + suffix);
 
         System.debug(fifteenDigit + suffix);
