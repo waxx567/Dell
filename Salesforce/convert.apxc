@@ -102,6 +102,10 @@ public class convert {
         String lastSuffix = allCharacters.get(lastBinaryString);
         System.debug('lastSuffix: ' + lastSuffix);
 
+        List<String> values = new List<String>();
+        values = allCharacters.values();
+        System.debug('values: ' + values);
+
         return fifteenDigit;
     }
 }
