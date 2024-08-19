@@ -14,6 +14,7 @@ public class convert {
         for (Integer i = 0; i < 3; i++) {
             String segment = fifteenDigit.substring(i * 5, (i + 1) * 5);
             String binaryString = '';
+            System.debug('Segments:' + segment);
             
             // Calculate the binary string based on the case of characters
             for (Integer j = 0; j < segment.length(); j++) {
