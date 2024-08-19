@@ -64,6 +64,8 @@ public class convert {
             }
         }
         System.debug(firstBinaryString);
+        String firstSuffix = allCharacters.get(firstBinaryString);
+        System.debug('firstSuffix: ' + firstSuffix); 
 
         // Handle middleSegment
         String[] middleChars = middleSegment.split('');
@@ -79,6 +81,8 @@ public class convert {
             }
         }
         System.debug(middleBinaryString);
+        String middleSuffix = allCharacters.get(middleBinaryString);
+        System.debug('middleSuffix: ' + middleSuffix);
 
 
         // Handle lastSegment
@@ -95,6 +99,8 @@ public class convert {
             }
         }
         System.debug(lastBinaryString);
+        String lastSuffix = allCharacters.get(lastBinaryString);
+        System.debug('lastSuffix: ' + lastSuffix);
 
         return fifteenDigit;
     }
