@@ -99,7 +99,7 @@ public class convert {
         System.debug('lastBinaryString: ' + lastBinaryString);
 
         for (String u : binaries) {
-            System.debug('u: ' + u + binaries[u]);
+            System.debug('u: ' + u);
             System.debug(binaries.indexOf(u));
             // for (Integer k = 0; k < characters.size(); k++) {
             //     if (u == lastBinaryString) {
