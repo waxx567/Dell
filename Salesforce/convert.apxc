@@ -22,7 +22,12 @@ public class convert {
         String firstBinaryString = '';
         // Loop over first segment character list
         for (String f : firstChars) {
-
+            if (f.isNumeric() || f.isAllLowerCase()) {
+                firstBinaryString += '0';
+            }
+            else {
+                firstBinaryString += '1';
+            }
         }
 
         // Handle middleSegment
@@ -30,8 +35,13 @@ public class convert {
         System.debug('middleChars: ' + middleChars); 
         String middleBinaryString = '';
         // Loop over middle segment character list
-        for (String f : middleChars) {
-
+        for (String m : middleChars) {
+            if (m.isNumeric() || m.isAllLowerCase()) {
+                middleBinaryString += '0';
+            }
+            else {
+                middleBinaryString += '1';
+            }
         }
 
 
@@ -40,8 +50,13 @@ public class convert {
         System.debug('lastChars: ' + lastChars); 
         String lastBinaryString = '';
         // Loop over last segment character list
-        for (String f : lastChars) {
-
+        for (String l : lastChars) {
+            if (l.isNumeric() || l.isAllLowerCase()) {
+                lastBinaryString += '0';
+            }
+            else {
+                lastBinaryString += '1';
+            }
         }
 
 
