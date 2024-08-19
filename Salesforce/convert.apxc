@@ -20,16 +20,30 @@ public class convert {
         String[] firstChars = firstSegment.split('');
         System.debug('firstChars: ' + firstChars); 
         String firstBinaryString = '';
+        // Loop over first segment character list
+        for (String f : firstChars) {
+
+        }
 
         // Handle middleSegment
         String[] middleChars = middleSegment.split('');
         System.debug('middleChars: ' + middleChars); 
         String middleBinaryString = '';
+        // Loop over middle segment character list
+        for (String f : middleChars) {
+
+        }
+
 
         // Handle lastSegment
         String[] lastChars = lastSegment.split('');
         System.debug('lastChars: ' + lastChars); 
         String lastBinaryString = '';
+        // Loop over last segment character list
+        for (String f : lastChars) {
+
+        }
+
 
         return fifteenDigit;
     }
