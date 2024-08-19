@@ -102,6 +102,7 @@ public class convert {
             }
         }
 
+        System.debug(fifteenDigit + suffix);
         return fifteenDigit + suffix;
     }
 }
