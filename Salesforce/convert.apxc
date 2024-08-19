@@ -1,6 +1,6 @@
 public class convert {
 
-    public String convert15to18DigitId(String fifteenDigit) 
+    public static String convert15to18DigitId(String fifteenDigit) 
     {
         // Validate input
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
