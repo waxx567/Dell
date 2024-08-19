@@ -6,11 +6,15 @@ public class convert {
             return '-1';
         }
 
+        List<String> segments = new List<String>();
         String firstSegment = fifteenDigit.substring(0, 5);
         String middleSegment = fifteenDigit.substring(5, 10);
         String lastSegment = fifteenDigit.substring(10, 15);
+        segments.add(firstSegment);
+        segments.add(middleSegment);
+        segments.add(lastSegment);
         
-        System.debug(firstSegment + ' ' + middleSegment + ' ' + lastSegment);
+        System.debug(segments);
 
         return fifteenDigit;
     }
