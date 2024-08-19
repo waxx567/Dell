@@ -51,8 +51,9 @@ public class convert {
         System.debug('firstBinaryString: ' + firstBinaryString);
 
         for (String s : binaries) {
-            if (s == firstBinaryString) {
-                Integer firstIndex = binaries.indexOf(s);
+            Integer firstIndex = binaries.indexOf(s);
+            Boolean sMatch = t.equals(firstBinaryString);
+            if (sMatch) {
                 suffix += characters[firstIndex];
             }
         }
@@ -74,8 +75,9 @@ public class convert {
         System.debug('middleBinaryString: ' + middleBinaryString);
 
         for (String t : binaries) {
-            if (t == middleBinaryString) {
-                Integer middleIndex = binaries.indexOf(t);
+            Integer middleIndex = binaries.indexOf(t);
+            Boolean tMatch = t.equals(middleBinaryString);
+            if (tMatch) {
                 suffix += characters[middleIndex];
             }
         }
@@ -102,7 +104,7 @@ public class convert {
             Boolean uMatch = u.equals(lastBinaryString);
             // System.debug('u: ' + u);
             // System.debug(binaries.indexOf(u));
-            System.debug(uMatch);
+            // System.debug(uMatch);
             if (uMatch) {
                 suffix += characters[lastIndex];
             }
