@@ -53,6 +53,7 @@ public class convert {
                 suffix += characters[i];
             }
         }
+        System.debug('suffix: ' + suffix);
 
         // Handle middleSegment
         String[] middleChars = middleSegment.split('');
@@ -74,6 +75,7 @@ public class convert {
                 suffix += characters[j];
             }
         }
+        System.debug('suffix: ' + suffix);
 
         // Handle lastSegment
         String[] lastChars = lastSegment.split('');
@@ -95,6 +97,7 @@ public class convert {
                 suffix += characters[k];
             }
         }
+        System.debug('suffix: ' + suffix);
 
         System.debug(fifteenDigit + suffix);
         return fifteenDigit + suffix;
