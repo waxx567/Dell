@@ -98,10 +98,11 @@ public class convert {
         System.debug('lastBinaryString: ' + lastBinaryString);
 
         for (String u : binaries) {
+            Integer lastIndex = binaries.indexOf(u);
+            Boolean uMatch = u.equals(lastBinaryString);
             // System.debug('u: ' + u);
             // System.debug(binaries.indexOf(u));
-            if (u == lastBinaryString) {
-                Integer lastIndex = binaries.indexOf(u);
+            if (uMatch) {
                 suffix += characters[lastIndex];
             }
         }
