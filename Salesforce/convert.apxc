@@ -52,7 +52,7 @@ public class convert {
 
         for (String s : binaries) {
             Integer firstIndex = binaries.indexOf(s);
-            Boolean sMatch = t.equals(firstBinaryString);
+            Boolean sMatch = s.equals(firstBinaryString);
             if (sMatch) {
                 suffix += characters[firstIndex];
             }
