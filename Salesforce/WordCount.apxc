@@ -15,7 +15,7 @@ public with sharing class WordCount {
             if (inputString.charAt(i) == 32) {
                 System.debug('char: ' + inputString.charAt(i));
                 // Increment counter
-                counter += 1;
+                counter++;
                 System.debug('counter(in loop): ' + counter);
             }
             // Count the last word
