@@ -10,10 +10,13 @@ public class GetFirstLongestWord {
         Integer wordLength = 0;
         String answer = '';
         for (String word : words) {
+            if (word[-1]) {
+                word.length() -= 1;
+            }
             System.debug('word: ' + word);
             System.debug('length: ' + word.length());
             if (word.length() == wordLength) {
-                break;
+                return answer;
             } else if (word.length() > wordLength) {
                 answer = word;
             }
