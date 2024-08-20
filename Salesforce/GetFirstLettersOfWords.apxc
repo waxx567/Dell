@@ -23,7 +23,7 @@ public class GetFirstLettersOfWords {
             }
         }
 
-        System.debug(firstLetters);
+        // System.debug(firstLetters);
         return firstLetters;
     }
 }
