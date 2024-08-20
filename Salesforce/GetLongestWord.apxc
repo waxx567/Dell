@@ -1,0 +1,4 @@
+public class GetLongestWord {
+    // Create a function that takes in a String “input” and return the longest words in the “input” in a List<String>. If there are no words, return an empty List<String>. For example, if the function is given the input ‘The dogs like to bark.’, then [‘dogs’, ‘like’, ‘bark’] is returned.
+    
+}
