@@ -5,6 +5,7 @@ public with sharing class WordCount {
             return 0;
         }
 
+        System.debug('length: ' + inputString.length());
         // Initiate counter to count words
         Integer counter = 0;
 
