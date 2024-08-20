@@ -10,10 +10,15 @@ public with sharing class WordCount {
 
         // Loop through the input string
         for (Integer i = 0; i < inputString.length(); i++) {
-            // Check if the current character is a space
-            if (inputString.charAt(i) ==  32) {
-                
+            // If the current character is a space
+            if (inputString.charAt(i) == 32) {
+                // Increment counter
+                counter += 1;
             }
+            // Count the last word
+            counter += 1;
         }
+
+        return counter;
     }
 }
