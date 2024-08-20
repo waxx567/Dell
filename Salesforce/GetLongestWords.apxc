@@ -11,33 +11,18 @@ public class GetLongestWords {
         List<String> answers = new List<String>();
         // Set a variable that holds the longest word length to the length of the first word
         Integer longest = words[0].length();
-        for (Integer i = 0; i < words.size(); i++) {
-            if 
+        for (String word : words) {
+            if (word.length() > longest) {
+                word.length() = longest;
+            }
+        }
+        for (String word : words) {
+            if (word.length() == longest) {
+                answers.add(word);
+            }            
         }
 
-
-
-        // List<Integer> wordLengths = new List<Integer>();
-        // for (String word : words) {
-        //     wordLengths.add(word.length());
-        // } 
-        
-
-
-
-        // Remove full stop from the last word
-        words[words.size() - 1] = words[words.size() - 1].removeEnd('.');
-        // Set a variable that holds the longest word length to the length of the first word
-        Integer longest = words[0].length();
-        // Create map to store key/value pairs of words and their lengths
-        Map<String,Integer> keysValues = new Map<String,Integer>();
-        for (String word : words) {            
-            keysValues.put(word, word.length());
-        }
-        for (Integer i = 0; i < keysValues.values().size(); i++) {
-            if ()
-        }
-
-        return new List<String>();
+        System.debug(answers);
+        return answers;
     }
 }
