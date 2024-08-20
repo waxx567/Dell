@@ -23,8 +23,8 @@ public class GetFirstLettersOfWords {
                 isPrevCharSpace = true;
             } else if (isPrevCharSpace) {
                 // If it's the first character after a space (or the first character in the string)
-                String intToStr = String.valueOf(inputString.charAt(i));
-                firstLetters += intToStr;
+                String asciiToChar = String.fromCharArray(inputString.charAt(i));
+                firstLetters += asciiToChar;
                 isPrevCharSpace = false;
             }
         }
