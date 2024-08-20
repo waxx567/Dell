@@ -14,7 +14,7 @@ public class GetFirstLongestWord {
         // Create a string variable to hold the first longest word
         String answer = '';
         // Update the answer variable with the first word string
-        answer = word[0];
+        answer = words[0];
         // Loop through the words in the list
         for (String word : words) {
             // System.debug('word: ' + word);
