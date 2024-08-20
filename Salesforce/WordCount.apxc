@@ -15,11 +15,11 @@ public with sharing class WordCount {
             if (inputString.charAt(i) == 32) {
                 System.debug('char: ' + inputString.charAt(i));
                 // Increment counter
-                counter++;
+                // counter++;
                 System.debug('counter(in loop): ' + counter);
             }
             // Count the last word
-            counter++;
+            // counter++;
         }
 
         System.debug('final count: ' + counter);
