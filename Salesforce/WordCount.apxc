@@ -19,7 +19,7 @@ public with sharing class WordCount {
                 System.debug('counter(in loop): ' + counter);
             }
             // Count the last word
-            counter += 1;
+            counter++;
         }
 
         System.debug('final count: ' + counter);
