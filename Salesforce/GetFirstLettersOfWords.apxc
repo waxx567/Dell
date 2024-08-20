@@ -12,13 +12,15 @@ public class GetFirstLettersOfWords {
 
         // Loop through the input string
         for (Integer i = 0; i < inputString.length(); i++) {
+            Integer checkValue = inputString.charAt(i);
+            System.debug(checkValue);
             // Check if the current character is a space
-            if (inputString.charAt(i) == ' ') {
-                isPrevCharSpace = true;
-            } else if (isPrevCharSpace) {
+            // if (inputString.charAt(i) == ' ') {
+            //     isPrevCharSpace = true;
+            // } else if (isPrevCharSpace) {
                 // If it's the first character after a space (or the first character in the string)
-                firstLetters += inputString.charAt(i);
-                isPrevCharSpace = false;
+                // firstLetters += inputString.charAt(i);
+                // isPrevCharSpace = false;
             }
         }
 
