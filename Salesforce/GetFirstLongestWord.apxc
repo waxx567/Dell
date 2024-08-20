@@ -16,7 +16,7 @@ public class GetFirstLongestWord {
             System.debug('word: ' + word);
             System.debug('length: ' + word.length());
             if (word.length() == wordLength) {
-                return answer;
+                comtinue;
             } else if (word.length() > wordLength) {
                 answer = word;
             }
