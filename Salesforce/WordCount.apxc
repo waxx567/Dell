@@ -5,8 +5,15 @@ public with sharing class WordCount {
             return 0;
         }
 
+        // Initiate counter to count words
         Integer counter = 0;
+
+        // Loop through the input string
+        for (Integer i = 0; i < inputString.length(); i++) {
+            // Check if the current character is a space
+            if (inputString.charAt(i) ==  32) {
+                
+            }
+        }
     }
-
-
 }
