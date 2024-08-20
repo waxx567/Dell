@@ -1,10 +1,23 @@
 public class GetFirstLettersOfWords {
     public String firstLetterString(String inputString) {
+
         String firstLetters = '';
+        String letter = '';
+
         // If string is one letter or less, return an empty string
         if (inputString.length() <= 1) {
             return firstLetters;
         }
-        firstLetters += 
+
+        // Loop through the input string
+        for (Integer i = 0; i < inputString.length(); i++) {
+            // Cut first letter off 
+            letter = inputString.left(1);
+            // Add that letter to the string of first letters
+            firstLetters += letter;
+            // Split the remainder of the first word off the input string
+            inputString = inputString.split(' ', 1);
+            // Return to top of loop
+        }
     }
 }
