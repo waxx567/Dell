@@ -17,8 +17,6 @@ public class GetFirstLongestWord {
         answer = words[0];
         // Loop through the words in the list
         for (String word : words) {
-            // System.debug('word: ' + word);
-            // System.debug('length: ' + word.length());
             // If the current word is longer than the length of the word stored in the wordLength variable
             if (word.length() > wordLength) {
                 // Update the variable to store the current word length
@@ -28,7 +26,7 @@ public class GetFirstLongestWord {
             }
         }
 
-        System.debug(answer);
+        // System.debug(answer);
         return answer;
     }
 
