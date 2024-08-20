@@ -7,7 +7,7 @@ public class GetLongestWords {
         }        
         List<String> words = input.split(' ');
         // Remove full stop from the last word
-        words[words.length() - 1] = words[words.length() - 1].removeEnd('.');
+        words[words.size() - 1] = words[words.size() - 1].removeEnd('.');
         return new List<String>();
     }
 }
