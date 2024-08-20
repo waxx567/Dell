@@ -7,12 +7,20 @@ public class GetFirstLongestWord {
         }
         List<String> words = input.split(' ');
 
+        Integer wordLength = 0;
+        String answer = '';
         for (String word : words) {
             System.debug('word: ' + word);
             System.debug('length: ' + word.length());
+            if (word.length() > wordLength) {
+                answer = word;
+            }
         }
 
-        return input;
+        System.debug(answer);
+        return answer;
     }
 
 }
+
+// GetFirstLongestWord.firstLongestWord('The dog likes to bark.');
