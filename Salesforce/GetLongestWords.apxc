@@ -3,7 +3,7 @@ public class GetLongestWords {
     public static List<String> longestWords(String input) {
         // If there are no words
         if (input.length() == 0) {
-            return '';
+            return new List<String>();
         }        
     }
 }
