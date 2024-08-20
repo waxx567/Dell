@@ -8,7 +8,7 @@ public class GetFirstLongestWord {
         List<String> words = input.split(' ');
 
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
-        Integer wordLength = 0;
+        Integer wordLength = words[0].length();
         String answer = '';
         for (String word : words) {
             System.debug('word: ' + word);
@@ -16,7 +16,6 @@ public class GetFirstLongestWord {
             if (word.length() == wordLength) {
                 break;
             } else if (word.length() > wordLength) {
-                wordLength = word.length();
                 answer = word;
             }
         }
