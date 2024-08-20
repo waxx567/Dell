@@ -13,9 +13,10 @@ public class GetLongestWords {
         Integer longest = words[0].length();
         // Create a list to hold the words that are longest
         List<String> answers = new List<String>();
-        Map<String,Integer> storedWords = new Map<String,Integer>();
+        // Create map to store key/value pairs of words and their lengths
+        Map<String,Integer> keysValues = new Map<String,Integer>();
         for (String word : words) {            
-            storedWords.put(word, word.length());
+            keysValues.put(word, word.length());
         }
 
         return new List<String>();
