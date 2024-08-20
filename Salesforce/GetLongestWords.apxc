@@ -18,6 +18,9 @@ public class GetLongestWords {
         for (String word : words) {            
             keysValues.put(word, word.length());
         }
+        for (Integer i = 0; i < keysValues.values(); i++) {
+                        
+        }
 
         return new List<String>();
     }
