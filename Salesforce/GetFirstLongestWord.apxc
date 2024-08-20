@@ -1,0 +1,11 @@
+public class GetFirstLongestWord {
+    // Create a function that takes in a String “input” and return the first longest word in the “input”. If there are no words, return an empty string. For example, if the function is given the input ‘The dog likes to bark.’, then ‘likes’ is returned.
+    public static String firstLongestWord(String input) {
+        // If there are no words
+        if (input.length() == 0) {
+            return '';
+        }
+        List<String> words = new List<String>();
+    }
+
+}
