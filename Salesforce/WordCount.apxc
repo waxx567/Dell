@@ -12,28 +12,3 @@ public with sharing class WordCount {
 }
 
 // WordCount.countWords('The dog likes to bark.');
-
-
-// if (inputString.length() == 0) {
-//     return 0;
-// }
-
-// System.debug('length: ' + inputString.length());
-// // Initiate counter to count words
-// Integer counter = 0;
-
-// // Loop through the input string
-// for (Integer i = 0; i < inputString.length(); i++) {
-//     // If the current character is a space
-//     if (inputString.charAt(i) == 32) {
-//         System.debug('char: ' + inputString.charAt(i));
-//         // Increment counter
-//         counter++;
-//         System.debug('counter(in loop): ' + counter);
-//     }
-//     // Count the last word
-//     counter++;
-// }
-
-// System.debug('final count: ' + counter);
-// return counter;
