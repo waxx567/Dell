@@ -23,6 +23,8 @@ public class GetFirstLongestWord {
                 wordLength = word.length();
                 // Update the answer variable with the word string
                 answer = word;
+            } else if (word.length() == wordLength) {
+                break;
             }
         }
 
