@@ -16,7 +16,8 @@ public class GetFirstLettersOfWords {
         System.debug('length: ' + stringLength);
 
         // Loop through the input string
-        // for (Integer i = 0; i < inputString.length(); i++) {
+        for (Integer i = 0; i < inputString.length(); i++) {
+            System.debug('position: ' + checkValue);
             // Check if the current character is a space
             // if (inputString.charAt(i) == ' ') {
             //     isPrevCharSpace = true;
@@ -25,7 +26,7 @@ public class GetFirstLettersOfWords {
                 // firstLetters += inputString.charAt(i);
                 // isPrevCharSpace = false;
             // }
-        // }
+        }
 
         System.debug(firstLetters);
         return firstLetters;
