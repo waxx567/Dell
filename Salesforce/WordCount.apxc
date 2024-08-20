@@ -6,7 +6,7 @@ public with sharing class WordCount {
         String removeSpaces = inputString.remove(' ');
         Integer count2 = removeSpaces.length();
         answer = (count1 - count2) + 1;
-        System.debug(answer);
+        // System.debug(answer);
         return answer;
     }
 }
