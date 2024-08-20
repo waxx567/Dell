@@ -19,6 +19,7 @@ public with sharing class WordCount {
             counter += 1;
         }
 
+        System.debug(counter);
         return counter;
     }
 }
