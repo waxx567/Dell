@@ -7,7 +7,7 @@ public class GetFirstLongestWord {
         }
         List<String> words = input.split(' ');
 
-        words[-1] = words[-1].removeEnd('.');
+        words[words.size()-1] = words[words.size()-1].removeEnd('.');
         Integer wordLength = 0;
         String answer = '';
         for (String word : words) {
