@@ -13,7 +13,7 @@ public class GetLongestWords {
         Integer longest = words[0].length();
         for (String word : words) {
             if (word.length() > longest) {
-                word.length() = longest;
+                longest = word.length();
             }
         }
         for (String word : words) {
