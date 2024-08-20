@@ -11,6 +11,8 @@ public class GetFirstLongestWord {
             System.debug('word: ' + word);
             System.debug('length: ' + word.length());
         }
+
+        return input;
     }
 
 }
