@@ -1,0 +1,10 @@
+public class GetFirstLettersOfWords {
+    public String firstLetterString(String inputString) {
+        String firstLetters = '';
+        // If string is one letter or less, return an empty string
+        if (inputString.length() <= 1) {
+            return firstLetters;
+        }
+        firstLetters += 
+    }
+}
