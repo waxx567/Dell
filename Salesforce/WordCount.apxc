@@ -1,13 +1,17 @@
 public with sharing class WordCount {
     // Create a function that takes in a String “input” and returns the count of the number of words in the input. If there are no words, 0 is returned. For example, if the function is given the input “The dog likes to bark.”, then 5 is returned.
     public static Integer countWords(String input) {
-        Integer answer = 0;
-        Integer count1 = input.length();
         String removeSpaces = input.remove(' ');
-        Integer count2 = removeSpaces.length();
-        answer = (count1 - count2) + 1;
+        System.debug((input.length() - removeSpaces.length()) + 1);
+        return (input.length() - removeSpaces.length()) + 1;
+        
+        // Integer answer = 0;
+        // Integer count1 = input.length();
+        // String removeSpaces = input.remove(' ');
+        // Integer count2 = removeSpaces.length();
+        // answer = (count1 - count2) + 1;
         // System.debug(answer);
-        return answer;
+        // return answer;
     }
 }
 
