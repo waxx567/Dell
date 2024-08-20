@@ -10,14 +10,8 @@ public class GetFirstLettersOfWords {
         // Track whether the previous character was a space
         Boolean isPrevCharSpace = true;
 
-        // Integer stringLength = inputString.length();
-        // System.debug('length: ' + stringLength);
-        
-
         // Loop through the input string
         for (Integer i = 0; i < inputString.length(); i++) {
-            // Integer checkValue = inputString.charAt(i);
-            // System.debug('position: ' + checkValue);
             // Check if the current character is a space
             if (inputString.charAt(i) == 32) {
                 isPrevCharSpace = true;
