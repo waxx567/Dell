@@ -1,0 +1,12 @@
+public with sharing class WordCount {
+    // Create a function that takes in a String “input” and returns the count of the number of words in the input. If there are no words, 0 is returned. For example, if the function is given the input “The dog likes to bark.”, then 5 is returned.
+    public static Integer countWords(String inputString) {
+        if (inputString.length() == 0) {
+            return 0;
+        }
+
+        Integer counter = 0;
+    }
+
+
+}
