@@ -5,16 +5,25 @@ public class GetFirstLongestWord {
         if (input.length() == 0) {
             return '';
         }
+        // Split input string into words and store them in a list
         List<String> words = input.split(' ');
-
+        // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
+        // Initiate variable to store longest word length to the length of the first word
         Integer wordLength = words[0].length();
+        // Create a string variable to hold the first longest word
         String answer = '';
+        // Update the answer variable with the first word string
+        answer = word[0];
+        // Loop through the words in the list
         for (String word : words) {
-            System.debug('word: ' + word);
-            System.debug('length: ' + word.length());
+            // System.debug('word: ' + word);
+            // System.debug('length: ' + word.length());
+            // If the current word is longer than the length of the word stored in the wordLength variable
             if (word.length() > wordLength) {
+                // Update the variable to store the current word length
                 wordLength = word.length();
+                // Update the answer variable with the word string
                 answer = word;
             }
         }
