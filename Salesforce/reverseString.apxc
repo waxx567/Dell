@@ -1,0 +1,6 @@
+public class ReverseString {
+    public String stringReverse(String forwardString) {
+        String answer = forwardString.reverse();
+        return answer;
+    } 
+}
