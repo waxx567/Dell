@@ -13,14 +13,18 @@ public with sharing class WordCount {
         for (Integer i = 0; i < inputString.length(); i++) {
             // If the current character is a space
             if (inputString.charAt(i) == 32) {
+                System.debug('char: ' + inputString.charAt(i));
                 // Increment counter
                 counter += 1;
+                System.debug('counter(in loop): ' + counter)
             }
             // Count the last word
             counter += 1;
         }
 
-        System.debug(counter);
+        System.debug('final count: ' + counter);
         return counter;
     }
 }
+
+// WordCount.countWords('The dog likes to bark.');
