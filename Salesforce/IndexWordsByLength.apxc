@@ -35,27 +35,3 @@ public class IndexWordsByLength {
 }
 
 // IndexWordsByLength.mapWordsIndex('The dogs like to bark.');
-
-/*
-public static Map<Integer, List<String>> indexWordsByLength(String input) {
-    List<String> words = getWords(input);
-
-    Map<Integer, List<String>> wordsIndexedByLength = new Map<Integer, List<String>>();
-
-    for (String word : words) {
-        Integer wordLength = word.length();
-
-        List<String> wordsOfThisLength = wordsIndexedByLength.get(wordLength);
-
-        if (wordsOfThisLength == null) {
-            wordsOfThisLength = new List<String>();
-                 
-            wordsIndexedByLength.put(wordLength, wordsOfThisLength);
-        }
-
-        wordsOfThisLength.add(word);
-    }
-
-    return wordsIndexedByLength;
-}
-*/
