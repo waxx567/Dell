@@ -11,7 +11,13 @@ public class IndexWordsByLength {
         // Remove invalid characters
         input = input.replaceAll('?/!^*+=()[]#~`<>|-_":;,.', '');
         // Create lists to hold map values
-
+        List<String> words = input.split(' ');
+        // Add first word to a list
+        for (String word : words) {
+            List<String> temp1 = new List<String>();
+            temp1.add(word);
+        }
+        
         // Populate map
 
         System.debug(answer);
