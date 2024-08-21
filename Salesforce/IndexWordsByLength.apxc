@@ -7,17 +7,20 @@ public class IndexWordsByLength {
         if (input.length() == 0) {
             return answer;
         }
+        System.debug(input);
         // input eg. 'The dogs like to bark.'
         // Remove invalid characters
         input = input.replaceAll('?/!^*+=()[]#~`<>|-_":;,.', '');
+        System.debug(input);
         // Create lists to hold map values
         List<String> words = input.split(' ');
+        System.debug(words);
         // Add first word to a list
         for (String word : words) {
             List<String> temp1 = new List<String>();
             temp1.add(word);
         }
-        
+
         // Populate map
 
         System.debug(answer);
