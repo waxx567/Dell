@@ -19,10 +19,12 @@ public class IndexWordsByLength {
                 longestWord = word.length();
             }
         }
+        List<String> listString = new List<String>();
         for (Integer i = longestWord; i >= 0; i--) {
             for (String word : words) {
                 if (i == word.length()) {
-                    answer.put(i, word);
+                    listString.add(word);
+                    answer.put(i, listString);
                 }
             }
         }
