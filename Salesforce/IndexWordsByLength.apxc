@@ -10,9 +10,9 @@ public class IndexWordsByLength {
         // input eg. 'The dogs like to bark.'
         // Remove invalid characters
         List<String> words = input.split(' ');
-        for (String char : words) {
-            if (!char.isAlphanumeric()) {
-                words.remove(char);
+        for (String character : words) {
+            if (!character.isAlphanumeric()) {
+                words.remove(character);
             }
         }
 
