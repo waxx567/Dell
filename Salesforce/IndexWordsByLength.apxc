@@ -1,6 +1,6 @@
 public class IndexWordsByLength {
     // Create a function that takes in a String “input” and returns a map<Integer, List<String>> whose keys are the length of each word in the sentence and whose value are all the words of that length. If there are no words, an empty map is returned.
-    public static String mapWordsIndex(String index) {
+    public static Map<Integer, List<String>> mapWordsIndex(String index) {
         
     }
 }
