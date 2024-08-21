@@ -3,4 +3,7 @@ public class Teenager {
     // isTeenager(5) = false
     // isTeenager(15) = true
     // Use an if/else statement, checking if the age is greater than or equal to 13 and less than or equal to 19. Return true or false depending on the result of the comparison.
+    public Boolean isTeenager(Integer age) {
+        
+    }
 }
