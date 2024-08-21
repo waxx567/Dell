@@ -10,10 +10,9 @@ public class IndexWordsByLength {
         // input eg. 'The dogs like to bark.'
         // Remove invalid characters
         input = input.replaceAll('?/!^*+=()[]#~`<>|-_":;,.', '');
+        // Create lists to hold map values
+
         // Populate map
-        for (String word : input) {
-            answer.put(word.length(), word);         
-        }
 
         System.debug(answer);
         return answer;
