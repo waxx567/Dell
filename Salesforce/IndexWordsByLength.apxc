@@ -8,15 +8,13 @@ public class IndexWordsByLength {
             return answer;
         }
         // input eg. 'The dogs like to bark.'
-        // Create list of invalid characters
-        List<String> invalidChars = new List<String>();
-        invalidChars.add('.');
-        invalidChars.add(',');
-        invalidChars.add('?');
-        invalidChars.add('!');
-        invalidChars.add('/');
-        invalidChars.add(':');
-        invalidChars.add(';');
+        // Remove invalid characters
+        List<String> words = input.split(' ');
+        for (String char : words) {
+            if (!char.isAlphanumeric()) {
+                words.remove(char);
+            }
+        }
 
         return answer;
     }
