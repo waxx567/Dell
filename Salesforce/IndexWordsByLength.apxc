@@ -13,9 +13,12 @@ public class IndexWordsByLength {
         // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
         // Add first word to a list
+        List<String> temp1 = new List<String>();
+        temp1.add(words[0]);
         for (String word : words) {
-            List<String> temp1 = new List<String>();
-            temp1.add(word);
+            if (word.length() == temp1[0].length()) {
+                temp1.add(word);
+            }
         }
 
         // Populate map
