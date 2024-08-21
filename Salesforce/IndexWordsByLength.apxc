@@ -9,12 +9,7 @@ public class IndexWordsByLength {
         }
         // input eg. 'The dogs like to bark.'
         // Remove invalid characters
-        List<String> words = input.split(' ');
-        for (String character : words) {
-            if (!character.isAlphanumeric()) {
-                words.remove(character);
-            }
-        }
+        input = input.replaceAll('?/!^*+=":;,.', '');
 
         return answer;
     }
