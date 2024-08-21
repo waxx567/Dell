@@ -12,25 +12,40 @@ public class IndexWordsByLength {
         List<String> words = input.split(' ');
         // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
-        // Find the longest word first
+        // Find the longest word length and add the words of that length to a list
         Integer longestWord = 0;
         for (String word : words) {
             if (word.length() > longestWord) {
                 longestWord = word.length();
             }
         }
-        List<String> listString = new List<String>();
-        for (Integer i = longestWord; i >= 0; i--) {
-            for (String word : words) {
-                if (i == word.length()) {
-                    listString.add(word);
-                    answer.put(i, listString);
-                }
+        List<String> longString = new List<String>();
+        for (String word : words) {
+            if (word.length() == longestWord) {
+                longString.add(word);
+            }
+        }
+        // Find the next longest word length and add the words of that length to a list
+        Integer nextLongest = longestWord - 1;
+        List<String> nextString = new List<String>();
+        for (String word : words) {
+            if (word.length() == nextLongest) {
+                nextString.add(nextLongest);
+            }
+        }
+        // Find the next shortest word length and add the words of that length to a list
+        Integer shortestWord = nextLongest - 1;
+        List<String> shortString = new List<String>();
+        for (String word : words) {
+            if (word.length() == shortestWord) {
+                nextString.add(shortString);
             }
         }
 
-
         // Populate map
+        answer.put(longestWord, longString);
+        answer.put(nextLongest, nextString);
+        answer.put(shortestWord, shortString);
 
         System.debug(answer);
         return answer;
