@@ -12,6 +12,7 @@ public class IndexWordsByLength {
         List<String> words = input.split(' ');
         // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
+        System.debug(words);
         // Find the longest word length and add the words of that length to a list
         Integer longestWord = 0;
         for (String word : words) {
@@ -35,7 +36,7 @@ public class IndexWordsByLength {
         }
         // Find the next shortest word length and add the words of that length to a list
         Integer shortestWord = nextLongest - 1;
-        System.debug(shortestWord);
+        // System.debug(shortestWord);
         List<String> shortString = new List<String>();
         for (String word : words) {
             if (word.length() == shortestWord) {
