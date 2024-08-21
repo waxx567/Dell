@@ -27,17 +27,6 @@ public class IndexWordsByLength {
             }
         }
 
-        // Add first word to a list
-        List<String> temp1 = new List<String>();
-        for (Integer i = 0; i < w; i++) {
-            
-        }
-        temp1.add(words[0]);
-        for (String word : words) {
-            if (word.length() == temp1[0].length()) {
-                temp1.add(word);
-            }
-        }
 
         // Populate map
 
