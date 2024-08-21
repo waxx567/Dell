@@ -29,6 +29,7 @@ public class IndexWordsByLength {
             wordsOfThisLength.add(word);
         }
     
+        System.debug(wordsIndexedByLength);
         return wordsIndexedByLength;
 
     }
