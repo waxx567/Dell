@@ -9,11 +9,10 @@ public class IndexWordsByLength {
         }
         System.debug(input);
         // input eg. 'The dogs like to bark.'
-        // Remove invalid characters
-        input = input.replaceAll('.', '');
-        System.debug(input);
         // Create lists to hold map values
         List<String> words = input.split(' ');
+        // Remove the full stop off the final word
+        words[words.size()-1] = words[words.size()-1].removeEnd('.');
         System.debug(words);
         // Add first word to a list
         for (String word : words) {
