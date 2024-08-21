@@ -30,7 +30,7 @@ public class IndexWordsByLength {
         List<String> nextString = new List<String>();
         for (String word : words) {
             if (word.length() == nextLongest) {
-                nextString.add(nextString);
+                nextString.add(word);
             }
         }
         // Find the next shortest word length and add the words of that length to a list
@@ -38,7 +38,7 @@ public class IndexWordsByLength {
         List<String> shortString = new List<String>();
         for (String word : words) {
             if (word.length() == shortestWord) {
-                nextString.add(shortString);
+                nextString.add(word);
             }
         }
 
