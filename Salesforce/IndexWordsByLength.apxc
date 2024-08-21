@@ -35,6 +35,7 @@ public class IndexWordsByLength {
         }
         // Find the next shortest word length and add the words of that length to a list
         Integer shortestWord = nextLongest - 1;
+        System.debug(shortestWord);
         List<String> shortString = new List<String>();
         for (String word : words) {
             if (word.length() == shortestWord) {
