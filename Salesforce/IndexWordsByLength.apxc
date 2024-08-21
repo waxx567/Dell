@@ -7,13 +7,11 @@ public class IndexWordsByLength {
         if (input.length() == 0) {
             return answer;
         }
-        System.debug(input);
         // input eg. 'The dogs like to bark.'
         // Create lists to hold map values
         List<String> words = input.split(' ');
         // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
-        System.debug(words);
         // Add first word to a list
         for (String word : words) {
             List<String> temp1 = new List<String>();
