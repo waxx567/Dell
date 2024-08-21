@@ -1,57 +1,61 @@
 public class IndexWordsByLength {
     // Create a function that takes in a String “input” and returns a map<Integer, List<String>> whose keys are the length of each word in the sentence and whose value are all the words of that length. If there are no words, an empty map is returned.
     public static Map<Integer, List<String>> mapWordsIndex(String input) {
-        // Create a map to store the answer
-        Map<Integer, List<String>> answer = new Map<Integer, List<String>>();
-        // Validate input
+    
+        // Create map to hold return values
+        Map<Integer, List<String>> wordsIndexedByLength = new Map<Integer, List<String>>();
+
+        // If there are no words
         if (input.length() == 0) {
-            return answer;
+            return wordsIndexedByLength;
         }
-        // input eg. 'The dogs like to bark.'
-        // Create lists to hold map values
+        // Split input string into words and store them in a list
         List<String> words = input.split(' ');
         // Remove the full stop off the final word
         words[words.size()-1] = words[words.size()-1].removeEnd('.');
-        System.debug(words);
-        // Find the longest word length and add the words of that length to a list
-        Integer longestWord = 0;
+        
+        // Loop through words
         for (String word : words) {
-            if (word.length() > longestWord) {
-                longestWord = word.length();
+            Integer wordLength = word.length();
+    
+            List<String> wordsOfThisLength = wordsIndexedByLength.get(wordLength);
+    
+            if (wordsOfThisLength == null) {
+                wordsOfThisLength = new List<String>();
+                     
+                wordsIndexedByLength.put(wordLength, wordsOfThisLength);
             }
+    
+            wordsOfThisLength.add(word);
         }
-        List<String> longString = new List<String>();
-        for (String word : words) {
-            if (word.length() == longestWord) {
-                longString.add(word);
-            }
-        }
-        // Find the next longest word length and add the words of that length to a list
-        Integer nextLongest = longestWord - 1;
-        List<String> nextString = new List<String>();
-        for (String word : words) {
-            if (word.length() == nextLongest) {
-                nextString.add(word);
-            }
-        }
-        // Find the next shortest word length and add the words of that length to a list
-        Integer shortestWord = nextLongest - 1;
-        System.debug(shortestWord);
-        List<String> shortString = new List<String>();
-        for (String word : words) {
-            if (word.length() == shortestWord) {
-                nextString.add(word);
-            }
-        }
+    
+        return wordsIndexedByLength;
 
-        // Populate map
-        answer.put(longestWord, longString);
-        answer.put(nextLongest, nextString);
-        answer.put(shortestWord, shortString);
-
-        System.debug(answer);
-        return answer;
     }
 }
 
 // IndexWordsByLength.mapWordsIndex('The dogs like to bark.');
+
+/*
+public static Map<Integer, List<String>> indexWordsByLength(String input) {
+    List<String> words = getWords(input);
+
+    Map<Integer, List<String>> wordsIndexedByLength = new Map<Integer, List<String>>();
+
+    for (String word : words) {
+        Integer wordLength = word.length();
+
+        List<String> wordsOfThisLength = wordsIndexedByLength.get(wordLength);
+
+        if (wordsOfThisLength == null) {
+            wordsOfThisLength = new List<String>();
+                 
+            wordsIndexedByLength.put(wordLength, wordsOfThisLength);
+        }
+
+        wordsOfThisLength.add(word);
+    }
+
+    return wordsIndexedByLength;
+}
+*/
