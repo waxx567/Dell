@@ -22,7 +22,7 @@ public class IndexWordsByLength {
         for (Integer i = longestWord; i >= 0; i--) {
             for (String word : words) {
                 if (i == word.length()) {
-                    
+                    answer.put(i, word);
                 }
             }
         }
