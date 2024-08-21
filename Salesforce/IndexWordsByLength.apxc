@@ -7,6 +7,16 @@ public class IndexWordsByLength {
         if (input.length() == 0) {
             return answer;
         }
+        // input eg. 'The dogs like to bark.'
+        // Create list of invalid characters
+        List<String> invalidChars = new List<String>();
+        invalidChars.add('.');
+        invalidChars.add(',');
+        invalidChars.add('?');
+        invalidChars.add('!');
+        invalidChars.add('/');
+        invalidChars.add(':');
+        invalidChars.add(';');
 
         return answer;
     }
