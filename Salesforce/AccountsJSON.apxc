@@ -14,8 +14,8 @@ public class AccountsJSON {
         // 09:29:34:004 USER_DEBUG [5]|DEBUG|(Account:{Name=Acme, BillingCity=Chicago}, Account:{Name=Dove, BillingCity=Boston})
         for (Integer i = 0; i < accounts.size(); i++) {
             Account account = accounts[count];
-            String name = [SELECT Name FROM account]; 
-            String billing = [SELECT BillingCity FROM account];
+            String name = [SELECT account.Name FROM account]; 
+            String billing = [SELECT account.BillingCity FROM account];
             result += '{"attributes":{"type":"Account"},"Name":"'+name+'","BillingCity":"'+billing+'"}'; 
             count++;  
         }
