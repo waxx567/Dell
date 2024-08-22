@@ -14,5 +14,12 @@ public class sObjectList {
     {
         // code here
         List<sObject> returnList = new List<sObject>();
+
+        if (accounts == null && contacts == null) {
+            return returnList;
+        }
+
+        return returnList;
+            
     }
 }
