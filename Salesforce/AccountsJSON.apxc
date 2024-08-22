@@ -8,10 +8,12 @@ public class AccountsJSON {
     // result should be equals to
     // '[{"attributes":{"type":"Account"},"Name":"Acme","BillingCity":"Chicago"},{"attributes":{"type":"Account"},"Name":"Dove", "BillingCity":"Boston"}]';
     public String getAccountsInJSONFormat(List<Account> accounts){
+        // Handle null check
         if (accounts == null) {
             return 'null';
         }
     
+        // Convert the list of accounts into a JSON string
         return JSON.serialize(accounts);
     }
 }
