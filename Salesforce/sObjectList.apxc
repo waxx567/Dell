@@ -14,27 +14,21 @@ public class sObjectList {
     {
         List<sObject> returnList = new List<sObject>();
 
-        if (accounts == null && contacts == null) {
-            return returnList;
+        if (accounts == null) {
+            accounts = new List<Account>();
+            return accounts;
+        }
+        if (contacts == null) {
+            contacts = new List<Contact>();
+            return contacts;
         }
 
-        // Create sObjets for the inputs
-        SObject account = new Account();
-        for (Account a : accounts) {
-            (Account)account = a;
+        for (Account account : accounts) {
+            returnList.add(account);
         }
-        SObject contact = new Contact();
-        for (Contact c : contacts) {
-            (Contact)contact = c;
+        for (Contact contact : contacts) {
+            returnList.add(contact);
         }
-
-        for (SObject acc : a) {
-            for (SObject con : c) {
-                returnList.add(Name=acc, Contact=con);
-            }            
-        }
-
-        insert returnList;
 
         return returnList;            
     }
