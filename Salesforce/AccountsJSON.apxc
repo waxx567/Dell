@@ -10,15 +10,24 @@ public class AccountsJSON {
     public String getAccountsInJSONFormat(List<Account> accounts){
         String result = '';
 
-        for (Account account : accounts) {
+        // 09:29:34:004 USER_DEBUG [5]|DEBUG|(Account:{Name=Acme, BillingCity=Chicago}, Account:{Name=Dove, BillingCity=Boston})
+
+        
+
+        // for (Account account : accounts) {
             // Query the acoount to get the relevant information
-            SObject s = [SELECT Id, Name, BillingCity FROM account];
+            // SObject s = [SELECT Id, Name, BillingCity FROM account];
             // Convert the account in order to access the values
             // ID id = s.ID;
             // Account convertedAccount = (Account)s;
-            result = JSON.serialize(s, suppressApexObjectNulls);
-        }
+            // result = JSON.serialize(s, suppressApexObjectNulls);
+        // }
 
         return result;
     }
 }
+
+// List<Account> accounts = new List<Account>();
+// accounts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
+// accounts.add(new Account(Name = 'Dove', BillingCity = 'Boston'));
+// String result = AccountsJSON.getAccountsInJSONFormat(accounts);
