@@ -16,11 +16,9 @@ public class sObjectList {
 
         if (accounts == null) {
             accounts = new List<Account>();
-            return accounts;
         }
         if (contacts == null) {
             contacts = new List<Contact>();
-            return contacts;
         }
 
         for (Account account : accounts) {
