@@ -12,20 +12,28 @@ public class sObjectList {
     // Note: Adding different types into a list of sObjects can be used to perform operations on multiple object types in a single DML operation.
     public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
     {
-        // code here
-        SObject a = accounts;
-        SObject c = contacts;
         List<sObject> returnList = new List<sObject>();
 
         if (accounts == null && contacts == null) {
             return returnList;
         }
 
-        for (SObject account : a) {
-            for (SObject contact : c) {
-                returnList.add(Name=account, Contact=contact);
+        // Create sObjets for the inputs
+        SObject account = new Account();
+        for (Account a : accounts) {
+            a = (Account)account;
+        }
+        SObject contact = new Contact();
+        for (Contact c : contacts) {
+            c = (Contact)contact;
+        }
+
+        for (SObject acc : a) {
+            for (SObject con : c) {
+                returnList.add(Name=acc, Contact=con);
             }            
         }
+        
         insert returnList;
 
         return returnList;            
