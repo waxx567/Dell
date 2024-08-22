@@ -11,21 +11,22 @@ public class AccountsJSON {
         String result = '';
 
         // 09:29:34:004 USER_DEBUG [5]|DEBUG|(Account:{Name=Acme, BillingCity=Chicago}, Account:{Name=Dove, BillingCity=Boston})
-
-        
-
-        // for (Account account : accounts) {
-            // Query the acoount to get the relevant information
-            // SObject s = [SELECT Id, Name, BillingCity FROM account];
-            // Convert the account in order to access the values
-            // ID id = s.ID;
-            // Account convertedAccount = (Account)s;
-            // result = JSON.serialize(s, suppressApexObjectNulls);
-        // }
+        ID id = accounts.ID;
+        Account convertedAccount = (Account)s;
 
         return result;
     }
 }
+
+// Account a = new Account(Name = 'Acme', BillingCity = 'San Francisco');
+// insert a;
+// sObject s = [SELECT Id, Name FROM Account WHERE Name = 'Acme' LIMIT 1];
+// ID id = s.ID;
+// Account convertedAccount = (Account)s;
+// convertedAccount.name = 'Acme2';
+// update convertedAccount;
+// Contact sal = new Contact(FirstName = 'Sal', Account = convertedAccount);
+
 
 // List<Account> accounts = new List<Account>();
 // accounts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
