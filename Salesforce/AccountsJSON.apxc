@@ -8,9 +8,8 @@ public class AccountsJSON {
     // result should be equals to
     // '[{"attributes":{"type":"Account"},"Name":"Acme","BillingCity":"Chicago"},{"attributes":{"type":"Account"},"Name":"Dove", "BillingCity":"Boston"}]';
     public String getAccountsInJSONFormat(List<Account> accounts){
-      // code here
-      accounts?.Name = name;
-      accounts?.BillingCity = billCity;
+      String name = accounts?.Name;
+      String billCity = accounts?.BillingCity;
       accounts = Account.newInstance(
         Name.newInstance(name),
         BillingCity.newInstance(billCity)
