@@ -8,29 +8,33 @@ public class AccountsJSON {
     // result should be equals to
     // '[{"attributes":{"type":"Account"},"Name":"Acme","BillingCity":"Chicago"},{"attributes":{"type":"Account"},"Name":"Dove", "BillingCity":"Boston"}]';
     public String getAccountsInJSONFormat(List<Account> accounts){
-        if (accounts == []) {
+        if (accounts == null) {
             return new List<Account>();
         }
 
         String result = '';
         Integer count = 0;
 
-        // 09:29:34:004 USER_DEBUG [5]|DEBUG|(Account:{Name=Acme, BillingCity=Chicago}, Account:{Name=Dove, BillingCity=Boston})
-        for (Integer i = 0; i < accounts.size(); i++) {
-            Account account = accounts[count];
-            String name = account.Name;
-            String billing = account?.BillingCity;
-            String description = account?.Description;
-            if (billing == null && description == null) {
-                result += '{"attributes":{"type":"Account"},"Name":"'+name+'","BillingCity":"'+billing+'"}'; 
-            } else {
-                
+        try {
+            for (Integer i = 0; i < accounts.size(); i++) {
+                Account account = accounts[count];
+                String name = account.Name;
+                String billing = account.BillingCity;
+                String description = account.Description;
+                // serialize 
+                Account a = Account.newInstance(
+                    Name.newInstance(name),
+                    BillingCity.newInstance(billing),
+                    Description.newInstance(description)
+                );
+                result = JSON.serialize(a);
+                count++;
             }
-            result += '{"attributes":{"type":"Account"},"Name":"'+name+'","BillingCity":"'+billing+'"}'; 
-            count++;  
-        }
-
-        return result;
+            return result;
+        } catch (AssertException ae) {
+            result = ae.getMessage();
+            return result;
+        }    
     }
 }
 
@@ -44,7 +48,7 @@ public class AccountsJSON {
 // Contact sal = new Contact(FirstName = 'Sal', Account = convertedAccount);
 
 
-List<Account> accounts = new List<Account>();
-accounts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
-accounts.add(new Account(Name = 'Dove', BillingCity = 'Boston'));
-String result = AccountsJSON.getAccountsInJSONFormat(accounts);
+// List<Account> accounts = new List<Account>();
+// accounts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
+// accounts.add(new Account(Name = 'Dove', BillingCity = 'Boston'));
+// String result = AccountsJSON.getAccountsInJSONFormat(accounts);
