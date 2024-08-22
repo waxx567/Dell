@@ -19,7 +19,14 @@ public class sObjectList {
             return returnList;
         }
 
-        return returnList;
-            
+        for (SObject account : accounts) {
+            for (SObject contact : contacts) {
+                returnList.add(account);
+                returnList.add(contact);
+            }            
+        }
+        insert returnList;
+
+        return returnList;            
     }
 }
