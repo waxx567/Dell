@@ -14,9 +14,9 @@ public class AccountsJSON {
             // Query the acoount to get the relevant information
             SObject s = [SELECT Id, Name, BillingCity FROM account];
             // Convert the account in order to access the values
-            ID id = s.ID;
-            Account convertedAccount = (Account)s;
-            result = JSON.serialize(convertedAccount, suppressApexObjectNulls);
+            // ID id = s.ID;
+            // Account convertedAccount = (Account)s;
+            result = JSON.serialize(s, suppressApexObjectNulls);
         }
 
         return result;
