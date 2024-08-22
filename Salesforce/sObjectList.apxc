@@ -21,8 +21,7 @@ public class sObjectList {
 
         for (SObject account : accounts) {
             for (SObject contact : contacts) {
-                returnList.add(account);
-                returnList.add(contact);
+                returnList.add(Name=account, Contact=contact);
             }            
         }
         insert returnList;
