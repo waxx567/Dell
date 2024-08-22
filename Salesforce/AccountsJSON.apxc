@@ -9,10 +9,16 @@ public class AccountsJSON {
     // '[{"attributes":{"type":"Account"},"Name":"Acme","BillingCity":"Chicago"},{"attributes":{"type":"Account"},"Name":"Dove", "BillingCity":"Boston"}]';
     public String getAccountsInJSONFormat(List<Account> accounts){
         String result = '';
+        Integer count = 0;
 
         // 09:29:34:004 USER_DEBUG [5]|DEBUG|(Account:{Name=Acme, BillingCity=Chicago}, Account:{Name=Dove, BillingCity=Boston})
-        ID id = accounts.ID;
-        Account convertedAccount = (Account)s;
+        for (Integer i = 0; i < accounts.size(); i++) {
+            Account account = accounts[count];
+            String name = [SELECT Name FROM account]; 
+            String billing = [SELECT BillingCity FROM account];
+            result += '{"attributes":{"type":"Account"},"Name":"'+name+'","BillingCity":"'+billing+'"}'; 
+            count++;  
+        }
 
         return result;
     }
