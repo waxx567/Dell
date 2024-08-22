@@ -21,11 +21,11 @@ public class sObjectList {
         // Create sObjets for the inputs
         SObject account = new Account();
         for (Account a : accounts) {
-            a = (Account)account;
+            (Account)account = a;
         }
         SObject contact = new Contact();
         for (Contact c : contacts) {
-            c = (Contact)contact;
+            (Contact)contact = c;
         }
 
         for (SObject acc : a) {
@@ -33,7 +33,7 @@ public class sObjectList {
                 returnList.add(Name=acc, Contact=con);
             }            
         }
-        
+
         insert returnList;
 
         return returnList;            
