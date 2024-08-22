@@ -23,9 +23,9 @@ public class AccountsJSON {
                 String description = account.Description;
                 // serialize 
                 Account a = Account.newInstance(
-                    Name.newInstance(name),
-                    BillingCity.newInstance(billing),
-                    Description.newInstance(description)
+                    Name = name,
+                    BillingCity =billing,
+                    Description = description
                 );
                 result = JSON.serialize(a);
                 count++;
