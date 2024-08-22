@@ -1,0 +1,7 @@
+public class AccountsJSON {
+    public String getAccountsInJSONFormat(List<Account> accounts){
+      // code here
+      String answer = '';
+      return answer;
+    }
+}
