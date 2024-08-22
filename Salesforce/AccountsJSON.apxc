@@ -9,32 +9,32 @@ public class AccountsJSON {
     // '[{"attributes":{"type":"Account"},"Name":"Acme","BillingCity":"Chicago"},{"attributes":{"type":"Account"},"Name":"Dove", "BillingCity":"Boston"}]';
     public String getAccountsInJSONFormat(List<Account> accounts){
         if (accounts == null) {
-            return new List<Account>();
+            return null;
         }
 
         String result = '';
         Integer count = 0;
 
-        try {
-            for (Integer i = 0; i < accounts.size(); i++) {
-                Account account = accounts[count];
-                String name = account.Name;
-                String billing = account.BillingCity;
-                String description = account.Description;
-                // serialize 
+        for (Integer i = 0; i < accounts.size(); i++) {
+            Account account = accounts[count];
+            String name = account.Name;
+            String billing = account.BillingCity;
+            String description = account.Description;
+            // serialize 
+            try {
                 Account a = Account.newInstance(
                     Name = name,
-                    BillingCity =billing,
+                    BillingCity = billing,
                     Description = description
                 );
                 result = JSON.serialize(a);
-                count++;
+                count++;                    
+            } catch (AssertException ae) {
+                result = ae.getMessage();
+                return result;                    
             }
-            return result;
-        } catch (AssertException ae) {
-            result = ae.getMessage();
-            return result;
-        }    
+        }
+        return result;
     }
 }
 
