@@ -8,12 +8,13 @@ public class AccountsFromJSONString {
     // Hint: Use the deserialize method to convert a JSON string into an Object.
     // Hint: JSON.deserialize returns an Object, but you need to return a List of Accounts. Make you < href="https://developer.salesforce.com/docs/atlas.en-us.238.0.apexcode.meta/apexcode/apex_classes_casting.htm" target="_blank">cast the object into the correct type before returning.
     public List<Account> getAccountsFromJSONString(String inputJSON){
+        List<Account> returnList = new List<Account>();
         // Handle null check
         if (inputJSON == null) {
-            return new List<Account>();
+            return returnList;
         }
         
         // Convert the JSON input into a list
-        return JSON.deserialize(inputJSON, new List<Account>());
+        return JSON.deserialize(inputJSON, returnList);
     }
 }
