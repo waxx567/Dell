@@ -6,9 +6,9 @@ public class ContextUserInformation {
 
         // Populate the map
         userMap.put('UserName', UserInfo.getName());
-        userMap.put('ProfileId', userInfo.getProfileId());
-        userMap.put('EmailId', userInfo.getUserEmail());
-        userMap.put('Type', userInfo.getUserType());
+        userMap.put('ProfileId', UserInfo.getProfileId());
+        userMap.put('EmailId', UserInfo.getUserEmail());
+        userMap.put('Type', UserInfo.getUserType());
 
         // Return the map
         return userMap;
