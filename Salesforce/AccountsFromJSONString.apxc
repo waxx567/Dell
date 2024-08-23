@@ -15,6 +15,6 @@ public class AccountsFromJSONString {
         }
         
         // Convert the JSON input into a list
-        return JSON.deserialize(inputJSON, returnList);
+        return (List<Account>)JSON.deserialize(inputJSON, returnList);
     }
 }
