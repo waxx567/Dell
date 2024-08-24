@@ -6,10 +6,13 @@ public class sortListOfsObjects {
 
         // Wrap each account in the AccountWrapper
         for (Account acc : accounts) {
-            wrappedAccounts.add(AccountWrapper(acc));
+            wrappedAccounts.add(new AccountWrapper(acc));
         }
 
-        // Sort
+        // Sort the list using the custom compareTo method
+        wrappedAccounts.sort();
+
+        // Extract the sorted accounts back into a list
     }
     // Wrapper class 
     public class AccountWrapper implements Comparable {
