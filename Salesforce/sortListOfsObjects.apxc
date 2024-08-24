@@ -25,10 +25,10 @@ public class sortListOfsObjects {
             // Compare Annual Revenue in descending order
             if (this.account.AnnualRevenue < compareToWrapper.account.AnnualRevenue) {
                 return -1;
-            } else if {
-                
+            } else if (this.account.AnnualRevenue > compareToWrapper.account.AnnualRevenue) {
+                return 1;
             }  else {
-                
+                return 0;
             }
         }
     }
