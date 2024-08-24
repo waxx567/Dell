@@ -5,5 +5,7 @@ public class sortListOfsObjects {
         List<AccountWrapper> wrappedAccounts = new List<AccountWrapper>();
     }
     // write extra class here
-    
+    public class AccountWrapper implements Comparable {
+        
+    }
 }
