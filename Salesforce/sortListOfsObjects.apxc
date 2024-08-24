@@ -23,7 +23,11 @@ public class sortListOfsObjects {
             AccountWrapper compareToWrapper = (AccountWrapper) compareToWrapper;
 
             // Compare Annual Revenue in descending order
-            if (condition) {
+            if (this.account.AnnualRevenue < compareToWrapper.account.AnnualRevenue) {
+                return -1;
+            } else if {
+                
+            }  else {
                 
             }
         }
