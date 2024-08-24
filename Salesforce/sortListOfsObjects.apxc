@@ -22,7 +22,7 @@ public class sortListOfsObjects {
 
         // Implement the compareTo method for sorting
         public Integer compareTo(Object compareToObject) {
-            AccountWrapper compareToWrapper = (AccountWrapper) compareToWrapper;
+            AccountWrapper compareToWrapper = (AccountWrapper) compareToObject;
 
             // Compare Annual Revenue in descending order
             if (this.account.AnnualRevenue < compareToWrapper.account.AnnualRevenue) {
