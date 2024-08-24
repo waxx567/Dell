@@ -18,6 +18,9 @@ public class sortListOfsObjects {
             this.account = acc;
         }
 
-        // Implement the CompareTo method for sorting
+        // Implement the compareTo method for sorting
+        public Integer compareTo(Object compareToObject) {
+            AccountWrapper compareToWrapper =
+        }
     }
 }
