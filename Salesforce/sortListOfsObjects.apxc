@@ -13,6 +13,9 @@ public class sortListOfsObjects {
     public class AccountWrapper implements Comparable {
         public Account account;
 
-        // Constructor
+        // Constructor to initialize the wrapper with the Account object
+        public AccountWrapper(Account acc) {
+            this.account = acc;
+        }
     }
 }
