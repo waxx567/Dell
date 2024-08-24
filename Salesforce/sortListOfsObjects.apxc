@@ -11,6 +11,8 @@ public class sortListOfsObjects {
     }
     // Wrapper class 
     public class AccountWrapper implements Comparable {
-        
+        public Account account;
+
+        // Constructor
     }
 }
