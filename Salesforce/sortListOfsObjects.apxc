@@ -13,6 +13,13 @@ public class sortListOfsObjects {
         wrappedAccounts.sort();
 
         // Extract the sorted accounts back into a list
+        List<Account> sortedAccounts = new List<Account>();
+
+        for (AccountWrapper wrappedAcc : wrappedAccounts) {
+            sortedAccounts.add(wrappedAcc.account);
+        }
+        
+        return sortedAccounts;    
     }
     // Wrapper class 
     public class AccountWrapper implements Comparable {
