@@ -22,7 +22,10 @@ public class sortListOfsObjects {
         public Integer compareTo(Object compareToObject) {
             AccountWrapper compareToWrapper = (AccountWrapper) compareToWrapper;
 
-            // Compare Annual Revenue
+            // Compare Annual Revenue in descending order
+            if (condition) {
+                
+            }
         }
     }
 }
