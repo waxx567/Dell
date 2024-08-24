@@ -1,0 +1,10 @@
+public class sortListOfsObjects {
+    // Implement the method getAccounts(), function, which accepts a list of accounts as input and returns a new list of accounts sorted in descending order based on the Annual Revenue field.
+    public List<Account> getAccounts(List<Account> accounts) {
+        // code here
+    }
+    // write extra class here 
+    public class OpportunityComparator implements Comparator<Opportunity> {
+        
+    }    
+}
