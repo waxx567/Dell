@@ -22,10 +22,10 @@ public class sortListOfsObjects {
         // Reverse the list
         List<Account> reversedSortedAccounts = new List<Account>();
         for (Integer i = sortedAccounts.size() - 1; i >= 0; i--) {
-            
+            reversedSortedAccounts.add(sortedAccounts[1]);
         }
         
-        return sortedAccounts;    
+        return reversedSortedAccounts;    
     }
     // Wrapper class 
     public class AccountWrapper implements Comparable {
