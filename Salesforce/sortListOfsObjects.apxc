@@ -12,13 +12,17 @@ public class sortListOfsObjects {
         // Sort the list using the custom compareTo method
         wrappedAccounts.sort();
 
-        // Reverse the list
-
         // Extract the sorted accounts back into a list
         List<Account> sortedAccounts = new List<Account>();
 
         for (AccountWrapper wrappedAcc : wrappedAccounts) {
             sortedAccounts.add(wrappedAcc.account);
+        }
+
+        // Reverse the list
+        List<Account> reversedSortedAccounts = new List<Account>();
+        for (Integer i = 0; i < length; i++) {
+            
         }
         
         return sortedAccounts;    
