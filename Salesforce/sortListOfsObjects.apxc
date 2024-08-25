@@ -1,6 +1,11 @@
 public class sortListOfsObjects {
     // Implement the method getAccounts(), function, which accepts a list of accounts as input and returns a new list of accounts sorted in descending order based on the Annual Revenue field.
     public List<Account> getAccounts(List<Account> accounts) {
+        // Handle null check
+        if (accounts == null) {
+            return null;
+        }
+        
         // Create a list of AccountWrapper objects
         List<AccountWrapper> wrappedAccounts = new List<AccountWrapper>();
 
