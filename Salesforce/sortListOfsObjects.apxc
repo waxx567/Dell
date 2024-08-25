@@ -9,6 +9,8 @@ public class sortListOfsObjects {
             wrappedAccounts.add(new AccountWrapper(acc));
         }
 
+        // Reverse the list
+
         // Sort the list using the custom compareTo method
         wrappedAccounts.sort();
 
