@@ -21,7 +21,7 @@ public class sortListOfsObjects {
 
         // Reverse the list
         List<Account> reversedSortedAccounts = new List<Account>();
-        for (Integer i = 0; i < length; i++) {
+        for (Integer i = sortedAccounts.size(); i >= 0; i--) {
             
         }
         
