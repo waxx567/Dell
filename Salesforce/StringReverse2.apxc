@@ -1,5 +1,6 @@
 public class StringReverse2 {
     public static String reverseWords(String str) {
+        // Approach 2: Without Splitting the String
         // Step 1: Convert the string to a character array
         Integer[] charArray = str.getChars();
     
