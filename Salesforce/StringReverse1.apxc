@@ -1,6 +1,6 @@
 public class StringReverse1 {
-    // Approach 1: Using split to Separate Words
     public static String reverseWords(String str) {
+        // Approach 1: Using split to Separate Words
         // Step 1: Split the string into words
         List<String> words = str.split(' ');
 
