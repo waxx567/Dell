@@ -4,7 +4,7 @@ public class Defragging {
         Integer n = 0; // Pointer for negatives
         Integer p = 0; // Pointer for positives
 
-        while (n < memory.size() || p < memory.size()) {
+        while (n < memory.size() && p < memory.size()) {
             if (memory[n] < 0) {
                 memory.add(memory[n]);
                 memory.remove(memory[n]);
