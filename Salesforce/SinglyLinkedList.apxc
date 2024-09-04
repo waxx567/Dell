@@ -60,6 +60,7 @@ public class SinglyLinkedList {
             // Create a new node with the provided value.
             Node newNode = new Node(value);
     
+            // If the list is empty, the new node is both the head and tail.
             if (this.head == null) {
                 this.head = newNode;
                 this.tail = this.head;
