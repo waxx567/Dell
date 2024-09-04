@@ -126,6 +126,7 @@ public class SinglyLinkedList {
         // `next` is a reference to the next node in the list.
         Node next;
     
+        // Constructor initializes the node with a given value.
         public Node(Integer data) {
             this.data = data;
             this.next = null;  // Explicitly set next to null for clarity.
