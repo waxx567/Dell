@@ -1,4 +1,4 @@
-public class binarySearch {
+public class BinarySearch {
     /*
     Given a list of opportunities sorted by the Amount field and an Integer target, implement a solution to search the list and return the index of the opportunity with an amount that is equal to the target.
     In the list does not contain a matching value return negative 1.
