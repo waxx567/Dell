@@ -29,6 +29,7 @@ public class SinglyLinkedList {
             } else {
                 // Otherwise, set the new node's next reference to the current head.
                 newNode.next = this.head;
+                // Update the head to be the new node.
                 this.head = newNode;
             }
         }
