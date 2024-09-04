@@ -1,0 +1,101 @@
+public class SinglyLinkedList {
+    /*
+    Implement a Linked List
+    A linked list a fundamental data structure in computer science. Linked data structures are used in heaps, graphs and trees.
+    In this problem you need to implement a basic singly linked list. You are given a class and basic method signatures as well as a Node class.
+    */
+    public class LinkedList{
+
+        public Node head { get; private set; }
+        public Node tail { get; private set; }
+    
+        public LinkedList() {
+            this.head = null;
+            this.tail = null;
+        }
+        
+        public void addToFront(Integer value){
+            Node newNode = new Node(value);
+    
+            if (this.head == null) {
+                this.head = newNode;
+                this.tail = this.head;
+            } else {
+                newNode.next = this.head;
+                this.head = newNode;
+            }
+        }
+    
+        public Integer removeFromFront(){
+            if (this.head == null) {
+                return null;
+            }
+    
+            Node remove = this.head;
+            this.head = this.head.next;
+    
+            if (this.head == null) {
+                this.tail = null;
+            }
+    
+            return remove.data;
+        }
+    
+        public void addToTail(Integer value){
+            Node newNode = new Node(value);
+    
+            if (this.head == null) {
+                this.head = newNode;
+                this.tail = this.head;
+            } else {
+                this.tail.next = newNode;
+                this.tail = newNode;
+            }
+        }
+    
+        public Integer removeFromTail(){
+            if (this.head == null) {
+                return null;
+            }
+    
+            if (this.head == this.tail) {
+                Node temp = this.head;
+                this.head = null;
+                this.tail = null;
+                return temp.data;
+            }
+    
+            Node current = this.head;
+            while (current.next != this.tail) {
+                current = current.next;
+            }
+    
+            Integer value = this.tail.data;
+            this.tail = current;
+            this.tail.next = null;
+    
+            return value;
+        }
+    
+        public Integer size(){
+            Integer count = 0;
+            Node current = this.head;
+            
+            while (current != null) {
+                count++;
+                current = current.next;
+            }
+            return count;
+        }    
+    }
+    
+    public class Node{
+        Integer data;
+        Node next;
+    
+        public Node(Integer data) {
+            this.data = data;
+            this.next = null;  // Explicitly set next to null for clarity.
+        }
+    }
+}
