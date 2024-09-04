@@ -104,6 +104,7 @@ public class SinglyLinkedList {
             return value;
         }
     
+        // Returns the number of nodes in the list.
         public Integer size(){
             Integer count = 0;
             Node current = this.head;
