@@ -93,6 +93,7 @@ public class SinglyLinkedList {
                 current = current.next;
             }
     
+            // Store the value of the tail node to be removed.
             Integer value = this.tail.data;
             this.tail = current;
             this.tail.next = null;
