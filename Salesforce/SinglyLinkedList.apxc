@@ -114,6 +114,8 @@ public class SinglyLinkedList {
                 count++;
                 current = current.next;
             }
+
+            // Return the total count.
             return count;
         }    
     }
