@@ -36,6 +36,7 @@ public class SinglyLinkedList {
     
         // Removes the node at the front of the list and returns its value.
         public Integer removeFromFront(){
+            // If the list is empty, return null.
             if (this.head == null) {
                 return null;
             }
