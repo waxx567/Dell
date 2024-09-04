@@ -27,6 +27,7 @@ public class SinglyLinkedList {
                 this.head = newNode;
                 this.tail = this.head;
             } else {
+                // Otherwise, set the new node's next reference to the current head.
                 newNode.next = this.head;
                 this.head = newNode;
             }
