@@ -123,6 +123,7 @@ public class SinglyLinkedList {
     public class Node{
         // `data` holds the value stored in the node.
         Integer data;
+        // `next` is a reference to the next node in the list.
         Node next;
     
         public Node(Integer data) {
