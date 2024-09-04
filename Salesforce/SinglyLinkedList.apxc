@@ -121,6 +121,7 @@ public class SinglyLinkedList {
     }
     
     public class Node{
+        // `data` holds the value stored in the node.
         Integer data;
         Node next;
     
