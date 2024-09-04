@@ -17,6 +17,7 @@ public class SinglyLinkedList {
             this.tail = null;
         }
         
+        // Adds a new node with the given value to the front of the list.
         public void addToFront(Integer value){
             Node newNode = new Node(value);
     
