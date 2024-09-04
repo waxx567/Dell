@@ -1,12 +1,13 @@
 public class binarySearch {
     public static Integer search(List<Opportunity> opportunities, Integer target){
         System.debug('Target: ' + target);
+        // Pointers
         Integer left = 0;
         Integer right = opportunities.size() - 1;
     
         while (left <= right) {
             // Find the middle
-            Integer middle = left + (right - left) / 2;
+            Integer middle = left + (right - left) / 2; // see explanation of this line below
             System.debug('Middle index: ' + middle);
     
             Decimal middleAmount = opportunities[middle].Amount;
@@ -27,12 +28,11 @@ public class binarySearch {
     }    
 }
 
-
-// Using (left + right) / 2 directly to calculate the middle 
-// index might seem simpler, but it can cause an integer 
-// overflow in some programming languages when left and right 
-// are large numbers. Even though this is less of a concern in 
-// Apex (since Integer values are not likely to overflow in 
-// this context), the safer approach is to use 
-// left + (right - left) / 2, which avoids the risk of overflow 
-// by keeping the calculation within the range of valid indices.
+/*
+Using (left + right) / 2 directly to calculate the middle index might seem simpler, 
+but it can cause an integer overflow in some programming languages when left and 
+right are large numbers. Even though this is less of a concern in Apex (since Integer 
+values are not likely to overflow in this context), the safer approach is to use 
+left + (right - left) / 2, which avoids the risk of overflow by keeping the 
+calculation within the range of valid indices.
+*/
