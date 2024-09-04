@@ -42,6 +42,7 @@ public class validAnagram {
             // System.debug(map2);
         }
     
+        // Compare the maps
         if (map1.equals(map2)) {
             return true;
         } else {
