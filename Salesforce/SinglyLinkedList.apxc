@@ -67,6 +67,7 @@ public class SinglyLinkedList {
             } else {
                 // Otherwise, set the current tail's next reference to the new node.
                 this.tail.next = newNode;
+                // Update the tail to be the new node.
                 this.tail = newNode;
             }
         }
