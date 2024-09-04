@@ -1,0 +1,38 @@
+public class binarySearch {
+    public static Integer search(List<Opportunity> opportunities, Integer target){
+        System.debug('Target: ' + target);
+        Integer left = 0;
+        Integer right = opportunities.size() - 1;
+    
+        while (left <= right) {
+            // Find the middle
+            Integer middle = left + (right - left) / 2;
+            System.debug('Middle index: ' + middle);
+    
+            Decimal middleAmount = opportunities[middle].Amount;
+            System.debug('Middle Amount: ' + middleAmount);
+    
+            if (middleAmount == target) {
+                return middle;
+            }
+    
+            if (target < middleAmount) {
+                right = middle - 1;
+            } else {
+                left = middle + 1;
+            }
+        }
+    
+        return -1;
+    }    
+}
+
+
+// Using (left + right) / 2 directly to calculate the middle 
+// index might seem simpler, but it can cause an integer 
+// overflow in some programming languages when left and right 
+// are large numbers. Even though this is less of a concern in 
+// Apex (since Integer values are not likely to overflow in 
+// this context), the safer approach is to use 
+// left + (right - left) / 2, which avoids the risk of overflow 
+// by keeping the calculation within the range of valid indices.
