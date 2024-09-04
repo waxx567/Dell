@@ -87,6 +87,7 @@ public class SinglyLinkedList {
                 return temp.data;
             }
     
+            // Traverse the list to find the node just before the tail.
             Node current = this.head;
             while (current.next != this.tail) {
                 current = current.next;
