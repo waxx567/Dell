@@ -1,0 +1,33 @@
+public class ValidSubsequence {
+    /*
+     Given a method that takes two strings s1 and s2 return true if s1 is a subsequence of s2.
+    A valid subsequence means that string s1 can be formed from string s2 by deleting some characters, but maintaining the order.
+    Input: s1 = 'abc', s2 = 'aghlrbrrc'
+    Output: true
+    Input: s1 = 'abc', s2 = 'caaab'
+    Output: false
+    Constraints:
+    s1 and s2 will only consist of lowercase English letters.
+    s2 will always be longer than s1
+    */
+    public Boolean isSubSequence(String s1, String s2){
+        Integer p1 = 0;
+        Integer p2 = 0;
+    
+        while (p1 < s1.length() && p2 < s2.length()) {
+            // if the characters match, move the pointer on s1
+            if (s1.charAt(p1) == s2.charAt(p2)) {
+                p1++;
+            }
+            // move the pointer on s2
+            p2++;
+        }
+    
+        // if p1 has traversed all of s1, then s1 is a subsequence of s2
+        return p1 == s1.length();
+    }
+    /* 
+    Efficiency: This solution is linear, O(n), where n is the length of s2. It only requires a single pass through s2, making it very efficient.
+    Pointers Movement: The pointer p2 on s2 always moves forward, while p1 only moves forward when a matching character is found. This ensures the order of characters in s1 is maintained relative to s2.
+    */
+}
