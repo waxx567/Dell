@@ -13,6 +13,7 @@ public class BuyLowSellHigh {
     Explanation: In this case, no transactions are done and the max profit = 0.
     */
     public Integer maxProfit(List<Integer> prices){
+        // Input null check or empty list
         if (prices == null || prices.isEmpty()) {
             return 0;
         }
