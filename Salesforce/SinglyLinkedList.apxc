@@ -19,6 +19,7 @@ public class SinglyLinkedList {
         
         // Adds a new node with the given value to the front of the list.
         public void addToFront(Integer value){
+            // Create a new node with the provided value.
             Node newNode = new Node(value);
     
             if (this.head == null) {
