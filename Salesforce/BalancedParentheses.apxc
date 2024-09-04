@@ -1,0 +1,42 @@
+public class BalancedParentheses {
+    /*
+    Given a String s containing only the six characters '(', '{', '[', ']', '}', and ')', return true only if every opening bracket has a matching closing bracket of the same type, and all brackets are closed in the correct order.
+    Examples:
+    input: '()[(())]', Output: true
+    Input: '([{}]))', Output: false
+    Input: '([]}', Output: false
+    */
+    public Boolean isValid(String s){
+        // Initialize a stack to keep track of opening brackets
+        List<String> stack = new List<String>();
+        
+        // Define the pairs of matching brackets
+        Map<String, String> matchingPairs = new Map<String, String>{
+            ')' => '(', 
+            ']' => '[', 
+            '}' => '{'
+        };
+        
+        // Iterate through the string
+        for (Integer i = 0; i < s.length(); i++) {
+            String currentChar = s.substring(i, i+1);
+            
+            // If the current character is an opening bracket, push it onto the stack
+            if (matchingPairs.values().contains(currentChar)) {
+                stack.add(currentChar);
+            } 
+            // If it's a closing bracket, check for a matching opening bracket
+            else if (matchingPairs.keySet().contains(currentChar)) {
+                // If stack is empty or the top of the stack doesn't match
+                if (stack.isEmpty() || stack[stack.size() - 1] != matchingPairs.get(currentChar)) {
+                    return false;
+                }
+                // Pop the top of the stack
+                stack.remove(stack.size() - 1);
+            }
+        }
+        
+        // If the stack is empty, all brackets matched correctly
+        return stack.isEmpty();
+    }
+}
