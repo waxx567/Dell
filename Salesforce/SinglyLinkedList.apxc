@@ -72,6 +72,7 @@ public class SinglyLinkedList {
             }
         }
     
+        // Removes the node at the end (tail) of the list and returns its value.
         public Integer removeFromTail(){
             if (this.head == null) {
                 return null;
