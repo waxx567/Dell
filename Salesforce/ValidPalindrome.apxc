@@ -21,6 +21,7 @@ public class ValidPalindrome {
             if (str.charAt(left) != str.charAt(right)) {
                 return false;
             }
+            // Move pointers
             left++;
             right--;
         }
