@@ -1,0 +1,16 @@
+public class Defragging {
+    public void defragging(Integer[] memory)
+    {
+        Integer n = 0; // Pointer for negatives
+        Integer p = 0; // Pointer for positives
+
+        while (n < memory.size() || p < memory.size()) {
+            if (memory[n] < 0) {
+                memory.add(memory[n]);
+                memory.remove(memory[n]);
+                n++;
+            }
+            p++;
+        }
+    }
+}
