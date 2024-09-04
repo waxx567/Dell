@@ -51,6 +51,7 @@ public class SinglyLinkedList {
                 this.tail = null;
             }
     
+            // Return the value of the removed node.
             return remove.data;
         }
     
