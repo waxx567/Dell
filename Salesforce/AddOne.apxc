@@ -1,0 +1,19 @@
+public class AddOne {
+    /*
+    A large integer number is given as a List of Integers from 0 to 9. You have to add 1 to that number and modify the list to represent the resulting number.
+    */
+    public void plusOne(List<Integer> numbers) {
+        Integer n = numbers.size();
+        
+        // start from the last digit and work backwards
+        for (Integer i = n - 1; i >= 0; i--) {
+            if (numbers.get(i) < 9) {
+                numbers.set(i, numbers.get(i) + 1);
+                return; // no further processing required
+            }
+            numbers.set(i, 0); // set current digit to 0 and carry over
+        }
+        // if all digits were 9, add a 1 to the start
+        numbers.add(0, 1);
+    }
+}
