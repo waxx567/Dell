@@ -97,6 +97,7 @@ public class SinglyLinkedList {
             Integer value = this.tail.data;
             // Update the tail to be the current node.
             this.tail = current;
+            // Set the new tail's next reference to null.
             this.tail.next = null;
     
             return value;
