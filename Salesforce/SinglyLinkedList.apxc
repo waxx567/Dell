@@ -55,6 +55,7 @@ public class SinglyLinkedList {
             return remove.data;
         }
     
+        // Adds a new node with the given value to the end (tail) of the list.
         public void addToTail(Integer value){
             Node newNode = new Node(value);
     
