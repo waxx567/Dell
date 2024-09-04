@@ -1,0 +1,31 @@
+public class ReverseWordsInString {
+    /*
+    Given a string that contains a sequence of words separated by spaces, write a method that reverses the order of the characters in each word.
+    You must maintain white space and the order of the words.
+    Example 1:
+    Input: lets learn apex strings
+    Output: stel nrael xepa sgnirts
+    Example 2:
+    Input: DSA is fun
+    Output: ASD si nuf
+    */
+    public static String reverseWords(String str){
+        // split the input string into a list of individual words
+        String[] words = str.split(' ');
+        // Create a new list to hold string values of reversed words
+        List<String> reversedWords = new List<String>();
+        // loop through the words list
+        for (String word:words) {
+            // Create a new list to hold ASCII values of reversed characters
+            List<Integer> reversedCharInts = new List<Integer>();
+            // reverse the words and add them to ASCII list
+            for (Integer i = word.length() - 1; i >= 0; i--) {
+                reversedCharInts.add(word.charAt(i));
+            }
+            String reversedWord = String.fromCharArray(reversedCharInts);
+            reversedWords.add(reversedWord);
+        }
+        String result = String.join(reversedWords, ' ');
+        return result;
+    }
+}
