@@ -41,6 +41,7 @@ public class SinglyLinkedList {
                 return null;
             }
     
+            // Store the current head node to be removed.
             Node remove = this.head;
             this.head = this.head.next;
     
