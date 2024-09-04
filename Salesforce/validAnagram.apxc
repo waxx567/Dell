@@ -5,10 +5,12 @@ public class validAnagram {
             return false;
         }
     
+        // Maps for comparisons
         Map<String, Integer> map1 = new Map<String, Integer>();
         Map<String, Integer> map2 = new Map<String, Integer>();
     
         for (Integer i = 0; i < s1.length(); i++) {
+            // Convert string 1 integer index to character at index
             List<Integer> charArr = new List<Integer>{ s1.charAt(i) };
             String convertedChar = String.fromCharArray(charArr);
     
@@ -19,10 +21,11 @@ public class validAnagram {
             } else {
                 map1.put(convertedChar, 1);
             }
-            System.debug(map1);
+            // System.debug(map1);
         }
     
         for (Integer i = 0; i < s2.length(); i++) {
+            // Convert string 2 integer index to character at index
             List<Integer> charArr = new List<Integer>{ s2.charAt(i) };
             String convertedChar = String.fromCharArray(charArr);
     
@@ -33,7 +36,7 @@ public class validAnagram {
             } else {
                 map2.put(convertedChar, 1);
             }
-            System.debug(map2);
+            // System.debug(map2);
         }
     
         if (map1.equals(map2)) {
