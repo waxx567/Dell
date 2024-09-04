@@ -79,6 +79,7 @@ public class SinglyLinkedList {
                 return null;
             }
     
+            // If there's only one node in the list, remove it and set both head and tail to null.
             if (this.head == this.tail) {
                 Node temp = this.head;
                 this.head = null;
