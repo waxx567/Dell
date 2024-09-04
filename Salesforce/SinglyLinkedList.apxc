@@ -109,6 +109,7 @@ public class SinglyLinkedList {
             Integer count = 0;
             Node current = this.head;
             
+            // Traverse the list, counting each node.
             while (current != null) {
                 count++;
                 current = current.next;
