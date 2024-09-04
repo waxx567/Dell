@@ -20,6 +20,7 @@ public class BuyLowSellHigh {
     
         // Start with the first price as the minumum
         Integer minPrice = prices.get(0);
+        // Variable to store profit amount
         Integer profit = 0;
     
         for (Integer price : prices) {
