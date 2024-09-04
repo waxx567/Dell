@@ -20,14 +20,12 @@ public class binarySearch {
             // Find the middle
             Integer middle = left + (right - left) / 2; // see detailed explanation of this line below
             // System.debug('Middle index: ' + middle);
-    
             Decimal middleAmount = opportunities[middle].Amount;
             // System.debug('Middle Amount: ' + middleAmount);
     
             if (middleAmount == target) {
                 return middle;
             }
-    
             if (target < middleAmount) {
                 right = middle - 1;
             } else {
