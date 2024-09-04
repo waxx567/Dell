@@ -46,6 +46,7 @@ public class SinglyLinkedList {
             // Move the head to the next node in the list.
             this.head = this.head.next;
     
+            // If the list is now empty after removal, set tail to null.
             if (this.head == null) {
                 this.tail = null;
             }
