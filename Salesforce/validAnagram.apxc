@@ -1,0 +1,45 @@
+public class validAnagram {
+    public static boolean isAnagram(String s1, String s2) {
+        // null check
+        if (s1 == null || s2 == null) {
+            return false;
+        }
+    
+        Map<String, Integer> map1 = new Map<String, Integer>();
+        Map<String, Integer> map2 = new Map<String, Integer>();
+    
+        for (Integer i = 0; i < s1.length(); i++) {
+            List<Integer> charArr = new List<Integer>{ s1.charAt(i) };
+            String convertedChar = String.fromCharArray(charArr);
+    
+            if (map1.containsKey(convertedChar)) {
+                Integer i1 = map1.get(convertedChar);
+                i1++;
+                map1.put(convertedChar, i1);
+            } else {
+                map1.put(convertedChar, 1);
+            }
+            System.debug(map1);
+        }
+    
+        for (Integer i = 0; i < s2.length(); i++) {
+            List<Integer> charArr = new List<Integer>{ s2.charAt(i) };
+            String convertedChar = String.fromCharArray(charArr);
+    
+            if (map2.containsKey(convertedChar)) {
+                Integer i2 = map2.get(convertedChar);
+                i2++;
+                map2.put(convertedChar, i2);
+            } else {
+                map2.put(convertedChar, 1);
+            }
+            System.debug(map2);
+        }
+    
+        if (map1.equals(map2)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
