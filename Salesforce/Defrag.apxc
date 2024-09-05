@@ -1,4 +1,4 @@
-public class Defragging {
+public class Defrag {
     public void defragging(Integer[] memory)
     {
         Integer n = 0; // Pointer for negatives
@@ -6,7 +6,9 @@ public class Defragging {
     
         for (Integer i = 0; i < memory.size(); i++) {
             while (n < memory.size() && p < memory.size()) {
+                System.debug('n: ' + n + 'p: ' + p);
                 if (memory[i] < 0) {
+                    System.debug('memory[i]: ' + memory[i]);
                     n = memory[i];
                     memory.add(n);
                     memory.remove(memory[i]);
