@@ -37,8 +37,11 @@ public class SortedList {
 
         // Check if all numbers are the same
         if (numbers[left] == numbers[right]) {
-            if (numbers[left] != numbers[left + 1]) {
-                return false;
+            while (left < right) {
+                if (numbers[left] != numbers[left + 1]) {
+                    return false;
+                }
+                left++;
             }
         }
 
