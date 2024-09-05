@@ -21,6 +21,14 @@ public class Defrag {
 }
 
 /*
+One pointer `pos` tracks the next position to place non--1 values, and the other pointer `i` iterates over the list to find those non--1 values.
+
 Step 1: A single loop to move all non -1 values to the front of the list, keeping their relative order intact. `pos` keeps track of the next empty position where a valid element (not -1) should be placed.
 Step 2: Once all valid elements have been moved, fill the remaining positions with -1.
+
+Time Complexity: 
+This solution runs in O(n) time, where n is the length of the input list. It only requires a single traversal of the list, making it efficient.
+
+This method ensures that all valid elements are shifted to the front while maintaining their order.
+It avoids the complications of modifying the list (adding/removing elements) during iteration.
 */
