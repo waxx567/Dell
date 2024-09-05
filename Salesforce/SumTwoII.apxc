@@ -31,9 +31,19 @@ public class SumTwoII {
             if (sum == target) {
                 output.add(left);
                 output.add(right);
-                return output;
+                return output; // Return immediately since there is only one solution
+            }
+            // If the sum is too small, move the left pointer
+            else if (sum < target) {
+                left++;
+            }
+            // If the sum is too large, move the right pointer
+            else if (condition) {
+                right++;                
             }
         }
-        return output;
+
+        // If the target is not found
+        return null;
     }
 }
