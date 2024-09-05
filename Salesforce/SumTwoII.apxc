@@ -27,7 +27,8 @@ public class SumTwoII {
             while (left < right) {
                 if (left < target) {
                     if (left + right == target) {
-                        
+                        output.add(left);
+                        output.add(right);
                     }
                 } else {
                     left++;                    
@@ -35,6 +36,6 @@ public class SumTwoII {
                 left++;
             }
         }
-        return null;
+        return output;
     }
 }
