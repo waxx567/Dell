@@ -11,6 +11,12 @@ public class Defrag {
                 pos++;
             }
         }
+
+        // Step 2: Fill the rest with -1
+        while (pos < memory.size()) {
+            memory[pos] = -1;
+            pos++;
+        }
     }
 }
 
