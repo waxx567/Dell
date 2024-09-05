@@ -1,5 +1,5 @@
 public class Defrag {
-    public void defragging(Integer[] memory)
+    public static void defragging(Integer[] memory)
     {
         Integer n = 0; // Pointer for negatives
         Integer p = 0; // Pointer for positives
@@ -11,7 +11,7 @@ public class Defrag {
                     System.debug('memory[i]: ' + memory[i]);
                     n = memory[i];
                     memory.add(n);
-                    memory.remove(memory[i]);
+                    memory.remove(i);
                     n++;
                 }
                 p++;
