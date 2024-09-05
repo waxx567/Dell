@@ -11,21 +11,10 @@ public class SumTwo {
     Hint: Think of the complement. If you see a number n at an index, seeing target - n at a different index means you have an answer.
     */
     public static List<Integer> twoSum(List<Integer> nums, Integer target) {
-        List<Integer> indices = new List<Integer>();
-        Integer n = 0;
-        for (Integer i = 0; i < nums.size(); i++) {
-            if (nums[i] < target) {
-                n = nums[i];
-                // i++;
-                if (i == (target - n)) {
-                    indices.add(n);
-                    indices.add(i);
-                } //else {
-                //     i++;
-                // }
-            }
-        }
-        System.debug(indices);
-        return indices;
+        Map<Integer, Integer> numMap = new Map<Integer, Integer>(); 
    }
 }
+
+/*
+Step 1: Use a Map<Integer, Integer> to store the number as the key and its index as the value.
+*/
