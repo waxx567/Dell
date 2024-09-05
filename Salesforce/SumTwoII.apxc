@@ -23,10 +23,16 @@ public class SumTwoII {
         Integer left = 0;
         Integer right = nums.size() - 1;
         
+        // Check the sum of the elements at the left and right pointers
         while (left < right) {
             Integer sum = nums[left] + nums[right];
 
-            
+            // If the target is found
+            if (sum == target) {
+                output.add(left);
+                output.add(right);
+                return output;
+            }
         }
         return output;
     }
