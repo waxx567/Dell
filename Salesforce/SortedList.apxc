@@ -6,13 +6,35 @@ public class SortedList {
     */
     public static Boolean isSorted(List<Integer> numbers) {
         // Two pointer implementation
+        // Check empty or less than 3 (always sorted)
         if (numbers.isEmpty() || numbers.size() <= 2) {
             return true;
         }
-        Integer left = 0;
-        Integer right = numbers.size() - 1;       
 
-        return null;
+        // Initiate pointers
+        Integer left = 0;
+        Integer right = numbers.size() - 1;     
+        
+        // Check if in ascending order
+        if (numbers[left] < numbers[right]) {
+            while (left < right) {
+                if (numbers[left + 1] < numbers[left]) {
+                    return false;
+                }
+                left++;
+            }
+        }
+        // Check if in descending order
+        if (numbers[left] > numbers[right]) {
+            while (left < right) {
+                if (numbers[left + 1] > numbers[right]) {
+                    return false;
+                }
+                left++;
+            }
+        }
+
+        return true;
     }
 }
 
