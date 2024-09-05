@@ -18,7 +18,14 @@ public class SumTwo {
         // Loop through the list of numbers
         for (Integer i = 0; i < nums.size(); i++) {
             Integer currentNum = nums[i];
-            Integer complement = target - currentNum;            
+            Integer complement = target - currentNum;     
+
+            // If the complement exists in the map
+            if (numMap.containsKey(complement)) {
+                indices.add(numMap.get(complement));
+                indices.add(i);
+                return indices; // A solution has been found
+            }       
         }
    }
 }
