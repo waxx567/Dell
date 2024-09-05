@@ -18,12 +18,13 @@ public class SortedList {
         // Check if in ascending order
         if (numbers[left] < numbers[right]) {
             while (left < right) {
-                if (numbers[left + 1] < numbers[left]) {
+                if (numbers[left + 1] < numbers[right]) {
                     return false;
                 }
                 left++;
             }
         }
+
         // Check if in descending order
         if (numbers[left] > numbers[right]) {
             while (left < right) {
@@ -34,6 +35,14 @@ public class SortedList {
             }
         }
 
+        // Check if all numbers are the same
+        if (numbers[left] == numbers[right]) {
+            if (numbers[left] != numbers[left + 1]) {
+                return false;
+            }
+        }
+
+        // If none of the above loops returned false, the list is sorted
         return true;
     }
 }
