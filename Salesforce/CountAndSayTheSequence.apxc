@@ -6,17 +6,21 @@ public class CountAndSayTheSequence {
         String strNum = String.valueOf(N);
         // strNum = '1134666875555'
         Integer count = 1;
-        // Set currentChar to the first character
-        String currentChar = strNum[0];
-        // Set nextChar to the second character
-        String nextChar = strNum[1];
         for (Integer i = 0; i < strNum.length(); i++) {
+            // Set currentChar to the first character
+            String currentChar = strNum[i];
+            // Set nextChar to the second character
+            String nextChar = strNum[i + 1];
             // while (currentChar != strNum[i + 1]) {
                 
             // }
             if (currentChar != nextChar) {
+                // Convert the count to a string and add to output
                 String numCount = String.valueOf(count);
                 output += numCount;
+            }
+            else {
+                count++;
             }
         }
     }
