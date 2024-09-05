@@ -12,9 +12,17 @@ public class SumTwo {
     */
     public static List<Integer> twoSum(List<Integer> nums, Integer target) {
         Map<Integer, Integer> numMap = new Map<Integer, Integer>(); 
+        List<Integer> indices = new List<Integer>();
+
+        for (Integer i = 0; i < nums.size(); i++) {
+            
+        }
    }
 }
 
 /*
 Step 1: Use a Map<Integer, Integer> to store the number as the key and its index as the value.
+Step 2: For each number in the list, calculate the complement (target - current number).
+Step 3: Check if the complement exists in the Map. If it does, the two numbers that add up to the target have been found, so return their indices.
+Step 4: If the complement is not found, add the current number and its index to the Map and continue.
 */
