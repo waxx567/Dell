@@ -3,5 +3,12 @@ public class Defrag {
     {
         // Pointer to place non -1 elements
         Integer pos = 0; 
+
+        // Step 1: Move all non -1 elements to the front of the list
     }
 }
+
+/*
+Step 1: A single loop to move all non--1 values to the front of the list, keeping their relative order intact. `pos` keeps track of the next empty position where a valid element (not -1) should be placed.
+
+*/
