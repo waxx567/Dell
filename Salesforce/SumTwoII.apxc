@@ -22,28 +22,30 @@ public class SumTwoII {
         List<Integer> output = new List<Integer>(); 
         Integer left = 0;
         Integer right = nums.size() - 1;
-        
-        // Check the sum of the elements at the left and right pointers
+
+        // Use a while loop to check the sum of the elements at the left and right pointers
         while (left < right) {
             Integer sum = nums[left] + nums[right];
 
-            // If the target is found
+            // If we find the target, return the indices
             if (sum == target) {
                 output.add(left);
                 output.add(right);
-                return output; // Return immediately since there is only one solution
+                return output;  // Return immediately since there's only one solution
             }
-            // If the sum is too small, move the left pointer
+
+            // If the sum is too small, move the left pointer to the right to increase the sum
             else if (sum < target) {
                 left++;
             }
-            // If the sum is too large, move the right pointer
-            else if (sum > target) {
-                right++;                
+
+            // If the sum is too large, move the right pointer to the left to decrease the sum
+            else {
+                right--;
             }
         }
 
-        // If the target is not found
+        // If no solution is found, return null or an empty list
         return null;
     }
 }
