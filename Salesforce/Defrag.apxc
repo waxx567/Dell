@@ -7,7 +7,7 @@ public class Defrag {
         for (Integer i = 0; i < memory.size(); i++) {
             while (n < memory.size() && p < memory.size()) {
                 System.debug('n: ' + n + 'p: ' + p);
-                if (memory[i] < 0) {
+                if (memory[i] == 0) {
                     System.debug('memory[i]: ' + memory[i]);
                     memory.add(-1);
                     memory.remove(i);
