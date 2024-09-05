@@ -11,11 +11,14 @@ public class SumTwo {
     Hint: Think of the complement. If you see a number n at an index, seeing target - n at a different index means you have an answer.
     */
     public static List<Integer> twoSum(List<Integer> nums, Integer target) {
+        // A map to store the number and its index
         Map<Integer, Integer> numMap = new Map<Integer, Integer>(); 
         List<Integer> indices = new List<Integer>();
 
+        // Loop through the list of numbers
         for (Integer i = 0; i < nums.size(); i++) {
-            
+            Integer currentNum = nums[i];
+            Integer complement = target - currentNum;            
         }
    }
 }
