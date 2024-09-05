@@ -15,6 +15,6 @@ public class Defrag {
 }
 
 /*
-Step 1: A single loop to move all non--1 values to the front of the list, keeping their relative order intact. `pos` keeps track of the next empty position where a valid element (not -1) should be placed.
-
+Step 1: A single loop to move all non -1 values to the front of the list, keeping their relative order intact. `pos` keeps track of the next empty position where a valid element (not -1) should be placed.
+Step 2: Once all valid elements have been moved, fill the remaining positions with -1.
 */
