@@ -25,13 +25,17 @@ public class SumTwoII {
     
         for (Integer i = 0; i < nums.size(); i++) {
             while (left < right) {
-                if (left < target) {
-                    if (left + right == target) {
-                        output.add(left);
-                        output.add(right);
-                    }
+                if (right > target) {
+                    right++;
                 } else {
-                    left++;                    
+                    if (left < target) {
+                        if (left + right == target) {
+                            output.add(left);
+                            output.add(right);
+                        }
+                    } else {
+                        left++;                    
+                    }                    
                 }
                 left++;
             }
