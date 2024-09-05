@@ -6,8 +6,7 @@ public class SortedList {
     */
     public static Boolean isSorted(List<Integer> numbers) {
         // Two pointer implementation
-        // Check empty or less than 3 (always sorted)
-        if (numbers.isEmpty() || numbers.size() <= 2) {
+        if (numbers.size() <= 2) {
             return true;
         }
 
@@ -18,7 +17,7 @@ public class SortedList {
         // Check if in ascending order
         if (numbers[left] < numbers[right]) {
             while (left < right) {
-                if (numbers[left + 1] < numbers[right]) {
+                if (numbers[left + 1] < numbers[left]) {
                     return false;
                 }
                 left++;
@@ -28,7 +27,7 @@ public class SortedList {
         // Check if in descending order
         if (numbers[left] > numbers[right]) {
             while (left < right) {
-                if (numbers[left + 1] > numbers[right]) {
+                if (numbers[left + 1] > numbers[left]) {
                     return false;
                 }
                 left++;
