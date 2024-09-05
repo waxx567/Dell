@@ -4,8 +4,15 @@ public class SortedList {
     Implement the method isSorted that takes as input a list of integers numbers, returns true if the list is sorted in any direction (acsending or descending), and returns false otherwise.
     Example: isSorted(new List<Integer> {5, 2, 0, -1}) evaluates to true because the input list is sorted descending.
     */
-    public static boolean isSorted(List<Integer> numbers) {
+    public static Boolean isSorted(List<Integer> numbers) {
+        // Two pointer implementation
+        if (numbers.isEmpty() || numbers.size() <= 2) {
+            return true;
+        }
+        Integer left = 0;
+        Integer right = numbers.size() - 1;       
 
+        return null;
     }
 }
 
