@@ -20,10 +20,18 @@ public class SumTwoII {
     */
     public List<Integer> twoSum(List<Integer> nums, Integer target){
         Integer left = 0;
-        Integer right = nums.size();
+        Integer right = nums.size() - 1;
     
-        for (Integer i = 0; i < length; i++) {
-            
+        for (Integer i = 0; i < nums.size(); i++) {
+            Integer currentNum = nums[i];
+            Integer complement = target - currentNum;
+            while (left < right) {
+                if (left < target) {
+
+                } else {
+                    left++;                    
+                }
+            }
         }
         return null;
     }
