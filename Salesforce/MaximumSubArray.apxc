@@ -12,6 +12,12 @@ public class MaximumSubArray {
     Hint: Video tutorial https://www.youtube.com/watch?v=iorsrwiQXNI
     */
     public static Integer maxSubArraySum(List<Integer> nums, Integer target){
-        //code here 
+        Integer maxSum = 0;
+        Integer tempSum = 0;
+
+        // First build the window
+        for (Integer i = 0; i < target; i++) {
+            maxSum += nums[i];
+        }
     }
 }
