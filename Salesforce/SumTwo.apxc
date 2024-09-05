@@ -8,6 +8,21 @@ public class SumTwo {
     Input: nums = [6,6,3,22, 1, 11, 56], target = 4 Output: [2,4] nums[2] + nums[4] = 4
     */
     public static List<Integer> twoSum(List<Integer> nums, Integer target) {
-        //code here
+        List<Integer> indices = new List<Integer>();
+        Integer n = 0;
+        for (Integer i = 0; i < nums.size(); i++) {
+            if (nums[i] < target) {
+                n = nums[i];
+                // i++;
+                if (i == (target - n)) {
+                    indices.add(n);
+                    indices.add(i);
+                } //else {
+                //     i++;
+                // }
+            }
+        }
+        System.debug(indices);
+        return indices;
    }
 }
