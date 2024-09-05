@@ -11,9 +11,9 @@ public class CountAndSayTheSequence {
         Integer count = 1;
         while (left < right) {
             // Set currentChar to the first character
-            String currentChar = strNum(left);
+            String currentChar = strNum[left];
             // Set nextChar to the second character
-            String nextChar = strNum(left + 1); 
+            String nextChar = strNum[left + 1]; 
             if (currentChar != nextChar) {
                 // Convert the count to a string and update output string
                 String numCount = String.valueOf(count);
