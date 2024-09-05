@@ -1,20 +1,7 @@
 public class Defrag {
     public static void defragging(Integer[] memory)
     {
-        Integer n = 0; // Pointer for negatives
-        Integer p = 0; // Pointer for positives
-    
-        for (Integer i = 0; i < memory.size(); i++) {
-            while (n < memory.size() && p < memory.size()) {
-                System.debug('n: ' + n + 'p: ' + p);
-                if (memory[i] == 0) {
-                    System.debug('memory[i]: ' + memory[i]);
-                    memory.add(-1);
-                    memory.remove(i);
-                    n++;
-                }
-                p++;
-            }
-        }
+        // Pointer to place non -1 elements
+        Integer pos = 0; 
     }
 }
