@@ -9,6 +9,7 @@ public class SumTwo {
     Input: nums = [6,6,3,22, 1, 11, 56], target = 4 Output: [2,4] nums[2] + nums[4] = 4
     Hint: A solution that uses only one pass (a single loop) will pass.
     Hint: Think of the complement. If you see a number n at an index, seeing target - n at a different index means you have an answer.
+    Hint: Use a Map to maintain a collection of numbers already seen along with their indexes.
     */
     public static List<Integer> twoSum(List<Integer> nums, Integer target) {
         // A map to store the number and its index
