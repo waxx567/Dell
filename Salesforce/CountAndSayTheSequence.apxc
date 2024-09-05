@@ -11,7 +11,6 @@ public class CountAndSayTheSequence {
             String currentChar = strNum[i];
             // Set nextChar to the second character
             String nextChar = strNum[i + 1]; //THIS IS GOING TO OVERFLOW THE STRING LENGTH
-                                                // TWO POINTER SOLUTION NEEDED I THINK
             // while (currentChar != strNum[i + 1]) {
                 
             // }
@@ -19,6 +18,7 @@ public class CountAndSayTheSequence {
                 // Convert the count to a string and add to output
                 String numCount = String.valueOf(count);
                 output += numCount;
+                output += currentChar;
             }
             else {
                 count++;
