@@ -38,7 +38,7 @@ public class SumTwoII {
                 left++;
             }
             // If the sum is too large, move the right pointer
-            else if (condition) {
+            else if (sum > target) {
                 right++;                
             }
         }
