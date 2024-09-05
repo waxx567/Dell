@@ -1,0 +1,23 @@
+public class CountAndSayTheSequence {
+    public string countAndSay(integer N) {
+        String output = '';
+        // N = 1134666875555
+        // Convert the input to a string
+        String strNum = String.valueOf(N);
+        // strNum = '1134666875555'
+        Integer count = 1;
+        // Set currentChar to the first character
+        String currentChar = strNum[0];
+        // Set nextChar to the second character
+        String nextChar = strNum[1];
+        for (Integer i = 0; i < strNum.length(); i++) {
+            // while (currentChar != strNum[i + 1]) {
+                
+            // }
+            if (currentChar != nextChar) {
+                String numCount = String.valueOf(count);
+                output += numCount;
+            }
+        }
+    }
+}
