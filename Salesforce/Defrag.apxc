@@ -5,6 +5,12 @@ public class Defrag {
         Integer pos = 0; 
 
         // Step 1: Move all non -1 elements to the front of the list
+        for (Integer i = 0; i < memory.size(); i++) {
+            if (memory[i] != -1) {
+                memory[pos] = memory[i];
+                pos++;
+            }
+        }
     }
 }
 
