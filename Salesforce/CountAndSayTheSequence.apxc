@@ -36,4 +36,9 @@ public class CountAndSayTheSequence {
         // Generate the current sequence by counting the previous sequence
         return countCharacters(previousSequence);
     }
+
+    // Helper Function for counting characters
+    public String countCharacters(String sequence) {
+        
+    }
 }
