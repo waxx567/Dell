@@ -27,7 +27,7 @@ public class CountAndSayTheSequence {
         if (NumberToCheck == 0) {
             return -1;
         }
-        return NumberToCheck * RecursiveCalculator(NumberToCheck NumberToCheck - 1);
+        return NumberToCheck * RecursiveCalculator(NumberToCheck - 1);
     }
 }
 
