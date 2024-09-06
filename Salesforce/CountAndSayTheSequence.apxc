@@ -47,4 +47,6 @@ public class CountAndSayTheSequence {
 /*
 In Apex, strings are immutable, meaning that every time you modify a string (e.g., concatenate something to it), a new string object is created. This can be inefficient, especially when you're performing many concatenations inside a loop, since each operation creates a new string and discards the old one.
 StringBuilder helps solve this inefficiency by using a mutable buffer internally. Instead of creating a new string every time you append to it, StringBuilder modifies the existing buffer, making repeated string modifications faster and more memory-efficient.
+Use StringBuilder whenever you're manipulating strings in loops or doing frequent concatenations.
+For simple, one-off concatenations, normal string concatenation (+) is fine.
 */
