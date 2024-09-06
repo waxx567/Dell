@@ -37,4 +37,24 @@ public class CountAndSayTheSequence {
         // Generate the current sequence by counting the previous sequence
         return countCharacters(previousSequence);
     }
+
+    // Helper function to count and say a sequence
+    public String countCharacters(String sequence) {
+        String result = '';  // Use regular string for concatenation
+        Integer count = 1;
+
+        for (Integer i = 0; i < sequence.length(); i++) {
+            // If the next character is the same, increment the count
+            if (i + 1 < sequence.length() && sequence[i] == sequence[i + 1]) {
+                count++;
+            } else {
+                // Append the count and character to the result
+                result += count;
+                result += sequence[i];
+                count = 1;  // Reset the count for the next character
+            }
+        }
+
+        return result;  // Return the resulting string
+    }
 }
