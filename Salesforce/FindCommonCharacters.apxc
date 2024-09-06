@@ -11,7 +11,7 @@ public class FindCommonCharacters {
     Hint: Convert the string to ASCII using the getChars() method to make it easier to solve. Refer to www.asciitable.com to understand what Integer is which character.
     */
     public List<String> commonChars(List<String> strs){
-        Map<Integer, Integer> map1 = new Map<Integer, Integer>();
+        Map<String, Integer> map1 = new Map<String, Integer>();
         Map<Integer, Integer> map2 = new Map<Integer, Integer>();
         List<String> output = new List<String>();
     }
