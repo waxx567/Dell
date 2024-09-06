@@ -25,6 +25,7 @@ public class CountAndSayTheSequence {
     2.  Write a helper function that counts consecutive characters in a string (i.e., the "say" part of "count and say").
     */ 
     public string countAndSay(integer N) {
+        // Main recursive method
         // Base case
         if (N == 1) {
             return '1';
@@ -37,10 +38,22 @@ public class CountAndSayTheSequence {
         return countCharacters(previousSequence);
     }
 
-    // Helper function to count and say a sequence
     public String countCharacters(String sequence) {
-        StringBuilder result = new StringBuilder();  // Use StringBuilder for efficiency
-        Integer count = 1;        
+        // Helper function to count and say a sequence
+        StringBuilder result = new StringBuilder();  // Use StringBuilder for efficiency (see explanation below)
+        Integer count = 1;     
+        
+        for (Integer i = 0; i < sequence.length(); i++) {
+            // If the next character is the same, increment the count
+            if (i + 1 < sequence.length() && sequence[i] == sequence[i + 1]) {
+                count++;
+            } else {
+                // Append the count and character to the result
+                result.append(count);
+                result.append(sequence[i]);
+                count = 1;  // Reset the count for the next character
+            }
+        }
     }
 }
 
