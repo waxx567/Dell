@@ -1,0 +1,16 @@
+public class FindCommonCharacters {
+    /*
+    Apex practice problem #118
+    Given list of strings: strs, implement a method that will return all the common characters in the list. The character should be repeated in the list according the minimum frequency that it occurs in the list. The input will only consist of lower case letters in the English alphabet.
+    Example 1
+    input: strs = ['cook', 'lock', 'cool,]
+    output: ['c', 'o'];
+    input: strs = ['bella', 'label', 'roller']
+    output: ['e', 'l', 'l'];
+    Hint: Try solving with two maps
+    Hint: Convert the string to ASCII using the getChars() method to make it easier to solve. Refer to www.asciitable.com to understand what Integer is which character.
+    */
+    public List<String> commonChars(List<String> strs){
+        //solution here 
+    }
+}
