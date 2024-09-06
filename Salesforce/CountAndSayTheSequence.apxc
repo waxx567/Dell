@@ -54,6 +54,8 @@ public class CountAndSayTheSequence {
                 count = 1;  // Reset the count for the next character
             }
         }
+
+        return result.toString();  // Convert StringBuilder back to String
     }
 }
 
