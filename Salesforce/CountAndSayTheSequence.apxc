@@ -19,35 +19,11 @@ public class CountAndSayTheSequence {
     Hint: Explore the concept of method recursion.
     */
     public string countAndSay(integer N) {
-        String output = '';
 
-
-    }
-
-    // Iteration method
-    public static Long iterativeCalculator(Integer NumberToCheck) {
-        if (NumberToCheck == 0) {
-            return 1;
-        }
-        Long factorial = 1;
-        for (Integer i = 1; i <= NumberToCheck; i++) {
-            factorial *= 1;
-        }
-        return factorial;
-    }
-
-    // Recursion method
-    public static Integer recursiveCalculator(Integer NumberToCheck) {
-        System.debug('Recursive method num to check: ' + NumberToCheck);
-        // If the value referenced by the parameter numberToCheck is equal to 0, exit the method call and return a value of 1. Without it, an infinite recursion is created.
-        if (NumberToCheck == 0) {
-            return -1;
-        }
-        return NumberToCheck * recursiveCalculator(NumberToCheck - 1);
     }
 }
 
-/*
+/* PREVIOUS CODE WRITTEN
 public string countAndSay(integer N) {
     String output = '';
     // Convert the input to a string
