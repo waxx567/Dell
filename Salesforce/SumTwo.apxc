@@ -21,11 +21,11 @@ public class SumTwo {
             Integer currentNum = nums[i];
             Integer complement = target - currentNum;     
 
-            // If the complement exists in the map
+            // If the complement exists as a key in the map, a solution has been found
             if (numMap.containsKey(complement)) {
-                indices.add(numMap.get(complement));
-                indices.add(i);
-                return indices; // A solution has been found
+                indices.add(numMap.get(complement)); // Add the value to the output list
+                indices.add(i); // Add the index to the output list
+                return indices;
             }
 
             // Add the current number and its index to the map
