@@ -1,5 +1,40 @@
 THIS IS WHAT I WENT THROUGH BEFORE GETTING TO THE SOLUTION
 
+THE FOLLOWING USES StringBuilder BUT APEX HAS NO StringBuilder CLASS AS JAVA DOES
+public string countAndSay(integer N) {
+    // Main recursive method
+    // Base case
+    if (N == 1) {
+        return '1';
+    }
+
+    // Recursive call to get the previous sequence
+    String previousSequence = countAndSay(N - 1);
+
+    // Generate the current sequence by counting the previous sequence
+    return countCharacters(previousSequence);
+}
+
+public String countCharacters(String sequence) {
+    // Helper function to count and say a sequence
+    StringBuilder result = new StringBuilder();  // Use StringBuilder for efficiency (see explanation below)
+    Integer count = 1;     
+    
+    for (Integer i = 0; i < sequence.length(); i++) {
+        // If the next character is the same, increment the count
+        if (i + 1 < sequence.length() && sequence[i] == sequence[i + 1]) {
+            count++;
+        } else {
+            // Append the count and character to the result
+            result.append(count);
+            result.append(sequence[i]);
+            count = 1;  // Reset the count for the next character
+        }
+    }
+
+    return result.toString();  // Convert StringBuilder back to String
+}
+
 public class CountAndSayTheSequence {
     /*
     Apex practice problem #123
