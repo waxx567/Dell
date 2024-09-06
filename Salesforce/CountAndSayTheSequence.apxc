@@ -19,7 +19,15 @@ public class CountAndSayTheSequence {
     Hint: Explore the concept of method recursion.
     */
     public string countAndSay(integer N) {
-        
+    }
+    // Recursion method
+    public static Integer RecursiveCalculator(Integer NumberToCheck) {
+        System.debug('Recursive method num to check: ' + NumberToCheck);
+        // If the value referenced by the parameter numberToCheck is equal to 0, exit the method call and return a value of 1. Without it, an infinite recursion is created.
+        if (NumberToCheck == 0) {
+            return -1;
+        }
+        return NumberToCheck * RecursiveCalculator(NumberToCheck NumberToCheck - 1);
     }
 }
 
