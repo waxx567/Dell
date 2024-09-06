@@ -18,12 +18,16 @@ public class CountAndSayTheSequence {
     Hint: Break the problem into smaller pieces. First, write code to count and say a String.
     Hint: Explore the concept of method recursion.
     */
+
     /*
     Plan:
     1.  Write a recursive function to handle the sequence generation for N.
     2.  Write a helper function that counts consecutive characters in a string (i.e., the "say" part of "count and say").
     */ 
     public string countAndSay(integer N) {
-
+        // Base case
+        if (N == 1) {
+            return '1';
+        }
     }
 }
