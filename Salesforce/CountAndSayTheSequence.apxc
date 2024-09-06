@@ -45,7 +45,7 @@ public class CountAndSayTheSequence {
 
         for (Integer i = 0; i < sequence.length(); i++) {
             // If the next character is the same, increment the count
-            if (i + 1 < sequence.length() && sequence[i] == sequence[i + 1]) {
+            if (i + 1 < sequence.length() && sequence.substring(i, i + 1) == sequence.substring(i + 1, i + 2)) {
                 count++;
             } else {
                 // Append the count and character to the result
