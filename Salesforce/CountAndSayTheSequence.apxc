@@ -50,7 +50,7 @@ public class CountAndSayTheSequence {
             } else {
                 // Append the count and character to the result
                 result += count;
-                result += sequence[i];
+                result += sequence.substring(i, i + 1);
                 count = 1;  // Reset the count for the next character
             }
         }
