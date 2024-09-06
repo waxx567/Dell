@@ -19,6 +19,8 @@ public class CountAndSayTheSequence {
     Hint: Explore the concept of method recursion.
     */
     public string countAndSay(integer N) {
+        String output = '';
+
 
     }
 
@@ -48,13 +50,11 @@ public class CountAndSayTheSequence {
 /*
 public string countAndSay(integer N) {
     String output = '';
-    // N = 1134666875555
     // Convert the input to a string
     String strNum = String.valueOf(N);
     // Pointers
     Integer left = 0;
     Integer right = strNum.length() - 1;
-    // strNum = '1134666875555'
     Integer count = 1;
     while (left < right) {
         // Set currentChar to the first character
