@@ -31,5 +31,9 @@ public class CountAndSayTheSequence {
         }
 
         // Recursive call to get the previous sequence
+        String previousSequence = countAndSay(N - 1);
+
+        // Generate the current sequence by counting the previous sequence
+        
     }
 }
