@@ -11,15 +11,21 @@ public class FindCommonCharacters {
     Hint: Convert the string to ASCII using the getChars() method to make it easier to solve. Refer to www.asciitable.com to understand what Integer is which character.
     */
     public List<String> commonChars(List<String> strs){
-        // 1. Initialize Data Structures
         // Map to store the frequency of characters for each string
         Map<String, Integer> map1 = new Map<String, Integer>(); 
+        
+        // Process the First String
+        String firstStr = strs[0];
+        
+
+
+
+
         // Map to store minimum frequencies of all characters across all strings
         Map<Integer, Integer> map2 = new Map<Integer, Integer>(); 
         // The result list will hold the common characters that appear in all strings.
         List<String> result = new List<String>();
 
-        // 2. Process the First String
         // Iterate through the first string and count the frequency of each character
         // Convert the string into characters using getChars() and store the counts in map1
         Integer i = 1;
