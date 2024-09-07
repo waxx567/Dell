@@ -29,7 +29,7 @@ public class FindCommonCharacters {
         for (Integer i = 1; i < strs.size(); i++) {
             // Map to store minimum frequencies of all characters across all strings
             Map<Integer, Integer> tempMap = new Map<Integer, Integer>(); 
-            
+            String currentStr = strs[i];
         }
 
 
