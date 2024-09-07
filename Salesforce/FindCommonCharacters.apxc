@@ -49,6 +49,15 @@ public class FindCommonCharacters {
             }
         }
 
-        // Biuld the results based on map1
+        // Build the results based on map1
+        List<String> result = new List<String>();
+        for (String key : map1.keySet()) {
+            Integer freq = map1.get(key);
+            for (Integer k = 0; k < freq; k++) {
+                result.add(key);
+            }
+        }
+
+        return result;   
     }
 }
