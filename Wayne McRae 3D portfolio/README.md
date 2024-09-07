@@ -1,5 +1,7 @@
 # Wayne McRae 3D Portfolio
 
+My portfolio website created using Three.js.
+
 ## Three.js Overview
 
 Three.js is a lightweight and flexible JavaScript library designed to enable the creation of complex 3D visualizations, animations, and interactive graphics within a web browser. It abstracts many of the complexities associated with WebGL, making it easier for developers to render 3D objects, apply materials, and create immersive experiences with relatively minimal code.
