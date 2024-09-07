@@ -18,6 +18,9 @@ public class FindCommonCharacters {
         String firstStr = strs[0];
         for (Integer i = 0; i < firstStr.length(); i++) {
             String ch = firstStr.substring(i, 1 + 1); // Get each character as a string
+            if (!map1.containsKey(ch)) {
+                map1.put(ch, 1); // First occurrence
+            }
         }
 
 
