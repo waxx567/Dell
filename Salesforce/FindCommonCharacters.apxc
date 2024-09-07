@@ -38,6 +38,8 @@ public class FindCommonCharacters {
                     tempMap.put(ch, tempMap.get(ch) + 1);
                 }
             }
+
+            // Update map1 to store the minumum frequency for each character
         }
 
 
