@@ -1,5 +1,5 @@
 # GitHub
 
 - CS50AI problem sets (62203768)
-- Salesforce Apex practice problems
+- Salesforce workspace
 - 3D portfolio
