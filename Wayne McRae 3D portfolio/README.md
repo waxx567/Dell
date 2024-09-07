@@ -15,7 +15,7 @@ Textures and Environment Maps: Three.js supports the application of textures to 
 Animation System: Three.js includes a robust animation system that allows for animating object properties, such as position, rotation, or material attributes. It also supports keyframe animations, making it easier to animate 3D models imported from external tools like Blender or 3ds Max.
 Advanced Features: For more advanced users, Three.js provides functionality for handling shaders, post-processing effects, and physics-based rendering (PBR). These can be combined to achieve highly realistic visual effects.
 
-## Common Use Cases
+## Common Use Cases for Three.js
 
 Interactive 3D Portfolios: Three.js is ideal for showcasing 3D models or animations in online portfolios, providing a visually engaging way to present work in fields like 3D modeling, architecture, or design.
 Data Visualization: It can be used to create 3D charts, graphs, and interactive data representations, allowing users to interact with data in three dimensions.
@@ -29,7 +29,5 @@ Cross-Browser Compatibility: The WebGL engine ensures that your 3D content runs 
 Ease of Integration: Three.js integrates seamlessly with HTML, CSS, and JavaScript, allowing you to blend your 3D elements with standard web development technologies.
 Customizable Interactivity: With Three.js, you can create custom user interactions, such as clicking on objects, dragging, zooming, or rotating the 3D scene, offering a highly interactive experience.
 Optimized Performance: Despite its powerful features, Three.js is optimized for performance, ensuring that your website remains responsive and efficient, even with complex 3D scenes.
-
-## Conclusion
 
 Three.js provides a user-friendly and versatile framework for developing interactive 3D content in the browser. Its wide range of built-in features, combined with the flexibility to customize and extend functionality, makes it a valuable tool for creating visually impressive and engaging websites like a 3D portfolio.
