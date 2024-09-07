@@ -12,7 +12,7 @@ public class LongestSubstringWithDistinctCharacters {
     input: str = 'araaci', k = 1
     output: 2, longest substring with 1 distinct character is aa
     Hint: Try to use a sliding window pattern, use a map to track values
-    Hint: When the size of the map is greater than than k, discard values
+    Hint: When the size of the map is greater than k, discard values
     */
     public static Integer longestDistinctSubstring(String str, Integer k){ 
         //solution here
