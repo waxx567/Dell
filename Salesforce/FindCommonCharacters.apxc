@@ -25,11 +25,14 @@ public class FindCommonCharacters {
             }
         }
 
+        // Process remaining strings
+        for (Integer i = 1; i < strs.size(); i++) {
+            // Map to store minimum frequencies of all characters across all strings
+            Map<Integer, Integer> tempMap = new Map<Integer, Integer>(); 
+            
+        }
 
 
-
-        // Map to store minimum frequencies of all characters across all strings
-        Map<Integer, Integer> map2 = new Map<Integer, Integer>(); 
         // The result list will hold the common characters that appear in all strings.
         List<String> result = new List<String>();
 
