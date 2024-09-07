@@ -49,30 +49,6 @@ public class FindCommonCharacters {
             }
         }
 
-
-
-        // Iterate through the first string and count the frequency of each character
-        // Convert the string into characters using getChars() and store the counts in map1
-        Integer i = 1;
-        while (i <= strs[0].length()) {
-            if (map1.keySet().contains(strs[i].getChars())) {
-                map1.get(i)++;
-                map1.put(strs[i].getChars(), i);
-                i++;
-            } 
-            else {                
-                map1.put(strs[i].getChars(), i);
-                i++;
-            }
-        }
-
-        // 3. Iterate Over the Remaining Strings
-        // Once all strings are processed, iterate over the character map to collect the characters that appear in all strings.
-        // If a character appears at least once in each string, add it to the result list according to its minimum frequency across all strings.
-
-        // 5. Edge Cases
-        // Consider cases where:
-        // A string is empty or there are no common characters.
-        // Characters appear in different frequencies across strings.
+        // Biuld the results based on map1
     }
 }
