@@ -40,11 +40,12 @@ public class FindCommonCharacters {
             }
 
             // Update map1 to store the minumum frequency for each character
+            for (String key : map1.keySet()) {
+                
+            }
         }
 
 
-        // The result list will hold the common characters that appear in all strings.
-        List<String> result = new List<String>();
 
         // Iterate through the first string and count the frequency of each character
         // Convert the string into characters using getChars() and store the counts in map1
