@@ -1,0 +1,20 @@
+public class LongestSubstringWithDistinctCharacters {
+    /*
+    Apex practice problem #116
+    Given a string str and an Integer k, return the size of the largest substring of str consisting of k distinct characters
+    Example 1
+    input: str = 'araaaci' k = 2
+    output: 4; largest substring with 2 distinct characters = 'araa';
+    Example 2
+    input: str = 'string', k = 10
+    output: 6, there are fewer than 10 distinct characters
+    Example 3
+    input: str = 'araaci', k = 1
+    output: 2, longest substring with 1 distinct character is aa
+    Hint: Try to use a sliding window pattern, use a map to track values
+    Hint: When the size of the map is greater than than k, discard values
+    */
+    public static Integer longestDistinctSubstring(String str, Integer k){ 
+        //solution here
+    }
+}
