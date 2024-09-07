@@ -11,13 +11,13 @@ public class FindCommonCharacters {
     Hint: Convert the string to ASCII using the getChars() method to make it easier to solve. Refer to www.asciitable.com to understand what Integer is which character.
     */
     public List<String> commonChars(List<String> strs){
-        // Map to store the frequency of characters for each string
-        Map<String, Integer> map1 = new Map<String, Integer>(); 
-        
-        // Process the First String
+        // 1. Map to store the frequency of characters in the first string
+        Map<String, Integer> map1 = new Map<String, Integer>();
+
+        // Process the first string
         String firstStr = strs[0];
         for (Integer i = 0; i < firstStr.length(); i++) {
-            String ch = firstStr.substring(i, 1 + 1); // Get each character as a string
+            String ch = firstStr.substring(i, i + 1); // Get each character as a String
             if (!map1.containsKey(ch)) {
                 map1.put(ch, 1); // First occurrence
             } else {
@@ -27,8 +27,7 @@ public class FindCommonCharacters {
 
         // Process remaining strings
         for (Integer i = 1; i < strs.size(); i++) {
-            // Map to store minimum frequencies of all characters across all strings
-            Map<String, Integer> tempMap = new Map<String, Integer>(); 
+            Map<String, Integer> tempMap = new Map<String, Integer>();
             String currentStr = strs[i];
             for (Integer j = 0; j < currentStr.length(); j++) {
                 String ch = currentStr.substring(j, j + 1);
@@ -39,17 +38,17 @@ public class FindCommonCharacters {
                 }
             }
 
-            // Update map1 to store the minumum frequency for each character
+            // Update map1 to keep the minimum frequency of each character
             for (String key : map1.keySet()) {
                 if (tempMap.containsKey(key)) {
                     map1.put(key, Math.min(map1.get(key), tempMap.get(key)));
                 } else {
-                    map1.put(key, 0); //Character not found, set count to 0
+                    map1.put(key, 0); // Character not found, set count to 0
                 }
             }
         }
 
-        // Build the results based on map1
+        // Build the result based on map1
         List<String> result = new List<String>();
         for (String key : map1.keySet()) {
             Integer freq = map1.get(key);
@@ -58,6 +57,6 @@ public class FindCommonCharacters {
             }
         }
 
-        return result;   
+        return result;
     }
 }
