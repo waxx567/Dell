@@ -43,6 +43,8 @@ public class FindCommonCharacters {
             for (String key : map1.keySet()) {
                 if (tempMap.containsKey(key)) {
                     map1.put(key, Math.min(map1.get(key), tempMap.get(key)));
+                } else {
+                    map1.put(key, 0); //Character not found, set count to 0
                 }
             }
         }
