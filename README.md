@@ -1,2 +1,5 @@
 # GitHub
- Dell workspace
+
+- CS50AI problem sets
+- Salesforce Apex practice problems
+- 3D portfolio
