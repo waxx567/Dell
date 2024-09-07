@@ -28,7 +28,7 @@ public class FindCommonCharacters {
         // Process remaining strings
         for (Integer i = 1; i < strs.size(); i++) {
             // Map to store minimum frequencies of all characters across all strings
-            Map<Integer, Integer> tempMap = new Map<Integer, Integer>(); 
+            Map<String, Integer> tempMap = new Map<String, Integer>(); 
             String currentStr = strs[i];
             for (Integer j = 0; j < currentStr.length(); j++) {
                 String ch = currentStr.substring(j, j + 1);
