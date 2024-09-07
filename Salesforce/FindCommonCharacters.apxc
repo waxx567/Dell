@@ -20,6 +20,8 @@ public class FindCommonCharacters {
             String ch = firstStr.substring(i, 1 + 1); // Get each character as a string
             if (!map1.containsKey(ch)) {
                 map1.put(ch, 1); // First occurrence
+            } else {
+                map1.put(ch, map1.get(ch) + 1); // Increment count
             }
         }
 
