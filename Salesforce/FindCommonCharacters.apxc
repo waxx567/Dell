@@ -31,9 +31,7 @@ public class FindCommonCharacters {
             Map<Integer, Integer> tempMap = new Map<Integer, Integer>(); 
             String currentStr = strs[i];
             for (Integer j = 0; j < currentStr.length(); j++) {
-                if (!tempMap.containsKey(ch)) {
-                    tempMap.put(ch, 1);
-                }
+                String ch = currentStr.substring(j, j + 1);
             }
         }
 
