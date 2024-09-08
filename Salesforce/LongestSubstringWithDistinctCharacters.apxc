@@ -24,7 +24,7 @@ public class LongestSubstringWithDistinctCharacters {
     */
     public static Integer longestDistinctSubstring(String str, Integer k){
         // Handle edge cases
-        if (str == null || str.isEmpty() || k <= 0) {
+        if (str == null || k <= 0) {
             return 0;
         }
 
