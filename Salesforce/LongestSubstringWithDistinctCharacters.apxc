@@ -14,7 +14,15 @@ public class LongestSubstringWithDistinctCharacters {
     Hint: Try to use a sliding window pattern, use a map to track values
     Hint: When the size of the map is greater than k, discard values
     */
+
+    /*
+    Plan:
+    1. Sliding Window: Use two pointers (left and right) to represent the current window.
+    2. Map: Use a map to track the frequency of characters in the current window.
+    3. Adjust Window: If the number of distinct characters exceeds k, move the left pointer to reduce the window size.
+    4. Max Length: Keep track of the maximum length of any window that satisfies the condition.
+    */
     public static Integer longestDistinctSubstring(String str, Integer k){
-        
+
     }
 }
