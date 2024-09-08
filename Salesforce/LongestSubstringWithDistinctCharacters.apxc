@@ -44,8 +44,8 @@ public class LongestSubstringWithDistinctCharacters {
             charCountMap.put(currentChar, charCountMap.get(currentChar) + 1);
 
             // If the window contains more than 'k' distinct characters, shrink the window
-            while (condition) {
-                
+            while (charCountMap.size() > k) {
+                String leftChar = str.substring(left, left + 1);
             }
         }
     }
