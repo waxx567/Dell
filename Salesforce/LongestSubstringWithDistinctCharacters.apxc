@@ -15,17 +15,6 @@ public class LongestSubstringWithDistinctCharacters {
     Hint: When the size of the map is greater than k, discard values
     */
     public static Integer longestDistinctSubstring(String str, Integer k){
-        Integer maxDistinct = 0;
-        Integer tempDistinct = 0;
         
-        for (Integer i = 0; i < k; i++) {
-            maxDistinct += str[i];
-        }
-
-        tempDistinct = maxDistinct;
-
-        for (Integer i = k; i < str.length(); i++) {
-            tempDistinct = tempDistinct - (str.substring(i, i + 1) - k) + str.substring(i, i + 1);
-        }
     }
 }
