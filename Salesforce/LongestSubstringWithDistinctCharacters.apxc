@@ -41,6 +41,7 @@ public class LongestSubstringWithDistinctCharacters {
             if (!charCountMap.containsKey(currentChar)) {
                 charCountMap.put(currentChar, 0);
             }
+            charCountMap.put(currentChar, charCountMap.get(currentChar) + 1);
         }
     }
 }
