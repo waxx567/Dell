@@ -23,6 +23,12 @@ public class LongestSubstringWithDistinctCharacters {
     4. Max Length: Keep track of the maximum length of any window that satisfies the condition.
     */
     public static Integer longestDistinctSubstring(String str, Integer k){
+        // Handle edge cases
+        if (str == null || str.isEmpty() || k <= 0) {
+            return 0;
+        }
 
+        Map<String,Integer> charCountMap = new Map<String,Integer>();
+        
     }
 }
