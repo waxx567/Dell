@@ -47,7 +47,12 @@ public class LongestSubstringWithDistinctCharacters {
             while (charCountMap.size() > k) {
                 String leftChar = str.substring(left, left + 1);
                 charCountMap.put(leftChar, charCountMap.get(leftChar) - 1);
+
+                // Remove the character from the map if its frequency drops to 0
+                if (charCountMap.get(leftChar) == 0) {
+                    charCountMap.remove(leftChar);
             }
+            left++;  // Shrink the window from the left
         }
     }
 }
