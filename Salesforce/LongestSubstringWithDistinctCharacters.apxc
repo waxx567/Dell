@@ -38,7 +38,9 @@ public class LongestSubstringWithDistinctCharacters {
             String currentChar = str.substring(right, right + 1);
 
             // Add the current caracter to the map or update is frequency
-            
+            if (condition) {
+                
+            }
         }
     }
 }
