@@ -34,7 +34,8 @@ public class LongestSubstringWithDistinctCharacters {
 
         // Sliding window from left to right
         for (Integer right = 0; right < str.length(); right++) {
-            
+            // Get the current character as a sigle-character string
+            String currentChar = str.substring(right, right + 1);
         }
     }
 }
