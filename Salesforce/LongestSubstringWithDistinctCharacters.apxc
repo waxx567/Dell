@@ -28,31 +28,37 @@ public class LongestSubstringWithDistinctCharacters {
             return 0;
         }
 
-        Map<String,Integer> charCountMap = new Map<String,Integer>();
+        Map<String, Integer> charCountMap = new Map<String, Integer>();
         Integer left = 0;
         Integer maxLength = 0;
 
         // Sliding window from left to right
         for (Integer right = 0; right < str.length(); right++) {
             // Get the current character as a single-character string
-            String currentChar = str.substring(right, right + 1);
+            String currChar = str.substring(right, right + 1);
 
-            // Add the current caracter to the map or update is frequency
-            if (!charCountMap.containsKey(currentChar)) {
-                charCountMap.put(currentChar, 0);
+            // Add the current character to the map or update its frequency
+            if (!charCountMap.containsKey(currChar)) {
+                charCountMap.put(currChar, 0);
             }
-            charCountMap.put(currentChar, charCountMap.get(currentChar) + 1);
+            charCountMap.put(currChar, charCountMap.get(currChar) + 1);
 
             // If the window contains more than 'k' distinct characters, shrink the window
             while (charCountMap.size() > k) {
                 String leftChar = str.substring(left, left + 1);
                 charCountMap.put(leftChar, charCountMap.get(leftChar) - 1);
-
+                
                 // Remove the character from the map if its frequency drops to 0
                 if (charCountMap.get(leftChar) == 0) {
                     charCountMap.remove(leftChar);
+                }
+                left++;  // Shrink the window from the left
             }
-            left++;  // Shrink the window from the left
+
+            // Update the maximum length of the window with at most 'k' distinct characters
+            maxLength = Math.max(maxLength, right - left + 1);
         }
+
+        return maxLength;
     }
 }
