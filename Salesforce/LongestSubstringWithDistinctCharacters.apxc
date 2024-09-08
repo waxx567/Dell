@@ -31,5 +31,7 @@ public class LongestSubstringWithDistinctCharacters {
         Map<String,Integer> charCountMap = new Map<String,Integer>();
         Integer left = 0;
         Integer maxLength = 0;
+
+        // Sliding window
     }
 }
