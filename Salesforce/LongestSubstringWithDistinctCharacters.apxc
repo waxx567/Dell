@@ -32,6 +32,9 @@ public class LongestSubstringWithDistinctCharacters {
         Integer left = 0;
         Integer maxLength = 0;
 
-        // Sliding window
+        // Sliding window from left to right
+        for (Integer right = 0; right < str.length(); right++) {
+            
+        }
     }
 }
