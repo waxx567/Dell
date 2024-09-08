@@ -25,7 +25,7 @@ public class LongestSubstringWithDistinctCharacters {
         tempDistinct = maxDistinct;
 
         for (Integer i = k; i < str.length(); i++) {
-            tempDistinct = tempDistinct - (str.substring(arg0, arg1)) + str.substring(arg0, arg1)
+            tempDistinct = tempDistinct - (str.substring(i, i + 1) - k) + str.substring(i, i + 1);
         }
     }
 }
