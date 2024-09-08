@@ -18,8 +18,14 @@ public class LongestSubstringWithDistinctCharacters {
         Integer maxDistinct = 0;
         Integer tempDistinct = 0;
         
-        for (Integer i = 0; i < str.length(); i++) {
-            
+        for (Integer i = 0; i < k; i++) {
+            maxDistinct += str[i];
+        }
+
+        tempDistinct = maxDistinct;
+
+        for (Integer i = k; i < str.length(); i++) {
+            tempDistinct = tempDistinct - (str.substring(arg0, arg1)) + str.substring(arg0, arg1)
         }
     }
 }
