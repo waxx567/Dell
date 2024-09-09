@@ -12,7 +12,7 @@ camera.position.z = 5;
 
 // 3. Object
 const geometry = new THREE.DodecahedronGeometry();
-const material = new THREE.MeshBasicMaterial('#468585');
+const material = new THREE.MeshLambertMaterial('#468585');
 const dodecahedron = new THREE.Mesh(geometry, material);
 
 const boxGeometry = new THREE.BoxGeometry(2, 0.1, 2);
