@@ -19,9 +19,12 @@ public class SameString122 {
 
     Plan:
     1. Start from the end of both strings.
-
+    2. Use two pointers, one for each string, and move leftward.
+    3. Whenever you encounter a backspace ('#'), count how many characters to skip, and move the pointer accordingly.
+    4. Compare the current characters once both pointers land on valid characters.
+    5. If the strings differ at any valid position, return false; otherwise, if all characters match, return true.
     */
     public static Boolean sameString(String str1, String str2){
-
+        
     }
 }
