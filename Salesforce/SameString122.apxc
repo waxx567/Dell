@@ -65,7 +65,12 @@ public class SameString122 {
                     // If one pointer is still valid but the other isn't, the strings are different
                     return false;
                 }
+
+                p1--;
+                p2--;
             }
+
+            return true;
         }
     }
 }
