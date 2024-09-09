@@ -62,7 +62,8 @@ public class SameString122 {
                 if (str1.substring(p1, p1) != str2.substring(p2, p2)) {
                     return false;
                 } else if (p1 >= 0 || p2 >= 0) {
-                    // If 
+                    // If one pointer is still valid but the other isn't, the strings are different
+                    return false;
                 }
             }
         }
