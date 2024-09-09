@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color('#F0F0F0');
 
 // 2. Camera
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera( {fov: 75, aspect: window.innerWidth / window.innerHeight, near: 0.1, far: 1000} );
 camera.position.z = 5;
 
 // 3. Object
@@ -22,3 +22,6 @@ box.position.y = -1.5;
 
 scene.add(dodecahedron);
 scene.add(box);
+
+// 4. Light
+const light = new THREE.SpotLight( {color: 0x006769, intensity: 100} );
