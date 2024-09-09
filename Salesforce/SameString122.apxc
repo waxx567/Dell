@@ -35,7 +35,10 @@ public class SameString122 {
                 if (str1.substring(p1, p1) == '#') {
                     skip1++;
                     p1--;
-                }
+                } else if (skip1 > 0) {
+                    skip1--;
+                    p1--;
+                }                 
             }
         }
     }
