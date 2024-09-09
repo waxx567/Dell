@@ -18,6 +18,17 @@ public class SameString122 {
     Hint: String algo tutorial https://www.youtube.com/watch?v=Qe5ZcxiRZts
     */
     public static Boolean sameString(String str1, String str2){
-        // solution
+        Integer left = 0;
+        for (Integer right = str1.length() - 1; right >= 0; right--) {
+            
+        }
+        for (Integer right = str2.length() - 1; right >= 0; right--) {
+            
+        }
+        if (condition) { // if the resultant strings are the same
+            return true;
+        } else {
+            return false;
+        }
     }
 }
