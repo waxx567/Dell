@@ -21,7 +21,7 @@ public class SameString122 {
         Integer left = 0;
         // Remove all '#' from beginning of strings
         while (str1.substring(left, left + 1) == '#') {
-            str1.remove(left);
+            str1.remove(str1.charAt(left));
             left++; 
         }
         while (str2.substring(left, left + 1) == '#') {
@@ -42,7 +42,7 @@ public class SameString122 {
         }
 
         // If the resultant strings are the same
-        if (condition) {
+        if (str1.equals(str2)) {
             return true;
         } else {
             return false;
