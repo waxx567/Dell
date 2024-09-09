@@ -38,8 +38,12 @@ public class SameString122 {
                 } else if (skip1 > 0) {
                     skip1--;
                     p1--;
-                }                 
+                } else {
+                    break;
+                }         
             }
+
+            // Process backspaces in str2
         }
     }
 }
