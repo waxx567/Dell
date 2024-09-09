@@ -2,6 +2,11 @@
 
 My portfolio website created using Three.js.
 
+**Folders:**
+basic - a simple application created using a CDN. A handy place for me to play with materials and textures.
+vite - the full application created using `npm create vite@latest`
+
+
 ## Three.js Overview
 
 Three.js is a lightweight and flexible JavaScript library designed to enable the creation of complex 3D visualizations, animations, and interactive graphics within a web browser. It abstracts many of the complexities associated with WebGL, making it easier for developers to render 3D objects, apply materials, and create immersive experiences with relatively minimal code.
