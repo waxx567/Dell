@@ -8,7 +8,7 @@ public class ReverseString {
     }
 }
 /*
-String stringtoreverse = 'abc'; // Define the string you want to reverse
+String stringtoreverse = 'hello world'; // Define the string you want to reverse
 String reversedString = ReverseString.stringReverse(stringtoreverse); // Call the method
 System.debug(reversedString); // Output the result to the debug log
  */
