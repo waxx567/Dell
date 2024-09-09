@@ -4,7 +4,7 @@ My portfolio website created using Three.js.
 
 **Folders:**
 basic - a simple application created using a CDN. A handy place for me to play with materials and textures.
-vite - the full application created using `npm create vite@latest`
+vite - application created using `npm create vite@latest`
 
 ## Three.js Overview
 
