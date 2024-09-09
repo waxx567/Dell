@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 // 1. Create the scene
-const scene: THREE.scene = new THREE.scene();
+const scene = new THREE.Scene();
 scene.background = new THREE.Color('#F0F0F0');
 
 // 2. Add the camera
