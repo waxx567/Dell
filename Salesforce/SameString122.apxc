@@ -58,7 +58,9 @@ public class SameString122 {
             }
 
             // Compare current characters
-            
+            if (condition) {
+                
+            }
         }
     }
 }
