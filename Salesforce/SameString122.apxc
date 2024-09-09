@@ -25,6 +25,11 @@ public class SameString122 {
     5. If the strings differ at any valid position, return false; otherwise, if all characters match, return true.
     */
     public static Boolean sameString(String str1, String str2){
-        
+        Integer p1 = str1.length() - 1; // Pointer for str1
+        Integer p2 = str2.length() - 1; // Poimter for str2
+
+        while (p1) {
+            
+        }
     }
 }
