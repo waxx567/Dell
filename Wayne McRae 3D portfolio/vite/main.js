@@ -25,7 +25,7 @@ scene.add(box);
 
 // 4. Light
 const light = new THREE.SpotLight( { color: 0x006769, intensity: 100} );
-light.position.set(1, 1, 1);
+light.position.set( { x: 1, y: 1, z: 1 } );
 scene.add(light);
 
 // 5. Renderer
