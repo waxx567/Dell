@@ -10,6 +10,12 @@ scene.background = new THREE.Color('#F0F0F0');
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
 
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
 // 3. Object
 const geometry = new THREE.DodecahedronGeometry();
 const material = new THREE.MeshBasicMaterial( { color: '#468585' } );
@@ -33,4 +39,8 @@ const renderer = new THREE.WebGLRenderer( { canvas } );
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-renderer.render(scene, camera);
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+animate();  // Start the rendering loop
