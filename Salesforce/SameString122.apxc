@@ -36,7 +36,9 @@ public class SameString122 {
         for (Integer right = str2.length() - 1; right >= 0; right--) {
             
         }
-        if (condition) { // if the resultant strings are the same
+
+        // If the resultant strings are the same
+        if (condition) {
             return true;
         } else {
             return false;
