@@ -14,3 +14,4 @@ camera.position.z = 5;
 const geometry = new THREE.DodecahedronGeometry();
 const material = new THREE.MeshLambertMaterial({ color: '#468585', emissive: '#468585' });
 
+const mesh = new THREE.Mesh(geometry, material);
