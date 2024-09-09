@@ -1,10 +1,40 @@
 # Wayne McRae 3D Portfolio
 
-My portfolio website created using Three.js.
+🤖 Introduction
 
-**Folders:**
-basic - a simple application created using a CDN. A handy place for me to play with materials and textures.
-vite - application created using `npm create vite@latest`
+My portfolio website created was built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS.
+The primary goal is to demonstrate my skills in a unique manner and leave a lasting impact.
+
+⚙️ Tech Stack
+
+- Node.js
+- React.js
+- Three.js
+- React Three Fiber
+- React Three Drei
+- Email JS
+- Vite
+- Tailwind CSS
+
+🔋 Features
+
+👉 Immersive Hero: An eye-catching 3D hacker room that responds to mouse movements, surrounded by animated mini-models.
+
+👉 Interactive About Me: A sleek bento grid layout featuring personal info, a 3D globe pinpointing location, tech stack icons, and a one-click email copy option.
+
+👉 Dynamic Project Showcase: Browse through projects while watching live demos inside a 3D computer model, seamlessly switching between different projects.
+
+👉 Engaging Experience Timeline: Hover over career milestones to trigger interactive 3D animations that bring your professional journey to life.
+
+👉 Client Testimonials: A dedicated section highlighting satisfied clients and their feedback.
+
+👉 Easy Contact Form: A user-friendly email form for visitors to reach out directly from your portfolio.
+
+👉 Clean Footer: A minimalist design featuring social media links for easy networking.
+
+👉 Fully Responsive: Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
+
+and many more, including code architecture and reusability
 
 ## Three.js Overview
 
@@ -52,5 +82,7 @@ For a 3D portfolio, Three.js is an excellent choice because it provides:
 
 Three.js provides a user-friendly and versatile framework for developing interactive 3D content in the browser. Its wide range of built-in features, combined with the flexibility to customize and extend functionality, makes it a valuable tool for creating visually impressive and engaging websites like a 3D portfolio.
 
+Acknowledgement:
+Adrian Hajdin - JavaScript Mastery
 [Video](https://www.youtube.com/watch?v=kt0FrkQgw8w&list=PLs4GO2nEDaoc_OBIdmCcVJSV_rn0FiARD&index=1&t=2460s)
 `50:20` npm create vite@latest
