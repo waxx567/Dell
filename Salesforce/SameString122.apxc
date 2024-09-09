@@ -32,8 +32,9 @@ public class SameString122 {
             // Process backspaces in str1
             Integer skip1 = 0;
             while (p1 >= 0) {
-                if (condition) {
-                    
+                if (str1.substring(p1, p1) == '#') {
+                    skip1++;
+                    p1--;
                 }
             }
         }
