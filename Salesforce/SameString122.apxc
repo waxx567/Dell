@@ -28,7 +28,7 @@ public class SameString122 {
         Integer p1 = str1.length() - 1; // Pointer for str1
         Integer p2 = str2.length() - 1; // Poimter for str2
 
-        while (p1) {
+        while (p1 >= 0 || p2 >= 0) {
             
         }
     }
