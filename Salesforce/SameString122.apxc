@@ -26,13 +26,13 @@ public class SameString122 {
     */
     public static Boolean sameString(String str1, String str2){
         Integer p1 = str1.length() - 1; // Pointer for str1
-        Integer p2 = str2.length() - 1; // Poimter for str2
+        Integer p2 = str2.length() - 1; // Pointer for str2
     
         while (p1 >= 0 || p2 >= 0) {
             // Process backspaces in str1
             Integer skip1 = 0;
             while (p1 >= 0) {
-                if (str1.substring(p1, p1) == '#') {
+                if (str1.mid(p1, 1) == '#') {
                     skip1++;
                     p1--;
                 } else if (skip1 > 0) {
@@ -46,7 +46,7 @@ public class SameString122 {
             // Process backspaces in str2
             Integer skip2 = 0;
             while (p2 >= 0) {
-                if (str2.substring(p2, p2) == '#') {
+                if (str2.mid(p2, 1) == '#') {
                     skip2++;
                     p2--;
                 } else if (skip2 > 0) {
@@ -59,12 +59,12 @@ public class SameString122 {
     
             // Compare current characters
             if (p1 >= 0 && p2 >= 0) {
-                if (str1.substring(p1, p1) != str2.substring(p2, p2)) {
-                    return false;
-                } else if (p1 >= 0 || p2 >= 0) {
-                    // If one pointer is still valid but the other isn't, the strings are different
+                if (str1.mid(p1, 1) != str2.mid(p2, 1)) {
                     return false;
                 }
+            } else if (p1 >= 0 || p2 >= 0) {
+                // If one pointer is still valid but the other isn't, the strings are different
+                return false;
             }
     
             p1--;
