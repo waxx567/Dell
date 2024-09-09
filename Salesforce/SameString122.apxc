@@ -16,38 +16,12 @@ public class SameString122 {
     Hint: Think of using a two pointer solution
     Hint: What if there is more than one back space in a row?
     Hint: String algo tutorial https://www.youtube.com/watch?v=Qe5ZcxiRZts
+
+    Plan:
+    1. Start from the end of both strings.
+
     */
     public static Boolean sameString(String str1, String str2){
-        Integer left = 0;
-        // Remove all '#' from the start of the strings - # ASCII 35
-        // List<Integer> charArray1 = new List<Integer>();
-        // List<Integer> charArray2 = new List<Integer>();
-        while (str1.substring(left, left + 1) == '#') {
-            str1.remove(left);
-            left++; 
-        }
-        while (str2.substring(left, left + 1) == '#') {
-            str2.remove(left);
-            left++; 
-        }
 
-        // Loop through strings from right to left
-        for (Integer right = str1.length() - 1; right >= 0; right--) {
-            if (str1.substring(right, right - 1) == '#') {
-                str1.remove(right);
-            }
-        }
-        for (Integer right = str2.length() - 1; right >= 0; right--) {
-            if (str2.substring(right, right - 1) == '#') {
-                str2.remove(right);
-            }            
-        }
-
-        // If the resultant strings are the same
-        if (str1.equals(str2)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
