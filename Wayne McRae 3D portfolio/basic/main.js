@@ -17,6 +17,8 @@ scene.add(cube);
 
 // 4. Add lighting
 const light = new THREE.DirectionalLight(0x9CDBA6, 10);
+light.position.set(1, 1, 1);
+scene.add(light);
 
 // 5. Set up the renderer
 
