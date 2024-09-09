@@ -29,6 +29,7 @@ public class SameString122 {
         Integer p2 = str2.length() - 1; // Poimter for str2
 
         while (p1 >= 0 || p2 >= 0) {
+            // Process backspaces in str1
             
         }
     }
