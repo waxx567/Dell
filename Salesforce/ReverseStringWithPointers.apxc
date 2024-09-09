@@ -1,0 +1,10 @@
+public class ReverseStringWithPointers {
+    public static String reverseString(String forwardString) {
+        String test = 'hello world';
+        List<Integer> charArray = new List<Integer>();
+        for (Integer i = 0; i < test.length(); i++) {
+            String character = test.charAt(i);
+            charArray.add(character);
+        } 
+    }
+}
