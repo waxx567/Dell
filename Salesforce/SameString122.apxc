@@ -28,6 +28,8 @@ public class SameString122 {
             str2.remove(left);
             left++; 
         }
+
+        // Loop through strings from right to left
         for (Integer right = str1.length() - 1; right >= 0; right--) {
             
         }
