@@ -3,8 +3,19 @@ public class ReverseStringWithPointers {
         String test = 'hello world';
         List<Integer> charArray = new List<Integer>();
         for (Integer i = 0; i < test.length(); i++) {
-            String character = test.charAt(i);
+            Integer character = test.charAt(i);
             charArray.add(character);
         } 
+        System.debug(charArray);
+
+        Integer left = 0;
+        Integer right = charArray.size() - 1;
+
+        while (left < right) {
+            Integer temp = charArray[left];
+            charArray[left++] = charArray[right];
+            charArray[right--] = temp;
+        }
+        System.debug(String.fromCharArray(charArray));
     }
 }
