@@ -19,7 +19,9 @@ public class SameString122 {
     */
     public static Boolean sameString(String str1, String str2){
         Integer left = 0;
-        // Remove all '#' from beginning of strings
+        // Remove all '#' from the start of the strings - # ASCII 35
+        // List<Integer> charArray1 = new List<Integer>();
+        // List<Integer> charArray2 = new List<Integer>();
         while (str1.substring(left, left + 1) == '#') {
             str1.remove(left);
             left++; 
