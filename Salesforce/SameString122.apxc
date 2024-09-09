@@ -19,6 +19,15 @@ public class SameString122 {
     */
     public static Boolean sameString(String str1, String str2){
         Integer left = 0;
+        // Remove all '#' from beginning of strings
+        while (str1.substring(left, left + 1) == '#') {
+            str1.remove(left);
+            left++; 
+        }
+        while (str2.substring(left, left + 1) == '#') {
+            str2.remove(left);
+            left++; 
+        }
         for (Integer right = str1.length() - 1; right >= 0; right--) {
             
         }
