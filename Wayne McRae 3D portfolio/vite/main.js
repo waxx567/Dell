@@ -29,7 +29,7 @@ light.position.set( { x: 1, y: 1, z: 1 } );
 scene.add(light);
 
 // 5. Renderer
-const renderer = new THREE.WebGLRenderer( { canvas } );
+const renderer = new THREE.WebGLRenderer( { parameters: canvas } );
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
