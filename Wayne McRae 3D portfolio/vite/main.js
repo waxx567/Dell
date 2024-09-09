@@ -11,3 +11,6 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 camera.position.z = 5;
 
 // 3. Object
+const geometry = new THREE.DodecahedronGeometry();
+const material = new THREE.MeshLambertMaterial();
+
