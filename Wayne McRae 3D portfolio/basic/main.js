@@ -26,3 +26,4 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // 6. Animate the scene
+renderer.render(scene, camera);
