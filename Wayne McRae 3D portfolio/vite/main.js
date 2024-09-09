@@ -18,7 +18,7 @@ const dodecahedron = new THREE.Mesh(geometry, material);
 const boxGeometry = new THREE.BoxGeometry(2, 0.1, 2);
 const boxMaterial = new THREE.MeshBasicMaterial({ color: '#B4B4B3' });
 const box = new THREE.Mesh(boxGeometry, boxMaterial);
-box.position.y = 1.5;
+box.position.y = -1.5;
 
 scene.add(dodecahedron);
 scene.add(box);
