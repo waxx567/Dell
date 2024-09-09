@@ -27,3 +27,10 @@ scene.add(box);
 const light = new THREE.SpotLight( {color: 0x006769, intensity: 100} );
 light.position.set( {x: 1, y: 1, z: 1} );
 scene.add(light);
+
+// 5. Renderer
+const renderer = new THREE.WebGLRenderer( {parameters: canvas} );
+
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+renderer.render(scene, camera);
