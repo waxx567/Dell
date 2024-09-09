@@ -31,6 +31,9 @@ public class SameString122 {
         while (p1 >= 0 || p2 >= 0) {
             // Process backspaces in str1
             Integer skip1 = 0;
+            while (condition) {
+                
+            }
         }
     }
 }
