@@ -12,9 +12,9 @@ public class SameString122 {
     String str2 = 'ac';
     Boolean result = sameString(str1, str2);
     result == true because the strings evaluate to ac and ac after the backspaces are applied.
-    Hint: Trying working from the right of the string
+    Hint: Try working from the right of the string
     Hint: Think of using a two pointer solution
-    Hint: What if there is more than one back space in row?
+    Hint: What if there is more than one back space in a row?
     Hint: String algo tutorial https://www.youtube.com/watch?v=Qe5ZcxiRZts
     */
     public static Boolean sameString(String str1, String str2){
