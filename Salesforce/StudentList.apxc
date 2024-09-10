@@ -1,0 +1,25 @@
+public class StudentList {
+    /*
+    The method insertStudents takes as input two lists of strings studentNames and studentEmails. The two lists will always have the same size, with studentNames[i] and studentEmails[i] (for any in-range value of i) representing a student's name and email.
+    Write an implementation of the method that creates apxio__Student__c records for each entry in the lists with the Name and apxio__Email__c fields filled out.
+    You will be working with the following custom object and field names for this problem:
+    apxio__Student__c
+    apxio__Student__c.apxio__Email__c
+    Note: This problem requires installation of a packaged data model. Install package in your org and read up on the data model
+    */
+    public void insertStudents(List<String> studentNames, List<String> studentEmails) {
+        // Declare a list to hold all student records
+        List<apxio__Student__c> students =  new List<apxio__Student__c>(); 
+    
+        for (Integer i = 0; i < studentNames.size(); i++) {
+            // Create a new student record and add it to the list
+            apxio__Student__c student = new apxio__Student__c(
+                Name = studentNames[i],
+                apxio__Email__c = studentEmails[i]
+            );
+            students.add(student); // Add the record to the list
+        }
+        // Single DML insert operation to insert all records at once
+        insert students;
+    }
+}
