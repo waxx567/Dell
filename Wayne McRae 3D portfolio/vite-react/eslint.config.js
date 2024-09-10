@@ -33,6 +33,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'extends': ['eslint:all', 'plugin:react/all'],
     },
   },
 ]
