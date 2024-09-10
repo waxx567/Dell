@@ -2,6 +2,11 @@ import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sparkles } from "@react-three/drei";
 
+  /**
+   * A rotating cube mesh with a Lambert material and sparkles.
+   * @return {JSX.Element}
+   * @constructor
+   */
 const RotatingCube = () => {
   const meshRef = useRef();
 
@@ -22,6 +27,11 @@ const RotatingCube = () => {
   )
 }
 
+  /**
+   * The main app component, which renders a canvas that fills the available space, containing a rotating cube with a Lambert material and sparkles.
+   * @return {JSX.Element}
+   * @constructor
+   */
 const App = () => {
   return (
     <Canvas style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
