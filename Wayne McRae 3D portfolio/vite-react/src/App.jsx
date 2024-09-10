@@ -14,7 +14,7 @@ const RotatingCube = () => {
   return (
     <mesh ref={meshRef}>
       <cylinderGeometry args={[1, 1, 1]} />
-      <meshLambertMaterial color={0x468585} />
+      <meshLambertMaterial color="#468585" emissive="#468585" />
     </mesh>
   )
 }
