@@ -1,5 +1,5 @@
 public class CourseAndClass {
-public void createCourseAndClass(String name, String description) {
+    public void createCourseAndClass(String name, String description) {
         // Declare the course and class variables at the top
         apxio__Course__c createCourse;
         apxio__Class__c createClass;
