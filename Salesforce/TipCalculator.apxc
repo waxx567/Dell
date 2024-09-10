@@ -4,8 +4,8 @@ public class TipCalculator {
     For an example, computeTip(200.0, 50) evaluates to 100.0, because 50% of 200 is 100.
     Hint: A tip is just a percentage of the total value. To obtain the percentage, multiply the total by the percent, and divide by hundred.
     Hint: In case it becomes relevant, recall that integer division in Apex results in truncation. However, if one of the operands is a double, the other integer is promoted to a double as well. For example:
-    System.debug(5/2); // outputs 2 S
-    ystem.debug(5.0/2); // 2.5 
+    System.debug(5/2); // outputs 2 
+    System.debug(5.0/2); // 2.5 
     System.debug(5/2.0); // 2.5 
     System.debug(5.0/2.0); //2.5
     */
