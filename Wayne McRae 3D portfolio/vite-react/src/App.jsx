@@ -2,11 +2,11 @@ import {Canvas} from "@react-three/fiber";
 import {OrbitControls} from "@react-three/drei";
 
 const RotatingCube = () => {
-  const MeshRef = useRef()
+  const meshRef = useRef()
 
   return (
-    <mesh ref={MeshRef}>
-      
+    <mesh ref={meshRef}>
+
     </mesh>
   )
 }
