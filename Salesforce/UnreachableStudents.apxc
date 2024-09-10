@@ -10,7 +10,8 @@ public class UnreachableStudents {
                 WHERE apxio__Phone__c = NULL 
                 AND apxio__Email__c = NULL
                 AND apxio__Active__c = TRUE 
-                ORDER BY Name ASC];
+                ORDER BY Name ASC
+                ];
     
     }
 }
