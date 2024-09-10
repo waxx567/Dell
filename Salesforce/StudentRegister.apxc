@@ -9,7 +9,6 @@ public class StudentRegister {
     Note: This problem requires installation of a packaged data model. Install package in your org and read up on the data model
     */ 
     public String registerStudent(String name, String phone, String email) {
-    
         // Create a record registering the student
         apxio__Student__c register = new apxio__Student__c(
             Name = name, apxio__Phone__c = phone, apxio__Email__c = email
