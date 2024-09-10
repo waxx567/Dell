@@ -1,6 +1,5 @@
 public class CourseInsert {
     public Id insertCourse(String name, String details, Integer credits) {
-    
         // Valid inputs values for credits 
         String validCreds = '1234';
         // Convert integer input to a string
