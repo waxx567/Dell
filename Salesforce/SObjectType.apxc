@@ -1,0 +1,13 @@
+public class SObjectType {
+    public Boolean isTypeAccount(sObject record) 
+    {
+        // Boolean to validate record input
+        Boolean result = record instanceof Account;
+        // Check result and return as appropriate
+        if (result == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
