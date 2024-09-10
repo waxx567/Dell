@@ -1,0 +1,19 @@
+public class StudentsActive {
+    /*
+    Implement the method selectActiveStudents that returns a list of all apxio__Student__c records with apxio__Active__c field checked. 
+    Make sure the students have a value in the Id and Name fields.
+    You will be working with the following custom object and field names for this problem:
+    apxio__Student__c
+    apxio__Student__c.apxio__Active__c
+    Note: This problem requires installation of a packaged data model. Install package in your org and read up on the data model
+    */ 
+    public List<apxio__Student__c> selectActiveStudents() {
+        // Query database and return result
+        return [
+            SELECT Id, Name 
+            FROM apxio__Student__c 
+            WHERE apxio__Active__c = TRUE 
+            AND Name != NULL
+            ];
+    }
+}
