@@ -1,0 +1,11 @@
+public class NumDiff {
+    public Integer diff(Integer a, Integer b) {
+        if (a > b) {
+            return a - b;
+        } else if (b > a) {
+            return b - a;
+        } else {
+            return 0;
+        }
+    }
+}
