@@ -1,8 +1,15 @@
-import {Canvas} from "@react-three/fiber";
+import {Canvas, useFrame} from "@react-three/fiber";
 import {OrbitControls} from "@react-three/drei";
 
 const RotatingCube = () => {
   const meshRef = useRef()
+
+  useFrame(() => {
+    if(meshRef.current) {
+      meshRef.current.rotation.y += 0.01
+      meshRef.current.rotation.x += 0.01
+    }
+  })
 
   return (
     <mesh ref={meshRef}>
