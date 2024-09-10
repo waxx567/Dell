@@ -1,0 +1,26 @@
+public class CourseInsert {
+    public Id insertCourse(String name, String details, Integer credits) {
+    
+        // Valid inputs values for credits 
+        String validCreds = '1234';
+        // Convert integer input to a string
+        String creds = String.valueOf(credits.format());
+    
+        // Bool to check if credit input is a valid value
+        Boolean good = validCreds.contains(creds);
+        // If input is not valid, return null
+        if (good == false) {
+            return null;
+        }
+        
+        // Create new course
+        apxio__Course__c course = new apxio__Course__c(
+            Name = name, apxio__Course_Details__c = details, apxio__Credits__c = creds
+            );
+    
+        // Insert course into database
+        insert course;
+        // Return course ID
+        return course.Id;
+    }
+}
