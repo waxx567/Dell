@@ -1,0 +1,16 @@
+public class UnreachableStudents {
+    /*
+    Implement the method selectUnreachableStudents that queries for and returns a list of all active apxio__Student__c records that are unreachable because they are missing both an email and a phone number. Make sure to include the Id and Name fields in the result. The returned list should be sorted A-Z on Name.
+    Note: This problem requires installation of a packaged data model. Install package in your org and read up on the data model
+    */
+    public List<apxio__Student__c> selectUnreachableStudents() {
+    
+        // Query database and return result
+        return [SELECT Id, Name FROM apxio__Student__c 
+                WHERE apxio__Phone__c = NULL 
+                AND apxio__Email__c = NULL
+                AND apxio__Active__c = TRUE 
+                ORDER BY Name ASC];
+    
+    }
+}
