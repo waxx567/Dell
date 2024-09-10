@@ -13,7 +13,7 @@ const RotatingCube = () => {
 
   return (
     <mesh ref={meshRef}>
-      <cylinderGeometry args={[1, 1, 1, 32]} />
+      <cylinderGeometry args={[1, 1, 1]} />
     </mesh>
   )
 }
