@@ -1,0 +1,21 @@
+public class StudentRegister {
+    public String registerStudent(String name, String phone, String email) {
+    
+        // Create a record registering the student
+        apxio__Student__c register = new apxio__Student__c(
+            Name = name, apxio__Phone__c = phone, apxio__Email__c = email
+            );
+        // Insert the newly created record into the database
+        insert register;
+    
+        // Query the database by referring to the ID of the new record
+        apxio__Student__c result = [
+            SELECT apxio__Registration_Number__c 
+            FROM apxio__Student__c 
+            WHERE Id = :register.Id LIMIT 1
+            ];
+        
+        // Return the registration number
+        return result.apxio__Registration_Number__c;
+    }
+}
