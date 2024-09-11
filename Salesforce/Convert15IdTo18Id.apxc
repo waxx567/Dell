@@ -32,20 +32,28 @@ public class Convert15IdTo18Id {
         String[] firstChars = segments[0].split('');
         String[] middleChars = segments[1].split('');
         String[] lastChars = segments[2].split('');
-        // Variables to store allocations
-        String firstBinaryString = '';
-        String middleBinaryString = '';
-        String lastBinaryString = '';
     
         List<List<String>> charlist = new List<List<String>> {
             firstChars,
             middleChars,
             lastChars
         };
+        // Variables to store allocations
+        String firstBinaryString = '';
+        String middleBinaryString = '';
+        String lastBinaryString = '';
+        List<String> binaryList = new List<String> {
+            firstBinaryString,
+            middleBinaryString,
+            lastBinaryString
+        };
+
         Integer count = 0;
         while (count < charlist.size()) {
-            for (String variable : List_or_set) {
-                
+            for (String ch : charlist[count]) {
+                if (ch.isNumeric() || ch.isAllLowerCase()) {
+                    // handle binary strings
+                }
             }
         }
         // Handle first segment
