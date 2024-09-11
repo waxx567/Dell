@@ -1,4 +1,5 @@
 public class Convert15IdTo18Id {
+    // Nowhere near as efficient as `Convert15To18ID.apxc`
     public String convert15to18DigitId(String fifteenDigit) 
     {
         // Validate input
