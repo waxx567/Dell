@@ -1,0 +1,29 @@
+public class Convert15To18Id {
+    public String convert15to18DigitId(String fifteenDigit) 
+    {
+        // Validate input
+        if (fifteenDigit == null || fifteenDigit.length() != 15) {
+            return '-1';
+        }
+        // Character set and variable to handle new suffix
+        String charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
+        String suffix = '';
+
+        // Convert a segment to the corresponding character
+        for (Integer i = 0; i < 3; i++) {
+            String segment = fifteenDigit.substring(i * 5, (i + 1) * 5);
+            String binaryString = '';
+
+            for (Integer j = 0; j < segment.length(); j++) {
+                String c = segment.substring(j, j + 1);
+                binaryString += (c.toUpperCase() == c ? '1' : '0');
+            }
+
+            // Convert binary string to integer and add to suffix variable
+            Integer index = Integer.valueOf(binaryString, 2);
+            suffix += charSet.substring(index, index + 1);
+        }
+
+        return fifteenDigit + suffix;
+    }
+}
