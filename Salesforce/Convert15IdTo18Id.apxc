@@ -43,8 +43,10 @@ public class Convert15IdTo18Id {
             lastChars
         };
         Integer count = 0;
-        for (String variable : List_or_set) {
-            
+        while (count < charlist.size()) {
+            for (String variable : List_or_set) {
+                
+            }
         }
         // Handle first segment
         // Loop over segment character list and Allocate as directed
