@@ -6,7 +6,7 @@ public class Convert15IdTo18Id {
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
             return '-1';
         }
-        // Caracters and binaries
+        // Characters and binaries
         List<String> characters = new List<String>{
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
             'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 
@@ -20,21 +20,28 @@ public class Convert15IdTo18Id {
             '11000', '11001', '11010', '11011', '11100', '11101',
             '11110', '11111'
         };
-
+    
         String suffix = '';
-
+    
         List<String> segments = new List<String>();
         String firstSegment = fifteenDigit.substring(0, 5);
         String middleSegment = fifteenDigit.substring(5, 10);
         String lastSegment = fifteenDigit.substring(10, 15);
+        // Add the segments to the segments list
         segments.add(firstSegment);
         segments.add(middleSegment);
         segments.add(lastSegment);
-
-        // Handle firstSegment
+        // Split segments into lists of characters
         String[] firstChars = firstSegment.split('');
+        String[] middleChars = middleSegment.split('');
+        String[] lastChars = lastSegment.split('');
+        // Variables to store allocations
         String firstBinaryString = '';
-        // Loop over first segment character list
+        String middleBinaryString = '';
+        String lastBinaryString = '';
+    
+        // Handle first segment
+        // Loop over segment character list and Allocate as directed
         for (String f : firstChars) {
             if (f.isNumeric() || f.isAllLowerCase()) {
                 firstBinaryString += '0';
@@ -43,20 +50,19 @@ public class Convert15IdTo18Id {
                 firstBinaryString += '1';
             }
         }
-
+        // Loop over binaries list and check against binary string
         for (String s : binaries) {
             Integer firstIndex = binaries.indexOf(s);
             Boolean sMatch = s.equals(firstBinaryString);
+            // Add to suffix if a match is found
             if (sMatch) {
                 suffix += characters[firstIndex];
             }
         }
-        System.debug('suffix: ' + suffix);
-
-        // Handle middleSegment
-        String[] middleChars = middleSegment.split('');
-        String middleBinaryString = '';
-        // Loop over middle segment character list
+        // System.debug('suffix: ' + suffix);
+    
+        // Handle middle segment
+        // Loop over segment character list and Allocate as directed
         for (String m : middleChars) {
             if (m.isNumeric() || m.isAllLowerCase()) {
                 middleBinaryString += '0';
@@ -65,19 +71,18 @@ public class Convert15IdTo18Id {
                 middleBinaryString += '1';
             }
         }
-
+        // Loop over binaries list and check against binary string
         for (String t : binaries) {
             Integer middleIndex = binaries.indexOf(t);
             Boolean tMatch = t.equals(middleBinaryString);
+            // Add to suffix if a match is found
             if (tMatch) {
                 suffix += characters[middleIndex];
             }
         }
-
-        // Handle lastSegment
-        String[] lastChars = lastSegment.split('');
-        String lastBinaryString = '';
-        // Loop over last segment character list
+    
+        // Handle last segment
+        // Loop over segment character list and Allocate as directed
         for (String l : lastChars) {
             if (l.isNumeric() || l.isAllLowerCase()) {
                 lastBinaryString += '0';
@@ -86,10 +91,11 @@ public class Convert15IdTo18Id {
                 lastBinaryString += '1';
             }
         }
-
+        // Loop over binaries list and check against binary string
         for (String u : binaries) {
             Integer lastIndex = binaries.indexOf(u);
             Boolean uMatch = u.equals(lastBinaryString);
+            // Add to suffix if a match is found
             if (uMatch) {
                 suffix += characters[lastIndex];
             }
