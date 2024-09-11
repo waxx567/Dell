@@ -8,7 +8,7 @@ public class Convert15To18Id {
         // Character set and variable to store new suffix
         String charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
         String suffix = '';
-
+        
         // Convert a segment to the corresponding character
         for (Integer i = 0; i < 3; i++) {
             String segment = fifteenDigit.substring(i * 5, (i + 1) * 5);
