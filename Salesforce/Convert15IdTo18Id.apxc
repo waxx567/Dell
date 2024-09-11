@@ -1,18 +1,17 @@
 public class Convert15IdTo18Id {
-    // Nowhere near as efficient as `Convert15To18ID.apxc`
+    // Nowhere near as efficient as `Convert15To18ID.apxc` but this one works
     public String convert15to18DigitId(String fifteenDigit) 
     {
         // Validate input
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
             return '-1';
         }
-
+        // Caracters and binaries
         List<String> characters = new List<String>{
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
             'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 
             'Y', 'Z', '0', '1', '2', '3', '4', '5'
         };
-        
         List<String> binaries = new List<String>{
             '00000', '00001', '00010', '00011', '00100', '00101',
             '01100', '00111', '01000', '01001', '01010', '01011',
