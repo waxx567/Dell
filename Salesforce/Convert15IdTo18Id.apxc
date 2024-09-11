@@ -37,6 +37,15 @@ public class Convert15IdTo18Id {
         String middleBinaryString = '';
         String lastBinaryString = '';
     
+        List<List<String>> charlist = new List<List<String>> {
+            firstChars,
+            middleChars,
+            lastChars
+        };
+        Integer count = 0;
+        for (String variable : List_or_set) {
+            
+        }
         // Handle first segment
         // Loop over segment character list and Allocate as directed
         for (String f : firstChars) {
