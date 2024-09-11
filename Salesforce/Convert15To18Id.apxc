@@ -5,7 +5,7 @@ public class Convert15To18Id {
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
             return '-1';
         }
-        // Character set and variable to handle new suffix
+        // Character set and variable to store new suffix
         String charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345';
         String suffix = '';
 
@@ -23,7 +23,7 @@ public class Convert15To18Id {
             Integer index = Integer.valueOf(binaryString, 2);
             suffix += charSet.substring(index, index + 1);
         }
-
+        // Concatenate input and suffix strings
         return fifteenDigit + suffix;
     }
 }
