@@ -6,7 +6,7 @@ public class Convert15IdTo18Id {
         if (fifteenDigit == null || fifteenDigit.length() != 15) {
             return '-1';
         }
-        // Characters and binaries
+        // Caracters and binaries
         List<String> characters = new List<String>{
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
             'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 
@@ -20,26 +20,23 @@ public class Convert15IdTo18Id {
             '11000', '11001', '11010', '11011', '11100', '11101',
             '11110', '11111'
         };
-    
+
         String suffix = '';
-    
-        List<String> segments = new List<String>();
-        String firstSegment = fifteenDigit.substring(0, 5);
-        String middleSegment = fifteenDigit.substring(5, 10);
-        String lastSegment = fifteenDigit.substring(10, 15);
-        // Add the segments to the segments list
-        segments.add(firstSegment);
-        segments.add(middleSegment);
-        segments.add(lastSegment);
+
+        List<String> segments = new List<String> {
+            fifteenDigit.substring(0, 5),
+            fifteenDigit.substring(5, 10),
+            fifteenDigit.substring(10, 15)
+        };
         // Split segments into lists of characters
-        String[] firstChars = firstSegment.split('');
-        String[] middleChars = middleSegment.split('');
-        String[] lastChars = lastSegment.split('');
+        String[] firstChars = segments[0].split('');
+        String[] middleChars = segments[1].split('');
+        String[] lastChars = segments[2].split('');
         // Variables to store allocations
         String firstBinaryString = '';
         String middleBinaryString = '';
         String lastBinaryString = '';
-    
+
         // Handle first segment
         // Loop over segment character list and Allocate as directed
         for (String f : firstChars) {
@@ -60,7 +57,7 @@ public class Convert15IdTo18Id {
             }
         }
         // System.debug('suffix: ' + suffix);
-    
+
         // Handle middle segment
         // Loop over segment character list and Allocate as directed
         for (String m : middleChars) {
@@ -80,7 +77,7 @@ public class Convert15IdTo18Id {
                 suffix += characters[middleIndex];
             }
         }
-    
+
         // Handle last segment
         // Loop over segment character list and Allocate as directed
         for (String l : lastChars) {
