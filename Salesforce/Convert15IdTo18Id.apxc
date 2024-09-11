@@ -20,9 +20,9 @@ public class Convert15IdTo18Id {
             '11000', '11001', '11010', '11011', '11100', '11101',
             '11110', '11111'
         };
-    
+
         String suffix = '';
-    
+
         List<String> segments = new List<String> {
             fifteenDigit.substring(0, 5),
             fifteenDigit.substring(5, 10),
@@ -32,30 +32,11 @@ public class Convert15IdTo18Id {
         String[] firstChars = segments[0].split('');
         String[] middleChars = segments[1].split('');
         String[] lastChars = segments[2].split('');
-    
-        List<List<String>> charlist = new List<List<String>> {
-            firstChars,
-            middleChars,
-            lastChars
-        };
         // Variables to store allocations
         String firstBinaryString = '';
         String middleBinaryString = '';
         String lastBinaryString = '';
-        List<String> binaryList = new List<String> {
-            firstBinaryString,
-            middleBinaryString,
-            lastBinaryString
-        };
 
-        Integer count = 0;
-        while (count < charlist.size()) {
-            for (String ch : charlist[count]) {
-                if (ch.isNumeric() || ch.isAllLowerCase()) {
-                    // handle binary strings
-                }
-            }
-        }
         // Handle first segment
         // Loop over segment character list and Allocate as directed
         for (String f : firstChars) {
@@ -76,7 +57,7 @@ public class Convert15IdTo18Id {
             }
         }
         // System.debug('suffix: ' + suffix);
-    
+
         // Handle middle segment
         // Loop over segment character list and Allocate as directed
         for (String m : middleChars) {
@@ -96,7 +77,7 @@ public class Convert15IdTo18Id {
                 suffix += characters[middleIndex];
             }
         }
-    
+
         // Handle last segment
         // Loop over segment character list and Allocate as directed
         for (String l : lastChars) {
