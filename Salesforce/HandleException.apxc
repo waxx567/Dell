@@ -1,0 +1,19 @@
+public class HandleException {
+    public String divide(Integer a, Integer b){
+    
+        String exceptionMessage = '';
+        try {
+            Integer c = a / b;
+            String answer = String.valueOf(c);
+            return answer;
+        }
+        catch (NullPointerException npe) {
+            exceptionMessage = npe.getMessage();
+            return exceptionMessage;
+        }
+        catch (Exception e) {
+            exceptionMessage = e.getMessage();
+            return exceptionMessage;
+        }
+    }
+}
