@@ -1,4 +1,9 @@
 public class ConsecutiveOnes {
+    /*
+    Given a List of Integers containing only binary numbers (0 and 1), return the maximum number of consecutive 1s appearing in the List.
+    Example : Input: [1,1,0,1,1,1,1] Output: 4. The array has 2 consecutive 1s starting index 0, and 4 consecutive 1s starting index 3.
+    Hint: Count the 1's until a 0 or the end of the array shows up, saving the result in a variable if it is larger than the current value.
+    */
     public Integer maxConsecutiveOnes(Integer[] numbers) {
         Integer consecutiveOnesCount = 0;
         if (numbers.isEmpty()) {
