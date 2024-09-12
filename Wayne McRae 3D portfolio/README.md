@@ -98,7 +98,7 @@ For a 3D portfolio, Three.js is an excellent choice because it provides:
 
 Three.js provides a user-friendly and versatile framework for developing interactive 3D content in the browser. Its wide range of built-in features, combined with the flexibility to customize and extend functionality, makes it a valuable tool for creating visually impressive and engaging websites like a 3D portfolio.
 
-### Acknowledgement
+## Acknowledgement
 
 Adrian Hajdin - JavaScript Mastery
 [Video](https://www.youtube.com/watch?v=kt0FrkQgw8w&list=PLs4GO2nEDaoc_OBIdmCcVJSV_rn0FiARD&index=1&t=2460s)
