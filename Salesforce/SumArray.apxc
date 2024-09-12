@@ -1,0 +1,15 @@
+public class ArraySum {
+    public static Integer arraySum(List<Integer> numbers) {
+        // Null check
+        if (numbers == null) {
+            return null;
+        } else {
+            // Loop over the numbers input and return the sum total
+            Integer arrayTotal = 0;
+            for (Integer i = 0; i < numbers.size(); i++) {
+                arrayTotal += numbers[i];
+            }
+            return arrayTotal;
+        }
+    }
+}
