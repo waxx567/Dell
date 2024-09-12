@@ -1,0 +1,28 @@
+public class CompanionPlants55 {
+    public Boolean companionPlants(List<String> plants) {
+        if (plants.isEmpty()) {
+            return true;
+        }
+        if (plants.size() == 1) {
+            return false;
+        }
+    
+        Map<String, Set<String>> companionMap = new Map<String, Set<String>>{
+            'onions' => new Set<String>{'lettuce', 'carrots', 'tomatoes'},
+            'lettuce' => new Set<String>{'cucumbers', 'onions'},
+            'cucumbers' => new Set<String>{'lettuce'},
+            'carrots' => new Set<String>{'onions'},
+            'tomatoes' => new Set<String>{'onions'}
+        };
+        
+        for (Integer i = 0; i < plants.size() - 1; i++) {
+            String currentPlant = plants[i];
+            String nextPlant = plants[i+1];
+            
+            if (!companionMap.containsKey(currentPlant) || !companionMap.get(currentPlant).contains(nextPlant)) {
+                return false;
+            }
+        }   
+        return true;
+    }    
+}
