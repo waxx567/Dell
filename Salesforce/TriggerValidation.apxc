@@ -1,0 +1,11 @@
+public class TriggerValidation {
+    public void validateInsert(List<Opportunity> opportunities){
+    
+        for (Opportunity opportunity : opportunities) {
+            if (opportunity.StageName == 'Closed Won' && (opportunity.Description == null || opportunity.Description == '')) {
+                opportunity.addError('Description should not be empty for Closed Won opportunity.');
+            }
+        }
+    
+    }
+}
