@@ -1,4 +1,8 @@
 public class LastOccur {
+    /*
+    Find the last occurrence of Integer target in a list of integers nums and return its index. If the target is not found, return -1
+    For instance, in the list of integers {4, 6, 1, 9, 7, 9, 2}, the function would return index 0 for the target 4, index 5 for target 9 (occurs twice), and -1 for target 3 (not found).
+    */
     public static Integer findLast(List<Integer> nums, Integer target) {
         Integer lastOccurence = -1;
         for (Integer i = 0; i < nums.size(); i++) {
