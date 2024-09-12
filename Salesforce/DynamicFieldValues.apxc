@@ -5,14 +5,14 @@ public class DynamicFieldValues {
     public List<String> getFieldsValue(Account acc, List<String> fields)
     {
         // 
-        List<String>  returnList = new List<String>(); 
+        List<String>  result = new List<String>(); 
 
         for (String field : fields) {
             // Adds the field value to the list or null if null
             String fieldValue = String.valueOf(acc?.get(field));
-            returnList.add(fieldValue);
+            result.add(fieldValue);
         }
         
-        return returnList;
+        return result;
     }
 }
