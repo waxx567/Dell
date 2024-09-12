@@ -26,7 +26,6 @@ public class DynamicFieldValues {
             // or the above two lines expressed in one line:
             // result.add(String.valueOf(acc?.get(field)));
         }
-        
         return result;
     }
 }
