@@ -1,0 +1,21 @@
+public class ConsecutiveOnes {
+    public Integer maxConsecutiveOnes(Integer[] numbers) {
+        Integer consecutiveOnesCount = 0;
+        if (numbers.isEmpty()) {
+            return 0;
+        } else {
+            Integer count = 0;
+            for (Integer i = 0; i < numbers.size(); i++) {
+                if (numbers[i] == 0) {
+                    count = 0;
+                } else if (numbers[i] == 1) {
+                    count += 1;
+                    if (count >= consecutiveOnesCount) {
+                        consecutiveOnesCount = count;
+                    }
+                }
+            }
+        }
+        return consecutiveOnesCount;
+    }
+}
