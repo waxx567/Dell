@@ -1,0 +1,22 @@
+public class ListOfSObjects {
+    public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
+{
+        List<sObject> sObjectList = new List<sObject>();
+        // Null checks
+        if (accounts == null) {
+            accounts = new List<Account>();
+        }
+        if (contacts == null) {
+            contacts = new List<Contact>();
+        }
+        // Add 
+        for (Account account : accounts) {
+            sObjectList.add(account);
+        }
+        for (Contact contact : contacts) {
+            sObjectList.add(contact);
+        }
+
+        return sObjectList;                          
+    }
+}
