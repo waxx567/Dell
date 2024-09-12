@@ -1,0 +1,15 @@
+public class PosInts {
+    public List<Integer> positiveIntegers(List<Integer> numbers) {
+        List<Integer> positives = new List<Integer>();
+        if (numbers == null) {
+            return null;
+        } else {
+            for (Integer i = 0; i < numbers.size(); i++) {
+                if (numbers[i] > 0) {
+                    positives.add(numbers[i]);
+                }
+            }
+        }
+        return positives;
+    }
+}
