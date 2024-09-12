@@ -26,6 +26,7 @@ public class ThrowAnException {
                 throw new AccountException('Invalid BillingCity');
             }
         }    
+        // Return the original list if no exceptions were found
         return accounts;
     }
     //do not remove the following custom-defined exception
