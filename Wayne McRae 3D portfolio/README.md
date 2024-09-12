@@ -44,7 +44,13 @@ React is a free and open-source front-end JavaScript library for building user i
 
 React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements.
 
-[Wikipedia Link](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+[WikiLink](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+
+## TailwindCSS Overview
+
+Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.
+
+[WikiLink](https://en.wikipedia.org/wiki/Tailwind_CSS)
 
 ## Three.js Overview
 
