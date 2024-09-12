@@ -7,6 +7,7 @@ public class DuplicateContacts {
     Contact c1 = new Contact(LastName = 'Doe', Email = 'robert@example.com');
     Contact c2 = new Contact(LastName = 'Doe', Email = 'robert.doe@example.com');
     duplicateContacts(c1, c2) == false because the two contacts do not have a phone number at all, and do not have a matching email address.
+    Hint: Use an if statement to check if c1.Email is equal to c2.Email, or if c1.Phone is equal to c2.Phone. Make sure you only do the comparisons if the values are not null.
     */
     public Boolean duplicateContacts(Contact c1, Contact c2) {
         // Phone check
