@@ -1,4 +1,11 @@
 public class SumArray {
+    /*
+    Implement the method arraySum that takes as input a non-empty list of Integers numbers, and returns the sum of all numbers in the list.
+    Example: arraySum(new List {5, 2, 3}) evaluates to 10.
+    Hint: Use the .size() function to obtain the size of the input list
+    Hint: Use the [] notation or the .get(index) method to obtain the element at index. 
+    Hint: Declare an Integer to hold the sum and initialize it with 0. Use a for loop to add each elemenent in the list to the variable. Finally, return the calculated sum stored in the variable you declared.
+    */
     public static Integer arraySum(List<Integer> numbers) {
         // Null check
         if (numbers == null) {
