@@ -15,28 +15,7 @@ public class ThrowAnException {
     */
     public List<Account> checkAccounts(List<Account> accounts)
     {
-        String exceptionMessage = '';
-        for (Account acc : accounts) {
-            try {
-                if (acc.Name == null) {
-                    throw new IllegalArgumentException('accounts should not be null');
-                }
-                else if (acc.BillingCity == null) {
-                    throw new AccountException('Invalid BillingCity');
-                }
-                else {
-                    return accounts;
-                }
-
-            }
-            catch (IllegalArgumentException iae) {
-                exceptionMessage = iae.getMessage();
-            }
-            catch (AccountException ae) {
-                exceptionMessage = ae.getMessage();
-            }
-        }
-        return new List<Account>(); 
+        
     }
 
     //do not remove the following custom-defined exception
