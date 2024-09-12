@@ -1,4 +1,15 @@
 public class NumberAverage {
+    /*
+    Apex practice problem #136
+    Given a list of decimals, return the average rounded to two decimal places.
+    Example:
+    List numbers = new List{10.5, 20, 45, 89}
+    average(numbers) = 41.12
+    The average computes to 41.125, which is rounded to 41.12 using the default "half even" rounding method.
+    Hint: Declare an Integer and use the .size() function to obtain the size of the list
+    Hint: Declare a Decimal to hold the sum and initialize it with 0. Use a for loop to add each element in the list to the variable
+    Hint: Calculate the average and use the setScale method from the Decimal class to round numbers. Finally, return the calculated average.
+    */
     public Decimal average(List<Decimal> numbers){
         Decimal sumTotal = 0.0;
         if (numbers.isEmpty()) {
