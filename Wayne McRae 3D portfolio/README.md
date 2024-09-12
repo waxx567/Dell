@@ -46,12 +46,6 @@ React can be used to develop single-page, mobile, or server-rendered application
 
 [WikiLink](https://en.wikipedia.org/wiki/React_(JavaScript_library))
 
-## TailwindCSS Overview
-
-Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.
-
-[WikiLink](https://en.wikipedia.org/wiki/Tailwind_CSS)
-
 ## Three.js Overview
 
 Three.js is a lightweight and flexible JavaScript library designed to enable the creation of complex 3D visualizations, animations, and interactive graphics within a web browser. It abstracts many of the complexities associated with WebGL, making it easier for developers to render 3D objects, apply materials, and create immersive experiences with relatively minimal code.
@@ -97,6 +91,12 @@ For a 3D portfolio, Three.js is an excellent choice because it provides:
 **Optimized Performance:** Despite its powerful features, Three.js is optimized for performance, ensuring that your website remains responsive and efficient, even with complex 3D scenes.
 
 Three.js provides a user-friendly and versatile framework for developing interactive 3D content in the browser. Its wide range of built-in features, combined with the flexibility to customize and extend functionality, makes it a valuable tool for creating visually impressive and engaging websites like a 3D portfolio.
+
+## TailwindCSS Overview
+
+Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.
+
+[WikiLink](https://en.wikipedia.org/wiki/Tailwind_CSS)
 
 ## Acknowledgement
 
