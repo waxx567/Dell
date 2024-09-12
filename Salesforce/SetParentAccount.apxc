@@ -7,6 +7,7 @@ public class SetParentAccount {
     Opportunity opp = new Opportunity(Name = 'Coding Bootcamp');
     setParent(acc, con, opp);
     The expression opp.AccountId == '0018c00002CQU9EAAX' && con.AccountId == '0018c00002CQU9EAAX' returns true because both the contact and the opportunity now have acc as the parent account.
+    Hint: Set the parent by assigning the account's Id (if present) to the contact and opportunity's AccountId field
     */
     public void setParent(Account acc, Contact con, Opportunity opp) {
         if (acc != null && acc.Id != null) {
