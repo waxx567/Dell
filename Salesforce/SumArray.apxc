@@ -11,9 +11,10 @@ public class SumArray {
         if (numbers == null) {
             return null;
         } else {
-            // Loop over the numbers input and return the sum total
             Integer arrayTotal = 0;
+            // Loop over the numbers input
             for (Integer i = 0; i < numbers.size(); i++) {
+                // Add each number to the total
                 arrayTotal += numbers[i];
             }
             return arrayTotal;
