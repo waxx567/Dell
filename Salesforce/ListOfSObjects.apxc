@@ -9,14 +9,13 @@ public class ListOfSObjects {
         if (contacts == null) {
             contacts = new List<Contact>();
         }
-        // Add 
+        // Add list items to new list and return new list
         for (Account account : accounts) {
             AccountsAndContacts.add(account);
         }
         for (Contact contact : contacts) {
             AccountsAndContacts.add(contact);
         }
-
         return AccountsAndContacts;                          
     }
 }
