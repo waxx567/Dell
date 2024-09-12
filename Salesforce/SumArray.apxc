@@ -1,4 +1,4 @@
-public class ArraySum {
+public class SumArray {
     public static Integer arraySum(List<Integer> numbers) {
         // Null check
         if (numbers == null) {
