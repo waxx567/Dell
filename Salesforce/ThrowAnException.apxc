@@ -19,8 +19,12 @@ public class ThrowAnException {
         if (accounts == null) {
             throw new IllegalArgumentException('accounts should not be null');
         }
+        // Iterate through each account in the list
+        for (Account acc : accounts) {
+            
+        }    
+        return accounts;
     }
-
     //do not remove the following custom-defined exception
     public class AccountException extends Exception {}
 }
