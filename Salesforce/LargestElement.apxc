@@ -4,17 +4,17 @@ public class LargestElement {
     Example: findLargest(new List {5, 2, 8, 4, 2, 1}) evaluates to 8 because 8 is the largest Integer in the list.
     */
     public static Integer findLargest(List<Integer> nums) {
-        Integer largest = 0;
+        Integer largestNum = 0;
         if (nums == null) {
             return null;
         } else {
-            largest = nums[0];
+            largestNum = nums[0];
             for (Integer i = 1; i < nums.size(); i++) {
-                if (nums[i] > largest) {
-                    largest = nums[i];
+                if (nums[i] > largestNum) {
+                    largestNum = nums[i];
                 }
             }
         }
-        return largest;
+        return largestNum;
     }
 }
