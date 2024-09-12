@@ -1,8 +1,10 @@
 # Wayne McRae 3D Portfolio
 
+## Project overview
+
 🤖 Introduction
 
-My portfolio website created was built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS.
+This portfolio website was built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS.
 The primary goal is to demonstrate my skills in a unique manner and leave a lasting impact.
 
 ⚙️ Tech Stack
@@ -35,6 +37,12 @@ The primary goal is to demonstrate my skills in a unique manner and leave a last
 👉 Fully Responsive: Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
 
 and many more, including code architecture and reusability
+
+## React.js Overview
+
+React is a free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+
+React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements.
 
 ## Three.js Overview
 
