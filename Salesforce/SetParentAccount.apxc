@@ -1,0 +1,12 @@
+public class SetParentAccount {
+    public void setParent(Account acc, Contact con, Opportunity opp) {
+        if (acc != null && acc.Id != null) {
+            con.AccountId = acc.Id;
+            opp.AccountId = acc.Id;
+        } else if (acc == null) {
+            System.debug('No account');
+        } else {
+            System.debug('No account Id');
+        }
+    }
+}
