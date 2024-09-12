@@ -1,0 +1,11 @@
+public class LastOccur {
+    public static Integer findLast(List<Integer> nums, Integer target) {
+        Integer lastOccurence = -1;
+        for (Integer i = 0; i < nums.size(); i++) {
+            if (nums[i] == target) {
+                lastOccurence = i;
+             }
+         }
+         return lastOccurence;
+     }
+}
