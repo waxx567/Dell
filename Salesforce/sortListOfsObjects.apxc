@@ -16,9 +16,8 @@ public class sortListOfsObjects {
         if (accounts == null) {
             return null;
         } 
-        // Create a list of AccountWrapper objects
+        // Create a list of AccountWrapper objects and wrap each account in the AccountWrapper
         List<AccountWrapper> wrappedAccounts = new List<AccountWrapper>();
-        // Wrap each account in the AccountWrapper
         for (Account acc : accounts) {
             wrappedAccounts.add(new AccountWrapper(acc));
         }
@@ -26,8 +25,8 @@ public class sortListOfsObjects {
         wrappedAccounts.sort();
         // Extract the sorted accounts back into a list
         List<Account> sortedAccounts = new List<Account>();
-        for (AccountWrapper wrappedAcc : wrappedAccounts) {
-            sortedAccounts.add(wrappedAcc.account);
+        for (AccountWrapper w : wrappedAccounts) {
+            sortedAccounts.add(w.account);
         }
         // Reverse the list
         List<Account> reversedSortedAccounts = new List<Account>();
