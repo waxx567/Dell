@@ -1,0 +1,11 @@
+public class CountTargetInList {
+    public Integer findTargetCount(List<Integer> nums, Integer target) {
+        Integer count = 0;
+        for (Integer i = 0; i < nums.size(); i++) {
+            if (nums[i] == target) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+}
