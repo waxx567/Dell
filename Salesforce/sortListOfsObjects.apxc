@@ -1,5 +1,16 @@
 public class sortListOfsObjects {
-    // Implement the method getAccounts(), function, which accepts a list of accounts as input and returns a new list of accounts sorted in descending order based on the Annual Revenue field.
+    /*
+    Implement the method getAccounts(), function, which accepts a list of accounts as input and returns a new list of accounts sorted in descending order based on the Annual Revenue field.
+    Given the following test code:
+    List<Account> accounts = new List<Account>();
+    accounts.add(new Account(Name='Accenture', AnnualRevenue = 30));
+    accounts.add(new Account(Name='TCS',AnnualRevenue = 10));
+    accounts.add( new Account( Name='Apple', AnnualRevenue = 100) );
+    List<Account> result = getAccounts(accounts);
+    result = (Account:{Name=Apple, AnnualRevenue=100}, Account:{Name=Accenture, AnnualRevenue=30}, Account:{Name=TCS, AnnualRevenue=10})
+    Hint: To implement a custom sort order for sObjects in lists, create a wrapper class for the sObject and implement the Comparable interface. The wrapper class contains the sObject in question and implements the compareTo method, in which you specify the sort logic.
+    Hint: If facing the error Enclosing type for global methods in apex classes must be declared as global. Use public instead of global while declaring wrapper class and overriding compareTo method. The global keyword does not work Apex code is executed in an anonymous call.
+    */
     public List<Account> getAccounts(List<Account> accounts) {
         // Handle null check
         if (accounts == null) {
