@@ -1,0 +1,18 @@
+public class SetParentCase {
+    public void linkParent(Case c1, Case c2) {
+        // Null check
+        if (c1.ContactId == null || c2.ContactId == null) {
+            System.debug('The cases do not have any related contacts.');
+        // Check contact IDs match
+        } else if (c1.ContactId == c2.ContactId) {
+            // Check which case was created first
+            if ((c1.CreatedDate < c2.CreatedDate) == true) {
+                c2.ParentId = c1.Id;
+            } else if ((c1.CreatedDate > c2.CreatedDate) == true) {
+                c1.ParentId = c2.Id;
+            } else {
+                System.debug('The cases were created on the same date');
+            }
+        }
+    }
+}
