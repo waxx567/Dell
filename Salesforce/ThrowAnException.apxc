@@ -15,7 +15,10 @@ public class ThrowAnException {
     */
     public List<Account> checkAccounts(List<Account> accounts)
     {
-        
+        // If the passed list is null, throw an IllegalArgumentException
+        if (accounts == null) {
+            throw new IllegalArgumentException('accounts should not be null');
+        }
     }
 
     //do not remove the following custom-defined exception
