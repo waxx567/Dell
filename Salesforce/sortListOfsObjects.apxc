@@ -29,11 +29,11 @@ public class sortListOfsObjects {
             sortedAccounts.add(w.account);
         }
         // Reverse the list and return the sorted list
-        List<Account> sortedAccountsList = new List<Account>();
+        List<Account> sortedAccountsRevenueDesc = new List<Account>();
         for (Integer i = sortedAccounts.size() - 1; i >= 0; i--) {
-            sortedAccountsList.add(sortedAccounts[i]);
+            sortedAccountsRevenueDesc.add(sortedAccounts[i]);
         }
-        return sortedAccountsList;    
+        return sortedAccountsRevenueDesc;    
     }
     // Wrapper class 
     public class AccountWrapper implements Comparable {
