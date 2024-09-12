@@ -1,6 +1,9 @@
 public class TriggerValidation {
-    public void validateInsert(List<Opportunity> opportunities){
-    
+    /*
+    Implement the method validateInsert, which accepts a newly inserted list of opportunities as an input and adds errors to the opportunity fields as follows: if the opportunity record's StageName is 'Closed Won' and the Description is null or empty, add an error on the Description field of that record with the error message set to 'Description should not be empty for Closed Won opportunity.'.
+    Hint: Use addError method to add error on any field.
+    */
+    public void validateInsert(List<Opportunity> opportunities){   
         for (Opportunity opportunity : opportunities) {
             if (opportunity.StageName == 'Closed Won' && (opportunity.Description == null || opportunity.Description == '')) {
                 opportunity.addError('Description should not be empty for Closed Won opportunity.');
