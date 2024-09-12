@@ -44,6 +44,8 @@ React is a free and open-source front-end JavaScript library for building user i
 
 React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary rerendering of unchanged DOM elements.
 
+[Link](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+
 ## Three.js Overview
 
 Three.js is a lightweight and flexible JavaScript library designed to enable the creation of complex 3D visualizations, animations, and interactive graphics within a web browser. It abstracts many of the complexities associated with WebGL, making it easier for developers to render 3D objects, apply materials, and create immersive experiences with relatively minimal code.
