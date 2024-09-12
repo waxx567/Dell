@@ -11,10 +11,10 @@ public class Fibonacci {
         if (n > 2) {
             nFibonacci.add(1);
             nFibonacci.add(1);
-            Integer insertInt = 0;
+            Integer NumberToAdd = 0;
             for (Integer i = 2; i < n; i++) {
-                insertInt = nFibonacci[i-1] + nFibonacci[i-2];
-                nFibonacci.add(insertInt);
+                NumberToAdd = nFibonacci[i-1] + nFibonacci[i-2];
+                nFibonacci.add(NumberToAdd);
             }
         }
         return nFibonacci;
