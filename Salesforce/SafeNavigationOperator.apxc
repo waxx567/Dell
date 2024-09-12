@@ -15,3 +15,11 @@ public class SafeNavigationOperator {
         return accounts[0].BillingCity?.toUpperCase();
      }     
 }
+
+/*
+Method or variable or parameter chains:
+                    aObject?.aMethod();
+Using parentheses(for example in a cast)	                    ((T)a1?.b1)?.c1()
+SObject chaining:           String s = contact.Account?.BillingCity;
+SOQL Queries:               String s = [SELECT LastName FROM Contact]?.LastName;
+*/
