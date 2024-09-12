@@ -15,7 +15,6 @@ public class SerializeObjects {
         if (accounts == null) {
             return 'null';
         }
-
         // Convert the list of accounts into a JSON string
         return JSON.serialize(accounts);
 
