@@ -1,4 +1,4 @@
-public class OrgNames {
+public class OrgNames74 {
     public List<String> orgNames(List<String> adjectives, List<String> animals) {
         List<String> orgNameList = new List<String>();
         for (String adjective : adjectives) {
