@@ -6,15 +6,15 @@ public class NumbersEven {
     Hint: Start a loop at number 2, add 2 to the number on every loop, and loop until n * 2 to generate a list of n even numbers.
     */ 
     public List<Integer> evenNumbers(Integer n) {
-        List<Integer> nEvenNumList = new List<Integer>();
-        Integer listInt = 2;
+        List<Integer> nEvenNumberList = new List<Integer>();
+        Integer listElement = 2;
         if (n > 0) {
-            nEvenNumList.add(listInt);
+            nEvenNumberList.add(listElement);
             for (Integer i = 1; i < n; i++) {
-                listInt += 2;
-                nEvenNumList.add(listInt);
+                listElement += 2;
+                nEvenNumberList.add(listElement);
             }
         }
-        return nEvenNumList;
+        return nEvenNumberList;
     }
 }
