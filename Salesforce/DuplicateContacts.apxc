@@ -1,0 +1,16 @@
+public class DuplicateContacts {
+    public Boolean duplicateContacts(Contact c1, Contact c2) {
+        // Phone check
+        if ((c1.Phone != null || c2.Phone != null) && (
+            c1.Phone == c2.Phone)) {
+            return true;
+        // Email check
+        } else if ((c1.Email != null || c2.Email != null) && (
+            c1.Email == c2.Email)) {
+            return true;
+        // Otherwise
+        } else {
+            return false;
+        }
+    }
+}
