@@ -1,5 +1,6 @@
 public class CountTargetInList {
     /*
+    Apex practice problem #138
     Given a list of Integers nums and an Integer target, count number of times target is found in nums. If the target is not in the list, simply return 0.
     Hint: Given List nums = new List{5, 2, 8, -4, 8, 1, 11};
             findTargetCount(nums, 12) => 0
