@@ -1,0 +1,5 @@
+public class SerializeObjects {
+    public String getAccountsInJSONFormat(List<Account> accounts){
+        return JSON.serialize(accounts?.isEmpty() ? null : accounts);
+    }
+}
