@@ -1,0 +1,16 @@
+public class LargestElement {
+    public static Integer findLargest(List<Integer> nums) {
+        Integer largest = 0;
+        if (nums == null) {
+            return null;
+        } else {
+            largest = nums[0];
+            for (Integer i = 1; i < nums.size(); i++) {
+                if (nums[i] > largest) {
+                    largest = nums[i];
+                }
+            }
+        }
+        return largest;
+    }
+}
