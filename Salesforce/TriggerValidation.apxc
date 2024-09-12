@@ -9,6 +9,5 @@ public class TriggerValidation {
                 opportunity.addError('Description should not be empty for Closed Won opportunity.');
             }
         }
-    
     }
 }
