@@ -1,4 +1,12 @@
 public class SecondLargestElement {
+    /*
+    Given an list of Integers numbers, return the second largest integer in the list. Assume that the input list will always contain at least two distinct integers.
+    Example: secondLargest(new List {5, 2, 8, 4, 8, 1}) evaluates to 5 because 5 is the second largest Integer in the array, with 8 being the largest integer.
+    Note: While not necessary to solving this problem, it may be be helpful to know the smallest possible Integer: -2,147,483,648. However, you cannot set an integer directly to this value because of a bug in Apex, but you can do the following:
+    Integer num = -2147483647 - 1;
+    Hint: You can solve this problem in two steps. First, loop over the list to find the largest integer. Then, loop over the list again to find the second-to largest integer
+    Hint: You can also solve this problem in a single loop. Initialize a variable to hold the largest integer in the list (say, largestSeen) and another variable to hold the second largest integer (say secondLargestSeen, and initialize both to the smallest possible integer. When looping over the array, if the current value is larger than largestSeen, we have discovered the largest integer so far. This also means that the last discovered largest integer is now the second-largest. If, however, the current value is less that largestSoFar but greater than secondLargestSoFar, we have discovered a new second largest integer.
+    */
     public Integer secondLargest(List<Integer> numbers) {
         Integer largestSeen = -2147483647 - 1;
         Integer secondLargestSeen = -2147483647 - 1;
