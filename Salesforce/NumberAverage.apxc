@@ -1,7 +1,6 @@
 public class NumberAverage {
     public Decimal average(List<Decimal> numbers){
         Decimal sumTotal = 0.0;
-    
         if (numbers.isEmpty()) {
             return null;
         } else {
@@ -9,9 +8,7 @@ public class NumberAverage {
                 sumTotal += numbers[i];            
             }
         }
-    
         Decimal numbersAvg = sumTotal / numbers.size();
-    
         return numbersAvg.setScale(2);
     }
 }
