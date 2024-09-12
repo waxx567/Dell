@@ -1,0 +1,14 @@
+public class SortingAList {
+    public List<String> getNamesInAscOrder(List<String> accountNames)
+    {
+        List<String> acctsAscOrder = new List<String>();
+        if (accountNames == null) {
+            return null;
+        }
+        accountNames.sort();
+        for (String accName : accountNames) {
+            acctsAscOrder.add(accName);
+        }
+        return acctsAscOrder;
+    }
+}
