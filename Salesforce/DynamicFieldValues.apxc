@@ -11,6 +11,8 @@ public class DynamicFieldValues {
             // Adds the field value to the list or null if null
             String fieldValue = String.valueOf(acc?.get(field));
             result.add(fieldValue);
+            // or the above two lines expressed in one line:
+            // result.add(String.valueOf(acc?.get(field)));
         }
         
         return result;
