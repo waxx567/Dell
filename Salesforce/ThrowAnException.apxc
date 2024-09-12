@@ -21,7 +21,10 @@ public class ThrowAnException {
         }
         // Iterate through each account in the list
         for (Account acc : accounts) {
-            
+            // If any account doesn't have BillingCity, throw an AccountException
+            if (acc.BillingCity == null) {
+                throw new AccountException('Invalid BillingCity');
+            }
         }    
         return accounts;
     }
