@@ -10,6 +10,8 @@ public class ImplementAStack {
     Example
     stack.push(1), stack.push(2), stack.push(3) stack.push(4) ,
     stack.isEmpty() //false stack.size() // 4 stack.peek() // 4 stack.pop() // 4 stack.pop() // 3 stack.size() // 2 stack.peek() // 2 stack.pop() // 2 stack.pop() // 1 stack.size() // 0 stack.isEmpty() // true stack.pop() // null
+    Hint: Use a list as your backing data structure
+    Hint: Push should add an element into the List. Peek should return the element at the end of the list. Pop should remove and return the element at the end of the list.
     */
     public class Stack {
         List<Object> stackList = new List<Object>();
