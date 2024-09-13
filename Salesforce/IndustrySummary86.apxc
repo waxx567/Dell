@@ -27,7 +27,7 @@ public class IndustrySummary86 {
         Map<String, Decimal> revenueMap = new Map<String, Decimal>();
     
         for (Account account : accounts) {
-            if (revenueMap.containsKey(account.Industry) == true) {
+            if (revenueMap.containsKey(account.Industry)) {
                 Decimal revenue = revenueMap.get(account.Industry);
                 revenue += account.AnnualRevenue;
                 revenueMap.put(account.Industry, revenue);
