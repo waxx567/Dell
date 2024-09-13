@@ -1,4 +1,24 @@
 public class CasesByType87 {
+    /*
+    The method casesByType takes as input a list of cases and returns a Map> with case types (Type field on Case) as the keys, and a list of cases of that type as values. This map should not include cases with no Type specified.
+    For example, given the following cases:
+    c1
+    Subject: 'Power does not come on'
+    Type: 'Electrical'
+    c2
+    Subject: 'Several switches not responding'
+    Type: 'Electrical'
+    c3
+    Subject: 'Lever jammed - cannot run machine'
+    Type: 'Structural'
+    The method call casesByType(new List {c1, c2, c3}) should return a map containing the following key/value pairs:
+    'Electrical' -> { c1, c2 }
+    'Structural' -> { c3 }
+    Hint: We have a Map different from what we've used before - the values in this Map are of type List. This means that the put method expects a list of cases as the second argument, and the get method returns a list of cases
+    Hint: Loop over cases to build your map. If a key already exists, first use the get method to obtain the list and and then add the element to the list. Otherwise, create a new list to add to the map.
+    Hint: 
+    Hint: 
+    */
     public Map<String, List<Case>> casesByType(List<Case> cases) {
     
         Map<String, List<Case>> typedCases = new Map<String, List<Case>>();
