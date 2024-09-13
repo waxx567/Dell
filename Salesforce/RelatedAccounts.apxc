@@ -7,6 +7,8 @@ public class RelatedAccounts {
     Opportunity opp2 = new Opportunity(Name = 'Opportunity 2', AccountId = '0015f00000CtulqAAB');
     List<Opportunity> opps = new List<Opportunity> {opp1, opp2};
     The expression accountIds(opps) returns a Set<Id> containing the single Id 0015f00000CtulqAAB since both opportunities were related to the same account.
+    Hint: Accounts are related to Opportunities through an AccountId field on the Opportunity object.
+    Hint: Create a new Set<Id> to hold Account Ids. Loop through the passed Opportunity records and whenever an opportunity has a related Account, add it to the set.
     */
     public Set<Id> accountIds(List<Opportunity> opps) {
         Set<Id> relatedAccIds = new Set<Id>();
