@@ -5,7 +5,7 @@ public class ValidAnagram {
     Hint: Sorting the string and comparing is another way to solve it.
     */
     public static boolean isAnagram(String s1, String s2) {
-        // null checks
+        
         if (s1 == null || s2 == null) {
             return false;
         }
