@@ -9,6 +9,11 @@ public class SegregateEvenAndOddNumbers {
     Example 2:
     Input: [12, 34, 45, 9, 8, 90, 3]
     Output: [8, 12, 34, 90, 3, 9, 45]
+    Hint: Increment left index while we see even at left
+    Decrement right index while we see odd at right
+    Keep doing this in two pointer approach
+    Hint: Swap left and right value if they are in the wrong position.
+    Hint: To Check even and odd use Math.mod(Integer, Integer) function from the Math class.
     */
     public static void segregateEvenOdd(List<Integer> numbers){    
         Integer left = 0;
