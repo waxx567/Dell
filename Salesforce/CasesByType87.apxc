@@ -1,0 +1,19 @@
+public class CasesByType87 {
+    public Map<String, List<Case>> casesByType(List<Case> cases) {
+    
+        Map<String, List<Case>> typedCases = new Map<String, List<Case>>();
+    
+        for (Case c : cases) {
+            if (c.Type != null) {
+                if (typedCases.containsKey(c.Type)) {
+                    typedCases.get(c.Type).add(c);
+                } 
+                else {
+                    typedCases.put(c.Type, new List<Case>{ c });
+                }
+            }
+        }
+    
+        return typedCases;
+    }
+}
