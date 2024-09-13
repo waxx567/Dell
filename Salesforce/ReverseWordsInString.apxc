@@ -32,7 +32,6 @@ public class ReverseWordsInString {
             reversedWords.add(reversedWord);
         }
         // Join the words in the list into a single string with spaces, and return the result
-        String result = String.join(reversedWords, ' ');
-        return result;
+        return String.join(reversedWords, ' ');
     }
 }
