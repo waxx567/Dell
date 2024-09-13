@@ -1,0 +1,13 @@
+public class EmployeeEmail83 {
+    public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
+    
+        String emailFromId = 'info@apexsandbox.io';
+    
+        if (employeeIdToEmail.containsKey(employeeId)) {
+            String getString = employeeIdToEmail.get(employeeId);
+            emailFromId = getString;
+        }
+        
+        return emailFromId;
+    }
+}
