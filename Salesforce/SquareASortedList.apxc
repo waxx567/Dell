@@ -7,6 +7,8 @@ public class SquareASortedList {
     Example 2
     Input: nums = [-10, 2, 4, 6, 8]
     Output: [4, 16, 36, 64, 100]
+    Hint: A squared negative is a positive number.
+    Hint: For an efficient solution, Implement a two pointer solution to compare values.
     */
     public static List<Integer> squareList(List<Integer> nums){
         // Create a new list to hold the squared numbers
