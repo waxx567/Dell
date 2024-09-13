@@ -6,10 +6,12 @@ public class EmployeeEmail83 {
     '19228' -> 'umair@universalcontainers.com'
     '4823' -> 'alicia@acmeenterprises.com'
     The method call employeeEmail(employeeIdToEmail, '4823') should return 'alicia@acmeenterprises.com'.
+    Hint: The get method in the Map class allows you to obtain a value from a key, and the containsKey method allows checking if a key exists.
+    Hint: Check if the map contains the employee ID using the containsKey method. If it contains the key, pass the employeeId into the get method to obtain the email and return it. Otherwise, return the default email.
     */
     public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     
-        String emailFromId = 'info@apexsandbox.io';
+        String emailFromId = 'info@apexsandbox.io'; // Default email
     
         if (employeeIdToEmail.containsKey(employeeId)) {
             emailFromId = employeeIdToEmail.get(employeeId);
