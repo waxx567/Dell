@@ -5,6 +5,7 @@ public class BalancedParentheses {
     input: '()[(())]', Output: true
     Input: '([{}]))', Output: false
     Input: '([]}', Output: false
+    Hint: Use two variables to store your opening and closing delimiters ### How can we create a LIFO / Last In First Out data structure
     */
     public Boolean isValid(String s){
         // Initialize a stack to keep track of opening brackets
