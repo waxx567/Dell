@@ -8,6 +8,11 @@ public class ReverseWordsInString {
     Example 2:
     Input: DSA is fun
     Output: ASD si nuf
+    Hint: Use spaces as delimiters. You can use String.split(' ') to convert a String into a list of Strings separated by space, and use the String.join method to join them back into a single string.
+    Hint: In order to build your problem-solving skills, avoid the String.reverse() method.
+    Converting a string into a list of characters will make this easy. String.getChars() returns a list of integers where each integer represents a character in the string. String.fromCharArray(str) converts a list of integers into a string. Take a look at an ASCII table to see what the integer values for different characters are.
+    Hint: Think of a two-pointer solution when reversing an individual word.
+    Hint: For even more challenge and a more efficient solution, avoid splitting by space. Convert the entire string into an array of integers, manipulate the array, and convert it back into a String.
     */
     public static String reverseWords(String str){
         // Split the input string into a list of individual words
