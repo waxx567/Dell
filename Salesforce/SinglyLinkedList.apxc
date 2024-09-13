@@ -1,7 +1,7 @@
 public class SinglyLinkedList {
     /*
     Implement a Linked List
-    A linked list a fundamental data structure in computer science. Linked data structures are used in heaps, graphs and trees.
+    A linked list is a fundamental data structure in computer science. Linked data structures are used in heaps, graphs and trees.
     In this problem you need to implement a basic singly linked list. You are given a class and basic method signatures as well as a Node class.
     */
     public class LinkedList{
