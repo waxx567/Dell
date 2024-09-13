@@ -39,7 +39,7 @@ public class SquareASortedList {
             }
         }
     
-        // Reverse the list to get it in ascending order
+        // Reverse the temp list to get it in ascending order
         for (Integer i = temp.size() - 1; i >= 0; i--) {
             sqdNumsAsc.add(temp[i]);
         }
