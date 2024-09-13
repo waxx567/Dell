@@ -7,6 +7,8 @@ public class Defrag {
     Output: [1,3,12,-1,-1]
     Input: [-1,1,0,15,2]
     Output: [1,0,15,2,-1]
+    Hint: Can we use a two-pointer approach?
+    Hint: Have one pointer point to the first empty space, and the second pointer to the next available memory location.
     */
     public static void defragging(Integer[] memory)
     {
