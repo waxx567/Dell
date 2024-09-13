@@ -1,0 +1,37 @@
+public class TwoSum109 {
+    public List<Integer> twoSum(List<Integer> nums, Integer target){
+        List<Integer> output = new List<Integer>(); 
+        Integer left = 0;
+        Integer right = nums.size() - 1;
+    
+        // Use a while loop to check the sum of the elements at the left and right pointers
+        while (left < right) {
+            Integer sum = nums[left] + nums[right];
+    
+            // If we find the target, return the indices
+            if (sum == target) {
+                output.add(left);
+                output.add(right);
+                return output;  // Return immediately since there's only one solution
+            }
+    
+            // If the sum is too small, move the left pointer to the right to increase the sum
+            else if (sum < target) {
+                left++;
+            }
+    
+            // If the sum is too large, move the right pointer to the left to decrease the sum
+            else {
+                right--;
+            }
+        }
+    
+        // If no solution is found, return null or an empty list
+        return null;
+    }
+    
+    /*
+    Time complexity: O(n) since you only go through the list once with two pointers.
+    Space complexity: O(1) because the additional memory usage does not grow with input size.
+    */
+}
