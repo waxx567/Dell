@@ -11,6 +11,8 @@ public class BuyLowSellHigh {
     Input: prices = [7,6,4,3,1]
     Output: 0
     Explanation: In this case, no transactions are done and the max profit = 0.
+    Hint: Find a way to track the current lowest price
+    Hint: If there is a new lowest price you only need to calculate from that point forward.
     */
     public Integer maxProfit(List<Integer> prices){
         // Input null check or empty list
