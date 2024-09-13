@@ -9,6 +9,8 @@ public class ValidSubsequence {
     Constraints:
     s1 and s2 will only consist of lowercase English letters.
     s2 will always be longer than s1
+    Hint: You should look for a linear solution using two pointers.
+    Hint: One pointer advances on s1. For each character in s1, the second advances on s2 until it finds a matching character.
     */
     public Boolean isSubSequence(String s1, String s2){
         Integer p1 = 0;
