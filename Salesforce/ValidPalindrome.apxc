@@ -5,6 +5,9 @@ public class ValidPalindrome {
     Examples:
     isPalindrome('A man, a plan, a canal: Panama') returns true
     isPalindrome('Panama') returns false
+    Hint: Convert the String to lowercase.
+    Hint: You can use a regular expression to remove non-alphanumeric characters from a String.
+    Hint: Think of a two-pointer solution. One pointer starts at the beginning of the array, the second at the end of the array.
     */ 
     public Boolean isPalindrome(String str){
         // Remove non-alphanumeric characters and convert to lowercase
