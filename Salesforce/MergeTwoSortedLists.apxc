@@ -7,6 +7,8 @@ public class MergeTwoSortedLists {
     Example 2
     input: list1 = [1, 3, 5, 7], list2=[2, 4, 6, 8, 9, 10, 100];
     output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100];
+    Hint:A two pointer solution works well here for an linear and efficient implementation.
+    Hint: Start by creating a new list. Use two pointers to loop over list1 and list2, and add the smallest to your return list.
     */
     public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2){
         List<Integer> mergedList = new List<Integer>();
