@@ -14,7 +14,7 @@ public class Intersection {
     */
     public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
         Set<Integer> intersectionSet = new Set<Integer>();
-        // Null checks
+        // Null checks return an empty set
         if (set1.isEmpty() || set2.isEmpty()) {
             return intersectionSet;
         }
