@@ -1,0 +1,33 @@
+public class TwoSum108 {
+    public static List<Integer> twoSum(List<Integer> nums, Integer target) {
+        // A map to store the number and its index
+        Map<Integer, Integer> numMap = new Map<Integer, Integer>(); 
+        List<Integer> indices = new List<Integer>();
+    
+        // Loop through the list of numbers
+        for (Integer i = 0; i < nums.size(); i++) {
+            Integer currentNum = nums[i];
+            Integer complement = target - currentNum;     
+    
+            // If the complement exists in the map
+            if (numMap.containsKey(complement)) {
+                indices.add(numMap.get(complement));
+                indices.add(i);
+                return indices; // A solution has been found
+            }
+    
+            // Add the current number and its index to the map
+            numMap.put(currentNum, i);       
+        }
+    
+        // Return empty if no solution is found (even though the problem guarantees a solution)
+        return indices;
+    }
+    
+    /*
+    Step 1: Use a Map<Integer, Integer> to store the number as the key and its index as the value.
+    Step 2: For each number in the list, calculate the complement (target - current number).
+    Step 3: Check if the complement exists in the Map. If it does, the two numbers that add up to the target have been found, so return their indices.
+    Step 4: If the complement is not found, add the current number and its index to the Map and continue.
+    */
+}
