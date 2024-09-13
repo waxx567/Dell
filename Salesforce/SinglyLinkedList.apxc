@@ -29,6 +29,7 @@ public class SinglyLinkedList {
     linkedList.removeFromFront() // 2
     linkedList.removeFromFront() // null
     linkedList.size() == 0;
+    Hint: If you are not familiar with this data structure it will help to watch a video tutorial. https://www.youtube.com/watch?v=uX5ADjhTZKY
     */
     public class LinkedList{
 
