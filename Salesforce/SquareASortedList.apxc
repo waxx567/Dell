@@ -10,7 +10,7 @@ public class SquareASortedList {
     */
     public static List<Integer> squareList(List<Integer> nums){
         // Create a new list to hold the squared numbers
-        List<Integer> squaredNums = new List<Integer>();
+        List<Integer> sqdNumsAsc = new List<Integer>();
     
         // Pointers to start at the beginning and end of the input list
         Integer left = 0;
@@ -19,7 +19,7 @@ public class SquareASortedList {
         // Temporary list to hold te squared values in reverse order
         List<Integer> temp = new List<Integer>();
         
-        // Traverse the list from the end to the beginning of the squaredNums list
+        // Traverse the list from the end to the beginning of the sqdNumsAsc list
         while (left <= right) {
             Integer leftSquare = nums[left] * nums[left];
             Integer rightSquare = nums[right] * nums[right];
@@ -39,9 +39,9 @@ public class SquareASortedList {
     
         // Reverse the list to get it in ascending order
         for (Integer i = temp.size() - 1; i >= 0; i--) {
-            squaredNums.add(temp[i]);
+            sqdNumsAsc.add(temp[i]);
         }
         
-        return squaredNums;
+        return sqdNumsAsc;
     }
 }
