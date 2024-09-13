@@ -1,4 +1,21 @@
 public class TwoSum109 {
+    /*
+    Given a list of integers that are sorted in ascending order, return the indices of the two numbers that add up to a target value.
+    Constraints:
+    Each problem will have only one solution if any. You may return null or an empty list of no solution is found.
+    You should attempt to solve this in constant space and linear run-time. This means a solution using nested loops or a Map will not work.
+    Inputs can contain up two 10,000 values
+    Example 1
+    Input: prices = [2,7,11,15], target = 9
+    Output: [0, 1], because the sum of 2 and 7 is 9.
+    Example 2
+    Input: [4, 8, 10, 22], target = 30
+    Output: [1, 3] because the sum of 8 and 22 is 30
+    Hint: Nested for-loops will result in hitting the CPU limit, and using a Map would mean linear space complexity. Both of these solution will fail.
+    A linear solution (O(n) complexity) means that the time it takes to run should grow linearly with the size of the input for sufficiently large inputs. A solution that uses nested loops to compare each element with the other has O(n^2) complexity or quadratic growth: for a list of size n, we execute the comparison logic n^2 times.
+    Constant space complexity (O(1) space) means that the memory used should not grow with the size of the input for sufficiently large inputs. If we use a Map, it means the memory required grows linearly with the size of the array (array of size n means possibly n entries in the Map).
+    Hint: Use a two-pointer solution, taking advantage of the fact that the list is sorted.
+    */
     public List<Integer> twoSum(List<Integer> nums, Integer target){
         List<Integer> output = new List<Integer>(); 
         Integer left = 0;
