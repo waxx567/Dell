@@ -1,0 +1,13 @@
+public class RelatedAccounts {
+    public Set<Id> accountIds(List<Opportunity> opps) {
+        Set<Id> relatedAccIds = new Set<Id>();
+    
+        for (Opportunity opp : opps) {
+            if (opp.AccountId != null) {
+                Boolean result = relatedAccIds.add(opp.AccountId);
+            }
+        }
+    
+        return relatedAccIds;
+    }
+}
