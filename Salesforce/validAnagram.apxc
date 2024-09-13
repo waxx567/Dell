@@ -27,7 +27,7 @@ public class ValidAnagram {
                 // Add the new value to the map
                 map1.put(convertedChar, i1);
             } else {
-                // Otherwise the frequency of the character is 1 as it's the first
+                // Otherwise the frequency is 1 as it's the first
                 map1.put(convertedChar, 1);
             }
             // System.debug(map1);
@@ -46,7 +46,7 @@ public class ValidAnagram {
                 // Add the new value to the map
                 map2.put(convertedChar, i2);
             } else {
-                // Otherwise the frequency of the character is 1 as it's the first
+                // Otherwise the frequency is 1 as it's the first
                 map2.put(convertedChar, 1);
             }
             // System.debug(map2);
