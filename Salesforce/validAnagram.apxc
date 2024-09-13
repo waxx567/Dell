@@ -1,6 +1,8 @@
 public class ValidAnagram {
     /*
     Two words are considered valid anagrams if they are composed of the exact same letters with the exact same frequency. Implement the method isAnagram that takes as input two strings s1 and s2, and returns true if the two words are anagrams. Assume that the two strings contain only lowercase alphabets a-z.
+    Hint: A map can be used to store the frequency of each character. 
+    Hint: Sorting the string and comparing is another way to solve it.
     */
     public static boolean isAnagram(String s1, String s2) {
         // null checks
@@ -13,7 +15,7 @@ public class ValidAnagram {
         Map<String, Integer> map2 = new Map<String, Integer>();
     
         for (Integer i = 0; i < s1.length(); i++) {
-            // Convert string 1 integer index to the character at that index
+            // Convert string s1 integer index to the character at that index
             List<Integer> charArr = new List<Integer>{ s1.charAt(i) };
             String convertedChar = String.fromCharArray(charArr);
     
@@ -32,7 +34,7 @@ public class ValidAnagram {
         }
     
         for (Integer i = 0; i < s2.length(); i++) {
-            // Convert string 2 integer index to the character at that index
+            // Convert string s2 integer index to the character at that index
             List<Integer> charArr = new List<Integer>{ s2.charAt(i) };
             String convertedChar = String.fromCharArray(charArr);
     
