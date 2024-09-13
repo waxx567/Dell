@@ -7,6 +7,8 @@ public class AddOne {
         Output: [1,0]
         Input: number = [1,2,9]
         Output: [1,3,0]
+    Hint: Add 1 to the right-most digit and calculate carry if sum is 10 
+    Hint: Use add(index, element) method of List to add a left most 1
     */
     public void plusOne(List<Integer> numbers) {
         Integer n = numbers.size();
