@@ -12,16 +12,16 @@ public class FindCommonCharacters {
     */
     public List<String> commonChars(List<String> strs){
         // 1. Map to store the frequency of characters in the first string
-        Map<String, Integer> map1 = new Map<String, Integer>();
+        Map<String, Integer> mainMap = new Map<String, Integer>();
 
         // Process the first string
         String firstStr = strs[0];
         for (Integer i = 0; i < firstStr.length(); i++) {
             String ch = firstStr.substring(i, i + 1); // Get each character as a String
-            if (!map1.containsKey(ch)) {
-                map1.put(ch, 1); // First occurrence
+            if (!mainMap.containsKey(ch)) {
+                mainMap.put(ch, 1); // First occurrence
             } else {
-                map1.put(ch, map1.get(ch) + 1); // Increment count
+                mainMap.put(ch, mainMap.get(ch) + 1); // Increment count
             }
         }
 
@@ -38,20 +38,20 @@ public class FindCommonCharacters {
                 }
             }
 
-            // Update map1 to keep the minimum frequency of each character
-            for (String key : map1.keySet()) {
+            // Update mainMap to keep the minimum frequency of each character
+            for (String key : mainMap.keySet()) {
                 if (tempMap.containsKey(key)) {
-                    map1.put(key, Math.min(map1.get(key), tempMap.get(key)));
+                    mainMap.put(key, Math.min(mainMap.get(key), tempMap.get(key)));
                 } else {
-                    map1.put(key, 0); // Character not found, set count to 0
+                    mainMap.put(key, 0); // Character not found, set count to 0
                 }
             }
         }
 
-        // Build the result based on map1
+        // Build the result based on mainMap
         List<String> result = new List<String>();
-        for (String key : map1.keySet()) {
-            Integer freq = map1.get(key);
+        for (String key : mainMap.keySet()) {
+            Integer freq = mainMap.get(key);
             for (Integer k = 0; k < freq; k++) {
                 result.add(key);
             }
