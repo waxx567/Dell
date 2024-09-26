@@ -1,6 +1,6 @@
 public with sharing class MaintenanceRequestHelper {
     /*
-        Global variables
+        Globals
     */
     static String CLOSED = 'Closed';
     static String REPAIR = 'Repair';
