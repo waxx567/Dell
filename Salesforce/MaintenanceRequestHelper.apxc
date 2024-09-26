@@ -59,8 +59,12 @@ public with sharing class MaintenanceRequestHelper {
         if (newCaseList.size() > 0) {
             insert newCaseList;
 
-            for (type variable : List_or_set) {
-                
+            for (Case ncl : newCaseList) {
+                List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(ncl.Cloned_Case_Id__c);
+
+                if (condition) {
+                    
+                }
             }
         }
     } 
