@@ -90,7 +90,7 @@ public with sharing class MaintenanceRequestHelper {
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
         Map<String, Integer> daysToAdd = new Map<String, Integer>();
         Map<String,Integer> keyMap = new Map<String,Integer>();
-        
+
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c)cycle 
             FROM Equipment_Maintenance_Item__c 
@@ -118,6 +118,6 @@ public with sharing class MaintenanceRequestHelper {
         Method fetches all maintenance items associated with Maintenance Requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
-        
+        Map<String,List<Equipment_Maintenance_Item__c>> m = new Map<String,List<Equipment_Maintenance_Item__c>>();
     }
 }
