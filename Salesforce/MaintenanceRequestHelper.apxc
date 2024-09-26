@@ -29,12 +29,14 @@ public with sharing class MaintenanceRequestHelper {
     public static void updateworkOrders(List<Case> caseList) {
         List<Case> insertCase = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertItem = new List<Equipment_Maintenance_Item__c>();
+        // Call helper method to get date of next request
         Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
+        // Call helper method to retrieve items to be cloned for new request
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
     } 
 
     /*
-        Helper method calculates the due date for the next Maintenance Request
+        Method calculates the due date for the next Maintenance Request
     */
     public static Map<String, Integer> serviceDateHelper(List<Case> caseList) {
         Map<String, Integer> nextMaintenanceDate = new Map<String, Integer>();
