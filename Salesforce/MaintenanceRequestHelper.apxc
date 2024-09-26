@@ -88,7 +88,8 @@ public with sharing class MaintenanceRequestHelper {
         Method calculates the due date for the next Maintenance Request
     */
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
-        Map<String, Integer> nextMaintenanceDate = new Map<String, Integer>();
+        Map<String, Integer> dueDate = new Map<String, Integer>();
+        Map<String,Integer> caseKeyNap = new Map<String,Integer>();
     }
 
     /*
