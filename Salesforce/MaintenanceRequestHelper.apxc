@@ -35,6 +35,9 @@ public with sharing class MaintenanceRequestHelper {
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
 
         for (Case c : caseList) {
+            Case newCase = new Case();
+
+            newCase.Vehicle__c = c.Vehicle__c;
             
         }
     } 
