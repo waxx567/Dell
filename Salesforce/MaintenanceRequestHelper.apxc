@@ -1,12 +1,16 @@
-public with sharing class MaintenanewcaseeRequestHelper {
+public with sharing class MaintenanceRequestHelper {
 
     public static void afterUpdateHandler(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
-        for (Case newcase : newCases) {
-            if (newcase.Status == 'Closed' && (newcase.Type == 'Repair' || newcase.Type == 'Routine Maintenance')) {
-                closedCases.add(newcase);
+        for (Case nc : newCases) {
+            if (nc.Status == 'Closed' && (nc.Type == 'Repair' || nc.Type == 'Routine Maintenance')) {
+                closedCases.add(nc);
             }
+        }
+
+        if (closedCases.size() > 0) {
+            MaintenanceRequestHelper.updateWorkOrder(closedCases);
         }
     }
 }
