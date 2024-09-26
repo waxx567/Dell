@@ -12,7 +12,7 @@ public with sharing class MaintenanceRequestHelper {
        
         if (!validIds.isEmpty()) {
             List<Case> newCases = new List<Case>();
-            Map<Id,Case> closedCases = new Map<Id,Case>([SELECT Id, Vehicle__c, Equipment__c, Equipment__r.Maintenance_Cycle__c,(SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
+            Map<Id,Case> closedCases = new Map<Id,Case>([SELECT Id, Vehicle__c, Product__c, Product__r.Maintenance_Cycle__c,(SELECT Id, Equipment__c, Quantity__c FROM Equipment_Maintenance_Items__r)
                                                          FROM Case WHERE Id IN :validIds]);
             Map<Id,Decimal> maintenanceCycles = new Map<ID,Decimal>();
             AggregateResult[] results = [SELECT Maintenance_Request__c, MIN(Equipment__r.Maintenance_Cycle__c)cycle FROM Equipment_Maintenance_Item__c WHERE Maintenance_Request__c IN :ValidIds GROUP BY Maintenance_Request__c];
