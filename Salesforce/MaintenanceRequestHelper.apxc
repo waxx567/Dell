@@ -21,6 +21,6 @@ public with sharing class MaintenanceRequestHelper {
     }
 } 
 
-public static Map<String, Integer> serviceDateHandler(List<Case> caseList) {
-
+public static Map<String, Integer> serviceDateHelper(List<Case> caseList) {
+    Map<String, Integer> nextServiceDate = new Map<String, Integer>();
 }
