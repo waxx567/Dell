@@ -12,6 +12,7 @@ public with sharing class MaintenanceRequestHelper {
     public static void afterUpdateHandler(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
+        // Check if cases in the input list have been closed and are of Type 'Repair' or 'Routine Maintenance'
         for (Case nc : newCases) {
             if (nc.Status == CLOSED && (nc.Type == REPAIR || nc.Type == ROUTINE_MAINTENANCE)) {
                 closedCases.add(nc);
@@ -19,7 +20,7 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (closedCases.size() > 0) {
-            // Call the helper method on the list of closed cases
+            // Call the helper method on the closed cases list
             MaintenanceRequestHelper.updateWorkOrders(closedCases);
         }
     }
