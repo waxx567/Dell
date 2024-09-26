@@ -35,7 +35,7 @@ public with sharing class MaintenanceRequestHelper {
         // Call helper method to get date of next request
         Map<String, Integer> nextMaintenance = nextDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
-        Map<String, List<Equipment_Maintenance_Item__c>> maintItems = maintenanceItemHelper(caseList); 
+        Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
 
         for (Case c : caseList) {
             Case newCase = new Case();
@@ -64,7 +64,7 @@ public with sharing class MaintenanceRequestHelper {
 
             for (Case nc : newCaseList) {
                 Id itemId = Id.valueOf(nc.Cloned_Case_Id__c);
-                List<Equipment_Maintenance_Item__c> itemList = maintItems.get(itemId);
+                List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(itemId);
 
                 if (itemList.size() > 0) {
 
@@ -120,7 +120,7 @@ public with sharing class MaintenanceRequestHelper {
         Method fetches all maintenance items associated with Maintenance Requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
-        Map<String,List<Equipment_Maintenance_Item__c>> maintItems = new Map<String,List<Equipment_Maintenance_Item__c>>();
+        Map<String,List<Equipment_Maintenance_Item__c>> maintenanceItems = new Map<String,List<Equipment_Maintenance_Item__c>>();
         Map<Id,Case> caseMap = new Map<Id,Case>(caseList);
         List<Equipment_Maintenance_Item__c> emiList = [
             SELECT Id, Maintenance_Request__c, Equipment__c, Quantity__c
@@ -130,15 +130,15 @@ public with sharing class MaintenanceRequestHelper {
         ];
 
         for (Equipment_Maintenance_Item__c item : emiList) {
-            if (maintItems.containsKey(item.Maintenance_Request__c)) {
-                List<Equipment_Maintenance_Item__c> temp = maintItems.get(item.Maintenance_Request__c);
+            if (maintenanceItems.containsKey(item.Maintenance_Request__c)) {
+                List<Equipment_Maintenance_Item__c> temp = maintenanceItems.get(item.Maintenance_Request__c);
                 temp.add(item);
-                maintItems.put(item.Maintenance_Request__c, temp);
+                maintenanceItems.put(item.Maintenance_Request__c, temp);
             } else {
-                maintItems.put(item.Maintenance_Request__c, new List<Equipment_Maintenance_Item__c>{item});
+                maintenanceItems.put(item.Maintenance_Request__c, new List<Equipment_Maintenance_Item__c>{item});
             }
         }
 
-        return maintItems;
+        return maintenanceItems;
     }
 }
