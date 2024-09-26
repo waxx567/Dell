@@ -77,8 +77,8 @@ public with sharing class MaintenanceRequestHelper {
                 }
             }
 
-            if (condition) {
-                
+            if (insertList.size() > 0) {
+                insert insertList;
             }
         }
     } 
