@@ -42,17 +42,17 @@ public with sharing class MaintenanceRequestHelper {
            
            insert newCases;
            
-           List<Equipment_Maintenance_Item__c> ClonedWPs = new List<Equipment_Maintenance_Item__c>();
+           List<Equipment_Maintenance_Item__c> clonedWPs = new List<Equipment_Maintenance_Item__c>();
 
            for (Case nc : newCases) {
                 for (Equipment_Maintenance_Item__c wp : closedCases.get(nc.ParentId).Equipment_Maintenance_Items__r) {
                     Equipment_Maintenance_Item__c wpClone = wp.clone();
                     wpClone.Maintenance_Request__c = nc.Id;
-                    ClonedWPs.add(wpClone);
+                    clonedWPs.add(wpClone);
                 }
             }
             
-            insert ClonedWPs;
+            insert clonedWPs;
         }
     }
 }
