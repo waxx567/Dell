@@ -1,6 +1,6 @@
 public with sharing class MaintenanceRequestHelper {
-    public static void updateworkOrders(List<Case> workOrders, Map<Id,Case> caseMap) {
-        Set<Id> validIds = new Set<Id>();
+    public static void updateworkOrders(List<Case> newCases) {
+        
        
         For (Case c : workOrders) {
             if (caseMap.get(c.Id).Status != 'Closed' && c.Status == 'Closed') {
