@@ -45,7 +45,8 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject = ROUTINE_MAINTENANCE;
             newCase.Date_Reported__c = Date.today();
-            newCase.Cloned_Case_Id__c = c.Id;
+            String cloneId = String.valueOf(c.Id);
+            newCase.Cloned_Case_Id__c = cloneId;
 
             // Assign maintenance request date
             if (nextMaintenance.get(c.Id) != null) {
@@ -62,7 +63,8 @@ public with sharing class MaintenanceRequestHelper {
             insert newCaseList;
 
             for (Case nc : newCaseList) {
-                List<Equipment_Maintenance_Item__c> itemList = maintItems.get(nc.Cloned_Case_Id__c);
+                Decimal itemId = Decimal.valueOf(nc.Cloned_Case_Id__c);
+                List<Equipment_Maintenance_Item__c> itemList = maintItems.get(itemId);
 
                 if (itemList.size() > 0) {
 
