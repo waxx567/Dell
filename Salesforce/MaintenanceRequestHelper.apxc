@@ -40,13 +40,16 @@ public with sharing class MaintenanceRequestHelper {
         for (Case c : caseList) {
             Case newCase = new Case();
 
+            newCase.Date_Reported__c = Date.today();
+            
+            // Convert current case ID to a string and assign to new case
+            String cloneId = String.valueOf(c.Id);
+            newCase.Cloned_Case_Id__c = cloneId;
+
             // Clone values
             newCase.Vehicle__c = c.Vehicle__c;
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject = ROUTINE_MAINTENANCE;
-            newCase.Date_Reported__c = Date.today();
-            String cloneId = String.valueOf(c.Id);
-            newCase.Cloned_Case_Id__c = cloneId;
 
             // Assign maintenance request date
             if (nextMaintenance.get(c.Id) != null) {
