@@ -90,6 +90,7 @@ public with sharing class MaintenanceRequestHelper {
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
         Map<String, Integer> daysToAdd = new Map<String, Integer>();
         Map<String,Integer> keyMap = new Map<String,Integer>();
+        
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c)cycle 
             FROM Equipment_Maintenance_Item__c 
@@ -102,6 +103,7 @@ public with sharing class MaintenanceRequestHelper {
         for (AggregateResult ar : resultsList) {
             Integer addDays = 0;
             String dateId = String.valueOf(ar.get('cId'));
+
             if (ar.get('cycle') != null) {
                 addDays += Integer.valueOf(ar.get('cycle'));
             }
