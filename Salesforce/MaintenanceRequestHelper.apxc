@@ -33,6 +33,10 @@ public with sharing class MaintenanceRequestHelper {
         Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
+
+        for (Case c : caseList) {
+            
+        }
     } 
 
     /*
@@ -43,7 +47,7 @@ public with sharing class MaintenanceRequestHelper {
     }
 
     /*
-        Helper method fetches all maintenance items associated with Maintenance Requests that have been closed
+        Method fetches all maintenance items associated with Maintenance Requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
         
