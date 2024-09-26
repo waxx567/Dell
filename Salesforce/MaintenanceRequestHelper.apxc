@@ -56,8 +56,8 @@ public with sharing class MaintenanceRequestHelper {
             newCaseList.add(newCase);
         }
 
-        if (condition) {
-            
+        if (newCaseList.size() > 0) {
+            insert newCaseList;
         }
     } 
 
