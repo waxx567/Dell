@@ -30,7 +30,7 @@ public with sharing class MaintenanceRequestHelper {
     */
     public static void updateworkOrders(List<Case> caseList) {
         List<Case> newCaseList = new List<Case>();
-        List<Equipment_Maintenance_Item__c> insertItem = new List<Equipment_Maintenance_Item__c>();
+        List<Equipment_Maintenance_Item__c> insertList = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
         Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
@@ -57,6 +57,7 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (newCaseList.size() > 0) {
+
             insert newCaseList;
 
             for (Case nc : newCaseList) {
@@ -70,8 +71,14 @@ public with sharing class MaintenanceRequestHelper {
                         newItem.Maintenance_Request__c = nc.Id;
                         newItem.Equipment__c = emi.Equipment__c;
                         newItem.Quantity__c = emi.Quantity__c;
+
+                        insertList.add(newItem);
                     }
                 }
+            }
+
+            if (condition) {
+                
             }
         }
     } 
