@@ -41,12 +41,12 @@ public with sharing class MaintenanceRequestHelper {
             Case newCase = new Case();
 
             newCase.Date_Reported__c = Date.today();
-            
-            // Convert current case ID to a string and assign to new case
+
+            // Convert current case ID to a string and assign to the new case
             String cloneId = String.valueOf(c.Id);
             newCase.Cloned_Case_Id__c = cloneId;
 
-            // Clone values
+            // Clone values to the new case
             newCase.Vehicle__c = c.Vehicle__c;
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject = ROUTINE_MAINTENANCE;
