@@ -122,7 +122,9 @@ public with sharing class MaintenanceRequestHelper {
         Map<Id,Case> caseMap = new Map<Id,Case>(caseList);
         List<Equipment_Maintenance_Item__c> emiList = [
             SELECT Id, Maintenance_Request__c, Equipment__c, Quantity__c
-            FROM 
+            FROM Equipment_Maintenance_Item__c
+            WHERE Maintenance_Request__c 
+            IN :caseMap.keySet()
         ];
     }
 }
