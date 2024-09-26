@@ -17,6 +17,10 @@ public with sharing class MaintenanceRequestHelper {
     public static void updateworkOrders(List<Case> caseList) {
         List<Case> insertCase = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertItem = new List<Equipment_Maintenance_Item__c>();
-        Map<Id, Integer> nextService =  
+        Map<Id, Integer> nextService = MaintenanceRequestHelper.serviceDateHandler(caseList); 
     }
 } 
+
+public static Map<String, Integer> serviceDateHandler(List<Case> caseList) {
+
+}
