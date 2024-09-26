@@ -39,9 +39,15 @@ public with sharing class MaintenanceRequestHelper {
 
             newCase.Vehicle__c = c.Vehicle__c;
             newCase.Type = ROUTINE_MAINTENANCE;
-            newCase.Subject =ROUTINE_MAINTENANCE;
+            newCase.Subject = ROUTINE_MAINTENANCE;
             newCase.Date_Reported__c = Date.today();
             newCase.Cloned_Case_Id__c = c.Id;
+
+            if (nextMaintenance.get(c.Id) != null) {
+                newCase.Date_Due__c = Date.today().addDays(nextMaintenance.get(c.Id));
+            } else {
+                newCase.Date_Due__c = Date.today();
+            }
         }
     } 
 
