@@ -27,7 +27,7 @@ public with sharing class MaintenanceRequestHelper {
         Helper method to create a new Routine Maintenance Request when any Maintenance Request is closed
     */
     public static void updateworkOrders(List<Case> caseList) {
-        List<Case> insertCase = new List<Case>();
+        List<Case> newCaseList = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertItem = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
         Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
@@ -51,7 +51,7 @@ public with sharing class MaintenanceRequestHelper {
                 newCase.Date_Due__c = Date.today();
             }
 
-            insertCase.add(newCase);
+            newCaseList.add(newCase);
         }
     } 
 
