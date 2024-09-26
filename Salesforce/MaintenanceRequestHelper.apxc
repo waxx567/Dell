@@ -32,7 +32,7 @@ public with sharing class MaintenanceRequestHelper {
         List<Case> newCaseList = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertList = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
-        Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
+        Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.maintenanceDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
 
@@ -86,7 +86,7 @@ public with sharing class MaintenanceRequestHelper {
     /*
         Method calculates the due date for the next Maintenance Request
     */
-    public static Map<String, Integer> serviceDateHelper(List<Case> caseList) {
+    public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
         Map<String, Integer> nextMaintenanceDate = new Map<String, Integer>();
     }
 
