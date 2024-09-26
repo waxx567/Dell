@@ -38,7 +38,8 @@ public with sharing class MaintenanceRequestHelper {
             Case newCase = new Case();
 
             newCase.Vehicle__c = c.Vehicle__c;
-            
+            newCase.Type = ROUTINE_MAINTENANCE;
+            newCase.Subject =ROUTINE_MAINTENANCE;
         }
     } 
 
