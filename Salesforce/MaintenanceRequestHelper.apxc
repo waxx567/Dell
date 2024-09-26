@@ -90,6 +90,7 @@ public with sharing class MaintenanceRequestHelper {
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
         Map<String, Integer> dueDate = new Map<String, Integer>();
         Map<String,Integer> caseKeyNap = new Map<String,Integer>();
+        List<AggregateResult> resultsList =  
     }
 
     /*
