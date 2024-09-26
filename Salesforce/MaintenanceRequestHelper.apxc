@@ -19,12 +19,13 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (closedCases.size() > 0) {
+            // Call the helper method on the list of closed cases
             MaintenanceRequestHelper.updateWorkOrders(closedCases);
         }
     }
     
     /*
-        Helper method to create a new Routine Maintenance Request when any Maintenance Request is closed
+        Method to create a new Routine Maintenance Request when any Maintenance Request is closed
     */
     public static void updateworkOrders(List<Case> caseList) {
         List<Case> newCaseList = new List<Case>();
