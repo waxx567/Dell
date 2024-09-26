@@ -2,9 +2,9 @@ public with sharing class MaintenanceRequestHelper {
     /*
         Global variables
     */
-    static String STATUS_CLOSED = 'Closed';
-    static String
-    static String
+    static String CLOSED = 'Closed';
+    static String REPAIR = 'Repair';
+    static String ROUTINE_MAINTENANCE = 'Routine Maintenance';
 
     /*
         Method handles instance where an update occurs on a Maintenance Request
@@ -13,7 +13,7 @@ public with sharing class MaintenanceRequestHelper {
         List<Case> closedCases = new List<Case>();
 
         for (Case nc : newCases) {
-            if (nc.Status == STATUS_CLOSED && (nc.Type == 'Repair' || nc.Type == 'Routine Maintenance')) {
+            if (nc.Status == CLOSED && (nc.Type == REPAIR || nc.Type == ROUTINE_MAINTENANCE)) {
                 closedCases.add(nc);
             }
         }
