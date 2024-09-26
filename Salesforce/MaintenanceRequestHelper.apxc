@@ -102,6 +102,9 @@ public with sharing class MaintenanceRequestHelper {
         for (AggregateResult ar : resultsList) {
             Integer addDays = 0;
             String strId = String.valueOf(ar.get('Id'));
+            if (condition) {
+                
+            }
         }
     }
 
