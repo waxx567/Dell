@@ -51,7 +51,7 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject = ROUTINE_MAINTENANCE;
 
-            // Assign maintenance request date
+            // Assign new maintenance request date
             if (nextMaintenance.get(c.Id) != null) {
                 newCase.Date_Due__c = Date.today().addDays(nextMaintenance.get(c.Id));
             } else {
@@ -107,6 +107,7 @@ public with sharing class MaintenanceRequestHelper {
             GROUP BY Maintenance_Request__c
         ]; 
 
+        // Populate a map of aggregate results
         for (AggregateResult ar : resultsList) {
             Integer addDays = 0;
             String dateId = String.valueOf(ar.get('cId'));
