@@ -88,7 +88,7 @@ public with sharing class MaintenanceRequestHelper {
         Method calculates the due date for the next Maintenance Request
     */
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
-        Map<String, Integer> dueDate = new Map<String, Integer>();
+        Map<String, Integer> daysToAdd = new Map<String, Integer>();
         Map<String,Integer> keyMap = new Map<String,Integer>();
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c)cycle 
@@ -101,15 +101,15 @@ public with sharing class MaintenanceRequestHelper {
 
         for (AggregateResult ar : resultsList) {
             Integer addDays = 0;
-            String id = String.valueOf(ar.get('cId'));
+            String dateId = String.valueOf(ar.get('cId'));
             if (ar.get('cycle') != null) {
                 addDays += Integer.valueOf(ar.get('cycle'));
             }
 
-            dueDate.put(id, addDays);
+            daysToAdd.put(dateId, addDays);
         }
 
-        return dueDate;
+        return daysToAdd;
     }
 
     /*
