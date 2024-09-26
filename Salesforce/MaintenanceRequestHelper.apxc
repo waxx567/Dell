@@ -40,6 +40,8 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Vehicle__c = c.Vehicle__c;
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject =ROUTINE_MAINTENANCE;
+            newCase.Date_Reported__c = Date.today();
+            newCase.Cloned_Case_Id__c = c.Id;
         }
     } 
 
