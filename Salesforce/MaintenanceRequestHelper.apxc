@@ -63,12 +63,13 @@ public with sharing class MaintenanceRequestHelper {
                 List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(nc.Cloned_Case_Id__c);
 
                 if (itemList.size() > 0) {
+
                     for (Equipment_Maintenance_Item__c emi : itemList) {
                         Equipment_Maintenance_Item__c newItem = new Equipment_Maintenance_Item__c();
 
                         newItem.Maintenance_Request__c = nc.Id;
                         newItem.Equipment__c = emi.Equipment__c;
-                        
+                        newItem.Quantity__c = emi.Quantity__c;
                     }
                 }
             }
