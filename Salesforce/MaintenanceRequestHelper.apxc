@@ -63,7 +63,7 @@ public with sharing class MaintenanceRequestHelper {
             insert newCaseList;
 
             for (Case nc : newCaseList) {
-                Decimal itemId = Decimal.valueOf(nc.Cloned_Case_Id__c);
+                Id itemId = Id.valueOf(nc.Cloned_Case_Id__c);
                 List<Equipment_Maintenance_Item__c> itemList = maintItems.get(itemId);
 
                 if (itemList.size() > 0) {
