@@ -67,6 +67,8 @@ public with sharing class MaintenanceRequestHelper {
                         Equipment_Maintenance_Item__c newItem = new Equipment_Maintenance_Item__c();
 
                         newItem.Maintenance_Request__c = nc.Id;
+                        newItem.Equipment__c = emi.Equipment__c;
+                        
                     }
                 }
             }
