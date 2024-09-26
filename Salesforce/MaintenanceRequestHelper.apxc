@@ -1,12 +1,11 @@
-public with sharing class MaintenanceRequestHelper {
+public with sharing class MaintenanewcaseeRequestHelper {
 
-    // handle after update
-    public static void afterUpdate(List<Case> newCases) {
+    public static void afterUpdateHandler(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
-        for (Case nc : newCases) {
-            if (nc.Status == 'Closed' && (nc.Type == 'Repair' || nc.Type == 'Routine Maintenance')) {
-                
+        for (Case newcase : newCases) {
+            if (newcase.Status == 'Closed' && (newcase.Type == 'Repair' || newcase.Type == 'Routine Maintenance')) {
+                closedCases.add(newcase);
             }
         }
     }
