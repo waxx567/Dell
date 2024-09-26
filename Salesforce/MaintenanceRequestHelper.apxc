@@ -126,5 +126,9 @@ public with sharing class MaintenanceRequestHelper {
             WHERE Maintenance_Request__c 
             IN :caseMap.keySet()
         ];
+
+        for (type variable : List_or_set) {
+            
+        }
     }
 }
