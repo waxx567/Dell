@@ -1,5 +1,8 @@
 public with sharing class MaintenanceRequestHelper {
 
+    /*
+        Method handles instance where an update occurs on a Maintenance Request
+    */
     public static void afterUpdateHandler(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
@@ -14,15 +17,21 @@ public with sharing class MaintenanceRequestHelper {
         }
     }
     
+    /*
+        Helper method to create a new Routine Maintenance Request when any Maintenance Request is closed
+    */
     public static void updateworkOrders(List<Case> caseList) {
         List<Case> insertCase = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertItem = new List<Equipment_Maintenance_Item__c>();
-        Map<Id, Integer> nextService = MaintenanceRequestHelper.serviceDateHelper(caseList); 
+        Map<Id, Integer> nextMaintenance = MaintenanceRequestHelper.serviceDateHelper(caseList); 
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
     } 
 
+    /*
+
+    */
     public static Map<String, Integer> serviceDateHelper(List<Case> caseList) {
-        Map<String, Integer> nextServiceDate = new Map<String, Integer>();
+        Map<String, Integer> nextMaintenanceDate = new Map<String, Integer>();
     }
 
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
