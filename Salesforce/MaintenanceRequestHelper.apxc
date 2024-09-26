@@ -5,7 +5,9 @@ public with sharing class MaintenanceRequestHelper {
         List<Case> closedCases = new List<Case>();
 
         for (Case nc : newCases) {
-            
+            if (nc.Status == 'Closed' && (nc.Type == 'Repair' || nc.Type == 'Routine Maintenance')) {
+                
+            }
         }
     }
 }
