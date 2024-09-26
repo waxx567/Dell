@@ -1,7 +1,11 @@
 public with sharing class MaintenanceRequestHelper {
-    public static void updateworkOrders(List<Case> newCases) {
+
+    // handle after update
+    public static void afterUpdate(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
-        
+        for (Case nc : newCases) {
+            
+        }
     }
 }
