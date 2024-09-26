@@ -89,12 +89,12 @@ public with sharing class MaintenanceRequestHelper {
     */
     public static Map<String, Integer> maintenanceDateHelper(List<Case> caseList) {
         Map<String, Integer> dueDate = new Map<String, Integer>();
-        Map<String,Integer> caseKeyNap = new Map<String,Integer>();
+        Map<String,Integer> caseKeyMap = new Map<String,Integer>();
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cld, MIN(Equipment__r.Maintenance_Cycle__c)cycle 
             FROM Equipment_Maintenance_Item__c 
             WHERE Maintenance_Request__c 
-            IN :caseKeyNap.keySet() 
+            IN :caseKeyMap.keySet() 
             AND Equipment__r.Maintenance_Cycle__c != null 
             GROUP BY Maintenance_Request__c
         ]; 
@@ -105,6 +105,8 @@ public with sharing class MaintenanceRequestHelper {
             if (ar.get('cycle') != null) {
                 addDays += Integer.valueOf(ar.get('cycle'));
             }
+
+            dueDate.put(arg0, arg1);
         }
     }
 
