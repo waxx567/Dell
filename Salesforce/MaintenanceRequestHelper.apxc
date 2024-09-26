@@ -1,4 +1,8 @@
 public with sharing class MaintenanceRequestHelper {
+    /*
+        Global variables
+    */
+    
 
     /*
         Method handles instance where an update occurs on a Maintenance Request
