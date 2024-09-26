@@ -10,7 +10,11 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (closedCases.size() > 0) {
-            MaintenanceRequestHelper.updateWorkOrder(closedCases);
+            MaintenanceRequestHelper.updateWorkOrders(closedCases);
         }
+    }
+
+    public static void updateworkOrders(List<Case> caseList) {
+        
     }
 }
