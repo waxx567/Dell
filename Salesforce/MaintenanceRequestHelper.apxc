@@ -50,6 +50,8 @@ public with sharing class MaintenanceRequestHelper {
             } else {
                 newCase.Date_Due__c = Date.today();
             }
+
+            insertCase.add(newCase);
         }
     } 
 
