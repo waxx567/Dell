@@ -98,6 +98,10 @@ public with sharing class MaintenanceRequestHelper {
             AND Equipment__r.Maintenance_Cycle__c != null 
             GROUP BY Maintenance_Request__c
         ]; 
+        
+        for (type variable : List_or_set) {
+            
+        }
     }
 
     /*
