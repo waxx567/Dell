@@ -93,8 +93,10 @@ public with sharing class MaintenanceRequestHelper {
 
     /*
         Method calculates the due date for the next Maintenance Request
+        Populate a map of aggregate results and days to add, and return it
     */
     public static Map<String, Integer> nextDateHelper(List<Case> caseList) {
+        
         Map<String, Integer> daysToAdd = new Map<String, Integer>();
         Map<String,Integer> keyMap = new Map<String,Integer>();
 
@@ -107,7 +109,6 @@ public with sharing class MaintenanceRequestHelper {
             GROUP BY Maintenance_Request__c
         ]; 
 
-        // Populate a map of aggregate results
         for (AggregateResult ar : resultsList) {
             Integer addDays = 0;
             String dateId = String.valueOf(ar.get('cId'));
