@@ -35,7 +35,7 @@ public with sharing class MaintenanceRequestHelper {
     }
 
     /*
-        Helper method fetches all maintenance items associated with closed Maintenance Requests
+        Helper method fetches all maintenance items associated with Maintenance Requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
         
