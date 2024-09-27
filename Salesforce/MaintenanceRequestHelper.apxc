@@ -99,9 +99,8 @@ public with sharing class MaintenanceRequestHelper {
         Populate a map of aggregate results and days to add, and return it
     */
     public static Map<String, Integer> nextDateHelper(List<Case> caseList) {
-        
         Map<String, Integer> daysToAdd = new Map<String, Integer>();
-        Map<String,Integer> keyMap = new Map<String,Integer>();
+        Map<String,Integer> keyMap = new Map<String,Integer>(caseList);
 
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c) cycle 
