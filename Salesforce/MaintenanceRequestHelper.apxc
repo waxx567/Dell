@@ -104,7 +104,7 @@ public with sharing class MaintenanceRequestHelper {
         Map<String,Integer> keyMap = new Map<String,Integer>();
 
         List<AggregateResult> resultsList = [
-            SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c)cycle 
+            SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c) cycle 
             FROM Equipment_Maintenance_Item__c 
             WHERE Maintenance_Request__c 
             IN :keyMap.keySet() 
