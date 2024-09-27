@@ -54,7 +54,7 @@ public with sharing class MaintenanceRequestHelper {
             // Assign new maintenance request date
             Date todaysDate = Date.today();
             if (nextMaintenance.get(c.Id) != null) {
-                Integer difference = todaysDate.daysBetween(nextMaintenance.get(c.Date_Due__c));
+                Integer difference = todaysDate.daysBetween(c.Date_Due__c);
                 newCase.Date_Due__c = todaysDate.addDays(difference);
             } else {
                 newCase.Date_Due__c = todaysDate;
