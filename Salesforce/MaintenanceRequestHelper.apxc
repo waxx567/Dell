@@ -61,7 +61,7 @@ public with sharing class MaintenanceRequestHelper {
             } else {
                 newCase.Date_Due__c = todaysDate;
             }
-            System.debug('due date: ' + newCase.Date_Due__c);
+            // System.debug('due date: ' + newCase.Date_Due__c);
 
             newCaseList.add(newCase);
         }
