@@ -33,7 +33,7 @@ public with sharing class MaintenanceRequestHelper {
         List<Case> newCaseList = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertList = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
-        Map<String, Integer> nextMaintDate = nextDateHelper(caseList); 
+        Map<String, Integer> nextMaintenanceDate = nextDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
         Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
 
@@ -53,7 +53,7 @@ public with sharing class MaintenanceRequestHelper {
 
             // Assign new maintenance request date
             Date todaysDate = Date.today();
-            if (nextMaintDate.get(c.Id) != null) {
+            if (nextMaintenanceDate.get(c.Id) != null) {
                 if (c.Date_Due__c != null) {
                     Integer difference = todaysDate.daysBetween(c.Date_Due__c);
                     newCase.Date_Due__c = todaysDate.addDays(difference);                    
@@ -131,7 +131,7 @@ public with sharing class MaintenanceRequestHelper {
         Method returns all maintenance items associated with Maintenance Requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
-        Map<String,List<Equipment_Maintenance_Item__c>> maintenanceItems = new Map<String,List<Equipment_Maintenance_Item__c>>();
+        Map<String,List<Equipment_Maintenance_Item__c>> maintenanceItemMap = new Map<String,List<Equipment_Maintenance_Item__c>>();
         Map<Id,Case> caseMap = new Map<Id,Case>(caseList);
         List<Equipment_Maintenance_Item__c> emiList = [
             SELECT Id, Maintenance_Request__c, Equipment__c, Quantity__c
@@ -141,15 +141,15 @@ public with sharing class MaintenanceRequestHelper {
         ];
 
         for (Equipment_Maintenance_Item__c item : emiList) {
-            if (maintenanceItems.containsKey(item.Maintenance_Request__c)) {
-                List<Equipment_Maintenance_Item__c> temp = maintenanceItems.get(item.Maintenance_Request__c);
+            if (maintenanceItemMap.containsKey(item.Maintenance_Request__c)) {
+                List<Equipment_Maintenance_Item__c> temp = maintenanceItemMap.get(item.Maintenance_Request__c);
                 temp.add(item);
-                maintenanceItems.put(item.Maintenance_Request__c, temp);
+                maintenanceItemMap.put(item.Maintenance_Request__c, temp);
             } else {
-                maintenanceItems.put(item.Maintenance_Request__c, new List<Equipment_Maintenance_Item__c>{item});
+                maintenanceItemMap.put(item.Maintenance_Request__c, new List<Equipment_Maintenance_Item__c>{item});
             }
         }
 
-        return maintenanceItems;
+        return maintenanceItemMap;
     }
 }
