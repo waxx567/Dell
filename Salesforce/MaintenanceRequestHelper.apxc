@@ -52,14 +52,13 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Subject = ROUTINE_MAINTENANCE;
 
             // Assign new maintenance request date
-            Date todaysDate = Date.today();
             if (nextMaintenanceDate.get(c.Id) != null) {
                 if (c.Date_Due__c != null) {
-                    Integer difference = todaysDate.daysBetween(c.Date_Due__c);
-                    newCase.Date_Due__c = todaysDate.addDays(difference);                    
+                    Integer difference = Date.today().daysBetween(c.Date_Due__c);
+                    newCase.Date_Due__c = Date.today().addDays(difference);                    
                 }
             } else {
-                newCase.Date_Due__c = todaysDate;
+                newCase.Date_Due__c = Date.today();
             }
             // System.debug('due date: ' + newCase.Date_Due__c);
 
