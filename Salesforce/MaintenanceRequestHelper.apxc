@@ -21,7 +21,7 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (closedCases.size() > 0) {
-            // Call the helper method on the closed cases list
+            // Call the helper method on the list of closed cases
             updateWorkOrders(closedCases);
         }
     }
