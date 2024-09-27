@@ -114,14 +114,14 @@ public with sharing class MaintenanceRequestHelper {
         ]; 
 
         for (AggregateResult ar : resultsList) {
-            Integer addDays = 0;
+            Integer additionalDays = 0;
             String dateId = String.valueOf(ar.get('cId'));
 
             if (ar.get('cycle') != null) {
-                addDays += Integer.valueOf(ar.get('cycle'));
+                additionalDays += Integer.valueOf(ar.get('cycle'));
             }
 
-            daysToAdd.put(dateId, addDays);
+            daysToAdd.put(dateId, additionalDays);
         }
 
         return daysToAdd;
