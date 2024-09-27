@@ -7,7 +7,7 @@ public with sharing class MaintenanceRequestHelper {
     static String ROUTINE_MAINTENANCE = 'Routine Maintenance';
 
     /*
-        Method handles instance where an update occurs on a Maintenance Request
+        Method handles any instance where an update occurs on a Maintenance Request
         Takes a list of cases as input which we are calling newCases
         Call a helper method on the list of closed cases
     */
