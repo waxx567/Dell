@@ -101,7 +101,7 @@ public with sharing class MaintenanceRequestHelper {
         Populate a map of aggregate results and days to add, and return it
     */
     public static Map<String, Integer> nextDateHelper(List<Case> caseList) {
-        Map<String, Integer> daysToAdd = new Map<String, Integer>();
+        Map<String, Integer> dueDate = new Map<String, Integer>();
         Map<Id,Case> keyMap = new Map<Id,Case>(caseList);
 
         List<AggregateResult> resultsList = [
@@ -114,17 +114,17 @@ public with sharing class MaintenanceRequestHelper {
         ]; 
 
         for (AggregateResult ar : resultsList) {
-            Integer additionalDays = 0;
-            String dateId = String.valueOf(ar.get('cId'));
+            Integer daysToAdd = 0;
+            String updateDate = String.valueOf(ar.get('cId'));
 
             if (ar.get('cycle') != null) {
-                additionalDays += Integer.valueOf(ar.get('cycle'));
+                daysToAdd += Integer.valueOf(ar.get('cycle'));
             }
 
-            daysToAdd.put(dateId, additionalDays);
+            dueDate.put(updateDate, daysToAdd);
         }
 
-        return daysToAdd;
+        return dueDate;
     }
 
     /*
