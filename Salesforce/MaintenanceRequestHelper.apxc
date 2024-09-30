@@ -105,6 +105,7 @@ public with sharing class MaintenanceRequestHelper {
         Map<String, Integer> dueDate = new Map<String, Integer>();
         Map<Id,Case> keyMap = new Map<Id,Case>(caseList);
 
+        // Query the database for maintenance cycle information
         List<AggregateResult> resultsList = [
             SELECT Maintenance_Request__c cId, MIN(Equipment__r.Maintenance_Cycle__c) cycle 
             FROM Equipment_Maintenance_Item__c 
