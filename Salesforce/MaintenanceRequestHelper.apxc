@@ -116,6 +116,7 @@ public with sharing class MaintenanceRequestHelper {
         ]; 
         // System.debug('resultsList: ' + resultsList);
 
+        // Populate the dueDate map with the update date and the number of days to add
         for (AggregateResult ar : resultsList) {
             String updateDate = String.valueOf(ar.get('cId'));
 
