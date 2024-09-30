@@ -113,7 +113,7 @@ public with sharing class MaintenanceRequestHelper {
             AND Equipment__r.Maintenance_Cycle__c != null 
             GROUP BY Maintenance_Request__c
         ]; 
-        System.debug('resultsList: ' + resultsList);
+        // System.debug('resultsList: ' + resultsList);
 
         for (AggregateResult ar : resultsList) {
             String updateDate = String.valueOf(ar.get('cId'));
