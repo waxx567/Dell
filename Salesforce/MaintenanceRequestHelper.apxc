@@ -114,9 +114,9 @@ public with sharing class MaintenanceRequestHelper {
         System.debug('resultsList: ' + resultsList);
 
         for (AggregateResult ar : resultsList) {
-            Integer daysToAdd = 0;
             String updateDate = String.valueOf(ar.get('cId'));
 
+            Integer daysToAdd = 0;
             if (ar.get('cycle') != null) {
                 daysToAdd += Integer.valueOf(ar.get('cycle'));
             }
