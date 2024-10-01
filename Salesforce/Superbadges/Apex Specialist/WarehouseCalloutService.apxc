@@ -11,5 +11,9 @@ public with sharing class WarehouseCalloutService {
         HttpResponse response = http.send(request);
 
         List<Product2> warehouseEquipment = new List<Product2>();
+
+        if (condition) {
+            
+        }
     }    
 }
