@@ -13,9 +13,9 @@ public with sharing class WarehouseCalloutService {
         List<Product2> warehouseEquipment = new List<Product2>();
 
         if (response.getStatusCode() == 200) {
-            List<Object> jsonResponse = (List<Object>)JSON.deserializeUntyped(response.getBody());
+            List<Object> jsonResponse = (List<Object>) JSON.deserializeUntyped(response.getBody());
 
-            for (type variable : List_or_set) {
+            for (Object equipmentObj : jsonResponse) {
                 
             }
         }
