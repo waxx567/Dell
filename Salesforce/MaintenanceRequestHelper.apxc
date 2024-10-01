@@ -63,7 +63,7 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (newCaseList.size() > 0) {
-        insert newCaseList;
+            insert newCaseList;
 
             for (Case nc : newCaseList) {
                 // Convert current case ID string to type Id
