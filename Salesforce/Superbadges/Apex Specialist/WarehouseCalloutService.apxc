@@ -15,8 +15,8 @@ public with sharing class WarehouseCalloutService {
         if (response.getStatusCode() == 200) {
             List<Object> jsonResponse = (List<Object>) JSON.deserializeUntyped(response.getBody());
 
-            for (Object equipmentObj : jsonResponse) {
-                
+            for (Object eo : jsonResponse) {
+                Map<String,Object> jsonMap = (Map<String,Object>)eo;
             }
         }
     }    
