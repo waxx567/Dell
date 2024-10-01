@@ -35,9 +35,9 @@ public with sharing class MaintenanceRequestHelper {
         List<Case> newCaseList = new List<Case>();
         List<Equipment_Maintenance_Item__c> insertItemList = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
-        Map<Id, Integer> nextMaintenanceDate = nextDateHelper(caseList); 
+        Map<String, Integer> nextMaintenanceDate = nextDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
-        Map<Id, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
+        Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItems = maintenanceItemHelper(caseList); 
 
         for (Case c : caseList) {
             Case newCase = new Case();
