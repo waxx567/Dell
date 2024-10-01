@@ -10,13 +10,14 @@ public with sharing class WarehouseCalloutService {
         request.setMethod('GET');
         HttpResponse response = http.send(request);
 
-        List<Product2> warehouseEquipment = new List<Product2>();
+        List<Product2> equipmentList = new List<Product2>();
 
         if (response.getStatusCode() == 200) {
             List<Object> jsonResponse = (List<Object>) JSON.deserializeUntyped(response.getBody());
 
             for (Object equipObj : jsonResponse) {
                 Map<String,Object> jsonMap = (Map<String,Object>)equipObj;
+
             }
         }
     }    
