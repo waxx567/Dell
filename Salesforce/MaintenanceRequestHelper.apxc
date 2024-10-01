@@ -45,8 +45,7 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Date_Reported__c = Date.today();
 
             // Convert current case ID to a string and assign to the new case
-            String cloneId = String.valueOf(c.Id);
-            newCase.Cloned_Case_Id__c = cloneId;
+            newCase.Cloned_Case_Id__c = String.valueOf(c.Id);
 
             // Clone values to the new case
             newCase.Vehicle__c = c.Vehicle__c;
@@ -56,7 +55,7 @@ public with sharing class MaintenanceRequestHelper {
             // Assign new maintenance request date
             newCase.Date_Due__c = Date.today();
             if (nextMaintenanceDate.get(c.Id) != null) {
-                
+                newCase.Date_Due__c = newCase.Date_Due__c.addDays(nextMaintenanceDate.get(c.Id));
             }
             // System.debug('due date: ' + newCase.Date_Due__c);
 
