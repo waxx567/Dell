@@ -12,7 +12,7 @@ public with sharing class WarehouseCalloutService {
 
         List<Product2> warehouseEquipment = new List<Product2>();
 
-        if (condition) {
+        if (response.getStatusCode() == 200) {
             
         }
     }    
