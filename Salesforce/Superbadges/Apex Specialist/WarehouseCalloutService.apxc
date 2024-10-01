@@ -17,7 +17,7 @@ public with sharing class WarehouseCalloutService {
 
             for (Object equipObj : jsonResponse) {
                 Map<String,Object> jsonMap = (Map<String,Object>)equipObj;
-
+                Product2 newEquipment = new Product2();
             }
         }
     }    
