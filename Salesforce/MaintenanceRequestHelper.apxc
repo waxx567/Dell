@@ -45,7 +45,7 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Date_Reported__c = Date.today();
 
             // Convert current case ID to a string and assign to the new case
-            newCase.Cloned_Case_Id__c = String.valueOf(c.Id);
+            // newCase.Cloned_Case_Id__c = String.valueOf(c.Id);
 
             // Clone values to the new case
             newCase.Vehicle__c = c.Vehicle__c;
@@ -63,12 +63,11 @@ public with sharing class MaintenanceRequestHelper {
         }
 
         if (newCaseList.size() > 0) {
-
-            insert newCaseList;
+        insert newCaseList;
 
             for (Case nc : newCaseList) {
                 // Convert current case ID string to type Id
-                Id itemId = Id.valueOf(nc.Cloned_Case_Id__c);
+                // Id itemId = Id.valueOf(nc.Cloned_Case_Id__c);
                 // Create a list of maintenance items that have that ID
                 List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(itemId);
 
