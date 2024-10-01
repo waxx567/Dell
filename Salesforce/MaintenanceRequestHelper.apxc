@@ -33,7 +33,7 @@ public with sharing class MaintenanceRequestHelper {
     */
     public static void updateWorkOrders(List<Case> caseList) {
         List<Case> newCaseList = new List<Case>();
-        List<Equipment_Maintenance_Item__c> insertList = new List<Equipment_Maintenance_Item__c>();
+        List<Equipment_Maintenance_Item__c> insertItemList = new List<Equipment_Maintenance_Item__c>();
         // Call helper method to get date of next request
         Map<String, Integer> nextMaintenanceDate = nextDateHelper(caseList); 
         // Call helper method to retrieve items to be cloned for new request
@@ -86,13 +86,13 @@ public with sharing class MaintenanceRequestHelper {
                         newItem.Equipment__c = emi.Equipment__c;
                         newItem.Quantity__c = emi.Quantity__c;
 
-                        insertList.add(newItem);
+                        insertItemList.add(newItem);
                     }
                 }
             }
 
-            if (insertList.size() > 0) {
-                insert insertList;
+            if (insertItemList.size() > 0) {
+                insert insertItemList;
             }
         }
     } 
