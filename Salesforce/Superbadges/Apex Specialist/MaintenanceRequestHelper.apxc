@@ -119,7 +119,7 @@ public with sharing class MaintenanceRequestHelper {
     }
 
     /*
-        Method returns a map of all maintenance items associated with Maintenance Requests that have been closed
+        Method returns a map of all maintenance items associated with maintenance requests that have been closed
     */
     public static Map<String, List<Equipment_Maintenance_Item__c>> maintenanceItemHelper(List<Case> caseList) {
         Map<String,List<Equipment_Maintenance_Item__c>> maintenanceItemMap = new Map<String,List<Equipment_Maintenance_Item__c>>();
