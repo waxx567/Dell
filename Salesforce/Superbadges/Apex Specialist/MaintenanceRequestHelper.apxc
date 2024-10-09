@@ -109,7 +109,6 @@ public with sharing class MaintenanceRequestHelper {
             AND Equipment__r.Maintenance_Cycle__c != null 
             GROUP BY Maintenance_Request__c
         ]; 
-        // System.debug('resultsList: ' + resultsList);
 
         // Populate the dueDate map with the update date and the number of days to add
         for (AggregateResult ar : resultsList) {
