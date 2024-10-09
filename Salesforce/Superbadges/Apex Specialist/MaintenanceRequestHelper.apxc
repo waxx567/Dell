@@ -15,8 +15,7 @@ public with sharing class MaintenanceRequestHelper {
     public static void afterUpdateHandler(List<Case> newCases) {
         List<Case> closedCases = new List<Case>();
 
-        // If cases in the list have been closed, and are of Type 'Repair' or 'Routine Maintenance'
-        // Add them to the closedCases case list
+        // If cases in the list have been closed, and are of Type 'Repair' or 'Routine Maintenance', add them to the closedCases case list
         for (Case nc : newCases) {
             if (nc.Status == CLOSED && (nc.Type == REPAIR || nc.Type == ROUTINE_MAINTENANCE)) {
                 closedCases.add(nc);
