@@ -30,7 +30,7 @@ public with sharing class MaintenanceRequestHelper {
     
 
     /*
-        Method to create a new Routine Maintenance Request when any Maintenance Request is closed
+        Method creates a new Routine Maintenance Request when any Maintenance Request is closed
     */
     public static void updateWorkOrders(List<Case> caseList) {
         List<Case> newCaseList = new List<Case>();
