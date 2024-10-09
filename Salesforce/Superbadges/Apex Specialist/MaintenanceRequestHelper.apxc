@@ -53,7 +53,7 @@ public with sharing class MaintenanceRequestHelper {
             newCase.Type = ROUTINE_MAINTENANCE;
             newCase.Subject = ROUTINE_MAINTENANCE;
 
-            // Assign new maintenance request date
+            // Assign the new maintenance request date
             newCase.Date_Due__c = Date.today();
             // If the case eists, add the number of days to today to get the next due date
             if (nextMaintenanceDate.get(c.Id) != null) {
