@@ -22,7 +22,7 @@ public with sharing class MaintenanceRequestHelper {
             }
         }
 
-        // Call the method that updates work orders on the list of closed cases if it is not empty
+        // Call the method that updates work orders on the list of closed cases if the list is not empty
         if (closedCases.size() > 0) {
             updateWorkOrders(closedCases);
         }
