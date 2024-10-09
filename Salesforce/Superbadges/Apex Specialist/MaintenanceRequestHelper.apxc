@@ -85,7 +85,7 @@ public with sharing class MaintenanceRequestHelper {
                     }
                 }
             }
-
+            // Insert the item list into the database if it is not empty
             if (insertItemList.size() > 0) {
                 insert insertItemList;
             }
