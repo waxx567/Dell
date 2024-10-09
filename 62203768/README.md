@@ -11,3 +11,5 @@ Wayne McRae - Johannesburg, South Africa
 ## Folders
 
 cs50ai: Harvard CS50's Introduction to Artificial Intelligence with Python
+cs50p: Harvard CS50's Introduction to Programming with Python
+cs50x: Harvard CS50's Introduction to Computer Science
