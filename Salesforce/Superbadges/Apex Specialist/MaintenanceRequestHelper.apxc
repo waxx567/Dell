@@ -93,7 +93,7 @@ public with sharing class MaintenanceRequestHelper {
     } 
 
     /*
-        Method calculates the due date for the next Maintenance Request
+        Method calculates the due date for the next maintenance request
         Populate a map of aggregate results and days to add, and return that map
     */
     public static Map<String, Integer> nextDateHelper(List<Case> caseList) {
