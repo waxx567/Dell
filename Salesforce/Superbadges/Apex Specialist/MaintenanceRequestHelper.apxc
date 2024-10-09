@@ -72,8 +72,8 @@ public with sharing class MaintenanceRequestHelper {
                 // Create a list of maintenance items that have that ID
                 List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(itemId);
 
+                // Add information to items and items to the insert list if the item list is populated
                 if (itemList.size() > 0) {
-                    // Add information to items and items to insert list if item list is populated
                     for (Equipment_Maintenance_Item__c emi : itemList) {
                         Equipment_Maintenance_Item__c newItem = new Equipment_Maintenance_Item__c();
 
