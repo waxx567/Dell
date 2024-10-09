@@ -55,7 +55,7 @@ public with sharing class MaintenanceRequestHelper {
 
             // Assign the new maintenance request date
             newCase.Date_Due__c = Date.today();
-            // If the case eists, add the number of days to today to get the next due date
+            // If the case exists, add the number of days to today to get the next due date
             if (nextMaintenanceDate.get(c.Id) != null) {
                 newCase.Date_Due__c = newCase.Date_Due__c.addDays(nextMaintenanceDate.get(c.Id));
             }
