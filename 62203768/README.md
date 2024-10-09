@@ -8,6 +8,6 @@ Wayne McRae - Johannesburg, South Africa
 
 62203768 Codespace on GitHub is my workspace for the courses I am taking or have completed, and other training I have undertaken.
 
-## Explanation
+## Folders
 
-I had been studying web development and adjacent technologies for some years.
+cs50ai: Harvard CS50's Introduction to Artificial Intelligence with Python
