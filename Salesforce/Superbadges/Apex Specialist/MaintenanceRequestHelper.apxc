@@ -22,7 +22,7 @@ public with sharing class MaintenanceRequestHelper {
             }
         }
 
-        // Call the updateWorkOrders method on the closedCases list if populated
+        // Call the method that updates work orders on the closedCases list if populated
         if (closedCases.size() > 0) {
             updateWorkOrders(closedCases);
         }
