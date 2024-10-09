@@ -45,7 +45,7 @@ public with sharing class MaintenanceRequestHelper {
 
             newCase.Date_Reported__c = Date.today();
 
-            // Convert current case ID to a string and assign to the new case
+            // Convert the current case ID to a string and assign it to the new case
             newCase.Cloned_Case_Id__c = String.valueOf(c.Id);
 
             // Clone values to the new case
