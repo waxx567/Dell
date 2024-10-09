@@ -67,7 +67,7 @@ public with sharing class MaintenanceRequestHelper {
             insert newCaseList;
 
             for (Case nc : newCaseList) {
-                // Convert current case ID string to type Id
+                // Convert the current case ID string to a value of type Id
                 Id itemId = Id.valueOf(nc.Cloned_Case_Id__c);
                 // Create a list of maintenance items that have that ID
                 List<Equipment_Maintenance_Item__c> itemList = maintenanceItems.get(itemId);
