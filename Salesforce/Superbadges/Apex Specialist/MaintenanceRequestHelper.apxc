@@ -8,7 +8,7 @@ public with sharing class MaintenanceRequestHelper {
 
 
     /*
-        Method handles any instance where an update occurs on a Maintenance Request
+        Method handles any instance where an update occurs on a maintenance request
         Takes a list of cases as input which we are calling newCases
         Calls a helper method on the list of closed cases it creates
     */
