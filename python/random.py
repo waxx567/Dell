@@ -1,10 +1,10 @@
-from random import random, randint, randrange, choice, choices, sample, seed
+from random import shuffle, random, randint, randrange, choice, choices, sample, seed
 
 """shuffle"""
 # Create a list of strings called people
 people: list[str] = ["Bob", "Tom", "James", "Sandra"]
 # Call the random shuffle function on the people list
-random.shuffle(people)
+shuffle(people)
 print(people)
 
 """random"""
