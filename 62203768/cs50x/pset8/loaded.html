@@ -1,0 +1,33 @@
+<!--
+  SAME AS SEPARATE.HTML BUT WITH JS ABOVE
+  CODE ADDED TO DEFER THE JS UNTIL THE DOM CONTENT IS LOADED
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('form').addEventListener('submit', function(event) {
+                let name = document.querySelector('#name').value;
+                alert('hello, ' + name);
+                event.preventDefault();
+            });
+        });
+
+
+
+    </script>
+    <title>
+        loaded
+    </title>
+  </head>
+  <body>
+    <form>
+        <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+        <button type="submit">Greet</button>
+    </form>
+  </body>
+</html>
