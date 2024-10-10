@@ -1,0 +1,2 @@
+prompt user for a number between 1 and 8
+prompt again if wrong input
