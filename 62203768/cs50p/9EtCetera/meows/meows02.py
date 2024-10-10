@@ -1,0 +1,16 @@
+# Class constants
+class Cat:
+    MEOWS = 3
+
+    def meow(self):
+        for _ in range(Cat.MEOWS):
+            print("meow")
+
+
+cat = Cat()
+cat.meow()
+
+# python meows02.py
+# meow
+# meow
+# meow
