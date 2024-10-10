@@ -1,0 +1,28 @@
+<!--
+  INTRODUCES JAVASCRIPT
+  HERE IT IS MIXED IN WITH HTML - NOT THE WAY TO DO IT BUT SHOWS WHAT IS HAPPENING
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script>
+
+      function greet()
+      {
+        alert('hello, ');
+      }
+
+    </script>
+    <title>
+        greet
+    </title>
+  </head>
+  <body>
+    <form onsubmit="greet(); return false;">
+        <input autocomplete="off" autofocus placeholder="Name" type="text">
+        <button type="submit">Greet</button>
+    </form>
+  </body>
+</html>
