@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let correct = document.querySelector('#correct');
+                let incorrects = document.querySelectorAll('.incorrects');
+                let outcome = document.querySelector('#outcome');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    outcome.innerHTML = 'Correct!';
+                })
+                for (let i = 0; i < incorrects.length; i++)
+                {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        outcome.innerHTML = 'Incorrect!';
+                    });
+                }
+                document.querySelector('#answer-button').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    let answer = document.querySelector('#answer');
+                    if (input.value == 'Honey')
+                    {
+                        input.style.backgroundColor = 'green';
+                        answer.innerHTML = 'Correct!';
+                    }
+                    else if (input.value == 'honey')
+                    {
+                        input.style.backgroundColor = 'green';
+                        answer.innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'red';
+                        answer.innerHTML = 'Incorrect!';
+                    }
+                })
+            });
+        </script>
+        
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What was the first cash crop in America?</h3>
+                <form>
+                    <button class="incorrects">Beets</button>
+                    <button id="correct">Tobacco</button>
+                    <button class="incorrects">Corn</button>
+                    <button class="incorrects">Sugar Cane</button>
+                    <button class="incorrects">Grapes</button>
+                    <button class="incorrects">Cotton</button>
+                    <p id="outcome"></p>
+                </form>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which is the only food that cannot go bad?</h3>
+                <form>
+                    <input autocomplete="off" autofocus id="input" placeholder="Type your answer here" type="text">
+                    <button id="answer-button" type="submit">Check answer</button>
+                    <p id="answer"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+
+    What was the first cash crop in America?
+
+
+-->
