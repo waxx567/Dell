@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <header className='fixed top-0 left-0 right-0 z-50 bg-black/90'>
