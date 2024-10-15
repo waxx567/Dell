@@ -102,4 +102,4 @@ Tailwind CSS is an open-source CSS framework. The main feature of this library i
 
 Adrian Hajdin - JavaScript Mastery
 [Video](https://www.youtube.com/watch?v=kt0FrkQgw8w&list=PLs4GO2nEDaoc_OBIdmCcVJSV_rn0FiARD&index=1&t=2460s)
-`50:20` npm create vite@latest
+`1:12:02` npm run dev
