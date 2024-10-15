@@ -1,4 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
+
+const navItems = () => {
+    return (
+        <div></div>
+    )
+}
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +23,9 @@ const Navbar = () => {
                     <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt='toggle' className='w-6 h-6' />
                 </button>
 
-                <nav className='sm:flex hidden'></nav>
+                <nav className='sm:flex hidden'>
+                    <navItems />
+                </nav>
             </div>
         </div>
     </header>
