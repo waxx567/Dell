@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { navLinks } from '../constants';
+import { navLinks } from '../constants/index.js';
 
-const navItems = () => {
+const NavItems = () => {
     return (
         <ul className='nav-ul'>
             {navLinks.map(({ id, href, name }) => (
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </button>
 
                 <nav className='sm:flex hidden'>
-                    <navItems />
+                    <NavItems />
                 </nav>
             </div>
         </div>
