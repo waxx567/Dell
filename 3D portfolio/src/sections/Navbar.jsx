@@ -2,7 +2,15 @@ import { useState } from 'react';
 
 const navItems = () => {
     return (
-        <div></div>
+        <ul className='nav-ul'>
+            <li className='nav-li'>
+                {['Home', 'About', 'Projects', 'Contact'].map((item, index) => (
+                    <li key={index} className='nav-li'>
+                        <a href='/' className='nav-li_a'>{item}</a>
+                    </li>
+                ))}
+            </li>
+        </ul>
     )
 }
 
