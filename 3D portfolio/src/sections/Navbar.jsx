@@ -1,9 +1,14 @@
 import { useState } from 'react';
+import { navLinks } from '../constants';
 
 const navItems = () => {
     return (
         <ul className='nav-ul'>
-            {}
+            {navLinks.map(({ id, href, name }) => (
+                <li key={id} className='nav-li'>
+
+                </li>
+            ))}
         </ul>
     )
 }
