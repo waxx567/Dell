@@ -1,4 +1,4 @@
-import React from 'react'
+import { Spotlight } from "./ui/Spotlight"
 
 const Hero = () => {
   return (
