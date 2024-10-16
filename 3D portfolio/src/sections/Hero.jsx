@@ -10,7 +10,7 @@ import ReactLogo from '../components/ReactLogo.jsx';
 import Button from '../components/Button.jsx';
 import Target from '../components/Target.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
-// import HeroCamera from '../components/HeroCamera.jsx';
+import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
 
