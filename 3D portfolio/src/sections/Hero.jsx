@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
 
-// import Cube from '../components/Cube.jsx';
+import Cube from '../components/Cube.jsx';
 // import Rings from '../components/Rings.jsx';
 // import ReactLogo from '../components/ReactLogo.jsx';
 // import Button from '../components/Button.jsx';
