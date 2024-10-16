@@ -37,6 +37,11 @@ const Navbar = () => {
                 </nav>
             </div>
         </div>
+
+        {/* Mobile menu */}
+        <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+
+        </div>
     </header>
   )
 }
