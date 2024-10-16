@@ -1,3 +1,5 @@
+import {Canvas} from "@react-three/fiber";
+
 const Hero = () => {
   return (
     <section className="min-h-screen w-full flex flex-col relative">
@@ -6,7 +8,9 @@ const Hero = () => {
             <p className="hero_tag text-gray_gradient">Building Products & Brands</p>
         </div>
 
-        <div className="w-full h-full absolute inset-0"></div>
+        <div className="w-full h-full absolute inset-0">
+            <Canvas></Canvas>
+        </div>
     </section>
   )
 }
