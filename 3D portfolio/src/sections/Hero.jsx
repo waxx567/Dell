@@ -1,4 +1,5 @@
 import {Canvas} from "@react-three/fiber";
+import { PerspectiveCamera } from "@react-three/drei";
 
 const Hero = () => {
   return (
@@ -9,7 +10,9 @@ const Hero = () => {
         </div>
 
         <div className="w-full h-full absolute inset-0">
-            <Canvas className="w-full h-full"></Canvas>
+            <Canvas className="w-full h-full">
+                <PerspectiveCamera />
+            </Canvas>
         </div>
     </section>
   )
