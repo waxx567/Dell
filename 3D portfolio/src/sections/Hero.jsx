@@ -17,7 +17,7 @@ const Hero = () => {
                 <Suspense fallback={<CanvasLoader />}>
                 <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
 
-                <HackerRoom />
+                <HackerRoom scale={0.05} position={[0, 0, 0]} rotation={[0, -Math.PI / 2, 0]} />
                 </Suspense>
             </Canvas>
         </div>
