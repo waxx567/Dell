@@ -2,9 +2,9 @@ import React from 'react'
 
 const CanvasLoader = () => {
   return (
-    <div>
+    <Html>
       
-    </div>
+    </Html>
   )
 }
 
