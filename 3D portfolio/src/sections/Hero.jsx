@@ -16,9 +16,9 @@ const Hero = () => {
             <Canvas className="w-full h-full">
                 <Suspense fallback={<CanvasLoader />}>
 
-                <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+                    <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
-                <HackerRoom />
+                    <HackerRoom />
                 </Suspense>
             </Canvas>
         </div>
