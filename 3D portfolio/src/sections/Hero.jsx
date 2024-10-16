@@ -1,7 +1,8 @@
-import {Canvas} from "@react-three/fiber";
-import { PerspectiveCamera } from "@react-three/drei";
-import { HackerRoom } from "../components/HackerRoom.jsx";
 import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { PerspectiveCamera } from "@react-three/drei";
+import CanvasLoader from "../components/Loading.jsx";
+import { HackerRoom } from "../components/HackerRoom.jsx";
 
 const Hero = () => {
   return (
@@ -13,10 +14,11 @@ const Hero = () => {
 
         <div className="w-full h-full absolute inset-0">
             <Canvas className="w-full h-full">
-                <Suspense fallback={null}></Suspense>
+                <Suspense fallback={<CanvasLoader />}>
                 <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
 
                 <HackerRoom />
+                </Suspense>
             </Canvas>
         </div>
     </section>
