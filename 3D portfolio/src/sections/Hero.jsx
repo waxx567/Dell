@@ -7,7 +7,7 @@ import { PerspectiveCamera } from '@react-three/drei';
 import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
-// import Button from '../components/Button.jsx';
+import Button from '../components/Button.jsx';
 // import Target from '../components/Target.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 // import HeroCamera from '../components/HeroCamera.jsx';
