@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen border-2 border-blue-500">Hero</section>
+    <section className="min-h-screen w-full flex flex-col relative">Hero</section>
   )
 }
 
