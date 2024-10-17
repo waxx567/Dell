@@ -7,13 +7,13 @@ const Grid = () => {
       <BentoGrid className="w-full py-20">
         {gridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg }) => (
           <BentoGridItem
-            id={item.id}
-            key={i}
-            title={item.title}
-            description={item.description}
+            id={id}
+            key={id}
+            title={title}
+            description={description}
             // remove icon prop
             // remove original classname condition
-            className={item.className}
+            className={className}
             // img={item.img}
             // imgClassName={item.imgClassName}
             // titleClassName={item.titleClassName}
