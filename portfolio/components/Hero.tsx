@@ -28,9 +28,10 @@ const Hero = () => {
             Hi, I&apos;m Wayne, a passionate web developer from South Africa.
           </p>
 
-          <a href="/about">
+          <a href="#about">
             <MagicButton 
               title="Show my work"
+              icon={}
             />
           </a>
         </div>
