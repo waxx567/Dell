@@ -61,6 +61,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        <div></div>
       </div>
 
       <div className="group-hover/bento:translate-x-2 transition duration-200">
