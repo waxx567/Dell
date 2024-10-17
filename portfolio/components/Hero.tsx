@@ -21,7 +21,7 @@ const Hero = () => {
             Dynamic Web Magic with Next.js 
           </h2>
 
-          <TextGenerateEffect  className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepts into Seamless Experiences"/>
+          <TextGenerateEffect  className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Seamlessly Transforming Concepts into Immersive Experiences"/>
         </div>
       </div>
     </div>
