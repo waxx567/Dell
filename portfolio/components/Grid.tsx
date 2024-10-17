@@ -14,10 +14,10 @@ const Grid = () => {
             // remove icon prop
             // remove original classname condition
             className={className}
-            // img={item.img}
-            // imgClassName={item.imgClassName}
-            // titleClassName={item.titleClassName}
-            // spareImg={item.spareImg}
+            img={img}
+            imgClassName={imgClassName}
+            titleClassName={titleClassName}
+            spareImg={spareImg}
           />
         ))}
       </BentoGrid>
