@@ -22,6 +22,10 @@ const Hero = () => {
           </h2>
 
           <TextGenerateEffect  className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Seamlessly Transforming Concepts into Immersive Experiences"/>
+
+          <p className="text-center ">
+            Hi, I&apos;m Wayne
+          </p>
         </div>
       </div>
     </div>
