@@ -8,7 +8,13 @@ const RecentProjects = () => {
         <span className='text-purple'>recent projects</span>
       </h1>
       {/* Cards */}
-      <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'></div>
+      <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'>
+        {projects.map((project) => (
+          <div>
+            {project.title}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
