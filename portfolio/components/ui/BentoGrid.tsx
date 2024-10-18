@@ -90,7 +90,6 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
-        </div>
 
         {id === 2 && <GridGlobe />}
 
@@ -106,6 +105,7 @@ export const BentoGridItem = ({
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
