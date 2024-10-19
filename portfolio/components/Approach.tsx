@@ -93,25 +93,16 @@ const Card = ({
   );
 };
 
-const AceternityIcon = () => {
+const AceternityIcon = ({ order }: {order: string}) => {
   return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-        style={{ mixBlendMode: "darken" }}
-      />
-    </svg>
+    <div>
+        <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                {order}
+            </span>
+        </button>
+    </div>
   );
 };
 
