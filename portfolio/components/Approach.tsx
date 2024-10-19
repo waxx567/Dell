@@ -62,10 +62,12 @@ const Card = ({
   title,
   icon,
   children,
+  description
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
+  description: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -97,6 +99,9 @@ const Card = ({
         </div>
         <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
+        </h2>
+        <h2 className="text-sm dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          {description}
         </h2>
       </div>
     </div>
