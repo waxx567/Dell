@@ -2,8 +2,13 @@ import React from 'react'
 
 const Clients = () => {
   return (
-    <div>
-      Clients
+    <div className='py-20' id="projects">
+      <h1 className='heading'>
+        Kind words from
+        <span className='text-purple'> satisfied clients</span>
+      </h1>
+      {/* Cards */}
+      <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'></div>
     </div>
   )
 }
