@@ -41,6 +41,10 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
+
+                <div>
+                  <p>View Live Site</p>
+                </div>
               </div>
             </PinContainer>
           </div>
