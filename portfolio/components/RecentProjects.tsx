@@ -27,6 +27,10 @@ const RecentProjects = () => {
               <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                 {title}
               </h1>
+
+              <p>
+                {des}
+              </p>
             </PinContainer>
           </div>
         ))}
