@@ -26,6 +26,11 @@ const Clients = () => {
                 alt={name}
                 className='md:w-10 w-5'
               />
+              <img 
+                src={nameImg}
+                alt={name}
+                className='md:w-10 w-5'
+              />
             </div>
           ))}
         </div>
