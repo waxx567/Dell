@@ -7,8 +7,8 @@ const Experience = () => {
         My
         <span className='text-purple'> work experience</span>
       </h1>
-      {/* Cards */}
-      <div className='flex flex-col items-center max-lg:mt-10'>
+      
+      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1'>
 
       </div>
     </div>
