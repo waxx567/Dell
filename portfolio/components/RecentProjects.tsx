@@ -1,3 +1,4 @@
+import { projects } from '@/data'
 import React from 'react'
 
 const RecentProjects = () => {
@@ -8,7 +9,13 @@ const RecentProjects = () => {
         <span className='text-purple'>recent projects</span>
       </h1>
       {/* Cards */}
-      <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'></div>
+      <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'>
+        {projects.map(({ id, title, des, img, iconLists, link }) => (
+          <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[90vw]'>
+            {title}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
