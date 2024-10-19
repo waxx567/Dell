@@ -10,7 +10,7 @@ const Approach = () => {
         <h1 className="heading">
             My <span className="text-purple">approach</span>
         </h1>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
+      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
