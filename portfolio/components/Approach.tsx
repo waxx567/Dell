@@ -38,7 +38,7 @@ const Approach = () => {
           />
         </Card>
       </div>
-    </>
+    </section>
   );
 }
 
