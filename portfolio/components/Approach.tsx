@@ -21,7 +21,7 @@ const Approach = () => {
         </Card>
         <Card 
           title="Nisha is Munni" 
-          icon={<AceternityIcon />}>
+          icon={<AceternityIcon order="Phase 2" />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -36,7 +36,7 @@ const Approach = () => {
         </Card>
         <Card 
           title="Munni is Aditi" 
-          icon={<AceternityIcon />}>
+          icon={<AceternityIcon order="Phase 3" />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
