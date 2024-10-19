@@ -35,7 +35,7 @@ const RecentProjects = () => {
               <div className='flex items-center justify-between mt-7 mb-3'>
                 <div className='flex items-center'>
                   {iconLists.map((icon) => (
-                    <div key={icon} className='border border-white/[0.2]'>
+                    <div key={icon} className='border border-white/[0.2] rounded-full'>
                       <img src={icon} alt={icon} className='p-2' />
                     </div>
                   ))}
