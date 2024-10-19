@@ -27,6 +27,10 @@ const Footer = () => {
           />
         </a>
       </div>
+
+      <div>
+        <p>Copyright &copy; 2024</p>
+      </div>
     </footer>
   )
 }
