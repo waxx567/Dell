@@ -6,7 +6,10 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <>
+    <section className="w-full py-20">
+        <h1 className="heading">
+            My <span className="text-purple">approach</span>
+        </h1>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
