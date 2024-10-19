@@ -18,7 +18,7 @@ const Clients = () => {
           speed='slow'
         />
 
-        <div>
+        <div className='flex'>
           {companies.map(({id, img, name, nameImg}) => (
             <div key={id} className='flex md:max-w-60 max-w-32 gap-2'>
               <img 
