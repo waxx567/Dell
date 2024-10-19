@@ -8,7 +8,7 @@ const Clients = () => {
         <span className='text-purple'> satisfied clients</span>
       </h1>
       {/* Cards */}
-      <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'></div>
+      <div className='flex flex-col items-center'></div>
     </div>
   )
 }
