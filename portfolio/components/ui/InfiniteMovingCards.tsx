@@ -103,7 +103,7 @@ export const InfiniteMovingCards = ({
               <span className=" relative z-20 text-xs md:text-lg leading-[1.6] text-white font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="relative z-20 mt-4 lg:mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <div className="me-3">
                     <img src="/profile.svg" alt="profile" />
