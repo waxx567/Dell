@@ -13,7 +13,7 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card 
           title="Planning & Strategy" 
-          icon={<AceternityIcon />}>
+          icon={<AceternityIcon order="Phase 1" />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
