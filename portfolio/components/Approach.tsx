@@ -12,7 +12,7 @@ const Approach = () => {
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card 
-          title="Sheetal is Nisha" 
+          title="Planning & Strategy" 
           icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
