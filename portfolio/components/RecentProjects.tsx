@@ -1,3 +1,5 @@
+import { FaLocationArrow } from "react-icons/fa6";
+
 import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
@@ -42,8 +44,9 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div>
+                <div className="flex justify-center items-center">
                   <p>View Live Site</p>
+                  <FaLocationArrow className='ms-3' color='#CBACF9' />
                 </div>
               </div>
             </PinContainer>
