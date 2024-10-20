@@ -75,7 +75,7 @@ export const projects = [
     title: "CS50X 2023, CS50P 2023, CS50AI 2024",
     des: "CS50 is a computer science course taught at Harvard University, Yale University and Dartmouth College.",
     img: "/harvard.png",
-    iconLists: ["/harvard.svg", "/bootstrap.svg", "/php.svg", "/flask.svg", "/sqlite.svg", "/zoom.svg"],
+    iconLists: ["/harvard.svg", "/bootstrap.svg", "/php.svg", "/sqlite.svg", "/zoom.svg"],
     link: "/ui.earth.com",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     title: "Salesforce badges, trails, and rank attained",
     des: "Salesforce is the world's #1 CRM platform that connects all your data, teams, and AI on one integrated system.",
     img: "/salesforce.jpg",
-    iconLists: ["/salesforce.svg", "/slack.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/salesforce.svg", "/slack.svg"],
     link: "/ui.aiimg.com",
   },
   {
