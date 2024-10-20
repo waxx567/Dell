@@ -143,7 +143,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on Salesforce servers in conjunction with calls to the API. I have completed all the Apex practice problems I could find - see my solutions at https://github.com/waxx567.",
+      "Salesforce is cloud-based Customer Relationship Management software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on Salesforce servers in conjunction with calls to the API. I have completed all the Apex practice problems I could find - see my solutions at https://github.com/waxx567.",
     name: "Salesforce 2024",
     title: "Trailhead",
   },
