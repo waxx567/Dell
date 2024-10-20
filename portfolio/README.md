@@ -31,16 +31,34 @@ and many more, including code architecture and reusability
 
 ## 🤸 Quick Start
 
+Follow these steps to set up the project locally on your machine.
 
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+Git
+Node.js
+npm (Node Package Manager)
+
+cd portfolio
+
+### Installation
 
 npx create-next-app@latest
+
+Install the project dependencies using npm:
+
+npm install
+
+### Running the Project
+
 npm run dev
-TypeScript
-Next.js
-Three.js
-TailwindCSS
-AceternityUI
-Sentry
+Open http://localhost:3000 in your browser to view the project.
+
+- TypeScript
+- AceternityUI
+- Sentry
 
 image credits:
 projects.jpg: Photo by Markus Spiske: https://www.pexels.com/photo/close-up-photo-of-codes-1089440/
