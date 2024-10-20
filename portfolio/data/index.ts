@@ -97,7 +97,7 @@ export const projects = [
   {
     id: 4,
     title: "My portfolio website",
-    des: "Demonstrating my skills as a developer with 3D elements and a smooth UI experience. Optimized and deployed.",
+    des: "Demonstrating my skills as a developer with 3D elements and a smooth UI experience. Optimized and deployed efficiently.",
     img: "/portfolio.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg", "/host.svg"],
     link: "#",
@@ -107,9 +107,9 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Wayne was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wayne's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wayne is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "CS50X teaches students to solve problems, both with and without code, emphasizing correctness, design, and style. Topics generally include computational thinking, abstraction, algorithms, data structures, and computer science. I learned to program in C and Python, design, query, and process SQL databases, and code in HTML, CSS, and JavaScript. I also gained an understanding of computer hardware, industry best practices, and memory allocation.",
+    name: "CS50X Certificate 2023",
+    title: "Harvard University",
   },
   {
     quote:
