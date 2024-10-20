@@ -170,15 +170,15 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    // name: "cloudinary",
+    // img: "/cloud.svg",
+    // nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    // name: "appwrite",
+    // img: "/app.svg",
+    // nameImg: "/appName.svg",
   },
   {
     id: 3,
@@ -188,15 +188,15 @@ export const companies = [
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    // name: "stream",
+    // img: "/s.svg",
+    // nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    // name: "docker.",
+    // img: "/dock.svg",
+    // nameImg: "/dockerName.svg",
   },
 ];
 
