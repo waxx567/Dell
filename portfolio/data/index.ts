@@ -98,7 +98,7 @@ export const projects = [
     id: 4,
     title: "My portfolio website",
     des: "Created using TypeScript, NextJS, and ThreeJS, with Aceternity effects and Sentry security.",
-    img: "/p4.svg",
+    img: "/portfolio.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg", "/host.svg"],
     link: "/ui.apple.com",
   },
