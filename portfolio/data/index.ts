@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "Python, HTML, CSS, and JavaScript projects",
-    des: "Putting what I learned into practice with eercises and projects that interest me.",
+    des: "Putting what I learned into practice with exercises, apps, and projects that interest me.",
     img: "/projects.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
