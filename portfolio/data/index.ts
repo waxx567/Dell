@@ -113,15 +113,15 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Wayne was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wayne's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wayne is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "CS50P taught me how to read and write Python code, including testing and debugging. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files.",
+    name: "CS50P Certificate 2023",
+    title: "Harvard University",
   },
   {
     quote:
-      "Collaborating with Wayne was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wayne's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wayne is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "CS50AI explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own.",
+    name: "CS50AI Certificate 2023",
+    title: "Harvard University",
   },
   {
     quote:
