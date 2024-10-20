@@ -113,32 +113,14 @@ export const testimonials = [
   },
   {
     quote:
-      "CS50P taught me how to read and write Python code, including testing and debugging. Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files. Hands-on opportunities for lots of practice, and exercises inspired by real-world programming problems enhanced my understanding and appreciation of the Python language. My code for the problem sets is at https://github.com/waxx567.",
-    name: "CS50P Certificate 2023",
-    title: "Harvard University",
-  },
-  {
-    quote:
-      "CS50AI explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own. My code for the problem sets is at https://github.com/waxx567.",
-    name: "CS50AI Certificate 2024",
-    title: "Harvard University",
-  },
-  {
-    quote:
-      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on Salesforce servers in conjunction with calls to the API. I have completed all the Apex practice problems I could find - see my solutions at https://github.com/waxx567.",
-    name: "Salesforce 2024",
-    title: "Trailhead",
-  },
-  {
-    quote:
-      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. My React projects can be viewed at https://github.com/waxx567.",
-    name: "React.js 2023 & 2024",
-    title: "Traversy Media & JSMastery",
-  },
-  {
-    quote:
       "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn. My Flask  projects can be seen at https://github.com/waxx567.",
     name: "Flask Web Framework 2023",
+    title: "Harvard University",
+  },
+  {
+    quote:
+      "CS50P taught me how to read and write Python code, including testing and debugging. Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files. Hands-on opportunities for lots of practice, and exercises inspired by real-world programming problems enhanced my understanding and appreciation of the Python language. My code for the problem sets is at https://github.com/waxx567.",
+    name: "CS50P Certificate 2023",
     title: "Harvard University",
   },
   {
@@ -149,9 +131,9 @@ export const testimonials = [
   },
   {
     quote:
-      "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. I created a demo WordPress site , complete with a Paystack payment portal, which can be viewed at https://fivefiftyfive.io.",
-    name: "WordPress 2024",
-    title: "wordpress.org",
+      "CS50AI explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own. My code for the problem sets is at https://github.com/waxx567.",
+    name: "CS50AI Certificate 2024",
+    title: "Harvard University",
   },
   {
     quote:
@@ -161,7 +143,25 @@ export const testimonials = [
   },
   {
     quote:
-      "Frontend Mentor offers a variety of coding challenges for front-end developers of different levels. I improved my front-end skills by building real projects, and solved real-world HTML, CSS and JavaScript challenges whilst working to professional designs. I built projects, learn new skills, and joined the Discord community. This was an invaluable resource for me at a time when I was starting out and unsure of my abilities. Projects can be viewed at https://github.com/waxx567",
+      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on Salesforce servers in conjunction with calls to the API. I have completed all the Apex practice problems I could find - see my solutions at https://github.com/waxx567.",
+    name: "Salesforce 2024",
+    title: "Trailhead",
+  },
+  {
+    quote:
+      "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. I created a demo WordPress site , complete with a Paystack payment portal, which can be viewed at https://fivefiftyfive.io.",
+    name: "WordPress 2024",
+    title: "wordpress.org",
+  },
+  {
+    quote:
+      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. My React projects can be viewed at https://github.com/waxx567.",
+    name: "React.js 2023 & 2024",
+    title: "Traversy Media & JSMastery",
+  },
+  {
+    quote:
+      "Frontend Mentor offers a variety of coding challenges for front-end developers of different levels. I improved my front-end skills by building real projects, and solved real-world HTML, CSS and JavaScript challenges whilst working to professional designs. The challenges are the cornerstone of the platform. Everything revolves around them. By building these projects, I gained genuine coding experience in the most realistic way possible outside of professional development work. I built projects, learned new skills, and joined the Discord community. This was an invaluable resource for me at a time when I was starting out and unsure of my abilities. My Frontend Mentor projects can be viewed at https://github.com/waxx567",
     name: "HTML, CSS, JavaScript, Sass 2023 & 2024",
     title: "frontendmentor.io",
   },
