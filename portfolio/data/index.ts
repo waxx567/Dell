@@ -238,7 +238,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/wordpress-white.svg",
+    img: "/twit.svg",
   },
   {
     id: 3,
