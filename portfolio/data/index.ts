@@ -161,7 +161,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Frontend Mentor offers a variety of coding challenges for front-end developers of different levels. I improved my front-end skills by building real projects, and solved real-world HTML, CSS and JavaScript challenges whilst working to professional designs. I built projects, learn new skills, and joined the Discord community. This was an invaluable resource for me at a time when I was just starting out and unsure of my abilities.",
+      "Frontend Mentor offers a variety of coding challenges for front-end developers of different levels. I improved my front-end skills by building real projects, and solved real-world HTML, CSS and JavaScript challenges whilst working to professional designs. I built projects, learn new skills, and joined the Discord community. This was an invaluable resource for me at a time when I was starting out and unsure of my abilities.",
     name: "HTML, CSS, JavaScript, Sass 2023 & 2024",
     title: "frontendmentor.io",
   },
