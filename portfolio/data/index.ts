@@ -173,29 +173,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Corteous, Conscientious, and Dedicated",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Dedicated and Enthusiastic",
+    desc: "Committed to delivering high-quality code with a positive attitude and a passion for problem-solving.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Passionate about Industry Developments",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Passionate and Conscientious",
+    desc: "Driven by a love for coding, I pay attention to detail and strive for excellence in my work.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Eager to Learn and Contribute",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Constantly learning new technologies and eager to apply them in real-world projects to add value.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
     title: "Able to Work Independently",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Capable of managing tasks effectively and delivering solutions while taking initiative and responsibility.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
