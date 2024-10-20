@@ -8,8 +8,8 @@ const RecentProjects = () => {
   return (
     <div className='py-20' id="projects">
       <h1 className='heading'>
-        An overview of my {' '}
-        <span className='text-purple'>education & projects</span>
+        Overview of my {' '}
+        <span className='text-purple'>education and projects</span>
       </h1>
       {/* Cards */}
       <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
