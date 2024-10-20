@@ -127,7 +127,7 @@ export const testimonials = [
     quote:
       "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications soonest.",
     name: "Salesforce 2024",
-    title: "Trailhead Online Training",
+    title: "Trailhead",
   },
   {
     quote:
