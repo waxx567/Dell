@@ -119,7 +119,7 @@ export const testimonials = [
   },
   {
     quote:
-      "CS50AI explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own.",
+      "CS50AI explores the concepts and algorithms of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own.",
     name: "CS50AI Certificate 2023",
     title: "Harvard University",
   },
