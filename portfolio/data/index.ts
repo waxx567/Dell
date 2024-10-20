@@ -151,7 +151,7 @@ export const testimonials = [
     quote:
       "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. WordPress is  the most popular content management system in the world, and was used by 43.1% of the top 10 million websites in 2023.",
     name: "WordPress 2024",
-    title: "I taught myself WordPress",
+    title: "wordpress.org",
   },
   {
     quote:
@@ -163,7 +163,7 @@ export const testimonials = [
     quote:
       "Frontend Mentor offers a variety of coding challenges for front-end developers of different levels. I improved my front-end skills by building real projects, and solved real-world HTML, CSS and JavaScript challenges whilst working to professional designs. I built projects, learn new skills, and joined the Discord community. This was an invaluable resource for me at a time when I was just starting out and unsure of my abilities.",
     name: "Frontend Mentor 2023",
-    title: "Challenges at frontendmentor.io",
+    title: "frontendmentor.io",
   },
 ];
 
