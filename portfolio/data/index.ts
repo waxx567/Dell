@@ -91,7 +91,7 @@ export const projects = [
     title: "Salesforce badges, trails, and rank attained",
     des: "Salesforce is the world's #1 CRM platform that connects all your data, teams, and AI on one integrated system.",
     img: "/salesforce.jpg",
-    iconLists: ["/salesforce.svg", "/slack.svg"],
+    iconLists: ["/salesforce.svg", "/slack.svg", "/trailhead.png", "github-grey.svg"],
     link: "#testimonials",
   },
   {
