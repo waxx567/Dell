@@ -147,6 +147,12 @@ export const testimonials = [
     name: "GitHub 2023",
     title: "Harvard University",
   },
+  {
+    quote:
+      "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. Available as free and open-source software, WordPress is among the most popular content management systems, and was used by 43.1% of the top 10 million websites in 2023.",
+    name: "WordPress 2024",
+    title: "I taught myself WordPress",
+  },
 ];
 
 export const companies = [
