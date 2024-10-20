@@ -100,7 +100,7 @@ export const projects = [
     des: "Demonstrating my skills as a developer in a unique manner that creates a lasting impact. Hosted by Hostinger.",
     img: "/portfolio.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg", "/host.svg"],
-    link: "/ui.apple.com",
+    link: "#",
   },
 ];
 
