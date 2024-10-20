@@ -75,7 +75,7 @@ export const projects = [
     title: "CS50X 2023, CS50P 2023, CS50AI 2024",
     des: "CS50 is a computer science course taught at Harvard University, Yale University and Dartmouth College.",
     img: "/harvard.png",
-    iconLists: ["/harvard.svg", "/bootstrap.svg", "/php.svg", "/sqlite.svg", "/zoom.svg", "/github-grey.svg"],
+    iconLists: ["/harvard.svg", "/zoom.svg", "/bootstrap.svg", "/php.svg", "/sqlite.svg", "/github-grey.svg"],
     link: "/ui.earth.com",
   },
   {
