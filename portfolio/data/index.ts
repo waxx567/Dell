@@ -137,7 +137,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. It also comes with several JavaScript components which do not require other libraries like jQuery. Many projects at https://github.com/waxx567 used Bootstrap.",
+      "Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. It also comes with several JavaScript components which do not require other libraries like jQuery. Many projects of mine at https://github.com/waxx567 utilized Bootstrap.",
     name: "Bootstrap 2023",
     title: "Harvard University",
   },
