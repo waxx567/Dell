@@ -155,7 +155,7 @@ export const testimonials = [
   },
   {
     quote:
-      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. My React projects can be viewed at https://github.com/waxx567.",
+      "React is a front-end JavaScript library for building user interfaces based on components. React adheres to the declarative programming paradigm. Developers design views for each state of an application, and React updates and renders components when data changes. I employ Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and style everything with TailwindCSS. AceternityUI allows developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. My React projects can be viewed at https://github.com/waxx567.",
     name: "React.js 2023 & 2024",
     title: "Traversy Media & JSMastery",
   },
