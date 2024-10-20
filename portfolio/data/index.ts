@@ -99,7 +99,7 @@ export const projects = [
     title: "My portfolio website",
     des: "Demonstrating my skills as a developer with 3D elements and a smooth UI experience. Optimized and deployed efficiently.",
     img: "/portfolio.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg", "/host.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg", "/host.svg"],
     link: "#",
   },
 ];
