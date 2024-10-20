@@ -107,43 +107,43 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "CS50X teaches students to solve problems, both with and without code, emphasizing correctness, design, and style. Topics generally include computational thinking, abstraction, algorithms, data structures, and computer science. I learned to program in C, Python, HTML, CSS, and JavaScript, design, query, and process SQL databases. I also gained an understanding of computer hardware, industry best practices, and memory allocation.",
+      "CS50X teaches students to solve problems, both with and without code, emphasizing correctness, design, and style. Topics generally include computational thinking, abstraction, algorithms, data structures, and computer science. I learned to program in C, Python, HTML, CSS, and JavaScript, design, query, and process SQL databases. I also gained an understanding of computer hardware, industry best practices, and memory allocation. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50X Certificate 2023",
     title: "Harvard University",
   },
   {
     quote:
-      "CS50P taught me how to read and write Python code, including testing and debugging. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files.",
+      "CS50P taught me how to read and write Python code, including testing and debugging. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50P Certificate 2023",
     title: "Harvard University",
   },
   {
     quote:
-      "CS50AI explores the concepts and algorithms of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own.",
+      "CS50AI explores the concepts and algorithms of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50AI Certificate 2024",
     title: "Harvard University",
   },
   {
     quote:
-      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications soonest.",
+      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. I have completed all the Apex practice problems I could find - see the solutions at https://github.com/waxx567.",
     name: "Salesforce 2024",
     title: "Trailhead",
   },
   {
     quote:
-      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements.",
+      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity. A key advantage of React is that it only rerenders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. My React projects can be viewed at https://github.com/waxx567.",
     name: "React.js 2023 & 2024",
     title: "Traversy Media & JSMastery",
   },
   {
     quote:
-      "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn.",
+      "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn. My Flask  projects can be viewed at https://github.com/waxx567.",
     name: "Flask Web Framework 2023",
     title: "Harvard University",
   },
   {
     quote:
-      "GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It is commonly used to host open source software development projects. GitHub is the world's largest source code host. It is commonly used to host open source software development projects.",
+      "GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It is commonly used to host open source software development projects. GitHub is the world's largest source code host. It is commonly used to host open source software development projects. Multiple projects of mine can be viewed at https://github.com/waxx567.",
     name: "GitHub 2023",
     title: "Harvard University",
   },
@@ -155,7 +155,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Bootstrap also comes with several JavaScript components which do not require other libraries like jQuery.",
+      "Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Bootstrap also comes with several JavaScript components which do not require other libraries like jQuery. Many projects at https://github.com/waxx567 used Bootstrap.",
     name: "Bootstrap 2023",
     title: "Harvard University",
   },
