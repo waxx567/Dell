@@ -143,8 +143,8 @@ export const testimonials = [
   },
   {
     quote:
-      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity.",
-    name: "Git & GitHub 2023",
+      "GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It is commonly used to host open source software development projects. As of January 2023, GitHub reported having over 100 million developers and more than 420 million repositories, including at least 28 million public repositories. GitHub is the world's largest source code host.",
+    name: "GitHub 2023",
     title: "Harvard University",
   },
 ];
