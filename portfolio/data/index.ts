@@ -135,6 +135,18 @@ export const testimonials = [
     name: "JS Mastery 2024",
     title: "YouTube Online Courses",
   },
+  {
+    quote:
+      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity.",
+    name: "Flask 2023",
+    title: "Harvard University",
+  },
+  {
+    quote:
+      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity.",
+    name: "Git & GitHub 2023",
+    title: "Harvard University",
+  },
 ];
 
 export const companies = [
