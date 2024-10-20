@@ -138,7 +138,7 @@ export const testimonials = [
   {
     quote:
       "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn.",
-    name: "Flask Web Framework2023",
+    name: "Flask Web Framework 2023",
     title: "Harvard University",
   },
   {
