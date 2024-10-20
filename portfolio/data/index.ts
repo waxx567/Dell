@@ -96,10 +96,10 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "My portfolio website",
+    des: "Created using TypeScript, NextJS, and ThreeJS, with Aceternity effects and Sentry security.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/sentry.svg"],
     link: "/ui.apple.com",
   },
 ];
