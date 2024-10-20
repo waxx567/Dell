@@ -107,19 +107,19 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "CS50X teaches students to solve problems, both with and without code, emphasizing correctness, design, and style. Topics generally include computational thinking, abstraction, algorithms, data structures, and computer science. I learned to program in C, Python, HTML, CSS, and JavaScript, design, query, and process SQL databases. I also gained an understanding of computer hardware, industry best practices, and memory allocation. My code for the problem sets is at https://github.com/waxx567.",
+      "CS50X taught me how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. More than teaching how to program in one language, this course showed me how to program fundamentally and how to teach myself new languages. I learned to program in C and Python, how to design, query, and process SQL databases, and to code in HTML, CSS, and JavaScript, teaching me to create web and mobile apps alike. I also gained an understanding of computer hardware, industry best practices, and memory allocation. The course culminates in a final project, for which I created a Flask application. My code for the problem sets is at https://github.com/waxx567."
     name: "CS50X Certificate 2023",
     title: "Harvard University",
   },
   {
     quote:
-      "CS50P taught me how to read and write Python code, including testing and debugging. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files. My code for the problem sets is at https://github.com/waxx567.",
+      "CS50P taught me how to read and write Python code, including testing and debugging. Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. This course covers functions, arguments, return values, variables and types, conditionals, Boolean expressions, and loops. I learned how to handle exceptions, use third-party libraries, validate and extract data with regular expressions, model real-world entities with classes, objects, methods, and properties, and read and write files. Hands-on opportunities for lots of practice, and exercises inspired by real-world programming problems enhanced my understanding and appreciation of the Python language. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50P Certificate 2023",
     title: "Harvard University",
   },
   {
     quote:
-      "CS50AI explores the concepts and algorithms of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own. My code for the problem sets is at https://github.com/waxx567.",
+      "CS50AI explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50AI Certificate 2024",
     title: "Harvard University",
   },
