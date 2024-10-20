@@ -153,6 +153,12 @@ export const testimonials = [
     name: "WordPress 2024",
     title: "I taught myself WordPress",
   },
+  {
+    quote:
+      "Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking.",
+    name: "Bootstrap 2023",
+    title: "Harvard University",
+  },
 ];
 
 export const companies = [
