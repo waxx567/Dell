@@ -137,8 +137,8 @@ export const testimonials = [
   },
   {
     quote:
-      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity.",
-    name: "Flask 2023",
+      "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Applications that use the Flask framework include Pinterest and LinkedIn. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine.",
+    name: "Flask Web Framework2023",
     title: "Harvard University",
   },
   {
