@@ -80,9 +80,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Python projects and exercises completed",
-    des: "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.",
-    img: "/python.jpg",
+    title: "Python, HTML, CSS, and JavaScript projects",
+    des: "Putting what I learned into practice with eercises and projects that interest me.",
+    img: "/projects.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
