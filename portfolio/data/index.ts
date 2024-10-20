@@ -125,15 +125,15 @@ export const testimonials = [
   },
   {
     quote:
-      "In June 2024, I was introduced to the Salesforce platform, and have since accumulated 82 badges, 55000 points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications soonest.",
+      "Salesforce is cloud-based CRM software (What is CRM?). It makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000 points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications soonest.",
     name: "Salesforce 2024",
     title: "Trailhead Online Training",
   },
   {
     quote:
-      "React is a free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS.",
+      "React is a front-end JavaScript library for building user interfaces based on components. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS. AceternityUI allowed developers to incorporate the most trending components. Sentry is an application monitoring platform that empowers developers to fix application problems without compromising on velocity.",
     name: "JS Mastery 2024",
-    title: "Learned by watching YouTube",
+    title: "YouTube Online Courses",
   },
 ];
 
