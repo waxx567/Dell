@@ -149,7 +149,7 @@ export const testimonials = [
   },
   {
     quote:
-      "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. I created a demo WordPress site , complete with a Paystack payment portal, which can be viewed at https://fivefiftyfive.io.",
+      "WordPress is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems, and online stores. WordPress is written in the PHP language and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as 'Themes'. To function, WordPress has to be installed on a web server, either as part of an Internet hosting service or on a computer running the WordPress software package. I created a demo WordPress site, complete with a Paystack payment portal, which can be viewed at https://fivefiftyfive.io.",
     name: "WordPress 2024",
     title: "wordpress.org",
   },
