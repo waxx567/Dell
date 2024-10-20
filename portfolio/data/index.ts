@@ -125,7 +125,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. I have completed all the Apex practice problems I could find - see the solutions at https://github.com/waxx567.",
+      "Salesforce is cloud-based CRM software, which makes it easier for companies to find more prospects, close more deals, and connect with customers in a whole new way, so they can provide them with amazing service at scale. I have acquired 82 badges, 55000+ points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications in the near future. Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on Salesforce servers in conjunction with calls to the API. I have completed all the Apex practice problems I could find - see my solutions at https://github.com/waxx567.",
     name: "Salesforce 2024",
     title: "Trailhead",
   },
@@ -137,7 +137,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn. My Flask  projects can be viewed at https://github.com/waxx567.",
+      "Flask is a micro web framework written in Python that supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Flask uses Jinja templating, supports unit testing, and is compatible with Google App Engine. Applications that use the Flask framework include Pinterest and LinkedIn. My Flask  projects can be seen at https://github.com/waxx567.",
     name: "Flask Web Framework 2023",
     title: "Harvard University",
   },
