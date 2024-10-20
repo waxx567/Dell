@@ -7,7 +7,7 @@ const Clients = () => {
   return (
     <div className='py-20' id="testimonials">
       <h1 className='heading'>
-        What I&apos;ve learned on my
+        This is my
         <span className='text-purple'> developer journey</span>
       </h1>
       {/* Cards */}
