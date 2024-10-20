@@ -76,7 +76,7 @@ export const projects = [
     des: "CS50 is a computer science course taught at Harvard University, Yale University and Dartmouth College.",
     img: "/harvard.png",
     iconLists: ["/harvard.svg", "/zoom.svg", "/bootstrap.svg", "/php.svg", "/github-grey.svg", "/sqlite.svg"],
-    link: "/ui.earth.com",
+    link: "#testimonials",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "Putting what I learned into practice with exercises, apps, and projects that interest me.",
     img: "/projects.jpg",
     iconLists: ["/python.svg", "/html.svg", "/css.svg", "/javascript.svg", "/sass.svg", "/re.svg", "/tail.svg", "/wordpress.svg"],
-    link: "/ui.yoom.com",
+    link: "#testimonials",
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const projects = [
     des: "Salesforce is the world's #1 CRM platform that connects all your data, teams, and AI on one integrated system.",
     img: "/salesforce.jpg",
     iconLists: ["/salesforce.svg", "/slack.svg"],
-    link: "/ui.aiimg.com",
+    link: "#testimonials",
   },
   {
     id: 4,
