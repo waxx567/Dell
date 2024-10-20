@@ -107,7 +107,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "CS50X taught me how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. More than teaching how to program in one language, this course showed me how to program fundamentally and how to teach myself new languages. I learned to program in C and Python, how to design, query, and process SQL databases, and to code in HTML, CSS, and JavaScript, teaching me to create web and mobile apps alike. I also gained an understanding of computer hardware, industry best practices, and memory allocation. The course culminates in a final project, for which I created a Flask application. My code for the problem sets is at https://github.com/waxx567."
+      "CS50X taught me how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. More than teaching how to program in one language, this course showed me how to program fundamentally and how to teach myself new languages. I learned to program in C and Python, how to design, query, and process SQL databases, and to code in HTML, CSS, and JavaScript, teaching me to create web and mobile apps alike. I also gained an understanding of computer hardware, industry best practices, and memory allocation. The course culminates in a final project, for which I created a Flask application. My code for the problem sets is at https://github.com/waxx567.",
     name: "CS50X Certificate 2023",
     title: "Harvard University",
   },
