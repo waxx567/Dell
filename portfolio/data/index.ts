@@ -120,20 +120,20 @@ export const testimonials = [
   {
     quote:
       "CS50AI explores the concepts and algorithms of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, machine translation, graph search algorithms, classification, optimization, machine learning, large language models. Students emerge with experience in libraries for machine learning as well as knowledge of AI principles to design intelligent systems of their own.",
-    name: "CS50AI Certificate 2023",
+    name: "CS50AI Certificate 2024",
     title: "Harvard University",
   },
   {
     quote:
-      "Collaborating with Wayne was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wayne's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wayne is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "In June 2024, I was introduced to the Salesforce platform, and have since accumulated 82 badges, 55000 points, 12 trails, and attained Expeditioner rank. I'm currently working on the Apex Specialist Superbadge, and plan to take the Platform App Builder & Platform Developer I certifications soonest.",
+    name: "Salesforce 2024",
+    title: "Trailhead Online Training",
   },
   {
     quote:
-      "Collaborating with Wayne was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wayne's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wayne is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "React is a free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc. Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS.",
+    name: "JS Mastery 2024",
+    title: "Learned by watching YouTube",
   },
 ];
 
