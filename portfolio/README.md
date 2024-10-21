@@ -60,10 +60,13 @@ Open http://localhost:3000 in your browser to view the project.
 - AceternityUI
 - Sentry
 
-image credits:
+Image credits:
 projects.jpg: Photo by Markus Spiske: https://www.pexels.com/photo/close-up-photo-of-codes-1089440/
 salesforce.jpg: Photo by Eric Thurber: https://www.pexels.com/photo/time-lapse-photo-of-city-during-night-3688579/
 portfolio.jpg: Photo by Lee Campbell: https://www.pexels.com/photo/imac-aluminum-on-table-115655/
+
+Created with much assistance from:
+[Video](https://www.youtube.com/watch?v=FTH6Dn3AyIQ&list=PLs4GO2nEDaoc_OBIdmCcVJSV_rn0FiARD)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
