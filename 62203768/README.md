@@ -2,7 +2,11 @@
 
 Wayne McRae - Johannesburg, South Africa
 
+Repository:
 [GitHub](https://waxx567-friendly-adventure-r69rp4q94wgh5xxv.github.dev/?autoStart=true&folder=%2Fworkspaces%2F62203768&vscodeChannel=stable)
+
+CS50X final project demo video:
+[Demo](https://www.youtube.com/watch?v=81I-5--D0-I)
 
 ## Description
 
