@@ -1,5 +1,11 @@
-# basic_qrcode.py
+# pip3 install opencv-python qrcode numpy
 
-import segno
-
-segno.make_qr("Hello, World").save("/basic_qrcode.png")
+import qrcode
+# example data
+data = "https://www.thepythoncode.com"
+# output file name
+filename = "site.png"
+# generate qr code
+img = qrcode.make(data)
+# save img to a file
+img.save(filename)
