@@ -214,3 +214,18 @@ int main() {
 
     return 0;
 }
+// Use when there is a clear benefit
+// typedef has largely been replaced with the 'using' keyword
+// as 'using' works better with templates
+//as in
+#include <iostream> 
+#include <vector>
+
+using text_t = std::string;
+
+int main() {
+    
+    text_t firstName = "Wayne";
+
+    return 0;
+}
