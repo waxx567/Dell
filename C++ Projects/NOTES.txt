@@ -180,3 +180,4 @@ int main() {
 
     return 0;
 }
+// use this rather than `using namespace std;` as the risk of conflicts is minimized.
