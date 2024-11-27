@@ -157,3 +157,14 @@ int main() {
 
     return 0;
 }
+
+and 
+
+int main() {
+    
+    using namespace first;
+
+    std::cout << second::x; // outputs 2
+
+    return 0;
+}
