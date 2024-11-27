@@ -6,6 +6,7 @@ int main() {
     //                       mathematical operation
     //                       such as addition, subtraction,
     //                       multiplication, division, etc.
+    int student = 20;
 
     return 0;
 }
