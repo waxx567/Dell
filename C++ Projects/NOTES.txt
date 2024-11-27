@@ -202,3 +202,15 @@ int main() {
 
     return 0;
 }
+
+or something simpler looks like this#include <iostream> 
+#include <vector>
+
+typedef std::string text_t;
+
+int main() {
+    
+    text_t firstName;
+
+    return 0;
+}
