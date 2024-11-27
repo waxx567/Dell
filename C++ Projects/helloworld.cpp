@@ -1,19 +1,11 @@
-#include <iostream> 
-#include <vector>
-
-typedef std::vector<std::pair<std::string, int>> pairlist_t;
+#include <iostream>
 
 int main() {
     
-    // typedef = reserved keyword used to create an additional name
-    //           (alias) for another data type.
-    //           New identifier for an existing data type.
-    //           Helps with readability and reduces typos.
-
-    // so
-    // std::vector<std::pair<std::string, int>> pairlist;
-    // becomes
-    pairlist_t pairlist;
+    // aritmetic operators = return the result of a specific
+    //                       mathematical operation
+    //                       such as addition, subtraction,
+    //                       multiplication, division, etc.
 
     return 0;
 }
