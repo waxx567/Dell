@@ -7,3 +7,14 @@ int main() {
     std::cout << "It's really good!" << std::endl; // endl is an endline character. Does the same as \n but also flushes the output buffer
     return 0;
 }
+
+// Introducing variables
+int main() {
+    
+    int x; // Declaring a variable
+    x = 5; // Assigning a value to a variable
+
+    std::cout << x;
+
+    return 0;
+}
