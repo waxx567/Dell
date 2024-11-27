@@ -222,10 +222,12 @@ int main() {
 #include <vector>
 
 using text_t = std::string;
+using number_t = int;
 
 int main() {
     
     text_t firstName = "Wayne";
+    number_t age = 21;
 
     return 0;
 }
