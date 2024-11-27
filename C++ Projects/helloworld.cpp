@@ -2,11 +2,12 @@
 
 int main() {
     
-    using std::cout;
-    using std::string;
+    // typedef = reserved keyword used tocreate an additional name
+    //           (alias) for another data type.
+    //           New identifier for an existing data type.
+    //           Helps with readability and reduces typos.
 
-    string name = "Wayne";
-    cout << name;
+    
 
     return 0;
 }
