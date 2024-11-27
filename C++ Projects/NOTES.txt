@@ -168,3 +168,15 @@ int main() {
 
     return 0;
 }
+
+// The following saves some repetition
+int main() {
+    
+    using std::cout;
+    using std::string;
+
+    string name = "Wayne";
+    cout << name;
+
+    return 0;
+}
