@@ -52,6 +52,7 @@ int main() {
 
     // string is a collection of characters
     std::string name = "Wayne";
+    std::string address = "666 Wayne Manor"
 
     return 0;
 }
