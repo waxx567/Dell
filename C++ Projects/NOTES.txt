@@ -146,3 +146,14 @@ int main() {
 
     return 0;
 }
+
+and 
+
+int main() {
+    
+    using namespace first;
+
+    std::cout << x; // outputs 1
+
+    return 0;
+}
