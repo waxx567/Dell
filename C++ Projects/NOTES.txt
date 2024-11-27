@@ -210,7 +210,7 @@ typedef std::string text_t;
 
 int main() {
     
-    text_t firstName;
+    text_t firstName = "Wayne";
 
     return 0;
 }
