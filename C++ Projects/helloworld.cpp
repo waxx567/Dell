@@ -6,7 +6,12 @@ int main() {
     // tells the compiler to prevent anything from modifying it
     // (read-only)
 
-    
+    // Create a program to calculate the circumference of a circle
+    double pi = 3.14159;
+    double radius = 10;
+    double circumference = 2 * pi * radius;
+
+    std::cout << circumference << "cm";
 
     return 0;
 }
