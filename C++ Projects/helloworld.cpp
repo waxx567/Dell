@@ -2,5 +2,6 @@
 
 int main() {
     std::cout << "I like cake!";
+    std::cout << "It's really good!";
     return 0;
 }
