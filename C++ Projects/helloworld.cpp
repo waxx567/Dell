@@ -2,11 +2,9 @@
 
 int main() {
     
-    // aritmetic operators = return the result of a specific
-    //                       mathematical operation
-    //                       such as addition, subtraction,
-    //                       multiplication, division, etc.
-    int student = 20;
+    // type conversion = converting one data type to another
+    //                   implicit = automatic
+    //                   explicit = precede value with new data type
 
     return 0;
 }
