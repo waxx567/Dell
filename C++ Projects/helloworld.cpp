@@ -4,7 +4,7 @@
 int main() {
     
     // if statements = do something if a condition is true
-    //                 or do nothing if false
+    //                 or do something else if false
 
     int age;
 
@@ -14,6 +14,9 @@ int main() {
     if (age >= 18) {
         std::cout << "You are an adult." << std::endl;
     }
+    else {
+        std::cout << "You are a child." << std::endl;
+    }   
 
     return 0;
 }
