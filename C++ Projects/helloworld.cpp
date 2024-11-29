@@ -8,8 +8,14 @@ int main() {
 
     double x = (int) 3.14; // x = 3
     int y = int(3.14); // 3.14 -> 3
+
+    // implicit
     char c = 100; // c = d
     int z = 'd'; // z = 100
+
+    // explicit
+    std::cout << (char) 100 << '\n'; // d
+    std::cout << (int) 'd' << '\n'; // 100
 
     return 0;
 }
