@@ -3,15 +3,17 @@
 int main() {
     
     // accepting user input
-    // if you type a string that has spaces, it will stop reading the string at the first space
     std::string name;
     int age;
 
-    std::cout << "Enter your full name: ";
-    std::getline(std::cin, name);
+    // to prevent that problem
 
     std::cout << "How old are you? ";
     std::cin >> age;
+
+    std::cout << "Enter your full name: ";
+    // modify this line (ws for whitespace)
+    std::getline(std::cin >> std::ws, name);
 
     std::cout << "Hello, " << name << "!" << std::endl;
     std::cout << "You are " << age << " years old." << std::endl;
