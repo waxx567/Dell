@@ -465,3 +465,6 @@ int main() {
 
     return 0;
 }
+Many more math functions at:
+www.cplusplus.com/reference/cmath/
+
