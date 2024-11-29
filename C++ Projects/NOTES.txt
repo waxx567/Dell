@@ -277,7 +277,5 @@ int main() {
     // this won't work because the output is a double
     // std::cout << correct / questions * 100 << "%";
 
-
-
     return 0;
 }
