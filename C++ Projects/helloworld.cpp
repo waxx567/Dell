@@ -6,7 +6,7 @@ int main() {
     double y = 4;
     double z;
 
-    z = max(x, y);
+    z = std::max(x, y);
 
     std::cout << z;
 
