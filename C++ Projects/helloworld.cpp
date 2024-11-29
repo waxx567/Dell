@@ -2,21 +2,13 @@
 
 int main() {
     
-    // accepting user input
-    std::string name;
-    int age;
+    double x = 3;
+    double y = 4;
+    double z;
 
-    // to prevent that problem
+    z = max(x, y);
 
-    std::cout << "How old are you? ";
-    std::cin >> age;
-
-    std::cout << "Enter your full name: ";
-    // modify this line (ws for whitespace)
-    std::getline(std::cin >> std::ws, name);
-
-    std::cout << "Hello, " << name << "!" << std::endl;
-    std::cout << "You are " << age << " years old." << std::endl;
+    std::cout << z;
 
     return 0;
 }
