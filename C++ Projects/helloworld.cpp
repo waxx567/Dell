@@ -15,9 +15,7 @@ int main() {
     std::cout << "Enter the length of side b: ";
     std::cin >> b;
 
-    a = pow(a, 2);
-    b = pow(b, 2);
-    c = sqrt(a + b);
+    c = sqrt(pow(a, 2) + pow(b, 2));
 
     std::cout << "The length of the hypotenuse is: " << c << std::endl;
 
