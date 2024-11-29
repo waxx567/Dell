@@ -3,22 +3,17 @@
 
 int main() {
     
-    // calculate the hypotenuse of a right triangle
-    double a;
-    double b;
-    double c;
-    // solution: c is the square root of a squared + b squared
+    // if statements = do something if a condition is true
+    //                 or do nothing if false
 
-    std::cout << "Enter the length of side a: ";
-    std::cin >> a;
+    int age;
 
-    std::cout << "Enter the length of side b: ";
-    std::cin >> b;
+    std::cout << "Enter your age: ";
+    std::cin >> age;
 
-    c = sqrt(pow(a, 2) + pow(b, 2));
-
-    std::cout << "The length of the hypotenuse is: " << c << std::endl;
-
+    if (age >= 18) {
+        std::cout << "You are an adult." << std::endl;
+    }
 
     return 0;
 }
