@@ -2,20 +2,17 @@
 
 int main() {
     
-    // type conversion = converting one data type to another
-    //                   implicit = automatic
-    //                   explicit = precede value with new data type
+    // calculate how many questions a student gets right
+    // out of the total number of questions
 
-    double x = (int) 3.14; // x = 3
-    int y = int(3.14); // 3.14 -> 3
+    int correct = 8;
+    int questions = 10;
+    double percent = correct / questions * 100;
 
-    // implicit
-    char c = 100; // c = d
-    int z = 'd'; // z = 100
+    std::cout << percent << "%"; // outputs 0% because the int data type truncates the value
 
-    // explicit
-    std::cout << (char) 100 << '\n'; // d
-    std::cout << (int) 'd' << '\n'; // 100
+    // this won't work because the output is a double
+    // std::cout << correct / questions * 100 << "%";
 
     return 0;
 }
