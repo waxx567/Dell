@@ -251,6 +251,8 @@ int main() {
 
     double x = (int) 3.14; // x = 3
     int y = int(3.14); // 3.14 -> 3
+    char c = 100; // c = d
+    int z = 'd'; // z = 100
 
     return 0;
 }
