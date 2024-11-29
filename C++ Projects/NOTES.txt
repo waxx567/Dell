@@ -369,3 +369,26 @@ int main() {
 
     return 0;
 }
+
+int main() {
+    
+    // accepting user input
+    // if you type a string that has spaces, it will stop reading the string at the first space
+    std::string name;
+    int age;
+
+    // if you accept some input with cin followed by getline will break
+    // std::getline(std::cin, name); because there's a \n newline character in our input buffer
+    // std::cin >> age; \n 
+
+    std::cout << "How old are you? ";
+    std::cin >> age;
+
+    std::cout << "Enter your full name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Hello, " << name << "!" << std::endl;
+    std::cout << "You are " << age << " years old." << std::endl;
+
+    return 0;
+}
