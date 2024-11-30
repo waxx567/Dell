@@ -7,16 +7,9 @@ int main() {
 
     int grade = 75;
 
-    // instead of this
+    // do this
 
-    if (grade >= 60)
-    {
-        std::cout << "You passed!";
-    }
-    else
-    {
-        std::cout << "You failed!";
-    }
+    grade >= 60 ? std::cout << "You passed!" : std::cout << "You failed!";
     
     return 0;
 }
