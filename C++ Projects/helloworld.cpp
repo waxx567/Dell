@@ -50,6 +50,9 @@ int main() {
         case 12:
             std::cout << "It is December" << std::endl;
             break;
+        default:
+            std::cout << "Invalid month number" << std::endl;
+            break;
     }
 
     return 0;
