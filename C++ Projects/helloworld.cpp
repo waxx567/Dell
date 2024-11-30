@@ -10,6 +10,7 @@ int main() {
         for (int j = 1; j <= 10; j++) {
             std::cout << j << ' ';
         }
+        std::cout << std::endl;
     }
 
     return 0;
