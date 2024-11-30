@@ -6,16 +6,13 @@ int main() {
     // || = checks if either condition is true
     // ! = checks if the condition is false
 
-    int temp;
+    bool sunny = true;
 
-    std::cout << "Enter the temperature: ";
-    std::cin >> temp;
-
-    if (temp <= 0 || temp >= 30) {
-        std::cout << "The temperature is bad" << std::endl;
+    if (!sunny) {
+        std::cout << "It's cloudy" << std::endl;
     }
     else {
-        std::cout << "The temperature is good" << std::endl;
+        std::cout << "It's sunny" << std::endl;
     }
     
     return 0;
