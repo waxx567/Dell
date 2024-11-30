@@ -11,6 +11,7 @@ int main() {
     // name.length(); // returns the number of characters in the string
     // name.empty(); // returns true if the string is empty, false if not
     // name.find(" "); // returns the index of the first space in the string
+    // name.clear(); // clears the string
 
     std::string name;
     
