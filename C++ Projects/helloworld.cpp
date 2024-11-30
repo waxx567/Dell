@@ -2,15 +2,18 @@
 
 int main() {
 
-    // useful string methods
-    std::string name;
-    
-    std::cout << "Enter your name: ";
-    std::getline(std::cin, name);
+    // while loops = execute a block of code as long as a condition is true
 
-    // name.insert(0, "Hello, "); // insert a string at a specific index
-    // name.erase(0, 5); // erase a string at a specific index
-    std::cout << name << std::endl;
+    std::string name;
+
+    while (name.empty())
+    {
+        std::cout << "Enter your name: ";
+        std::getline(std::cin, name);
+    }
+
+    std::cout << "Hello, " << name << "!" << std::endl;
+    
 
     return 0;
 }
