@@ -2,17 +2,27 @@
 
 int main() {
 
-    // && = checks if both conditions are true
-    // || = checks if either condition is true
-    // ! = checks if the condition is false
+    // create a temperature converter
 
-    bool sunny = true;
+    double temp;
+    char unit;
 
-    if (!sunny) {
-        std::cout << "It's cloudy" << std::endl;
+    std::cout << "Enter the temperature: ";
+    std::cin >> temp;
+
+    std::cout << "Enter the unit: ";
+    std::cin >> unit;
+
+    if (unit == 'C' || unit == 'c') {
+        temp = temp * 1.8 + 32;
+        std::cout << temp << "F";
+    }
+    else if (unit == 'F' || unit == 'f') {    
+        temp = (temp - 32) / 1.8;
+        std::cout << temp << "C";
     }
     else {
-        std::cout << "It's sunny" << std::endl;
+        std::cout << "Invalid unit";
     }
     
     return 0;
