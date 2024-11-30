@@ -2,34 +2,49 @@
 #include <cmath>
 
 int main() {
+
+    // using switch
     
-    // switch = another example
+    char op;
+    double num1;
+    double num2;
+    double result;
 
-    char grade;
+    std::cout << "********** CALCULATOR **********\n";
 
-    std::cout << "Enter your grade: ";
-    std::cin >> grade;
+    std::cout << "Enter one of (+ - * /): ";
+    std::cin >> op;
 
-    switch (grade) {
-        case 'A':
-            std::cout << "You got an A!" << std::endl;
+    std::cout << "Enter #1: ";
+    std::cin>> num1;
+    
+    std::cout << "Enter #2: ";
+    std::cin>> num2;
+
+    switch (op)
+    {
+        case '+':
+            result = num1 + num2;
+            std::cout << "Result: " << result << std::endl;
             break;
-        case 'B':
-            std::cout << "You got a B!" << std::endl;
+        case '-':
+            result = num1 - num2;
+            std::cout << "Result: " << result << std::endl;
             break;
-        case 'C':
-            std::cout << "You got a C!" << std::endl;
+        case '*':
+            result = num1 * num2;
+            std::cout << "Result: " << result << std::endl;
             break;
-        case 'D':
-            std::cout << "You got a D!" << std::endl;
-            break;
-        case 'F':
-            std::cout << "You got an F!" << std::endl;
+        case '/':
+            result = num1 / num2;
+            std::cout << "Result: " << result << std::endl;
             break;
         default:
-            std::cout << "Invalid grade!" << std::endl;
+            std::cout << "Invalid operator" << std::endl;
             break;
     }
+
+    std::cout << "********************************\n";
 
     return 0;
 }
