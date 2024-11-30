@@ -1154,3 +1154,5 @@ int main() {
 
     return 0;
 }
+More string things at:
+www.cplusplus.com/reference/string/string/
