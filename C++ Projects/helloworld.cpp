@@ -8,11 +8,9 @@ int main() {
     std::cout << "Enter your name: ";
     std::getline(std::cin, name);
 
-    //name.append(" "); // adds a space to the end of the string
+    // name.at() returns the character at the specified index
 
-    name.append("@gmail.com");
-
-    std::cout << "Your email is: " << name << std::endl;
-
+    std::cout << "Your initial is: " << name.at(0) << std::endl;
+    
     return 0;
 }
