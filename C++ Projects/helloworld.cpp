@@ -15,7 +15,7 @@ int main() {
         std::cout << "The temperature is bad" << std::endl;
     }
     else {
-        std::cout << "The temperature is bad" << std::endl;
+        std::cout << "The temperature is good" << std::endl;
     }
     
     return 0;
