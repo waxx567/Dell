@@ -1,19 +1,29 @@
+#include <iostream>
+
 int main() {
-    
-    // if statements = do something if a condition is true
-    //                 or do something else if false
 
-    int age;
+    // create a temperature converter
 
-    std::cout << "Enter your age: ";
-    std::cin >> age;
+    double temp;
+    char unit;
 
-    if (age >= 18) {
-        std::cout << "You are an adult." << std::endl;
+    std::cout << "Enter the temperature: ";
+    std::cin >> temp;
+
+    std::cout << "Enter the unit: ";
+    std::cin >> unit;
+
+    if (unit == 'C' || unit == 'c') {
+        temp = temp * 1.8 + 32;
+        std::cout << temp << "F";
+    }
+    else if (unit == 'F' || unit == 'f') {    
+        temp = (temp - 32) / 1.8;
+        std::cout << temp << "C";
     }
     else {
-        std::cout << "You are a child." << std::endl;
-    }   
-
+        std::cout << "Invalid unit";
+    }
+    
     return 0;
 }
