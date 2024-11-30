@@ -12,7 +12,9 @@ int main() {
     // number % 2 ? std::cout << "Number is odd" : std::cout << "Number is even";
 
     bool hungry = false;
-    hungry ? std::cout << "I'm hungry" : std::cout << "I'm full";
+    // hungry ? std::cout << "I'm hungry" : std::cout << "I'm full";
+    // or
+    std::cout << (hungry ? "I'm hungry" : "I'm full");
     
     return 0;
 }
