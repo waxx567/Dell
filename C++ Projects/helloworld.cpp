@@ -2,18 +2,18 @@
 
 int main() {
 
-    // while loops = execute a block of code as long as a condition is true
+    // do while loop = executes a block of code repeatedly
+    //                  as long as a condition is true
 
-    std::string name;
+    int number;
 
-    while (name.empty())
+    while (number < 0)
     {
-        std::cout << "Enter your name: ";
-        std::getline(std::cin, name);
+        std::cout << "Enter a positive number: ";
+        std::cin >> number;
     }
-
-    std::cout << "Hello, " << name << "!" << std::endl;
     
+    std::cout << "The number is: " << number << std::endl;
 
     return 0;
 }
