@@ -2,17 +2,12 @@
 
 int main() {
 
-    // do while loop = executes a block of code repeatedly
-    //                  as long as a condition is true
+    // for loop = executes a block of code a specified number of times
+    //            can use a counter variable to keep track of how many times the loop has run 
 
-    int number;
-    
-    do {
-        std::cout << "Enter a positive number: ";
-        std::cin >> number;
-    } while (number < 0);
-    
-    std::cout << "The number is: " << number << std::endl;
+    for (int i = 1; i <= 3; i++) {
+        std::cout << "HAPPY!" << std::endl;
+    }
 
     return 0;
 }
