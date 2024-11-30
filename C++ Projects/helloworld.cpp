@@ -12,7 +12,7 @@ int main() {
 
     std::cout << "********** CALCULATOR **********\n";
 
-    std::cout << "Enter one of (+ - * /): ";
+    std::cout << "Enter one of these (+ - * /): ";
     std::cin >> op;
 
     std::cout << "Enter #1: ";
