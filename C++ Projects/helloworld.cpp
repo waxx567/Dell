@@ -11,7 +11,7 @@ int main() {
     // int number = 6;
     // number % 2 ? std::cout << "Number is odd" : std::cout << "Number is even";
 
-    bool hungry = false;
+    bool hungry = true;
     // hungry ? std::cout << "I'm hungry" : std::cout << "I'm full";
     // or
     std::cout << (hungry ? "I'm hungry" : "I'm full");
