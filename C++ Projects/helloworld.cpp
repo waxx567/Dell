@@ -12,9 +12,9 @@ int main() {
     // name.empty(); // returns true if the string is empty, false if not
     // name.find(" "); // returns the index of the first space in the string
 
-    if (name.length() > 16)
+    if (name.empty())
     {
-        std::cout << "Your name is too long" << std::endl;
+        std::cout << "Your name is empty" << std::endl;
     }
     else
     {
