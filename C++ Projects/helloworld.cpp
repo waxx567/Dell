@@ -6,6 +6,9 @@ int main() {
     //                  as long as a condition is true
 
     int number;
+    
+    std::cout << "Enter a positive number: ";
+    std::cin >> number;
 
     while (number < 0)
     {
@@ -14,6 +17,8 @@ int main() {
     }
     
     std::cout << "The number is: " << number << std::endl;
+
+    // this works but it is repetitive
 
     return 0;
 }
