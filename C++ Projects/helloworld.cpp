@@ -18,7 +18,7 @@ int main() {
     }
     else
     {
-        std::cout << "Your name is " << name.length() << " characters long" << std::endl;
+        std::cout << "Welcome, " << name << std::endl;
     }
     
     
