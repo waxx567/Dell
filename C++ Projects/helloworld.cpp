@@ -2,13 +2,13 @@
 
 int main() {
 
-    // for loop = executes a block of code a specified number of times
-    //            can use a counter variable to keep track of how many times the loop has run 
+    // break = used to exit a loop
+    // continue = used to skip an iteration of a loop
 
-    for (int i = 10; i >= 1; i--) {
+    for (int i = 1; i <= 20; i++) {
+        
         std::cout << i << std::endl;
     }
-    std::cout << "HAPPY NEW YEAR!" << std::endl;
 
     return 0;
 }
