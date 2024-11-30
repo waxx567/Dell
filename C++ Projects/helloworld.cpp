@@ -9,7 +9,7 @@ int main() {
     // grade >= 60 ? std::cout << "You passed!" : std::cout << "You failed!";
 
     int number = 6;
-    number % 2 ? std::cout << "Number is even" : std::cout << "Number is odd";
+    number % 2 ? std::cout << "Number is odd" : std::cout << "Number is even";
     
     return 0;
 }
