@@ -18,7 +18,7 @@ int main() {
     }
     else
     {
-        std::cout << "Welcome, " << name << std::endl;
+        std::cout << "Welcome, " << name << "." << std::endl;
     }
     
     
