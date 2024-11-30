@@ -6,7 +6,9 @@ int main() {
     // switch = alternative to using multiple if statements
     //          allows for multiple conditions to be tested
     //          instead of testing one condition at a time
-    //          if (month == 1) { ... } else if (month == 2) { ... } etc. would be redundant
+    //          if (month == 1) { ... } else if (month == 2) { ... } etc. would be redundant in this case
+
+    // switch is similar to a series of if statements
 
     int month;
 
