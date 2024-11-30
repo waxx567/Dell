@@ -8,9 +8,9 @@ int main() {
     std::cout << "Enter your name: ";
     std::getline(std::cin, name);
 
-    // name.at() returns the character at the specified index
+    name.insert(0, "Hello, "); // insert a string at a specific index
+    // name.erase(0, 5); // erase a string at a specific index
+    std::cout << name << std::endl;
 
-    std::cout << "Your initial is: " << name.at(0) << std::endl;
-    
     return 0;
 }
