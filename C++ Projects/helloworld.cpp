@@ -7,18 +7,12 @@ int main() {
 
     int number;
     
-    std::cout << "Enter a positive number: ";
-    std::cin >> number;
-
-    while (number < 0)
-    {
+    do {
         std::cout << "Enter a positive number: ";
         std::cin >> number;
-    }
+    } while (number < 0)
     
     std::cout << "The number is: " << number << std::endl;
-
-    // this works but it is repetitive
 
     return 0;
 }
