@@ -12,15 +12,14 @@ int main() {
     // name.empty(); // returns true if the string is empty, false if not
     // name.find(" "); // returns the index of the first space in the string
 
-    if (name.empty())
+    if (name.find(" ") != std::string::npos)
     {
-        std::cout << "Your name is empty" << std::endl;
+        std::cout << "Invalid name" << std::endl;
     }
     else
     {
         std::cout << "Welcome, " << name << "." << std::endl;
     }
-    
     
     return 0;
 }
