@@ -1,50 +1,22 @@
 #include <iostream>
-#include <cmath>
 
 int main() {
 
-    // using switch
-    
-    char op;
-    double num1;
-    double num2;
-    double result;
+    // ternary operator ?: = replacement to an if/else statement
+    // condition ? expression1 : expression2
 
-    std::cout << "********** CALCULATOR **********\n";
+    int grade = 75;
 
-    std::cout << "Enter one of these (+ - * /): ";
-    std::cin >> op;
+    // instead of this
 
-    std::cout << "Enter #1: ";
-    std::cin>> num1;
-    
-    std::cout << "Enter #2: ";
-    std::cin>> num2;
-
-    switch (op)
+    if (grade >= 60)
     {
-        case '+':
-            result = num1 + num2;
-            std::cout << "Result: " << result << std::endl;
-            break;
-        case '-':
-            result = num1 - num2;
-            std::cout << "Result: " << result << std::endl;
-            break;
-        case '*':
-            result = num1 * num2;
-            std::cout << "Result: " << result << std::endl;
-            break;
-        case '/':
-            result = num1 / num2;
-            std::cout << "Result: " << result << std::endl;
-            break;
-        default:
-            std::cout << "Invalid operator" << std::endl;
-            break;
+        std::cout << "You passed!";
     }
-
-    std::cout << "********************************\n";
-
+    else
+    {
+        std::cout << "You failed!";
+    }
+    
     return 0;
 }
