@@ -3,24 +3,15 @@
 
 int main() {
     
-    // if statements = do something if a condition is true
-    //                 do something else if another condition is true
-    //                 or do something else if both are false
+    // switch = alternative to using multiple if statements
+    //          allows for multiple conditions to be tested
+    //          instead of testing one condition at a time
+    //          if (month == 1) { ... } else if (month == 2) { ... } etc. would be redundant
 
-    int age;
+    int month;
 
-    std::cout << "Enter your age: ";
-    std::cin >> age;
-
-    if (age >= 18) {
-        std::cout << "You are an adult." << std::endl;
-    }
-    else if (age >= 13) {
-        std::cout << "You are a teenager." << std::endl;
-    }
-    else {
-        std::cout << "You are a child." << std::endl;
-    }   
+    std::cout << "Enter the number of the month: ";
+    std::cin >> month;
 
     return 0;
 }
