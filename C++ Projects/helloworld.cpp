@@ -1,25 +1,21 @@
 #include <iostream>
 
-void happyBirthday(std::string name, int age);
+double square(double length);
+
 int main() {
 
-    // function = a block of reuseable code that performs a specific task
+    // return type = the type of the value that the function returns
+    // return a value back to the place where you called the function
+    // void = does not return any value
 
-    std::string name;
-    int age = 21;
-    
-    std::cout << "Enter your name: ";
-    std::getline(std::cin, name);
+    double length = 5.0;
+    double area = square(length);
 
-    happyBirthday(name, age);
+    std::cout << "The area of the square is: " << area << "cm^2" << std::endl;
     
     return 0;
 }
 
-void happyBirthday(std::string name, int age) {
-    std::cout << "Happy birthday to you!" << std::endl;
-    std::cout << "Happy birthday to you!" << std::endl;
-    std::cout << "Happy birthday, dear " << name << "!" << std::endl;
-    std::cout << "Happy birthday to you!" << std::endl;
-    std::cout << "You are " << age << " years old today." << std::endl;
+double square(double length) {
+    return length * length;
 }
