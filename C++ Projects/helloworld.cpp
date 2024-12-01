@@ -1,28 +1,18 @@
 #include <iostream>
 
-double square(double length);
-double cube(double length);
+std::string concatStrings(std::string a, std::string b);
 
 int main() {
 
-    // return type = the type of the value that the function returns
-    // return a value back to the place where you called the function
-    // void = does not return any value
+    std::string firstName = "Wayne";
+    std::string lastName = "McRae";
 
-    double length = 5.0;
-    double area = square(length);
-    double volume = cube(length);
+    std::cout << "Full name: " << concatStrings(firstName, lastName) << std::endl;
 
-    std::cout << "The area of the square is: " << area << "cm^2" << std::endl;
-    std::cout << "The volume of the cube is: " << volume << "cm^3" << std::endl;
-    
     return 0;
 }
 
-double square(double length) {
-    return length * length;
-}
+std::string concatStrings(std::string a, std::string b) {
 
-double cube(double length) {
-    return length * length * length;
+    return a + b;
 }
