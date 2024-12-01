@@ -7,7 +7,7 @@ int main() {
     // overloaded functions = functions with the same name but different parameters
     //                        or different return types
 
-    bakePizza();
+    bakePizza("pepperoni");
 
     return 0;
 }
