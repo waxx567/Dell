@@ -1,10 +1,15 @@
 #include <iostream>
 
+/**
+ * @brief Main entry point of the program
+ *
+ * This function initializes an array of car brands and outputs each brand
+ * to the console. The array contains four elements, each representing a
+ * different car brand. It then prints each brand on a new line.
+ *
+ * @return 0 on success
+ */
 int main() {
-
-    // arrays = a collection of elements of the same type
-    //          can store multiple values in a single variable
-    //          can be accessed using an index
 
     std::string cars[4];
 
