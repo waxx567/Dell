@@ -8,6 +8,8 @@ int main() {
 
     std::string car[] = {"Lexus", "Toyota", "Honda", "Ford"};
 
+    car[1] = "Mazda";
+
     std::cout << car[0] << std::endl;
     std::cout << car[1] << std::endl;
     std::cout << car[2] << std::endl;
