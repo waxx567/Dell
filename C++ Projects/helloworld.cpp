@@ -101,6 +101,15 @@ void showChoice(char choice) {
         break;
     }
 }
+/**
+ * Determines the winner of the game and displays the result.
+ *
+ * This function takes the player's and computer's choices as characters ('r', 'p', 's')
+ * and determines who wins based on the game's rules. The result is then displayed to the console.
+ *
+ * @param player The character representing the player's choice.
+ * @param computer The character representing the computer's choice.
+ */
 void chooseWinner(char player, char computer) {
     switch (player)
     {
