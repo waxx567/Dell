@@ -3,35 +3,36 @@
 
 int main() {
 
-    // random event generator
-    srand(time(0)); // seed the random number generator with the current time
-    int randNum = rand() % 5 + 1; // generate a random number between 1 and 5
+    // simple number guessing game
+    int num;
+    int guess;
+    int tries;
 
-    switch (randNum)
+    srand(time(NULL)); // seed the random number generator with the current time
+
+    num = rand() % 100 + 1; // generate a random number between 1 and 100
+
+    do
     {
-    case 1: 
-        std::cout << "You got a 1!" << std::endl;
-        break;
+        std::cout << "Guess a number between 1 and 100: ";
+        std::cin >> guess;
+        tries++;
 
-    case 2: 
-        std::cout << "You got a 2!" << std::endl;
-        break;
-
-    case 3: 
-        std::cout << "You got a 3!" << std::endl;
-        break;  
-
-    case 4: 
-        std::cout << "You got a 4!" << std::endl;
-        break;
-
-    case 5: 
-        std::cout << "You got a 5!" << std::endl;
-        break;
+        if (guess > num)
+        {
+            std::cout << "Too high!" << std::endl;
+        }
+        else if (guess < num)
+        {
+            std::cout << "Too low!" << std::endl;
+        }
+        else
+        {
+            std::cout << "You got it! It took you " << tries << " tries." << std::endl;
+        }
+        
+    } while (guess != num);
     
-    default:
-        break;
-    }
 
     return 0;
 }
