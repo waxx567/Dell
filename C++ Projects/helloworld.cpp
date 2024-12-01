@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-void happyBirthday(std::string name) {
+void happyBirthday(std::string birthdayBoi) {
     std::cout << "Happy birthday to you!" << std::endl;
     std::cout << "Happy birthday to you!" << std::endl;
     std::cout << "Happy birthday, dear " << name << "!" << std::endl;
