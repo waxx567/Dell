@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 void showBalance(double balance);
 double deposit();
@@ -53,7 +54,7 @@ int main() {
 
 // Displays the current balance to the user
 void showBalance(double balance) {
-    std::cout << "Your balance is $" << balance << std::endl;
+    std::cout << "Your balance is ZAR" << std::setprecision(2) << std::fixed << balance << std::endl;
 }
 
 // Prompts the user to enter an amount to deposit and returns that amount.
