@@ -1,6 +1,7 @@
 #include <iostream>
 
 void bakePizza();
+void bakePizza(std::string topping1);
 
 int main() {
 
