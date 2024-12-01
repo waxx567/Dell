@@ -1,6 +1,6 @@
 #include <iostream>
 
-double getTotal(double prices[]);
+double getTotal(double prices[], int size);
 
 /**
  * @brief The main entry point of the program
