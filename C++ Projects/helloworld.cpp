@@ -1,10 +1,12 @@
 #include <iostream>
 
 /**
- * @brief Main entry point of the program
+ * @brief Main function of the program
  *
- * The function calculates and prints the size of a double
- * variable in bytes using the sizeof() operator.
+ * This function initializes a string 'name' and a double 'pi'. It then 
+ * outputs the size in bytes of the 'name' string to the console.
+ *
+ * @return 0 on success
  */
 int main() {
 
