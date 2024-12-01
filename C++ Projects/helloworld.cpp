@@ -1,18 +1,20 @@
 #include <iostream>
 
-std::string concatStrings(std::string a, std::string b);
+void bakePizza();
 
 int main() {
 
-    std::string firstName = "Wayne";
-    std::string lastName = "McRae";
+    // overloaded functions = functions with the same name but different parameters
+    //                        or different return types
 
-    std::cout << "Full name: " << concatStrings(firstName, lastName) << std::endl;
+    bakePizza();
 
     return 0;
 }
 
-std::string concatStrings(std::string a, std::string b) {
-
-    return a + " " + b;
+void bakePizza() {
+    std::cout << "Here is your pizza!" << std::endl;
 }
+void bakePizza(std::string topping1) {
+    std::cout << "Here is your " << topping1 << " pizza!" << std::endl;
+} 
