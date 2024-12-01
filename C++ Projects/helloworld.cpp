@@ -6,14 +6,17 @@ int main() {
     //          can store multiple values in a single variable
     //          can be accessed using an index
 
-    std::string car[] = {"Lexus", "Toyota", "Honda", "Ford"};
+    std::string cars[4];
 
-    car[1] = "Mazda";
+    cars[0] = "Lexus";
+    cars[1] = "Mazda";
+    cars[2] = "Honda";
+    cars[3] = "Ford";
 
-    std::cout << car[0] << std::endl;
-    std::cout << car[1] << std::endl;
-    std::cout << car[2] << std::endl;
-    std::cout << car[3] << std::endl;
+    std::cout << cars[0] << std::endl;
+    std::cout << cars[1] << std::endl;
+    std::cout << cars[2] << std::endl;
+    std::cout << cars[3] << std::endl;
 
     return 0;
 }
