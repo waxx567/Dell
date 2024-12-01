@@ -16,10 +16,11 @@ int main() {
     char computer;
 
     player = getUserChoice();
-    computer = getComputerChoice();
+    std::cout << "Your choice: ";
     showChoice(player);
-    showChoice(computer);
-    chooseWinner(player, computer);
+    // computer = getComputerChoice();
+    // showChoice(computer);
+    // chooseWinner(player, computer);
 
     return 0;
 }
@@ -43,7 +44,6 @@ char getUserChoice() {
         std::cout << "'r' for rock" << std::endl;
         std::cout << "'p' for paper" << std::endl;
         std::cout << "'s' for scissors" << std::endl;
-        std::cout << "Enter your choice: ";
         std::cin >> player;        
     } while (player != 'r' && player != 'p' && player != 's');
 
@@ -53,7 +53,18 @@ char getComputerChoice() {
     return 0;
 }
 void showChoice(char choice) {
-    return;
+    switch (choice)
+    {
+    case 'r':
+        std::cout << "Rock" << std::endl;
+        break;
+    case 'p':
+        std::cout << "Paper" << std::endl;
+        break;
+    case 's':
+        std::cout << "Scissors" << std::endl;
+        break;
+    }
 }
 void chooseWinner(char player, char computer) {
     return;
