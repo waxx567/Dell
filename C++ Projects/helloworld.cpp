@@ -1,20 +1,34 @@
 #include <iostream>
 
 /**
- * @brief Main entry point of the program
+ * @brief The main entry point of the program
  *
- * This function initializes an array of grades and outputs each grade to the console.
- * It uses a range-based for loop to iterate through the array and print each grade.
- *
- * @return 0 on successful execution
+ * @details This function contains the main logic of the program.
+ *          It creates an array of prices, calculates the total
+ *          and prints it to the console.
  */
 int main() {
 
-    int grades[] = {100, 90, 80, 70, 60};
+    // pass an array to a function
+    double prices[] = {10.99, 12.50, 9.99, 7.50, 6.00};
+    double total = getTotal(prices);
 
-    for (int grade : grades) {
-        std::cout << grade << std::endl;
-    }
+    std::cout << "Total: $" << total << std::endl;
 
     return 0;
+}
+
+/**
+ * @brief Calculates the total of an array of prices
+ *
+ * @param prices the array of prices
+ *
+ * @return the total of the prices
+ */
+double getTotal(double prices[]) {
+    double total = 0;
+    for (int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++) {
+        total += prices[i];
+    }
+    return total;
 }
