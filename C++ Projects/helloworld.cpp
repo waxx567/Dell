@@ -3,8 +3,8 @@
 /**
  * @brief Main function of the program
  *
- * This function initializes a string 'name' and a double 'pi'. It then 
- * outputs the size in bytes of the 'name' string to the console.
+ * This function initializes a string 'name', a double 'pi', and a char 'grade',
+ * and outputs the size in bytes of the 'grade' char to the console.
  *
  * @return 0 on success
  */
@@ -12,8 +12,9 @@ int main() {
 
     std::string name = "John";
     double pi = 3.14159;
+    char grade = 'A';
 
-    std::cout << sizeof(name) << " bytes" << std::endl;
+    std::cout << sizeof(grade) << " bytes" << std::endl;
 
     return 0;
 }
