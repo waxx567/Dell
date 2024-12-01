@@ -33,9 +33,11 @@ int main() {
     switch (choice) {
         case 1:
             balance += deposit();
+            showBalance(balance);
             break;
         case 2:
             balance -= withdraw(balance);
+            showBalance(balance);
             break;
         case 3:
             showBalance(balance);
