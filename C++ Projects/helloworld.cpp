@@ -78,5 +78,17 @@ double deposit() {
 
 // Prompts the user to enter an amount to withdraw, checks if the amount is less than or equal to the current balance, and returns the withdrawn amount. If the amount is greater than the balance, it displays an error message and returns 0.
 double withdraw(double balance) {
-    return 0;
+    double amount;
+    std::cout << "Enter the amount to withdraw: ";
+    std::cin >> amount;
+
+    if (amount > 0 && amount <= balance)
+    {
+        return amount;
+    }
+    else
+    {
+        std::cout << "Invalid amount" << std::endl;
+        return 0;
+    }
 }
