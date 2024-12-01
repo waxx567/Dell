@@ -1634,7 +1634,6 @@ std::string concatStrings(std::string a, std::string b) {
 #include <iostream>
 
 void bakePizza();
-void bakePizza(std::string topping1);
 
 int main() {
 
@@ -1649,9 +1648,6 @@ int main() {
 void bakePizza() {
     std::cout << "Here is your pizza!" << std::endl;
 }
-void bakePizza(std::string topping1) {
-    std::cout << "Here is your " << topping1 << " pizza!" << std::endl;
-} 
 
 #include <iostream>
 
