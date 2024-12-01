@@ -27,7 +27,7 @@ int main() {
  */
 double getTotal(double prices[]) {
     double total = 0;
-    for (int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++) {
+    for (int i = 0; i < sizeof(prices); i++) {
         total += prices[i];
     }
     return total;
