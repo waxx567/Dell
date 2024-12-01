@@ -11,7 +11,7 @@
  */
 int main() {
 
-    std::string cars[4] = {"Lexus", "Mazda", "Honda", "Ford"};
+    std::string cars[] = {"Lexus", "Mazda", "Honda", "Ford"};
 
     for (int i = 0; i < sizeof(cars)/sizeof(std::string); i++) {
         std::cout << cars[i] << std::endl;
