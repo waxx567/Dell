@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 char getUserChoice();
 char getComputerChoice();
@@ -16,10 +17,13 @@ int main() {
     char computer;
 
     player = getUserChoice();
-    std::cout << "Your choice: ";
+    std::cout << "You chose: ";
     showChoice(player);
-    // computer = getComputerChoice();
-    // showChoice(computer);
+
+    computer = getComputerChoice();
+    std::cout << "The computer chose: ";
+    showChoice(computer);
+    
     // chooseWinner(player, computer);
 
     return 0;
@@ -49,9 +53,40 @@ char getUserChoice() {
 
     return player;
 }
+/**
+ * Generates a random choice for the computer in the Rock Paper Scissors game.
+ *
+ * This function uses the random number generator to select a number between
+ * 1 and 3, which corresponds to 'r' (rock), 'p' (paper), or 's' (scissors).
+ *
+ * @return The computer's choice as a character ('r', 'p', or 's').
+ */
 char getComputerChoice() {
+
+    srand(time(0));
+
+    int num = rand() % 3 + 1;
+
+    switch (num)
+    {
+    case 1: 
+        return 'r';
+    case 2:
+        return 'p';
+    case 3:
+        return 's';
+    }
+
     return 0;
 }
+/**
+ * Displays the textual representation of the player's or computer's choice.
+ *
+ * This function takes a character representing the choice ('r', 'p', 's')
+ * and prints the corresponding string ("Rock", "Paper", "Scissors") to the console.
+ *
+ * @param choice The character representing the choice to display.
+ */
 void showChoice(char choice) {
     switch (choice)
     {
