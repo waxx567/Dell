@@ -3,20 +3,17 @@
 /**
  * @brief Main entry point of the program
  *
- * This function demonstrates how to use a foreach loop to iterate over an array of
- * strings and print each string to the console.
+ * This function initializes an array of grades and outputs each grade to the console.
+ * It uses a range-based for loop to iterate through the array and print each grade.
  *
  * @return 0 on successful execution
  */
 int main() {
 
-    // foreach loop = executes a block of code for each element in a container
-    //                can use a variable to iterate through the container
+    int grades[] = {100, 90, 80, 70, 60};
 
-    std::string cars[] = {"Lexus", "Toyota", "Honda", "Ford"};
-
-    for (std::string car : cars) {
-        std::cout << car << std::endl;
+    for (int grade : grades) {
+        std::cout << grade << std::endl;
     }
 
     return 0;
