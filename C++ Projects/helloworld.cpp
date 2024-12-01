@@ -8,9 +8,10 @@
  */
 int main() {
 
+    std::string name = "John";
     double pi = 3.14159;
 
-    std::cout << sizeof(double) << " bytes" << std::endl;
+    std::cout << sizeof(name) << " bytes" << std::endl;
 
     return 0;
 }
