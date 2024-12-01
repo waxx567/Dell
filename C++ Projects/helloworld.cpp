@@ -24,18 +24,19 @@ int main() {
     return 0;
 }
 
-
 char getUserChoice() {
     char player;
     std::cout << "****Rock Paper Scissors Game****" << std::endl;
-    std::cout << "'r' for rock" << std::endl;
-    std::cout << "'p' for paper" << std::endl;
-    std::cout << "'s' for scissors" << std::endl;
 
-    std::cout << "Enter your choice: ";
-    std::cin >> player;
-
-    std::cout << "You choose: " << player << std::endl;
+    do
+    {
+        std::cout << "Enter your choice: " << std::endl;
+        std::cout << "'r' for rock" << std::endl;
+        std::cout << "'p' for paper" << std::endl;
+        std::cout << "'s' for scissors" << std::endl;
+        std::cout << "Enter your choice: ";
+        std::cin >> player;        
+    } while (player != 'r' && player != 'p' && player != 's');
 
     return 0;
 }
