@@ -1,5 +1,6 @@
 #include <iostream>
 
+void happyBirthday();
 int main() {
 
     // function = a block of reuseable code that performs a specific task
