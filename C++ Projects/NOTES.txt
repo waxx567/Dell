@@ -2568,7 +2568,7 @@ char getUserChoice() {
         std::cin >> player;        
     } while (player != 'r' && player != 'p' && player != 's');
 
-    return 0;
+    return player;
 }
 char getComputerChoice() {
     return 0;
