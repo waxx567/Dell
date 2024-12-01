@@ -1,22 +1,18 @@
 #include <iostream>
 
 /**
- * @brief Main function of the program
+ * @brief Main entry point of the program
  *
- * This function initializes a string 'name', a double 'pi', a char 'grade',
- * and a bool 'hungry'. It then outputs the size in bytes of the 'hungry' 
- * boolean variable to the console.
+ * This function initializes an array of grade characters and outputs the size
+ * of the array in bytes using the sizeof operator.
  *
- * @return 0 on success
+ * @return 0 on successful execution
  */
 int main() {
 
-    std::string name = "John";
-    double pi = 3.14159;
-    char grade = 'A';
-    bool hungry = true;
+    char grades[] = {'A', 'B', 'C', 'D', 'F'};
 
-    std::cout << sizeof(hungry) << " bytes" << std::endl;
+    std::cout << sizeof(grades) << " bytes" << std::endl;
 
     return 0;
 }
