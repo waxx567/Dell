@@ -7,6 +7,7 @@ void printNum();
 int main() {
 
     printNum();
+    std::cout << myNum << std::endl;
 
     return 0;
 }
