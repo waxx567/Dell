@@ -14,5 +14,6 @@ int main() {
     return 0;
 }
 void printNum(int myNum) {
+    int myNum = 2;
     std::cout << myNum << std::endl;
 }
