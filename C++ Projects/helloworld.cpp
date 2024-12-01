@@ -10,7 +10,7 @@ int main() {
 
     double pi = 3.14159;
 
-    std::cout << sizeof(pi) << " bytes" << std::endl;
+    std::cout << sizeof(double) << " bytes" << std::endl;
 
     return 0;
 }
