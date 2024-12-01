@@ -3,18 +3,17 @@
 /**
  * @brief Main entry point of the program
  *
- * This function initializes an array of car brands and outputs each brand
- * to the console. The array contains four elements, each representing a
- * different brand. The brands are iterated and printed using standard output.
+ * This function initializes an array of grade characters and outputs each
+ * grade to the console using a for loop.
  *
  * @return 0 on successful execution
  */
 int main() {
 
-    std::string cars[] = {"Lexus", "Mazda", "Honda", "Ford"};
+    char grades[] = {'A', 'B', 'C', 'D', 'F'};
 
-    for (int i = 0; i < sizeof(cars)/sizeof(std::string); i++) {
-        std::cout << cars[i] << std::endl;
+    for (int i = 0; i < sizeof(grades)/sizeof(char); i++) {
+        std::cout << grades[i] << std::endl;
     }
 
     return 0;
