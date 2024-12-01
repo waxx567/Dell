@@ -3,7 +3,7 @@
 
 int main() {
 
-    // pseudo-random number generator 
+    // pseudo-random number generator (dice roll)
     srand(time(NULL)); // seed the random number generator with the current time
 
     int num = rand() % 6 + 1; // generate a random number between 1 and 6
