@@ -30,6 +30,10 @@ int main() {
     std::cout << "Choice: ";
     std::cin >> choice;
 
+    // Clear the input buffer if the user enters invalid input
+    std::cin.clear();
+    fflush(stdin);
+
     switch (choice) {
         case 1:
             balance += deposit();
