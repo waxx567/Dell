@@ -30,9 +30,8 @@ int main() {
         {
             std::cout << "You got it! It took you " << tries << " tries." << std::endl;
         }
-        
+
     } while (guess != num);
     
-
     return 0;
 }
