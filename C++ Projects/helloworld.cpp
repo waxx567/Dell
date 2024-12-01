@@ -30,9 +30,15 @@ int main() {
     std::cout << "Choice: ";
     std::cin >> choice;
 
+    if (choice != 1 || choice != 2 || choice != 3 || choice != 4)
+    {
+        std::cout << "Invalid choice" << std::endl;
+        break;
+    }    
+
     // Clear the input buffer if the user enters invalid input
-    std::cin.clear();
-    fflush(stdin);
+    // std::cin.clear();
+    // fflush(stdin);
 
     switch (choice) {
         case 1:
