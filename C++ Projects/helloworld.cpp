@@ -8,7 +8,7 @@ int main() {
 
     printNum();
     int myNum = 1;
-    std::cout << myNum << std::endl;
+    std::cout << ::myNum << std::endl;
 
     return 0;
 }
