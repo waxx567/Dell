@@ -24,6 +24,15 @@ int main() {
     return 0;
 }
 
+/**
+ * Prompts the user to enter their choice for the Rock Paper Scissors game.
+ *
+ * This function shows the game title and repeatedly prompts the user for
+ * their choice until the user enters a valid choice. Valid choices are 'r',
+ * 'p', 's' for rock, paper and scissors respectively.
+ *
+ * @return The user's choice as a character.
+ */
 char getUserChoice() {
     char player;
     std::cout << "****Rock Paper Scissors Game****" << std::endl;
