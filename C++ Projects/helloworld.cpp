@@ -14,5 +14,5 @@ int main() {
 
 std::string concatStrings(std::string a, std::string b) {
 
-    return a + b;
+    return a + " " + b;
 }
