@@ -65,6 +65,7 @@ void showChoice(char choice) {
         std::cout << "Scissors" << std::endl;
         break;
     }
+    return;
 }
 void chooseWinner(char player, char computer) {
     return;
