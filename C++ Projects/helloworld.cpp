@@ -56,7 +56,7 @@ int main() {
 
 // Displays the current balance to the user
 void showBalance(double balance) {
-    std::cout << "Your balance is ZAR" << std::setprecision(2) << std::fixed << balance << std::endl;
+    std::cout << "Your balance is ZAR " << std::setprecision(2) << std::fixed << balance << std::endl;
 }
 
 // Prompts the user to enter an amount to deposit and returns that amount.
@@ -64,7 +64,16 @@ double deposit() {
     double amount;
     std::cout << "Enter the amount to deposit: ";
     std::cin >> amount;
-    return amount;
+
+    if (amount > 0)
+    {
+        return amount;
+    }
+    else
+    {
+        std::cout << "Invalid amount" << std::endl;
+        return 0;
+    }
 }
 
 // Prompts the user to enter an amount to withdraw, checks if the amount is less than or equal to the current balance, and returns the withdrawn amount. If the amount is greater than the balance, it displays an error message and returns 0.
