@@ -1499,7 +1499,6 @@ int main() {
 }
 
 #include <iostream>
-#include <ctime>
 
 void happyBirthday() {
     std::cout << "Happy birthday to you!" << std::endl;
