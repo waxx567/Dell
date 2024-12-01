@@ -1,37 +1,18 @@
 #include <iostream>
 #include <ctime>
 
+void happyBirthday() {
+    std::cout << "Happy birthday to you!" << std::endl;
+    std::cout << "Happy birthday to you!" << std::endl;
+    std::cout << "Happy birthday, dear buddy" << std::endl;
+    std::cout << "Happy birthday to you!" << std::endl;
+}
+
 int main() {
 
-    // simple number guessing game
-    int num;
-    int guess;
-    int tries;
+    // function = a block of reuseable code that performs a specific task
 
-    srand(time(NULL)); // seed the random number generator with the current time
-
-    num = rand() % 100 + 1; // generate a random number between 1 and 100
-
-    do
-    {
-        std::cout << "Guess a number between 1 and 100: ";
-        std::cin >> guess;
-        tries++;
-
-        if (guess > num)
-        {
-            std::cout << "Too high!" << std::endl;
-        }
-        else if (guess < num)
-        {
-            std::cout << "Too low!" << std::endl;
-        }
-        else
-        {
-            std::cout << "You got it! It took you " << tries << " tries." << std::endl;
-        }
-
-    } while (guess != num);
+    happyBirthday();
     
     return 0;
 }
