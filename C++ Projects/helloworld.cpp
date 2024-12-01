@@ -13,7 +13,8 @@ int main() {
 
     // pass an array to a function
     double prices[] = {10.99, 12.50, 9.99, 7.50, 6.00};
-    double total = getTotal(prices);
+    int size = sizeof(prices) / sizeof(prices[0]);
+    double total = getTotal(prices, size);
 
     std::cout << "Total: $" << total << std::endl;
 
@@ -27,9 +28,9 @@ int main() {
  *
  * @return the total of the prices
  */
-double getTotal(double prices[]) {
+double getTotal(double prices[], int size) {
     double total = 0;
-    for (int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++) {
+    for (int i = 0; i < size; i++) {
         total += prices[i];
     }
     return total;
