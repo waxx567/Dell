@@ -8,6 +8,7 @@ int main() {
 
     printNum();
     int myNum = 1;
+    // use :: to access global variable
     std::cout << ::myNum << std::endl;
 
     return 0;
