@@ -9,7 +9,7 @@
 int main() {
 
     double pi = 3.14159;
-    int size = sizeof(pi);
+    int size = sizeof(double);
 
     std::cout << "The size of pi is: " << size << " bytes" << std::endl;
 
