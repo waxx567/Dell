@@ -3,16 +3,35 @@
 
 int main() {
 
-    // pseudo-random number generator (3 dice roll)
-    srand(time(NULL)); // seed the random number generator with the current time
+    // random event generator
+    srand(time(0)); // seed the random number generator with the current time
+    int randNum = rand() % 5 + 1; // generate a random number between 1 and 5
 
-    int num1 = rand() % 6 + 1; // generate a random number between 1 and 6
-    int num2 = rand() % 6 + 1; // generate a random number between 1 and 6
-    int num3 = rand() % 6 + 1; // generate a random number between 1 and 6
+    switch (randNum)
+    {
+    case 1: 
+        std::cout << "You got a 1!" << std::endl;
+        break;
 
-    std::cout << num1 << std::endl;
-    std::cout << num2 << std::endl;
-    std::cout << num3 << std::endl;
+    case 2: 
+        std::cout << "You got a 2!" << std::endl;
+        break;
+
+    case 3: 
+        std::cout << "You got a 3!" << std::endl;
+        break;  
+
+    case 4: 
+        std::cout << "You got a 4!" << std::endl;
+        break;
+
+    case 5: 
+        std::cout << "You got a 5!" << std::endl;
+        break;
+    
+    default:
+        break;
+    }
 
     return 0;
 }
