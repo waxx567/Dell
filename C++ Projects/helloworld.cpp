@@ -20,6 +20,8 @@ int main() {
         if (bikes[i] == "q") {
             break;
         }
+
+        // the problem is that 'q' will be added to the array, which we don't want
     }
 
     std::cout << "Your bikes are: " << std::endl;
