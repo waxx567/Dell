@@ -3663,7 +3663,7 @@ int main() {
 
     std::cout << "Your bikes are: " << std::endl;
 
-    // change the for loop to use the bikes array and check for empty strings
+    // change the for loop to check for empty strings
     for (int i = 0; !bikes[i].empty(); i++) {
         std::cout << bikes[i] << std::endl;
     }
