@@ -1,38 +1,21 @@
 #include <iostream>
 
-// this is pass by reference
-// we pass the locations and then
-// swap the values at the locations
-
-void swap(std::string &x, std::string &y);
-
-/**
- * @brief The main entry point of the program
- *
- * @details This function demonstrates how to swap two strings using pass by
- *          reference. It creates two strings, swaps them using the swap
- *          function, and then prints the swapped strings to the console.
- *
- * @return 0 on success
- */
 int main() {
 
-    // pass by value = pass the value of an object by reference
-    // pass by reference = pass the address of an object by reference
+    // const parameters = parameters that cannot be changed after the function has been called
+    //                    they are used to prevent the function from modifying the original value of the parameter
+    //                    code is more secure and conveys intent better
+    //                    useful for reference and pointers
 
-    std::string x = "Cool";
-    std::string y = "Uncool";
-    
-    swap(x, y);
+    std::string name = "Wayne";
+    int age = 57;
 
-    std::cout << x << '\n';
-    std::cout << y << '\n';
+    printInfo(name, age);
 
     return 0;
 }
 
-void swap(std::string &x, std::string &y) {
-    std::string temp = x;
-    x = y;
-    y = temp;
+void printInfo(std::string name, int age) {
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Age: " << age << std::endl;
 }
