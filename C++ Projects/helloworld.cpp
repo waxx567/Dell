@@ -5,7 +5,7 @@ void sortArray(int arr[], int size);
 /**
  * @brief Entry point of the program
  *
- * This program sorts an array of integers in ascending order using the
+ * This program sorts an array of integers in descending order using the
  * bubble sort algorithm, and prints the sorted array to the console.
  *
  * @return 0 on success
@@ -25,7 +25,7 @@ int main() {
 }
 
 /**
- * @brief Sorts an array of integers in ascending order using the
+ * @brief Sorts an array of integers in descending order using the
  *        bubble sort algorithm.
  *
  * @param arr the array to be sorted
@@ -37,7 +37,7 @@ void sortArray(int arr[], int size) {
 
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
+            if (arr[j] < arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
