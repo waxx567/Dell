@@ -1,6 +1,6 @@
 #include <iostream>
 
-void swap(std::string& x, std::string& y);
+void swap(std::string &x, std::string &y);
 
 int main() {
 
@@ -18,7 +18,7 @@ int main() {
     return 0;
 }
 
-void swap(std::string& x, std::string& y) {
+void swap(std::string &x, std::string &y) {
     std::string temp = x;
     x = y;
     y = temp;
