@@ -3,10 +3,11 @@
 /**
  * @brief The main entry point of the program
  *
- * @details This function contains an array of questions and an array of options
- *          for each question. It also contains an array of the correct answers
- *          for each question. The function iterates over the questions and options
- *          and prints them to the console, formatting them with asterisks.
+ * @details This function is the main entry point of the program. It contains
+ *          a quiz with 4 questions and their corresponding options. The user is
+ *          asked to input their answer choice and the program checks if the
+ *          answer is correct or not. At the end of the quiz, the program displays
+ *          the score.
  *
  * @return 0 on successful execution
  */
@@ -39,6 +40,18 @@ int main() {
 
         for (int j = i * 4; j < (i * 4 + 4); j++) {
             std::cout << options[j] << std::endl;
+        }
+
+        std::cin >> guess;
+        guess = tolower(guess);
+
+        if (guess == answerKey[i]) {
+            std::cout << "Correct!" << std::endl;
+            score++;
+        }
+        else {
+            std::cout << "Incorrect!" << std::endl;
+            std::cout << "The correct answer is: " << answerKey[i] << std::endl;
         }
     }
 
