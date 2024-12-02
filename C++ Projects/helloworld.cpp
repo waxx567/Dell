@@ -1,38 +1,21 @@
 #include <iostream>
-#include <string>
 
 /**
- * @brief A simple program that asks the user for five bike names and
- *        prints them out afterwards.
+ * @brief Main entry point of the program
  *
- * @details This program does not do any error checking on the input. It
- *          simply assumes that the user will enter five valid bike names.
+ * This function prints out three car models from the given array, one from each row.
  */
 int main() {
 
-    std::string bikes[5];
-    int size = sizeof(bikes) / sizeof(bikes[0]);
-    std::string temp;
+    std::string models[][3] = {
+        {"Focus", "Fusion", "Ranger"},
+        {"Civic", "Accord", "CRV"},
+        {"Camry", "Corolla", "RAV4"}
+    };
 
-    for (int i = 0; i < size; i++) {
-        std::cout << "Enter a bike or 'q' to quit #" << i + 1 << ": ";
-        std::getline(std::cin, temp);
-
-        if (temp == "q") {
-            break;
-        }
-        else
-        {
-            bikes[i] = temp;
-        }
-    }
-
-    std::cout << "Your bikes are: " << std::endl;
-
-    // change the for loop to check for empty strings
-    for (int i = 0; !bikes[i].empty(); i++) {
-        std::cout << bikes[i] << std::endl;
-    }
+    std::cout << models[0][0] << std::endl;
+    std::cout << models[1][1] << std::endl;
+    std::cout << models[2][2] << std::endl; 
 
     return 0;
 }
