@@ -33,9 +33,9 @@ int main() {
     int score;
 
     for (int i = 0; i < size; i++) {
-        std::cout << "************************************************" << std::endl;
+        std::cout << "***************************************************" << std::endl;
         std::cout << questions[i] << std::endl;
-        std::cout << "************************************************" << std::endl;
+        std::cout << "***************************************************" << std::endl;
 
         for (int j = i * 4; j < (i * 4 + 4); j++) {
             std::cout << options[j] << std::endl;
