@@ -6,6 +6,15 @@
 
 void swap(std::string &x, std::string &y);
 
+/**
+ * @brief The main entry point of the program
+ *
+ * @details This function demonstrates how to swap two strings using pass by
+ *          reference. It creates two strings, swaps them using the swap
+ *          function, and then prints the swapped strings to the console.
+ *
+ * @return 0 on success
+ */
 int main() {
 
     // pass by value = pass the value of an object by reference
