@@ -53,7 +53,7 @@ int main() {
         }
     }
     std::cout << "***************************************************" << std::endl;
-    std::cout << "*                   RESULTS                       *" << std::endl;
+    std::cout << "*                    RESULTS                      *" << std::endl;
     std::cout << "***************************************************" << std::endl;
     std::cout << "You got " << score << " out of " << size << " questions correct!" << std::endl;
     std::cout << "Score: " << (score/size * 100) << std::endl;
