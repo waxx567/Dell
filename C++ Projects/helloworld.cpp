@@ -1,24 +1,24 @@
 #include <iostream>
+#include <string>
 
 /**
- * @brief The main entry point of the program
+ * @brief A simple program that asks the user for five bike names and
+ *        prints them out afterwards.
  *
- * @details This function initializes an array of strings representing bike brands,
- *          fills the first third of the array with the string "Triumph", the second
- *          third with the string "Honda", and the final third with the string "Ducati". It
- *          then iterates over the array and prints each brand to the console.
- *
- * @return 0 on successful execution
+ * @details This program does not do any error checking on the input. It
+ *          simply assumes that the user will enter five valid bike names.
  */
 int main() {
 
-    const int SIZE = 99;
+    std::string bikes[5];
+    int size = sizeof(bikes) / sizeof(bikes[0]);
 
-    std::string bikes[SIZE];
+    for (int i = 0; i < size; i++) {
+        std::cout << "Enter a bike #" << i + 1 << ": ";
+        std::getline(std::cin, bikes[i]);
+    }
 
-    fill(bikes, bikes + (SIZE/3), "Triumph");
-    fill(bikes + (SIZE/3), bikes + (SIZE/3)*2, "Honda");
-    fill(bikes + (SIZE/3)*2, bikes + SIZE, "Ducati");
+    std::cout << "Your bikes are: " << std::endl;
 
     for (std::string bike : bikes) {
         std::cout << bike << std::endl;
