@@ -1,7 +1,8 @@
 #include <iostream>
 
 // this is pass by reference
-// it will swap the values
+// we pass the locations and then
+// swap the values at the locations
 
 void swap(std::string &x, std::string &y);
 
