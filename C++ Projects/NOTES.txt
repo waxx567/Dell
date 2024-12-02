@@ -3938,3 +3938,26 @@ int main() {
 
     return 0;
 }
+
+#include <iostream>
+
+/**
+ * @brief The main entry point of the program
+ *
+ * @details This function demonstrates how to print the memory address of a
+ *          variable to the console.
+ *
+ * @return 0 on success
+ */
+int main() {
+
+    std::string name = "Wayne";
+    int age = 30;
+    bool isMale = true;
+
+    std::cout << "Address of name: " << &name << std::endl;
+    std::cout << "Address of age: " << &age << std::endl;
+    std::cout << "Address of isMale: " << &isMale << std::endl;
+
+    return 0;
+}
