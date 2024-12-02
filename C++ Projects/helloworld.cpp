@@ -1,11 +1,9 @@
 #include <iostream>
 
-// this is pass by value
-// it creates a copy of the objects
-// and passes the copy by value
-// therefore will NOT swap the original objects
+// this is pass by reference
+// it will swap the values
 
-void swap(std::string x, std::string y);
+void swap(std::string &x, std::string &y);
 
 int main() {
 
@@ -23,7 +21,7 @@ int main() {
     return 0;
 }
 
-void swap(std::string x, std::string y) {
+void swap(std::string &x, std::string &y) {
     std::string temp = x;
     x = y;
     y = temp;
