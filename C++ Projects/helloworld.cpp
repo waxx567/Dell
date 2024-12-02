@@ -9,7 +9,7 @@ int main() {
     // const parameters = parameters that cannot be changed after the function has been called
     //                    they are used to prevent the function from modifying the original value of the parameter
     //                    code is more secure and conveys intent better
-    //                    useful for reference and pointers
+    // useful for reference (so the value at the address cannot be changed) and pointers (so the address itself cannot be changed)
 
     std::string name = "Wayne";
     int age = 57;
