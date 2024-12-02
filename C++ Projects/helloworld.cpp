@@ -37,8 +37,8 @@ int main() {
         std::cout << questions[i] << std::endl;
         std::cout << "************************************************" << std::endl;
 
-        for (int j = 0; j < sizeof(options[i])/sizeof(options[i][0]); j++) {
-            std::cout << options[i][j] << std::endl;
+        for (int j = i * 4; j < (i * 4 + 4); j++) {
+            std::cout << options[j] << std::endl;
         }
     }
 
