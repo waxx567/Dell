@@ -1,5 +1,13 @@
 #include <iostream>
 
+/**
+ * @brief Main entry point of the program
+ *
+ * This function initializes a 2D array with car models and prints
+ * each model in a formatted manner. It calculates the number of rows
+ * and columns in the array, then iterates over each element, displaying
+ * them in a tabular format.
+ */
 int main() {
 
     std::string models[][3] = {
