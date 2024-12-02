@@ -1,31 +1,31 @@
 #include <iostream>
 
-int searchArray(int array[], int size, int element);
+int searchArray(std::string array[], int size, std::string element);
 
 /**
  * @brief The main entry point of the program
  *
- * @details This function asks the user to input a number and checks if it is present in the array.
- *          If the number is present in the array, it outputs the index of the number.
- *          Otherwise, it tells the user that the number was not found in the array.
+ * @details This function asks the user to input their favorite food and checks if it is present in the array.
+ *          If the food is present in the array, it outputs the food.
+ *          Otherwise, it tells the user that the food was not found in the array.
  */
 int main() {
 
-    int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int size = sizeof(numbers) / sizeof(int);
+    std::string foods[] = {"apple", "banana", "cherry", "date", "elderberry"};
+    int size = sizeof(foods) / sizeof(std::string);
     int index;
-    int myNum;
+    std::string myFood;
 
-    std::cout << "Enter a number: ";
-    std::cin >> myNum;
+    std::cout << "Enter your favorite food: ";
+    std::cin >> myFood;
 
-    index = searchArray(numbers, size, myNum);
+    index = searchArray(foods, size, myFood);
 
     if (index != -1) {
-        std::cout << "The number " << myNum << " is at index " << index << std::endl;
+        std::cout << "Your favorite food is " << foods[index] << std::endl;
     }
     else {
-        std::cout << "The number " << myNum << " was not found in the array" << std::endl;
+        std::cout << "Your favorite food is not in the list" << std::endl;
     }
 
     return 0;
@@ -40,7 +40,7 @@ int main() {
  *
  * @return the index of the element if found, -1 otherwise
  */
-int searchArray(int array[], int size, int element) {
+int searchArray(std::string array[], int size, std::string element) {
 
     for (int i = 0; i < size; i++) {
         if (array[i] == element) {
