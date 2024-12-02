@@ -1,47 +1,15 @@
 #include <iostream>
 
-void sortArray(int arr[], int size);
-
-/**
- * @brief Entry point of the program
- *
- * This program sorts an array of integers in descending order using the
- * bubble sort algorithm, and prints the sorted array to the console.
- *
- * @return 0 on success
- */
 int main() {
+    
+    // fill() = used to fill a container with a specific value
+    //          fill(begin, end, value)
 
-    int array[] = {5, 2, 8, 1, 9, 3, 6, 4, 7};
-    int size = sizeof(array) / sizeof(array[0]);
+    std::string bikes[10] = {"Suzuki", "Honda", "Yamaha", "Kawasaki", "BMW", "Triumph", "Aprilia", "KTM", "MV Agusta", "Ducati"};
 
-    sortArray(array, size);
-
-    for (int element : array) {
-        std::cout << element << " ";
+    for (std::string bike : bikes) {
+        std::cout << bike << std::endl;
     }
 
     return 0;
-}
-
-/**
- * @brief Sorts an array of integers in descending order using the
- *        bubble sort algorithm.
- *
- * @param arr the array to be sorted
- * @param size the size of the array
- */
-void sortArray(int arr[], int size) {
-
-    int temp;
-
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (arr[j] < arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
 }
