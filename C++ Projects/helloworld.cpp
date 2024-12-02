@@ -29,7 +29,7 @@ int main() {
 
     int size = sizeof(questions) / sizeof(questions[0]);
     char guess;
-    int score;
+    int score = 0;
 
     for (int i = 0; i < size; i++) {
         std::cout << "***************************************************" << std::endl;
