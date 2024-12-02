@@ -10,6 +10,8 @@
  */
 int main() {
 
+    // the problem is the empty string will be added to the array if the user enters fewer than 5
+
     std::string bikes[5];
     int size = sizeof(bikes) / sizeof(bikes[0]);
     std::string temp;
