@@ -22,10 +22,10 @@ int main() {
     index = searchArray(foods, size, myFood);
 
     if (index != -1) {
-        std::cout << "Your favorite food is " << foods[index] << std::endl;
+        std::cout << "Your favorite food is at index " << index << ": " << foods[index] << std::endl;
     }
     else {
-        std::cout << "Your favorite food is not in the list" << std::endl;
+        std::cout << "Your favorite food " << myFood << " is not in the list" << std::endl;
     }
 
     return 0;
