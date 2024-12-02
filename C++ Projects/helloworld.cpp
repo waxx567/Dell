@@ -1,5 +1,7 @@
 #include <iostream>
 
+void printInfo(std::string name, int age);
+
 int main() {
 
     // const parameters = parameters that cannot be changed after the function has been called
