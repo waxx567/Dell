@@ -3,7 +3,11 @@
 /**
  * @brief Main entry point of the program
  *
- * This function prints out the locations of three car models from the given array, one from each row.
+ * This function initializes a 2D array of strings representing car models and
+ * outputs each model to the console. The size of the array is determined at
+ * compile time using the sizeof operator.
+ *
+ * @return 0 on successful execution
  */
 int main() {
 
@@ -17,7 +21,9 @@ int main() {
     int columns = sizeof(models[0]) / sizeof(models[0][0]);
 
     for (int i = 0; i < rows; i++) {
-        std::cout << models[i] << std::endl;
+        for (int j = 0; j < columns; j++) {
+            std::cout << models[i][j] << " ";
+        }
     }
 
     return 0;
