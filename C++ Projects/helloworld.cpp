@@ -1,14 +1,5 @@
 #include <iostream>
 
-/**
- * @brief Main entry point of the program
- *
- * This function initializes a 2D array of strings representing car models and
- * outputs each model to the console. The size of the array is determined at
- * compile time using the sizeof operator.
- *
- * @return 0 on successful execution
- */
 int main() {
 
     std::string models[][3] = {
@@ -24,6 +15,7 @@ int main() {
         for (int j = 0; j < columns; j++) {
             std::cout << models[i][j] << " ";
         }
+        std::cout << std::endl;
     }
 
     return 0;
