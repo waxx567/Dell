@@ -3,11 +3,9 @@
 /**
  * @brief The main entry point of the program
  *
- * @details This function is the main entry point of the program. It contains
- *          a quiz with 4 questions and their corresponding options. The user is
- *          asked to input their answer choice and the program checks if the
- *          answer is correct or not. At the end of the quiz, the program displays
- *          the score.
+ * @details This function contains the game's logic and user interface. It
+ *          prompts the user with a series of questions, and then displays
+ *          the results of how many questions were answered correctly.
  *
  * @return 0 on successful execution
  */
@@ -54,6 +52,11 @@ int main() {
             std::cout << "The correct answer is: " << answerKey[i] << std::endl;
         }
     }
+    std::cout << "***************************************************" << std::endl;
+    std::cout << "*                   RESULTS                       *" << std::endl;
+    std::cout << "***************************************************" << std::endl;
+    std::cout << "You got " << score << " out of " << size << " questions correct!" << std::endl;
+    std::cout << "Score: " << (score/size * 100) << std::endl;
 
     return 0;
 }
