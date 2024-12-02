@@ -10,8 +10,6 @@
  */
 int main() {
 
-    // the problem is the empty string will be added to the array if the user enters fewer than 5
-
     std::string bikes[5];
     int size = sizeof(bikes) / sizeof(bikes[0]);
     std::string temp;
@@ -31,8 +29,9 @@ int main() {
 
     std::cout << "Your bikes are: " << std::endl;
 
-    for (std::string bike : bikes) {
-        std::cout << bike << std::endl;
+    // change the for loop to use the bikes array and check for empty strings
+    for (int i = 0; !bikes[i].empty(); i++) {
+        std::cout << bikes[i] << std::endl;
     }
 
     return 0;
