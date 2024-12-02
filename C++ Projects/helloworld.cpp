@@ -1,5 +1,10 @@
 #include <iostream>
 
+/**
+ * @brief Main entry point of the program
+ *
+ * This function prints out the locations of three car models from the given array, one from each row.
+ */
 int main() {
 
     std::string models[][3] = {
