@@ -1,6 +1,8 @@
 #include <iostream>
 
-void printInfo(std::string name, int age);
+// prevent unwanted changes by adding const to the parameters
+
+void printInfo(const std::string name, const int age);
 
 int main() {
 
@@ -17,7 +19,7 @@ int main() {
     return 0;
 }
 
-void printInfo(std::string name, int age) {
+void printInfo(const std::string name, const int age) {
     std::cout << "Name: " << name << std::endl;
     std::cout << "Age: " << age << std::endl;
 }
