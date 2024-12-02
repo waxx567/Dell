@@ -1,29 +1,45 @@
 #include <iostream>
 
 /**
- * @brief Main entry point of the program
+ * @brief The main entry point of the program
  *
- * This function initializes a 2D array with car models and prints
- * each model in a formatted manner. It calculates the number of rows
- * and columns in the array, then iterates over each element, displaying
- * them in a tabular format.
+ * @details This function contains an array of questions and an array of options
+ *          for each question. It also contains an array of the correct answers
+ *          for each question. The function iterates over the questions and options
+ *          and prints them to the console, formatting them with asterisks.
+ *
+ * @return 0 on successful execution
  */
 int main() {
 
-    std::string models[][3] = {
-        {"Focus", "Fusion", "Ranger"},
-        {"Civic", "Accord", "CRV"},
-        {"Camry", "Corolla", "RAV4"}
+    std::string questions[] = {
+        "1. What is the capital of France?",
+        "2. What is the largest planet in our solar system?",
+        "3. What is the smallest planet in our solar system?",
+        "4. What is the largest mammal in the world?"
     };
 
-    int rows = sizeof(models) / sizeof(models[0]);
-    int columns = sizeof(models[0]) / sizeof(models[0][0]);
+    std::string options[] = {
+        "a. Rome", "b. London", "c. Paris", "d. Madrid",
+        "a. Jupiter", "b. Saturn", "c. Neptune", "d. Earth",
+        "a. Earth", "b. Venus", "c. Mercury", "d. Mars",
+        "a. Elephant", "b. Whale", "c. Lion", "d. Crocodile"
+    };
 
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < columns; j++) {
-            std::cout << models[i][j] << " ";
+    char answerKey[] = {'c', 'a', 'c', 'b'};
+
+    int size = sizeof(questions) / sizeof(questions[0]);
+    char guess;
+    int score;
+
+    for (int i = 0; i < size; i++) {
+        std::cout << "************************************************" << std::endl;
+        std::cout << questions[i] << std::endl;
+        std::cout << "************************************************" << std::endl;
+
+        for (int j = 0; j < sizeof(options[i])/sizeof(options[i][0]); j++) {
+            std::cout << options[i][j] << std::endl;
         }
-        std::cout << std::endl;
     }
 
     return 0;
