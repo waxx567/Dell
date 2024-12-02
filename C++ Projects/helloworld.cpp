@@ -1,25 +1,30 @@
 #include <iostream>
 
-// prevent unwanted changes by adding const to the parameters
-
-void printInfo(const std::string name, const int age);
+int getDigit(const int number);
+int sumOddDigits(const std::string number);
+int sumEvenDigits(const std::string number);
 
 int main() {
 
-    // const parameters = parameters that cannot be changed after the function has been called
-    //                    they are used to prevent the function from modifying the original value of the parameter
-    //                    code is more secure and conveys intent better
-    // useful for reference (so the value at the address cannot be changed) and pointers (so the address itself cannot be changed)
-
-    std::string name = "Wayne";
-    int age = 57;
-
-    printInfo(name, age);
+    // test credit card account numbers
+    // Luhn Algorithm
+    // 1. Double every second digit starting from right to left. If the doubled result is 2 digits, split them up.
+    // 2. Add all the digits together.
+    // 3. Add all odd numbered digits from left to right of the original number.
+    // 4 Sum the results from steps 2 and 3.
+    // 5. If the sum from step 4 is divisible by 10, the number is valid.
 
     return 0;
 }
 
-void printInfo(const std::string name, const int age) {
-    std::cout << "Name: " << name << std::endl;
-    std::cout << "Age: " << age << std::endl;
+int getDigit(const int number) {
+    return 0;
+}
+
+int sumOddDigits(const std::string number) {
+    return 0;
+}   
+
+int sumEvenDigits(const std::string number) {   
+    return 0;
 }
