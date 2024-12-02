@@ -1,19 +1,20 @@
 #include <iostream>
 
 /**
- * @brief The main entry point of the program
+ * @brief Main entry point of the program
  *
- * @details This function initializes an array of strings, fills the array with
- *          the string "Triumph", and then iterates over the array and prints
- *          each string to the console.
+ * This function creates an array of SIZE elements and fills it with the string "Triumph".
+ * It then prints out each element of the array to the console.
  *
  * @return 0 on successful execution
  */
 int main() {
 
-    std::string bikes[100];
+    const int SIZE = 100;
 
-    fill(bikes, bikes + 100, "Triumph");
+    std::string bikes[SIZE];
+
+    fill(bikes, bikes + SIZE, "Triumph");
 
     for (std::string bike : bikes) {
         std::cout << bike << std::endl;
