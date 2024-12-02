@@ -14,8 +14,12 @@ int main() {
     int size = sizeof(bikes) / sizeof(bikes[0]);
 
     for (int i = 0; i < size; i++) {
-        std::cout << "Enter a bike #" << i + 1 << ": ";
+        std::cout << "Enter a bike or 'q' to quit #" << i + 1 << ": ";
         std::getline(std::cin, bikes[i]);
+
+        if (bikes[i] == "q") {
+            break;
+        }
     }
 
     std::cout << "Your bikes are: " << std::endl;
