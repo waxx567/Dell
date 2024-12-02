@@ -7,14 +7,17 @@ int main() {
 
     std::string x = "Cool";
     std::string y = "Uncool";
-    std::string temp;
-
-    temp = x;
-    x = y;
-    y = temp;
+    
+    swap(x, y);
 
     std::cout << x << '\n';
     std::cout << y << '\n';
 
     return 0;
+}
+
+void swap(std::string& x, std::string& y) {
+    std::string temp = x;
+    x = y;
+    y = temp;
 }
