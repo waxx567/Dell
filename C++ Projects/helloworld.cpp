@@ -1,5 +1,7 @@
 #include <iostream>
 
+void swap(std::string& x, std::string& y);
+
 int main() {
 
     // pass by value = pass the value of an object by reference
