@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // test credit card account numbers
 
@@ -15,6 +16,14 @@ int main() {
     // 4 Sum the results from steps 2 and 3.
     // 5. If the sum from step 4 is divisible by 10, the number is valid.
 
+    std::string cardNumber;
+    int result;
+
+    std::cout << "Enter your credit card number: ";
+    std::getline(std::cin, cardNumber);
+
+    result = sumOddDigits(cardNumber) + sumEvenDigits(cardNumber);
+
     return 0;
 }
 
@@ -22,10 +31,17 @@ int getDigit(const int number) {
     return 0;
 }
 
-int sumOddDigits(const std::string number) {
+int sumOddDigits(const std::string cardNumber) {
     return 0;
 }   
 
-int sumEvenDigits(const std::string number) {   
-    return 0;
+int sumEvenDigits(const std::string cardNumber) {   
+    
+    int sum = 0;
+
+    for (int i = cardNumber.size() - 2; i >= 0; i-=2) {
+        sum += getDigit(cardNumber[i] - '0')*2;
+    }
+    
+    return sum;
 }
