@@ -51,7 +51,7 @@ void playerMove(char *spaces, char player) {
     do
     {
         /* code */
-    } while (/* condition */);    
+    } while (number < 1 || number > 9);    
 }
 
 void computerMove(char *spaces, char computer) {
