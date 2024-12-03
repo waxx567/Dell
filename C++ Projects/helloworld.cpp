@@ -28,7 +28,8 @@ int main() {
 }
 
 int getDigit(const int number) {
-    return 0;
+    
+    return number % 10 + (number / 10 % 10);
 }
 
 int sumOddDigits(const std::string cardNumber) {
