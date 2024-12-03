@@ -1,8 +1,34 @@
 #include <iostream>
 
+void drawBoard(char *spaces);
+void playerMove(char *spaces, char player);
+void computerMove(char *spaces, char computer);
+bool checkWinner(char *spaces, char player, char computer);
+bool checkTie(char *spaces);
+
 int main() {
 
     // create a tic-toc-toe game
     
     return 0;
+}
+
+void drawBoard(char *spaces) {
+    // draw the tic-tac-toe board
+}
+
+void playerMove(char *spaces, char player) {
+    // get the player's move
+}
+
+void computerMove(char *spaces, char computer) {
+    // get the computer's move    
+}
+
+bool checkWinner(char *spaces, char player, char computer) {
+    // check if there is a winner
+}
+
+bool checkTie(char *spaces) {
+    // check if there is a tie
 }
