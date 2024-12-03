@@ -9,6 +9,7 @@ bool checkTie(char *spaces);
 int main() {
 
     // create a tic-toc-toe game
+    char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     
     return 0;
 }
@@ -27,8 +28,10 @@ void computerMove(char *spaces, char computer) {
 
 bool checkWinner(char *spaces, char player, char computer) {
     // check if there is a winner
+    return 0;
 }
 
 bool checkTie(char *spaces) {
     // check if there is a tie
+    return 0;
 }
