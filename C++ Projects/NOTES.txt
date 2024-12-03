@@ -4290,7 +4290,7 @@ int main() {
     std::string name = "Wayne";
     std::string *namePtr = &name;
 
-    // prints the value of the pointer
+    // prints the value at that address
     std::cout << *namePtr << std::endl;
 
     return 0;
