@@ -23,6 +23,7 @@ int main() {
     // prints the value at the address
     std::cout << *namePtr << std::endl;
     std::cout << *agePtr << std::endl;
+    std::cout << *pizzasPtr << std::endl;
 
     return 0;
 }
