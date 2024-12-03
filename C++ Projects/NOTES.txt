@@ -4414,10 +4414,10 @@ int main() {
     p = &x;
 
     if (p == nullptr) {
-        std::cout << "p was assigned to nullptr" << std::endl;
+        std::cout << "p was not assigned to nullptr" << std::endl;
     }
     else {
-        std::cout << "p was not assigned to nullptr" << std::endl;
+        std::cout << "p was assigned to nullptr" << std::endl;
     }
     
     return 0;
