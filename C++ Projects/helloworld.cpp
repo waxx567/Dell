@@ -1,12 +1,14 @@
 #include <iostream>
 
+/**
+ * @brief Demonstrates the use of pointers in C++.
+ *
+ * @details This function initializes a string variable and a pointer 
+ *          to that string, then prints the address stored in the pointer.
+ *
+ * @return 0 on successful execution.
+ */
 int main() {
-
-    // pointer = a variable that holds the address of another variable
-    // & = the address of operator
-    // * = the dereference operator
-    // int* = the type of the pointer
-    // int = the type of the variable that the pointer points to
 
     std::string name = "Wayne";
     std::string *namePtr = &name;
