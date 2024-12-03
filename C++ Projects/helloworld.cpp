@@ -21,6 +21,7 @@ int main() {
 
 void drawBoard(char *spaces) {
     // draw the tic-tac-toe board
+    std::cout << std::endl;
     std::cout << "     |     |     " << std::endl;
     std::cout << "  " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << std::endl;
     std::cout << "_____|_____|_____" << std::endl;
