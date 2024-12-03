@@ -1,12 +1,11 @@
 #include <iostream>
 
 /**
- * @brief Demonstrates the use of pointers in C++.
+ * @brief The main entry point of the program
  *
- * @details This function initializes a string variable and a pointer 
- *          to that string, then prints the address stored in the pointer.
- *
- * @return 0 on successful execution.
+ * @details This function demonstrates pointers and addresses in C++.
+ *          It shows how to declare and use pointers and how to use the address of operator (&)
+ *          and the dereference operator (*).
  */
 int main() {
 
