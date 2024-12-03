@@ -10,6 +10,11 @@ int main() {
 
     // create a tic-toc-toe game
     char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+    char player = 'X';
+    char computer = 'O';
+    bool running = true;
+
+    drawBoard(spaces);
     
     return 0;
 }
