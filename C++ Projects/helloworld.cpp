@@ -33,7 +33,14 @@ int getDigit(const int number) {
 }
 
 int sumOddDigits(const std::string cardNumber) {
-    return 0;
+    
+    int sum = 0;
+
+    for (int i = cardNumber.size() - 1; i >= 0; i-=2) {
+        sum += getDigit(cardNumber[i] - '0');
+    }
+    
+    return sum;
 }   
 
 int sumEvenDigits(const std::string cardNumber) {   
