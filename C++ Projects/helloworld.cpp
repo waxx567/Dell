@@ -19,6 +19,13 @@ int main() {
     return 0;
 }
 
+/**
+ * @brief Draw the Tic-Tac-Toe board
+ *
+ * This function prints out the Tic-Tac-Toe board to the console.
+ *
+ * @param spaces The array of characters representing the spaces on the board
+ */
 void drawBoard(char *spaces) {
     // draw the tic-tac-toe board
     std::cout << std::endl;
