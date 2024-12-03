@@ -30,8 +30,7 @@ void drawBoard(char *spaces) {
     std::cout << "     |     |     " << std::endl;
     std::cout << "  " << spaces[6] << "  |  " << spaces[7] << "  |  " << spaces[8] << std::endl;
     std::cout << "     |     |     " << std::endl;
-
-
+    std::cout << std::endl;
 }
 
 void playerMove(char *spaces, char player) {
