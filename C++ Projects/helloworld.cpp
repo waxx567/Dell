@@ -11,10 +11,14 @@
 int main() {
 
     std::string name = "Wayne";
-    std::string *namePtr = &name;
+    int age = 30;
 
-    // prints the value at the address stored in namePtr
+    std::string *namePtr = &name;
+    int *agePtr = &age;
+
+    // prints the value at the address
     std::cout << *namePtr << std::endl;
+    std::cout << *agePtr << std::endl;
 
     return 0;
 }
