@@ -24,6 +24,10 @@ int main() {
 
     // IF THE POINTER IS ASSIGNED, IT IS SAFE TO DEREFERENCE!
 
+    // When using pointers, be careful that your code isn't 
+    // dereferencing a null pointer or pointing to free memory
+    // that has been deallocated, which can cause a segmentation fault
+
     if (p == nullptr) {
         std::cout << "p was not assigned" << std::endl;
     }
