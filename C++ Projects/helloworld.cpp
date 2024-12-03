@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-// test credit card account numbers
+// Program to test credit card account numbers
     // Luhn Algorithm
     // 1. Double every second digit starting from right to left. If the doubled result is 2 digits, split them up.
     // 2. Add all the digits together.
@@ -13,6 +13,12 @@ int getDigit(const int number);
 int sumOddDigits(const std::string number);
 int sumEvenDigits(const std::string number);
 
+/**
+ * The main entry point of the program.
+ *
+ * This function prompts the user for a credit card number, checks the number
+ * using the Luhn Algorithm, and displays whether the number is valid or not.
+ */
 int main() {
 
     std::string cardNumber;
