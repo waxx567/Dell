@@ -13,8 +13,8 @@ int main() {
     std::string name = "Wayne";
     std::string *namePtr = &name;
 
-    // prints the address of the name variable
-    std::cout << namePtr << std::endl;
+    // prints the value of the pointer
+    std::cout << *namePtr << std::endl;
 
     return 0;
 }
