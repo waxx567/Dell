@@ -15,6 +15,10 @@ int main() {
     bool running = true;
 
     drawBoard(spaces);
+
+    while (running) {
+        playerMove(spaces, player);
+    }
     
     return 0;
 }
