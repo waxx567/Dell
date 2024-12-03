@@ -13,7 +13,7 @@ int main() {
     std::string name = "Wayne";
     std::string *namePtr = &name;
 
-    // prints the value of the pointer
+    // prints the value at the address stored in namePtr
     std::cout << *namePtr << std::endl;
 
     return 0;
