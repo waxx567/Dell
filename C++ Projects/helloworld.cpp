@@ -25,10 +25,10 @@ void drawBoard(char *spaces) {
     std::cout << " " << spaces[0] << " | " << spaces[1] << " | " << spaces[2] << std::endl;
     std::cout << "_____|_____|_____" << std::endl;
     std::cout << "   |   |   " << std::endl;
-    std::cout << " " << spaces[3] << " | " << spaces[4] << " | " << spaces[5] << std::endl;
+    std::cout << "  " << spaces[3] << "  |  " << spaces[4] << "  |  " << spaces[5] << std::endl;
     std::cout << "_____|_____|_____" << std::endl;
     std::cout << "     |     |     " << std::endl;
-    std::cout << " " << spaces[6] << " | " << spaces[7] << " | " << spaces[8] << std::endl;
+    std::cout << "  " << spaces[6] << "  |  " << spaces[7] << "  |  " << spaces[8] << std::endl;
     std::cout << "     |     |     " << std::endl;
 
 
