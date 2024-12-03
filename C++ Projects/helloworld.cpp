@@ -16,9 +16,9 @@ int main() {
     std::string *namePtr = &name;
     int *agePtr = &age;
 
-    // prints the address
-    std::cout << namePtr << std::endl;
-    std::cout << agePtr << std::endl;
+    // prints the value at the address
+    std::cout << *namePtr << std::endl;
+    std::cout << *agePtr << std::endl;
 
     return 0;
 }
