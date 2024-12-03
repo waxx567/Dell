@@ -31,7 +31,6 @@ int main() {
  * @param spaces The array of characters representing the spaces on the board
  */
 void drawBoard(char *spaces) {
-    // draw the tic-tac-toe board
     std::cout << std::endl;
     std::cout << "     |     |     " << std::endl;
     std::cout << "  " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << std::endl;
@@ -47,6 +46,12 @@ void drawBoard(char *spaces) {
 
 void playerMove(char *spaces, char player) {
     // get the player's move
+    int number;
+
+    do
+    {
+        /* code */
+    } while (/* condition */);    
 }
 
 void computerMove(char *spaces, char computer) {
