@@ -20,15 +20,16 @@ int main() {
     int *p = nullptr;
     int x = 567;
 
-    //p = &x;
+    p = &x;
 
-    // IF THE POINTER IS NOT ASSIGNED, IT IS NOT SAFE TO DEREFERENCE!
+    // IF THE POINTER IS ASSIGNED, IT IS SAFE TO DEREFERENCE!
 
     if (p == nullptr) {
-        std::cout << "p was not assigned to nullptr" << std::endl;
+        std::cout << "p was not assigned" << std::endl;
     }
     else {
-        std::cout << "p was assigned to nullptr" << std::endl;
+        std::cout << "p was assigned" << std::endl;
+        std::cout << *p << std::endl;
     }
     
     return 0;
