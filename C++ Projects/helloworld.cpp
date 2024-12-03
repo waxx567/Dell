@@ -18,6 +18,7 @@ int main() {
 
     while (running) {
         playerMove(spaces, player);
+        drawBoard(spaces);
     }
     
     return 0;
@@ -50,7 +51,13 @@ void playerMove(char *spaces, char player) {
 
     do
     {
-        /* code */
+        std::cout << "Enter a number (1-9): ";
+        std::cin >> number;
+        number--;
+
+        if (spaces[number] == ' ') {
+            spaces[number] = player;
+        }
     } while (number < 1 || number > 9);    
 }
 
