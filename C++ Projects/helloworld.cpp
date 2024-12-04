@@ -78,6 +78,15 @@ void computerMove(char *spaces, char computer) {
     // get the computer's move
     int number;
     srand(time(0));
+
+    while (true) {
+        number = rand() % 9;
+
+        if (spaces[number] == ' ') {
+            spaces[number] = computer;
+            break;
+        }
+    }
 }
 
 bool checkWinner(char *spaces, char player, char computer) {
