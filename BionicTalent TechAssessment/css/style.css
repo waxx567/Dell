@@ -62,6 +62,10 @@ header {
     padding-inline: 1rem;
 }
 
+.logo h1 {
+    text-transform: uppercase;
+}
+
 .logo-text {
     padding: 0.5rem 0 0.5rem 0;
     font-weight: bold;
@@ -191,6 +195,7 @@ xxl: 1400px
         grid-template-columns: 1fr;
     }
 }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .container {
