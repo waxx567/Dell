@@ -8,6 +8,21 @@ h2 {
     font-size: 24px;
 }
 
+h3 {
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+h5 {
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;    
+    font-size: 16px;
+}
+
 p {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
