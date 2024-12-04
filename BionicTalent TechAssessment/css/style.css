@@ -76,7 +76,7 @@ p {
     cursor: pointer;
 }
 .nav-text {
-    font-weight: bold;
+    /* font-weight: bold; */
     padding-bottom: 0.5rem;
 }
 
