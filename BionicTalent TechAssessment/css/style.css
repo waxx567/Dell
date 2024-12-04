@@ -69,12 +69,12 @@ header {
     justify-content: space-between;
     width: 100%;
     gap: 1rem;
-    border: lawngreen 1px solid;
+    /* border: lawngreen 1px solid; */
 }
 
-.nav-item {
+/* .nav-item {
     border: lightcoral 1px solid;
-}
+} */
 
 .nav-item li {
     display: flex;
