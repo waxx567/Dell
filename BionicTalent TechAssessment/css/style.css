@@ -81,6 +81,11 @@ p {
     gap: 0.5rem;
     cursor: pointer;
 }
+
+.nav-icon {
+    width: 300px;
+}
+
 .nav-text {
     /* font-weight: bold; */
     padding-bottom: 0.5rem;
