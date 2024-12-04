@@ -70,8 +70,7 @@ p {
 }
 
 .nav-item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     width: 100%;
     justify-content: center;
     align-items: center;
