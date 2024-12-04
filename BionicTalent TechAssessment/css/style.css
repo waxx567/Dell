@@ -14,27 +14,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h3, .logo-text {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h5, p { 
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h6 {     
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 p {
@@ -102,7 +102,8 @@ p {
 
 .content h1 {
     padding: 0.25rem 0 0 1rem;
-    font-size: 42px;
+    font-size: 2.625rem;
+    ;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -129,7 +130,7 @@ p {
 
 .hero-content p {
     line-height: 1.75;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .hero-links {
@@ -163,7 +164,7 @@ footer h1 {
 }   
 
 .footer-text p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-text-main {
@@ -192,6 +193,11 @@ xxl: 1400px
 @media (max-width: 575.98px) {
     .container {
         grid-template-columns: 1fr;
+        padding-bottom: 1rem;
+    }
+
+    .container, .content, footer {
+        padding-inline: 0;
     }
 
     .container-left {
@@ -199,13 +205,13 @@ xxl: 1400px
     }
 
     .logo-text {
-        font-size: 14px;
+        font-size: 0.875rem;
         justify-content: center;
         align-self: center;
     }
 
     .nav-text p {
-        font-size: 7px;
+        font-size: 0.4375rem;
     }
 
     .container-right {
@@ -218,6 +224,7 @@ xxl: 1400px
     .container {
         grid-template-columns: 1fr;
     }
+
     .container, .content, footer {
         padding-inline: 1rem;
     }
