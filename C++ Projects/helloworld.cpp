@@ -111,6 +111,9 @@ void computerMove(char *spaces, char computer) {
 
 bool checkWinner(char *spaces, char player, char computer) {
     // check if there is a winner
+    if (spaces[0] == player && spaces[1] == player && spaces[2] == player) {
+        spaces[0] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }  
     return 0;
 }
 
