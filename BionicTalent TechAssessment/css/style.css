@@ -75,6 +75,10 @@ p {
     gap: 0.5rem;
     cursor: pointer;
 }
+.nav-text {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
 
 .logo-text, .nav-text {
     color: #fff;
