@@ -21,6 +21,16 @@ int main() {
         playerMove(spaces, player);
         drawBoard(spaces);
 
+        if (checkWinner(spaces, player, computer)) {
+            running = false;
+            break;
+        }
+
+        if (checkTie(spaces)) {
+            running = false;
+            break;
+        }
+
         computerMove(spaces, computer);
         drawBoard(spaces);
     }
@@ -86,7 +96,6 @@ void playerMove(char *spaces, char player) {
  * @param computer The character symbol representing the computer ('X' or 'O').
  */
 void computerMove(char *spaces, char computer) {
-    // get the computer's move
     int number;
     srand(time(0));
 
