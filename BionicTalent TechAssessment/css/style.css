@@ -153,4 +153,18 @@ footer h1 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 120px;
+    line-height: 1.75;
 }   
+
+.footer-text p {
+    font-size: 14px;
+}
+
+.footer-link {
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.footer-link p {
+    text-decoration: underline;
+}
