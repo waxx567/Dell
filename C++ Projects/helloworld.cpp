@@ -117,6 +117,19 @@ void computerMove(char *spaces, char computer) {
     }
 }
 
+/**
+ * @brief Check if the game is over.
+ *
+ * This function checks if the current state of the board represents a
+ * winning situation for either the player or the computer. If a winning
+ * situation is found, the function prints out a message declaring the
+ * winner and returns true. Otherwise, it returns false.
+ *
+ * @param spaces The array representing the current state of the board.
+ * @param player The character symbol representing the player ('X' or 'O').
+ * @param computer The character symbol representing the computer ('X' or 'O').
+ * @return True if a winning situation is found, false otherwise.
+ */
 bool checkWinner(char *spaces, char player, char computer) {
     // check rows
     if ((spaces[0] != ' ') && (spaces[0] == player) && (spaces[1] == player) && (spaces[2] == player)) {
