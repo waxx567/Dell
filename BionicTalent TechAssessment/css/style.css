@@ -185,4 +185,43 @@ lg: 992px
 xl: 1200px
 xxl: 1400px
 */
-@media (max-width: 768px) {
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container {
+        padding-inline: 2rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }   
+ }
+
+/* Medium devices (tablets, 768px and up) */    
+@media (min-width: 768px) { 
+    .container {
+        padding-inline: 3rem;
+    }   
+
+    .hero {
+        height: 60vh;
+    }
+ }   
+
+/* Large devices (desktops, 992px and up) */    
+@media (min-width: 992px) { 
+    .container {
+        padding-inline: 4rem;
+    }
+
+    .hero { 
+        height: 70vh;                   
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */    
+@media (min-width: 1200px) { 
+    .container {
+        padding-inline: 5rem;
+    }
+}   
