@@ -147,3 +147,8 @@ footer h1 {
     padding-inline: 1rem;
     padding-bottom: 3rem;
 }
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}   
