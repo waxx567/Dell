@@ -49,6 +49,7 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    padding-inline: 1rem;
 }
 
 .container-left {
