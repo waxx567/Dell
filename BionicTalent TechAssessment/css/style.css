@@ -134,3 +134,16 @@ header {
     color: var(--red-color);
     cursor: pointer;
 }
+
+footer h1 {
+    padding: 3rem 0 1rem 1rem;
+    font-weight: bold;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 3rem;
+}
