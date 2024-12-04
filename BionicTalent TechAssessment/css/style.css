@@ -39,7 +39,8 @@ p {
     font-family: var(--paragraph-font);
 }
 
-header {
+.container {
+    margin: 0;
     background-color: var(--blue-color);
     display: grid;
     grid-template-columns: 2fr 1fr; 
