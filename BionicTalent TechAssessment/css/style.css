@@ -55,7 +55,7 @@ p {
     background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* align-items: flex-start; */
 }
 
