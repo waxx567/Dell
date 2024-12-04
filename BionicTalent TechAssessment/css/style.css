@@ -164,6 +164,10 @@ footer h1 {
     font-size: 14px;
 }
 
+.footer-text-main {
+    color: var(--gray-color);
+}
+
 .footer-link {
     color: var(--red-color);
     cursor: pointer;
