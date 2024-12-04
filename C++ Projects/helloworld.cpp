@@ -19,6 +19,9 @@ int main() {
     while (running) {
         playerMove(spaces, player);
         drawBoard(spaces);
+
+        computerMove(spaces, computer);
+        drawBoard(spaces);
     }
     
     return 0;
