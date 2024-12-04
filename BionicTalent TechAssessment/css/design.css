@@ -1,49 +1,4 @@
-:root {
-    --clr-red: #ab3c3c;
-    --clr-blue: #314b57;
-    --clr-gray: #5c5c5c;
-    --clr-white: #fff;
 
-    --heading-font: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
-    --paragraph-font: 'Helvetica', 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--clr-red);
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-h4 {
-    font-size: 1.125rem;
-}
-
-h5, p { 
-    font-size: 1rem;
-}
-
-h6 {     
-    font-size: 0.875rem;
-}
-
-p {
-    font-family: var(--paragraph-font);
-}
-
-.bold {
-    font-weight: bold;
-}
 
 .container {
     background-color: var(--clr-blue);
