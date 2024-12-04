@@ -39,12 +39,16 @@ p {
     font-family: var(--paragraph-font);
 }
 
+header {
+    background-color: var(--blue-color);
+}
+
 .container {
     background-color: var(--blue-color);
     display: grid;
-    grid-template-columns: 2fr 1fr; 
-    column-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
     padding-inline: 1rem;
+    max-width: 1234px;
 }
 
 .container-left {
@@ -80,10 +84,6 @@ p {
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-}
-
-.nav-icon {
-    width: 300px;
 }
 
 .nav-text {
