@@ -27,7 +27,7 @@ h4 {
     font-size: 18px;
 }
 
-h5 { 
+h5, p, .logo-text { 
     font-size: 16px;
 }
 
@@ -37,15 +37,13 @@ h6 {
 
 p {
     font-family: var(--paragraph-font);
-    font-size: 16px;
 }
 
 .container-left {
     background-color: var(--blue-color);
 }
 
-.logo {
-    font-size: 16px;
+.logo-text {
     color: #fff;
 }
 
