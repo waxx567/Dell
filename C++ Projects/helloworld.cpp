@@ -30,5 +30,10 @@ int main() {
     // print the value of the memory
     std::cout << "The value of the memory is: " << *p << std::endl;
 
+    // deallocate memory on the heap
+    delete p;
+
+    // FAILURE TO FREE THE MEMORY WILL CAUSE A SEGMENTATION FAULT
+
     return 0;
 }
