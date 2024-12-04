@@ -48,8 +48,17 @@ void drawBoard(char *spaces) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief Allows the player to make a move on the Tic-Tac-Toe board.
+ *
+ * This function prompts the player to enter a number corresponding to 
+ * a position on the Tic-Tac-Toe board, and updates the board with the 
+ * player's symbol if the selected position is empty.
+ *
+ * @param spaces The array representing the current state of the board.
+ * @param player The character symbol representing the player ('X' or 'O').
+ */
 void playerMove(char *spaces, char player) {
-    // get the player's move
     int number;
 
     do
