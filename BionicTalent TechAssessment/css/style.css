@@ -1,3 +1,11 @@
+:root {
+    --red-color: #ab3c3c;
+    --blue-color: #314b57;
+
+    --heading-font: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
+    --paragraph-font: 'Helvetica', 'Arial', sans-serif;
+}
+
 h1 {
     font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     font-size: 32px;
