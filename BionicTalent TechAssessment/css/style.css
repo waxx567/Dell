@@ -118,14 +118,19 @@ header {
 }
 
 .hero-content {
-    padding-inline: 1rem;
+    padding: 0 0 0 2rem;
 }
 
 .hero-content p {
-    line-height: 1.5;
-    font-size: 13px;
+    line-height: 1.75;
+    font-size: 14px;
 }
 
 .hero-links {
     padding: 2rem 0 0 0;
+}
+
+.hero-link {
+    color: var(--red-color);
+    cursor: pointer;
 }
