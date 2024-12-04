@@ -69,12 +69,14 @@ p {
     width: 100%;
 }
 
-.nav-item {
-    display: grid;
+.nav-item li {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .map {
