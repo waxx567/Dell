@@ -99,3 +99,11 @@ header {
     width: 100%;
     height: 100%;
 }
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
