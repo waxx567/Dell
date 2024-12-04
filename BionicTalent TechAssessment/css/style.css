@@ -150,5 +150,6 @@ footer h1 {
 
 .footer-text {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }   
