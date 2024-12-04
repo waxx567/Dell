@@ -23,6 +23,11 @@ h5 {
     font-size: 16px;
 }
 
+h6 {    
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;    
+    font-size: 14px;
+}
+
 p {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
