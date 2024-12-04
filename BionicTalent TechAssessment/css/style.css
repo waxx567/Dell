@@ -57,10 +57,7 @@ header {
     color: #fff;
 }
 
-.hero {
-    border: red 2px solid;
-}    
-
-.boxes {    
-    border: blue 2px solid;
+.map {
+    background-size:cover;
+    width: 100%;
 }
