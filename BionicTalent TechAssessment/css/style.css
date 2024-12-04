@@ -1,7 +1,8 @@
 :root {
-    --red-color: #ab3c3c;
-    --blue-color: #314b57;
-    --gray-color: #5c5c5c;
+    --clr-red: #ab3c3c;
+    --clr-blue: #314b57;
+    --clr-gray: #5c5c5c;
+    --clr-white: #fff;
 
     --heading-font: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     --paragraph-font: 'Helvetica', 'Arial', sans-serif;
@@ -9,7 +10,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--red-color);
+    color: var(--clr-red);
 }
 
 h1 {
@@ -45,19 +46,18 @@ p {
 }
 
 .container {
-    background-color: var(--blue-color);
+    background-color: var(--clr-blue);
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    padding-inline: 1rem;
 }
 
 .container-left {
-    background-color: var(--blue-color);
+    background-color: var(--clr-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: flex-start; */
+    align-items: flex-start;
 }
 
 .logo h1 {
@@ -92,7 +92,7 @@ p {
 }
 
 .logo-text, .nav-text {
-    color: #fff;
+    color: var(--clr-white);
 }
 
 .map {
@@ -124,7 +124,7 @@ p {
 }
 
 .hero-text {
-    color: var(--gray-color);
+    color: var(--clr-gray);
 }
 
 .hero-content p {
@@ -137,7 +137,7 @@ p {
 }
 
 .hero-link {
-    color: var(--red-color);
+    color: var(--clr-red);
     cursor: pointer;
 }
 
@@ -167,11 +167,11 @@ footer h1 {
 }
 
 .footer-text-main {
-    color: var(--gray-color);
+    color: var(--clr-gray);
 }
 
 .footer-link {
-    color: var(--red-color);
+    color: var(--clr-red);
     cursor: pointer;
 }
 
@@ -210,7 +210,7 @@ xxl: 1400px
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+/* @media (min-width: 576px) { 
     .container {
         padding-inline: 2rem;
     }
@@ -218,25 +218,25 @@ xxl: 1400px
     .hero {
         height: 50vh;
     }   
- }
+ } */
 
 /* Medium devices (tablets, 768px and up) */    
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
     .hero {
         height: 60vh;
     }
- }   
+ }    */
 
 /* Large devices (desktops, 992px and up) */    
-@media (min-width: 992px) { 
+/* @media (min-width: 992px) { 
     .hero { 
         height: 70vh;                   
     }
-}
+} */
 
 /* Extra large devices (large desktops, 1200px and up) */    
 @media (min-width: 1200px) { 
     .container {
-        max-width: 1234px;
+        padding-inline: 5rem;
     }
 }   
