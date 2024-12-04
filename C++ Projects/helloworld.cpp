@@ -110,11 +110,38 @@ void computerMove(char *spaces, char computer) {
 }
 
 bool checkWinner(char *spaces, char player, char computer) {
-    // check if there is a winner
+    // check rows
     if ((spaces[0] != ' ') && (spaces[0] == player) && (spaces[1] == player) && (spaces[2] == player)) {
         spaces[0] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
-    }  
-    return 0;
+    }
+    else if ((spaces[3] != ' ') && (spaces[3] == player) && (spaces[4] == player) && (spaces[5] == player)) {
+        spaces[3] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    else if ((spaces[6] != ' ') && (spaces[6] == player) && (spaces[7] == player) && (spaces[8] == player)) {
+        spaces[6] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    // check columns
+    else if ((spaces[0] != ' ') && (spaces[0] == player) && (spaces[3] == player) && (spaces[6] == player)) {
+        spaces[0] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    else if ((spaces[1] != ' ') && (spaces[1] == player) && (spaces[4] == player) && (spaces[7] == player)) {
+        spaces[1] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    else if ((spaces[2] != ' ') && (spaces[2] == player) && (spaces[5] == player) && (spaces[8] == player)) {
+        spaces[2] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    // check diagonals
+    else if ((spaces[0] != ' ') && (spaces[0] == player) && (spaces[4] == player) && (spaces[8] == player)) {
+        spaces[0] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    else if ((spaces[2] != ' ') && (spaces[2] == player) && (spaces[4] == player) && (spaces[6] == player)) {
+        spaces[2] == player ? std::cout << "Player wins!" << std::endl : std::cout << "Computer wins!" << std::endl;
+    }
+    else {
+        return false;
+    }
+        
+    return true;
 }
 
 bool checkTie(char *spaces) {
