@@ -23,6 +23,7 @@
   
   /* For images to not be able to exceed their container */
   img {
+    display: block;
     max-width: 100%;
   }
   
