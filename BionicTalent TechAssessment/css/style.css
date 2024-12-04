@@ -55,6 +55,14 @@ p {
     color: #fff;
 }
 
+.container-left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding-inline: 1rem;
+}
+
 .map {
     background-size:cover;
     width: 100%;
