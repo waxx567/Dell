@@ -40,8 +40,10 @@ p {
     font-size: 16px;
 }
 
-.header {
-    border: green 2px solid;
+header .container h1 {
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--blue-color);
 }
 
 .hero {
