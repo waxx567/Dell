@@ -197,8 +197,9 @@ xxl: 1400px
     }
 
     .container-right {
+        background-color: #314b57;
         width: 100%;
-        padding-right: 1rem;
+        padding: 0 1rem 1rem 0;
 }
 
 /* Small devices (landscape phones, 576px and up) */
