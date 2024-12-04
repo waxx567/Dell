@@ -44,7 +44,7 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr; 
     column-gap: 3rem;
-    padding-inline: 3rem;
+    padding-inline: 1rem;
 }
 
 .logo-text, .nav-text {
@@ -54,4 +54,5 @@ p {
 .map {
     background-size:cover;
     width: 100%;
+    height: 100%;
 }
