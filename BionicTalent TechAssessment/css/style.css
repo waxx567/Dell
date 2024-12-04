@@ -39,11 +39,6 @@ p {
     font-family: var(--paragraph-font);
 }
 
-.logo-text {
-    padding: 0.5rem 0 0.5rem 0;
-    font-weight: bold;
-}
-
 .container {
     background-color: var(--blue-color);
     display: grid;
@@ -52,15 +47,16 @@ p {
     padding-inline: 1rem;
 }
 
-.logo-text, .nav-text {
-    color: #fff;
-}
-
 .container-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-inline: 1rem;
+}
+
+.logo-text {
+    padding: 0.5rem 0 0.5rem 0;
+    font-weight: bold;
 }
 
 .nav-list {
@@ -78,6 +74,10 @@ p {
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+}
+
+.logo-text, .nav-text {
+    color: #fff;
 }
 
 .map {
