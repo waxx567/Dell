@@ -43,7 +43,7 @@ p {
     background-color: var(--blue-color);
 }
 
-.logo-text {
+.logo-text, .nav-text {
     color: #fff;
 }
 
