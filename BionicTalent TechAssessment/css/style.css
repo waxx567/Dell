@@ -39,6 +39,11 @@ p {
     font-family: var(--paragraph-font);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+}
+
 .container-left {
     background-color: var(--blue-color);
 }
