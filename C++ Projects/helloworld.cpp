@@ -71,7 +71,7 @@ void playerMove(char *spaces, char player) {
         if (spaces[number] == ' ') {
             spaces[number] = player;
         }
-    } while (number > 0 || number < 8);    
+    } while (number < 0 || number > 9);    
 }
 
 void computerMove(char *spaces, char computer) {
