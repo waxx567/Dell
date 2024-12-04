@@ -107,3 +107,7 @@ header {
     padding-inline: 1rem;
     padding-top: 1rem;
 }
+
+.hero-links {
+    padding: 2rem 0 0 0;
+}
