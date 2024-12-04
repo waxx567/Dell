@@ -6,37 +6,36 @@
     --paragraph-font: 'Helvetica', 'Arial', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--red-color);
+}
+
 h1 {
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     font-size: 32px;
 }
 
 h2 {
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     font-size: 24px;
 }
 
 h3 {
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     font-size: 20px;
 }
 
 h4 {
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
     font-size: 18px;
 }
 
-h5 {
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;    
+h5 { 
     font-size: 16px;
 }
 
-h6 {    
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;    
+h6 {     
     font-size: 14px;
 }
 
 p {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: var(--paragraph-font);
     font-size: 16px;
 }
