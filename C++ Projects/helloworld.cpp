@@ -7,9 +7,26 @@ void computerMove(char *spaces, char computer);
 bool checkWinner(char *spaces, char player, char computer);
 bool checkTie(char *spaces);
 
+/**
+ * @brief The main entry point of the Tic Tac Toe game
+ * 
+ * This function initializes the game board, player and computer symbols, and
+ * runs the game loop.
+ * 
+ * The game loop consists of the following steps:
+ * 1. Draw the game board
+ * 2. Prompt the user for their move
+ * 3. Check if the user has won
+ * 4. If not, prompt the computer for its move
+ * 5. Check if the computer has won
+ * 6. Repeat steps 2-5 until either the user or computer wins, or the game
+ *    is a tie.
+ * 
+ * At the end of the game, a message is displayed to indicate that the game
+ * is over.
+ */
 int main() {
 
-    // create a tic-toc-toe game
     char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char player = 'X';
     char computer = 'O';
