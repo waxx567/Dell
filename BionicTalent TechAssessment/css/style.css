@@ -40,12 +40,10 @@ p {
 }
 
 header {
+    background-color: var(--blue-color);
     display: grid;
     grid-template-columns: 2fr 1fr; 
-}
-
-.container-left {
-    background-color: var(--blue-color);
+    column-gap: 6rem;
 }
 
 .logo-text, .nav-text {
