@@ -74,6 +74,17 @@ void playerMove(char *spaces, char player) {
     } while (number < 0 || number > 9);    
 }
 
+/**
+ * @brief Gets the computer's move on the Tic-Tac-Toe board.
+ *
+ * This function uses the random number generator to select a random
+ * number between 0 and 8, which corresponds to a position on the
+ * Tic-Tac-Toe board. The computer's move is placed on the board if the
+ * selected position is empty.
+ *
+ * @param spaces The array representing the current state of the board.
+ * @param computer The character symbol representing the computer ('X' or 'O').
+ */
 void computerMove(char *spaces, char computer) {
     // get the computer's move
     int number;
