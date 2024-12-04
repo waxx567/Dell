@@ -152,7 +152,7 @@ footer h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 120px;
+    min-height: 130px;
     line-height: 1.75;
 }   
 
