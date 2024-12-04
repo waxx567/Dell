@@ -49,8 +49,8 @@ header {
     background-color: var(--blue-color);
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    column-gap: 6rem;
-    padding-inline: 6rem;
+    column-gap: 3rem;
+    padding-inline: 3rem;
 }
 
 .logo-text, .nav-text {
