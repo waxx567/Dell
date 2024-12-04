@@ -58,9 +58,15 @@ p {
 .container-left {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     padding-inline: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .map {
