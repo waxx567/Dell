@@ -33,7 +33,7 @@ int main() {
     // deallocate memory on the heap
     delete p;
 
-    // FAILURE TO FREE THE MEMORY WILL CAUSE A SEGMENTATION FAULT
+    // FAILURE TO FREE THE MEMORY CAN CAUSE A MEMORY LEAK
 
     return 0;
 }
