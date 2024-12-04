@@ -53,11 +53,9 @@ p {
 }
 
 .container-left {
-    background-color: var(--clr-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .logo h1 {
@@ -65,14 +63,16 @@ p {
 }
 
 .logo-text {
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 1rem;
     font-weight: bold;
 }
 
 .nav-list {
+    padding-left: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     gap: 1rem;
 }
@@ -194,6 +194,10 @@ xxl: 1400px
         grid-template-columns: 1fr;
     }
 
+    .container-left {
+        padding-right: 1rem;
+    }
+
     .logo-text {
         font-size: 14px;
         justify-content: center;
@@ -201,7 +205,7 @@ xxl: 1400px
     }
 
     .nav-text p {
-        font-size: 8px;
+        font-size: 7px;
     }
 
     .container-right {
