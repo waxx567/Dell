@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 void drawBoard(char *spaces);
 void playerMove(char *spaces, char player);
@@ -74,7 +75,9 @@ void playerMove(char *spaces, char player) {
 }
 
 void computerMove(char *spaces, char computer) {
-    // get the computer's move    
+    // get the computer's move
+    int number;
+    srand(time(0));
 }
 
 bool checkWinner(char *spaces, char player, char computer) {
