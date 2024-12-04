@@ -49,13 +49,13 @@ header {
 }
 
 .container {
-    background-color: var(--blue-color);
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding-inline: 1rem;
 }
 
 .container-left {
+    background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
