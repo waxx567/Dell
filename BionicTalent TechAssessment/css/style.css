@@ -39,3 +39,15 @@ p {
     font-family: var(--paragraph-font);
     font-size: 16px;
 }
+
+.header {
+    border: green 2px solid;
+}
+
+.hero {
+    border: red 2px solid;
+}    
+
+.boxes {    
+    border: blue 2px solid;
+}
