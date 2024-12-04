@@ -86,7 +86,6 @@ header {
 }
 
 .nav-text {
-    /* font-weight: bold; */
     padding-bottom: 0.5rem;
 }
 
@@ -115,7 +114,7 @@ header {
 }
 
 .hero img {
-    width: 50%;
+    width: 33%;
 }
 
 .hero-content {
