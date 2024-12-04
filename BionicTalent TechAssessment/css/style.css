@@ -196,6 +196,12 @@ xxl: 1400px
         grid-template-columns: 1fr;
     }
 
+    .logo-text {
+        font-size: 17px;
+        justify-content: center;
+        align-self: center;
+    }
+
     .container-right {
         background-color: #314b57;
         width: 100%;
