@@ -42,6 +42,8 @@ int main() {
             break;
         }
     }
+
+    std::cout << "Game over" << std::endl;
     
     return 0;
 }
@@ -165,8 +167,18 @@ bool checkWinner(char *spaces, char player, char computer) {
     return true;
 }
 
+/**
+ * @brief Checks if the game has ended in a tie
+ *
+ * Iterates through the array of spaces and checks if any of them are empty.
+ * If any of them are empty, the function returns false. Otherwise, it outputs
+ * a message indicating that the game has ended in a tie and returns true.
+ *
+ * @param spaces The array of spaces to check
+ *
+ * @return True if the game has ended in a tie, false otherwise
+ */
 bool checkTie(char *spaces) {
-    // check if there is a tie
     for (int i = 0; i < 9; i++) {
         if (spaces[i] == ' ') {
             return false;
