@@ -149,7 +149,7 @@ footer h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding-inline: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .footer-text {
@@ -176,3 +176,13 @@ footer h1 {
 .footer-link p {
     text-decoration: underline;
 }
+
+/* 
+xs: 0
+sm: 576px
+md: 768px
+lg: 992px
+xl: 1200px
+xxl: 1400px
+*/
+@media (max-width: 768px) {
