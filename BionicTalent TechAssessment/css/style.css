@@ -39,6 +39,11 @@ p {
     font-family: var(--paragraph-font);
 }
 
+header {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     margin: 0;
     background-color: var(--blue-color);
