@@ -40,6 +40,7 @@ p {
 }
 
 .logo-text {
+    padding: 0.5rem 0 0.5rem 0;
     font-weight: bold;
 }
 
