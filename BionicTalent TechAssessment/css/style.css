@@ -64,6 +64,9 @@ p {
 
 .logo-text, .nav-text {
     color: var(--clr-white);
+}
+
+.logo-text, .nav-text, .content-header {
     text-transform: uppercase;
 }
 
@@ -81,7 +84,7 @@ p {
     align-items: center;
 }
 
-.nav-icon img {
+.nav-icon img, .hero img {
     object-fit: contain;
 }
 
@@ -111,9 +114,6 @@ p {
     object-fit: contain;
 } 
 
-.content-header {
-    text-transform: uppercase;
-}
 /* 
 @media (min-width: 39.99875em) {
     .header {
