@@ -224,15 +224,16 @@ footer h1 {
 
     .hero {
         flex-direction: column;
+        margin-bottom: 3rem;
     }
 
     .content h1 {
         font-size: 5vw;
     }
     
-    footer {
+    /* footer {
         padding: 30rem 0 1rem 1rem;
-    }
+    } */
 
     .footer-image {
         margin-inline: auto;
@@ -240,6 +241,8 @@ footer h1 {
 
     footer h1 {
         font-size: 4vw;
+        text-align: center;
+        padding-bottom: 2rem;
     }
 
     .footer-grid {
@@ -247,6 +250,8 @@ footer h1 {
     }
 
     .footer-text {
-        padding-inline: 8rem;
+        margin-inline: 2rem;
+        text-align: center;
+        min-height: 100px;
     }
 }
