@@ -152,8 +152,12 @@ p {
     cursor: pointer;
 }
 
-footer h1 {
+footer {
     padding: 3rem 0 1rem 1rem;
+}
+
+footer h1 {
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -163,6 +167,10 @@ footer h1 {
     gap: 1rem;
     padding-inline: 1rem;
     padding-bottom: 1rem;
+}
+
+.footer img {
+    object-fit: cover;
 }
 
 .footer-text {
@@ -221,8 +229,24 @@ footer h1 {
     .content h1 {
         font-size: 5vw;
     }
+    
+    footer {
+        padding: 30rem 0 1rem 1rem;
+    }
+
+    .footer-image {
+        margin-inline: auto;
+    }
+
+    footer h1 {
+        font-size: 4vw;
+    }
 
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-text {
+        padding-inline: 8rem;
     }
 }
