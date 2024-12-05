@@ -146,9 +146,21 @@ p {
     }
 }
 
+@media (min-width: 33.99875em) {
+    .logo-text {
+        font-size: 1.125rem;
+    }
+}
+
 @media (min-width: 48em) {
     .logo-text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .logo-text {
+        font-size: 1.675rem;
     }
 }
 
