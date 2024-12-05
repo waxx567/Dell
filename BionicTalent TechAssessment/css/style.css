@@ -75,7 +75,7 @@ p {
 }
 
 .nav-item li a img {
-    height: 100%;
+    height: 80%;
     object-fit: contain;
 }
 
