@@ -76,7 +76,7 @@ p {
 }
 
 .nav-list {
-    gap: 1.5rem;
+    gap: 2rem;
     padding-right: 1.5rem;
 }
 
@@ -113,7 +113,7 @@ p {
 }
 
 .header-right img {
-    /* height: 100%; */
+    height: 100%;
     object-fit: contain;
 } 
 
