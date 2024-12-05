@@ -58,10 +58,6 @@ p {
     padding-bottom: 1em;
 }
 
-.logo-container {
-    text-align: center;
-}
-
 .logo-text, .nav-text {
     color: var(--clr-white);
 }
@@ -114,9 +110,13 @@ p {
     object-fit: contain;
 } 
 
-.hero-link-text {
+.hero-link-text, .footer-link-text {
     color: var(--clr-red);
     cursor: pointer;
+}
+
+.footer-link-text {
+    text-decoration: underline;
 }
 
 /* 
