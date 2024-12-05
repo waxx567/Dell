@@ -114,6 +114,11 @@ p {
     object-fit: contain;
 } 
 
+.hero-link-text {
+    color: var(--clr-red);
+    cursor: pointer;
+}
+
 /* 
 @media (min-width: 39.99875em) {
     .header {
