@@ -44,3 +44,7 @@ p {
 .bold {
     font-weight: bold;
 }
+
+.container {
+    padding: 0 1em;
+}
