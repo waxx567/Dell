@@ -41,10 +41,6 @@ p {
     font-family: var(--paragraph-font);
 }
 
-img {
-    object-fit: cover;
-}
-
 .bold {
     font-weight: bold;
 }
