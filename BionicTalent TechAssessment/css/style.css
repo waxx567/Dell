@@ -52,3 +52,7 @@ p {
 .header {
     background-color: var(--clr-blue);
 }
+
+.logo-container {
+    border: lime solid 2px;
+}
