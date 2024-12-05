@@ -67,7 +67,7 @@ p {
 }
 
 .logo-text {
-    font-size: 4vw;
+    font-size: clamp(1 rem, -27.5rem + 295vw, 2.5rem);
 }
 
 .nav-container {
