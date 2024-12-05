@@ -6,7 +6,7 @@ slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
 yAxisIntersection = -minWidth * slope + minFontSize
 -20rem * 1.5rem + 2.5rem
 preferredValue = yAxisIntersection[rem] + (slope * 100)[vw]
-
+-27.5rem + 295vw
 clamp(1 rem, -27.5rem + 295vw, 2.5rem)
 */
 
