@@ -50,9 +50,35 @@ p {
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--clr-blue);
 }
 
 .logo-container {
-    border: lime solid 2px;
+    padding: 0 0 1em 0;
+    /* border: lime solid 2px; */
+}
+
+.nav-container {
+    padding: 0 1em 0 0;
+    /* border: red solid 2px; */
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav-container {
+        padding: 0;
+    }
 }
