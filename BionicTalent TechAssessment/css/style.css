@@ -110,6 +110,10 @@ p {
     height: 100%;
     object-fit: contain;
 } 
+
+.content-header {
+    text-transform: uppercase;
+}
 /* 
 @media (min-width: 39.99875em) {
     .header {
