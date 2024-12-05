@@ -67,7 +67,8 @@ p {
 }
 
 .logo-text {
-    font-size: 1.25rem;
+
+    font-size: 1.675rem;
     /* font-size: clamp(1rem, 0.43 + 5.35vw, 2.5rem); */
 }
 
@@ -125,6 +126,14 @@ p {
         display: grid;
         grid-template-columns: 2fr 1fr;
         padding-bottom: 0;
+    }
+
+    .logo-text {
+        padding-left: 1rem;
+    }
+    
+    .nav-text p {
+        font-size: 1.2vw;
     }
 }
 
