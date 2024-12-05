@@ -1,13 +1,18 @@
 /* 
 clamp() for header logo text
-slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
-maxFontSize = 1.675rem
+maxFontSize = 1.5rem
 minFontSize = 0.875rem
 maxWidth = 768px (48rem)
 minWidth = 320px (20rem)
+slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
+slope = (1.5 - 0.875) / (48 - 20)
+0.625 / 28 = 0.02232
+slope = 0.02232
 yAxisIntersection = -minWidth * slope + minFontSize
+yAxisIntersection = -20 * 0.02232 + 0.875 
+yAxisIntersection = -21.964
 preferredValue = yAxisIntersection[rem] + (slope * 100)[vw]
-clamp()
+font-size: clamp0.875rem, -0.21964rem + 2.232vw, 1.5rem;
 */
 
 
