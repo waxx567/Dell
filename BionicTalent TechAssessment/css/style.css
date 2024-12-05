@@ -258,7 +258,6 @@ footer h1 {
     footer h1 {
         font-size: 4vw;
         text-align: center;
-        padding-bottom: 2rem;
     }
 
     .footer-grid {
@@ -280,7 +279,8 @@ footer h1 {
 
 @media (max-width: 1200px) {
     .container, .content, footer {
-        padding-inline: 2rem;
+        padding: 0;
+        padding-inline: 1rem;
     }
 }
 
