@@ -7,64 +7,113 @@ xl: 1200px
 xxl: 1400px
 */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* @media (min-width: 319.98px) and (max-width: 576px) {
+
+} */
+
+@media (max-width: 576px) {
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-text {
+        margin-inline: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .design {
+        display: flex;
+        flex-direction: column;
+    }
+
     .container {
         grid-template-columns: 1fr;
-        padding-bottom: 1rem;
-    }
-
-    .container, .content, footer {
-        padding-inline: 0;
-    }
-
-    .container-left {
-        padding-right: 1rem;
-    }
+    }    
 
     .logo-text {
-        font-size: 0.875rem;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .nav-text p {
-        font-size: 0.4375rem;
+        font-size: 3vw;
     }
 
     .container-right {
-        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        padding-bottom: 1rem;  
     }
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) { 
-    .container {
+    .nav-text p {
+        font-size: 2vw;
+    }
+
+    .hero {
+        margin-bottom: 3rem;
+    }
+
+    .content h1 {
+        font-size: 5vw;
+    }
+
+    .hero-text {
+        padding: 1rem 0;
+    }
+    
+    footer {
+        padding: 1rem;
+    }
+
+    /* .footer-header {
+        padding-left: 2rem;
+    } */
+
+    .footer-image {
+        margin-inline: auto;
+    }
+
+    footer h1 {
+        font-size: 4vw;
+    }
+
+    .footer-header {
+        text-align: center;
+    }
+
+    .footer-grid {
         grid-template-columns: 1fr;
     }
 
-    .container, .content, footer {
-        padding-inline: 1rem;
-    }
- }
-
-/* Medium devices (tablets, 768px and up) */    
-@media (max-width: 991.98px) { 
-    .container, .content, footer {
-        padding-inline: 2rem;
-    }
- }   
-
-/* Large devices (desktops, 992px and up) */    
-@media (max-width: 1199.98px) { 
-    .container, .content, footer {
-        padding-inline: 3rem;
+    .footer-text {
+        margin-inline: 4rem;
+        text-align: center;
+        max-height: 100px;
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */    
-@media (min-width: 1200px) { 
-    .container, .content, footer {
-        padding-inline: 6rem;
+@media (max-width: 992px) {
+    .content {
+        margin-bottom: 1rem;
     }
-}   
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container, .content, footer {
+        padding: 0;
+        padding-inline: 1rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container, .content, footer {
+        max-width: 1400px;
+        padding-inline: 5rem;
+    }
+}
