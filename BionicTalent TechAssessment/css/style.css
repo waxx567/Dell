@@ -67,8 +67,8 @@ p {
 }
 
 .logo-text {
-    font-size: 0.875rem;
-    /* font-size: clamp0.875rem, -0.21964rem + 2.232vw, 1.5rem; */
+    /* font-size: 0.875rem; */
+    font-size: clamp(0.875rem, 0.511rem + 1.818vw, 1.675rem);
 }
 
 .nav-container {
@@ -130,7 +130,7 @@ p {
     text-decoration: underline;
 }
 
-@media (min-width: 39.99875em) {
+@media (min-width: 47.99875em) {
     .header {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -140,12 +140,16 @@ p {
     .logo-text {
         padding-left: 1rem;
     }
+
+    .header-right img {
+        object-fit: cover;
+    }
     
     .nav-text p {
         font-size: 1.2vw;
     }
 }
-
+/* 
 @media (min-width: 33.99875em) {
     .logo-text {
         font-size: 1.125rem;
@@ -162,7 +166,7 @@ p {
     .logo-text {
         font-size: 1.675rem;
     }
-}
+} */
 
 /* 
 @media (min-width: 39.99875em) {
