@@ -74,6 +74,11 @@ p {
     padding: 0 0 1em 0;
 }
 
+.nav-item li a img {
+    object-fit: cover;
+    max-height: 10rem;
+}
+
 .nav-text {
     text-align: center;
 }
@@ -96,7 +101,7 @@ p {
 
 .header-right img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 } 
 
 @media (min-width: 47.99875em) {
@@ -109,8 +114,17 @@ p {
     .logo-container {
         padding: 0 0 1em 0;
     }
+
+    .logo-text {
+        font-size: 2vw;
+        text-align: start;
+    }
     
     .nav-container {
         padding: 0 1em 0 0;
+    }
+
+    .nav-text p {
+        font-size: 1vw;
     }
 }
