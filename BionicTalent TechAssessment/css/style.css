@@ -203,6 +203,12 @@ footer h1 {
 } */
 
 @media (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     .container {
         grid-template-columns: 1fr;
     }    
@@ -255,3 +261,9 @@ footer h1 {
         min-height: 100px;
     }
 }
+
+/* @media (max-width: 992px) {
+    footer {
+        padding: 8rem 0 1rem 1rem;
+    }
+} */
