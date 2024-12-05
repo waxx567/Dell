@@ -45,10 +45,10 @@ p {
     font-weight: bold;
 }
 
-.container {
+.container > * {
     padding: 0 1em;
 }
 
 .header {
-    color: var(--clr-blue);
+    background-color: var(--clr-blue);
 }
