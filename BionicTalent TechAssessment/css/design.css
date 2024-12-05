@@ -1,3 +1,11 @@
+/* 
+clamp()
+slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
+yAxisIntersection = -minWidth * slope + minFontSize
+preferredValue = yAxisIntersection[rem] + (slope * 100)[vw]
+*/
+
+
 
 /* 
 .container {
