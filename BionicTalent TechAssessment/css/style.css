@@ -152,13 +152,13 @@ p {
 }
 
 footer {
-    padding: 3rem 0 1rem 1rem;
+    padding: 1rem;
 }
 
 footer h1 {
     font-size: 3vw;
     font-weight: bold;
-    padding: 0 0 1.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .footer-grid {
@@ -204,7 +204,7 @@ footer h1 {
 
 @media (max-width: 576px) {
     footer {
-        padding: 4rem 0 1rem 1rem;
+        padding: 1rem;
     }
 
     .footer-text {
@@ -239,17 +239,24 @@ footer h1 {
     }
 
     .hero {
-        flex-direction: column;
         margin-bottom: 3rem;
     }
 
     .content h1 {
         font-size: 5vw;
     }
+
+    .hero-text {
+        padding: 1rem 0;
+    }
     
     footer {
-        padding: 5rem 0 1rem 1rem;
+        padding: 1rem;
     }
+
+    /* .footer-header {
+        padding-left: 2rem;
+    } */
 
     .footer-image {
         margin-inline: auto;
@@ -257,6 +264,9 @@ footer h1 {
 
     footer h1 {
         font-size: 4vw;
+    }
+
+    .footer-header {
         text-align: center;
     }
 
@@ -267,13 +277,21 @@ footer h1 {
     .footer-text {
         margin-inline: 4rem;
         text-align: center;
-        min-height: 100px;
+        max-height: 100px;
     }
 }
 
 @media (max-width: 992px) {
-    footer {
-        padding: 4rem 0 1rem 1rem;
+    .content {
+        margin-bottom: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        padding: 1rem 0;
     }
 }
 
