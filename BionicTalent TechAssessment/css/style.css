@@ -75,8 +75,8 @@ p {
 }
 
 .nav-item li a img {
-    object-fit: cover;
-    max-height: 10rem;
+    height: 100%;
+    object-fit: contain;
 }
 
 .nav-text {
@@ -125,6 +125,6 @@ p {
     }
 
     .nav-text p {
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 }
