@@ -73,11 +73,11 @@ p {
 .nav-container {
     padding: 0 0 1em 0;
 }
-/* 
+
 .nav-icon img {
-    height: 50%;
+    height: 50px;
     object-fit: contain;
-} */
+}
 
 .nav-text {
     text-align: center;
@@ -89,10 +89,10 @@ p {
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 1em; */
 }
 
 .header-right {
