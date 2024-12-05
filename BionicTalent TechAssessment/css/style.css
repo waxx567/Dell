@@ -48,6 +48,7 @@ p {
 .container > * {
     padding: 0 1em;
 }
+
 .header {
     background-color: var(--clr-blue);
     display: flex;
@@ -89,10 +90,20 @@ p {
     gap: 1em;
 }
 
+.header-right {
+    margin-inline: auto;
+}
+
+.header-right img {
+    height: 100%;
+    object-fit: cover;
+} 
+
 @media (min-width: 47.99875em) {
     .header {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        padding-bottom: 0;
     }
 
     .logo-container {
