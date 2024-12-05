@@ -47,15 +47,11 @@ p {
     font-weight: bold;
 }
 
-.container > * {
-    padding: 1em 1em 0 1em;
-}
-
 .header {
     background-color: var(--clr-blue);
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
+    padding: 0 1em;
 }
 
 .logo-text, .nav-text {
@@ -67,13 +63,16 @@ p {
 }
 
 .logo-text {
-
     font-size: 1.675rem;
     /* font-size: clamp(1rem, 0.43 + 5.35vw, 2.5rem); */
 }
 
 .nav-container {
     padding: 0 0 1em 0;
+}
+
+.nav-list {
+    margin-inline: 1.5rem;
 }
 
 .nav-icon {
@@ -111,6 +110,10 @@ p {
     height: 100%;
     object-fit: contain;
 } 
+
+.content, .footer {
+    padding: 1rem 1rem 0 1rem;
+}
 
 .hero-link-text, .footer-link-text {
     color: var(--clr-red);
