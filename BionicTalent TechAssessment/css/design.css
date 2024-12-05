@@ -3,11 +3,11 @@ clamp()
 slope = (maxFontSize - minFontSize) / (maxWidth - minWidth)
 2.5rem - 1rem = 1.5rem
 768px - 320px = 448px (28rem)
+0.0535
 yAxisIntersection = -minWidth * slope + minFontSize
--20rem * 1.5rem + 2.5rem
+-20 * 0.0535 + 1.5 = 0.43
 preferredValue = yAxisIntersection[rem] + (slope * 100)[vw]
--27.5rem + 295vw
-clamp(1 rem, -27.5rem + 295vw, 2.5rem)
+clamp(1rem, 0.43 + 5.35vw, 2.5rem)
 */
 
 

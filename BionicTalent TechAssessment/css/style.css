@@ -67,7 +67,7 @@ p {
 }
 
 .logo-text {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     /* font-size: clamp(1rem, 0.43 + 5.35vw, 2.5rem); */
 }
 
@@ -118,6 +118,14 @@ p {
 
 .footer-link-text {
     text-decoration: underline;
+}
+
+@media (min-width: 39.99875em) {
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-bottom: 0;
+    }
 }
 
 /* 
