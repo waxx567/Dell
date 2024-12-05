@@ -64,8 +64,9 @@ p {
 }
 
 .logo-text {
-    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 2vw;
     font-weight: bold;
+    padding: 0.5rem 0 0.5rem 1rem;
 }
 
 .nav-list {
@@ -89,12 +90,16 @@ p {
 }
 
 .nav-item li a img {
-    max-width: auto;
+    object-fit: cover;
     max-height: 10rem;
 }
 
 .nav-text {
     padding-bottom: 0.5rem;
+}
+
+.nav-text p {
+    font-size: 1.25vw;
 }
 
 .logo-text, .nav-text {
@@ -104,24 +109,6 @@ p {
 .container-right img {
     height: 100%;
     object-fit: cover;
-}
-
-/* @media (min-width: 319.98px) and (max-width: 576px) {
-
-} */
-
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }    
-
-    .container-right {
-        display: flex;
-        justify-content: center;
-        align-items: center;   
-        padding-bottom: 1rem;  
-    }
-
 }
 
 .content h1 {
@@ -202,4 +189,29 @@ footer h1 {
 
 .footer-link p {
     text-decoration: underline;
+}
+
+/* @media (min-width: 319.98px) and (max-width: 576px) {
+
+} */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }    
+
+    .logo-text {
+        font-size: 3vw;
+    }
+
+    .container-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        padding-bottom: 1rem;  
+    }
+
+    .nav-text p {
+        font-size: 2vw;
+    }
 }
