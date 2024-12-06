@@ -106,13 +106,18 @@ p {
     font-size: 1.75em;
 }
 
-.service-area-text, .hero-links, .footer-text-main {
+.service-area-text, .service-area-links, .footer-text-main {
     padding-inline: clamp(var(--gap), -6.857rem + 39.286vw, 12rem);
 }
 
-.service-area-text, .hero-link-text, .footer-text-main, .footer-link-text {
+.service-area-text, .service-area-link-text, .footer-text-main, .footer-link-text {
     font-size: 0.675rem;
     text-align: center;
+}
+
+.service-area-link-text {
+    color: var(--clr-red);
+    cursor: pointer;
 }
 
 @media (min-width: 35.999em) {
