@@ -123,11 +123,10 @@ p {
     text-align: center;
 }
 
-.service-area-link-text {
+.service-area-link-text, .footer-link-text {
     color: var(--clr-red);
     cursor: pointer;
 }
-
 
 
 @media (min-width: 35.999em) {
@@ -202,10 +201,7 @@ p {
     gap: 0.5rem;
 }
 
-.hero-link-text, .footer-link-text {
-    color: var(--clr-red);
-    cursor: pointer;
-}
+
 
 .footer {
     padding: 2rem 1rem 0 1rem;
