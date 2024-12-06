@@ -87,7 +87,7 @@ p {
     object-fit: contain;
 }
 
-.nav-image, .service-area-image, .footer-image {
+.nav-image, .map, .service-area-image, .footer-image {
     object-fit: contain;
 }
 
