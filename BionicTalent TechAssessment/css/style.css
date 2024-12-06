@@ -67,7 +67,7 @@ p {
     text-align: center;
 }
 
-.logo-text, .nav-text, .content-header {
+.logo-text, .nav-text, .service-area-header {
     text-transform: uppercase;
 }
 
@@ -92,7 +92,7 @@ p {
     height: 50px;
 } */
 
-.nav-image, .service-area, .footer-image {
+.nav-image, .service-area-image, .footer-image {
     object-fit: contain;
 }
 
@@ -107,7 +107,7 @@ p {
     gap: var(--gap);    
 }
 
-.header-right, .service-area, .footer-image {
+.header-right, .service-area-image, .footer-image {
     margin: 0 auto;
 }
 /*
