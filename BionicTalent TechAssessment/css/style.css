@@ -76,18 +76,24 @@ p {
 }
 
 .nav-container {
-    padding: 0 0 1em 0;
+    padding: 0 0 1em 0;;
+    /* border: yellow solid 1px; */
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: row;
+    display: grid;        
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: var(--gap);
 }
 
 .nav-item {
     max-width: max-content;
-    border: red solid 1px;
+    /* border: red solid 1px; */
+}
+
+.nav-text p {
+    font-size: 2vw;
+    padding: 1em 0 0 0;
 }
 /*
 .nav-list {
@@ -111,10 +117,7 @@ p {
     object-fit: cover;
 }
 
-.nav-text p {
-    font-size: 2vw;
-    padding: 1em 0 0 0;
-}
+
 
 
 .header-right, .service-area-image-container, .footer-image-container {
