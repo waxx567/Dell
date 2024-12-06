@@ -163,7 +163,7 @@ p {
 }
 
 @media (min-width: 79.938em) {
-    .header {
-        padding-inline: 6rem;
+    .header, .content, .footer {
+        padding-inline: 16rem;
     }
 }
