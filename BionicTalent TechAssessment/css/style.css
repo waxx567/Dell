@@ -161,47 +161,9 @@ p {
         object-fit: cover;
     }
 }
-/* 
-@media (min-width: 33.99875em) {
-    .logo-text {
-        font-size: 1.125rem;
-    }
-}
 
-@media (min-width: 48em) {
-    .logo-text {
-        font-size: 1.25rem;
-    }
-}
-
-@media (min-width: 64em) {
-    .logo-text {
-        font-size: 1.675rem;
-    }
-} */
-
-/* 
-@media (min-width: 39.99875em) {
+@media (min-width: 79.938em) {
     .header {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding-bottom: 0;
+        padding-inline: 6rem;
     }
-
-    .logo-container {
-        padding: 0 0 1em 0;
-    }
-
-    .logo-text {
-        font-size: 2vw;
-        text-align: start;
-    }
-    
-    .nav-container {
-        padding: 0 1em 0 0;
-    }
-
-    .nav-text p {
-        font-size: 1.2vw;
-    }
-} */
+}
