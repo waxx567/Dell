@@ -8,6 +8,7 @@
     --paragraph-font: 'Helvetica', 'Arial', sans-serif;
 
     --gap: 1rem;
+    --gap-half: calc(var(--gap) / 2);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +47,7 @@ p {
 .bold {
     font-weight: bold;
 }
-
+/* 
 .header {
     background-color: var(--clr-blue);
     display: flex;
@@ -164,9 +165,9 @@ p {
     cursor: pointer;
 }
 
-/* .footer {
+.footer {
     padding: 2rem 1rem 0 1rem;
-} */
+}
 
 .footer-grid {
     display: flex;
@@ -282,4 +283,4 @@ p {
         flex-direction: row;
         gap: 1rem;
     }
-}
+} */
