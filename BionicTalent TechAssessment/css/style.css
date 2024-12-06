@@ -107,7 +107,7 @@ p {
 }
 
 .service-area-text {
-    padding-top: var(--gap);
+    padding-block: var(--gap);
 }
 
 .service-area-text, .footer-text-main {
