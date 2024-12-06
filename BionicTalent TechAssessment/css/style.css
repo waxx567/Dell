@@ -97,6 +97,7 @@ p {
 
 .map {
     height: 100%;
+    cursor: pointer;
 }
 
 .service-area-header {
