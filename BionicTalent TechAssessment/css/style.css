@@ -123,6 +123,14 @@ p {
     text-align: center;
 }
 
+.service-area-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    gap: 0.5rem;
+}
+
 .service-area-link-text, .footer-link-text {
     color: var(--clr-red);
     cursor: pointer;
@@ -193,13 +201,7 @@ p {
 
 
 
-.hero-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 0.75rem;
-    gap: 0.5rem;
-}
+
 
 
 
