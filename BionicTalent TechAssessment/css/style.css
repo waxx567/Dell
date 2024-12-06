@@ -184,7 +184,7 @@ p {
     margin-inline: auto;
     object-fit: contain;
 }   
-/* 
+
 .footer-text {
     padding-block: 0.5rem;
     gap: 0.5rem;
@@ -192,7 +192,7 @@ p {
 
 .footer-link-text {
     text-decoration: underline;
-} */
+}
 
 @media (min-width: 47.99875em) {
     .header {
