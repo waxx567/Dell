@@ -147,6 +147,10 @@ p {
     text-align: center;
 }
 
+.hero-links-container {
+    border: hotpink 3px solid;
+}
+
 .hero-links {
     display: flex;
     flex-direction: column;
