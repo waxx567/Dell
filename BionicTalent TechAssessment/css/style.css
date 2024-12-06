@@ -101,6 +101,10 @@ p {
     margin: 0 auto;
 }
 
+.map {
+    height: 100%;
+}
+
 .service-area-header {
     padding-block: var(--gap);
     text-align: center;
@@ -185,10 +189,6 @@ p {
     .nav-text p {
         font-size: 1.5vw;
         padding-bottom: 0.5rem;
-    }
-    
-    .map {
-        height: 100%;
     }
 }
 /* 
