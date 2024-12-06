@@ -74,13 +74,20 @@ p {
 .logo-text, .nav-text, .service-area-header {
     text-transform: uppercase;
 }
-/*
+
 .nav-container {
     padding: 0 0 1em 0;
 }
 
 .nav-list {
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);    
+}
+/*
+.nav-item li {
+    max-height: 150px;
+    border: #ab3c3c solid 1px;
 }
 
 .nav-icon {
@@ -99,11 +106,6 @@ p {
     padding: 1em 0 0 0;
 }
 
-.nav-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--gap);    
-}
 
 .header-right, .service-area-image-container, .footer-image-container {
     margin: 0 auto;
