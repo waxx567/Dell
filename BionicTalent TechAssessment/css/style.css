@@ -55,7 +55,7 @@ p {
 }
 
 .header, .service-area, .footer {
-    padding: 0 1em;
+    padding-inline: 1rem;
 }
 
 .logo-container {
@@ -79,15 +79,19 @@ p {
     padding: 0 0 1em 0;
 }
 
+.nav-item {
+    max-width: max-content;
+    border: red solid 1px;
+}
+/*
 .nav-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--gap);    
 }
-/*
+
 .nav-item li {
     max-height: 150px;
-    border: #ab3c3c solid 1px;
 }
 
 .nav-icon {
