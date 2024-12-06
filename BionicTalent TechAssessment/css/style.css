@@ -164,6 +164,6 @@ p {
 
 @media (min-width: 79.938em) {
     .header, .content, .footer {
-        padding-inline: 16rem;
+        padding-inline: 10rem;
     }
 }
