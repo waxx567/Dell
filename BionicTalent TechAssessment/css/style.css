@@ -102,7 +102,7 @@ p {
     gap: var(--gap);    
 }
 
-.map, .service-area-image, .footer-image {
+.header-right, .service-area-image-container, .footer-image-container {
     margin: 0 auto;
 }
 /*
