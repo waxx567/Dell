@@ -84,11 +84,10 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 0 0.5em;
-    object-fit: contain;
 }
 
-.nav-image, .map, .service-area-image, .footer-image {
-    object-fit: contain;
+.nav-icon, .nav-image, .map, .service-area-image, .footer-image {
+    object-fit: cover;
 }
 
 .nav-text p {

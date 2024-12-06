@@ -18,6 +18,7 @@
   
   /* 5. Improve media defaults */
   img{
+    display: block;
     max-width: 100%;
   }
   
