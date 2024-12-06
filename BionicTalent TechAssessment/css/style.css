@@ -106,6 +106,10 @@ p {
     font-size: 1.75em;
 }
 
+.service-area-text, .footer-text-main {
+    color: var(--clr-gray);
+}
+
 .service-area-text, .service-area-links, .footer-text-main {
     padding-inline: clamp(var(--gap), -6.857rem + 39.286vw, 12rem);
 }
@@ -119,6 +123,8 @@ p {
     color: var(--clr-red);
     cursor: pointer;
 }
+
+
 
 @media (min-width: 35.999em) {
     .nav-container {
@@ -195,9 +201,6 @@ p {
     text-align: center;
 }
 
-.hero-text, .footer-text-main {
-    color: var(--clr-gray);
-}
 
 .hero-links {
     display: flex;
