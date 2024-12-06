@@ -191,11 +191,22 @@ p {
         padding-bottom: 0.5rem;
     }
     
+    .service-area-header {
+        font-size: 4vw;
+        padding-top: var(--gap);
+        text-align: left;
+    }
+    
     .service-area-content {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: var(--gap);
-        padding: 1em 0 0 0;
+    }
+     
+    .service-area-text, .service-area-links {
+        padding: 0 1rem 0 0.5rem;
+        text-align: left;
+        font-size: clamp(0.675rem, 0.038rem + 1.328vw, 1.1rem);
     }
 }
 /* 
@@ -204,21 +215,11 @@ p {
 
     
 
-    .content-header {
-        font-size: 4vw;
-        padding-top: var(--gap);
-        text-align: left;
-    }
 
     .service-area {
         margin: 0;
     }
-    
-    .hero-text, .hero-links {
-        padding: 0 1rem 0 0.5rem;
-        text-align: left;
-        font-size: clamp(0.675rem, 0.038rem + 1.328vw, 1.1rem);
-    }
+   
 
     .hero-link-text {
         text-align: left;
