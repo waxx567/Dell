@@ -97,7 +97,7 @@ p {
     padding: 1em 0 0 0;
 }
 
-.header-right, .service-area-image-container, .footer-image-container {
+.header-image-container, .service-area-image-container, .footer-image-container {
     margin: 0 auto;
 }
 
