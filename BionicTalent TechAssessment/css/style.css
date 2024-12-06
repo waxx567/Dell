@@ -106,6 +106,10 @@ p {
     font-size: 1.75em;
 }
 
+.service-area-text {
+    padding-top: var(--gap);
+}
+
 .service-area-text, .footer-text-main {
     color: var(--clr-gray);
 }
@@ -188,18 +192,6 @@ p {
     justify-content: space-between;
 }
 
-.hero-text {
-    padding-top: var(--gap);
-}
-
-.hero-text, .hero-links, .footer-text-main {
-    padding-inline: clamp(var(--gap), -6.857rem + 39.286vw, 12rem);
-}
-
-.hero-text, .hero-link-text, .footer-text-main, .footer-link-text {
-    font-size: 0.675rem;
-    text-align: center;
-}
 
 
 .hero-links {
