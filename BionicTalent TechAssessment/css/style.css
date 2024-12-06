@@ -79,6 +79,12 @@ p {
     padding: 0 0 1em 0;
 }
 
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+}
+
 .nav-item {
     max-width: max-content;
     border: red solid 1px;
