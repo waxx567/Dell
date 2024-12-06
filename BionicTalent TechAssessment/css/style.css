@@ -87,10 +87,10 @@ p {
     object-fit: contain;
 }
 
-.nav-image {
+/* .nav-image {
     width: 50px;
     height: 50px;
-}
+} */
 
 .nav-image, .service-area, .footer-image {
     object-fit: contain;
@@ -100,17 +100,17 @@ p {
     font-size: 2vw;
     padding: 1em 0 0 0;
 }
-/*
+
 .nav-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--gap);    
 }
 
-.header-right {
+.header-right, .service-area, .footer-image {
     margin: 0 auto;
 }
-
+/*
 .header-right img {
     height: 100%;
     object-fit: contain;
