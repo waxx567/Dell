@@ -246,9 +246,11 @@ p {
         justify-content: space-between;
     }
 
-    /* .footer-image-container {
-        width: 200px;
-    } */
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     
     .footer-text-main {
         padding: 0;
