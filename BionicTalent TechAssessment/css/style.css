@@ -86,7 +86,7 @@ p {
     padding: 0 0.5em;
 }
 
-.nav-icon img, .hero img {
+.nav-image, .service-area, .footer-image {
     object-fit: contain;
 }
 
@@ -102,8 +102,6 @@ p {
 .nav-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* display: flex;
-    flex-wrap: wrap; */
     gap: var(--gap);    
 }
 
@@ -125,9 +123,9 @@ p {
     text-decoration: underline;
 }
 
-.hero-content {
+/* .hero-content {
     padding: 0 0 0 2rem;
-}
+} */
 
 .footer {
     padding: 1rem 1rem 0 1rem;
