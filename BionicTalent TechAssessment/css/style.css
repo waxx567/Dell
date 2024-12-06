@@ -146,6 +146,10 @@ p {
     font-size: 1.25rem;
 }
 
+.footer-text-main {
+    padding-block: var(--gap-half);
+}
+
 @media (min-width: 35.999em) {
     .nav-container {
         padding-inline: 3rem;
