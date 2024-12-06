@@ -116,10 +116,6 @@ p {
     object-fit: contain;
 } 
 
-.content, .footer {
-    padding: 1rem 1rem 0 1rem;
-}
-
 .hero-link-text, .footer-link-text {
     color: var(--clr-red);
     cursor: pointer;
@@ -127,6 +123,14 @@ p {
 
 .footer-link-text {
     text-decoration: underline;
+}
+
+.hero-content {
+    padding: 0 0 0 2rem;
+}
+
+.footer {
+    padding: 1rem 1rem 0 1rem;
 }
 
 @media (min-width: 47.99875em) {
