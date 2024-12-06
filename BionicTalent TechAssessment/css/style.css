@@ -227,8 +227,13 @@ p {
         text-align: left;
         font-size: clamp(0.675rem, 0.038rem + 1.328vw, 1.1rem);
     }
+/* 
+    .hero-links-container {
+        text-align: left;
+    } */
 
     .hero-links {
+        /* text-align: left; */
         gap: 0;
     }
 
