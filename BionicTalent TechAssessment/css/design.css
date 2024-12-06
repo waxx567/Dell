@@ -15,6 +15,14 @@ preferredValue = yAxisIntersection[rem] + (slope * 100)[vw]
 font-size: clamp0.875rem, -0.21964rem + 2.232vw, 1.5rem;
 clamp() for hero text
 minFontSize = 0.875rem
+maxFontSize = 1.1rem
+minWidth = 768px (48rem)
+maxWidth = 1280px (80rem)
+clamp() for hero text padding
+minFontSize = 1rem
+maxFontSize = 12rem
+minWidth = 320px (20rem)
+maxWidth = 768px (48rem)
 */
 
 
