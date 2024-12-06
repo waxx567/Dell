@@ -146,6 +146,10 @@ p {
     font-size: 1.25rem;
 }
 
+.footer-image {
+    cursor: pointer;
+}
+
 .footer-text-main {
     padding-block: var(--gap-half);
 }
