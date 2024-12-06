@@ -121,12 +121,12 @@ p {
 }
 
 .service-area {
-    padding-inline: var(--gap);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-text {
-    font-size: 0.675rem;
-    padding: 0.5rem 1rem;
+    font-size: clamp(0.675rem, 0.533rem + 0.708vw, 1.1rem);
     text-align: center;
 }
 
@@ -183,7 +183,7 @@ p {
     }
     
     .hero-text {
-        font-size: 0.55rem;
+        text-align: left;
         padding: 0 1rem 0 0.5rem;
     }
 }
