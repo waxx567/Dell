@@ -119,7 +119,13 @@ p {
 
 .service-area {
     margin-inline: auto;
-    padding-inline: var(--gap);
+}
+
+.service-area, .footer-image {
+    width: 379px;
+    height: 253px;
+    display: block;
+    object-fit: contain;
 }
 
 .hero-content {
@@ -258,11 +264,6 @@ p {
         text-align: left;
     }
 
-    .footer-grid {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
     .footer-image {
         object-fit: cover;
     }
@@ -275,5 +276,10 @@ p {
 @media (min-width: 79.938em) {
     .header, .content, .footer {
         padding-inline: 10rem;
+    }
+
+    .footer-grid {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
