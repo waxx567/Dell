@@ -52,6 +52,7 @@ p {
     background-color: var(--clr-blue);
     display: flex;
     flex-direction: column;
+    padding: 0 0 1rem 0;
 }
 
 .header, .service-area, .footer {
@@ -94,6 +95,16 @@ p {
 .nav-text p {
     font-size: 2vw;
     padding: 1em 0 0 0;
+}
+
+.header-right, .service-area-image-container, .footer-image-container {
+    margin: 0 auto;
+}
+
+@media (min-width: 35.999em) {
+    .nav-container {
+        padding-inline: 3rem;
+    }
 }
 /*
 .nav-list {
