@@ -127,7 +127,8 @@ p {
 }
 
 .hero-text {
-    /* font-size: clamp(0.675rem, 0.533rem + 0.708vw, 1.1rem); */
+    /* padding: var(--gap); */
+    padding-inline: 12rem;
     font-size: 0.675rem;
     text-align: center;
 }
