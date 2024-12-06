@@ -116,6 +116,18 @@ p {
 
 .content-header {
     text-align: center;
+    margin-inline: var(--gap);
+    font-size: 1.75em;
+}
+
+.service-area {
+    padding-inline: var(--gap);
+}
+
+.hero-text {
+    font-size: 0.675rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 .hero-link-text, .footer-link-text {
@@ -163,11 +175,16 @@ p {
         object-fit: cover;
     }
     
-    .hero-content {
+    .hero {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: var(--gap);
         padding: 1em 0 0 0;
+    }
+    
+    .hero-text {
+        font-size: 0.55rem;
+        padding: 0 1rem 0 0.5rem;
     }
 }
 
