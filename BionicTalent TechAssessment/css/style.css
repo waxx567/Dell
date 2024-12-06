@@ -97,7 +97,7 @@ p {
     padding: 1em 0 0 0;
 }
 
-.header-image-container {
+.header-image-container, .service-area-image, .footer-image {
     margin: 0 auto;
 }
 
@@ -136,6 +136,15 @@ p {
     cursor: pointer;
 }
 
+.footer {
+    padding: 2rem 1rem 0 1rem;
+}
+
+.footer-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
 
 @media (min-width: 35.999em) {
     .nav-container {
@@ -205,9 +214,7 @@ p {
 
 
 
-.footer {
-    padding: 2rem 1rem 0 1rem;
-}
+
 
 .footer-grid {
     display: flex;
@@ -215,11 +222,7 @@ p {
     gap: 1rem;
 }
 
-.footer-header {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-}
+
 
 .footer-image {
     margin-inline: auto;
