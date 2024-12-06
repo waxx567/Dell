@@ -101,6 +101,20 @@ p {
     margin: 0 auto;
 }
 
+.service-area-header {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.service-area-text, .hero-links, .footer-text-main {
+    padding-inline: clamp(var(--gap), -6.857rem + 39.286vw, 12rem);
+}
+
+.service-area-text, .hero-link-text, .footer-text-main, .footer-link-text {
+    font-size: 0.675rem;
+    text-align: center;
+}
+
 @media (min-width: 35.999em) {
     .nav-container {
         padding-inline: 3rem;
