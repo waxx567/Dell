@@ -223,7 +223,11 @@ p {
     
     .service-area-links {
         gap: 0;
-        padding-bottom: 0.5rem;
+    }
+    
+    .footer-header {
+        font-size: 3.5vw;
+        text-align: left;
     }
 }
 /* 
@@ -240,10 +244,6 @@ p {
 
 
 
-    .footer-header {
-        font-size: 3.5vw;
-        text-align: left;
-    }
 
     .footer-image {
         object-fit: cover;
