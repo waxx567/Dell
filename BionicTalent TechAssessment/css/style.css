@@ -190,31 +190,19 @@ p {
         font-size: 1.5vw;
         padding-bottom: 0.5rem;
     }
-}
-/* 
-
-
-
-    .nav-container {
-        padding-right: 1em;
-    }
-
-    .nav-icon {
-        padding: 0;
-    }
     
-    .nav-icon img, .hero img {
-        object-fit: contain;
-    }
-    
-
-    
-    .hero {
+    .service-area-content {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: var(--gap);
         padding: 1em 0 0 0;
     }
+}
+/* 
+
+   
+
+    
 
     .content-header {
         font-size: 4vw;
