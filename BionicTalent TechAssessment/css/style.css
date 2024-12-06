@@ -47,18 +47,22 @@ p {
 .bold {
     font-weight: bold;
 }
-/*
+
 .header {
     background-color: var(--clr-blue);
     display: flex;
     flex-direction: column;
-    padding: 0 1em 1em 1em;
 }
+
+.header, .service-area, .footer {
+    padding: 0 1em;
+}
+
 .logo-container {
-    padding: 0 0 1em 0;
+    padding: 0.5rem 0 1em 0;
 }
+
 .logo-text {
-    padding-top: 0.5rem;
     font-size: clamp(0.875rem, 0.511rem + 1.818vw, 1.675rem);
 }
 
@@ -70,7 +74,7 @@ p {
 .logo-text, .nav-text, .service-area-header {
     text-transform: uppercase;
 }
-
+/*
 .nav-container {
     padding: 0 0 1em 0;
 }
