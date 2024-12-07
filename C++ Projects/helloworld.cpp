@@ -18,7 +18,7 @@ int main() {
 
     // what about characters?
     std::cout << max('1', '2') << std::endl;    
-    // this w
+    // this returns the maximum ASCII value of '1' and '2'
 
     return 0;
 }
