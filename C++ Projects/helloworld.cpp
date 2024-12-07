@@ -12,7 +12,7 @@ int max(int a, int b) {
 
 int main() {
 
-    std::cout << max(1, 2) << std::endl;    
+    std::cout << max(1.1, 2.2) << std::endl;    
 
     return 0;
 }
