@@ -1,21 +1,18 @@
 #include <iostream>
 
-// factorial function = a function that multiplies a number by itself
+// function template = a function that can be called with different parameter types
+//                    can be used to create generic functions
+//                    useful for creating reusable code
+//                    can be used to create overloaded functions    
+//                    can be used to create generic classes
 
-int factorial(int n);
-
-int main() {
-    
-    std::cout << factorial(10) << std::endl;
-
-    return 0;
+int max(int a, int b) {
+    return a > b ? a : b;
 }
 
-int factorial(int n) {
-    if(n > 1) {
-        return n * factorial(n - 1);
-    }
-    else {
-        return 1;
-    }
+int main() {
+
+    std::cout << max(1, 2) << std::endl;    
+
+    return 0;
 }
