@@ -22,7 +22,7 @@ int main() {
         std::cout << "Grade for student " << i + 1 << ": " << pGrades[i] << std::endl;
     }
 
-    delete(pGrades);
+    delete[] pGrades;
 
     return 0;
 }
