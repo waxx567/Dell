@@ -7256,6 +7256,8 @@ int factorial(int n) {
     return result;
 }
 
+OR
+
 #include <iostream>
 
 // factorial function = a function that multiplies a number by itself
