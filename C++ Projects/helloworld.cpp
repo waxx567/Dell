@@ -13,6 +13,7 @@ template <typename T>
 T max(T a, T b) {
     return a > b ? a : b;
 }
+// this will work for any data type
 
 int main() {
 
