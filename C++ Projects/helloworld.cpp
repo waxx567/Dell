@@ -9,10 +9,13 @@
 int max(int a, int b) {
     return a > b ? a : b;
 }
+// so you'd normally have to write an overloaded function with the new data type
+double max(double a, double b) {
+    return a > b ? a : b;
+}
 
 int main() {
 
-    // if you want to use doubles, the result is truncated
     std::cout << max(1.1, 2.2) << std::endl;    
 
     return 0;
