@@ -1,24 +1,20 @@
 #include <iostream>
 
-// recursive function
+// factorial function = a function that multiplies a number by itself
 
-// this is a very simple example and the trade-off is that it's not very efficient
-// it uses a lot of stack space and in this instance, one would probably use the
-// for loop instead
-// identifying best use case on a case by case basis is essential
-
-void walk(int steps);
+int factorial(int n);
 
 int main() {
     
-    walk(10);
+    std::cout << factorial(10) << std::endl;
 
     return 0;
 }
 
-void walk(int steps) {
-    if(steps > 0) {
-        std::cout << "You walk one step" << std::endl;
-        walk(steps - 1);
+int factorial(int n) {
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+        result *= i;
     }
+    return result;
 }
