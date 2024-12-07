@@ -13,12 +13,14 @@ int max(int a, int b) {
 double max(double a, double b) {
     return a > b ? a : b;
 }
+// so another overloaded function with the new data type
+char max(char a, char b) {
+    return a > b ? a : b;
+}
 
 int main() {
 
-    // what about characters?
     std::cout << max('1', '2') << std::endl;    
-    // this returns the maximum ASCII value of '1' and '2'
 
     return 0;
 }
