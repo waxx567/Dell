@@ -2,27 +2,22 @@
 
 int main() {
     
-    // dynamic memory allocation = the process of creating memory on the heap
-    // whenever you use the 'new' operator, you should also use the 'delete' operator
-    
-    char *pGrades = NULL;
-    int size;
+    // recursion =  a function that calls itself
+    //              used to solve a problem by breaking it down into smaller parts
+    //              and solving each part recursively
 
-    std::cout << "Enter the number of students: ";
-    std::cin >> size;
+    // (iterative vs recursive)
 
-    pGrades = new char[size];
+    // iterative =  a function that uses a loop to solve a problem
+    // recursive =  a function that calls itself to solve a problem
 
-    for (int i = 0; i < size; i++) {
-        std::cout << "Enter the grade for student " << i + 1 << ": ";
-        std::cin >> pGrades[i];
-    }
-
-    for (int i = 0; i < size; i++) {
-        std::cout << "Grade for student " << i + 1 << ": " << pGrades[i] << std::endl;
-    }
-
-    delete[] pGrades;
+    // advantages of recursion
+    //              less code and cleaner
+    //              useful for sorting and searching algorithms
+    // disadvantages of recursion
+    //              slower performance
+    //              harder to debug
+    //              uses more memory
 
     return 0;
 }
