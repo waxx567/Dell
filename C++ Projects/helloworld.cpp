@@ -1,5 +1,7 @@
 #include <iostream>
 
+// iterative function
+
 void walk(int steps);
 
 int main() {
