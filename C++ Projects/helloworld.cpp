@@ -6,15 +6,11 @@
 //                    can be used to create overloaded functions    
 //                    can be used to create generic classes
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
-double max(double a, double b) {
-    return a > b ? a : b;
-}
-// so another overloaded function with the new data type
-char max(char a, char b) {
+// instead of all that repetition, you can use a function template
+// template parameter declaration = a parameter that is used to specify the type of data that is passed to the function
+template <typename T>
+// must be declared before the function template definition
+T max(T a, T b) {
     return a > b ? a : b;
 }
 
