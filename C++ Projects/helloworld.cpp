@@ -1,6 +1,6 @@
 #include <iostream>
 
-// iterative function
+// recursive function
 
 void walk(int steps);
 
@@ -12,7 +12,8 @@ int main() {
 }
 
 void walk(int steps) {
-    for (int i = 0; i < steps; i++) {
+    if(steps > 0) {
         std::cout << "You walk one step" << std::endl;
+        walk(steps - 1);
     }
 }
