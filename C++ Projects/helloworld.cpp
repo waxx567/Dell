@@ -12,6 +12,7 @@ int max(int a, int b) {
 
 int main() {
 
+    // if you want to use doubles, the result is truncated
     std::cout << max(1.1, 2.2) << std::endl;    
 
     return 0;
