@@ -10,19 +10,19 @@ enum name {
 
 int main() {
 
-    name firstName = Wayne;
+    name firstName = Jane;
 
     switch (firstName) {
-    case Wayne:
+    case 0:
         std::cout << "Wayne" << std::endl;
         break;
-    case John:
+    case 1:
         std::cout << "John" << std::endl;
         break;
-    case Jane:
+    case 2:
         std::cout << "Jane" << std::endl;
         break;
-    case Bob:
+    case 3:
         std::cout << "Bob" << std::endl;
         break;
     default:
