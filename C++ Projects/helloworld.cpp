@@ -9,6 +9,14 @@
 //          structs can contain multiple data types
 //          variables inside a struct are called members
 
+struct student
+{
+    std::string name;
+    double gpa;
+    bool enrolled;
+};
+
+
 int main() {
 
     return 0;
