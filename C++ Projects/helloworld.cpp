@@ -1,6 +1,7 @@
 #include <iostream>
 
-// so use an enum
+// this s more readable
+
 enum name {
     Wayne = 0,
     John = 1,
@@ -13,16 +14,16 @@ int main() {
     name firstName = Jane;
 
     switch (firstName) {
-    case 0:
+    case Wayne:
         std::cout << "Wayne" << std::endl;
         break;
-    case 1:
+    case John:
         std::cout << "John" << std::endl;
         break;
-    case 2:
+    case Jane:
         std::cout << "Jane" << std::endl;
         break;
-    case 3:
+    case Bob:
         std::cout << "Bob" << std::endl;
         break;
     default:
