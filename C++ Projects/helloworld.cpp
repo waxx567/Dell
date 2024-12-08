@@ -5,6 +5,8 @@
 // remember thst structs are passed by value not by reference
 // therefore a copy of the struct is made and passed
 
+// the addresses are different
+
 struct Car {
     std::string make;
     std::string model;
