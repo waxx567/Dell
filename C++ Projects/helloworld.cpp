@@ -15,12 +15,13 @@ class Motorcycle {
         std::string color;
         std::string licensePlate;
 
-        Motorcycle(std::string make, std::string model, int year, std::string color, std::string licensePlate) {
-            this->make = make;
-            this->model = model;
-            this->year = year;
-            this->color = color;
-            this->licensePlate = licensePlate;
+        // constructors can also be set up like this
+        Motorcycle(std::string v, std::string w, int x, std::string y, std::string z) {
+            make = v;
+            model = w;
+            year = x;
+            color = y;
+            licensePlate = z;
         }
 };
 
