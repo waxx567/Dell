@@ -1,12 +1,44 @@
 #include <iostream>
 
-// this is more readable
-
 enum name {
     Wayne,
     John,
     Jane,
     Bob
+};
+
+// other examples
+
+enum Flavors {
+    VANILLA,
+    CHOCOLATE,
+    STRAWBERRY,
+    RASPBERRY
+};
+
+enum Colors {
+    RED,
+    GREEN,
+    BLUE
+};
+
+enum Days {
+    MONDAY = 1,
+    TUESDAY = 2,
+    WEDNESDAY = 3,
+    THURSDAY = 4,
+    FRIDAY = 5
+};
+
+enum parts {
+    gearlever = 56437,
+    steeringwheel = 97543,
+    seat = 12345,
+    engine = 23456,
+    transmission = 34567,
+    exhaust = 45678,
+    brake = 56789,
+    clutch = 67890
 };
 
 int main() {
@@ -30,8 +62,6 @@ int main() {
         std::cout << "Unknown" << std::endl;
         break;
     }
-
-    // if you don't assign values to the enum, tey will be automatically assigned
 
     return 0;
 }
