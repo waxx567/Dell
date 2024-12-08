@@ -2,7 +2,9 @@
 
 // pass a struct to a function
 
-// to pass the original struct to the function
+// if you didn't use the Address of operator (&)
+// then the function would be passed a copy of the struct
+// and the cars wouldn't be painted
 
 struct Car {
     std::string make;
@@ -12,7 +14,7 @@ struct Car {
 };
 
 void displayCar(Car &car);
-void paintCar(Car &car, std::string color);
+void paintCar(Car car, std::string color);
 
 int main() {
 
@@ -42,7 +44,7 @@ int main() {
 
     return 0;
 }
-void displayCar(Car &car) {
+void displayCar(Car car) {
     // display the addresses of the members passed to the function
     std::cout << "Car address: " << &car << std::endl;
     std::cout << "Make: " << car.make << std::endl;
