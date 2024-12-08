@@ -12,6 +12,7 @@ struct Car {
 };
 
 void displayCar(Car &car);
+void paintCar(Car &car, std::string color);
 
 int main() {
 
@@ -44,4 +45,7 @@ void displayCar(Car &car) {
     std::cout << "Model: " << car.model << std::endl;
     std::cout << "Year: " << car.year << std::endl;
     std::cout << "Color: " << car.color << std::endl;
+}
+void paintCar(Car &car, std::string color) {
+    car.color = color;
 }
