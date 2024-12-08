@@ -6,14 +6,16 @@
 //                    can be used to create overloaded functions    
 //                    can be used to create generic classes
 
-// if you need to mix and match data types (ie. int and double)
-// this will now throw a compiler error because T can only store one data type
+// if you wish to pass in two different data types
 
-template <typename T>
+// adjust the declaration
+template <typename T, typename U>
 
-T max(T a, T b) {
+// adjust the definition
+T max(T a, U b) {
     return a > b ? a : b;
 }
+// this will still return a truncated value as it returns an int
 
 int main() {
 
