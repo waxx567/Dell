@@ -8146,3 +8146,42 @@ int main() {
 
     return 0;
 }
+
+#include <iostream>
+
+// enums = a user defined data type
+//         can be used to create custom data types
+//         can be used to create generic classes
+//         can be used to create custom containers
+//         a type that represents a set of constants
+//         consists of paired names and values
+//         useful if you have a set of potential options
+//         useful if you have a set of related values
+
+int main() {
+
+    std::string firstName = "Wayne";
+
+    // you can't use strings in switches
+    switch (firstName) {
+    case "Wayne":
+        std::cout << "Wayne" << std::endl;
+        break;
+    case "John":
+        std::cout << "John" << std::endl;
+        break;
+    case "Jane":
+        std::cout << "Jane" << std::endl;
+        break;
+    case "Bob":
+        std::cout << "Bob" << std::endl;
+        break;
+    default:
+        std::cout << "Unknown" << std::endl;
+        break;
+    }
+
+    // this will throw an error because firstName is a string
+
+    return 0;
+}
