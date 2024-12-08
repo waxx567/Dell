@@ -1,37 +1,32 @@
 #include <iostream>
 
-// objects 
-// assigning default values
-
-class Person {
+class Car {
     public:
-        std::string name = "Fred";
-        int age = 71;
-        bool isMale = true;
+        std::string make;
+        std::string model;
+        int year;
+        std::string color;
 
-        void eat() {
-            std::cout << name << " is eating" << std::endl;
+        void accelerate() {
+            std::cout << "The " << make << " is accelerating" << std::endl;
         }
-        void drink() {
-            std::cout << name << " is drinking" << std::endl;
-        }
-        void sleep() {
-            std::cout << name << " is sleeping" << std::endl;
+        void brake() {
+            std::cout << "The " << make << " is braking" << std::endl;
         }
 };
 
 int main() {
 
-    Person person1;
-    Person person2;
+    Car car1;
+    car1.make = "Lexus";
+    car1.model = "IS300";
+    car1.year = 2022;
+    car1.color = "White";
 
-    std::cout << person1.name << std::endl;
-    std::cout << person1.age << std::endl;
-    std::cout << person1.isMale << std::endl;
-
-    std::cout << person2.name << std::endl;
-    std::cout << person2.age << std::endl;
-    std::cout << person2.isMale << std::endl;
+    std::cout << "Make: " << car1.make << std::endl;
+    std::cout << "Model: " << car1.model << std::endl;
+    std::cout << "Year: " << car1.year << std::endl;
+    std::cout << "Color: " << car1.color << std::endl;
 
     return 0;
 }
