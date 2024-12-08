@@ -8130,3 +8130,19 @@ void displayCar(Car &car) {
 void paintCar(Car car, std::string color) {
     car.color = color;
 }
+
+#include <iostream>
+
+// enums = a user defined data type
+//         can be used to create custom data types
+//         can be used to create generic classes
+//         can be used to create custom containers
+//         a type that represents a set of constants
+//         consists of paired names and values
+//         useful if you have a set of potential options
+//         useful if you have a set of related values
+
+int main() {
+
+    return 0;
+}
