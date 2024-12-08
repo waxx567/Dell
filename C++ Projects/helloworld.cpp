@@ -1,57 +1,34 @@
 #include <iostream>
 
-// pass a struct to a function
-
-// if you didn't use the Address of operator (&)
-// then the function would be passed a copy of the struct
-// and the cars wouldn't be painted
-
-struct Car {
-    std::string make;
-    std::string model;
-    int year;
-    std::string color;
+// so use an enum
+enum name {
+    Wayne = 0,
+    John = 1,
+    Jane = 2,
+    Bob = 3
 };
-
-void displayCar(Car &car);
-void paintCar(Car car, std::string color);
 
 int main() {
 
-    Car car1;
-    Car car2;
+    name firstName = Wayne;
 
-    car1.make = "Lexus";
-    car1.model = "IS300";
-    car1.year = 2022;
-    car1.color = "Black";
-
-    car2.make = "Honda";
-    car2.model = "Civic";
-    car2.year = 2021;
-    car2.color = "Red";
-
-    // display the address of car1
-    std::cout << "Car1 address: " << &car1 << std::endl;
-    // display the address of car2
-    std::cout << "Car2 address: " << &car2 << std::endl;
-
-    paintCar(car1, "Maroon");
-    paintCar(car2, "White");
-
-    displayCar(car1);
-    displayCar(car2);
+    switch (firstName) {
+    case Wayne:
+        std::cout << "Wayne" << std::endl;
+        break;
+    case John:
+        std::cout << "John" << std::endl;
+        break;
+    case Jane:
+        std::cout << "Jane" << std::endl;
+        break;
+    case Bob:
+        std::cout << "Bob" << std::endl;
+        break;
+    default:
+        std::cout << "Unknown" << std::endl;
+        break;
+    }
 
     return 0;
-}
-void displayCar(Car &car) {
-    // display the addresses of the members passed to the function
-    std::cout << "Car address: " << &car << std::endl;
-    std::cout << "Make: " << car.make << std::endl;
-    std::cout << "Model: " << car.model << std::endl;
-    std::cout << "Year: " << car.year << std::endl;
-    std::cout << "Color: " << car.color << std::endl;
-}
-void paintCar(Car car, std::string color) {
-    car.color = color;
 }
