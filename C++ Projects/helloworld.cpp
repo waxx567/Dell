@@ -8,6 +8,8 @@ struct Car {
     std::string color;
 };
 
+void displayCar(Car car);
+
 int main() {
 
     Car car1;
