@@ -28,5 +28,8 @@ int main() {
     std::cout << "Year: " << car1.year << std::endl;
     std::cout << "Color: " << car1.color << std::endl;
 
+    car1.accelerate();
+    car1.brake();
+
     return 0;
 }
