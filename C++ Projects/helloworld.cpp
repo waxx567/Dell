@@ -39,6 +39,8 @@ int main() {
     std::cout << person1.isMale << std::endl;
 
     person1.eat();
+    person1.drink();
+    person1.sleep();
 
     return 0;
 }
