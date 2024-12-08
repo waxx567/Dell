@@ -7799,3 +7799,38 @@ int main() {
 
     return 0;
 }
+
+#include <iostream>
+
+// pass a struct to a function
+struct Car {
+    std::string make;
+    std::string model;
+    int year;
+    std::string color;
+};
+
+int main() {
+
+    Car car1;
+    Car car2;
+
+    car1.make = "Lexus";
+    car1.model = "IS300";
+    car1.year = 2022;
+    car1.color = "Black";
+
+    car2.make = "Honda";
+    car2.model = "Civic";
+    car2.year = 2021;
+    car2.color = "Red";
+
+    return 0;
+}
+// or display the structs in a function
+void displayCar(Car car) {
+    std::cout << "Make: " << car.make << std::endl;
+    std::cout << "Model: " << car.model << std::endl;
+    std::cout << "Year: " << car.year << std::endl;
+    std::cout << "Color: " << car.color << std::endl;
+}
