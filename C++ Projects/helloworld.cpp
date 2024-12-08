@@ -3,10 +3,10 @@
 // this s more readable
 
 enum name {
-    Wayne = 0,
-    John = 1,
-    Jane = 2,
-    Bob = 3
+    Wayne,
+    John,
+    Jane,
+    Bob
 };
 
 int main() {
