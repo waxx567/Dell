@@ -25,5 +25,9 @@ int main() {
     student1.gpa = 3.5;
     student1.enrolled = true;
 
+    std::cout << "Name: " << student1.name << std::endl;
+    std::cout << "GPA: " << student1.gpa << std::endl;
+    std::cout << "Enrolled: " << student1.enrolled << std::endl;
+
     return 0;
 }
