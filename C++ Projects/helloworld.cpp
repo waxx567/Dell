@@ -12,10 +12,10 @@
 template <typename T, typename U>
 
 // adjust the definition
-U max(T a, U b) {
+auto max(T a, U b) {
     return a > b ? a : b;
 }
-// changing the return to a double will solve it
+// using auto makes it more dynamic
 
 int main() {
 
