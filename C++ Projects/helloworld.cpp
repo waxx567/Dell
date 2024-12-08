@@ -1,6 +1,10 @@
 #include <iostream>
 
 // pass a struct to a function
+
+// remember thst structs are passed by value not by reference
+// therefore a copy of the struct is made and passed
+
 struct Car {
     std::string make;
     std::string model;
@@ -25,7 +29,6 @@ int main() {
     car2.year = 2021;
     car2.color = "Red";
 
-    // then call that function
     displayCar(car1);
     displayCar(car2);
 
