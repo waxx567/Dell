@@ -10,30 +10,28 @@
 //          variables inside a struct are called members
 //          members can be accessed using dot notation
 
+
+// you can also set a default value on members
 struct student
 {
     std::string name;
     double gpa;
-    bool enrolled;
+    bool enrolled = true;
 };
-
 
 int main() {
 
     student student1;
     student1.name = "John Doe";
     student1.gpa = 3.5;
-    student1.enrolled = true;
 
     student student2;
     student2.name = "Jane Doe";
     student2.gpa = 4.0;
-    student2.enrolled = true;
 
     student student3;
     student3.name = "Joe Doe";
     student3.gpa = 2.8;
-    student3.enrolled = true;
 
     std::cout << "Name: " << student1.name << std::endl;
     std::cout << "GPA: " << student1.gpa << std::endl;
