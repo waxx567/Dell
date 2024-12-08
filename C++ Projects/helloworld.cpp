@@ -29,12 +29,18 @@ int main() {
     car2.year = 2021;
     car2.color = "Red";
 
+    // display the address of car1
+    std::cout << "Car1 address: " << &car1 << std::endl;
+    // display the address of car2
+    std::cout << "Car2 address: " << &car2 << std::endl;
     displayCar(car1);
     displayCar(car2);
 
     return 0;
 }
 void displayCar(Car car) {
+    // display the addresses of the members passed to the function
+    std::cout << "Car address: " << &car << std::endl;
     std::cout << "Make: " << car.make << std::endl;
     std::cout << "Model: " << car.model << std::endl;
     std::cout << "Year: " << car.year << std::endl;
