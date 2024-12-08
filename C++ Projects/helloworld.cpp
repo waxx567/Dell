@@ -7,7 +7,7 @@
 //                    can be used to create generic classes
 
 // if you need to mix and match data types (ie. int and double)
-// this will now throw a compiler error
+// this will now throw a compiler error because T can only store one data type
 
 template <typename T>
 
