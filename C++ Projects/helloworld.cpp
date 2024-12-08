@@ -8,6 +8,7 @@
 //          arrays can only contain one data type
 //          structs can contain multiple data types
 //          variables inside a struct are called members
+//          members can be accessed using dot notation
 
 struct student
 {
@@ -18,6 +19,11 @@ struct student
 
 
 int main() {
+
+    student student1;
+    student1.name = "John Doe";
+    student1.gpa = 3.5;
+    student1.enrolled = true;
 
     return 0;
 }
