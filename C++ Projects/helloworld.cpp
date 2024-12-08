@@ -44,7 +44,7 @@ int main() {
 
     return 0;
 }
-void displayCar(Car car) {
+void displayCar(Car &car) {
     // display the addresses of the members passed to the function
     std::cout << "Car address: " << &car << std::endl;
     std::cout << "Make: " << car.make << std::endl;
@@ -52,6 +52,6 @@ void displayCar(Car car) {
     std::cout << "Year: " << car.year << std::endl;
     std::cout << "Color: " << car.color << std::endl;
 }
-void paintCar(Car &car, std::string color) {
+void paintCar(Car car, std::string color) {
     car.color = color;
 }
