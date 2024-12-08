@@ -6,18 +6,18 @@
 //                    can be used to create overloaded functions    
 //                    can be used to create generic classes
 
-// instead of all that repetition, you can use a function template
-// template parameter declaration = a parameter that is used to specify the type of data that is passed to the function
+// if you need to mix and match data types (ie. int and double)
+// this will now throw a compiler error
+
 template <typename T>
-// must be declared before the function template definition
+
 T max(T a, T b) {
     return a > b ? a : b;
 }
-// this will work for any data type
 
 int main() {
 
-    std::cout << max('1', '2') << std::endl;    
+    std::cout << max(1, 2.1) << std::endl;    
 
     return 0;
 }
