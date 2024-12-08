@@ -12,10 +12,10 @@
 template <typename T, typename U>
 
 // adjust the definition
-T max(T a, U b) {
+U max(T a, U b) {
     return a > b ? a : b;
 }
-// this will still return a truncated value as it returns an int
+// changing the return to a double will solve it
 
 int main() {
 
