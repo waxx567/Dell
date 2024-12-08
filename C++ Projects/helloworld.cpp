@@ -2,10 +2,7 @@
 
 // pass a struct to a function
 
-// remember thst structs are passed by value not by reference
-// therefore a copy of the struct is made and passed
-
-// the addresses are different
+// to pass the original struct to the function
 
 struct Car {
     std::string make;
@@ -14,7 +11,7 @@ struct Car {
     std::string color;
 };
 
-void displayCar(Car car);
+void displayCar(Car &car);
 
 int main() {
 
@@ -40,7 +37,7 @@ int main() {
 
     return 0;
 }
-void displayCar(Car car) {
+void displayCar(Car &car) {
     // display the addresses of the members passed to the function
     std::cout << "Car address: " << &car << std::endl;
     std::cout << "Make: " << car.make << std::endl;
