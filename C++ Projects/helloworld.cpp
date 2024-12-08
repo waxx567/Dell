@@ -30,6 +30,11 @@ int main() {
     student2.gpa = 4.0;
     student2.enrolled = true;
 
+    student student3;
+    student3.name = "Joe Doe";
+    student3.gpa = 2.8;
+    student3.enrolled = true;
+
     std::cout << "Name: " << student1.name << std::endl;
     std::cout << "GPA: " << student1.gpa << std::endl;
     std::cout << "Enrolled: " << student1.enrolled << std::endl;
@@ -37,6 +42,10 @@ int main() {
     std::cout << "Name: " << student2.name << std::endl;
     std::cout << "GPA: " << student2.gpa << std::endl;
     std::cout << "Enrolled: " << student2.enrolled << std::endl;
+
+    std::cout << "Name: " << student3.name << std::endl;
+    std::cout << "GPA: " << student3.gpa << std::endl;
+    std::cout << "Enrolled: " << student3.enrolled << std::endl;
 
     return 0;
 }
