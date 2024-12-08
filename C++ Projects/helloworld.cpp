@@ -38,5 +38,7 @@ int main() {
     std::cout << person1.age << std::endl;
     std::cout << person1.isMale << std::endl;
 
+    person1.eat();
+
     return 0;
 }
