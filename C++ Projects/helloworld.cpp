@@ -33,6 +33,10 @@ int main() {
     std::cout << "Car1 address: " << &car1 << std::endl;
     // display the address of car2
     std::cout << "Car2 address: " << &car2 << std::endl;
+
+    paintCar(car1, "Maroon");
+    paintCar(car2, "White");
+
     displayCar(car1);
     displayCar(car2);
 
