@@ -1,6 +1,6 @@
 #include <iostream>
 
-// this s more readable
+// this is more readable
 
 enum name {
     Wayne,
@@ -30,6 +30,8 @@ int main() {
         std::cout << "Unknown" << std::endl;
         break;
     }
+
+    // if you don't assign values to the enum, tey will be automatically assigned
 
     return 0;
 }
