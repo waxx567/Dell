@@ -29,18 +29,23 @@ class Person {
 int main() {
 
     Person person1;
+    Person person2;
 
     person1.name = "Karl";
     person1.age = 30;
     person1.isMale = true;
-    
-    std::cout << person1.name << std::endl;
-    std::cout << person1.age << std::endl;
-    std::cout << person1.isMale << std::endl;
 
-    person1.eat();
-    person1.drink();
-    person1.sleep();
+    person2.name = "Erin";
+    person2.age = 25;
+    person2.isMale = false;
+
+    std::cout << person2.name << std::endl;
+    std::cout << person2.age << std::endl;
+    std::cout << person2.isMale << std::endl;
+
+    person2.eat();
+    person2.drink();
+    person2.sleep();
 
     return 0;
 }
