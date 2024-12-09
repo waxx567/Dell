@@ -211,16 +211,18 @@ public:
  */
 int main() {
 
-    // the most common use of polymorphism is when a parent class 
-    //          reference is used to refer to a child class object
-
     Developer developer1 = Developer("John Doe", "ABC Company", 31, "C++");
 
     Teacher teacher1 = Teacher("Jane Doe", "XYZ Company", 25, "Math");
     
-    developer1.Work();
+    Employee *e1 = &developer1;
+    Employee *e2 = &teacher1;
 
-    teacher1.Work();
+    e1->Work();
+
+    e2->Work();
+
+    // incorrect as these point to the Work() function of the Employee class, not the Work() function of the Developer or Teacher class
 
     return 0;
 }
