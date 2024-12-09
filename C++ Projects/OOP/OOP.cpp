@@ -7,7 +7,7 @@ class AbstractEmployee {
     virtual void AskForPromotion() = 0;
 };
 
-class Employee {
+class Employee:AbstractEmployee {
 private:
     string Name;
     string Company;
@@ -89,6 +89,12 @@ public:
         Name = name;
         Company = company;
         Age = age;
+    }
+    void AskForPromotion() {
+        if(Age > 30)
+        cout << Name << " got promoted" << endl;
+        else
+        cout << Name << " didn't get promoted" << endl;
     }
 };
 
