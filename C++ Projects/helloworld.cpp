@@ -1,45 +1,41 @@
 #include <iostream>
 
-// inheritance = when a class receives features from another class
-// child class = class that inherits from another class
-// parent class = class that is inherited from
-// useful to reuse code and reduce code duplication
+// inheritance
+// another example
 
-class Animal {
+class Shape {
     public:
-    bool isAlive = true;
-    void eat() {
-        std::cout << "The animal is eating." << std::endl;
-    }
+    double area;
+    double volume;
 };
-
-class Dog : public Animal {
+class Cube : public Shape {
     public:
-    void bark() {
-        std::cout << "The dog is barking." << std::endl;
-    }
+    double side;   
+    Cube(double side) {
+        this->side = side;
+        this->area = 6 * side * side;
+        this->volume = side * side * side;
+    } 
 };
-class Cat : public Animal {
+class Sphere : public Shape {
     public:
-    void meow() {
-        std::cout << "The cat goes meow." << std::endl;
+    double radius;
+    Sphere(double radius) {
+        this->radius = radius;
+        this->area = 4 * 3.14159 * (radius * radius);
+        this->volume = (4 / 3.0) * 3.14159 * (radius * radius * radius);
     }
 };
 
 int main() {
 
-    Dog dog;
-    Cat cat;
+    Cube cube(10);
+    Sphere sphere(10);
 
-    std::cout << dog.isAlive << std::endl;
-    dog.eat();
-    dog.bark();
-
-    std::cout << cat.isAlive << std::endl;
-    cat.eat();
-    cat.meow();
-
-    // of course, cats can't bark and dogs can't meow
+    std::cout << "The area of the cube is: " << cube.area<< "cm^2" << std::endl;
+    std::cout << "The volume of the cube is: " << cube.volume << "cm^3" << std::endl;
+    std::cout << "The area of the sphere is: " << sphere.area << "cm^2" << std::endl;
+    std::cout << "The volume of the sphere is: " << sphere.volume << "cm^3" << std::endl;
 
     return 0;
 }
