@@ -21,7 +21,7 @@ public:
 /**
  * @brief The main entry point of the program
  *
- * Creates an Employee object, sets its details and prints them to the console using the print() method
+ * Creates two Employee objects, sets their details and prints them to the console using the print() method
  *
  * @return 0 on successful execution
  */
