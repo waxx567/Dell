@@ -17,6 +17,12 @@ public:
         cout << "Company: " << Company << endl;
         cout << "Age: " << Age << endl;
     }
+
+    Employee(string name, string company, int age) {
+        Name = name;
+        Company = company;
+        Age = age;
+    }
 };
 /**
  * @brief The main entry point of the program
@@ -26,7 +32,7 @@ public:
  * @return 0 on successful execution
  */
 int main() {
-    
+
     Employee employee1;
     employee1.Name = "John Doe";
     employee1.Company = "ABC Company";
