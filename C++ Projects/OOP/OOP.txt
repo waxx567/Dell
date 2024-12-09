@@ -92,18 +92,17 @@ public:
 /**
  * @brief The main entry point of the program
  *
- * Creates an Employee object, sets its details and prints them to the console using the print() method
+ * Creates two Employee objects, sets their details and prints them to the console using the print() method
  *
  * @return 0 on successful execution
  */
 int main() {
     Employee employee1;
-    Employee employee2;
-
     employee1.Name = "John Doe";
     employee1.Company = "ABC Company";
     employee1.Age = 30;
 
+    Employee employee2;
     employee2.Name = "Jane Doe";
     employee2.Company = "XYZ Company";
     employee2.Age = 25;
