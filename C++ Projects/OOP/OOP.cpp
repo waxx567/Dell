@@ -119,6 +119,11 @@ public:
         cout << Name << " didn't get promoted" << endl;
     }
 
+    /**
+     * @brief Simulates the employee working
+     *
+     * Prints a message to the console indicating that the employee is working
+     */
     void Work() {
         cout << Name << " is working" << endl;
     }
@@ -149,6 +154,15 @@ public:
     void FixBug() {
         cout << Name << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
     }
+
+    /**
+     * @brief Simulates the developer working
+     *
+     * Prints a message to the console indicating that the developer is working
+     */
+    void Work() {
+        cout << Name << " is coding" << " using " << FavoriteProgrammingLanguage << endl;
+    }
 };
 
 // The Teacher class is a subclass (child) of the Employee (parent) class.
@@ -175,6 +189,15 @@ public:
      */
     Teacher(string name, string company, int age, string subject) : Employee(name, company, age) {
         Subject = subject;
+    }
+
+    /**
+     * @brief Simulates the teacher working
+     *
+     * Prints a message to the console indicating that the teacher is teaching
+     */
+    void Work() {
+        cout << Name << " is teaching" << " " << Subject << endl;
     }
 };
 
