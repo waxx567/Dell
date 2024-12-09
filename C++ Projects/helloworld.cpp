@@ -5,7 +5,19 @@
 // parent class = class that is inherited from
 // useful to reuse code and reduce code duplication
 
+class Animal {
+    public:
+    bool isAlive = true;
+};
+
+class Dog : public Animal {
+}
+
 int main() {
+
+    Dog dog;
+
+    std::cout << dog.isAlive << std::endl;
 
     return 0;
 }
