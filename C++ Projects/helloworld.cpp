@@ -8,6 +8,9 @@
 class Animal {
     public:
     bool isAlive = true;
+    void eat() {
+        std::cout << "The animal is eating." << std::endl;
+    }
 };
 
 class Dog : public Animal {
@@ -18,6 +21,7 @@ int main() {
     Dog dog;
 
     std::cout << dog.isAlive << std::endl;
+    dog.eat();
 
     return 0;
 }
