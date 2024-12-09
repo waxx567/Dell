@@ -223,7 +223,7 @@ int main() {
     e2->Work();
 
     // incorrect as these point to the Work() function of the Employee class, not the Work() function of the Developer or Teacher class
-    // add virtual keyword to work() function of Employee class
+    // add virtual keyword to Work() function of Employee class
 
     return 0;
 }
