@@ -3,6 +3,10 @@ using std::string;
 using std::cout;
 using std::endl;
 
+class AbstractEmployee {
+    virtual void AskForPromotion() = 0;
+};
+
 class Employee {
 private:
     string Name;
