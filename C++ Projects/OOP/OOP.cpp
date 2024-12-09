@@ -26,17 +26,17 @@ public:
  * @return 0 on successful execution
  */
 int main() {
+    
     Employee employee1;
     employee1.Name = "John Doe";
     employee1.Company = "ABC Company";
     employee1.Age = 30;
+    employee1.print();
 
     Employee employee2;
     employee2.Name = "Jane Doe";
     employee2.Company = "XYZ Company";
     employee2.Age = 25;
-
-    employee1.print();
     employee2.print();
 
     return 0;
