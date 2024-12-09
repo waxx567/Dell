@@ -147,6 +147,12 @@ public:
     }
 };
 
+// The Teacher class is a subclass (child) of the Employee (parent) class.
+class Teacher: public Employee {
+public:
+    string Subject;
+};
+
 /**
  * @brief The main entry point of the program
  *
