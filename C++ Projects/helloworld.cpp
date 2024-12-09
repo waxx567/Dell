@@ -22,9 +22,8 @@ int main() {
 
     Pizza pizza1("Pepperoni");
     Pizza pizza2("Mushroom", "Peppers");
-    Pizza pizza3;
-    // the compiler tells us to remove the parentheses 
-    // but we still throw an error because the compiler doesn't accept Pizza with no parameters
+    // what if we want a plain pizza with no toppings
+    Pizza pizza3();
 
     std::cout << pizza2.topping1 << std::endl;
     std::cout << pizza2.topping2 << std::endl;
