@@ -13,6 +13,7 @@ class Stove {
 
     // to access the temperature variable, we need a getter
     public:
+
     int getTemperature() {
         return temperature;
     }   
@@ -22,6 +23,17 @@ class Stove {
     }
 };
 
+/**
+ * @brief The main entry point of the program.
+ *
+ * @details This function demonstrates the use of a class with private
+ *          member variables and public getter and setter methods. It
+ *          creates an instance of the Stove class, sets its temperature
+ *          using the setter method, and prints the temperature using the
+ *          getter method.
+ *
+ * @return 0 on successful execution.
+ */
 int main() {
 
     Stove stove;
