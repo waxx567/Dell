@@ -1,12 +1,33 @@
 #include <iostream>
-using namespace std;
+using std::string;
+using std::cout;
+using std::endl;
 
 class Employee {
-public:
+private:
     string Name;
     string Company;
     int Age;
 
+public:
+    void setName(string name) {
+        Name = name;
+    }
+    string getName() {
+        return Name;
+    }
+    void setCompany(string company) {
+        Company = company;
+    }
+    string getCompany() {
+        return Company;
+    }
+    void setAge(int age) {
+        Age = age;
+    }
+    int getAge() {
+        return Age;
+    }
     /**
      * @brief Prints the employee's details to the console
      *
@@ -49,6 +70,9 @@ int main() {
 
     Employee employee2 = Employee("Jane Doe", "XYZ Company", 25);
     employee2.print();
+
+    employee1.setAge(31);
+    cout << employee1.getName() << endl << " is " << employee1.getAge() << " years old" << endl;
 
     return 0;
 }
