@@ -10,22 +10,54 @@ private:
     int Age;
 
 public:
+    /**
+     * @brief Sets the name of the employee
+     *
+     * @param name The name to be set for the employee
+     */
     void setName(string name) {
         Name = name;
     }
+    /**
+     * @brief Returns the name of the employee
+     *
+     * @return The name of the employee
+     */
     string getName() {
         return Name;
     }
+    /**
+     * @brief Sets the company of the employee
+     *
+     * @param company The company to be set for the employee
+     */
     void setCompany(string company) {
         Company = company;
     }
+    /**
+     * @brief Returns the company of the employee
+     *
+     * @return The company of the employee
+     */
     string getCompany() {
         return Company;
     }
+    /**
+     * @brief Sets the age of the employee
+     *
+     * @param age The age to be set for the employee
+     *
+     * @details Only sets the age if the age is 18 or above
+     */
     void setAge(int age) {
         if(age >= 18)
         Age = age;
     }
+    /**
+     * @brief Returns the age of the employee
+     *
+     * @return The age of the employee
+     */
     int getAge() {
         return Age;
     }
