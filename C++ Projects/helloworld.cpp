@@ -13,6 +13,10 @@ class Stove {
 
     // to access the temperature variable, we need a getter
     public:
+    // we can also add a constructor to invoke the setter
+    Stove(int temperature) {
+        setTemperature(temperature);
+    }
 
     int getTemperature() {
         return temperature;
@@ -45,9 +49,9 @@ class Stove {
  */
 int main() {
 
-    Stove stove;
+    Stove stove(200);
 
-    stove.setTemperature(500);
+    // stove.setTemperature(500);
 
     // but we can access it through the getter
     std::cout << "Temperature: " << stove.getTemperature() << std::endl;
