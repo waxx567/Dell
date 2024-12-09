@@ -124,9 +124,24 @@ public:
 class Developer:Employee {
 public:
     string FavoriteProgrammingLanguage;
+    /**
+     * @brief Constructor to create a Developer object
+     *
+     * @param name The name of the developer
+     * @param company The company the developer works for
+     * @param age The age of the developer
+     * @param favoriteProgrammingLanguage The developer's favorite programming language
+     *
+     * @details Initializes a Developer object by setting the name, company, age, and favorite programming language. Inherits name, company, and age initialization from the Employee class.
+     */
     Developer(string name, string company, int age, string favoriteProgrammingLanguage) : Employee(name, company, age) {
         FavoriteProgrammingLanguage = favoriteProgrammingLanguage;
     }
+    /**
+     * @brief Simulates the developer fixing a bug using their favorite programming language
+     *
+     * Prints a message to the console indicating that the developer fixed a bug using their favorite programming language
+     */
     void FixBug() {
         cout << getName() << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
     }
