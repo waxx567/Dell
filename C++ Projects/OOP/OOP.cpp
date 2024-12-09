@@ -211,6 +211,9 @@ public:
  */
 int main() {
 
+    // the most common use of polymorphism is when a parent class 
+    //          reference is used to refer to a child class object
+
     Developer developer1 = Developer("John Doe", "ABC Company", 31, "C++");
 
     Teacher teacher1 = Teacher("Jane Doe", "XYZ Company", 25, "Math");
