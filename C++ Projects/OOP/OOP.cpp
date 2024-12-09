@@ -154,6 +154,9 @@ public:
     void PrepareLesson() {
         cout << Name << " is preparing a lesson on " << Subject << endl;
     }
+    Teacher(string name, string company, int age, string subject) : Employee(name, company, age) {
+        Subject = subject;
+    }
 };
 
 /**
