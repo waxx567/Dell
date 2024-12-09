@@ -24,10 +24,10 @@ class AbstractEmployee {
 // The class is also a subclass of the AbstractEmployee class, which means it inherits the pure virtual method AskForPromotion() from the base class.
 class Employee:AbstractEmployee {
 private:
-    string Name;
     string Company;
     int Age;
-
+protected:
+    string Name;
 public:
     /**
      * @brief Sets the name of the employee
@@ -143,7 +143,7 @@ public:
      * Prints a message to the console indicating that the developer fixed a bug using their favorite programming language
      */
     void FixBug() {
-        cout << getName() << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
+        cout << Name << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
     }
 };
 
