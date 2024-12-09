@@ -16,6 +16,7 @@ int main() {
 
     Pizza pizza1("Pepperoni");
     Pizza pizza2("Mushroom", "Peppers");
+    // this will throw an error because Pizza is expecting only one argument
 
     std::cout << pizza1.topping1 << std::endl;
 
