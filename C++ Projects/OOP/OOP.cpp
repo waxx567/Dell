@@ -33,16 +33,16 @@ public:
  */
 int main() {
 
-    Employee employee1;
-    employee1.Name = "John Doe";
-    employee1.Company = "ABC Company";
-    employee1.Age = 30;
+    Employee employee1 = Employee("John Doe", "ABC Company", 30);
+    // employee1.Name = "John Doe";
+    // employee1.Company = "ABC Company";
+    // employee1.Age = 30;
     employee1.print();
 
-    Employee employee2;
-    employee2.Name = "Jane Doe";
-    employee2.Company = "XYZ Company";
-    employee2.Age = 25;
+    Employee employee2 = Employee("Jane Doe", "XYZ Company", 25);
+    // employee2.Name = "Jane Doe";
+    // employee2.Company = "XYZ Company";
+    // employee2.Age = 25;
     employee2.print();
 
     return 0;
