@@ -9,20 +9,24 @@ class Stove {
     // setting the class attributes to private
     // so they can only be accessed from within the class
     private:
-        int temperature = 0;
+    int temperature = 0;
+
     // to access the temperature variable, we need a getter
     public:
     int getTemperature() {
         return temperature;
     }   
+    // if you want to set the temperature, you need a setter (writeable as well as readable)
+    void setTemperature(int temp) {
+        this->temperature = temp;
+    }
 };
 
 int main() {
 
     Stove stove;
 
-    // we still can't modify the temperature variable
-    // stove.temperature = 500;
+    stove.setTemperature(500);
 
     // but we can access it through the getter
     std::cout << "Temperature: " << stove.getTemperature() << std::endl;
