@@ -120,6 +120,18 @@ public:
     }
 };
 
+// The Developer class is a subclass (child) of the Employee (parent) class.
+class Developer:Employee {
+public:
+    string FavoriteProgrammingLanguage;
+    Developer(string name, string company, int age, string favoriteProgrammingLanguage) : Employee(name, company, age) {
+        FavoriteProgrammingLanguage = favoriteProgrammingLanguage;
+    }
+    void FixBug() {
+        cout << getName() << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
+    }
+};
+
 /**
  * @brief The main entry point of the program
  *
@@ -130,13 +142,9 @@ public:
  */
 int main() {
 
-    Employee employee1 = Employee("John Doe", "ABC Company", 31);
+    Developer developer1 = Developer("John Doe", "ABC Company", 31, "C++");
 
-    Employee employee2 = Employee("Jane Doe", "XYZ Company", 25);
-
-    employee1.AskForPromotion();
-
-    employee2.AskForPromotion();
+    developer1.FixBug();
 
     return 0;
 }
