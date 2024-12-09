@@ -6,14 +6,20 @@ public:
     string Name;
     string Company;
     int Age;
+
+    void print() {
+        cout << "Name: " << Name << endl;
+        cout << "Company: " << Company << endl;
+        cout << "Age: " << Age << endl;
+    }
 };
 int main() {
     Employee employee1;
     employee1.Name = "John Doe";
     employee1.Company = "ABC Company";
     employee1.Age = 30;
-    cout << employee1.Name << endl;
-    cout << employee1.Company << endl;
-    cout << employee1.Age << endl;
+
+    employee1.print();
+    
     return 0;
 }
