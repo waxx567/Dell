@@ -6,7 +6,9 @@
 // setter = a function that sets the value of a private member variable
 
 class Stove {
-    public:
+    // setting the class attributes to private
+    // so they can only be accessed from within the class
+    private:
         int temperature = 0;
     
 };
@@ -14,10 +16,11 @@ class Stove {
 int main() {
 
     Stove stove;
-    // since temperature is public, it is accessible outside the class and can be modified
+
     stove.temperature = 500;
 
     std::cout << "Temperature: " << stove.temperature << std::endl;
+    // now the programmer can't access the temperature variable
 
     return 0;
 }
