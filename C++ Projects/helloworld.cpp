@@ -8,6 +8,12 @@ class Pizza {
         std::string topping1;
         std::string topping2;
 
+    // so adding this
+    Pizza() {
+
+    }
+    // solves the problem
+    // but we can see how inefficient this is
     Pizza(std::string topping1) {
         this->topping1 = topping1;
     }
