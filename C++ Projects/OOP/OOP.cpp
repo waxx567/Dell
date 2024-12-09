@@ -3,10 +3,28 @@ using std::string;
 using std::cout;
 using std::endl;
 
+//The AbstractEmployee class is an abstract base class that cannot be instantiated on its own.
+// It has one pure virtual method:
+// AskForPromotion(): This method is declared but not defined, and must be implemented by any non-abstract derived classes. It is intended to provide a way for employees to ask for promotions, but the implementation details are left to the derived classes.
 class AbstractEmployee {
     virtual void AskForPromotion() = 0;
 };
+// setName(string name): Sets the name of the employee.
+// getName(): Returns the name of the employee.
+// setCompany(string company): Sets the company of the employee.
+// getCompany(): Returns the company of the employee.
+// setAge(int age): Sets the age of the employee, but only if the age is 18 or above.
+// getAge(): Returns the age of the employee.
+// print(): Prints the employee's details (name, company, age) to the console.
+// Employee(string name, string company, int age): Constructor to create an Employee object. It sets the Name, Company, and Age of the Employee object.
+// AskForPromotion(): If the employee's age is greater than 30, it prints that the employee got promoted. Otherwise, it prints that the employee didn't get promoted.
+// Note: The Employee class is a subclass of the AbstractEmployee class. The AbstractEmployee class has a pure virtual method AskForPromotion() which must be implemented by any non-abstract derived classes.
 
+// The Employee class is a simple implementation of an employee. It has private member variables for the name, company, and age of the employee. It also has getter and setter methods for these variables. The print() method is used to print the employee's details to the console. The AskForPromotion() method checks the employee's age and prints a message based on whether the employee got promoted or not.
+
+// The Employee class also has a constructor that takes in the name, company, and age of the employee and sets these values in the object.
+
+// The class is also a subclass of the AbstractEmployee class, which means it inherits the pure virtual method AskForPromotion() from the base class.
 class Employee:AbstractEmployee {
 private:
     string Name;
@@ -90,6 +108,13 @@ public:
         Company = company;
         Age = age;
     }
+    /**
+     * @brief Determines if the employee is eligible for a promotion
+     *
+     * Checks the age of the employee and prints a message indicating
+     * whether the employee got promoted based on the condition that
+     * the age is greater than 30.
+     */
     void AskForPromotion() {
         if(Age > 30)
         cout << Name << " got promoted" << endl;
