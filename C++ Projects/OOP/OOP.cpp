@@ -151,9 +151,24 @@ public:
 class Teacher: public Employee {
 public:
     string Subject;
+    /**
+     * @brief Simulates the teacher preparing a lesson on their subject
+     *
+     * Prints a message to the console indicating that the teacher is preparing a lesson on their subject
+     */
     void PrepareLesson() {
         cout << Name << " is preparing a lesson on " << Subject << endl;
     }
+    /**
+     * @brief Constructor to create a Teacher object
+     *
+     * @param name The name of the teacher
+     * @param company The company the teacher works for
+     * @param age The age of the teacher
+     * @param subject The subject the teacher will be teaching
+     *
+     * @details Initializes a Teacher object by setting the name, company, age, and subject. Inherits name, company, and age initialization from the Employee class.
+     */
     Teacher(string name, string company, int age, string subject) : Employee(name, company, age) {
         Subject = subject;
     }
