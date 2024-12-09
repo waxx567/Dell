@@ -135,16 +135,27 @@ public:
         cout << "Age: " << Age << endl;
     }
 
+    /**
+     * @brief Constructor to create an Employee object
+     *
+     * @param name The name of the employee
+     * @param company The company the employee works for
+     * @param age The age of the employee
+     *
+     * @details Sets the Name, Company and Age of the Employee object
+     */
     Employee(string name, string company, int age) {
         Name = name;
         Company = company;
         Age = age;
     }
 };
+
 /**
  * @brief The main entry point of the program
  *
- * Creates two Employee objects, sets their details and prints them to the console using the print() method
+ * This function creates two Employee objects with specified names, companies, and ages.
+ * It then prints their details to the console using the print() method of the Employee class.
  *
  * @return 0 on successful execution
  */
