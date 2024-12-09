@@ -15,6 +15,9 @@ int main() {
 
     Stove stove;
     // since temperature is public, it is accessible outside the class and can be modified
+    stove.temperature = 500;
+
+    std::cout << "Temperature: " << stove.temperature << std::endl;
 
     return 0;
 }
