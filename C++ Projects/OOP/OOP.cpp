@@ -121,7 +121,7 @@ public:
 };
 
 // The Developer class is a subclass (child) of the Employee (parent) class.
-class Developer:Employee {
+class Developer: public Employee {
 public:
     string FavoriteProgrammingLanguage;
     /**
@@ -160,6 +160,8 @@ int main() {
     Developer developer1 = Developer("John Doe", "ABC Company", 31, "C++");
 
     developer1.FixBug();
+
+    developer1.AskForPromotion();
 
     return 0;
 }
