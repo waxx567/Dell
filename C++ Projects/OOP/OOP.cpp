@@ -90,7 +90,6 @@ public:
         cout << "Company: " << Company << endl;
         cout << "Age: " << Age << endl;
     }
-
     /**
      * @brief Constructor to create an Employee object
      *
@@ -127,8 +126,13 @@ public:
         cout << Name << " is working" << endl;
     }
 };
-
 // The Developer class is a subclass (child) of the Employee (parent) class.
+// Class Overview 
+// The Developer class is a subclass of the Employee class, inheriting its properties and methods. It adds a FavoriteProgrammingLanguage attribute and three methods specific to developers.
+// Class Methods
+// Constructor (Developer): Initializes a Developer object with a name, company, age, and favorite programming language, inheriting name, company, and age from the Employee class.
+// FixBug: Simulates a developer fixing a bug by printing a message to the console indicating the developer's name and favorite programming language used.
+// Work: Simulates a developer working by printing a message to the console indicating the developer's name and favorite programming language used.
 class Developer: public Employee {
 public:
     string FavoriteProgrammingLanguage;
@@ -162,8 +166,14 @@ public:
         cout << Name << " is coding" << " using " << FavoriteProgrammingLanguage << endl;
     }
 };
-
 // The Teacher class is a subclass (child) of the Employee (parent) class.
+// Class Overview: T
+// he Teacher class is a subclass of the Employee class, inheriting its properties and methods. It adds a Subject attribute and three methods specific to teachers.
+// Class Methods:
+// PrepareLesson(): Simulates a teacher preparing a lesson on their subject by printing a message to the console.
+// Teacher(string name, string company, int age, string subject): Initializes a Teacher object by setting the name, company, age, and subject, inheriting name, company, and age initialization from the Employee class.
+// Work(): Simulates a teacher working by printing a message to the console indicating that the teacher is teaching their subject.
+// Note: The Name variable used in the PrepareLesson() and Work() methods is inherited from the Employee class.
 class Teacher: public Employee {
 public:
     string Subject;
