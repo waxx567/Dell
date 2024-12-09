@@ -825,11 +825,8 @@ class AbstractEmployee {
 // Employee(string name, string company, int age): Constructor to create an Employee object. It sets the Name, Company, and Age of the Employee object.
 // AskForPromotion(): If the employee's age is greater than 30, it prints that the employee got promoted. Otherwise, it prints that the employee didn't get promoted.
 // Note: The Employee class is a subclass of the AbstractEmployee class. The AbstractEmployee class has a pure virtual method AskForPromotion() which must be implemented by any non-abstract derived classes.
-
 // The Employee class is a simple implementation of an employee. It has private member variables for the name, company, and age of the employee. It also has getter and setter methods for these variables. The print() method is used to print the employee's details to the console. The AskForPromotion() method checks the employee's age and prints a message based on whether the employee got promoted or not.
-
 // The Employee class also has a constructor that takes in the name, company, and age of the employee and sets these values in the object.
-
 // The class is also a subclass of the AbstractEmployee class, which means it inherits the pure virtual method AskForPromotion() from the base class.
 class Employee:AbstractEmployee {
 private:
