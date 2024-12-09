@@ -151,6 +151,9 @@ public:
 class Teacher: public Employee {
 public:
     string Subject;
+    void PrepareLesson() {
+        cout << Name << " is preparing a lesson on " << Subject << endl;
+    }
 };
 
 /**
