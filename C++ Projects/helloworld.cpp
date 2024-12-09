@@ -19,14 +19,25 @@ class Dog : public Animal {
         std::cout << "The dog is barking." << std::endl;
     }
 };
+class Cat : public Animal {
+    public:
+    void meow() {
+        std::cout << "The cat goes meow." << std::endl;
+    }
+};
 
 int main() {
 
     Dog dog;
+    Cat cat;
 
     std::cout << dog.isAlive << std::endl;
     dog.eat();
     dog.bark();
+
+    std::cout << cat.isAlive << std::endl;
+    cat.eat();
+    cat.meow();
 
     return 0;
 }
