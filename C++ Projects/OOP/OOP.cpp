@@ -8,5 +8,6 @@ class Employee {
 };
 int main() {
 
-    return 0;
+    int number;
+    Employee employee1;
 }
