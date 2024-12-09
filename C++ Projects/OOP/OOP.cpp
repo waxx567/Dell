@@ -171,9 +171,15 @@ int main() {
 
     Developer developer1 = Developer("John Doe", "ABC Company", 31, "C++");
 
+    Teacher teacher1 = Teacher("Jane Doe", "XYZ Company", 25, "Math");
+
     developer1.FixBug();
 
     developer1.AskForPromotion();
+
+    teacher1.PrepareLesson();
+
+    teacher1.AskForPromotion();
 
     return 0;
 }
