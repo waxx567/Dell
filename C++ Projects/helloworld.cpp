@@ -19,7 +19,16 @@ class Stove {
     }   
     // if you want to set the temperature, you need a setter (writeable as well as readable)
     void setTemperature(int temp) {
-        this->temperature = temp;
+        // within the steer, we can add additional logic or validation
+        if (temp < 0) {
+            this->temperature = 0;
+        }
+        else if(temp > 280) {
+            std::cout << "The temperature is too high" << std::endl;            
+        }
+        else {
+            this->temperature = temp;
+        }
     }
 };
 
