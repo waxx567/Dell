@@ -15,6 +15,7 @@ class Pizza {
 int main() {
 
     Pizza pizza1("Pepperoni");
+    Pizza pizza2("Mushroom", "Peppers");
 
     std::cout << pizza1.topping1 << std::endl;
 
