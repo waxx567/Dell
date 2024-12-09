@@ -9178,8 +9178,7 @@ class Stove {
             this->temperature = 0;
         }
         else if(temp > 280) {
-            std::cout << "The temperature is too high" << std::endl;   
-            break;         
+            std::cout << "The temperature is too high" << std::endl;            
         }
         else {
             this->temperature = temp;
