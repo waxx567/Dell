@@ -39,5 +39,7 @@ int main() {
     cat.eat();
     cat.meow();
 
+    // of course, cats can't bark and dogs can't meow
+
     return 0;
 }
