@@ -118,7 +118,6 @@ public:
         else
         cout << Name << " didn't get promoted" << endl;
     }
-
     /**
      * @brief Simulates the employee working
      *
@@ -154,7 +153,6 @@ public:
     void FixBug() {
         cout << Name << " fixed a bug using " << FavoriteProgrammingLanguage << endl;
     }
-
     /**
      * @brief Simulates the developer working
      *
@@ -190,7 +188,6 @@ public:
     Teacher(string name, string company, int age, string subject) : Employee(name, company, age) {
         Subject = subject;
     }
-
     /**
      * @brief Simulates the teacher working
      *
