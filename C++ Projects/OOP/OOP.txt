@@ -112,3 +112,6 @@ int main() {
 
     return 0;
 }
+
+// all well and good but what if you want to create 10, 100, or 1000 employees?
+
