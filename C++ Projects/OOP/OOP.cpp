@@ -72,7 +72,7 @@ int main() {
     employee2.print();
 
     employee1.setAge(31);
-    cout << employee1.getName() << endl << " is " << employee1.getAge() << " years old" << endl;
+    cout << employee1.getName() << " is " << employee1.getAge() << " years old" << endl;
 
     return 0;
 }
