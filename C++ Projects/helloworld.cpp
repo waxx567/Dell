@@ -10,17 +10,22 @@ class Stove {
     // so they can only be accessed from within the class
     private:
         int temperature = 0;
-    
+    // to access the temperature variable, we need a getter
+    public:
+    int getTemperature() {
+        return temperature;
+    }   
 };
 
 int main() {
 
     Stove stove;
 
-    stove.temperature = 500;
+    // we still can't modify the temperature variable
+    // stove.temperature = 500;
 
-    std::cout << "Temperature: " << stove.temperature << std::endl;
-    // now the programmer can't access the temperature variable
+    // but we can access it through the getter
+    std::cout << "Temperature: " << stove.getTemperature() << std::endl;
 
     return 0;
 }
