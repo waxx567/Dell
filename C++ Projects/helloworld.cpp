@@ -14,6 +14,10 @@ class Animal {
 };
 
 class Dog : public Animal {
+    public:
+    void bark() {
+        std::cout << "The dog is barking." << std::endl;
+    }
 };
 
 int main() {
@@ -22,6 +26,7 @@ int main() {
 
     std::cout << dog.isAlive << std::endl;
     dog.eat();
+    dog.bark();
 
     return 0;
 }
