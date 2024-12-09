@@ -108,7 +108,7 @@ public:
  */
 int main() {
 
-    Employee employee1 = Employee("John Doe", "ABC Company", 30);
+    Employee employee1 = Employee("John Doe", "ABC Company", 31);
 
     Employee employee2 = Employee("Jane Doe", "XYZ Company", 25);
 
