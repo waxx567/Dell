@@ -124,7 +124,7 @@ public:
      *
      * Prints a message to the console indicating that the employee is working
      */
-    void Work() {
+    virtual void Work() {
         cout << Name << " is working" << endl;
     }
 };
@@ -223,6 +223,7 @@ int main() {
     e2->Work();
 
     // incorrect as these point to the Work() function of the Employee class, not the Work() function of the Developer or Teacher class
+    // add virtual keyword to work() function of Employee class
 
     return 0;
 }
