@@ -23,7 +23,8 @@ int main() {
     Pizza pizza1("Pepperoni");
     Pizza pizza2("Mushroom", "Peppers");
     // what if we want a plain pizza with no toppings
-    Pizza pizza3();
+    Pizza pizza3;
+    // but we still throw an error because Pizza cannot be called with no parameters
 
     std::cout << pizza2.topping1 << std::endl;
     std::cout << pizza2.topping2 << std::endl;
