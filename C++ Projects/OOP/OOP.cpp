@@ -27,12 +27,11 @@ public:
  */
 int main() {
     Employee employee1;
-    Employee employee2;
-
     employee1.Name = "John Doe";
     employee1.Company = "ABC Company";
     employee1.Age = 30;
 
+    Employee employee2;
     employee2.Name = "Jane Doe";
     employee2.Company = "XYZ Company";
     employee2.Age = 25;
