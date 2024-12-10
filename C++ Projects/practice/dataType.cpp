@@ -54,12 +54,9 @@ a
 
 int main() {
     tuple<int, long, char, float, double> values;
-    cin >> get<0>(values) >> get<1>(values) >> get<2>(values) >> get<3>(values) >> get<4>(values);
-    cout << get<0>(values) << endl;
-    cout << get<1>(values) << endl;
-    cout << get<2>(values) << endl;
-    cout << get<3>(values) << endl;
-    cout << get<4>(values) << endl;
+    scanf("%d %ld %c %f %lf", &get<0>(values), &get<1>(values), &get<2>(values), &get<3>(values), &get<4>(values));
+
+    printf("%d\n%ld\n%c\n%.3f\n%.9lf\n", get<0>(values), get<1>(values), get<2>(values), get<3>(values), get<4>(values));
 
     return 0;   
 }
