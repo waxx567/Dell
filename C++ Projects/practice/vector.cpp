@@ -6,7 +6,10 @@ using namespace std;
 int main() {
     vector<int> vct(3);
     cout << "Enter numbers: " << endl;
-    for
+    for(int i = 0; i < 3; i++) {
+        cin >> vct[i];
+    }
+    cout << "The numbers are: " << endl;
 
     return 0;
 }
