@@ -87,3 +87,21 @@ int main() {
 
     return 0;
 }
+
+#include <iostream>
+#include <tuple>
+using namespace std;
+
+// swapping the contents of two tuples
+
+int main() {
+
+    tuple <int, int> numbers(1, 2);
+    cout << get<0>(numbers) << endl;
+    cout << get<1>(numbers) << endl;
+    swap(get<0>(numbers), get<1>(numbers));
+    cout << get<0>(numbers) << endl;
+    cout << get<1>(numbers) << endl;
+
+    return 0;
+}
