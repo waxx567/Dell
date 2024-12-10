@@ -1,8 +1,9 @@
 #include <iostream>
+#include <tuple>
+using namespace std;
 
 // tuples 
 
 int main() {
-
-    return 0;
+    tuple<int, string, char>
 }
