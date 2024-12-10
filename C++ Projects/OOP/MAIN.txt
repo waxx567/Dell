@@ -92,7 +92,7 @@ int main() {
 #include <tuple>
 using namespace std;
 
-// swapping the contents of two tuples
+// swapping the contents of a tuple
 
 int main() {
 
