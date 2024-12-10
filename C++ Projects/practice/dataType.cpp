@@ -54,6 +54,7 @@ a
 
 int main() {
     tuple<int, long, char, float, double> values;
+    cout << "Enter 5 values: " << endl;
     scanf("%d %ld %c %f %lf", &get<0>(values), &get<1>(values), &get<2>(values), &get<3>(values), &get<4>(values));
 
     printf("%d\n%ld\n%c\n%.3f\n%.9lf\n", get<0>(values), get<1>(values), get<2>(values), get<3>(values), get<4>(values));
