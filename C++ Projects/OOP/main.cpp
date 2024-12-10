@@ -24,6 +24,8 @@ int main() {
     // cout << scores["Jill"] << endl;
     scores["Jean"] = 50;
     cout << scores["Jean"] << endl;
+    scores.insert(pair<string, int>("Jeff", 40));
+    cout << scores["Jeff"] << endl;
 
     return 0;
 }
