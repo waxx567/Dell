@@ -15,12 +15,17 @@ int main() {
     // cout << get<1>(values) << endl;
     // cout << get<3>(values) << endl;
 
-    tuple <int, int> numbers(1, 2);
-    cout << get<0>(numbers) << endl;
-    cout << get<1>(numbers) << endl;
-    swap(get<0>(numbers), get<1>(numbers));
-    cout << get<0>(numbers) << endl;
-    cout << get<1>(numbers) << endl;
+    tuple <int, int> numbers1(1, 2);
+    tuple <int, int> numbers2(3, 4);
+    cout << get<0>(numbers1) << endl;
+    cout << get<1>(numbers1) << endl;
+    cout << get<0>(numbers2) << endl;
+    cout << get<1>(numbers2) << endl;
+    numbers1.swap(numbers2);
+    cout << get<0>(numbers1) << endl;
+    cout << get<1>(numbers1) << endl;
+    cout << get<0>(numbers2) << endl;
+    cout << get<1>(numbers2) << endl;
 
     return 0;
 }
