@@ -17,6 +17,7 @@ int main() {
         {"Jack", 70},
         {"Jill", 60}
     };
+    // prints the values of the keys
     cout << scores["John"] << endl;
     cout << scores["Jane"] << endl;
     cout << scores["Jack"] << endl;
