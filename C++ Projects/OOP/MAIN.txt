@@ -105,3 +105,26 @@ int main() {
 
     return 0;
 }
+
+#include <iostream>
+#include <tuple>
+using namespace std;
+
+// swapping the contents of two tuples
+
+int main() {
+
+    tuple <int, int> numbers1(1, 2);
+    tuple <int, int> numbers2(3, 4);
+    cout << get<0>(numbers1) << endl;
+    cout << get<1>(numbers1) << endl;
+    cout << get<0>(numbers2) << endl;
+    cout << get<1>(numbers2) << endl;
+    numbers1.swap(numbers2);
+    cout << get<0>(numbers1) << endl;
+    cout << get<1>(numbers1) << endl;
+    cout << get<0>(numbers2) << endl;
+    cout << get<1>(numbers2) << endl;
+
+    return 0;
+}
