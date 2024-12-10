@@ -5,5 +5,5 @@ using namespace std;
 // tuples 
 
 int main() {
-    tuple<int, string, char>
+    tuple <int, string> person;
 }
