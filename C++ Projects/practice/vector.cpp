@@ -10,9 +10,12 @@ int main() {
         cin >> vct[i];
     }
 
-    for(int i = 0; i < 3; i++) {
-        cout << "Numbers: " << vct[i] << endl;
-    }
+    int a, b, c;
+    a = vct[0];
+    b = vct[1];
+    c = vct[2];
+
+    cout << a + b + c << endl;
 
     return 0;
 }
