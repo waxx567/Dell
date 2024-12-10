@@ -37,7 +37,8 @@ int main() {
     tuple <string, bool> values2("hello", true);
     // tuple <int, char, string, bool> values3;
     // values3 = make_tuple(get<0>(values1), get<1>(values1), get<0>(values2), get<1>(values2));
-    tuple <int, char, string, bool> values3 = tuple_cat(values1, values2);
+    // tuple <int, char, string, bool> values3 = tuple_cat(values1, values2);
+    auto values3 = tuple_cat(values1, values2);
     cout << get<0>(values3) << endl;
     cout << get<1>(values3) << endl;
     cout << get<2>(values3) << endl;
