@@ -48,9 +48,9 @@ int main() {
     }
     
     for (int i = N-1; i >= 0; i--) {
-        cout << i;
+        cout << i+1 << ' ';
     }
     cout << endl;
-     
+
     return 0;
 }
