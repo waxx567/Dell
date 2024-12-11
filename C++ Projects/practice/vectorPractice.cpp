@@ -19,6 +19,7 @@ int main() {
     cout << endl;
 
     // push_back resizes the vector as needed
+    // and adds elements to the end
     vector<string> names;
     names.push_back("Alice");
     names.push_back("Bob");
@@ -26,6 +27,13 @@ int main() {
 
     for (string name : names) cout << name << " "; // Output: Alice Bob Charlie
     cout << endl;
+
+    // pop_back resizes the vector as needed
+    // and removes the last element
+    vector<int> numbers = {10, 20, 30};
+    numbers.pop_back();  // Removes 30
+
+    for (int num : numbers) cout << num << " ";
 
     return 0;
 }
