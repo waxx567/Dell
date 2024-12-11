@@ -48,14 +48,6 @@ int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
     int n, q;
     cin >> n >> q;
-    
-    for (int i = 0; i < n; i++) {
-        cout << "Array " << i << endl;
-    } 
-    
-    for (int i = 0; i < q; i++) {
-        cout << "Query " << i << endl;
-    }
 
     return 0;
 }
