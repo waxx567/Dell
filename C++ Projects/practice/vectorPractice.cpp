@@ -45,5 +45,12 @@ int main() {
     cout << "First: " << numbers.front() << endl;  // Output: 10
     cout << "Last: " << numbers.back() << endl;   // Output: 20
 
+    // insert elements at a specific position
+    vector<int> nums = {1, 2, 4};
+    nums.insert(nums.begin() + 2, 3);  // Insert 3 at index 2
+
+    for (int num : nums) cout << num << " ";
+    cout << endl;
+
     return 0;
 }
