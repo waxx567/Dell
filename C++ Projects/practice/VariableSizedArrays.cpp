@@ -45,6 +45,13 @@ We perform the following q = 2 queries:
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n, q;
+    cin >> n >> q;
+    
+    for (int i = 0; i < n; i++) {
+        
+    } 
+    
     return 0;
 }
