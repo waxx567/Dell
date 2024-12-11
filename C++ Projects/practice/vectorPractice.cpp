@@ -71,6 +71,11 @@ int main() {
     cout << "Size: " << nums3.size() << endl;         // Output: 5
     cout << "Capacity: " << nums3.capacity() << endl; // Capacity might be >= 5
 
+    // clearing the vector
+    vector<int> nums4 = {1, 2, 3};
+    nums4.clear();  // Removes all elements
+    cout << "Size after clear: " << nums4.size();  // Output: 0
+    cout << endl;
 
     return 0;
 }
