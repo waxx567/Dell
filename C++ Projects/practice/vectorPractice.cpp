@@ -52,5 +52,12 @@ int main() {
     for (int num : nums) cout << num << " "; // Output: 1 2 3 4
     cout << endl;
 
+    // erasing elements
+    vector<int> nums1 = {1, 2, 3, 4, 5};
+    nums.erase(nums1.begin() + 1);  // Remove element at index 1 (2)
+
+    for (int num : nums1) cout << num << " "; 
+    cout << endl;
+
     return 0;
 }
