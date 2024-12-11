@@ -62,11 +62,12 @@ int main() {
 
         vector<int>::iterator it = lower_bound(arr.begin(), arr.end(), x);
 
-        if (it == arr.end()) {
-            cout << "No " << it - arr.begin() + 1 << endl;
-        } else {
+        if (it != arr.end() && *it == x) {
             cout << "Yes " << it - arr.begin() + 1 << endl;
+        } else {
+            cout << "No " << it - arr.begin() + 1 << endl;
         }
     }
+    
     return 0;
 }
