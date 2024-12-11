@@ -49,7 +49,7 @@ int main() {
     vector<int> nums = {1, 2, 4};
     nums.insert(nums.begin() + 2, 3);  // Insert 3 at index 2
 
-    for (int num : nums) cout << num << " ";
+    for (int num : nums) cout << num << " "; // Output: 1 2 3 4
     cout << endl;
 
     return 0;
