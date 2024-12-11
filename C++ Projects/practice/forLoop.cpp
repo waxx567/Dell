@@ -21,6 +21,10 @@
 #include <algorithm>
 #include <unordered_map>
 
+/*
+https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem?isFullScreen=true
+*/
+
 using namespace std;
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
