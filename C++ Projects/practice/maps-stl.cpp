@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <map>
 using namespace std;
 
 /*
@@ -37,6 +38,30 @@ Sample Output
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int Q, type, Y;
+    string X;
+    cin >> Q;
+
+    map<string, int> m;
+
+    for (int i = 0; i < Q; i++) {
+        cin >> type >> X;
+        if (type == 1) {
+            cin >> Y;
+            m[X] += Y;
+        } else if (type == 2) {
+            m.erase(X);
+        } else if (type == 3) {
+            map<string, int>::iterator it = m.find(X);
+
+            if (it != m.end()) {
+                cout << it->second << endl;
+            } else {
+                cout << 0 << endl;
+            }
+        }
+    }
+    
     return 0;
 }
