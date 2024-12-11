@@ -15,7 +15,7 @@ int main() {
     // Vector initialized with a list of values
     vector<int> v4 = {1, 2, 3, 4, 5};  
 
-    for (int x : v4) cout << x << " ";  // Output: 1 2 3 4 5
+    for (int x : v4) cout << x << " " << endl;  // Output: 1 2 3 4 5
 
     // push_back resizes the vector as needed
     vector<string> names;
@@ -23,7 +23,7 @@ int main() {
     names.push_back("Bob");
     names.push_back("Charlie");
 
-    for (string name : names) cout << name << " "; 
+    for (string name : names) cout << name << " " << endl; 
 
 
     return 0;
