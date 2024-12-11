@@ -59,5 +59,12 @@ int main() {
     for (int num : nums1) cout << num << " "; // Output: 1 3 4 5
     cout << endl;
 
+    // resizing the vector
+    vector<int> nums2 = {1, 2, 3, 4, 5};
+    nums2.resize(3);  // Trims to first 3 elements
+
+    for (int num : nums2) cout << num << " "; 
+    cout << endl;
+
     return 0;
 }
