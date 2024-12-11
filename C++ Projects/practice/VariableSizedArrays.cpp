@@ -52,6 +52,10 @@ int main() {
     for (int i = 0; i < n; i++) {
         cout << "Array " << i << endl;
     } 
+    
+    for (int i = 0; i < q; i++) {
+        cout << "Query " << i << endl;
+    }
 
     return 0;
 }
