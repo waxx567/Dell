@@ -49,5 +49,7 @@ int main() {
     int n, q;
     cin >> n >> q;
 
+    vector<vector<int>> a(n);
+
     return 0;
 }
