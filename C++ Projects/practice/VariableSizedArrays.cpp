@@ -51,5 +51,20 @@ int main() {
 
     vector<vector<int>> a(n);
 
+    for (int i = 0; i < n; i++) { 
+        int k, x;
+        cin >> k;
+        for (int j = 0; j < k; j++) {
+            cin >> x;
+            a[i].push_back(x);
+        }
+    }
+
+    for (int i = 0; i < q; i++) {
+        int x, y;
+        cin >> x >> y;
+        cout << a[x][y] << endl;
+    }
+
     return 0;
 }
