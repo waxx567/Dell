@@ -46,5 +46,27 @@ Sample Output
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int N, Q, x;
+    cin >> N;
+
+    vector<int> arr(N);
+
+    for (int i = 0; i < N; i++) {
+        cin >> arr[i];
+    }
+
+    cin >> Q;
+
+    for (int i = 0; i < Q; i++) {
+        cin >> x;
+
+        vector<int>::iterator it = lower_bound(arr.begin(), arr.end(), x);
+
+        if (it == arr.end()) {
+            cout << "No " << it - arr.begin() + 1 << endl;
+        } else {
+            cout << "Yes " << it - arr.begin() + 1 << endl;
+        }
+    }
     return 0;
 }
