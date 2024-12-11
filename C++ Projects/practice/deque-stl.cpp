@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <deque>
 using namespace std;
 
 /*
@@ -32,7 +33,46 @@ Sample Output
 8 8 8 10
 */
 
+#include <iostream>
+#include <vector>
+#include <deque>
+using namespace std;
+
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int T, N, K;
+    cin >> T;
+
+    for (int i = 0; i < T; i++) {
+        cin >> N >> K;
+
+        vector<int> a(N);
+        for (int j = 0; j < N; j++) {
+            cin >> a[j];
+        }
+
+        deque<int> dq;
+
+        for (int j = 0; j < N; j++) {
+            // Remove elements outside the current window
+            if (!dq.empty() && dq.front() == j - K) {
+                dq.pop_front();
+            }
+
+            // Remove elements smaller than the current one from the back
+            while (!dq.empty() && a[dq.back()] <= a[j]) {
+                dq.pop_back();
+            }
+
+            // Add the current element's index
+            dq.push_back(j);
+
+            // Print maximum of current window
+            if (j >= K - 1) {
+                cout << a[dq.front()] << " ";
+            }
+        }
+        cout << endl;
+    }
+    
     return 0;
 }
