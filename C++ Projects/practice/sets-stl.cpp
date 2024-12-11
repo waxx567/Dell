@@ -12,7 +12,7 @@ Sets are a part of the C++ STL. Sets are containers that store unique elements f
 
 Input Format
 
-The first line of the input contains Q where Q is the number of queries. The next Q lines contain 1 query each. Each query consists of two integers y and z where z is the type of the query and  is an integer.
+The first line of the input contains Q where Q is the number of queries. The next Q lines contain 1 query each. Each query consists of two integers y and z where y is the type of the query and z is an integer.
 
 Output Format
 
