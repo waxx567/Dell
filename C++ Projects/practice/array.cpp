@@ -48,7 +48,7 @@ int main() {
     }
     
     for (int i = N-1; i >= 0; i--) {
-        cout << arr[i]+1 << '';
+        cout << arr[i]+1 << ' ';
     }
     cout << endl;
 
