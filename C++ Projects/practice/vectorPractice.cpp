@@ -66,5 +66,11 @@ int main() {
     for (int num : nums2) cout << num << " "; // Output: 1 2 3
     cout << endl;
 
+    // checking size and capacity
+    vector<int> nums3 = {1, 2, 3, 4, 5};
+    cout << "Size: " << nums3.size() << endl;         // Output: 5
+    cout << "Capacity: " << nums3.capacity() << endl; // Capacity might be >= 5
+
+
     return 0;
 }
