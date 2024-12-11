@@ -50,8 +50,8 @@ int main() {
     cin >> n >> q;
     
     for (int i = 0; i < n; i++) {
-        
+        cout << "Array " << i << endl;
     } 
-    
+
     return 0;
 }
