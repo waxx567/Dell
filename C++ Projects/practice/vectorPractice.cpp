@@ -63,7 +63,7 @@ int main() {
     vector<int> nums2 = {1, 2, 3, 4, 5};
     nums2.resize(3);  // Trims to first 3 elements
 
-    for (int num : nums2) cout << num << " "; 
+    for (int num : nums2) cout << num << " "; // Output: 1 2 3
     cout << endl;
 
     return 0;
