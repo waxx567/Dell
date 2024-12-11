@@ -24,7 +24,7 @@ int main() {
     names.push_back("Bob");
     names.push_back("Charlie");
 
-    for (string name : names) cout << name << " ";
+    for (string name : names) cout << name << " "; // Output: Alice Bob Charlie
     cout << endl;
 
     return 0;
