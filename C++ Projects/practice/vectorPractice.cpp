@@ -23,8 +23,7 @@ int main() {
     names.push_back("Bob");
     names.push_back("Charlie");
 
-    for (string name : names) cout << name << " " << endl; 
-
+    for (string name : names) cout << name << " ";
 
     return 0;
 }
