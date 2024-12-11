@@ -37,6 +37,11 @@ Sample Output
 
 5
 9
+
+We perform the following q = 2 queries:
+
+1.  Find the array located at index i = 0, which corresponds to a[0] = [1,5,4]. We must print the value at index j = 1 of this array which, as you can see, is 5.
+2.  Find the array located at index i = 1, which corresponds to a[1] = [1,2,8,9,3]. We must print the value at index j = 3 of this array which, as you can see, is 9.
 */
 
 int main() {
