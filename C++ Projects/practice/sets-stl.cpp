@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <set>
 using namespace std;
 
 /*
@@ -39,6 +40,28 @@ No
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int Q, y, z;
+    cin >> Q;
+
+    set <int> s;
+
+    for (int i = 0; i < Q; i++) {
+        cin >> y >> z;
+        
+        if (y == 1) {
+            s.insert(z);
+        } else if (y == 2) {
+            s.erase(z);
+        } else if (y == 3) {
+            set<int>::iterator it = s.find(z);
+            if (it != s.end()) {
+                cout << "Yes" << endl;
+            } else {
+                cout << "No" << endl;
+            }
+        }
+    }   
+
     return 0;
 }
