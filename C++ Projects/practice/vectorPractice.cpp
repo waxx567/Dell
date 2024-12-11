@@ -54,7 +54,7 @@ int main() {
 
     // erasing elements
     vector<int> nums1 = {1, 2, 3, 4, 5};
-    nums.erase(nums1.begin() + 1);  // Remove element at index 1 (2)
+    nums1.erase(nums1.begin() + 1);  // Remove element at index 1 (2)
 
     for (int num : nums1) cout << num << " "; 
     cout << endl;
