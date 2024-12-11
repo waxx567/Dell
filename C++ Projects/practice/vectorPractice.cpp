@@ -33,7 +33,8 @@ int main() {
     vector<int> numbers = {10, 20, 30};
     numbers.pop_back();  // Removes 30
 
-    for (int num : numbers) cout << num << " ";
+    for (int num : numbers) cout << num << " ";  // Output: 10 20
+    cout << endl;
 
     return 0;
 }
