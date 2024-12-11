@@ -36,5 +36,14 @@ int main() {
     for (int num : numbers) cout << num << " ";  // Output: 10 20
     cout << endl;
 
+    // accessing elements
+    // using indexing
+    cout << numbers[0];  // Access the first element (10)
+    // using bounds checking
+    cout << numbers.at(1);  // Output: 20
+    // accessing first and last element
+    cout << "First: " << numbers.front() << endl;  // Output: 10
+    cout << "Last: " << numbers.back() << endl;   // Output: 20
+
     return 0;
 }
