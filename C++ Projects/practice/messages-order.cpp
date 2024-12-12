@@ -51,6 +51,29 @@ What'up?
 Not much :(
 */
 
+// Message class definition
+class Message {
+public:
+    // Constructor to initialize message text and ID
+    Message(const string& text) : text_(text), id_(++current_id_) {}
+    
+    // Getter for message text
+    const string& get_text() const { return text_; }
+    
+    // Overload < operator for sorting based on ID
+    bool operator<(const Message& other) const {
+        return id_ < other.id_;
+    }
+    
+private:
+    string text_; // Message text
+    int id_; // Unique message ID
+    static int current_id_; // Static counter for assigning unique IDs
+};
+
+// Initialize static member
+int Message::current_id_ = 0;
+
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     return 0;
