@@ -45,6 +45,27 @@ The two input values, 3 and 3, are outside of the range of our enums. Thus, we p
 */
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int t;
+    cin >> t;
+
+    for (int i = 0; i < t; i++) {
+        int c, f;
+        cin >> c >> f;
+        
+        if (c == 1) {
+            if (f == 0) {
+                cout << "green apple" << endl;
+            } else {
+                cout << "unknown unknown" << endl;
+            }
+        } else if (c == 2) {
+            if (f == 0) {
+                cout << "red apple" << endl;
+            } else {
+                cout << "unknown unknown" << endl;
+            }
+        }
+    }
+
     return 0;
 }
