@@ -3,6 +3,8 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
 /*
@@ -44,28 +46,46 @@ The two input index values, 1 and 0, correspond to green in the color enumeratio
 The two input values, 3 and 3, are outside of the range of our enums. Thus, we print unknown unknown.
 */
 
+// Define a map for colors with corresponding integer values
+unordered_map<int, string> colorMap {
+    {0, "red"},
+    {1, "green"},
+    {2, "orange"}
+};
+
+// Define a map for fruits with corresponding integer values
+unordered_map<int, string> fruitMap {
+    {0, "apple"},
+    {1, "orange"},
+    {2, "pear"}
+};
+
+// Function to retrieve the name corresponding to a value from the map
+string getEnumName(const unordered_map<int, string>& enumMap, int value) {
+    // Check if the value exists in the map
+    if (enumMap.find(value) != enumMap.end()) {
+        return enumMap.at(value); // Return the name if found
+    }
+    return "unknown"; // If the name is not found
+}
+
+
 int main() {
     int t;
-    cin >> t;
-
-    for (int i = 0; i < t; i++) {
+     cin >> t;
+    
+    // Process each test case
+    while (t--) {
         int c, f;
         cin >> c >> f;
         
-        if (c == 1) {
-            if (f == 0) {
-                cout << "green apple" << endl;
-            } else {
-                cout << "unknown unknown" << endl;
-            }
-        } else if (c == 2) {
-            if (f == 0) {
-                cout << "red apple" << endl;
-            } else {
-                cout << "unknown unknown" << endl;
-            }
-        }
+        // Get names using the lookup function
+        string color = getEnumName(colorMap, c);
+        string fruit = getEnumName(fruitMap, f);
+        
+        // Print the result
+        cout << color << ' ' << fruit << endl;
     }
-
+    
     return 0;
 }
