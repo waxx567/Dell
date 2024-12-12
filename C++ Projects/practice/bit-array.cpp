@@ -49,28 +49,22 @@ int main() {
     // Define the modulo value
     const long long MOD = 2147483648;
     
-    // Initialize the first element of the sequence
+    // Initialize sequence tracking
     long long current = S % MOD;
     long long count = 1;
     
-    // Implement Brent's algorithm
-    long long power = 1, length = 1;
-    long long tortoise = current;
-    long long hare = (current * P + Q) % MOD;
-    
-    while (count < N && tortoise != hare) {
-        if (power == length) {
-            tortoise = hare;    // Reset tortoise
-            power *= 2;         // Double the power
-            length = 0;         // Reset the cycle length counter
+    // Use cycle tracking with a maximum search limit
+    for (long long i = 1; i < N; i++) {
+        long long next = (current * P + Q) % MOD;
+        if (next == current) {
+            break; // Cycle detected
         }
-        hare = (hare * P + Q) % MOD;
-        length++;
+        current = next;
         count++;
     }
     
     // Output the number of unique elements found
-    cout << min(N, count) << endl;
+    cout << count << endl;
     
     return 0;
 }
