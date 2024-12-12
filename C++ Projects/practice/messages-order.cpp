@@ -74,6 +74,16 @@ private:
 // Initialize static member
 int Message::current_id_ = 0;
 
+// MessageFactory class definition
+class MessageFactory {
+public:
+    // Method to create a new message
+    Message(create_message(const string& text)) {
+        return Message(text);
+    }
+};
+
+
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     return 0;
