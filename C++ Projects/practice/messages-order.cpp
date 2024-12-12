@@ -51,64 +51,7 @@ What'up?
 Not much :(
 */
 
-class Message {
-public:
-// Constructor initializes a Message object with a given text string. It copies the input string into a private member text_ variable.
-    Message(const string& text) : text_(text) {}
-    const string& get_text() const { return text_; }
-private:
-// Method returns a constant reference to the text string stored in the Message object, allowing read-only access to the text.
-    string text_;
-};
-
-class MessageFactory {
-public:
-// Method creates and returns a new Message object initialized with the given text string.
-    Message create_message(const string& text) { return Message(text); }
-};
-
-// The Recipient class is responsible for receiving messages in arbitrary order and printing them in the correct order.
-class Recipient {
-public:
-// Constructor creates an empty Recipient object.
-    Recipient() {}
-    // Method receives a message and adds it to the vector of received messages.
-    void receive(const Message& message) { messages_.push_back(message); }
-    // Method prints all the received messages in the correct order.
-    void print_messages() {
-        fix_order();
-        for (auto& message : messages_) {
-            cout << message.get_text() << endl;
-        }
-    }
-private:
-// Method sorts the vector of received messages in the correct order.
-    void fix_order() {
-        sort(messages_.begin(), messages_.end());
-    }
-    // Private member variable to store the vector of received messages.
-    vector<Message> messages_;
-};
-
-class Network {
-public:
-// Method takes a vector of Message objects as input, shuffles them, and returns the shuffled vector.
-    static vector<Message> shuffle(const vector<Message>& messages) {
-        vector<Message> result = messages;
-        shuffle(result);
-        return result;
-    }
-};
-
-// Function reads lines of text from standard input, creates a Message object for each line, and passes it to the Recipient's receive method. After all lines have been read, it calls the Recipient's print_messages method, which prints all the received messages in the correct order.
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    MessageFactory message_factory;
-    Recipient recipient;
-    string text;
-    while (getline(cin, text)) {
-        recipient.receive(message_factory.create_message(text));
-    }
-    recipient.print_messages();
     return 0;
 }
