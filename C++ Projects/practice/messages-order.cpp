@@ -4,6 +4,8 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#include <random>
+
 using namespace std;
 
 /*
@@ -105,6 +107,18 @@ private:
     // Sort messages
     void fix_order() {
         sort(messages_.begin(), messages_.end());
+    }
+};
+
+// Network class definition
+class Network {
+public:
+    // Simulate message delivery with random shuffle
+    static vector<Message> shuffle(vector<Message> messages) {
+        random_device rd;
+        mt19937 g(rd());
+        ::shuffle(messages.begin(), messages.end(), g);
+        return messages;
     }
 };
 
