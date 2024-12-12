@@ -83,6 +83,31 @@ public:
     }
 };
 
+// Recipient class definition
+class Recipient {
+public:
+    // Receive a message
+    void receive(const Message& message) {
+        messages_.push_back(message);
+    }
+    
+    // Print all messages in correct order
+    void print_messages() {
+        fix_order();
+        for (const auto& message : messages_) {
+            cout << message.get_text() << endl;
+        }
+    }
+
+private:
+    vector<Message> messages_; // Stores received messages
+    
+    // Sort messages
+    void fix_order() {
+        sort(messages_.begin(), messages_.end());
+    }
+};
+
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
