@@ -43,7 +43,26 @@ Sample Output 0
 first_name=john,last_name=doe
 */
 
+class Person {
+    public:
+    string first_name;
+    string last_name;
+    
+    Person(string first_name, string last_name) {
+        this->first_name = first_name;
+        this->last_name = last_name;
+    }
+    friend std::ostream& operator<<(std::ostream& os, const Person& p) {
+        os << "first_name=" << p.first_name << ",last_name=" << p.last_name;
+        return os;
+    }
+};
+
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    string first_name, last_name, event;
+    cin >> first_name >> last_name >> event;
+    Person p(first_name, last_name);
+    cout << p << " " << event << endl;
     return 0;
 }
