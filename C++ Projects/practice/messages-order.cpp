@@ -124,6 +124,17 @@ public:
 
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    MessageFactory message_factory;
+    Recipient recipient;
+    string text;
+    
+    // Read input messages
+    while (getline(cin, text)) {
+        recipient.receive(message_factory.create_message(text));
+    }
+    
+    // Print messages in correct order
+    recipient.print_messages();
+     
     return 0;
 }
