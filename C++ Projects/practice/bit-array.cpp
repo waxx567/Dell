@@ -3,7 +3,6 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <unordered_set>  // For storing unique elements efficiently
 
 using namespace std;
 
@@ -51,27 +50,27 @@ int main() {
     // Read input values: N (length), S (starting value), P (multiplier), Q (increment)
     long long N, S, P, Q;
     cin >> N >> S >> P >> Q;
-
-    // Define the modulo value as 2^31, per the problem statement
+    
+    // Define the modulo value
     const long long MOD = 2147483648;
-
-    // Use an unordered_set to store unique values in the sequence
-    unordered_set<long long> distinct;
-
-    // Initialize the first element of the sequence
+    
+    // Use variables to track distinct elements without storing them
     long long current = S % MOD;
-
-    // Generate the sequence and count distinct elements
-    for (long long i = 0; i < N; i++) {
-        // Insert the current element into the set
-        distinct.insert(current);
-        
-        // Generate the next element using the given formula
-        current = (current * P + Q) % MOD;
+    long long count = 1;
+    
+    // Use Floyd's cycle-finding algorithm to detect cycles
+    long long tortoise = current;
+    long long hare = (current * P + Q) % MOD;
+    
+    while (count < N && tortoise != hare) {
+        count++;
+        tortoise = (current * P + Q) % MOD;
+        hare = (hare * P + Q) % MOD;
+        hare = (hare * P + Q) % MOD;
     }
-
+    
     // Output the number of unique elements found
-    cout << distinct.size() << endl;
-
+    cout << min(N, count) << endl;
+    
     return 0;
 }
