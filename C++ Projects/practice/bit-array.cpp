@@ -3,6 +3,8 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <unordered_set>  // For storing unique elements efficiently
+
 using namespace std;
 
 /*
@@ -44,7 +46,32 @@ a = [1, 2, 3]
 Hence, there are 3 different integers in the sequence.
 */
 
+
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    // Read input values: N (length), S (starting value), P (multiplier), Q (increment)
+    long long N, S, P, Q;
+    cin >> N >> S >> P >> Q;
+
+    // Define the modulo value as 2^31, per the problem statement
+    const long long MOD = 2147483648;
+
+    // Use an unordered_set to store unique values in the sequence
+    unordered_set<long long> distinct;
+
+    // Initialize the first element of the sequence
+    long long current = S % MOD;
+
+    // Generate the sequence and count distinct elements
+    for (long long i = 0; i < N; i++) {
+        // Insert the current element into the set
+        distinct.insert(current);
+        
+        // Generate the next element using the given formula
+        current = (current * P + Q) % MOD;
+    }
+
+    // Output the number of unique elements found
+    cout << distinct.size() << endl;
+
     return 0;
 }
