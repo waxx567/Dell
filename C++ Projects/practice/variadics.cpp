@@ -51,7 +51,59 @@ The eleventh character on the second line is a 1, because the eleventh value in 
 All other characters are zero, because the corresponding values in the range do not match z.
 */
 
+#include <iostream>
+using namespace std;
+
+
+// If rest... is empty
+template<bool first, bool... rest>
+auto reversed_binary_value() -> typename std::enable_if<sizeof...(rest) > 0, int>::type {
+    return first + (reversed_binary_value<rest...>() << 1);
+}
+
+// Recursive template function
+template<bool first, bool... rest>
+int reversed_binary_value() {
+    return first + (reversed_binary_value<rest...>() << 1);
+}
+
+// Base case
+template<>
+int reversed_binary_value<>() {
+    return 0;
+}
+
+// Helper function to iterate over all combinations
+template<int N>
+struct CheckValues {
+    static void check(int x, int y) {
+        CheckValues<N-1>::check(x, y);
+        int val = reversed_binary_value<((N >> 5) & 1), ((N >> 4) & 1), 
+                                       ((N >> 3) & 1), ((N >> 2) & 1), 
+                                       ((N >> 1) & 1), (N & 1)>();
+        cout << (val == x ? '1' : '0');
+    }
+};
+
+// Specialization for N = 0
+template<>
+struct CheckValues<0> {
+    static void check(int x, int y) {
+        int val = reversed_binary_value<0, 0, 0, 0, 0, 0>();
+        cout << (val == x ? '1' : '0');
+    }
+};
+
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int x, y;
+        cin >> x >> y;
+        CheckValues<63>::check(x, y); // Check 64 binary values
+        cout << endl;
+    }
+
     return 0;
 }
