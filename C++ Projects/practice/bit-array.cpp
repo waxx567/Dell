@@ -1,8 +1,4 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -45,7 +41,6 @@ a = [1, 2, 3]
 Hence, there are 3 different integers in the sequence.
 */
 
-
 int main() {
     // Read input values: N (length), S (starting value), P (multiplier), Q (increment)
     long long N, S, P, Q;
@@ -54,19 +49,24 @@ int main() {
     // Define the modulo value
     const long long MOD = 2147483648;
     
-    // Use variables to track distinct elements without storing them
+    // Initialize the first element of the sequence
     long long current = S % MOD;
     long long count = 1;
     
-    // Use Floyd's cycle-finding algorithm to detect cycles
+    // Implement Brent's algorithm
+    long long power = 1, length = 1;
     long long tortoise = current;
     long long hare = (current * P + Q) % MOD;
     
     while (count < N && tortoise != hare) {
+        if (power == length) {
+            tortoise = hare;    // Reset tortoise
+            power *= 2;         // Double the power
+            length = 0;         // Reset the cycle length counter
+        }
+        hare = (hare * P + Q) % MOD;
+        length++;
         count++;
-        tortoise = (current * P + Q) % MOD;
-        hare = (hare * P + Q) % MOD;
-        hare = (hare * P + Q) % MOD;
     }
     
     // Output the number of unique elements found
