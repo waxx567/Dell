@@ -2,6 +2,31 @@
 
 [WebPage](https://cs50.harvard.edu/ai/2024/weeks/0/)
 
+Artificial Intelligence (AI) covers a range of techniques that appear as sentient behavior by the computer. For example, AI is used to recognize faces in photographs on your social media, beat the World’s Champion in chess, and process your speech when you speak to Siri or Alexa on your phone.
+
+In this course, we will explore some of the ideas that make AI possible:
+
+- Search
+    Finding a solution to a problem, like a navigator app that finds the best route from your origin to the destination, or like playing a game and figuring out the next move.
+
+- Knowledge
+    Representing information and drawing inferences from it.
+
+- Uncertainty
+    Dealing with uncertain events using probability.
+
+- Optimization
+    Finding not only a correct way to solve a problem, but a better—or the best—way to solve it.
+
+- Learning
+    Improving performance based on access to data and experience. For example, your email is able to distinguish spam from non-spam mail based on past experience.
+
+- Neural Networks
+    A program structure inspired by the human brain that is able to perform tasks effectively.
+
+- Language
+    Processing natural language, which is produced and understood by humans.
+
 BRIAN YU: All right. Welcome, everyone, to an Introduction to Artificial Intelligence with Python. My name is Brian Yu. And in this class, we'll explore some of the ideas, and techniques, and algorithms that are at the foundation of artificial intelligence. Now, artificial intelligence covers a wide variety of types of techniques.
 
 Anytime you see a computer do something that appears to be intelligent or rational in some way, like recognizing someone's face in a photo, or being able to play a game better than people can, or being able to
@@ -19,46 +44,18 @@ We'll take a look, too, at how computers are able to draw inspiration from human
 
 And taking a look at the challenges that come about as a computer tries to understand natural language and how it is some of the natural language processing that occurs in modern artificial intelligence can actually work. But today it will begin our conversation with search. This problem of trying to figure out what to do when we have some sort of situation that the computer is in, some sort of environment that an agent is in, so to speak. And we would like for that agent to be able to somehow look for a solution to that problem.
 
-Now, these problems can come in any number of different types of formats. One example, for instance, might be something like this classic 15 puzzle with the sliding tiles that you might have seen, where you're trying to slide the tiles in order to make sure that all the numbers line up in order. This is an example of 
-what you might call a search problem. The 15 puzzle begins in an initially mixed 
-up state and we need some way of finding moves to make in order to return the 
-puzzle to its solved state. 
+Now, these problems can come in any number of different types of formats. One example, for instance, might be something like this classic 15 puzzle with the sliding tiles that you might have seen, where you're trying to slide the tiles in order to make sure that all the numbers line up in order. This is an example of what you might call a search problem. The 15 puzzle begins in an initially mixed up state and we need some way of finding moves to make in order to return the puzzle to its solved state.
 
-But there are similar problems that you can frame in other ways. Trying to find 
-your way through a maze, for example, is another example of a search problem. 
-You begin in one place, you have some goal of where you're trying to get to, 
-and you need to figure out the correct sequence of actions that will take you 
-from that initial state to the goal. And while this is a little bit abstract, 
-anytime we talk about maze solving in this class, you can translate it to 
-something a little more real world, something like driving directions. 
+But there are similar problems that you can frame in other ways. Trying to find your way through a maze, for example, is another example of a search problem. You begin in one place, you have some goal of where you're trying to get to, and you need to figure out the correct sequence of actions that will take you from that initial state to the goal. And while this is a little bit abstract, anytime we talk about maze solving in this class, you can translate it to something a little more real world, something like driving directions.
 
-If you ever wonder how Google Maps is able to figure out what is the best way 
-for you to get from point A to point B and what turns to make, at what time, depending on traffic, for example. It's often some sort of search algorithm. 
-You have an AI that is trying to get from an initial position to some sort of 
-goal by taking some sequence of actions. So we'll start our conversations today 
-by thinking about these types of search problems and what goes in to solving a 
-search problem like this in order for an AI to be able to find a good solution. 
+If you ever wonder how Google Maps is able to figure out what is the best way for you to get from point A to point B and what turns to make, at what time, depending on traffic, for example. It's often some sort of search algorithm. You have an AI that is trying to get from an initial position to some sort of goal by taking some sequence of actions. So we'll start our conversations today by thinking about these types of search problems and what goes in to solving a search problem like this in order for an AI to be able to find a good solution.
 
-In order to do so, though, we're going to need to introduce a little bit 
-of terminology, some of which I've already used. But the first time 
-we'll need to think about is an agent. An agent is just some entity that 
-perceives its environment, it somehow is able to perceive the things around 
-it, and act on that environment in some way. So in the case of the driving directions, your agent might be some representation of a car that is trying 
-to figure out what actions to take in order to arrive at a destination. 
+In order to do so, though, we're going to need to introduce a little bit of terminology, some of which I've already used. But the first time we'll need to think about is an **agent**. An agent is just some entity that
+perceives its environment, it somehow is able to perceive the things around it, and act on that environment in some way. So in the case of the driving directions, your agent might be some representation of a car that is trying to figure out what actions to take in order to arrive at a destination.
 
-In the case of the 15 puzzle with the sliding tiles, the agent might be the AI 
-or the person that is trying to solve that puzzle, trying to figure out what 
-tiles to move in order to get to that solution. Next, we introduce the idea of 
-a state. A state is just some configuration of the agent in its environment. 
-So in the 15 puzzle, for example, any state might be any one of these three 
-for example. A state is just some configuration of the tiles. Each of these 
-states is different and is going to require a slightly different solution. 
+In the case of the 15 puzzle with the sliding tiles, the agent might be the AI or the person that is trying to solve that puzzle, trying to figure out what tiles to move in order to get to that solution. Next, we introduce the idea of a **state**. A state is just some configuration of the agent in its environment. So in the 15 puzzle, for example, any state might be any one of these three for example. A state is just some configuration of the tiles. Each of these states is different and is going to require a slightly different solution.
 
-A different sequence of actions will be needed in each one of these in order 
-to get from this initial state to the goal, which is where we're trying to get. 
-The initial state then. What is that? The initial state is just the state where 
-the agent begins. It is one such state where we're going to start from and this 
-is going to be the starting point for our search algorithm, so to speak. 
+A different sequence of actions will be needed in each one of these in order to get from this initial state to the goal, which is where we're trying to get. The initial state then. What is that? The initial state is just the state where the agent begins. It is one such state where we're going to start from and this is going to be the starting point for our search algorithm, so to speak.
 
 We're going to begin with this initial state and then start to reason about it, 
 to think about what actions might we apply to that initial state in order to 
