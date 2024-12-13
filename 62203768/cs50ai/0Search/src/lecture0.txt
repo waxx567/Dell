@@ -1,3 +1,5 @@
+https://cs50.harvard.edu/ai/2024/weeks/0/
+
 BRIAN YU: All right. 
 Welcome, everyone, to an Introduction to Artificial Intelligence 
 with Python. My name is Brian Yu. And in this class, we'll explore 
