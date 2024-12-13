@@ -50,78 +50,46 @@ But there are similar problems that you can frame in other ways. Trying to find 
 
 If you ever wonder how Google Maps is able to figure out what is the best way for you to get from point A to point B and what turns to make, at what time, depending on traffic, for example. It's often some sort of search algorithm. You have an AI that is trying to get from an initial position to some sort of goal by taking some sequence of actions. So we'll start our conversations today by thinking about these types of search problems and what goes in to solving a search problem like this in order for an AI to be able to find a good solution.
 
-In order to do so, though, we're going to need to introduce a little bit of terminology, some of which I've already used. But the first time we'll need to think about is an *agent*. An agent is just `some entity that perceives its environment, it somehow is able to perceive the things around it, and act on that environment in some way.` So in the case of the driving directions, your agent might be some representation of a car that is trying to figure out what actions to take in order to arrive at a destination.
+`4:47`
+In order to do so, though, we're going to need to introduce a little bit of terminology, some of which I've already used. But the first time we'll need to think about is an *agent*. An agent is just `some entity that perceives its environment, it somehow is able to perceive the things around it, and act on that environment in some way`. So in the case of the driving directions, your agent might be some representation of a car that is trying to figure out what actions to take in order to arrive at a destination. In the case of the 15 puzzle with the sliding tiles, the agent might be the AI or the person that is trying to solve that puzzle, trying to figure out what tiles to move in order to get to that solution. 
 
-In the case of the 15 puzzle with the sliding tiles, the agent might be the AI or the person that is trying to solve that puzzle, trying to figure out what tiles to move in order to get to that solution. Next, we introduce the idea of a *state*. A state is just `some configuration of the agent in its environment`. So in the 15 puzzle, for example, any state might be any one of these three for example. A state is just some configuration of the tiles. Each of these states is different and is going to require a slightly different solution.
+`5:23`
+Next, we introduce the idea of a *state*. A state is just `some configuration of the agent in its environment`. So in the 15 puzzle, for example, any state might be any one of these three for example. A state is just some configuration of the tiles. Each of these states is different and is going to require a slightly different solution.
 
 A different sequence of actions will be needed in each one of these in order to get from this initial state to the goal, which is where we're trying to get. The initial state then. What is that? The *initial state* is just the `state where the agent begins`. It is one such state where we're going to start from and this is going to be the starting point for our search algorithm, so to speak.
 
-We're going to begin with this initial state and then start to reason about it, to think about what actions might we apply to that initial state in order to figure out how to get from the beginning to the end, from the initial position to whatever our goal happens to be. And how do we make our way from that initial position to the goal? Well ultimately, it's via taking actions. Actions are just choices that we can make in any given state.
+We're going to begin with this initial state and then start to reason about it, to think about what actions might we apply to that initial state in order to figure out how to get from the beginning to the end, from the initial position to whatever our goal happens to be. And how do we make our way from that initial position to the goal? Well ultimately, it's via taking *actions*. Actions are just `choices that we can make in any given state`.
+`6:24`
 
-And in AI, we're always going to try to formalize these ideas a little bit 
-more precisely such that we could program them a little bit more mathematically, 
-so to speak. So this will be a recurring theme and we can more precisely define actions as a function. We're going to effectively define a function called 
-actions that takes an input S, where S is going to be some state that exists 
-inside of our environment, and actions of S is going to take the state as 
-input and return as output the set of all actions that can be executed 
-in that state. 
+And in AI, we're always going to try to formalize these ideas a little bit more precisely such that we could program them a little bit more mathematically, so to speak. So this will be a recurring theme and we can more precisely define actions as a function. We're going to effectively define a function called actions that takes an input S, where S is going to be some state that exists inside of our environment, and actions of S is going to take the state as input and return as output the set of all actions that can be executed in that state.
 
-And so it's possible that some actions are only valid in certain states 
-and not in other states. And we'll see examples of that soon, too. So in 
-the case of the 15 puzzle, for example, they're generally going to be four 
-possible actions that we can do most of the time. We can slide a tile to 
-the right, slide a tile to the left, slide a tile up, or slide a tile down, 
-for example. And those are going to be the actions that are available to us. 
+`actions(s) returns the set of actions that can be executed in state s`
 
-So somehow our AI, our program, needs some encoding of the state, which is 
-often going to be in some numerical format, and some encoding of these actions. 
-But it also needs some encoding of the relationship between these things, how 
-do the states and actions relate to one another? And in order to do that, we'll introduce to our AI a transition model, which will be a description of what 
-state we get after we perform some available action in some other state. 
+And so it's possible that some actions are only valid in certain states and not in other states. And we'll see examples of that soon, too. So in the case of the 15 puzzle, for example, they're generally going to be four possible actions that we can do most of the time. We can slide a tile to the right, slide a tile to the left, slide a tile up, or slide a tile down, for example. And those are going to be the actions that are available to us.
 
-And again, we can be a little bit more precise about this, define this 
-transition model a little bit more formally, again, as a function. The 
-function is going to be a function called result, that this time takes 
-two inputs. Input number one is S, some state. And input number two is A, 
-some action. And the output of this function result is it is going to give us 
-the state that we get after we perform action A in state S. So let's take a 
-look at an example to see more precisely what this actually means. 
+`7:19`
+So somehow our AI, our program, needs some encoding of the state, which is often going to be in some numerical format, and some encoding of these actions. But it also needs some encoding of the relationship between these things, how do the states and actions relate to one another? And in order to do that, we'll introduce to our AI a *transition model*, which will be `a description of what state we get after we perform some available action in some other state`.
 
-Here's an example of a state of the 15 puzzle, for example. 
-And here's an example of an action, sliding a tile to the right. What 
-happens if we pass these as inputs to the result function? Again, the result 
-function takes this board, this state, as its first input. And it takes an 
-action as a second input. And of course, here, I'm describing things visually 
-so that you can see visually what the state is and what the action is. In a 
-computer, you might represent one of these actions as just some number that represents the action. 
+And again, we can be a little bit more precise about this, `define this transition model` a little bit more formally, again, `as a function`. The function is going to be a function called result, that this time takes two inputs. Input number one is S, some state. And input number two is A, some action. And the output of this function result is it is going to give us the state that we get after we perform action A in state S. So let's take a look at an example to see more precisely what this actually means.
+`8:14`
 
-Or if you're familiar with enums that allow you to enumerate multiple 
-possibilities, it might be something like that. And the state might just be represented as an array, or two dimensional array, of all of these numbers that exist. But here we're going to show it visually just so you can see it. When 
-we take this state and this action, pass it into the result function, the 
-output is a new state. The state we get after we take a tile and slide it to 
-the right, and this is the state we get as a result. 
+Here's an example of a state of the 15 puzzle, for example. And here's an example of an action, sliding a tile to the right. What happens if we pass these as inputs to the result function? Again, the result function takes this board, this state, as its first input. And it takes an action as a second input. And of course, here, I'm describing things visually so that you can see visually what the state is and what the action is. In a computer, you might represent one of these actions as just some number that represents the action.
 
-If we had a different action and a different state, for example, and passed 
-that into the result function, we'd get a different answer altogether. So the 
-result function needs to take care of figuring out how to take a state and take 
-an action and get what results. And this is going to be our transition model 
-that describes how it is that states and actions are related to each other. 
+Or if you're familiar with enums that allow you to enumerate multiple possibilities, it might be something like that. And the state might just be represented as an array, or two dimensional array, of all of these numbers that exist. But here we're going to show it visually just so you can see it. When we take this state and this action, pass it into the result function, the output is a new state. The state we get after we take a tile and slide it to the right, and this is the state we get as a result.
 
-If we take this transition model and think about it more generally and across 
-the entire problem, we can form what we might call a state space, the set of 
-all of the states we can get from the initial state via any sequence of actions, 
-by taking zero or one or two or more actions in addition to that, so we could 
-draw a diagram that looks something like this. Where every state is represented 
-here by a game board. And there are arrows that connect every state to every 
-other state we can get two from that state. 
+If we had a different action and a different state, for example, and passed that into the result function, we'd get a different answer altogether. So the result function needs to take care of figuring out how to take a state and take an action and get what results. And this is going to be our transition model that describes how it is that states and actions are related to each other.
+`9:25`
 
-And the state space is much larger than what you see just here. This is just a sample of what the state space might actually look like. And, in general, across many search problems, whether they're this particular 15 puzzle or driving directions or something else, the state space is going to look something like this. We have individual states and arrows that are connecting them. And oftentimes, just for simplicity, we'll simplify our representation of this entire thing as a graph, some sequence of nodes and edges that connect nodes. 
+If we take this transition model and think about it more generally and across the entire problem, we can form what we might call a *state space*, `the set of all of the states we can get from the initial state via any sequence of actions`, by taking zero or one or two or more actions in addition to that, so we could draw a diagram that looks something like this. Where every state is represented here by a game board. And there are arrows that connect every state to every other state we can get two from that state.
 
-But you can think of this more abstract representation as the exact same idea. Each of these little circles, or nodes, is going to represent one of the states inside of our problem. And the arrows here represent the actions that we can take in any particular state, taking us from one particular state to another state, for example. All right. So now we have this idea of nodes that are representing these states, actions that can take us from one state to another, and a transition model that defines what happens after we take a particular action. 
+And the state space is much larger than what you see just here. This is just a sample of what the state space might actually look like. And, in general, across many search problems, whether they're this particular 15 puzzle or driving directions or something else, the state space is going to look something like this. We have individual states and arrows that are connecting them. And oftentimes, just for simplicity, we'll simplify our representation of this entire thing as a graph, some sequence of nodes and edges that connect nodes.
 
-So the next step we need to figure out is how we know when the AI is done solving the problem. The AI I needs some way to know when it gets to the goal, that it's found the goal. So the next thing we'll need to encode into our artificial intelligence is a goal test, some way to determine whether a given state is a goal state. In the case of something like driving directions, it might be pretty easy. If you're in a state that corresponds to whatever the user typed in as their intended destination, well, then you know you're in a goal state. 
+But you can think of this more abstract representation as the exact same idea. Each of these little circles, or nodes, is going to represent one of the states inside of our problem. And the arrows here represent the actions that we can take in any particular state, taking us from one particular state to another state, for example. All right. So now we have this idea of nodes that are representing these states, actions that can take us from one state to another, and a transition model that defines what happens after we take a particular action.
+`10:54`
 
-In the 15 puzzle, it might be checking the numbers to make sure they're all in ascending order. But the AI need some way to encode whether or not any state they happen to be in is a goal. And some problems might have one goal, like a maze where you have one initial position and one ending position and that's the goal. In other more complex problems, you might imagine that there are multiple possible goals, that there are multiple ways to solve a problem. And we might not care which one the computer finds as long as it does find a particular goal. 
+So the next step we need to figure out is how we know when the AI is done solving the problem. The AI I needs some way to know when it gets to the goal, that it's found the goal. So the next thing we'll need to encode into our artificial intelligence is a goal test, some way to determine whether a given state is a goal state. In the case of something like driving directions, it might be pretty easy. If you're in a state that corresponds to whatever the user typed in as their intended destination, well, then you know you're in a goal state.
+
+In the 15 puzzle, it might be checking the numbers to make sure they're all in ascending order. But the AI need some way to encode whether or not any state they happen to be in is a goal. And some problems might have one goal, like a maze where you have one initial position and one ending position and that's the goal. In other more complex problems, you might imagine that there are multiple possible goals, that there are multiple ways to solve a problem. And we might not care which one the computer finds as long as it does find a particular goal.
 
 However, sometimes a computer doesn't just care about finding a goal, but finding a goal well, or one with a low cost. And it's for that reason that the last piece of terminology that we use to define these search problems is something called a path cost. You might imagine that in the case of driving directions, it would be pretty annoying if I said I wanted directions from point A to point B, and the route the Google Maps gave me was a long route with lots of detours that were unnecessary, that took longer than it should have for me to get to that destination. 
 
