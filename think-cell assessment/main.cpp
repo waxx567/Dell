@@ -63,5 +63,5 @@ public:
 		requires (std::is_same<std::remove_cvref_t<V_forward>, V>::value)
 	{ 
         m_map[keyBegin] = std::forward<V_forward>(val);
-    };
+    }
 };
