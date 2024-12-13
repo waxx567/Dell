@@ -36,26 +36,57 @@ is equality-comparable via operator==,
 does not implement any other operations.
 You are given the following source code:
 */
+
 #include <map>
+
 template<typename K, typename V>
 class interval_map {
-	friend void IntervalMapTest();
-	V m_valBegin;
-	std::map<K,V> m_map;
-public:
-	// constructor associates whole range of K with val
-	template<typename V_forward>
-	interval_map(V_forward&& val)
-	: m_valBegin(std::forward<V_forward>(val))
-	{}
+    friend void IntervalMapTest();
+    V m_valBegin;
+    std::map<K, V> m_map;
 
-	// Assign value val to interval [keyBegin, keyEnd).
-	// Overwrite previous values in this interval.
-	// Conforming to the C++ Standard Library conventions, the interval
-	// includes keyBegin, but excludes keyEnd.
-	// If !( keyBegin < keyEnd ), this designates an empty interval,
-	// and assign must do nothing.
-	template<typename V_forward>
-	void assign( K const& keyBegin, K const& keyEnd, V_forward&& val )
-		requires (std::is_same<std::remove_cvref_t<V_forward>, V>::value)
-	{ 
+public:
+    // Constructor associates whole range of K with val
+    template<typename V_forward>
+    interval_map(V_forward&& val)
+        : m_valBegin(std::forward<V_forward>(val)) {}
+
+    // Assign value val to interval [keyBegin, keyEnd).
+    // Overwrite previous values in this interval.
+    // If !(keyBegin < keyEnd), this designates an empty interval,
+    // and assign must do nothing.
+    template<typename V_forward>
+    void assign(K const& keyBegin, K const& keyEnd, V_forward&& val)
+        requires (std::is_same<std::remove_cvref_t<V_forward>, V>::value) {
+        
+        // Check if the interval is non-empty
+        if (!(keyBegin < keyEnd)) return;
+
+        // Erase intervals that overlap with [keyBegin, keyEnd)
+        auto itLow = m_map.lower_bound(keyBegin);
+        auto itHigh = m_map.lower_bound(keyEnd);
+
+        // Remove affected intervals (we may need to remove entries in the middle)
+        m_map.erase(itLow, itHigh);
+
+        // Set the value at keyBegin
+        if (itLow == m_map.begin() || (--itLow)->second != val) {
+            m_map[keyBegin] = val;
+            ++itLow;  // Restore iterator position
+        }
+
+        // Set the value at keyEnd
+        if (itHigh == m_map.begin() || (--itHigh)->second != val) {
+            m_map[keyEnd] = m_valBegin;
+        }
+
+        // After insertion, check the neighbors for merging
+        if (itLow != m_map.begin() && (--itLow)->second == val) {
+            m_map.erase(itLow);
+        }
+
+        if (itHigh != m_map.end() && itHigh->second == m_valBegin) {
+            m_map.erase(itHigh);
+        }
+    }
+};
