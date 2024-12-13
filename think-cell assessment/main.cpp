@@ -1,7 +1,4 @@
 /*
-Test assignment
-Thank you for participating in our recruiting test. This will be a C++ programming test!
-
 Task Description
 interval_map<K,V> is a data structure that associates keys of type K with values of type V. It is designed to be used efficiently in situations where intervals of consecutive keys are associated with the same value. Your task is to implement the assign member function of this data structure, which is outlined below.
 
@@ -62,6 +59,3 @@ public:
 	void assign( K const& keyBegin, K const& keyEnd, V_forward&& val )
 		requires (std::is_same<std::remove_cvref_t<V_forward>, V>::value)
 	{ 
-        m_map[keyBegin] = std::forward<V_forward>(val);
-    }
-};
