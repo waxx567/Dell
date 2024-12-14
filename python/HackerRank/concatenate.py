@@ -62,3 +62,13 @@
 #  [3 4]] 
 
 import numpy
+
+n, m, p = map(int, input().split())
+
+a = numpy.array([input().split() for _ in range(n)], int)
+b = numpy.array([input().split() for _ in range(m)], int)
+c = numpy.concatenate((a, b), axis=0)
+
+print(c)
+
+
