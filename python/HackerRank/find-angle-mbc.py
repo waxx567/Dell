@@ -23,3 +23,16 @@
 
 # Print the angle MBC in degrees.
 # Note: Round the angle to the nearest integer.
+
+import math
+
+# Read input for sides AB and BC
+ab = int(input())
+bc = int(input())
+
+# Calculate angle MBC using the arctangent function
+# math.atan returns the angle in radians, convert to degrees
+angle_mbc = math.degrees(math.atan(ab/bc))
+
+# Print the angle rounded to the nearest integer with the degree symbol as an ASCII character
+print(f"{round(angle_mbc)}\u00B0")
