@@ -88,7 +88,9 @@ class OddStream(object):
         self.current += 2
         return to_return
 
-def print_from_stream(n, stream=EvenStream()):
+def print_from_stream(n, stream=None):
+    if stream is None:
+        stream = EvenStream()
     for _ in range(n):
         print(stream.get_next())
 
@@ -101,3 +103,24 @@ for _ in range(queries):
         print_from_stream(n)
     else:
         print_from_stream(n, OddStream())
+
+
+### Explanation:    
+# The issue with the existing code is that the default argument `stream=EvenStream()` is initialized only once, causing the same instance to be reused across function calls. This leads to unexpected results because the `current` value keeps increasing.
+
+# ### Solution:
+# Change the default argument from a mutable object (`EvenStream()`) to `None`, then create a new instance of `EvenStream` inside the function if `stream` is `None`.
+
+### Corrected Code:
+# ```python
+# def print_from_stream(n, stream=None):
+#     if stream is None:
+#         stream = EvenStream()
+#     for _ in range(n):
+#         print(stream.get_next())
+# ```
+
+### Why This Works:
+# - Setting `stream=None` avoids the mutable default argument trap.
+# - Each call to `print_from_stream()` creates a new `EvenStream` instance if no stream is provided, ensuring correct behavior. 
+
