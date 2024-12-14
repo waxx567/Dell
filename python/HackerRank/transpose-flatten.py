@@ -56,3 +56,10 @@
 # [1 2 3 4]
 
 import numpy
+
+n, m = map(int, input().split())
+
+matrix = numpy.array([input().split() for _ in range(n)], int)
+
+print(matrix.transpose())
+print(matrix.flatten())
