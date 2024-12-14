@@ -74,3 +74,6 @@
 # Print the array built using numpy.zeros and numpy.ones tools and you get the result as shown.
 
 import numpy
+
+print(numpy.zeros((int(input()), int(input()), int(input()))))
+print(numpy.ones((int(input()), int(input()), int(input()))))
