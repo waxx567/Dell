@@ -58,14 +58,23 @@ import sys
 
 def birthdayCakeCandles(candles):
     # Write your code here
-    max = 0
-    count = 0
+    # Track the tallest candles
+    max = 0;
+    # Count the tallest candles
+    count = 0;
+    # Loop through all candles
     for i in range(len(candles)):
+        # If the current candle is taller than the tallest candle so far
         if candles[i] > max:
+            # The current candle's height is the new maximum
             max = candles[i]
+            # Start the count
             count = 1
+        # If the current candle is the same height as the tallest candle so far
         elif candles[i] == max:
+            # Increment the count
             count += 1
+        
     return count
 
 if __name__ == '__main__':
