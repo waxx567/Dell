@@ -22,3 +22,4 @@
 # Output Format
 
 # Print the angle MBC in degrees.
+# Note: Round the angle to the nearest integer.
