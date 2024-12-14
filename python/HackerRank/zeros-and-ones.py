@@ -75,5 +75,7 @@
 
 import numpy
 
-print(numpy.zeros((int(input()), int(input()), int(input()))))
-print(numpy.ones((int(input()), int(input()), int(input()))))
+shape = tuple(map(int, input().split()))
+
+print(numpy.zeros(shape, dtype=int))
+print(numpy.ones(shape, dtype=int))
