@@ -14,7 +14,7 @@ def get_data(link):
     # parse data
     soup = BeautifulSoup(response.content, "html.parser")
     # get price
-    price = soup.find("span", class_="data-js-product-price=").text.strip()
+    price = soup.find("div", class_="product-page-info__price =").text.strip()
     # get title
     title = soup.find("h1", class_="product__title").text.strip()
     print(price)
