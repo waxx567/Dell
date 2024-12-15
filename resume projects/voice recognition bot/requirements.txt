@@ -82,7 +82,7 @@ Pygments==2.18.0
 PyMatting==1.1.12
 pyreadline3==3.5.4
 python-dateutil==2.9.0.post0
-python-multipart==0.0.12
+python-multipart==0.0.18
 pytz==2024.2
 PyYAML @ file:///C:/b/abs_782o3mbw7z/croot/pyyaml_1698096085010/work
 referencing==0.35.1
