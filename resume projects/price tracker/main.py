@@ -14,14 +14,11 @@ if __name__ == "__main__":
     # get data
     response = requests.get(link)
     # parse data
-    soup = BeautifulSoup(response.content, "html.parser")
+    soup = BeautifulSoup(response.text, "html.parser")
     # get price
-    price = soup.find("div", class_="product-page-info__price =").text.strip()
-    # get title
-    title = soup.find("h1", class_="product__title").text.strip()
+    price = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
     print("Scraping data from: " + link)
     print(price)
-    print(title)
 
 # def get_data(link):
     # get data
