@@ -15,8 +15,10 @@ def get_data(link):
     soup = BeautifulSoup(response.text, "html.parser")
     # get price
     price = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
+    
     print(price)
     return price
+
 
 def main():
     get_data(LINK)
