@@ -17,5 +17,6 @@ def get_data(link):
     price = soup.find("div", class_="product-page-info__price =").text.strip()
     # get title
     title = soup.find("h1", class_="product__title").text.strip()
+    print("Scraping data from: " + link)
     print(price)
     print(title)
