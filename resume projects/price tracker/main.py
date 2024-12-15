@@ -18,7 +18,7 @@ def get_data(link):
     soup = BeautifulSoup(response.text, "html.parser")
     # get price string
     price_string = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
-    # get price
+    # get price by regex
     price = re.search(r"\d+\,\d+\.\d+", price_string[0].text).group()
     # print(price, end="")  # print price                                              
     return price
