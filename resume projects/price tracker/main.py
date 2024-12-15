@@ -16,8 +16,8 @@ def get_data(link):
     soup = BeautifulSoup(response.text, "html.parser")
     # get price
     price_string = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
-    price_search = re.compile("[^0-9]")
-    price = price_search.findall(price_string)
+    # re.search(pattern, string, flags=0)
+    price = re.search('\d+', price_string[0].text).group()
     
     print(price)
     return price
