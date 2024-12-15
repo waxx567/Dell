@@ -17,7 +17,6 @@ if __name__ == "__main__":
     soup = BeautifulSoup(response.text, "html.parser")
     # get price
     price = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
-    print("Scraping data from: " + link)
     print(price)
 
 # def get_data(link):
