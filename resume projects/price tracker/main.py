@@ -19,7 +19,7 @@ def get_data(link):
     # re.search(pattern, string, flags=0)
     price = re.search(r"\d+\,\d+\.\d+", price_string[0].text).group()
     
-    print(price)
+    print(price, end="")
     return price
 
 
