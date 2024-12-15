@@ -8,7 +8,9 @@ import re
 # link to scrape
 LINK = "https://www.bikekings.co.za/collections/fullface/products/shark-skwal-i3-hellcat-matte-kur?_pos=28&_fid=271f4b3e9&_ss=c"
 
-
+"""
+Gets the price of the item at the given link
+"""
 def get_data(link):
     # get data
     response = requests.get(link)
