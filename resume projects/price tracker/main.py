@@ -17,7 +17,7 @@ def get_data(link):
     # get price
     price_string = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
     # re.search(pattern, string, flags=0)
-    price = re.search('\d+', price_string[0].text).group()
+    price = re.search(r"\d+\.\d+", price_string)
     
     print(price)
     return price
