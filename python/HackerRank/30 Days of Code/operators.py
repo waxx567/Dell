@@ -1,3 +1,5 @@
+# DAY 2
+
 # https://www.hackerrank.com/challenges/30-operators/problem?h_r=email&unlock_token=41861bc82787225ab738d811a07207e796d2b671&utm_campaign=30_days_of_code_continuous&utm_medium=email&utm_source=daily_reminder
 
 # Objective
