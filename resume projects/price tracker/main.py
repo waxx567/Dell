@@ -1,3 +1,7 @@
+"""
+Scrapes the price of a product from bikekings.co.za
+"""
+
 from bs4 import BeautifulSoup
 import requests 
 import numpy as np
