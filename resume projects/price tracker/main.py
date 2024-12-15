@@ -18,6 +18,9 @@ def get_data(link):
     print(price)
     return price
 
+def main():
+    get_data(LINK)
+
 
 if __name__ == "__main__":
-    price = get_data(LINK)
+    main()
