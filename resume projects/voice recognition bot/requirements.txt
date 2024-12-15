@@ -58,7 +58,7 @@ mpmath @ file:///C:/b/abs_7833jrbiox/croot/mpmath_1690848321154/work
 multidict==6.1.0
 namex==0.0.8
 networkx @ file:///C:/b/abs_e6gi1go5op/croot/networkx_1690562046966/work
-nltk==3.8.1
+nltk==3.9
 numba==0.60.0
 numpy==1.26.4
 onnxruntime==1.19.2
