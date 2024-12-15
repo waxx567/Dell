@@ -14,12 +14,11 @@ def get_data(link):
     response = requests.get(link)
     # parse data    
     soup = BeautifulSoup(response.text, "html.parser")
-    # get price
+    # get price string
     price_string = soup.find("div",{"class":"product-page-info__price"}).find_all("span",{"class":"price"})
-    # re.search(pattern, string, flags=0)
+    # get price
     price = re.search(r"\d+\,\d+\.\d+", price_string[0].text).group()
-    
-    print(price, end="")
+    # print(price, end="")
     return price
 
 
