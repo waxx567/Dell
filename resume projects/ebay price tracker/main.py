@@ -54,7 +54,7 @@ def main():
     # get best price
     best_price = np.min(prices)
     # print best price
-    print(best_price)
+    print(f"Best price: £{best_price:.2f}")
 
 if __name__ == "__main__":    
     main()
