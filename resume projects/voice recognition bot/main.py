@@ -5,7 +5,7 @@ import scipy.io.wavfile as wav
 
 test_file = 'over-radio-countdown_108bpm_A_minor.wav'
 FILE_FROM_USER = 'RECORDING.wav'
-VOICE_FILE = 'VOICE.wav'
+VOICE_FILE = 'VOICE.txt'
 
 r = sr.Recognizer()
 
@@ -40,6 +40,7 @@ def save_to_file(text, filename):
     """
     with open(filename, 'w') as f:
         f.write(text)
+
 
 def main():
     """
