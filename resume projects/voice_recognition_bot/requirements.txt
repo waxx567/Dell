@@ -59,7 +59,7 @@ mpmath @ file:///C:/b/abs_7833jrbiox/croot/mpmath_1690848321154/work
 multidict==6.1.0
 namex==0.0.8
 networkx @ file:///C:/b/abs_e6gi1go5op/croot/networkx_1690562046966/work
-nltk==3.8.1
+nltk==3.9
 numba==0.60.0
 numpy==1.26.4
 onnxruntime==1.19.2
@@ -83,7 +83,7 @@ Pygments==2.18.0
 PyMatting==1.1.12
 pyreadline3==3.5.4
 python-dateutil==2.9.0.post0
-python-multipart==0.0.12
+python-multipart==0.0.18
 pytz==2024.2
 PyYAML @ file:///C:/b/abs_782o3mbw7z/croot/pyyaml_1698096085010/work
 referencing==0.35.1
@@ -105,7 +105,7 @@ sniffio==1.3.1
 sounddevice==0.5.1
 soupsieve==2.6
 SpeechRecognition==3.12.0
-starlette==0.38.6
+starlette==0.40.0
 sty==1.0.6
 sympy @ file:///C:/b/abs_82njkonm7f/croot/sympy_1701397685028/work
 tensorboard==2.16.2
