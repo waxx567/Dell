@@ -53,6 +53,9 @@ def save_prices(prices):
         writer = csv.writer(f)
         writer.writerow(fields)
 
+def get_average(prices):
+    return np.mean(prices)
+
 def main():
     # get data
     prices = get_data(LINK)
