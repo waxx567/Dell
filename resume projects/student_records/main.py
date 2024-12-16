@@ -1,5 +1,11 @@
 def main():
     
+    """
+    Main function to manage student records. It reads student data from a file,
+    allows the user to add, view, or delete students, and then saves updated
+    records back to the file. Provides a menu-driven interface for user interaction.
+    """
+
     studentList = []
 
     try:
