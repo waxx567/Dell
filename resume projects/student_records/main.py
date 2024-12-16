@@ -1,80 +1,46 @@
-def incorrect_first_name():
-    """
-    Keep asking for the student's first name until a valid input is given.
-    """
+def main():
 
-    while firstName.isalpha() == False:
-        firstName = input("Enter the student's first name: ")  
-
-def incorrect_last_name():
     """
-    Keep asking for the student's last name until a valid input is given.
-    """
+    Runs the main menu for the student records program.
 
-    while lastName.isalpha() == False:
-        lastName = input("Enter the student's last name: ")  
-
-def choice():
-    """
-    Prompt the user to enter a student's first and last name, and
-    return a string with the full name. The function will keep asking
-    for the names until valid input (only letters) is given.
+    The menu provides options to add a student, view all students, delete a student, or quit the program.
     """
     
-    firstName = input("Enter the student's first name: ")
-    incorrect_first_name()
-    lastName = input("Enter the student's last name: ")
-    incorrect_last_name() 
-    student = firstName + " " + lastName
-
-    return student
-
-
-def main():
-    """
-    The main function. Present the user with a menu of options to
-    add, remove, search for, list or quit. The function will keep
-    running until the user chooses to quit.
-    """
-
     studentList = []
 
     choice = 0
 
-    while choice != 5:
-        print("** Students **")
-        print("Please choose an option:")
-        print("1. Add a student")
-        print("2. Remove a student")
-        print("3. Search for a student")
-        print("4. List all students")
-        print("5. Quit")
+    while choice != 4:
+        print("1. Add student")
+        print("2. View all students")
+        print("3. Delete student")
+        print("4. Quit")
 
-        while choice < 1 or choice > 5:
-            try:
-                choice = int(input())
-            except ValueError:
-                print("Invalid input. Please enter a number between 1 and 5.")
+        choice = int(input("Enter your choice: "))
 
         if choice == 1:
-            student = choice()
-            studentList.append(student)
-            print("Student added.")
+            firstName = input("Enter student's first name: ")
+            lastName = input("Enter student's last name: ")
+            course = input("Enter student's course: ")
+            student = {"firstName": firstName, "lastName": lastName, "course": course}
+            studentList.append(student)  
         elif choice == 2:
-            student = choice()
-            studentList.remove(student)
-            print("Student removed.")
-        elif choice == 3:
-            student = choice()
-            if student in studentList:
-                print("Student found.")
-            else:
-                print("Student not found.")
-        elif choice == 4:
             for student in studentList:
-                print(student)
-        elif choice == 5:
-            print("Goodbye!")
+                print(f"{student['firstName']} {student['lastName']} - {student['course']}")
+        elif choice == 3:
+            firstName = input("Enter student's first name: ")
+            lastName = input("Enter student's last name: ")
+            for student in studentList:
+                if student["firstName"] == firstName and student["lastName"] == lastName:
+                    studentList.remove(student)
+                    print(f"{firstName} {lastName} deleted")
+                    break
+                else:
+                    print(f"{firstName} {lastName} not found")
+        elif choice == 4:
+            print("Goodbye")
+        else:
+            print("Invalid choice")
 
 
 if __name__ == "__main__":
