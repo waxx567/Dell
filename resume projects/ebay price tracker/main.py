@@ -37,6 +37,24 @@ def get_data(link):
 
     return prices
 
-if __name__ == "__main__":
+def remove_outliers(prices, m=2):
+    # remove outliers
+    """
+    Removes outliers from a list of prices by removing all values that are more than m standard
+        deviations away from the mean.
+    """
+    data = np.array(prices)
+    return data[abs(data - np.mean(data)) < m * np.std(data)]
+
+def main():
+    # get data
     prices = get_data(LINK)
-    print(f"Average price: £{np.mean(prices):.2f}")
+    # remove outliers
+    prices = remove_outliers(prices)
+    # get best price
+    best_price = np.min(prices)
+    # print best price
+    print(best_price)
+
+if __name__ == "__main__":    
+    main()
