@@ -30,4 +30,4 @@ def get_data(link):
 
 if __name__ == "__main__":
     prices = get_data(LINK)
-    print(f"Average price: {np.mean(prices):.2f}")
+    print(f"Average price (£): {np.mean(prices):.2f}")
