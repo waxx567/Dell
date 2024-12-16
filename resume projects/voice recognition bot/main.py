@@ -29,7 +29,7 @@ def recognize_speech_from_file(filename):
 
 def main():
     # record_audio()
-    result = recognize_speech_from_file(VOICE_FILE)
+    result = recognize_speech_from_file(test_file)
     print(result)
     # return result
 
