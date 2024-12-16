@@ -31,7 +31,7 @@ def get_data(link):
         # if prices are within a range, skip
         if "to" in text_price:
             continue
-        # remove commas and convert to float
+        # remove commas and convert price to float
         price = float(text_price[1:].replace(",", "")) 
         prices.append(price)
 
