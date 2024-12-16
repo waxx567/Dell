@@ -69,7 +69,7 @@ def main():
     adjusted_prices = remove_outliers(prices)
     average_price = get_average(adjusted_prices)
     save_prices(adjusted_prices)
-    print(f"{adjusted_prices:.2f}")
+    print(f"{adjusted_prices}")
 
     print(f"Average price: £{average_price:.2f}")
 
