@@ -19,13 +19,20 @@ def recognize_speech_from_file(filename):
         text = r.recognize_google(audio)
         return text
 
-# def record_audio():
-#     fs = 44100  # Sample rate
-#     seconds = 5  # Duration of recording
-#     myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
-#     sd.wait()  # Wait until recording is finished
-#     wav.write(VOICE_FILE, fs, myrecording)
-#     return myrecording
+def record_audio(filename):
+    fs = 44100  # Sample rate
+    seconds = 5  # Duration of recording
+    myrecording = sd.rec(seconds * fs, samplerate=fs, channels=1, dtype='int32')
+    sd.wait()  # Wait until recording is finished
+    print("Recording saved")
+    sd.play(myrecording, fs)
+    sd.wait()
+    print("Recording played")
+    wav.write(filename, fs, myrecording)
+
+def save_to_file(text, filename):
+    with open(filename, 'w') as f:
+        f.write(text)
 
 def main():
     # record_audio()
