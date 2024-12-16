@@ -1,12 +1,18 @@
 def main():
-
-    """
-    Runs the main menu for the student records program.
-
-    The menu provides options to add a student, view all students, delete a student, or quit the program.
-    """
     
     studentList = []
+
+    try:
+        infile = open("student_records.txt", "r")
+        line = infile.readline()
+        while line != "":
+            student = line.strip().split(" - ")
+            studentList.append({"firstName": student[0].split(" ")[0], "lastName": student[0].split(" ")[1], "course": student[1]})
+            line = infile.readline()
+        infile.close()
+    except FileNotFoundError:
+        print("File not found")
+        studentList = []
 
     choice = 0
 
@@ -41,6 +47,11 @@ def main():
             print("Goodbye")
         else:
             print("Invalid choice")
+
+    outfile = open("student_records.txt", "w")
+    for student in studentList:
+        outfile.write(f"{student['firstName']} {student['lastName']} - {student['course']}\n")
+    outfile.close()
 
 
 if __name__ == "__main__":
