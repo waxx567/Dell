@@ -66,6 +66,7 @@ This project is licensed under the MIT License.
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
 ## Acknowledgments
+
 - Internet Made Coder: [Video](https://youtu.be/ZRlbf5P2iMA?si=BAa_5NoPUCN5D6c1)
 
 ---
