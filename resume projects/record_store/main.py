@@ -14,6 +14,8 @@ def main():
         print("4. Search for a record")
         print("5. Quit")
 
+        choice = int(input())
+
 
 if __name__ == "__main__":
     main()
