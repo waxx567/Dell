@@ -4,13 +4,11 @@ Scrapes the price of an item on bikekings.co.za
 
 from bs4 import BeautifulSoup
 import requests 
-import numpy as np
-import csv
-from datetime import datetime
 import re
 
 # link to scrape
 LINK = "https://www.bikekings.co.za/collections/fullface/products/shark-skwal-i3-hellcat-matte-kur?_pos=28&_fid=271f4b3e9&_ss=c"
+
 
 """
 Gets the price of the item at the given link
