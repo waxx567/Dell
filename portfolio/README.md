@@ -4,7 +4,7 @@
 
 Built with Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS.
 
-Have a look at this portfolio at my [website](https://fivefiftyfive.in).
+Have a [look](https://fivefiftyfive.in).
 
 ## ⚙️ Tech Stack
 
