@@ -10,8 +10,8 @@ def main():
         print("Please choose an option:")
         print("1. Add a record")
         print("2. Remove a record")
-        print("3. List all records")
-        print("4. Search for a record")
+        print("3. Search for a record")
+        print("4. List all records")
         print("5. Quit")
 
         choice = int(input())
