@@ -46,15 +46,26 @@ def remove_outliers(prices, m=2):
     data = np.array(prices)
     return data[abs(data - np.mean(data)) < m * np.std(data)]
 
+# function to save all of the prices in a csv file with the date
+def save_prices(prices):
+    fields=[datetime.today().strftime("%B-%D-%Y"),np.around(get_average(prices),2)]
+    with open('prices.csv', 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(fields)
+
 def main():
     # get data
     prices = get_data(LINK)
     # remove outliers
-    prices = remove_outliers(prices)
-    # get best price
-    best_price = np.min(prices)
-    # print best price
-    print(f"Best price: £{best_price:.2f}")
+    adjusted_prices = remove_outliers(prices)
+    # get average price
+    average_price = get_average(adjusted_prices)
+    # save prices
+    save_prices(adjusted_prices)
+    print(adjusted_prices)
+
+    print(f"Average price: £{average_price}:.2f")
+
 
 if __name__ == "__main__":    
     main()
