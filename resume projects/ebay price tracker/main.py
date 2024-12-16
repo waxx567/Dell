@@ -21,3 +21,13 @@ def get_data(link):
 
     for item in list_items:
         text_price = item.find("span", {"class": "s-item__price"}).text
+        if "to" in text_price:
+            continue
+        price = float(text_price[1:].replace(",", "")) 
+        prices.append(price)
+
+    return prices
+
+if __name__ == "__main__":
+    prices = get_data(LINK)
+    print(np.mean(prices))
