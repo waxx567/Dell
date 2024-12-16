@@ -1,5 +1,5 @@
 """
-Scrapes the price of a product from bikekings.co.za
+Scrapes the price of an item on bikekings.co.za
 """
 
 from bs4 import BeautifulSoup
