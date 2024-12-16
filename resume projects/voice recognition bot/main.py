@@ -5,8 +5,8 @@ import scipy.io.wavfile as wav
 
 test_file = 'over-radio-countdown_108bpm_A_minor.wav'
 
-# FILE_FROM_USER = 'RECORDING.wav'
-# VOICE_FILE = 'VOICE.wav'
+FILE_FROM_USER = 'RECORDING.wav'
+VOICE_FILE = 'VOICE.wav'
 
 r = sr.Recognizer()
 
@@ -35,10 +35,9 @@ def save_to_file(text, filename):
         f.write(text)
 
 def main():
-    # record_audio()
-    result = recognize_speech_from_file(test_file)
-    print(result)
-    # return result
+    print(recognize_speech_from_file(test_file))
+    text_from_voice = recognize_speech_from_file(FILE_FROM_USER)
+    save_to_file(text_from_voice, VOICE_FILE)
 
 if __name__ == "__main__":
     main()
