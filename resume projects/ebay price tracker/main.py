@@ -25,11 +25,13 @@ def get_data(link):
     # empty list to store prices
     prices = []
 
-    # get prices and add them to the list of prices
+    # get prices and append them to the list of prices
     for item in list_items:
         text_price = item.find("span", {"class": "s-item__price"}).text
+        # if prices are within a range, skip
         if "to" in text_price:
             continue
+        # remove commas and convert to float
         price = float(text_price[1:].replace(",", "")) 
         prices.append(price)
 
