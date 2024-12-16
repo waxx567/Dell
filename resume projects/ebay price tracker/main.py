@@ -1,6 +1,3 @@
-"""
-Scrapes the prices for a list of items on ebay.co.uk to get the best price
-"""
 from bs4 import BeautifulSoup
 import requests
 import numpy as np
