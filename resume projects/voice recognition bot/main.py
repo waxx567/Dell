@@ -31,7 +31,7 @@ def record_audio(filename):
     print("Recording saved")
     sd.play(myrecording, fs)
     sd.wait()
-    print("Recording played")
+    print("Recording played", end="")
     wav.write(filename, fs, myrecording)
 
 def save_to_file(text, filename):
