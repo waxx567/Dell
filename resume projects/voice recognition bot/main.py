@@ -49,8 +49,8 @@ def main():
     """
     # print(recognize_speech_from_file(test_file))
     record_audio(FILE_FROM_USER)
-    text_from_voice = recognize_speech_from_file(FILE_FROM_USER)
-    save_to_file(text_from_voice, VOICE_FILE)
+    voice_to_text = recognize_speech_from_file(FILE_FROM_USER)
+    save_to_file(voice_to_text, VOICE_FILE)
 
 if __name__ == "__main__":
     main()
