@@ -48,6 +48,7 @@ def main():
     recognized text from the user-provided file to a specified output file.
     """
     # print(recognize_speech_from_file(test_file))
+    record_audio(FILE_FROM_USER)
     text_from_voice = recognize_speech_from_file(FILE_FROM_USER)
     save_to_file(text_from_voice, VOICE_FILE)
 
