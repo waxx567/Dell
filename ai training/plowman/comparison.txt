@@ -32,11 +32,11 @@ The libraries used are mentioned but not explained.
 Truthfulness:
 
 Response 1:
-The background color is incorrectly identified.
+The background color is not correctly identified. It is close to the actual color, but not exact.
 
 Response 2:
 Claims to explain the libraries used but fails to do so.
-The background color is incorrectly identified.
+The background color is not correctly identified. It is close to the actual color, but not exact.
 
 Verbosity/Concision
 
@@ -53,5 +53,15 @@ Writing Style & Clarity
 
 Response 1:
 The explanation of context.rectangle is vague and possibly misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
+
+Response 2:
+
+Overall Score:
+
+Response 1: Pretty Bad
+Fails to follow instructions - not providing HEX codes or explaining libraries used.
+Fails to be truthful by claiming the incorrect background color.
+Fails by explaining geometric shapes verbosely, and adding unnecessary details when describing the shapes.
+Fails because the model is vague and possibly misleading in the way it does not elaborate on the specifics of the x, y coordinates in the context.rectangle function. 
 
 Response 2:
