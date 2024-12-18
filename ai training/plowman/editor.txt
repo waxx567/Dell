@@ -8,15 +8,19 @@ The following libraries are used in the code:
 
 
 
-cairo
+cairo 
 
 
 
 math
 
+Cairo is an open-source graphics library that provides a vector graphics-based API that is device-independent.
+
+Math is a module used specifically for mathematical operations like calculating pi.
+
 Saving the Picture:
 
-The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the cairo surface to a PNG file.
+The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the surface to a PNG file.
 
 Functions Used to Create Geometric Shapes:
 
@@ -26,35 +30,35 @@ The program uses various cairo functions to create geometric shapes:
 
 
 
-context.rectangle(): Creates a rectangle.
+context.rectangle(): Adds a closed sub-path rectangle of the given size to the current path at position (x , y ) in user-space coordinates.
 
 
 
-context.curve_to(): Creates a curve.
+context.curve_to(): Adds a cubic Bézier spline to the path from the current point to position (x3 , y3 ) in user-space coordinates, using (x1 , y1 ) and (x2 , y2 ) as the control points.
 
 
 
-context.move_to(): Moves the current point to a new position.
+context.move_to(): Begins a new sub-path - moves the current point to a new position. 
 
 
 
-context.line_to(): Creates a line from the current point to a new position.
+context.line_to(): Adds a line to the path from the current point to position (x , y ) in user-space coordinates.
 
 
 
-context.close_path(): Closes the current path.
+context.close_path(): Adds a line segment to the path from the current point to the beginning of the current sub-path, (the most recent point passed to cairo_move_to()), and closes this sub-path.
 
 
 
-context.fill(): Fills the current path with the current source color.
+context.fill(): A drawing operator that fills the current path according to the current fill rule.
 
 
 
-context.stroke(): Strokes the current path with the current source color.
+context.stroke(): A drawing operator that strokes the current path according to the current line width, line join, line cap, and dash settings.
 
 
 
-context.arc(): Creates an arc.
+context.arc(): Adds a circular arc of the given radius to the current path.
 
 Colors Used (HEX codes):
 
@@ -64,23 +68,23 @@ The program uses the following colors:
 
 
 
-#87CEEB (0.53, 0.81, 0.98): Sky blue (background color)
+#87CFFA: Sky blue (used for background color)
 
 
 
-#999999 (0.6, 0.6, 0.6): Gray (shark body color)
+#999999: Medium Gray (used for shark body color)
 
 
 
-#000000 (0, 0, 0): Black (outline and details)
+#000000: Black (used for outline and details)
 
 
 
-#808080 (0.5, 0.5, 0.5): Dark gray (fins and tail)
+#808080: Gray (used for both fins and tail)
 
 
 
-#FFFFFF (1, 1, 1): White (eye highlight)
+#FFFFFF: White (used for eye highlight)
 
 Geometric Shapes Used:
 
@@ -98,11 +102,11 @@ Curves: Used for the shark body.
 
 
 
-Triangles: Used for the fins and tail.
+Triangles: An upward-pointing large triangle is used for the dorsal fin, and a downward-pointing large triangle is used for the ventral fin. Two triangles are used for the tail - a large left-pointing one touching the body on the rightmost point, and a small left-pointing one overlapping the middle of the right side of the large triangle by about one-third of its height.
 
 
 
-Lines: Used for the shark's gills and mouth.
+Lines: Used for the shark's gills.
 
 
 
@@ -112,40 +116,14 @@ Arcs: Used for the shark's eye and mouth.
 
 Circles: Used for the shark's eye and pupil.
 
-Each shape is used to represent a specific part of the shark:
-
-
-
-
-
-Shark body: Curves
-
-
-
-Fins: Triangles
-
-
-
-Tail: Triangle
-
-
-
-Gills: Lines
-
-
-
-Mouth: Arc
-
-
-
-Eye: Circle
-
-
-
-Pupil: Circle
-
-
-
-Eye highlight: Circle
-
 These shapes are combined and positioned to create the final shark drawing.
+
+In summation, the image is:
+
+Simple: The use of basic shapes and shading keeps the drawing clean.
+
+Approachable: The drawing is easy for the audience to grasp and can be used as an educational tool to encourage programmatic drawing.
+
+Friendly: The illustration's use of a smile depicts the shark favorably, possibly destigmatizing the common myth that sharks are dangerous.
+
+Each shape is carefully positioned and sized to create a visually appealing shark drawing.
