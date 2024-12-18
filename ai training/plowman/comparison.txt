@@ -14,7 +14,7 @@ Both do explain this. 1 is more verbose.
 
 'Provide the HEX codes of all colors used in the drawing.'
 
-2 provides HEX, 1 provides RGB.
+2 provides HEX, 1 incorrectly provides RGB.
 
 'Describe all the geometric shapes used in the drawing and specify which part of the shark each shape represents.'
 
