@@ -23,7 +23,7 @@ Both do explain this. 1 is more verbose.
 Follow instructions:
 
 Response 1:
-Provides RGB codes instead of HEX codes. 
+Does not provide HEX codes. 
 The libraries used are mentioned but not explained.
 
 Response 2:
@@ -32,9 +32,11 @@ The libraries used are mentioned but not explained.
 Truthfulness:
 
 Response 1:
+The background color is incorrectly identified.
 
 Response 2:
 Claims to explain the libraries used but fails to do so.
+The background color is incorrectly identified.
 
 Verbosity/Concision
 
