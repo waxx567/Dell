@@ -1,7 +1,5 @@
 Shark Drawing Program Documentation
 
-Explanation of the Libraries Used:
-
 The following libraries are used in the code:
 
 
@@ -13,6 +11,9 @@ cairo
 
 
 math
+
+
+Explanation of the Libraries Used:
 
 Saving the Picture:
 
