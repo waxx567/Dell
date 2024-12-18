@@ -1,0 +1,151 @@
+Shark Drawing Program Documentation
+
+Explanation of the Libraries Used:
+
+The following libraries are used in the code:
+
+
+
+
+
+cairo
+
+
+
+math
+
+Saving the Picture:
+
+The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the cairo surface to a PNG file.
+
+Functions Used to Create Geometric Shapes:
+
+The program uses various cairo functions to create geometric shapes:
+
+
+
+
+
+context.rectangle(): Creates a rectangle.
+
+
+
+context.curve_to(): Creates a curve.
+
+
+
+context.move_to(): Moves the current point to a new position.
+
+
+
+context.line_to(): Creates a line from the current point to a new position.
+
+
+
+context.close_path(): Closes the current path.
+
+
+
+context.fill(): Fills the current path with the current source color.
+
+
+
+context.stroke(): Strokes the current path with the current source color.
+
+
+
+context.arc(): Creates an arc.
+
+Colors Used (HEX codes):
+
+The program uses the following colors:
+
+
+
+
+
+#87CEEB (0.53, 0.81, 0.98): Sky blue (background color)
+
+
+
+#999999 (0.6, 0.6, 0.6): Gray (shark body color)
+
+
+
+#000000 (0, 0, 0): Black (outline and details)
+
+
+
+#808080 (0.5, 0.5, 0.5): Dark gray (fins and tail)
+
+
+
+#FFFFFF (1, 1, 1): White (eye highlight)
+
+Geometric Shapes Used:
+
+The program uses the following geometric shapes to create the shark image:
+
+
+
+
+
+Rectangle: Used for the background.
+
+
+
+Curves: Used for the shark body.
+
+
+
+Triangles: Used for the fins and tail.
+
+
+
+Lines: Used for the shark's gills and mouth.
+
+
+
+Arcs: Used for the shark's eye and mouth.
+
+
+
+Circles: Used for the shark's eye and pupil.
+
+Each shape is used to represent a specific part of the shark:
+
+
+
+
+
+Shark body: Curves
+
+
+
+Fins: Triangles
+
+
+
+Tail: Triangle
+
+
+
+Gills: Lines
+
+
+
+Mouth: Arc
+
+
+
+Eye: Circle
+
+
+
+Pupil: Circle
+
+
+
+Eye highlight: Circle
+
+These shapes are combined and positioned to create the final shark drawing.
