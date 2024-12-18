@@ -102,7 +102,15 @@ Curves: Used for the shark body.
 
 
 
-Triangles: An upward-pointing large triangle is used for the dorsal fin, and a downward-pointing large triangle is used for the ventral fin. Two triangles are used for the tail - a large left-pointing one touching the body on the rightmost point, and a small left-pointing one overlapping the middle of the right side of the large triangle by about one-third of its height.
+Triangles: Isosceles triangles of two different sizes are used. Three large and one small. 
+
+The large ones have obtuse vertex angles and the small one has an acute vertex angle.
+
+A large triangle with its vertex angle pointing upward is used for the dorsal fin. A large triangle with its vertex angle pointing downward is used for the ventral fin. 
+
+The remaining large triangle has its vertex angle pointed leftward with the point of that vertex angle touching the rearmost point of the shark's body.
+
+The small triangle has its vertex angle pointing leftward. It overlaps the left-facing large triangle's side opposite that is opposite the vertex angle by about one-third of its height. 
 
 
 
@@ -117,6 +125,24 @@ Arcs: Used for the shark's eye and mouth.
 Circles: Used for the shark's eye and pupil.
 
 These shapes are combined and positioned to create the final shark drawing.
+
+A blue triangle is the background.
+
+A medium gray boat shape comprised of two equal arcs is the shark's body.
+
+A black outline outlines the shark's body.
+
+A black arc is the shark's mouth. It is placed near the bottom left of the shark's body.
+
+A black circle with a white circle centered within is the shark's eye. It is placed near the top left of the shark's body.
+
+Five staggered black lines are the gills. These are placed halfway between the shark's nose and the vertical midline of the shark's body in line with the mouth.
+
+A gray large triangle is the dorsal fin. It is placed near the top of the shark's body along the vertical midline.
+
+A gray large triangle is the ventral fin. It is placed near the bottom of the shark's body along the vertical midline.
+
+A large gray triangle and a small gray triangle are combined as described previously and placed touching the point of the shark's body opposite its nose.
 
 In summation, the image is:
 
