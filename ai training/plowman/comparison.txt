@@ -52,7 +52,7 @@ The explanations of the functions used to create the shapes do not go into any d
 Writing Style & Clarity
 
 Response 1:
-The explanation of context.rectangle is vague and possibly misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
+The explanation of the context.rectangle() is vague and possibly misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
 
 Response 2:
 
@@ -62,6 +62,7 @@ Response 1: Pretty Bad
 Fails to follow instructions - not providing HEX codes or explaining libraries used.
 Fails to be truthful by claiming the incorrect background color.
 Fails by explaining geometric shapes verbosely, and adding unnecessary details when describing the shapes.
-Fails because the model is vague and possibly misleading in the way it does not elaborate on the specifics of the x, y coordinates in the context.rectangle function. 
+Fails in clarity because the model is vague and possibly misleading in the way it does not elaborate on the specifics of the x, y coordinates in the context.rectangle() function. 
 
-Response 2:
+Response 2: Okay
+
