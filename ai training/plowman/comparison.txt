@@ -31,7 +31,9 @@ The libraries used are mentioned but not explained.
 
 Truthfulness:
 Response 1:
+
 Response 2:
+Claims to explain the libraries, but fails to do so.
 
 Verbosity/Concision
 Response 1:
