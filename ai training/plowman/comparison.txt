@@ -37,7 +37,9 @@ Claims to explain the libraries used but fails to do so.
 
 Verbosity/Concision
 Response 1:
+
 Response 2:
+The explanations of the functions used to create the shapes do not go into any detail.
 
 Writing Style & Clarity
 Response 1:
