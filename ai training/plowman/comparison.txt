@@ -30,18 +30,25 @@ Response 2:
 The libraries used are mentioned but not explained.
 
 Truthfulness:
+
 Response 1:
-The explanation of context.rectangle is vague and possibly misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
+
 Response 2:
 Claims to explain the libraries used but fails to do so.
 
 Verbosity/Concision
+
 Response 1:
+The preambles to the explanations of the geometric shapes are repetitive.
 The explanation of the geometric circle shape does not need to mention the colors used.
 The explanation of the geometric arc shape used does not need to mention that the shape is a smile.
+
 Response 2:
-The explanations of the functions used to create the shapes do not go into any detail.
+The explanations of the functions used to create the shapes do not go into any detail about how the shapes are created.
 
 Writing Style & Clarity
+
 Response 1:
+The explanation of context.rectangle is vague and possibly misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
+
 Response 2:
