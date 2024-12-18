@@ -28,6 +28,7 @@ The libraries used are mentioned but not explained.
 
 Response 2:
 The libraries used are mentioned but not explained.
+The explanations of the functions used to create the shapes do not go into any detail about how the shapes are created.
 
 Truthfulness:
 
@@ -47,7 +48,6 @@ The explanation of the geometric arc shape used does not need to mention that th
 
 Response 2:
 The explanation mentions saving to a PNG file twice.
-The explanations of the functions used to create the shapes do not go into any detail about how the shapes are created.
 
 Writing Style & Clarity
 
@@ -65,4 +65,7 @@ Fails by explaining geometric shapes verbosely, and adding unnecessary details w
 Fails in clarity because the model is vague and possibly misleading in the way it does not elaborate on the specifics of the x, y coordinates in the context.rectangle() function. 
 
 Response 2: Okay
-
+The model can improve by following the instruction to explain the libraries used.
+Can follow instructions better by expanding on the explanations of the functions.
+Can improve truthfulness by not claiming to explain these libraries and then failing to do so.
+Can improve verbosity by not mentioning saving the PNG file twice.
