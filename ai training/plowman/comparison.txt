@@ -31,7 +31,7 @@ The libraries used are mentioned but not explained.
 
 Truthfulness:
 Response 1:
-
+The explanation of context.rectangle is vague and misleading as it does not explain that the specified coordinates are the x and y coordinates of the top-left corner of the window.
 Response 2:
 Claims to explain the libraries, but fails to do so.
 
