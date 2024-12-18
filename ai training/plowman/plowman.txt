@@ -1,0 +1,222 @@
+https://docs.google.com/document/d/e/2PACX-1vQoF7-yQn8Hvd_H1PnxDz4YMgjoEbaelgbbUivY7saWoubjPBSskQnO-EW-Ih9PEKUxzQuDYMhL1ZSC/pub#h.jktks3bjnwfi
+
+Section 1: Welcome to Plowman RLHF!
+In this project, your work will help improve some of the world’s leading AI models! Here, we’ll go through the steps of your tasks and explain what you’ll be doing in each one.
+
+TASK OVERVIEW
+1.	Write a coding prompt in your native language
+2.	Proofread the AI responses and check their solutions
+3. 	Rate each model’s performance and write justifications
+4.	(If applicable) Improve/rewrite one of the responses
+
+Step 1: Review Your Assigned Language and Locale 📦
+
+Language: You’ll be given a specific language and locale.
+Purpose: We are teaching the model to answer code questions in a variety of languages so that it can perform well all over the world!
+Why This Matters: Covering many topics makes the AI useful for people with different needs and interests. Your careful work here helps make the model more versatile! Keep in mind the locale and scripture you have been assigned. Write the prompt in the assigned scripture e.g. Hi-IN should be written in Devanagri scripture whereas Hi-LATN should be written in Latin (standard english) scripture.
+
+Step 2: Write a Prompt ✍️
+
+What is a Prompt?: A prompt is a code question that you write. It tells the AI what to talk about and how to respond.
+Key Point: Your prompt is the foundation of this task.
+Complexity: prompts need to make the model REASON, a good prompt would have the necessary complexity to make at least one of the responses fail in any of the dimensions.
+
+
+Step 3: Review Two AI Responses and Complete Two Jobs 🔍
+
+Now, the AI will respond to your prompt twice. You’ll review both responses carefully. You have two main tasks:
+
+Code-Checking:
+Did the model provide the correct final answer? Test whether the response provided the correct final answer.
+Did the model write out any incorrect steps or make incorrect reasoning steps? Once the model generates a response to your prompt, review it carefully. Identify areas where the response falls short or makes mistakes. If one of the models does not have an issue, edit your prompt and try again until you make the model fail
+Proofreading:
+Think of yourself as the “language expert.”
+Check for any unnatural language, awkward phrasing, or grammar errors in your language.
+The AI might not speak your language perfectly, so look out for things that sound odd or don’t flow well.
+Did it follow instructions correctly? Check that the AI stayed within the constraints and didn’t make mistakes.
+Is the information accurate? The AI sometimes gets facts wrong, so make sure everything is true and correct.
+
+Step 4: Rate the Responses 🧑‍⚖️
+
+After proofreading and fact-checking, you will rate each response based on how well it performed. Here’s what to keep in mind:
+
+Provide a Justification: Your explanation helps the AI understand what it did wrong.
+Side-by-Side Rating: If asked, compare both responses and select the better one. Explain why the chosen response is stronger or more accurate. A high-quality explanation helps improve the model.
+
+
+Step 5: Improve the Selected Response 🎨
+
+Finally, if the selected response has errors, you will have to edit to make it better. Here’s what to do:
+
+Fix code errors: correct the incorrect step(s) clearly and concisely. The rewrite should be self-contained and understandable, following a logical sequence of reasoning.
+Correct Language Errors: Fix any grammar mistakes, spelling errors, or any fluency issues.
+Follow Instructions Precisely: Ensure that the AI’s response matches all instructions perfectly.
+All Claims are Accurate: Make sure everything the model says is true and accurate.
+Following these steps carefully will make a real difference in improving AI quality. Your attention to detail, accuracy, and fluency help create a model that is more helpful for everyone!
+
+This instructions document will explain every step above in detail to make sure your tasks are high quality!
+
+Section 2: Ground Rules!
+To stay on this project, please follow these important rules. Not following them may lead to removal:
+
+Code Prompts Only:
+This is a code project. The purpose is to ask coding-related questions.
+Assigned Language Only:
+Only use the assigned language for your prompts. No English is allowed in any prompt or response unless specifically required.
+        Stick to your assigned topic:
+
+Prompts are organized into 7 distinct topics to cover different aspects of the coding process.
+
+No External Language Models (LLMs):
+Do not use other AI tools, like ChatGPT or Gemini, to generate text or get ideas. These tools often make mistakes, which can lower your work quality.
+Check for Local Language Quality:
+Make sure all responses sound natural and fluent for a native speaker in your language.
+Carefully Proofread Every Response:
+Fact-check everything in the responses and make sure the writing quality sounds like a local person who is native in the language you speak in.
+Proofread all spelling, grammar, phrases, flow, ideas, and instruction following components of the response every single time
+By following these ground rules, you’ll ensure high-quality work and avoid any quality flags. Thank you for helping improve the AI model!
+
+Section 3: Writing Prompts!
+
+🧠 Concept: What is a user prompt?
+
+A user prompt is a coding-related question that guides the AI on what to say and how to say it. A good prompt has these elements:
+
+Clear about what the response is asking for:
+What it is: The background or main topic that tells the model what the response should answer.
+The prompt must be clear about what needs to be solved. You must ask the model something that another human would also be able to understand.
+Solvable:
+Avoid prompts that don't contain the information necessary to solve them.
+Avoid problems containing terms or concepts that do not adhere to coding rules
+
+What is a Topic? 🎯
+
+Prompts are organized into 7 distinct topics to cover different aspects of the coding process. Each prompt is assigned one topic only, which you must align with when creating your prompt.
+
+Section 4: Proofreading and Fact-Checking
+
+Here’s how to do this:
+
+Dimensions
+
+Step-by-Step
+
+Instruction Following
+
+Step 1: Review the instructions provided. Carefully read the original prompt to understand exactly what was asked. Make sure there is no ambiguity.
+
+Step 2: Compare the response to the instructions and constraints. Does the response address every part of the prompt? Identify if any parts were ignored or misunderstood.
+
+Step 3: Check for adherence to constraints. If there were specific guidelines (word count, format, structure), verify whether these were followed exactly.
+
+Step 4: Determine clarity of adherence. Assess if the response followed the instructions without misinterpretation or unnecessary additions that deviate from the task.
+
+Truthfulness
+
+Step 1: Identify all code steps and claims. Highlight any statements of coding relevantly claims..
+
+Step 2: Verify the code is executable and accurate. ALWAYS TEST THE CODE. Check the accuracy of the code step by testing it in your own environment. The model almost always makes code or reasoning errors! 
+
+Step 3: Evaluate correct application. Ensure that the coding principles are applied properly in the context of the response. Misapplied facts can be as misleading as incorrect ones.
+
+Step 4: Identify potential errors. If any part of the response includes inaccurate or misleading information, mark those areas as inaccuracies.
+
+Step 5: Check EVERYTHING. Even if you find one issue, that doesn’t mean the model didn’t make another one later on in the response. Don’t let inaccurate statements slip by!
+
+Fluency and Localization
+
+Step 1: Identify the required style/tone. Determine if the original instruction asked for a specific writing style (e.g., formal, casual) or tone (e.g., friendly, professional).
+
+Step 2: Compare the style/tone. Check if the writing style and tone match the requirement. If no specific tone was requested, ensure the tone is fluent and speaks like a native person would.
+
+Step 3: Evaluate awkward phrasing. Make sure the tone remains consistent throughout the response. Sudden shifts in tone (e.g., from casual to formal) should be avoided unless explicitly required. The model is usually awkward and might use awkward phrasing or say things that a native person might not necessarily say.
+
+Step 4: Assess clarity and flow. Ensure that the writing is easy to follow, with clear transitions between ideas and no awkward phrasing. The sentences should flow smoothly and be grammatically correct. The model might use unusual words or make grammar mistakes that don’t follow the tenses that are used in your language.
+
+Section 5: Rating Responses
+
+🔎 Dimension Ratings
+
+Once you’ve identified that one of the responses has errors, you will need to rate both responses on a scale of 1-3 for each criterion, with 3 being the highest score. Here are the categories to focus on:
+
+
+Instruction Following
+Implicit Instructions: Does the response address implied instructions from the prompt?
+Explicit Instructions: Does the response follow directly stated requirements in the prompt?
+Overall Adherence: Does the response meet all the requirements both implicit and explicit?
+Localization
+Cultural Nuances: Does the response reflect cultural norms and sensitivities of the prompt's context?
+Language Adaptation: Is the response adapted appropriately to the language used in the prompt?
+Truthfulness
+Claim Accuracy: Are all claims and details in the response factually correct?
+Logical Steps: Are reasoning steps valid and error-free?
+Verbosity
+Optimal Length: Is the response neither too terse nor overly verbose?
+Efficiency: Does the solution optimize the number of steps while being complete?
+Style and Clarity
+Readability: Is the response easy to read and understand?
+Structure: Is the response well-structured and visually organized?
+Formatting: Does the response use appropriate formatting tools like lists or markdown to enhance clarity?
+
+⚖️ Side by Side Rating
+
+Selecting the Better Response
+
+After reading both responses, you’ll choose which one is better using the following options:
+
+Response A is much better: Choose this if Response A is significantly better, or if Response B has major issues (e.g., wrong language, gibberish, incomplete).
+Response A is better: Choose this if Response A performs better in most rating criteria, especially the key ones like accuracy, completeness, and fluency.
+Response A is slightly better: Choose this if Response A is only a little better in one or two criteria.
+Tie: Choose this if both responses are of similar quality across all dimensions or have individual strengths that balance out.
+The same options apply for Response B if it’s better.
+
+
+Hierarchy of Rating Dimensions
+
+When deciding which response is better, some criteria are more important than others. Here’s the priority order:
+
+Truthfulness 🎖️ (most important)
+Instruction Following 🎖️ (also most important)
+Language Fluency
+Writing Style & Clarity
+Verbosity
+
+Writing a Justification for Your Choice
+
+Your justification explains why you chose one response over the other. Here are the key points to keep in mind:
+
+Stick to the Evidence: Focus on the main differences between the two responses. No need to mention criteria that don’t have issues.
+Focus on Key Criteria: Only discuss the dimensions that affected your choice (e.g., if Truthfulness was a big difference, mention that).
+Be Concise: Avoid flowery language or extra details that aren’t needed.
+Depth and Completeness Matter: It’s better to focus on the quality and accuracy of information over writing style or formatting.
+Don’t Use LLMs: Write your justification independently.
+
+Section 6: Fixing + Improving Responses
+
+After you complete selecting the preferred response and give a justification for your preference score, you will be asked to answer a few questions. These questions will determine if a writing  step is needed.
+
+Unless the response you selected is perfect and has no issues at all, you are expected to fix and improve the selected response so that it doesn’t have any code or language issues. A perfect response should be accurate and fully aligned with the prompt’s requests and constraints. Fixing a response is composed of three major steps.
+
+
+Step 1: Truthfulness 🎯
+
+Review claims, code steps, and reasoning: The response should be correct from a coding perspective and have proper reasoning based on information in the prompt or appropriate principles. If there are any errors in the original response, they should be corrected in your perfect response.
+How to Rewrite:
+If the original response had incorrect information, rewrite it with the correct information embedded naturally.
+Maintain Sequential Integrity: Ensure that your rewrite preserves the logical order of the original reasoning and includes the same level of detail.
+Clarity in Rewriting: Rewrite the step clearly and concisely, using simple language that avoids jargon. The rewrite should be self-contained and understandable, following a logical sequence of reasoning.
+Focus on Problem-Solving: Only include information necessary to solve the problem. Do not add extraneous details like definitions of basic concepts.
+What to Look For: Check that all the facts presented are correct.
+
+Step 2: Instruction Following 📏
+
+Compare to the Prompt: The perfect response should exactly follow the instructions provided in the prompt. This includes adhering to any constraints like format, length, structure, or content requirements.
+How to Rewrite: If the initial response deviates from the instructions (e.g., exceeds word count or fails to meet the format), revise it to strictly follow the original guidelines.
+
+Step 3: Improve the response’s fluency and style 💬
+
+Think of yourself as the “language expert.”
+Check for any unnatural language, awkward phrasing, or grammar errors in your language.
+The AI might not speak your language perfectly, so look out for things that sound odd or don’t flow well.
+Ensure that the model use the tone specified in the prompt and the the tone is respectful of cultural context
+The response should not have any awkward phrasing or language errors EVER!

@@ -1,0 +1,39 @@
+Parameter 1:
+
+'Explain the libraries used in the program.'
+
+Neither response explains the libraries in detail.
+
+'Explain how the program saves the picture after the drawing is completed.'
+
+Response 2 is better.
+
+'Explain the functions used to create geometric shapes.'
+
+Both do explain this. 1 is more verbose.
+
+'Provide the HEX codes of all colors used in the drawing.'
+
+2 provides HEX, 1 provides RGB.
+
+'Describe all the geometric shapes used in the drawing and specify which part of the shark each shape represents.'
+
+Both do explain this. 1 is more verbose.
+
+Follow instructions:
+Response 1:
+Provides RGB codes instead of HEX codes. The libraries used are mentioned but not explained.
+Response 2:
+The libraries used are mentioned but not explained.
+
+Truthfulness:
+Response 1:
+Response 2:
+
+Verbosity/Concision
+Response 1:
+Response 2:
+
+Writing Style & Clarity
+Response 1:
+Response 2:
