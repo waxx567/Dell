@@ -23,7 +23,8 @@ Both do explain this. 1 is more verbose.
 Follow instructions:
 
 Response 1:
-Provides RGB codes instead of HEX codes. The libraries used are mentioned but not explained.
+Provides RGB codes instead of HEX codes. 
+The libraries used are mentioned but not explained.
 
 Response 2:
 The libraries used are mentioned but not explained.
