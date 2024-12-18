@@ -18,35 +18,19 @@ context.close_path(): Closes the current path by drawing a line from the current
 
 context.arc(x, y, radius, start_angle, end_angle): Draws an arc with the specified center coordinates, radius, start angle, and end angle.
 
-
-
 context.fill(): Fills the current path with the current source color.
-
-
 
 context.stroke(): Draws the outline of the current path with the current source color.
 
 Colors Used:
 
-
-
-
-
 Background Color: (0.53, 0.81, 0.98 in RGB)
-
-
 
 Shark Body Color: (0.6, 0.6, 0.6 in RGB)
 
-
-
 Fin Color: (0.5, 0.5, 0.5 in RGB)
 
-
-
 Eye Color: (0, 0, 0 in RGB)
-
-
 
 Pupil Color: (1, 1, 1 in RGB)
 
@@ -54,45 +38,23 @@ Geometric Shapes Used:
 
 The program uses the following geometric shapes to create the shark drawing:
 
-
-
-
-
 Rectangle: Used as the background of the image.
-
-
 
 Curves: Used to draw the shark's symmetrical body.
 
-
-
 Triangles: Used to draw the shark's fins, on its sides and tail.
-
-
 
 Circles: Used to draw the shark's eyes and pupils, a small white circle inside a larger black circle.
 
-
-
 Arcs: Used to draw the shark's mouth, which is shaped as a smile.
-
-
 
 Lines: Used to draw the shark's gills as a series of lines.
 
 In summation, the image is:
 
-
-
-
-
 Simple: The use of basic shapes and shading keeps the drawing clean.
 
-
-
 Approachable: The drawing is easy for the audience to grasp and can be used as an educational tool to encourage programmatic drawing.
-
-
 
 Friendly: The illustration's use of a smile depicts the shark in a good light, destigmatizing the common myth that sharks are dangerous.
 
