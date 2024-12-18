@@ -14,23 +14,19 @@ cairo
 
 math
 
-Cairo is an open-source graphics library that provides a vector graphics-based API that is device-independent.
+Cairo is a 2D open-source graphics library that provides a vector graphics-based API that is device-independent. It is used for drawing shapes, text, and images in Python.
 
-Math is a module used specifically for mathematical operations like calculating pi.
-
-Saving the Picture:
-
-The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the surface to a PNG file.
+Math is a module used specifically for mathematical operations like calculating pi. It is used here to compute values like angles in radians.
 
 Functions Used to Create Geometric Shapes:
 
-The program uses various cairo functions to create geometric shapes:
+The code then uses various cairo functions to create and draw an image of a simple shark shape:
 
 
 
 
 
-context.rectangle(): Adds a closed sub-path rectangle of the given size to the current path at position (x , y ) in user-space coordinates.
+context.rectangle():  Adds a closed sub-path rectangle of the given size to the current path at position (x , y ) in user-space coordinates.
 
 
 
@@ -59,6 +55,94 @@ context.stroke(): A drawing operator that strokes the current path according to 
 
 
 context.arc(): Adds a circular arc of the given radius to the current path.
+
+Python Program Walkthrough:
+
+
+
+
+
+WIDTH, HEIGHT = 800, 400: Defines the dimensions (in pixels) of the image to be created.
+
+
+
+surface = cairo.ImageSurface(): An image surface (a container for the drawing) is created. This has the specified width and height, as well as a color format.
+
+
+
+context = cairo.Context(): A drawing context is created. This is used to perform drawing operations on the surface.
+
+
+
+context.rectangle(): Draws a rectangle from the top left corner to the specified width and height, covering the entire surface.
+
+
+
+context.set_source_rgb(): Sets the color for filling the rectangle with the specified RGB values.
+
+
+
+context.fill():  Fills the rectangle with the selected color.
+
+
+
+context.set_source_rgb(): Sets the fill color to gray.
+
+
+
+context.move_to(): Moves the "pen" to the starting point without drawing anything.
+
+
+
+context.curve_to(): Creates a cubic Bezier curve from the current position to the specified position with control points. This forms the upper part of the outline of the shark's body shape.
+
+
+
+context.curve_to(): Creates another cubic Bezier curve to return to the starting point, forming a closed loop. This runs from the current position to the original starting position with control points and forms the lower part of the outline of the shark's body shape.
+
+
+
+context.fill_preserve(): Fills the shape with the current color while preserving the path.
+
+
+
+context.set_source_rgb(): Sets the stroke color.
+
+
+
+context.stroke(): Outlines the shape with the current stroke color.
+
+
+
+context.set_source_rgb(): Sets the color for the next shape.
+
+
+
+context.move_to(): Moves the "pen" to the specified coordinates without drawing anything.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.line_to():
+
+
+
+context.close_path():
+
+
+
+context.fill_preserve():
+
+
+
+context.stroke():
+
+Saving the Picture:
+
+The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the surface to a PNG file.
 
 Colors Used (HEX codes):
 
@@ -126,7 +210,7 @@ Circles: Used for the shark's eye and pupil.
 
 These shapes are combined and positioned to create the final shark drawing.
 
-A blue triangle is the background.
+A blue rectangle is the background.
 
 A medium gray boat shape comprised of two equal arcs is the shark's body.
 
