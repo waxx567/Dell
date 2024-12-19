@@ -56,6 +56,10 @@ context.stroke(): A drawing operator that strokes the current path according to 
 
 context.arc(): Adds a circular arc of the given radius to the current path.
 
+
+
+
+
 Python Program Walkthrough:
 
 
@@ -66,7 +70,7 @@ WIDTH, HEIGHT = 800, 400: Defines the dimensions (in pixels) of the image to be 
 
 
 
-surface = cairo.ImageSurface(): An image surface (a container for the drawing) is created. This has the specified width and height, as well as a color format.
+surface = cairo.ImageSurface(): An image surface (a container for the drawing) is created. This has the specified width, height, and color format.
 
 
 
@@ -170,9 +174,115 @@ context.stroke(): Outlines the shape with the current stroke color.
 
 
 
-Saving the Picture:
+context.move_to(): Moves the "pen" to the specified coordinates without drawing anything.
 
-The program saves the picture as a PNG file named "shark.png" using the surface.write_to_png() method. This method writes the contents of the surface to a PNG file.
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.close_path(): Closes the path by connecting to the starting point, completing the large tail triangle.
+
+
+
+context.fill_preserve(): Fills the shape with the current color while preserving the path.
+
+
+
+context.stroke(): Outlines the shape with the current stroke color.
+
+
+
+context.move_to(): Moves the "pen" to the specified coordinates without drawing anything.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.close_path(): Closes the path by connecting to the starting point, completing the small tail triangle.
+
+
+
+context.fill_preserve(): Fills the shape with the current color while preserving the path.
+
+
+
+context.stroke(): Outlines the shape with the current stroke color.
+
+
+
+context.set_source_rgb(): Sets the color for the next shape.
+
+
+
+context.arc(): Draws a circle with center and radius. This is part of the shark's eye.
+
+
+
+context.fill(): Fills the circle with the current color.
+
+
+
+context.set_source_rgb(): Sets the color for the next shape.
+
+
+
+context.arc(): Draws a smaller circle inside the previous circle. This completes the shark's eye.
+
+
+
+context.fill(): Fills the circle with the current color.
+
+
+
+for i in range(5):
+
+
+
+    context.move_to(240 + i  10, 210 + i  5)
+
+
+
+    context.line_to(260 + i  10, 210 + i  5)
+
+
+
+    context.stroke()
+
+
+
+The above loop draws a series of horizontal lines. It moves the "pen" to a starting position and draws the lines with incremental spaces. These lines are the shark's gills.
+
+
+
+context.set_source_rgb(): Sets the color for the next shape.
+
+
+
+context.arc(): Defines an arc that will form the shark's mouth.
+
+
+
+context.stroke(): Draws the shark's mouth.
+
+
+
+surface.write_to_png(): Writes the contents of the surface (the drawn image) to a PNG file with the specified name.
+
+
+
+print(): Prints a message confirming the image was saved.
 
 Colors Used (HEX codes):
 
@@ -252,9 +362,9 @@ A black circle with a white circle centered within is the shark's eye. It is pla
 
 Five staggered black lines are the gills. These are placed halfway between the shark's nose and the vertical midline of the shark's body in line with the mouth.
 
-A gray large triangle is the dorsal fin. It is placed near the top of the shark's body along the vertical midline.
+A large gray triangle is the dorsal fin. It is placed near the top of the shark's body along the vertical midline.
 
-A gray large triangle is the ventral fin. It is placed near the bottom of the shark's body along the vertical midline.
+A large gray triangle is the ventral fin. It is placed near the bottom of the shark's body along the vertical midline.
 
 A large gray triangle and a small gray triangle are combined as described previously and placed touching the point of the shark's body opposite its nose.
 
