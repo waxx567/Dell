@@ -14,7 +14,7 @@ cairo
 
 math
 
-Cairo is a 2D open-source graphics library that provides a vector graphics-based API that is device-independent. It is used for drawing shapes, text, and images in Python.
+Cairo is a 2D open-source graphics library that provides a device-independent vector graphics-based API. It is used for drawing shapes, text, and images in Python.
 
 Math is a module used specifically for mathematical operations. It is used here to calculate the angles of arcs using pi.
 
