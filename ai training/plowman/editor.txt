@@ -126,19 +126,49 @@ context.line_to(): Draws a line from the current position to the specified point
 
 
 
-context.line_to():
+context.line_to(): Draws a line from the current position to the specified point.
 
 
 
-context.close_path():
+context.close_path(): Closes the path by connecting to the starting point, completing the dorsal fin triangle.
 
 
 
-context.fill_preserve():
+context.fill_preserve(): Fills the shape with the current color while preserving the path.
 
 
 
-context.stroke():
+context.stroke(): Outlines the shape with the current stroke color.
+
+
+
+context.set_source_rgb(): Sets the color for the next shape.
+
+
+
+context.move_to(): Moves the "pen" to the specified coordinates without drawing anything.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.line_to(): Draws a line from the current position to the specified point.
+
+
+
+context.close_path(): Closes the path by connecting to the starting point, completing the ventral fin triangle.
+
+
+
+context.fill_preserve(): Fills the shape with the current color while preserving the path.
+
+
+
+context.stroke(): Outlines the shape with the current stroke color.
+
+
 
 Saving the Picture:
 
