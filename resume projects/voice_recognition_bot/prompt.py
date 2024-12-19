@@ -40,5 +40,6 @@ def main():
     voice_to_text = recognize_speech_from_file(FILE_FROM_USER)
     save_to_file(voice_to_text, VOICE_FILE)
 
+
 if __name__ == "__main__":
     main()
