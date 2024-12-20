@@ -1,7 +1,5 @@
-# A Modern Website
+# CRM
 
 I'm going to build a website using:
-- Python
 - Django
-- Docker 
-- PostgreSQL
+- Tailwind
