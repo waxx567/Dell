@@ -1,6 +1,6 @@
 # CRM
 
-I'm going to build a CRM using:
+CRM build using:
 
 - Django
 - Tailwind
