@@ -2,11 +2,6 @@
 Absolutely! Below is a Pygame implementation of a Tic Tac Toe game with dimensions  400x500. The game will wait and then reset whenever there is a draw or one of the players wins. When a player wins, it generates a red line crossing all three squares that were a part of the winning move.
 '''
 
-
-__
-
-```python
-
 import pygame as pg
 
 import sys
@@ -317,16 +312,7 @@ while True: # continue loop until user closes the window
 
     clock.tick(FPS)
 
-
-
-```
-
-__
-
-
-
-
-
+'''
 **Instructions for testing and local use**
 
 * Ensure you have `pygame` installed in your current python environment.
@@ -338,3 +324,7 @@ __
 * Play the game until one player wins or there is a draw. 
 
 * Close the window once you've finished playing.
+'''
+
+
+
