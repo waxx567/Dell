@@ -10,7 +10,8 @@ My final CS50X projest built using:
 
 I'm going to rebuild it here (with improvements) and deploy it to Hostinger.
 
-This was the original README
+## This was the original README
+
 Final project for CS50 2023
 MOTORCYCLE website showcasing exclusive motorcycles
 
