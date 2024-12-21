@@ -4,6 +4,6 @@
 - Basic Flask Application: `HTML`, `CSS`, `Jinja`, `JavaScript`, `Python`
 - CRM (not begun yet): `Django`
 - eBay Price Tracker: `Python`
-- Games (not begun yet): `Pygame`
+- Games: `Python`, `Pygame`
 - CLI Student Record Handler: `Python`
 - Voice Recognition Bot: `Python`
