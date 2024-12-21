@@ -103,4 +103,4 @@ The required dependencies for this application are listed in `requirements.txt`.
 
 ## Contact
 
-For any issues or suggestions, feel free to [email](waynem567@gmail.com).
+For any issues or suggestions, feel free to [email](waynem567@gmail.com) me.
