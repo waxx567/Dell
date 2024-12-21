@@ -26,31 +26,53 @@ To run this application, ensure you have the following installed:
 ### On Windows
 
 1. Open a terminal (Command Prompt or PowerShell).
+
 2. Clone the repository or download the application files.
+
    git clone [link](https://github.com/waxx567/Dell/tree/main/resume%20projects/flask_website)
+
    cd flask-app
+
 3. Create a virtual environment (optional but recommended):
+
    python -m venv venv
+
    venv\Scripts\activate
+
 4. Install the required dependencies:
+
    pip install -r requirements.txt
+
 5. Run the Flask application:
+
    flask run
+
 6. Open a web browser and go to [localhost:5000](http://127.0.0.1:5000/) to view the application.
 
 ### On Mac
 
 1. Open a terminal.
+
 2. Clone the repository or download the application files.
+
    git clone [link](https://github.com/waxx567/Dell/tree/main/resume%20projects/flask_website)
+
    cd flask-app
+
 3. Create a virtual environment (optional but recommended):
+
    python3 -m venv venv
+
    source venv/bin/activate
+
 4. Install the required dependencies:
+
    pip3 install -r requirements.txt
+
 5. Run the Flask application:
+
    flask run
+   
 6. Open a web browser and go to [localhost:5000](http://127.0.0.1:5000/) to view the application.
 
 ## Application Structure
