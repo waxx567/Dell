@@ -8,6 +8,10 @@ pygame.display.set_caption("Space Dodge")
 
 BG = pygame.image.load("bg.jpeg")
 
+def draw():
+    WIN.blit(BG, (0, 0))
+    pygame.display.update()
+
 def main():
     run = True
 
