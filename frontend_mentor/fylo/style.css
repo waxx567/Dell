@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-
-    /* Colors */
-    /* Primary */
-    --clr-gradient-start: hsl(6, 100%, 80%);
-    --clr-gradient-end: hsl(335, 100%, 65%);
-}
