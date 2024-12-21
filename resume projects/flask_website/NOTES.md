@@ -25,4 +25,4 @@
 - Go to `./OneDrive/Documents/GitHub/resume projects/flask_website`.
 - Activate virtual environment: `conda activate out312`.
 - Open Flask application: `python -m flask run`.
-- View application at localhost:5000 in browser.
+- View application at localhost:5000 in the Firefox browser (because the developer tools are better than Chrome).
