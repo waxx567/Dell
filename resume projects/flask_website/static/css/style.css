@@ -235,11 +235,13 @@ ul#services li{
     background: #e6e6e6;
 }
 
-
-
 article#main-col h2{
     margin-bottom: 11px;
     margin-top: 10px;
+}
+
+.img-bike{
+    width: 100%;
 }
 
 /* Footer */
