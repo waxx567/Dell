@@ -1,4 +1,4 @@
-# Flask Application
+# Basic Flask Application
 
 This is a simple Flask-based web application that includes:
 
