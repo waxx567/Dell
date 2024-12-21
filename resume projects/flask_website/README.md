@@ -18,7 +18,7 @@ This is a simple Flask-based web application that includes:
 
 To run this application, ensure you have the following installed:
 
-- **Python 3.8 or later**
+- **Python 3.9 or later**
 - **Flask** (a Python web framework)
 
 ## How to Run the Program
