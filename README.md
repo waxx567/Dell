@@ -1,5 +1,6 @@
-# GitHub
+# Main GitHub Folder
 
-- Codespace 62203768: CS50AI problem sets
+- AI training
+- CS50 problem sets and projects
 - Salesforce workspace
 - 3D portfolio
