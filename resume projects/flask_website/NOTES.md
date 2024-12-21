@@ -10,15 +10,6 @@
 - Run `python -m flask run` to open the Flask application.
 - Go to localhost:5000 in your browser to view the Flask application.
 
-- Create `/templates/index.html`.
-- Create `layout.html`.
-
-## This application is created using the following tools
-
-- Flask
-- HTML
-- Jinja
-
 ## How I run this application on my Dell 5480
 
 - Open Anaconda Prompt.
