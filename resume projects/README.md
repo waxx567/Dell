@@ -1,9 +1,9 @@
 # My Resume Projects
 
-- Advanced Flask Application
-- Basic Flask Application
-- CRM (not begun yet)
-- eBay Price Tracker
-- Games (not begun yet)
-- CLI Student Record Handler
-- Voice Recognition Bot
+- Advanced Flask Application: `HTML`, `CSS`, `Jinja`, `JavaScript`, `Python`, `Flask`, `SQLite`
+- Basic Flask Application: `HTML`, `CSS`, `Jinja`, `JavaScript`, `Python`
+- CRM (not begun yet): `Django`
+- eBay Price Tracker: `Python`
+- Games (not begun yet): `Pygame`
+- CLI Student Record Handler: `Python`
+- Voice Recognition Bot: `Python`
