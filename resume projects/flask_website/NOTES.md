@@ -1,4 +1,4 @@
-# Notes
+# Developer's Notes
 
 ## How to create this application from scratch
 
