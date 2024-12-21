@@ -21,6 +21,8 @@ def main():
                 run = False
                 break
 
+        draw()
+
     pygame.quit()
 
 if __name__ == "__main__":
