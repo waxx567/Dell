@@ -2,8 +2,8 @@
 
 - Advanced Flask Application
 - Basic Flask Application
-- CRM (not completed yet)
+- CRM (not begun yet)
 - eBay Price Tracker
-- Game (not completed yet)
+- Games (not begun yet)
 - CLI Student Record Handler
 - Voice Recognition Bot
