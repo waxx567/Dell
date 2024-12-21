@@ -8,6 +8,8 @@ My final CS50X projest built using:
 - Flask
 - MySQL
 
+Flask is a lightweight Python framework for web applications.
+
 I'm going to rebuild it here (with improvements) and deploy it to Hostinger.
 
 ## This was the original README
