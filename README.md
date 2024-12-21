@@ -6,5 +6,4 @@
 - Python exercises and projects: `Python`
 - Resume projects: `HTML`, `CSS`, `JavaScript`, `Python`
 - Salesforce workspace: `Apex`
-- A simple price tracker: `Python`
 - Technical assessments I've done: `HTML`, `CSS`, `C++`
