@@ -1,4 +1,4 @@
-# Main GitHub Folder
+# My exercises and projects
 
 - C++ exercises and projects: `C++`
 - CS50X, CS50P and CS50AI problem sets and projects: `C`, `HTML`, `Jinja`, `CSS`, `JavaScript`, `Python`, `Flask`, `SQLite`
