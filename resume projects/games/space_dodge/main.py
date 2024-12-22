@@ -13,9 +13,10 @@ PLAYER_HEIGHT = 60
 
 def draw(player):
     WIN.blit(BG, (0, 0))
-    pygame.display.update()
 
     pygame.draw.rect(WIN, "red", player)
+    
+    pygame.display.update()
 
 def main():
     run = True
