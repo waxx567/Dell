@@ -15,6 +15,8 @@ def draw():
 def main():
     run = True
 
+    player = pygame.Rect(50, 50, 50, 50)
+
     while run:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
