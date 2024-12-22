@@ -14,7 +14,7 @@ def draw(player):
     WIN.blit(BG, (0, 0))
     pygame.display.update()
 
-    pygame.draw.rect(WIN, (255, 0, 0))
+    pygame.draw.rect(WIN, "red", player)
 
 def main():
     run = True
