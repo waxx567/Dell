@@ -1,5 +1,0 @@
-public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
-    // Code here
-    return accounts?.BillingCity;
- }
- 
