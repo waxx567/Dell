@@ -29,7 +29,7 @@ def main():
 
     while run:
         clock.tick(60)
-        
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -37,14 +37,15 @@ def main():
 
         keys = pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT]:
+        if keys[pygame.K_LEFT] and player.x - PLAYER_VEL >= 0:
             player.x -= PLAYER_VEL
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_RIGHT] and player.x + PLAYER_VEL + player.width <= WIDTH:
             player.x += PLAYER_VEL
 
         draw(player)
 
     pygame.quit()
+
 
 if __name__ == "__main__":
     main()
